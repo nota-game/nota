@@ -148,11 +148,11 @@ Mali die der Charakter im Kampf ansammelt können aus verschiedenen Quellen komm
 
 Während des Kampfes nutzt der Kämpfer Ausdauer um Aktionen durchzuführen. Verbraucht er Ausdauer erhält er dafür Erschöpfungspunkte. Zudem kann er durch gegnerische Aktionen Erschöpfung erhalten.
 
-Erschöpfung kann er wieder mittels der Aktion Erholen Abbauen. Dabei sammelt sich jedoch Verausgabung an. Der Abbau jeweils 5 Punkte Erschöpfung erzeugt einen Punkt Verausgabung. Verausgabung kann nur über rasten abgebaut werden. Eine Halbe stunde Rast entfernt eine Verausgabung. Ein Charakter kann maximal 5 Punkte Verausgabung besitzen. Sollte er Verausgabung darüber hinaus erhalten, erhält er statt dessen entsprechend viele Punkte Strapazierung. Ein Punkt Strapazierung abzubauen dauert zwei Stunden.
+Erschöpfung kann er wieder mittels der Aktion Erholen Abbauen. Dabei sammelt sich jedoch Verausgabung an. Der Abbau jeweils 6 Punkte Erschöpfung erzeugt einen Punkt Verausgabung. Verausgabung kann nur über rasten abgebaut werden. Eine Halbe stunde Rast entfernt eine Verausgabung. Ein Charakter kann maximal 6 Punkte Verausgabung besitzen. Sollte er Verausgabung darüber hinaus erhalten, erhält er statt dessen entsprechend viele Punkte Strapazierung. Ein Punkt Strapazierung abzubauen dauert zwei Stunden.
 
 Abgesehen von der Art wie sie abgebaut werden gelten Strapazierung und Verausgabung in allen belangen als Erschöpfungspunkte.
 
-Für jeweils 5 Erschöpfungspunkte die der Charakter besitzt, erhält er einen Malus.
+Für jeweils 6 Erschöpfungspunkte die der Charakter besitzt, erhält er einen Malus.
 
 Ein Charakter kann nur begrenzt viele Erschöpfungspunkte ansammeln. Übersteigt die Anzahl der Erschöpfungspunkte bestimmte grenzen, so hat dies nachteilige Auswirkungen auf den Charakter.
 
