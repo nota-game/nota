@@ -35,16 +35,43 @@
                   <attribute name="ModifierType" use="required" type="aktionen:ModifierType"/>
                 </complexType>
               </element>
+              <element name="Eigenschaften" minOccurs="0">
+                <complexType>
+                  <sequence maxOccurs="unbounded">
+                    <element ref="aktionen:Eigenschaft"/>
+                  </sequence>
+                </complexType>
+              </element>
             </sequence>
              <attributeGroup ref="misc:NamedElement"/>
             <attribute name="Kosten" type="int" use="required"/>
             <attribute name="Typ" type="aktionen:ActionType" use="required"/>
           </complexType>
         </element>
+        <element name="Eigenschaften" maxOccurs="unbounded" minOccurs="0">
+          <complexType>
+            <sequence>
+              <element name="Eigenschaft" minOccurs="0" maxOccurs="unbounded">
+                <complexType>
+                  <sequence>
+                    <element name="Beschreibung" type="string" />
+                  </sequence>
+                  <attribute type="string" name="Name" use="required"/>
+                </complexType>
+              </element>
+            </sequence>
+          </complexType>
+        </element>
       </sequence>
     </complexType>
   </element>
 
+  <element name="Eigenschaft" >
+    <complexType>
+      <attributeGroup ref="misc:NamedElement"/>
+    </complexType>
+  </element>
+  
   <element name="ConcreteModValueType">
     <complexType>
       <attribute name="Value" type="int" />

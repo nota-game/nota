@@ -78,6 +78,11 @@
 ::&#x2212;<xsl:apply-templates select="./aktionen:Mod/*"/>::{.malus}
 </xsl:if>
 </xsl:if>
+
+<xsl:if test="./aktionen:Eigenschaften">
+**Schlüsselwörter**: _<xsl:for-each select="./aktionen:Eigenschaften/*" ><xsl:value-of select="@Name"/></xsl:for-each>_
+</xsl:if>
+
 :::
 </xsl:template>
 

@@ -215,6 +215,23 @@ dd .label {
 /* Book siedmenue
 ----------------------------*/
 
+@media print{
+    .bookConent {
+        display: none !important;
+        }
+    #MathJax_Message{
+        display: none !important;
+    }
+    #license{
+        float: left !important;
+    }
+
+    .twoColumn>.content {
+        column-count: 2 !important;
+        column-width: unset;
+    }
+}
+
 .bookConent {
     transition: 0.5s;
     position: fixed;

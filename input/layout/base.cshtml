@@ -212,7 +212,7 @@ MathJax.Ajax.config.path["Contrib"] = "/scripts/MathJax-extensions";
     next = next.Get<IDocument>("Next");
   }
   
-<nav>
+<nav class="hidden-print">
   <ul class="pager">
   @if(prevous !=null){
       <li class="previous"><a href="/@prevous["RelativeFilePath"]"><span aria-hidden="true">&larr;</span> Zurück</a></li>
@@ -246,7 +246,7 @@ MathJax.Ajax.config.path["Contrib"] = "/scripts/MathJax-extensions";
     <div id="footer">
       <div class="container">
  
-        <div class="btn-group pull-left">
+        <div class="btn-group pull-left hidden-print">
  
           @if(Metadata.ContainsKey("Contributors")){          
             <a id="mitwirkende" title="Mitwirkende" class="btn btn-default btn-xs" href="#" data-toggle="popover" data-placement="top" data-container="body" data-template='<div class="popover" style="max-width:unset" role="tooltip"><div class="arrow"></div><h3 class="popover-title"></h3><div class="popover-content"></div></div>'>Mitwirkende</a>
@@ -292,7 +292,7 @@ MathJax.Ajax.config.path["Contrib"] = "/scripts/MathJax-extensions";
         <div  class="pull-left"  style="margin-left:5px">
           <small class="text-muted hidden-xs" id="lastEdit" ></small>
         </div>
-
+        <br class="visible-print-block" />
         <div id="licenseContent" style="display: none">
           <small>
             <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">nota</span> von <a xmlns:cc="http://creativecommons.org/ns#" href="http://nota-game.azurewebsites.net" property="cc:attributionName" rel="cc:attributionURL">Patrick Kranz</a> ist lizenziert unter einer <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Namensnennung - Nicht-kommerziell - Weitergabe unter gleichen Bedingungen 4.0 International Lizenz</a>.

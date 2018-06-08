@@ -26,7 +26,7 @@
         <element name="Waffen">
           <complexType>
             <sequence>
-              <element name="Waffe" maxOccurs="unbounded" minOccurs="0">
+              <element name="Nahkampfwaffe" maxOccurs="unbounded" minOccurs="0">
                 <complexType>
                   <sequence>
                     <element name="Schaden">
@@ -34,11 +34,6 @@
                         <sequence>
                           <element name="Wucht"   type="ausstattung:Schaden" minOccurs="0"/>
                           <element name="Schnitt" type="ausstattung:Schaden" minOccurs="0"/>
-                          <element name="Stich"   type="ausstattung:Schaden" minOccurs="0"/>
-                          <element name="Feuer"   type="ausstattung:Schaden" minOccurs="0"/>
-                          <element name="Frost"   type="ausstattung:Schaden" minOccurs="0"/>
-                          <element name="Elektro" type="ausstattung:Schaden" minOccurs="0"/>
-                          <element name="Säure"   type="ausstattung:Schaden" minOccurs="0"/>
                         </sequence>
                       </complexType>
                     </element>
@@ -62,6 +57,63 @@
                   <attribute name="OffensivModifizierer" type="int" use="optional" default="0"/>
                   <attribute name="Distanzklasse" type="int" use="required"/>
                   <attributeGroup ref="misc:NamedElement"/>
+                </complexType>
+              </element>
+              <element name="Fernkampfwaffe" maxOccurs="unbounded" minOccurs="0">
+                <complexType>
+                  <sequence>
+                    <element name="Schaden">
+                      <complexType>
+                        <sequence>
+                          <element name="Wucht"   type="ausstattung:Schaden" minOccurs="0"/>
+                          <element name="Schnitt" type="ausstattung:Schaden" minOccurs="0"/>
+                        </sequence>
+                      </complexType>
+                    </element>
+                    <element name="Schusseigenschaften">
+                      <complexType>
+                        <attribute name="Schussfrequenz" type="positiveInteger" use="required"/>
+                        <attribute name="Magazingröße" type="positiveInteger" use="required"/>
+                      </complexType>                      
+                    </element>
+                    <element name="Reichweiten" >
+                      <complexType>
+                        <sequence>
+                          <element name="Reichweite" maxOccurs="unbounded">
+                            <complexType>
+                              <attribute name="Distanz" type="ausstattung:Schussreichweite" use="required"/>
+                              <attribute name="Modifikator" type="int" use="required"/>
+                              <attribute name="Schadensreduktion" type="positiveInteger"  use="optional"/>
+                            </complexType>
+                          </element>
+                        </sequence>
+                      </complexType>
+                    </element>
+                    <element name="Nachladezeit">
+                      <complexType>
+                        <attribute name="Wert" type="positiveInteger" use="required"/>
+                        <attribute name="Einheit" type="ausstattung:Nachladeeinheit" use="required"/>
+                      </complexType>
+                    </element>
+                    <element name="Eigenschaften" minOccurs="0">
+                      <complexType>
+                        <sequence maxOccurs="unbounded">
+                          <element ref="ausstattung:Eigenschaft"/>
+                        </sequence>
+                      </complexType>
+                    </element>
+                    <element name="Talente" minOccurs="0">
+                      <complexType>
+                        <sequence maxOccurs="unbounded">
+                          <element ref="talent:Talent"/>
+                        </sequence>
+                      </complexType>
+                    </element>
+                  </sequence>
+                  <attribute name="WaffenTyp" type="ausstattung:WaffenTyp" use="optional" default="Offensiv|Defensiv"/>
+                  <attribute name="DefensivModifizierer" type="int" use="optional" default="0"/>
+                  <attribute name="OffensivModifizierer" type="int" use="optional" default="0"/>
+                  <attributeGroup ref="misc:NamedElement"/>
 
                 </complexType>
               </element>
@@ -78,13 +130,9 @@
                     <element name="Schutz">
                       <complexType>
                         <sequence>
-                          <element name="Wucht"   type="ausstattung:Rüstwert" minOccurs="0"/>
-                          <element name="Schnitt" type="ausstattung:Rüstwert" minOccurs="0"/>
-                          <element name="Stich"   type="ausstattung:Rüstwert" minOccurs="0"/>
-                          <element name="Feuer"   type="ausstattung:Rüstwert" minOccurs="0"/>
-                          <element name="Frost"   type="ausstattung:Rüstwert" minOccurs="0"/>
-                          <element name="Elektro" type="ausstattung:Rüstwert" minOccurs="0"/>
-                          <element name="Säure"   type="ausstattung:Rüstwert" minOccurs="0"/>
+                          <element name="Flexibilität" type="ausstattung:Rüstwert" minOccurs="0"/>
+                          <element name="Härte"        type="ausstattung:Rüstwert" minOccurs="0"/>
+                          <element name="Dämpfung"     type="ausstattung:Rüstwert" minOccurs="0"/>
                         </sequence>
                       </complexType>
                     </element>
@@ -154,6 +202,23 @@
       <enumeration value="Defensiv"/>
       <enumeration value="Offensiv|Defensiv"/>
     </restriction>
+  </simpleType>
+
+  <simpleType name="Nachladeeinheit">
+    <restriction base="string">
+      <enumeration value="KR"/>
+      <enumeration value="S"/>
+    </restriction>
+  </simpleType>
+
+  <simpleType name="Schussreichweite">
+    <union memberTypes="positiveInteger">
+      <simpleType>
+        <restriction base="string">
+          <enumeration value="Nahkampf"/>
+        </restriction>
+      </simpleType>
+    </union>
   </simpleType>
 
   <complexType name="Schutzwert">

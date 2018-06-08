@@ -82,27 +82,29 @@ Viele Distanzwaffen sind in der Lage mehrere Schuss in einer Kampfrunde abzugebe
 
 Für jeweils 3 Punkte die der Aktionswert des Fernkämpfers über dem Defensivwert des Ziels liegt trifft ein Pfeil und verursacht Waffenschaden. 
 
-Ein Fernkämpfer unterliegt weiteren Erschwernissen
+Eine Zusammenfassung der Modifikationen:
 
-+------------------------------------------+--------------+
-| Situation                                | Erschwernis  |
-+==========================================+==============+
-| Distanz zum Ziel                         | Siehe Waffe  |
-+------------------------------------------+--------------+
-| Ziel bewegt sich horizontal zum Schützen | GS / 2       |
-+------------------------------------------+--------------+
-| Ziel bewegt sich vertikal zum Schützen   | GS / 4       |
-+------------------------------------------+--------------+
-| Ziel vollführt Ausweichbewegungen        | GS           |
-+------------------------------------------+--------------+
-| Ziel sucht Deckung                       | GS + 4       |
-+------------------------------------------+--------------+
-| Ziel nicht sichtbar                      | Unmöglich    |
-+------------------------------------------+--------------+
-| Schlechte Sicht auf Ziel                 | 3-9          |
-+------------------------------------------+--------------+
-| Seitenwind (falls Projektil beeinflusst) | 2-8          |
-+------------------------------------------+--------------+
++--------------------------------------------+--------------+
+| Situation                                  | Modifikator  |
++============================================+==============+
+| Distanz zum Ziel Nah                       | Siehe Waffe  |
++--------------------------------------------+--------------+
+| Ziel bewegt sich horizontal zum Schützen   | - GS / 2     |
++--------------------------------------------+--------------+
+| Ziel bewegt sich vertikal zum Schützen     | - GS / 4     |
++--------------------------------------------+--------------+
+| Ziel vollführt Ausweichbewegungen          | - GS         |
++--------------------------------------------+--------------+
+| Ziel sucht Deckung                         | - (GS + 4)   |
++--------------------------------------------+--------------+
+| Ziel nicht sichtbar                        | Unmöglich    |
++--------------------------------------------+--------------+
+| Schlechte Sicht auf Ziel                   | - 3-9        |
++--------------------------------------------+--------------+
+| Seitenwind (falls Projektil beeinflusst)   | - 2-8        |
++--------------------------------------------+--------------+
+| Pro Runde die auf das Ziel geschossen wurde| + 1          |
++--------------------------------------------+--------------+
 
 ## Bedrängen
 
@@ -271,7 +273,7 @@ Eine Waffe kann verschiedene Schadensarten Kombinieren, so verursacht eine Axt b
   Wuchtwaffen Variieren stark je nach Waffe zwischen 3 und 8 Schaden.  
   Waffenlose Angriffe verursachen 1-3 Schaden.
 
-  Die Wucht hängt auch von der Kraft des Charakters ab. Der Entsprechende Wuchtschaden kann somit maximal verdoppelt werden. Der Bonus beträgt 1 Punkt für jeweils 10 Punkte Kraft. 
+  Die Wucht hängt auch von der Kraft des Charakters ab. Der Entsprechende Wuchtschaden kann somit maximal verdoppelt werden. Der Bonus beträgt 1 Punkt für jeweils 20 Punkte Kraft. 
 
 + **Schnitt**
   _Schwerter, Messer oder Säbel_  
@@ -344,6 +346,12 @@ Der Schutzwert wird verwendet, um herauszufinden ob ein Angriff auf eine Treffer
 Eine Rüstung besitzt zusätzlich noch eine Erschwernis für Proben.
 
 Eine Rüstung ist auch nicht immer schnell angezogen. Für mansche Rüstungen benötigt man sogar Hilfe. Jede Rüstung hat angegeben wie lange man braucht sie alleine Anzuziehen, und wie lange man mit Hilfe braucht.
+
+## Ausrüstungs Eigenschaften
+
+Einige Ausrüstungsgegenstände besitzen Eigenschaften, die ihre Regeln verändern.
+
+§"books/Regelwerke/Grundregeln/Kampf/WaffenEigenschaften"
 
 
 §"books/Regelwerke/Grundregeln/Kampf/Aktionen"

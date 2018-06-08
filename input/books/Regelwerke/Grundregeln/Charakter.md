@@ -135,6 +135,26 @@ Die Stärke eines Charakters ergibt sich aus seiner Kraft und seiner Masse.
 
 $\(Kraft = \frac{91}{30}ST^2+\frac{1529}{300}ST+\frac{3}{50}\)$
 
+Die folgende Tabelle listet die Gewischt und stärke Verhältnisse dar.
+
++------+-------+-------+-------+-------+
+|Stärke| 60 kg | 70 kg | 80 kg | 90 kg |
++======+=======+=======+=======+=======+
+|**7** | 51    | 59    | 68    | 76    |
++------+-------+-------+-------+-------+
+|**8** | 44    | 52    | 59    | 67    |
++------+-------+-------+-------+-------+
+|**9** | 39    | 46    | 53    | 59    |
++------+-------+-------+-------+-------+
+|**10**| 36    | 42    | 48    | 54    |
++------+-------+-------+-------+-------+
+|**11**| 32    | 38    | 43    | 49    |
++------+-------+-------+-------+-------+
+|**12**| 30    | 35    | 40    | 45    |
++------+-------+-------+-------+-------+
+|**13**| 28    | 32    | 37    | 42    |
++------+-------+-------+-------+-------+
+
 :::{.hidden-information .Information}
 Dies ergibt sich aus der Tragkraft eines durchschnittlichen Menschen von 60% seines Körpergewichtes (Stärke 10 [Quelle](http://www.spiegel.de/wissenschaft/mensch/warum-nepalesen-so-viel-tragen-koennen-a-1121522.html)). Annahme Sehr Kräftiger Mensch (Stärke 7) 85% und Schwach (Stärke 13) 47%.
 :::

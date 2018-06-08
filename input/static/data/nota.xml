@@ -192,8 +192,22 @@
       </Probe>
       <Beschreibung>Test</Beschreibung>
       <Ableitungen>
-      <Ableitung Name="Kampfgespür" Anzahl="5"/>
+        <Ableitung Name="Kampfgespür" Anzahl="5"/>
         <Ableitung Name="Schwerter" Anzahl="2"/>
+      </Ableitungen>
+    </Talent>
+    <Talent Name="Anderthalbhänder" Komplexität="B" Kategorie="Kampf">
+      <Probe>
+        <Gewandtheit/>
+        <Mut/>
+        <Intuition/>
+      </Probe>
+      <Beschreibung>Test</Beschreibung>
+      <Ableitungen>
+        <Ableitung Name="Kampfgespür" Anzahl="5"/>
+        <Ableitung Name="Säbel" Anzahl="2"/>
+        <Ableitung Name="Schwerter" Anzahl="2"/>
+        <Ableitung Name="Zweihandschwert" Anzahl="2"/>
       </Ableitungen>
     </Talent>
     <Talent Name="Zweihandschwert" Komplexität="B" Kategorie="Kampf">
@@ -895,7 +909,7 @@
       <GarantierterEffekt>Der Charakter lößt sich aus dem Nahkampf.</GarantierterEffekt>
     </Aktion>
 
-    <Aktion Name="Finte" Kosten="3" Typ="Unterstützend">
+    <Aktion Name="Finte" Kosten="1" Typ="Unterstützend">
       <Beschreibung>Der Charakter versucht mit dem Angriff den gegner eine Falle zu stellen und so stärker zu bedrängen.</Beschreibung>
       <OffensivErfolg>Das Ziel erhält Positions Mali in höhe von x.</OffensivErfolg>
       <DefensivMiserfolg>Erhalte Positions Mali in höhe von x.</DefensivMiserfolg>
@@ -904,7 +918,7 @@
       </Mod>
     </Aktion>
 
-    <Aktion Name="Wuchtschlag" Kosten="4" Typ="Unterstützend">
+    <Aktion Name="Wuchtschlag" Kosten="2" Typ="Unterstützend">
       <Beschreibung>Setzt mehr Wucht in einen auszuführenden Angriff.</Beschreibung>
       <OffensivErfolg>Die Waffe Trift. Erhöht den Wuchtschaden der Waffe um x. Der Wuchtschaden kann maximal um den doppelten basis Wuchtschaden der Waffe erhöt werden.</OffensivErfolg>
       <DefensivMiserfolg>Erhalte Positions Mali in höhe von x.</DefensivMiserfolg>
@@ -914,6 +928,9 @@
           <VariableModValueType Value="X"/>
         </MultiplyModValueType>
       </Mod>
+      <Eigenschaften>
+        <Eigenschaft Name="Wuchtig"/>
+      </Eigenschaften>
     </Aktion>
 
     <Aktion Name="Todesstoß" Kosten="5" Typ="Offensiv">
@@ -970,7 +987,7 @@ Ausserdem darf eine Waffe Plazieren Aktion die das selbe Ziel wie diese hat in d
 
     <Aktion Name="Zustechen" Kosten="2" Typ="Offensiv">
       <Beschreibung>Bei diesem Angriff nutzt der Charakter die Schneide seiner Waffe an einer äußerst empfindlichen stelle, wie beispielsweise dem Hals. Oder Durschtößt mit der Klinge den Körper des Gegners. Ein bevorzugter Angriff von meuchlern.</Beschreibung>
-      <OffensivErfolg>Die Waffe Trift. Der  Wuchtschaden der Waffe wird auf 0 gesetzt (Wuchtschläge funktionieren). Wird Kopf, Brust oder Hüfte getroffen, wird der Schnittschaden verdoppelt. Stichschaden in der Selben höhe. Dafür wird der Wuchtschaden auf 0 reduziert.</OffensivErfolg>
+      <OffensivErfolg>Die Waffe Trift. Der  Wuchtschaden der Waffe wird auf 0 gesetzt (Wuchtschläge funktionieren). Wird Kopf, Brust oder Hüfte getroffen, wird der Schnittschaden verdoppelt.</OffensivErfolg>
       <Mod ModifierType="Malus">
         <ConcreteModValueType Type="Percent" Value="50"/>
 
@@ -987,6 +1004,9 @@ Ausserdem darf eine Waffe Plazieren Aktion die das selbe Ziel wie diese hat in d
           <VariableModValueType Value="X"/>
         </MultiplyModValueType>
       </Mod>
+      <Eigenschaften>
+        <Eigenschaft Name="Präzise"/>
+      </Eigenschaften>
     </Aktion>
 
     <Aktion Name="Präziser Angriff" Kosten="1" Typ="Unterstützend">
@@ -996,6 +1016,9 @@ Ausserdem darf eine Waffe Plazieren Aktion die das selbe Ziel wie diese hat in d
       <Mod ModifierType="Malus">
         <VariableModValueType Value="X"/>
       </Mod>
+      <Eigenschaften>
+        <Eigenschaft Name="Präzise"/>
+      </Eigenschaften>
     </Aktion>
 
     <Aktion Name="Erholen" Kosten="0" Typ="Sekundär">
@@ -1047,15 +1070,26 @@ Ausserdem darf eine Waffe Plazieren Aktion die das selbe Ziel wie diese hat in d
     <Aktion Kosten="3" Name="Ausweichen" Typ="Defensiv">
       <Beschreibung>In manschen situation ist es ratsam nicht mit der Waffe zu parieren, sondern dem Angriff aus dem Weg zughen.</Beschreibung>
     </Aktion>
-
+    <Eigenschaften>
+      <Eigenschaft Name="Präzise">
+        <Beschreibung>
+          Eine Aktion die besonders Präzises vorgehen verlangt.
+        </Beschreibung>
+      </Eigenschaft>
+      <Eigenschaft Name="Wuchtig">
+        <Beschreibung>
+          Eine Aktoin bei der es auf Brachiale gewalt ankommt.
+        </Beschreibung>
+      </Eigenschaft>
+    </Eigenschaften>
 
   </Aktionen>
 
   <Ausstattung xmlns="http://nota.org/schema/kampf/ausstattung">
     <Waffen>
-      <Waffe Name="Floret"  Distanzklasse="2"  >
+      <Nahkampfwaffe Name="Floret"  Distanzklasse="2"  >
         <Schaden>
-          <Stich  Schaden="W2+1"/>
+          <Schnitt  Schaden="2"/>
         </Schaden>
         <Eigenschaften>
           <Eigenschaft Name="Präzise"/>
@@ -1063,31 +1097,201 @@ Ausserdem darf eine Waffe Plazieren Aktion die das selbe Ziel wie diese hat in d
         <Talente>
           <talent:Talent Name="Fechtwaffen"/>
         </Talente>
-      </Waffe>
+      </Nahkampfwaffe>
+      <Nahkampfwaffe Name="Rapier"  Distanzklasse="2"  >
+        <Schaden>
+          <Wucht Schaden="1"/>
+          <Schnitt  Schaden="3"/>
+        </Schaden>
+        <Eigenschaften>
+          <Eigenschaft Name="Präzise"/>
+        </Eigenschaften>
+        <Talente>
+          <talent:Talent Name="Fechtwaffen"/>
+        </Talente>
+      </Nahkampfwaffe>
+      <Nahkampfwaffe Name="Schwert" Distanzklasse="2">
+        <Schaden>
+          <Wucht Schaden="3"/>
+          <Schnitt  Schaden="3"/>
+        </Schaden>
+        <Talente>
+          <talent:Talent Name="Schwerter"/>
+        </Talente>
+      </Nahkampfwaffe>
+      <Nahkampfwaffe Name="Axt" Distanzklasse="2">
+        <Schaden>
+          <Wucht Schaden="5"/>
+          <Schnitt  Schaden="4"/>
+        </Schaden>
+        <Talente>
+          <talent:Talent Name="Einhandäxte"/>
+        </Talente>
+      </Nahkampfwaffe>
+      <Nahkampfwaffe Name="Dolch" Distanzklasse="1">
+        <Schaden>
+          <Schnitt  Schaden="2"/>
+        </Schaden>
+        <Talente>
+          <talent:Talent Name="Dolch"/>
+        </Talente>
+      </Nahkampfwaffe>
+
+      <Nahkampfwaffe Name="Speer" Distanzklasse="3">
+        <Schaden>
+          <Wucht  Schaden="1"/>
+          <Schnitt  Schaden="2"/>
+        </Schaden>
+        <Talente>
+          <talent:Talent Name="Stangenwaffe"/>
+        </Talente>
+      </Nahkampfwaffe>
+
+      <Nahkampfwaffe Name="Gleve" Distanzklasse="3">
+        <Schaden>
+          <Wucht  Schaden="2"/>
+          <Schnitt  Schaden="2"/>
+        </Schaden>
+        <Talente>
+          <talent:Talent Name="Stangenwaffe"/>
+        </Talente>
+      </Nahkampfwaffe>
+
+
+      <Nahkampfwaffe Name="Keule" Distanzklasse="2">
+        <Schaden>
+          <Wucht Schaden="3"/>
+        </Schaden>
+        <Talente>
+          <talent:Talent Name="Stumpfe Hiebwaffen"/>
+        </Talente>
+      </Nahkampfwaffe>
+
+      <Nahkampfwaffe Name="Hammer" Distanzklasse="2">
+        <Schaden>
+          <Wucht Schaden="6"/>
+        </Schaden>
+        <Eigenschaften>
+          <Eigenschaft Name="Wuchtig"/>
+        </Eigenschaften>
+        <Talente>
+          <talent:Talent Name="Stumpfe Hiebwaffen"/>
+        </Talente>
+      </Nahkampfwaffe>
+
+      <Nahkampfwaffe Name="Anderthalbhänder" Distanzklasse="2">
+        <Schaden>
+          <Wucht Schaden="3"/>
+        </Schaden>
+        <Talente>
+          <talent:Talent Name="Anderthalbhänder"/>
+        </Talente>
+      </Nahkampfwaffe>
+
+      <Fernkampfwaffe Name="Kompositbogen">
+        <Schaden>
+          <Wucht Schaden="2"/>
+          <Schnitt Schaden="2"/>
+        </Schaden>
+        <Schusseigenschaften Magazingröße="1" Schussfrequenz="5"/>
+        <Reichweiten>
+          <Reichweite Distanz="Nahkampf" Schadensreduktion="2" Modifikator="-10"  />
+          <Reichweite Distanz="10" Modifikator="0"/>
+          <Reichweite Distanz="20" Modifikator="-2"/>
+          <Reichweite Distanz="40" Modifikator="-4"/>
+          <Reichweite Distanz="80" Modifikator="-6"/>
+          <Reichweite Distanz="120" Modifikator="-8"/>
+          <Reichweite Distanz="160" Modifikator="-10"/>
+          <Reichweite Distanz="200" Modifikator="-14"/>
+          <Reichweite Distanz="400" Modifikator="-20"/>
+          <Reichweite Distanz="500" Modifikator="-25"/>
+        </Reichweiten>
+        <Nachladezeit Wert="1" Einheit="S"/>
+        <Eigenschaften>
+          <Eigenschaft Name="Rüstungsbrechend"/>
+          <Eigenschaft Name="Tödlich"/>
+        </Eigenschaften>
+      </Fernkampfwaffe>
+
     </Waffen>
     <Rüstungen>
       <Rüstung Name="Lederharnisch" Erschwernis="1">
         <Schutz >
-          <Wucht Wert="1"/>
-          <Schnitt Wert="2"/>
-          <Stich Wert="1"/>
+          <Flexibilität Wert="3"/>
+          <Härte Wert="3"/>
         </Schutz>
         <Trefferzonen>
           <Brust>
-            <Schutz Von="2" Bis="19"/>
+            <Schutz Von="2" Bis="10"/>
           </Brust>
           <Bauch>
-            <Schutz Von="2" Bis="19"/>
+            <Schutz Von="1" Bis="9"/>
           </Bauch>
         </Trefferzonen>
       </Rüstung>
 
+      <Rüstung Name="MetallHarnich" Erschwernis="1">
+        <Schutz >
+          <Flexibilität Wert="1"/>
+          <Härte Wert="6"/>
+        </Schutz>
+        <Trefferzonen>
+          <Brust>
+            <Schutz Von="2" Bis="10"/>
+          </Brust>
+          <Bauch>
+            <Schutz Von="1" Bis="9"/>
+          </Bauch>
+        </Trefferzonen>
+      </Rüstung>
+
+      <Rüstung Name="Kettenhemd" Erschwernis="1">
+        <Schutz >
+          <Flexibilität Wert="2"/>
+          <Härte Wert="6"/>
+        </Schutz>
+        <Trefferzonen>
+          <Brust>
+            <Schutz Von="2" Bis="10"/>
+          </Brust>
+          <Bauch>
+            <Schutz Von="1" Bis="9"/>
+          </Bauch>
+        </Trefferzonen>
+      </Rüstung>
+
+      <Rüstung Name="Gambesong" Erschwernis="1">
+        <Schutz >
+          <Flexibilität Wert="4"/>
+          <Dämpfung Wert="4"/>
+        </Schutz>
+        <Trefferzonen>
+          <Brust>
+            <Schutz Von="2" Bis="10"/>
+          </Brust>
+          <Bauch>
+            <Schutz Von="1" Bis="9"/>
+          </Bauch>
+        </Trefferzonen>
+      </Rüstung>
+
+
     </Rüstungen>
     <Eigenschaften>
       <Eigenschaft Name="Präzise">
-        <Beschreibung>
-          Eine Waffe mit der Eigenschaft Präzise ist in der Lage die Rüstung des Gegners zu umgehen.
-        </Beschreibung>
+        <Beschreibung>Eine Waffe mit der Eigenschaft Präzise ist in der Lage die Rüstung des Gegners zu umgehen. Für alle Präzisen Manöver sind die Erschwernisse halbiert.</Beschreibung>
+      </Eigenschaft>
+      <Eigenschaft Name="Wuchtig">
+        <Beschreibung>Wuchtige waffen erleichtern es sie mit brachialer gewallt einzusetzen. Für alle Aktionen mit der Eigenschaft Wuchtig ist die Erschwerniss halbiert.</Beschreibung>
+      </Eigenschaft>
+      <Eigenschaft Name="Durchschalgend">
+        <Beschreibung>Der Wuchtschaden wird für die berechnungs des Schnittschadens verdoppelt.</Beschreibung>
+      </Eigenschaft>
+      <Eigenschaft Name="Rüstungsbrechend">
+        <Beschreibung>Der Wuchtschaden wird für die berechnungs des Schnittschadens Verdreifacht.</Beschreibung>
+      </Eigenschaft>
+      <Eigenschaft Name="Tödlich">
+        <Beschreibung>Schnittschaden der im bereich Kopf, Brust Hüfte verursacht wird, wird verdoppelt.</Beschreibung>
       </Eigenschaft>
     </Eigenschaften>
   </Ausstattung>
