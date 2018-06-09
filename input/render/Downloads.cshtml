@@ -1,0 +1,22 @@
+Title: Downloads
+Order: 1
+Disabled: false
+---
+<p>Zurzeit kann nur der Charakter bogen heruntergeladen werden. Es kann jedoch noch zu Kompatibilitätsproblemen bei der Ansicht außerhalb von Adobe Acrobat Reader kommen.
+</p>
+
+
+<ul>
+ @foreach(var doc in Documents["Misc"])
+    {
+      string title;
+      string url = ((FilePath)doc["RelativeFilePath"]).ToString();
+      @if(doc.ContainsKey("Title"))
+      {
+        title =(string) doc["Title"];
+      } else {
+          title = (string)((FilePath)doc["RelativeFilePath"]).FileName.ToString();
+      }
+      <li><a href="@url">@title</a></li>
+    }
+    </ul>

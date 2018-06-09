@@ -282,6 +282,17 @@ public static class Helper
 		return new Replace(@"(?<first>\p{Lu}{2})/(?<seccond>\p{Lu}{2})/(?<third>\p{Lu}{2})", @"${first}&#xfeff;/&#xfeff;${seccond}&#xfeff;/&#xfeff;${third}").IsRegex(System.Text.RegularExpressions.RegexOptions.None);
 	}
 
+	public static IModule AddUtf8ByteOrderMark(){
+		return new Execute((IDocument doc, IExecutionContext ctx)=>{
+			var memoryStream = new System.IO.MemoryStream();
+			var bom = System.Text.Encoding.UTF8.GetPreamble();
+			memoryStream.Write(bom,0,bom.Length);
+			using(var original = doc.GetStream())
+				original.CopyTo(memoryStream);
+			return new []{ ctx.GetDocument(doc, memoryStream)};
+		});
+	}
+
 }
 
 
@@ -516,8 +527,38 @@ Pipelines.Add("authorPages",
 
 Pipelines.Add("convertAIFiles",
 	ReadFiles(@"misc\documents\source\**\*.ai"),
+	Sidecar(Yaml()),
 	Meta("RelativeFilePath", ((DirectoryPath) @"downloads").CombineFile(((DirectoryPath) @"misc\documents\source").GetRelativePath( (FilePath)@doc["RelativeFilePath"]).ChangeExtension(".pdf")))
 );
+
+Pipelines.Add("TalentTable",
+	ReadFiles(@"misc\documents\source\TalentTabelle.xslt"),
+	Sidecar(Yaml()),
+		/// XSLT ///
+	If(@doc.Source.Extension==".xslt",
+		Meta("src", @doc.Source),
+		If(@doc.Metadata.ContainsKey("data"),
+			Content(System.IO.File.ReadAllText((string)@doc["data"])),
+			Xslt2(@doc["src"])
+		).ElseIf(!@doc.Metadata.ContainsKey("data"),
+			Trace("Faild data Metadata on"+ @doc.Source)
+		),
+		Helper.ChangeExtension(".csv"),
+		Helper.AddUtf8ByteOrderMark()
+	), 
+
+
+	Meta("RelativeFilePath", ((DirectoryPath) @"downloads").CombineFile(((DirectoryPath) @"misc\documents\source").GetRelativePath( (FilePath)@doc["RelativeFilePath"])))
+);
+
+Pipelines.Add("Misc",
+Documents("convertAIFiles"),
+	Concat(	
+		Documents("TalentTable")
+	),
+	Where(!@doc.Metadata.Bool("hide", false))
+);
+
 
 Pipelines.Add("beforeHtmlWrite",
 	Documents("htmlBooksPrepare"),
@@ -525,7 +566,7 @@ Pipelines.Add("beforeHtmlWrite",
 		Documents("htmlBootstrap")
 	),
 	Concat(	
-		Documents("convertAIFiles")
+		Documents("Misc")
 	),
 	Concat(	
 		Documents("MainMenue")
