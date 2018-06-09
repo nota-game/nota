@@ -24,7 +24,7 @@
 
 <xsl:template match="talent:Talente">
 <xsl:for-each select="talent:Talent[@Kategorie='Wissen']">
-
+<xsl:sort select="@Name" />
 :::Talent
 <xsl:apply-templates select="."/>
 :::
