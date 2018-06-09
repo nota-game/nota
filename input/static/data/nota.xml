@@ -519,6 +519,14 @@
       </Probe>
       <Beschreibung>Test</Beschreibung>
     </Talent>
+    <Talent Name="Beschatten" Komplexität="B" Kategorie="Körper">
+      <Probe>
+        <Mut/>
+        <Intuition/>
+        <Sympathie/>
+      </Probe>
+      <Beschreibung>Test</Beschreibung>
+    </Talent>
     <Talent Name="Gewichtstemmen" Komplexität="B" Kategorie="Körper">
       <Probe>
         <Stärke/>
@@ -575,7 +583,114 @@
       </Probe>
       <Beschreibung>Test</Beschreibung>
     </Talent>
+    <Talent Name="Fliegen" Komplexität="B" Kategorie="Körper">
+      <Probe>
+        <Mut/>
+        <Intuition/>
+        <Gewandtheit/>
+      </Probe>
+      <Beschreibung>TBD</Beschreibung>
+    </Talent>
+
+    <Talent Name="Gaukeleien" Komplexität="B" Kategorie="Körper">
+      <Probe>
+        <Mut/>
+        <Sympathie/>
+        <Präzision/>
+      </Probe>
+      <Beschreibung>TBD</Beschreibung>
+    </Talent>
+
+    <Talent Name="Reiten" Komplexität="B" Kategorie="Körper">
+      <Probe>
+        <Sympathie/>
+        <Gewandtheit/>
+        <Stärke/>
+      </Probe>
+      <Beschreibung>TBD</Beschreibung>
+    </Talent>
+
+    <Talent Name="Sich Verstecken" Komplexität="B" Kategorie="Körper">
+      <Probe>
+        <Mut/>
+        <Intuition/>
+        <Gewandtheit/>
+      </Probe>
+      <Beschreibung>TBD</Beschreibung>
+    </Talent>
+
+    <Talent Name="Singen" Komplexität="B" Kategorie="Körper">
+      <Probe>
+        <Intuition/>
+        <Sympathie/>
+        <Sympathie/>
+      </Probe>
+      <Beschreibung>TBD</Beschreibung>
+    </Talent>
+
+    <Talent Name="Skifahren" Komplexität="B" Kategorie="Körper">
+      <Probe>
+        <Gewandtheit/>
+        <Gewandtheit/>
+        <Konstitution/>
+      </Probe>
+      <Beschreibung>TBD</Beschreibung>
+    </Talent>
+
+    <Talent Name="Stimmen Imitieren" Komplexität="B" Kategorie="Körper">
+      <Probe>
+        <Klugheit/>
+        <Intuition/>
+        <Sympathie/>
+      </Probe>
+      <Beschreibung>TBD</Beschreibung>
+    </Talent>
+
+    <Talent Name="Taschendiebstahl" Komplexität="B" Kategorie="Körper">
+      <Probe>
+        <Mut/>
+        <Intuition/>
+        <Präzision/>
+      </Probe>
+      <Beschreibung>TBD</Beschreibung>
+    </Talent>
+
+    <Talent Name="Zechen" Komplexität="B" Kategorie="Körper">
+      <Probe>
+        <Intuition/>
+        <Konstitution/>
+        <Stärke/>
+      </Probe>
+      <Beschreibung>TBD</Beschreibung>
+    </Talent>
+    <Talent Name="Entfesseln" Komplexität="B" Kategorie="Körper">
+      <Probe>
+        <Präzision/>
+        <Gewandtheit/>
+        <Stärke/>
+      </Probe>
+      <Beschreibung>TBD</Beschreibung>
+    </Talent>
+
     <!--Geist BEGINN-->
+    <Talent Name="Fährtensuche" Komplexität="B" Kategorie="Geist">
+      <Probe>
+        <Klugheit/>
+        <Intuition/>
+        <Konstitution/>
+      </Probe>
+      <Beschreibung>TBD</Beschreibung>
+    </Talent>
+
+    <Talent Name="Orientierung" Komplexität="B" Kategorie="Geist">
+      <Probe>
+        <Klugheit/>
+        <Intuition/>
+        <Intuition/>
+      </Probe>
+      <Beschreibung>TBD</Beschreibung>
+    </Talent>
+
     <Talent Name="Selbstbeherchung" Komplexität="B" Kategorie="Geist">
       <Probe>
         <Mut/>
@@ -683,6 +798,60 @@
       </Probe>
       <Beschreibung>Test</Beschreibung>
     </Talent>
+
+    <Talent Name="Lehren" Komplexität="B" Kategorie="Gesellschaft">
+      <Probe>
+        <Klugheit/>
+        <Intuition/>
+        <Sympathie/>
+      </Probe>
+      <Beschreibung>TBD</Beschreibung>
+    </Talent>
+
+    <Talent Name="Schauspielerei" Komplexität="B" Kategorie="Gesellschaft">
+      <Probe>
+        <Mut/>
+        <Klugheit/>
+        <Sympathie/>
+      </Probe>
+      <Beschreibung>TBD</Beschreibung>
+    </Talent>
+
+    <Talent Name="Schriftlicher Ausdruck" Komplexität="B" Kategorie="Gesellschaft">
+      <Probe>
+        <Klugheit/>
+        <Intuition/>
+        <Intuition/>
+      </Probe>
+      <Beschreibung>TBD</Beschreibung>
+    </Talent>
+    <Talent Name="Etikette" Komplexität="B" Kategorie="Gesellschaft">
+      <Probe>
+        <Klugheit/>
+        <Intuition/>
+        <Sympathie/>
+      </Probe>
+      <Beschreibung>TBD</Beschreibung>
+    </Talent>
+    <Talent Name="Seelsorge" Komplexität="B" Kategorie="Gesellschaft">
+      <Probe>
+        <Intuition/>
+        <Sympathie/>
+        <Sympathie/>
+      </Probe>
+      <Beschreibung>TBD</Beschreibung>
+    </Talent>
+
+
+    <Talent Name="Sich Verkleiden" Komplexität="B" Kategorie="Gesellschaft">
+      <Probe>
+        <Mut/>
+        <Sympathie/>
+        <Gewandtheit/>
+      </Probe>
+      <Beschreibung>TBD</Beschreibung>
+    </Talent>
+
     <Talent Name="Tanzen" Komplexität="B" Kategorie="Gesellschaft">
       <Probe>
         <Intuition/>
@@ -692,6 +861,14 @@
       <Beschreibung>Test</Beschreibung>
     </Talent>
     <!--Wissen BEGINN-->
+    <Talent Name="Gassenwissen" Komplexität="B" Kategorie="Wissen">
+      <Probe>
+        <Klugheit/>
+        <Intuition/>
+        <Sympathie/>
+      </Probe>
+      <Beschreibung>TBD</Beschreibung>
+    </Talent>
     <Talent Name="Rechnen" Komplexität="B" Kategorie="Wissen">
       <Probe>
         <Klugheit/>
@@ -716,7 +893,7 @@
       </Probe>
       <Beschreibung>Test</Beschreibung>
     </Talent>
-    <Talent Name="Geograpie" Komplexität="B" Kategorie="Wissen">
+    <Talent Name="Geographie" Komplexität="B" Kategorie="Wissen">
       <Probe>
         <Klugheit/>
         <Klugheit/>
@@ -796,6 +973,193 @@
       </Probe>
       <Beschreibung>Test</Beschreibung>
     </Talent>
+    <Talent Name="Wettervorhersage" Komplexität="B" Kategorie="Wissen">
+      <Probe>
+        <Klugheit/>
+        <Intuition/>
+        <Intuition/>
+      </Probe>
+      <Beschreibung>TBD</Beschreibung>
+    </Talent>
+
+
+    <Talent Name="Anatomie" Komplexität="B" Kategorie="Wissen">
+      <Probe>
+        <Mut/>
+        <Klugheit/>
+        <Präzision/>
+      </Probe>
+      <Beschreibung>TBD</Beschreibung>
+    </Talent>
+
+    <Talent Name="Baukunst" Komplexität="B" Kategorie="Wissen">
+      <Probe>
+        <Klugheit/>
+        <Klugheit/>
+        <Präzision/>
+      </Probe>
+      <Beschreibung>TBD</Beschreibung>
+    </Talent>
+
+    <Talent Name="Geselchaftsspiel" Komplexität="B" Kategorie="Wissen">
+      <Probe>
+        <Klugheit/>
+        <Klugheit/>
+        <Intuition/>
+      </Probe>
+      <Beschreibung>TBD</Beschreibung>
+    </Talent>
+
+    <Talent Name="Geschichtswissen" Komplexität="B" Kategorie="Wissen">
+      <Probe>
+        <Klugheit/>
+        <Klugheit/>
+        <Intuition/>
+      </Probe>
+      <Beschreibung>TBD</Beschreibung>
+    </Talent>
+
+    <Talent Name="Mystik" Komplexität="B" Kategorie="Wissen">
+      <Probe>
+        <Klugheit/>
+        <Klugheit/>
+        <Intuition/>
+      </Probe>
+      <Beschreibung>TBD</Beschreibung>
+    </Talent>
+    <Talent Name="Religion" Komplexität="B" Kategorie="Wissen">
+      <Probe>
+        <Klugheit/>
+        <Klugheit/>
+        <Intuition/>
+      </Probe>
+      <Beschreibung>TBD</Beschreibung>
+    </Talent>
+
+    <Talent Name="Heraldik" Komplexität="B" Kategorie="Wissen">
+      <Probe>
+        <Klugheit/>
+        <Klugheit/>
+        <Präzision/>
+      </Probe>
+      <Beschreibung>TBD</Beschreibung>
+    </Talent>
+
+    <Talent Name="Hüttenkunde" Komplexität="B" Kategorie="Wissen">
+      <Probe>
+        <Klugheit/>
+        <Intuition/>
+        <Konstitution/>
+      </Probe>
+      <Beschreibung>TBD</Beschreibung>
+    </Talent>
+
+    <Talent Name="Kriegskunst" Komplexität="B" Kategorie="Wissen">
+      <Probe>
+        <Mut/>
+        <Klugheit/>
+        <Sympathie/>
+      </Probe>
+      <Beschreibung>TBD</Beschreibung>
+    </Talent>
+
+    <Talent Name="Kryptographie" Komplexität="B" Kategorie="Wissen">
+      <Probe>
+        <Klugheit/>
+        <Klugheit/>
+        <Intuition/>
+      </Probe>
+      <Beschreibung>TBD</Beschreibung>
+    </Talent>
+
+    <Talent Name="Magiekunde" Komplexität="B" Kategorie="Wissen">
+      <Probe>
+        <Klugheit/>
+        <Klugheit/>
+        <Intuition/>
+      </Probe>
+      <Beschreibung>TBD</Beschreibung>
+    </Talent>
+
+    <Talent Name="Mechanik" Komplexität="B" Kategorie="Wissen">
+      <Probe>
+        <Klugheit/>
+        <Klugheit/>
+        <Präzision/>
+      </Probe>
+      <Beschreibung>TBD</Beschreibung>
+    </Talent>
+
+    <Talent Name="Philosophie" Komplexität="B" Kategorie="Wissen">
+      <Probe>
+        <Klugheit/>
+        <Klugheit/>
+        <Intuition/>
+      </Probe>
+      <Beschreibung>TBD</Beschreibung>
+    </Talent>
+
+    <Talent Name="Rechtskunde" Komplexität="B" Kategorie="Wissen">
+      <Probe>
+        <Klugheit/>
+        <Klugheit/>
+        <Intuition/>
+      </Probe>
+      <Beschreibung>TBD</Beschreibung>
+    </Talent>
+
+    <Talent Name="Schätzen" Komplexität="B" Kategorie="Wissen">
+      <Probe>
+        <Klugheit/>
+        <Intuition/>
+        <Intuition/>
+      </Probe>
+      <Beschreibung>TBD</Beschreibung>
+    </Talent>
+
+    <Talent Name="Sprachenkunde" Komplexität="B" Kategorie="Wissen">
+      <Probe>
+        <Klugheit/>
+        <Klugheit/>
+        <Intuition/>
+      </Probe>
+      <Beschreibung>TBD</Beschreibung>
+    </Talent>
+
+    <Talent Name="Staatskunst" Komplexität="B" Kategorie="Wissen">
+      <Probe>
+        <Klugheit/>
+        <Intuition/>
+        <Sympathie/>
+      </Probe>
+      <Beschreibung>TBD</Beschreibung>
+    </Talent>
+
+    <Talent Name="Sternkunde" Komplexität="B" Kategorie="Wissen">
+      <Probe>
+        <Klugheit/>
+        <Klugheit/>
+        <Intuition/>
+      </Probe>
+      <Beschreibung>TBD</Beschreibung>
+    </Talent>
+    <Talent Name="Giftkunde" Komplexität="B" Kategorie="Wissen">
+      <Probe>
+        <Mut/>
+        <Klugheit/>
+        <Intuition/>
+      </Probe>
+      <Beschreibung>TBD</Beschreibung>
+    </Talent>
+    <Talent Name="Krankheitskunde" Komplexität="B" Kategorie="Wissen">
+      <Probe>
+        <Mut/>
+        <Klugheit/>
+        <Sympathie/>
+      </Probe>
+      <Beschreibung>TBD</Beschreibung>
+    </Talent>
+
     <!--Handwerk BEGINN-->
     <Talent Name="Alchemie" Komplexität="B" Kategorie="Handwerk">
       <Probe>
@@ -832,6 +1196,458 @@
         <Ableitung Name="Backen" Anzahl="2"/>
       </Ableitungen>
     </Talent>
+
+    <Talent Name="Abrichten" Komplexität="B" Kategorie="Handwerk">
+      <Probe>
+        <Mut/>
+        <Intuition/>
+        <Sympathie/>
+      </Probe>
+      <Beschreibung>TBD</Beschreibung>
+    </Talent>
+
+    <Talent Name="Ackerbau" Komplexität="B" Kategorie="Handwerk">
+      <Probe>
+        <Intuition/>
+        <Präzision/>
+        <Konstitution/>
+      </Probe>
+      <Beschreibung>TBD</Beschreibung>
+    </Talent>
+
+    <Talent Name="Alchimie" Komplexität="B" Kategorie="Handwerk">
+      <Probe>
+        <Mut/>
+        <Klugheit/>
+        <Präzision/>
+      </Probe>
+      <Beschreibung>TBD</Beschreibung>
+    </Talent>
+
+    <Talent Name="Bauer" Komplexität="B" Kategorie="Handwerk">
+      <Probe>
+        <Klugheit/>
+        <Präzision/>
+        <Stärke/>
+      </Probe>
+      <Beschreibung>TBD</Beschreibung>
+    </Talent>
+
+    <Talent Name="Bergbau" Komplexität="B" Kategorie="Handwerk">
+      <Probe>
+        <Intuition/>
+        <Konstitution/>
+        <Stärke/>
+      </Probe>
+      <Beschreibung>TBD</Beschreibung>
+    </Talent>
+
+    <Talent Name="Bogenbau" Komplexität="B" Kategorie="Handwerk">
+      <Probe>
+        <Klugheit/>
+        <Intuition/>
+        <Präzision/>
+      </Probe>
+      <Beschreibung>TBD</Beschreibung>
+    </Talent>
+
+    <Talent Name="Pfeilmacher" Komplexität="B" Kategorie="Handwerk">
+      <Probe>
+        <Klugheit/>
+        <Intuition/>
+        <Präzision/>
+      </Probe>
+      <Beschreibung>TBD</Beschreibung>
+    </Talent>
+
+    <Talent Name="Boote Fahren" Komplexität="B" Kategorie="Handwerk">
+      <Probe>
+        <Gewandtheit/>
+        <Konstitution/>
+        <Stärke/>
+      </Probe>
+      <Beschreibung>TBD</Beschreibung>
+    </Talent>
+
+    <Talent Name="Drucker" Komplexität="B" Kategorie="Handwerk">
+      <Probe>
+        <Klugheit/>
+        <Präzision/>
+        <Stärke/>
+      </Probe>
+      <Beschreibung>TBD</Beschreibung>
+    </Talent>
+
+    <Talent Name="Fahrzeuge Lenken" Komplexität="B" Kategorie="Handwerk">
+      <Probe>
+        <Intuition/>
+        <Sympathie/>
+        <Präzision/>
+      </Probe>
+      <Beschreibung>TBD</Beschreibung>
+    </Talent>
+
+    <Talent Name="Falschspiel" Komplexität="B" Kategorie="Handwerk">
+      <Probe>
+        <Mut/>
+        <Sympathie/>
+        <Präzision/>
+      </Probe>
+      <Beschreibung>TBD</Beschreibung>
+    </Talent>
+
+    <Talent Name="Feinmechanik" Komplexität="B" Kategorie="Handwerk">
+      <Probe>
+        <Klugheit/>
+        <Präzision/>
+        <Präzision/>
+      </Probe>
+      <Beschreibung>TBD</Beschreibung>
+    </Talent>
+
+    <Talent Name="Feuersteinbearbeitung" Komplexität="B" Kategorie="Handwerk">
+      <Probe>
+        <Klugheit/>
+        <Präzision/>
+        <Präzision/>
+      </Probe>
+      <Beschreibung>TBD</Beschreibung>
+    </Talent>
+
+    <Talent Name="Fleischer" Komplexität="B" Kategorie="Handwerk">
+      <Probe>
+        <Klugheit/>
+        <Präzision/>
+        <Stärke/>
+      </Probe>
+      <Beschreibung>TBD</Beschreibung>
+    </Talent>
+
+    <Talent Name="Gerber" Komplexität="B" Kategorie="Handwerk">
+      <Probe>
+        <Klugheit/>
+        <Präzision/>
+        <Konstitution/>
+      </Probe>
+      <Beschreibung>TBD</Beschreibung>
+      <Ableitungen>
+        <Ableitung Name="Kürschner" Anzahl="2"/>
+      </Ableitungen>
+    </Talent>
+
+    <Talent Name="Kürschner" Komplexität="B" Kategorie="Handwerk">
+      <Probe>
+        <Klugheit/>
+        <Präzision/>
+        <Konstitution/>
+      </Probe>
+      <Beschreibung>TBD</Beschreibung>
+      <Ableitungen>
+        <Ableitung Name="Gerber" Anzahl="2"/>
+      </Ableitungen>
+    </Talent>
+
+    <Talent Name="Glaskunst" Komplexität="B" Kategorie="Handwerk">
+      <Probe>
+        <Präzision/>
+        <Präzision/>
+        <Konstitution/>
+      </Probe>
+      <Beschreibung>TBD</Beschreibung>
+    </Talent>
+
+    <Talent Name="Schmieden" Komplexität="B" Kategorie="Handwerk">
+      <Probe>
+        <Präzision/>
+        <Konstitution/>
+        <Stärke/>
+      </Probe>
+      <Beschreibung>TBD</Beschreibung>
+    </Talent>
+
+    <Talent Name="Handel" Komplexität="B" Kategorie="Handwerk">
+      <Probe>
+        <Klugheit/>
+        <Intuition/>
+        <Sympathie/>
+      </Probe>
+      <Beschreibung>TBD</Beschreibung>
+    </Talent>
+
+    <Talent Name="Hauswirtschaft" Komplexität="B" Kategorie="Handwerk">
+      <Probe>
+        <Intuition/>
+        <Sympathie/>
+        <Präzision/>
+      </Probe>
+      <Beschreibung>TBD</Beschreibung>
+    </Talent>
+
+
+
+    <Talent Name="Wundenversorgung" Komplexität="B" Kategorie="Handwerk">
+      <Probe>
+        <Klugheit/>
+        <Sympathie/>
+        <Präzision/>
+      </Probe>
+      <Beschreibung>TBD</Beschreibung>
+    </Talent>
+
+    <Talent Name="Holzbearbeitung" Komplexität="B" Kategorie="Handwerk">
+      <Probe>
+        <Klugheit/>
+        <Präzision/>
+        <Stärke/>
+      </Probe>
+      <Beschreibung>TBD</Beschreibung>
+    </Talent>
+
+    <Talent Name="Instrumentenbauer" Komplexität="B" Kategorie="Handwerk">
+      <Probe>
+        <Klugheit/>
+        <Intuition/>
+        <Präzision/>
+      </Probe>
+      <Beschreibung>TBD</Beschreibung>
+    </Talent>
+
+    <Talent Name="Kartographie" Komplexität="B" Kategorie="Handwerk">
+      <Probe>
+        <Klugheit/>
+        <Klugheit/>
+        <Präzision/>
+      </Probe>
+      <Beschreibung>TBD</Beschreibung>
+    </Talent>
+
+
+    <Talent Name="Lederarbeiten" Komplexität="B" Kategorie="Handwerk">
+      <Probe>
+        <Klugheit/>
+        <Präzision/>
+        <Präzision/>
+      </Probe>
+      <Beschreibung>TBD</Beschreibung>
+    </Talent>
+
+    <Talent Name="Zeichnen" Komplexität="B" Kategorie="Handwerk">
+      <Probe>
+        <Klugheit/>
+        <Intuition/>
+        <Präzision/>
+      </Probe>
+      <Beschreibung>TBD</Beschreibung>
+    </Talent>
+    <Talent Name="Malen" Komplexität="B" Kategorie="Handwerk">
+      <Probe>
+        <Intuition/>
+        <Intuition/>
+        <Präzision/>
+      </Probe>
+      <Beschreibung>TBD</Beschreibung>
+    </Talent>
+
+    <Talent Name="Maurer" Komplexität="B" Kategorie="Handwerk">
+      <Probe>
+        <Präzision/>
+        <Gewandtheit/>
+        <Stärke/>
+      </Probe>
+      <Beschreibung>TBD</Beschreibung>
+    </Talent>
+
+    <Talent Name="Metallguss" Komplexität="B" Kategorie="Handwerk">
+      <Probe>
+        <Klugheit/>
+        <Präzision/>
+        <Stärke/>
+      </Probe>
+      <Beschreibung>TBD</Beschreibung>
+    </Talent>
+
+    <Talent Name="Musizieren" Komplexität="B" Kategorie="Handwerk">
+      <Probe>
+        <Intuition/>
+        <Sympathie/>
+        <Präzision/>
+      </Probe>
+      <Beschreibung>TBD</Beschreibung>
+    </Talent>
+
+    <Talent Name="Schlösser Knacken" Komplexität="B" Kategorie="Handwerk">
+      <Probe>
+        <Intuition/>
+        <Präzision/>
+        <Präzision/>
+      </Probe>
+      <Beschreibung>TBD</Beschreibung>
+    </Talent>
+
+    <Talent Name="Schnaps brennen" Komplexität="B" Kategorie="Handwerk">
+      <Probe>
+        <Klugheit/>
+        <Intuition/>
+        <Präzision/>
+      </Probe>
+      <Beschreibung>TBD</Beschreibung>
+    </Talent>
+
+    <Talent Name="Schneidern" Komplexität="B" Kategorie="Handwerk">
+      <Probe>
+        <Klugheit/>
+        <Präzision/>
+        <Präzision/>
+      </Probe>
+      <Beschreibung>TBD</Beschreibung>
+    </Talent>
+
+    <Talent Name="Seefahrt" Komplexität="B" Kategorie="Handwerk">
+      <Probe>
+        <Präzision/>
+        <Gewandtheit/>
+        <Stärke/>
+      </Probe>
+      <Beschreibung>TBD</Beschreibung>
+    </Talent>
+
+    <Talent Name="Seiler" Komplexität="B" Kategorie="Handwerk">
+      <Probe>
+        <Präzision/>
+        <Präzision/>
+        <Stärke/>
+      </Probe>
+      <Beschreibung>TBD</Beschreibung>
+    </Talent>
+
+    <Talent Name="Steinmetz" Komplexität="B" Kategorie="Handwerk">
+      <Probe>
+        <Präzision/>
+        <Präzision/>
+        <Stärke/>
+      </Probe>
+      <Beschreibung>TBD</Beschreibung>
+    </Talent>
+
+    <Talent Name="Juwelier" Komplexität="B" Kategorie="Handwerk">
+      <Probe>
+        <Intuition/>
+        <Präzision/>
+        <Präzision/>
+      </Probe>
+      <Beschreibung>TBD</Beschreibung>
+    </Talent>
+
+    <Talent Name="Stellmacher" Komplexität="B" Kategorie="Handwerk">
+      <Probe>
+        <Klugheit/>
+        <Präzision/>
+        <Stärke/>
+      </Probe>
+      <Beschreibung>TBD</Beschreibung>
+    </Talent>
+
+    <Talent Name="Stoffe Färben" Komplexität="B" Kategorie="Handwerk">
+      <Probe>
+        <Klugheit/>
+        <Präzision/>
+        <Stärke/>
+      </Probe>
+      <Beschreibung>TBD</Beschreibung>
+    </Talent>
+
+    <Talent Name="Tätowieren" Komplexität="B" Kategorie="Handwerk">
+      <Probe>
+        <Intuition/>
+        <Präzision/>
+        <Präzision/>
+      </Probe>
+      <Beschreibung>TBD</Beschreibung>
+    </Talent>
+
+    <Talent Name="Töpfern" Komplexität="B" Kategorie="Handwerk">
+      <Probe>
+        <Klugheit/>
+        <Präzision/>
+        <Präzision/>
+      </Probe>
+      <Beschreibung>TBD</Beschreibung>
+    </Talent>
+
+    <Talent Name="Viehzucht" Komplexität="B" Kategorie="Handwerk">
+      <Probe>
+        <Klugheit/>
+        <Intuition/>
+        <Stärke/>
+      </Probe>
+      <Beschreibung>TBD</Beschreibung>
+    </Talent>
+
+    <Talent Name="Webkunst" Komplexität="B" Kategorie="Handwerk">
+      <Probe>
+        <Präzision/>
+        <Präzision/>
+        <Stärke/>
+      </Probe>
+      <Beschreibung>TBD</Beschreibung>
+    </Talent>
+
+    <Talent Name="Winzer" Komplexität="B" Kategorie="Handwerk">
+      <Probe>
+        <Klugheit/>
+        <Präzision/>
+        <Stärke/>
+      </Probe>
+      <Beschreibung>TBD</Beschreibung>
+    </Talent>
+
+    <Talent Name="Zimmermann" Komplexität="B" Kategorie="Handwerk">
+      <Probe>
+        <Klugheit/>
+        <Präzision/>
+        <Stärke/>
+      </Probe>
+      <Beschreibung>TBD</Beschreibung>
+    </Talent>
+    <Talent Name="Fallenstellen" Komplexität="B" Kategorie="Handwerk">
+      <Probe>
+        <Klugheit/>
+        <Präzision/>
+        <Stärke/>
+      </Probe>
+      <Beschreibung>TBD</Beschreibung>
+    </Talent>
+
+    <Talent Name="Fesseln" Komplexität="B" Kategorie="Handwerk">
+      <Probe>
+        <Präzision/>
+        <Gewandtheit/>
+        <Stärke/>
+      </Probe>
+      <Beschreibung>TBD</Beschreibung>
+    </Talent>
+    <Talent Name="Fischen" Komplexität="B" Kategorie="Handwerk">
+      <Probe>
+        <Intuition/>
+        <Präzision/>
+        <Stärke/>
+      </Probe>
+      <Beschreibung>TBD</Beschreibung>
+    </Talent>
+    <Talent Name="Wildnisleben" Komplexität="B" Kategorie="Handwerk">
+      <Probe>
+        <Intuition/>
+        <Gewandtheit/>
+        <Konstitution/>
+      </Probe>
+      <Beschreibung>TBD</Beschreibung>
+    </Talent>
+    
+    
+
+
+    
+
   </Talente>
   <Fertigkeiten
     xmlns="http://nota.org/schema/fertigkeit">
