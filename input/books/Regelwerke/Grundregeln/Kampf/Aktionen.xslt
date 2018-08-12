@@ -18,12 +18,18 @@
 
 # Aktionen
 
-<xsl:apply-templates select="aktionen:Aktion"/>
+<xsl:for-each select="aktionen:Aktion">
+<xsl:sort select="@Name" />
+:::Action
+
+<xsl:apply-templates select="."/>
+:::
+
+</xsl:for-each>
 </xsl:template>
 
   <xsl:template match="aktionen:Aktion" >
 
-:::Action
 
 ## <xsl:value-of select="@Name"/>  
 
@@ -82,8 +88,6 @@
 <xsl:if test="./aktionen:Eigenschaften">
 **Schlüsselwörter**: _<xsl:for-each select="./aktionen:Eigenschaften/*" ><xsl:value-of select="@Name"/></xsl:for-each>_
 </xsl:if>
-
-:::
 </xsl:template>
 
 <xsl:template match="aktionen:ConcreteModValueType"><xsl:value-of select="@Value"/><xsl:if test="@Type='Percent'">%</xsl:if></xsl:template>

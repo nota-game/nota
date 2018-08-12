@@ -43,8 +43,19 @@
                 </complexType>
               </element>
             </sequence>
-             <attributeGroup ref="misc:NamedElement"/>
+            <attributeGroup ref="misc:NamedElement"/>
             <attribute name="Kosten" type="int" use="required"/>
+            <attribute name="Aktionen"  use="required">
+              <simpleType>
+                <restriction base="float">
+                  <enumeration value="0"/>
+                  <enumeration value="0.5"/>
+                  <enumeration value="1"/>
+                  <enumeration value="1.5"/>
+                  <enumeration value="2"/>
+                </restriction>
+              </simpleType>
+            </attribute>
             <attribute name="Typ" type="aktionen:ActionType" use="required"/>
           </complexType>
         </element>
@@ -71,7 +82,7 @@
       <attributeGroup ref="misc:NamedElement"/>
     </complexType>
   </element>
-  
+
   <element name="ConcreteModValueType">
     <complexType>
       <attribute name="Value" type="int" />
@@ -127,9 +138,7 @@
     <restriction base="string">
       <enumeration value="Offensiv"/>
       <enumeration value="Defensiv"/>
-      <enumeration value="Ausgeglieschen"/>
       <enumeration value="Unterstützend"/>
-      <enumeration value="Frei"/>
       <enumeration value="Sekundär"/>
     </restriction>
   </simpleType>

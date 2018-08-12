@@ -1,0 +1,40 @@
+<?xpacket begin='' id=''?>
+<x:xmpmeta xmlns:x='adobe:ns:meta/'>
+  <rdf:RDF xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#'>
+    <rdf:Description rdf:about=''
+		     xmlns:xapRights='http://ns.adobe.com/xap/1.0/rights/'>
+      <xapRights:Marked>True</xapRights:Marked>
+    </rdf:Description>
+    <rdf:Description rdf:about=''
+		     xmlns:xapRights='http://ns.adobe.com/xap/1.0/rights/'
+		     >
+      <xapRights:UsageTerms>
+	<rdf:Alt>
+	  <rdf:li xml:lang='x-default' ><![CDATA[Quivira kann zu jedem Zweck frei verwendet werden, auch kommerziell. Sie können Quivira kopieren und weiter­geben, aber bitte ohne Veränderungen und ohne zu behaupten, selbst der Autor zu sein. Falls Sie Quivira weiter­geben, ist es nicht nötig, eine Extra-Datei mit Namens- oder Quellen­angabe hinzu­zufügen, da diese Informationen in der OTF-Datei selbst enthalten sind. Ich wäre allerdings sehr dankbar für einen Link, sofern dieser sinnvoll gesetzt werden kann.
+Es gibt Verwendungs­zwecke, für die Quivira eventuell nicht die beste Wahl ist:
+Verwenden Sie Quivira nicht auf Websites. Ich erlaube es zwar, aber bedenken Sie, daß die meisten Besucher Quivira auf ihren Rechnern nicht installiert haben und daß ihre Browser die Schriftart deshalb nicht benutzen werden, auch wenn Sie dies explizit angeben. Es gibt allerdings die Möglich­keit, Schrift­arten in Websites ein­zubetten.
+Verwenden Sie Quivira nicht für Schriften, die komplexes Rendering erfordern, auch wenn die erforderlichen Zeichen enthalten sind, ohne das Ergebnis ausgiebig zu testen. Manche kombinierenden Zeichen werden korrekt dargestellt, aber generell ist dies eher nicht zu erwarten (siehe Kombinierende Zeichen).
+Wenn Sie so viele Unicode-Blöcke wie möglich abdecken wollen, empfiehlt sich eine umfang­reichere Schriftart oder noch besser mehrere Schift­arten. Code2000¹ ist die umfang­reichste verfügbare Unicode-Schrftart, und Everson Mono ist eine sehr schöne Unicode-Schriftart mit fester Zeichen­breite.
+Quivira ist nicht unbedingt die erste Wahl für jede Sprache. Verschiedene Sprachen haben oft unter­schiedliche typo­graphische Konven­tionen. Beispiels­weise soll Ļ in einigen Sprachen wie ein L mit Cedille (¸) aussehen, in anderen dagegen wie ein L mit einem Komma darunter. Quivira hat jedes Zeichen nur in einer Variante, so daß für manche Sprachen andere Schrift­arten passender erscheinen.
+Ihr verarbeitendes Programm muß nicht unbedingt Unicode unterstützen, damit Sie Quivira verwenden können, aber in einer nicht Unicode-fähigen Umgebung werden Sie höchst­wahr­scheinlich nicht alle Zeichen nutzen können.
+Wenn Sie Quivira für ein Dokument verwenden und dieses verschicken, bedenken Sie, daß der Empfänger ebenfalls Quivira installiert haben muß, besonders wenn Sie Zeichen aus der Private Use Area verwenden. Sie können Quivira in ein PDF einbetten, die OTF-Datei mitschicken oder einen Link zur Download-Seite einfügen.
+]]></rdf:li>
+	  </rdf:Alt>
+      </xapRights:UsageTerms>
+    </rdf:Description>
+    <rdf:Description rdf:about='' xmlns:dc='http://purl.org/dc/elements/1.1/'>
+       <dc:title>
+        <rdf:Alt>
+          <rdf:li xml:lang='x-default'>Quivira</rdf:li>
+      </rdf:Alt>
+      </dc:title>
+      <dc:creator>
+        <rdf:Seq>
+          <rdf:li>Typeface (c) Quivira-font.com. 2005. All Rights Reserved</rdf:li>
+        </rdf:Seq>
+      </dc:creator>
+    </rdf:Description>
+    
+  </rdf:RDF>
+</x:xmpmeta>
+<?xpacket end='r'?>
