@@ -551,7 +551,8 @@ Pipelines.Add("GenerateActionCards",
 		.WithDocumentsAsWorkingDirectory(Documents("htmlStatic"),
 			Concat(ReadFiles(@"misc\**\*.*"),
 				Helper.FixXmlNamespace())),
-	Meta("RelativeFilePath", ((DirectoryPath) @"downloads").CombineFile(((DirectoryPath) @"misc\documents\source").GetRelativePath( (FilePath)"ActionCards.pdf")))
+	Meta("RelativeFilePath", ((DirectoryPath) @"downloads").CombineFile(((DirectoryPath) @"misc\documents\source").GetRelativePath( (FilePath)"ActionCards.pdf"))),
+	Meta("Title", "Aktions Karten")
 );
 
 
