@@ -1737,6 +1737,10 @@
       <Mod ModifierType="Malus">
         <VariableModValueType Value="X"/>
       </Mod>
+      <Eigenschaften>
+        <Eigenschaft Name="Präzise"/>
+      </Eigenschaften>
+
     </Aktion>
 
     <Aktion Name="Wuchtiger Angriff" Kosten="2" Aktionen="1" Typ="Offensiv">

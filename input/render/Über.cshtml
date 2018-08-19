@@ -54,8 +54,21 @@ Andere Resourcen wie z.B. Bilder können anderen Bestimmungen unterliegen.
       }
       @if(doc.ContainsKey("Creator"))
       {
+        var c = doc["Creator"];
+        if(c is String[] ){
+          var stringArray  =(String[])c;
+        creator =String.Join(", ", stringArray);
+
+        } else if( c is string){
+          var str = (String)c;
+        creator =str;
+
+        } else if(c is object[] ){
+          var objectArray  =(object[])c;
+        creator =String.Join(", ", objectArray.Select(x=>x.ToString()).ToArray());
+
+        }
         hasMetadata = true;
-        creator =(string) doc["Creator"];
       }      
       @if(@doc.ContainsKey("Copyright"))
       {
@@ -116,7 +129,9 @@ Andere Resourcen wie z.B. Bilder können anderen Bestimmungen unterliegen.
             @creator
           </td>
           <td>
+            <pre>
              @( Html.Raw(copyright))
+             </pre>
           </td>
                 
         </tr>

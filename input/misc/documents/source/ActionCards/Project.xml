@@ -1,6 +1,6 @@
 <!-- This sample uses nota.xml from https://github.com/nota-game/nota -->
 <!-- If you need xml namespaces in the xpath querys, you need to define those in the project root-->
-<Project xmlns="https://raw.githubusercontent.com/LokiMidgard/PdfGenerator/master/PdfGenerator/XMLImport.xsd"
+<Project xmlns="https://raw.githubusercontent.com/LokiMidgard/PdfCardGenerator/master/PdfCardGenerator/XMLImport.xsd"
            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xmlns:nota='http://nota.org/schema/nota'
   xmlns:misc='http://nota.org/schema/misc'
@@ -12,30 +12,30 @@
   xmlns:besonderheit="http://nota.org/schema/besonderheit"
   xmlns:aktionen="http://nota.org/schema/kampf/aktionen"
   xmlns:ausstattung="http://nota.org/schema/kampf/ausstattung"
-  xsi:schemaLocation="https://raw.githubusercontent.com/LokiMidgard/PdfGenerator/master/PdfGenerator/XMLImport.xsd ../../../../../../PDFGenerator/PDFGenerator/XMLImport.xsd" 
+  xsi:schemaLocation="https://raw.githubusercontent.com/LokiMidgard/PdfCardGenerator/master/PdfCardGenerator/XMLImport.xsd ../../../../../../PDFGenerator/PDFCardGenerator/XMLImport.xsd" 
   DefaultLanguage="de-DE">
   <Fonts UseSystemFallback="false" DefaultFont="CMU Serif">
     <Font  FamilyName="CMU Serif" >
-      <Regular Path="..\..\..\..\static\fonts\CMU Serif\cmunrm.ttf" />
-      <BoldItalic Path="..\..\..\..\static\fonts\CMU Serif\cmunbi.ttf"/>
-      <Bold Path="..\..\..\..\static\fonts\CMU Serif\cmunbx.ttf"/>
-      <Italic Path="..\..\..\..\static\fonts\CMU Serif\cmunti.ttf" />
+      <Regular Path="fonts/CMU Serif/cmunrm.ttf" />
+      <BoldItalic Path="fonts/CMU Serif/cmunbi.ttf"/>
+      <Bold Path="fonts/CMU Serif/cmunbx.ttf"/>
+      <Italic Path="fonts/CMU Serif/cmunti.ttf" />
     </Font>
 
     <Font FamilyName="Code200365k">
-      <Regular Path="..\..\..\..\static\fonts\Code2003\Code200365k.ttf" />
+      <Regular Path="fonts/Code2003/Code200365k.ttf" />
     </Font>
     <Font FamilyName="BabelStone Roman">
-      <Regular Path="..\..\..\..\static\fonts\BabelStone\BabelStoneRoman.ttf" />
+      <Regular Path="fonts/BabelStone/BabelStoneRoman.ttf" />
     </Font>
 
      <Font FamilyName="Montreal">
-      <Regular Path="..\..\..\..\static\fonts\Montreal\Montreal-Regular.ttf" />
-      <Bold Path="..\..\..\..\static\fonts\Montreal\Montreal-Bold.ttf" />
+      <Regular Path="fonts/Montreal/Montreal-Regular.ttf" />
+      <Bold Path="fonts/Montreal/Montreal-Bold.ttf" />
     </Font>
 
     <Font FamilyName="Quivira">
-      <Regular Path="..\..\..\..\static\fonts\Quivira\Quivira.otf" />
+      <Regular Path="fonts/Quivira/Quivira.otf" />
     </Font> 
   </Fonts>
   <FallbackFonts>
@@ -44,9 +44,9 @@
     <Font FamilyName="Quivira" />
   </FallbackFonts>
   <Templates>
-    <Template Context="//nota:Daten/aktionen:Aktionen/aktionen:Aktion" Width="64.9 mm" Height="97 mm" Xslt="PreProcess.xslt">
+    <Template Context="//nota:Daten/aktionen:Aktionen/aktionen:Aktion" Width="64.9 mm" Height="97 mm" Xslt="misc/documents/source/ActionCards/PreProcess.xslt">
     <!-- Title-->
-      <Text left="10 mm" top="78 mm" width="61 mm" height="5 mm" rotation="-90" >
+      <Text left="9.65 mm" top="76.54 mm" width="59.61 mm" height="5.76 mm" rotation="-90" VerticalAlignment="Center">
         <Paragraph  Alignment="Far" EmSize="12" FontStyle="Bold" FontName="Montreal">
           <TextRun>
             <TextPath>Original/aktionen:Aktion/@Name</TextPath>
@@ -54,46 +54,46 @@
         </Paragraph>
       </Text>
   <!-- Background-->
-      <Image left="0 mm" top="0 mm" width="64.9 mm" height="97 mm" ImageLocation="Background-Attack.png" IsVisiblePath="Original/aktionen:Aktion/@Typ='Offensiv'" ZPosition="-2" />
-      <Image left="0 mm" top="0 mm" width="64.9 mm" height="97 mm" ImageLocation="Background-Defend.png" IsVisiblePath="Original/aktionen:Aktion/@Typ='Defensiv'" ZPosition="-2" />
-      <Image left="0 mm" top="0 mm" width="64.9 mm" height="97 mm" ImageLocation="Background-Seccondär.png" IsVisiblePath="Original/aktionen:Aktion/@Typ='Sekundär'" ZPosition="-2" />
-      <Image left="0 mm" top="0 mm" width="64.9 mm" height="97 mm" ImageLocation="Background-Unterstützend.png" IsVisiblePath="Original/aktionen:Aktion/@Typ='Unterstützend'" ZPosition="-2" />
+      <Image left="0 mm" top="0 mm" width="64.9 mm" height="97 mm" ImageLocation="misc/documents/source/ActionCards/Background-Attack.png" IsVisiblePath="Original/aktionen:Aktion/@Typ='Offensiv'" ZPosition="-2" />
+      <Image left="0 mm" top="0 mm" width="64.9 mm" height="97 mm" ImageLocation="misc/documents/source/ActionCards/Background-Defend.png" IsVisiblePath="Original/aktionen:Aktion/@Typ='Defensiv'" ZPosition="-2" />
+      <Image left="0 mm" top="0 mm" width="64.9 mm" height="97 mm" ImageLocation="misc/documents/source/ActionCards/Background-Seccondär.png" IsVisiblePath="Original/aktionen:Aktion/@Typ='Sekundär'" ZPosition="-2" />
+      <Image left="0 mm" top="0 mm" width="64.9 mm" height="97 mm" ImageLocation="misc/documents/source/ActionCards/Background-Unterstützend.png" IsVisiblePath="Original/aktionen:Aktion/@Typ='Unterstützend'" ZPosition="-2" />
 
   <!-- AKTION -->
       <Image left="0 mm" 
         top="0 mm" 
         width="64.9 mm" 
         height="97 mm"
-        ImageLocation="Aktionen-0-0.png"
+        ImageLocation="misc/documents/source/ActionCards/Aktionen-0-0.png"
         IsVisiblePath="Original/aktionen:Aktion/@Aktionen='0'" ZPosition="-1" />
       <Image left="0 mm" 
         top="0 mm" 
         width="64.9 mm" 
         height="97 mm"
-        ImageLocation="Aktionen-0-5.png"
+        ImageLocation="misc/documents/source/ActionCards/Aktionen-0-5.png"
         IsVisiblePath="Original/aktionen:Aktion/@Aktionen='0.5'" ZPosition="-1" />
       <Image left="0 mm" 
         top="0 mm" 
         width="64.9 mm" 
         height="97 mm"
-        ImageLocation="Aktionen-1-0.png"
+        ImageLocation="misc/documents/source/ActionCards/Aktionen-1-0.png"
         IsVisiblePath="Original/aktionen:Aktion/@Aktionen='1'" ZPosition="-1" />
       <Image left="0 mm" 
         top="0 mm" 
         width="64.9 mm" 
         height="97 mm"
-        ImageLocation="Aktionen-1-5.png"
+        ImageLocation="misc/documents/source/ActionCards/Aktionen-1-5.png"
         IsVisiblePath="Original/aktionen:Aktion/@Aktionen='1.5'" ZPosition="-1" />
       <Image left="0 mm" 
         top="0 mm" 
         width="64.9 mm" 
         height="97 mm"
-        ImageLocation="Aktionen-2-0.png"
+        ImageLocation="misc/documents/source/ActionCards/Aktionen-2-0.png"
         IsVisiblePath="Original/aktionen:Aktion/@Aktionen='2'" ZPosition="-1" />
 
 
   <!-- KOSTEN-->
-      <Text left="10.5 mm" top="9.5 mm" width="4.5 mm" height="4.5 mm">
+      <Text left="7.65 mm" top="7.15 mm" width="9.65 mm" height="9.65 mm" VerticalAlignment="Center">
         <Paragraph  Alignment="Center" EmSize="12" FontStyle="Bold" FontName="Montreal">
           <TextRun>
             <TextPath>Original/aktionen:Aktion/@Kosten</TextPath>
@@ -102,7 +102,7 @@
       </Text>
 
   <!-- MODIFIKATION -->
-      <Text left="17 mm" top="9 mm" width="40 mm" height="8 mm">
+      <Text left="17.19 mm" top="8.55 mm" width="39.54 mm" height="6.77 mm" VerticalAlignment="Center">
         <Paragraph IsVisiblePath="Malus" Alignment="Center" EmSize="12" FontStyle="Bold"   FontName="Montreal">
           <TextRun FontName="Code200365k">
             <Text>&#10836;</Text>
@@ -125,8 +125,8 @@
 
 
 
-  <!-- Haupt text -->
-      <Text left="18 mm" top="18 mm" width="37mm" height="60mm" >
+  <!-- Haupt text 1.4-->
+      <Text left="18.33 mm" top="18.42 mm" width="36.99mm" height="60.45 mm" MinEmSizeScale="0.7" >
         <Paragraph FontStyle="Italic" EmSize="5" IsVisiblePath="Original/aktionen:Aktion/aktionen:Beschreibung" FontName="CMU Serif">
           <TextRun>
             <TextPath>Original/aktionen:Aktion/aktionen:Beschreibung</TextPath>
@@ -235,15 +235,20 @@
       </Text>
 
 <!-- TAGS -->
-      <Text left="15.5 mm"  top="82.7 mm" width="41.3 mm" height="5.2 mm" >
-        <Paragraph>
-          <ForEachRun Select="Eigenschaften/Eigenschaft">
+      <Text left="15.92 mm"  top="82.63 mm" width="40.81 mm" height="5.25 mm" VerticalAlignment="Center" >
+        <Paragraph EmSize="6" FontName="Montreal" Alignment="Center">
+          <TextRun>
+            <TextPath>Original/aktionen:Aktion/aktionen:Eigenschaften/aktionen:Eigenschaft[1]/@Name</TextPath>
+          </TextRun>
+          <ForEachRun Select="Original/aktionen:Aktion/aktionen:Eigenschaften/aktionen:Eigenschaft[position()>1]">
+            <TextRun>
+              <Text>&#183;</Text>
+            </TextRun>
             <TextRun>
               <TextPath>@Name</TextPath>
             </TextRun>
           </ForEachRun>
         </Paragraph>
-      </Text>
-    </Template>
+      </Text>    </Template>
   </Templates>
 </Project>

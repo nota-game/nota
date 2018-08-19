@@ -6,6 +6,7 @@
 
 // #n Wyam.All -s https://www.myget.org/F/wyam/api/v2?package=Wyam&prerelease
 #n Wyam.All
+#n PdfCardGenerator.Wyam -v [0.0.11]
 
 #n jQuery -v [2.2.3]
 #n bootstrap -v [3.3.6]
@@ -282,6 +283,28 @@ public static class Helper
 		return new Replace(@"(?<first>\p{Lu}{2})/(?<seccond>\p{Lu}{2})/(?<third>\p{Lu}{2})", @"${first}&#xfeff;/&#xfeff;${seccond}&#xfeff;/&#xfeff;${third}").IsRegex(System.Text.RegularExpressions.RegexOptions.None);
 	}
 
+public static IModule FixXmlNamespace(){
+	return new If((@doc, @ctx)=> true,
+		new If((@doc, @ctx)=>@doc.Source.Extension == ".xsd",
+		new Replace("http://nota.org/", $"http://{Constants.SiteURL}/"),
+		new Replace("schemaLocation=\"(\\.\\./)+", $"schemaLocation=\"").IsRegex(System.Text.RegularExpressions.RegexOptions.Multiline), 
+		new Replace("schemaLocation=\"", $"schemaLocation=\"http://{Constants.SiteURL}/schema/")
+		),
+		new If((@doc, @ctx)=>@doc.Source.Extension == ".xml",
+			new Replace("http://nota.org/", $"http://{Constants.SiteURL}/"),
+			new Replace("(?<=schemaLocation=\"[^\"]*)(\\.\\./)+", $"").IsRegex(System.Text.RegularExpressions.RegexOptions.Singleline), 
+			new Replace("(?<=schemaLocation=\"[^\"]*) (?<location>schema/[^\" ]*)", $@" http://{Constants.SiteURL}/${{location}}").IsRegex(System.Text.RegularExpressions.RegexOptions.Singleline)
+			
+		),
+		new If((@doc, @ctx)=>@doc.Source.Extension == ".xslt",
+			new Replace("http://nota.org/", $"http://{Constants.SiteURL}/"),
+			new Replace("(?<=schemaLocation=\"[^\"]*)(\\.\\./)+", $"").IsRegex(System.Text.RegularExpressions.RegexOptions.Singleline), 
+			new Replace("(?<=schemaLocation=\"[^\"]*) (?<location>schema/[^\" ]*)", $@" http://{Constants.SiteURL}/${{location}}").IsRegex(System.Text.RegularExpressions.RegexOptions.Singleline)
+			
+		)
+
+	);
+}
 	public static IModule AddUtf8ByteOrderMark(){
 		return new Execute((IDocument doc, IExecutionContext ctx)=>{
 			var memoryStream = new System.IO.MemoryStream();
@@ -467,18 +490,7 @@ Pipelines.Add("htmlStatic",
 			)
 		)
 	),
-	If(@doc.Source.Extension == ".xsd",
-		Replace("http://nota.org/", $"http://{Constants.SiteURL}/"),
-		Replace("schemaLocation=\"(\\.\\./)+", $"schemaLocation=\"").IsRegex(System.Text.RegularExpressions.RegexOptions.Multiline), 
-		Replace("schemaLocation=\"", $"schemaLocation=\"http://{Constants.SiteURL}/schema/")
-		
-	),
-	If(@doc.Source.Extension == ".xml",
-		Replace("http://nota.org/", $"http://{Constants.SiteURL}/"),
-		Replace("(?<=schemaLocation=\"[^\"]*)(\\.\\./)+", $"").IsRegex(System.Text.RegularExpressions.RegexOptions.Singleline), 
-		Replace("(?<=schemaLocation=\"[^\"]*) (?<location>schema/[^\" ]*)", $@" http://{Constants.SiteURL}/${{location}}").IsRegex(System.Text.RegularExpressions.RegexOptions.Singleline)
-		
-	)
+	Helper.FixXmlNamespace()
 );
 
 
@@ -531,6 +543,19 @@ Pipelines.Add("convertAIFiles",
 	Meta("RelativeFilePath", ((DirectoryPath) @"downloads").CombineFile(((DirectoryPath) @"misc\documents\source").GetRelativePath( (FilePath)@doc["RelativeFilePath"]).ChangeExtension(".pdf")))
 );
 
+Pipelines.Add("GenerateActionCards",
+	Documents("htmlStatic"),
+	Where(@doc.Source.FileName.ToString() == "nota.xml"),
+	PdfCardGenerator(ReadFiles(@"misc\documents\source\ActionCards\Project.xml"),
+		Helper.FixXmlNamespace())
+		.WithDocumentsAsWorkingDirectory(Documents("htmlStatic"),
+			Concat(ReadFiles(@"misc\**\*.*"),
+				Helper.FixXmlNamespace())),
+	Meta("RelativeFilePath", ((DirectoryPath) @"downloads").CombineFile(((DirectoryPath) @"misc\documents\source").GetRelativePath( (FilePath)"ActionCards.pdf")))
+);
+
+
+
 Pipelines.Add("TalentTable",
 	ReadFiles(@"misc\documents\source\TalentTabelle.xslt"),
 	Sidecar(Yaml()),
@@ -554,7 +579,8 @@ Pipelines.Add("TalentTable",
 Pipelines.Add("Misc",
 Documents("convertAIFiles"),
 	Concat(	
-		Documents("TalentTable")
+		Documents("TalentTable"),
+		Documents("GenerateActionCards")
 	),
 	Where(!@doc.Metadata.Bool("hide", false))
 );
