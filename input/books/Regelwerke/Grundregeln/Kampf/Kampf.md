@@ -87,11 +87,6 @@ erste Aktion einen Aktionswert von 2 und die zweite Aktion einen Aktionswert von
 4.
 :::
 
-Mansche Modifikatoren betreffen nur Offensive, oder Defensive Aktionen. Sollte
-eine Aktion Offensiv und Defensiv gleichzeitig sein, so kann ihre Aktionswert
-durch eine solche Modifikation unterschiedliche Werte aufweisen, je nachdem ob
-man sie als Offensiv oder Defensiv betrachtet.
-
 Jede Aktion hat gewisse Effekte. Es gibt 'Offensiver-', 'Defensiver -' und
 'Sekundärer Erfolg' bzw. '-Misserfolg'. Zudem gibt es noch einen 'Generellen
 Effekt' der immer zum tragen kommt ganz gleich welches Ergebnis erzielt wurde
@@ -105,24 +100,26 @@ oder Defensive Aktion ist, müssen noch zusätzliche Bedingungen erfüllt werden
 
 Eine offensive Aktion muss neben dem gelingen der Probe auch einen
 Mindestaktionswert erreichen. Die höhe des Wertes hängt von den gewählten Zielen
-der Aktion ab. Keines der Ziele darf in einer Defensiven Aktion einen höheren
-Aktionswert aufweisen als diese Aktion.
+der Aktion ab, muss aber mindestens 1 betragen. Keines der Ziele darf in einer
+Defensiven Aktion einen höheren Aktionswert aufweisen als diese Aktion.
 
 Hingegen gelingt eine defensive Aktion sobald keine offensive Aktion die diesen
-Charakter als Ziel hat einen höheren Aktionswert besitzt.
+Charakter als Ziel hat einen höheren Aktionswert besitzt. Existiert keine
+offensive Aktion, so ist sie ein Erfolg.
 
 Ob eine Aktion einen Misserfolg aufweist hängt ebenfalls von der Art der Aktion
 ab. Eine Sekundäre Aktion ist bereits ein Misserfolg, falls die zugehörige Probe
 misslingt.
 
 Eine Offensive Aktion ist ein Misserfolg, falls eines der Ziele einen höheren
-Aktionswert in einer Defensiven Aktion besitzt als diese Aktion aufweist. Dabei
-ist es unabhängig ob die Aktion dieser Probe gelungen ist oder nicht.
+Aktionswert in einer Defensiven Aktion besitzt als diese Aktion aufweist oder
+die Probe der Offensiven Aktion misslungen ist.
 
 Eine Defensive Aktion ist ein Misserfolg, sobald eine Offensive Aktion die
 diesen Charakter als Ziel bestimmt einen höheren Aktionswert aufweist als diese
-Aktion. Auch hierbei ist es unabhängig ob die zugehörige Probe gelingt oder
-fehlschlägt.
+Aktion. Eine Defensive Aktion ist auch dann ein Erfolg, wenn die zugehörige
+Probe misslungen ist, aber keine Offensive Aktion gegen diesen Charakter
+gelungen ist.
 
 Neben den bereits genannten Aktionen gibt es noch Freie und Unterstützende
 Aktionen. Freie Aktionen zählen nicht zur Anzahl an Aktionen die in der Runde
@@ -131,16 +128,17 @@ Aktionen sind Aktionen, die andre Aktionen Modifizieren, selbst aber nicht als
 Aktion gelten. Sie können der Aktion zusätzliche Modifikatoren und Effekte
 verpassen.
 
-Wird ein Charakter ziel mehrere offensiver Aktionen, so gilt sein Aktionswert im
-Bezug zur Verteidigung als um eins, für jede Aktion nach der ersten, reduziert.
+Wird ein Charakter ziel mehrere offensiver Aktionen, so wird sein Aktionswert
+für defensive Aktionen reduziert. Die Reduktion entspricht der Anzahl der gegen
+ihn gerichteten Offensiven Aktionen minus 1.
 
 Ein Charakter kann sich auch nur gegen bekannte Angriffe verteidigen, eine
 Defensive Aktion funktioniert daher nur gegen eine Offensive Aktion, wenn der
 Charakter diese Offensive Aktion auch Wahrnimmt. Allerdings erhält er auch keine
 Mali durch unbemerkte Aktionen.
 
-Mehrere Aktionen können sich gegen das selbe Ziel richtigen, oder gegen
-unterschiedliche.
+Mehrere Aktionen des selben Charakters können sich gegen das selbe Ziel
+richtigen, oder gegen unterschiedliche.
 
 # Schaden
 

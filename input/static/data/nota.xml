@@ -1730,6 +1730,8 @@
       <GarantierterEffekt>Der Charakter lößt sich aus dem Nahkampf.</GarantierterEffekt>
     </Aktion>
 
+
+
     <Aktion Name="Finte" Kosten="1" Aktionen="1" Typ="Offensiv">
       <Beschreibung>Der Charakter versucht mit dem Angriff den gegner eine Falle zu stellen und so stärker zu bedrängen.</Beschreibung>
       <OffensivErfolg>Das Ziel erhält Positions Mali in höhe von $x.</OffensivErfolg>
@@ -1746,7 +1748,7 @@
     <Aktion Name="Wuchtiger Angriff" Kosten="2" Aktionen="1" Typ="Offensiv">
       <Beschreibung>Setzt mehr Wucht in einen auszuführenden Angriff.</Beschreibung>
       <OffensivErfolg>Die Waffe Trift. Erhöht den Wuchtschaden der Waffe um $x. Der Wuchtschaden kann maximal um den doppelten basis Wuchtschaden der Waffe erhöt werden.</OffensivErfolg>
-      <DefensivMiserfolg>Erhalte Positions Mali in höhe von $x.</DefensivMiserfolg>
+      <DefensivMiserfolg>Erhalte Positions Mali in höhe von $x. test</DefensivMiserfolg>
       <Mod ModifierType="Malus">
         <MultiplyModValueType>
           <ConcreteModValueType Value="2" Type="Absolute"/>
@@ -1762,7 +1764,7 @@
       <Beschreibung>Der Charakter leitet einen Riskanten Angriff ein um den gegner einen Gefährlichen Treffer zu versetzen.</Beschreibung>
       <GarantierterEffekt>Die Defensiv Aktion des Ziels wird um $x reduziert.</GarantierterEffekt>
       <OffensivErfolg>Die Waffe Trift.</OffensivErfolg>
-      <DefensivMiserfolg>Erhalte Positions Mali in höhe von 3x.</DefensivMiserfolg>
+      <DefensivMiserfolg>Erhalte Positions Mali in höhe von 3$x.</DefensivMiserfolg>
       <Mod ModifierType="Malus">
         <MultiplyModValueType>
           <ConcreteModValueType Value="3" Type="Absolute"/>
