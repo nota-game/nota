@@ -8,6 +8,11 @@
 /* Custom classes
 -------------------------------------------------- */
 
+.licenseText{
+    max-width: 400px;
+    max-height: 300px;
+}
+
 .Bsp:before {
     content: "Beispiel";
     font-weight: bold;
