@@ -10,6 +10,7 @@ Order: 2
     <li>MathJax<small>(<a title="Lizenz" href="https://github.com/mathjax/MathJax/blob/6273842a9746731b9ecca0de18ec9fd50a36df99/LICENSE">Apache 2.0</a>)</small></li>
     <li>MathJax-Accessibility<small>(<a title="Lizenz" href="https://github.com/mathjax/MathJax-a11y/blob/579e687110746c5f8b07ba023e7e29e52b5c4c90/LICENSE">Apache 2.0</a>)</small></li>
     <li>Wyam<small>(<a title="Lizenz" href="https://github.com/Wyamio/Wyam/blob/c63852b0ab63a4eedc22bc81ea47b94729a7e4c7/LICENSE">MIT</a>)</small></li>
+    <li>PDFsharp<small>(<a title="Lizenz" href="https://github.com/LokiMidgard/PDFsharp/blob/master/LICENSE">MIT</a>)</small></li>
   </ul>
   Die Sourcen aus denen sie generiert wird können auf <a href="@Constants.GitUrl">Github</a> gefunden werden.
 </p>
@@ -43,7 +44,7 @@ Andere Resourcen wie z.B. Bilder können anderen Bestimmungen unterliegen.
     {
       var hasMetadata = false;
       bool? rightsReserved = null;
-      string creator=null;
+      string[] creator=null;
       string copyright=null;
       bool isImage = false;
 
@@ -57,15 +58,15 @@ Andere Resourcen wie z.B. Bilder können anderen Bestimmungen unterliegen.
         var c = doc["Creator"];
         if(c is String[] ){
           var stringArray  =(String[])c;
-        creator =String.Join(", ", stringArray);
+        creator =stringArray;
 
         } else if( c is string){
           var str = (String)c;
-        creator =str;
+        creator =new string[]{str};
 
         } else if(c is object[] ){
           var objectArray  =(object[])c;
-        creator =String.Join(", ", objectArray.Select(x=>x.ToString()).ToArray());
+        creator =objectArray.Select(x=>x.ToString()).ToArray();
 
         }
         hasMetadata = true;
@@ -126,12 +127,15 @@ Andere Resourcen wie z.B. Bilder können anderen Bestimmungen unterliegen.
           }
           
           <td>
-            @creator
+            <ul>
+             @foreach(var c in creator)
+              {
+           <li>@c</li>
+              }
+            </ul>
           </td>
           <td>
-            <pre>
-             @( Html.Raw(copyright))
-             </pre>
+            <pre>@( Html.Raw(copyright))</pre>
           </td>
                 
         </tr>
