@@ -4,13 +4,9 @@
     <rdf:Description rdf:about=''
 		     xmlns:xapRights='http://ns.adobe.com/xap/1.0/rights/'>
       <xapRights:Marked>True</xapRights:Marked>
-    </rdf:Description>
-    <rdf:Description rdf:about=''
-		     xmlns:xapRights='http://ns.adobe.com/xap/1.0/rights/'
-		     >
       <xapRights:UsageTerms>
 	<rdf:Alt>
-	  <rdf:li xml:lang='x-default' ><![CDATA[Copyright (C) Authors of original metafont fonts:
+	  <rdf:li xml:lang='x-default' >Copyright (C) Authors of original metafont fonts:
 Donald Ervin Knuth (cm, concrete fonts)
 1995, 1996, 1997 Jörg Knappen, 1990, 1992 Norbert Schwarz (ec fonts)
 1992-2006 A.Khodulev, O.Lapko, A.Berdnikov, V.Volovich (lh fonts)
@@ -66,7 +62,7 @@ new environment.
 "Author" refers to any designer, engineer, programmer, technical
 writer or other person who contributed to the Font Software.
 
-PERMISSION & CONDITIONS
+PERMISSION &amp; CONDITIONS
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of the Font Software, to use, study, copy, merge, embed, modify,
 redistribute, and sell modified and unmodified copies of the Font
@@ -113,16 +109,15 @@ INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL
 DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
 FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM
 OTHER DEALINGS IN THE FONT SOFTWARE.
-]]></rdf:li>
+</rdf:li>
 	  </rdf:Alt>
       </xapRights:UsageTerms>
     </rdf:Description>
     <rdf:Description rdf:about='' xmlns:dc='http://purl.org/dc/elements/1.1/'>
        <dc:title>
         <rdf:Alt>
-          <rdf:li xml:lang='x-default'>Background-Action-Nota-Support</rdf:li>
-        <rdf:li xml:lang='de'>Background-Action-Nota-Untersüzend</rdf:li>
-      </rdf:Alt>
+                    <rdf:li xml:lang='x-default'>CMU Serif</rdf:li>
+       </rdf:Alt>
       </dc:title>
       <dc:creator>
         <rdf:Seq>

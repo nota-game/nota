@@ -4,19 +4,14 @@
     <rdf:Description rdf:about=''
 		     xmlns:xapRights='http://ns.adobe.com/xap/1.0/rights/'>
       <xapRights:Marked>True</xapRights:Marked>
+    </rdf:Description>
+    <rdf:Description rdf:about=''
+		     xmlns:xapRights='http://ns.adobe.com/xap/1.0/rights/'
+		     >
       <xapRights:UsageTerms>
 	<rdf:Alt>
-	  <rdf:li xml:lang='x-default' >Copyright (C) Authors of original metafont fonts:
-Donald Ervin Knuth (cm, concrete fonts)
-1995, 1996, 1997 Jörg Knappen, 1990, 1992 Norbert Schwarz (ec fonts)
-1992-2006 A.Khodulev, O.Lapko, A.Berdnikov, V.Volovich (lh fonts)
-1997-2005 Claudio Beccari (cb greek fonts)
-2002 FUKUI Rei (tipa fonts)
-2003-2005 Han The Thanh (Vietnamese fonts)
-1996-2005 Walter Schmidt (cmbright fonts)
-
-Copyright (C) 2003-2009, Andrey V. Panov (panov@canopus.iacp.dvo.ru),
-with Reserved Font Family Name "Computer Modern Unicode fonts".
+	  <rdf:li xml:lang='x-default' >Copyright (c) 2013, Andrew West (www.babelstone.co.uk),
+with Reserved Font Name BabelStone.
 
 This Font Software is licensed under the SIL Open Font License, Version 1.1.
 This license is copied below, and is also available with a FAQ at:
@@ -108,31 +103,19 @@ COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
 INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL
 DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
 FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM
-OTHER DEALINGS IN THE FONT SOFTWARE.
-</rdf:li>
+OTHER DEALINGS IN THE FONT SOFTWARE.</rdf:li>
 	  </rdf:Alt>
       </xapRights:UsageTerms>
     </rdf:Description>
     <rdf:Description rdf:about='' xmlns:dc='http://purl.org/dc/elements/1.1/'>
        <dc:title>
         <rdf:Alt>
-                    <rdf:li xml:lang='x-default'>CMU Serif</rdf:li>
-       </rdf:Alt>
+          <rdf:li xml:lang='x-default'>BabelStone Roman</rdf:li>
+      </rdf:Alt>
       </dc:title>
       <dc:creator>
         <rdf:Seq>
-          <rdf:li>Donald Ervin Knuth</rdf:li>
-          <rdf:li>Jörg Knappen</rdf:li>
-          <rdf:li>Norbert Schwarz</rdf:li>
-          <rdf:li>A.Khodulev</rdf:li>
-          <rdf:li>O.Lapko</rdf:li>
-          <rdf:li>A.Berdnikov</rdf:li>
-          <rdf:li>V.Volovich</rdf:li>
-          <rdf:li>Claudio Beccari</rdf:li>
-          <rdf:li>FUKUI Rei</rdf:li>
-          <rdf:li>Han The Thanh</rdf:li>
-          <rdf:li>Walter Schmidt</rdf:li>
-          <rdf:li>Andrey V. Panov</rdf:li>
+          <rdf:li>Andrew West</rdf:li>
         </rdf:Seq>
       </dc:creator>
     </rdf:Description>
