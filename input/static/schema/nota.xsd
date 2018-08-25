@@ -93,7 +93,7 @@
         <element ref="talent:Talente"/>
         <element ref="fertigkeit:Fertigkeiten"/>
         <element ref="besonderheit:Besonderheiten"/>
-        <element ref="aktion:Aktionen"/>
+        <element ref="aktion:Taktiken"/>
         <element ref="ausstattung:Ausstattung"/>
       </sequence>
       <attribute type="positiveInteger" name="Version" use="required"/>
