@@ -65,31 +65,31 @@
         width="64.9 mm" 
         height="97 mm"
         ImageLocation="misc/documents/source/ActionCards/Aktionen-0-0.png"
-        IsVisiblePath="Original/aktionen:Taktik/@Aktionen='0'" ZPosition="-1" />
+        IsVisiblePath="Original/aktionen:Taktik/@Belastung='0'" ZPosition="-1" />
       <Image left="0 mm" 
         top="0 mm" 
         width="64.9 mm" 
         height="97 mm"
         ImageLocation="misc/documents/source/ActionCards/Aktionen-0-5.png"
-        IsVisiblePath="Original/aktionen:Taktik/@Aktionen='0.5'" ZPosition="-1" />
+        IsVisiblePath="Original/aktionen:Taktik/@Belastung='0.5'" ZPosition="-1" />
       <Image left="0 mm" 
         top="0 mm" 
         width="64.9 mm" 
         height="97 mm"
         ImageLocation="misc/documents/source/ActionCards/Aktionen-1-0.png"
-        IsVisiblePath="Original/aktionen:Taktik/@Aktionen='1'" ZPosition="-1" />
+        IsVisiblePath="Original/aktionen:Taktik/@Belastung='1'" ZPosition="-1" />
       <Image left="0 mm" 
         top="0 mm" 
         width="64.9 mm" 
         height="97 mm"
         ImageLocation="misc/documents/source/ActionCards/Aktionen-1-5.png"
-        IsVisiblePath="Original/aktionen:Taktik/@Aktionen='1.5'" ZPosition="-1" />
+        IsVisiblePath="Original/aktionen:Taktik/@Belastung='1.5'" ZPosition="-1" />
       <Image left="0 mm" 
         top="0 mm" 
         width="64.9 mm" 
         height="97 mm"
         ImageLocation="misc/documents/source/ActionCards/Aktionen-2-0.png"
-        IsVisiblePath="Original/aktionen:Taktik/@Aktionen='2'" ZPosition="-1" />
+        IsVisiblePath="Original/aktionen:Taktik/@Belastung='2'" ZPosition="-1" />
 
 
   <!-- KOSTEN-->
