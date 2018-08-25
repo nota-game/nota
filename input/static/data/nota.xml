@@ -1748,7 +1748,7 @@
     <Aktion Name="Wuchtiger Angriff" Kosten="2" Aktionen="1" Typ="Offensiv">
       <Beschreibung>Setzt mehr Wucht in einen auszuführenden Angriff.</Beschreibung>
       <OffensivErfolg>Die Waffe Trift. Erhöht den Wuchtschaden der Waffe um $x. Der Wuchtschaden kann maximal um den doppelten basis Wuchtschaden der Waffe erhöt werden.</OffensivErfolg>
-      <DefensivMiserfolg>Erhalte Positions Mali in höhe von $x. test</DefensivMiserfolg>
+      <DefensivMiserfolg>Erhalte Positions Mali in höhe von $x.</DefensivMiserfolg>
       <Mod ModifierType="Malus">
         <MultiplyModValueType>
           <ConcreteModValueType Value="2" Type="Absolute"/>

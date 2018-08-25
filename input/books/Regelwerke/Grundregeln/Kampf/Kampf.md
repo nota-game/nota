@@ -4,8 +4,8 @@ Title: 'Kampf'
 ---
 
 Eine Kampfrunde besteht aus drei Phasen. Phase eins ist Bewegung, Phase zwei
-Aktion, Phase drei ausführen der angesagten Aktionen. Spieler verwenden Karten
-um ihre Aktionen festzulegen. Die Kampfrunde erstreckt sich hierbei auf 6
+Taktik, Phase drei Auswertung. Spieler verwenden Karten
+um ihre Taktiken festzulegen. Die Kampfrunde erstreckt sich hierbei auf 6
 Sekunden.
 
 
@@ -52,92 +52,91 @@ Falls eine Karte verwendet wird um sich den überblick zu bewahren, werden die
 Charaktere nun bewegt. Auf jeden fall sollte jedem zu dieser Zeit klar sein
 welcher Charakter sich wo befindet.
 
-## Phase 2 Aktion Ansagen
+## Phase 2 Taktik wählen
 
-Die Spieler wählen gleichzeitig, durch legen verdeckter Karten welche Aktionen
-sie ausführen wollen.
+Die Spieler wählen gleichzeitig, durch legen verdeckter Karten welche Taktiken
+sie ausführen wollen. Ein Charakter kann beliebig viele Taktiken wählen, erhält
+bei mehr Taktiken aber auch höhere Mali.
 
-## Phase 3 Kampf abhandeln
+## Phase 3 Kampfrunde auswerten
 
-Alle Aktionen aller Charaktere finden gleichzeitig statt. Kein Charakter hat
-einen Geschwindigkeitsvorteil bei seinen Aktionen. Auswirkungen einer Kampfrunde
-entfalten erst an dessen Ende bzw. zu beginn der nächsten Kampfrunde Wirkung.
+Alle Taktiken aller Charaktere werden gleichzeitig ausgewertet. Kein Charakter
+hat einen Geschwindigkeitsvorteil bei seiner Ausführung. Auswirkungen einer
+Kampfrunde entfalten erst an dessen Ende bzw. zu beginn der nächsten Kampfrunde
+Wirkung.
 
-Je nach gespielten Aktion werden Proben auf ein oder mehrere Talente benötigt.
-Benötigen mehrere Aktionen eine Probe auf das selbe Talent, so wird dennoch nur
-eine Probe abgelegt und das Ergebnis zählt für alle Aktionen. Dieses Ergebnis
-nennt sich Aktionswert.
+Je nach gespielten Taktiken werden Proben auf ein oder mehrere Talente benötigt.
+Benötigen mehrere Taktiken eine Probe auf das selbe Talent, so wird dennoch nur
+eine Probe abgelegt und das Ergebnis zählt für alle Taktiken. Dieses Ergebnis
+nennt sich Probenwert.
 
-Je mehr Aktionen ein Charakter durchführt desto weniger richtet die einzelne
-Aktion aus. Die Aktionswerte jeder Aktion werden durch die Anzahl der Aktionen
-(inkl. Bewegung) geteilt (abrunden).
+Je mehr Taktiken ein Charakter durchführt desto weniger Wirkung zeigt die
+einzelne Taktik. Jede Taktik hat eine Belastung. Ein Charakter kann Taktiken mit
+einer Belastungssumme von bis zu zwei ohne Abzüge nutzen. Nach der Ermittlung
+des Probenwertes wird der unmodifizierte Taktikwert berechnet. Dieser ergibt
+sich aus dem Probenwert geteilt durch die aufgerundete Summe aller Belastungen
+minus eins (Minimum 0) $\(\lfloor\frac{Probenwert}{ \lceil Probenwert \dotminus
+1 \rceil }\rfloor \)$. Wird eine Belastung von zwei überschritten, so gilt jede
+Taktik als fehlgeschlagen (und besitzt somit keinen Taktikwert), falls sie nicht
+mindestens einen Wert von 1 in ihrem unmodifiziertem Taktikwert erreicht.
 
-Besitzt eine Aktion Modifikatoren, so wird in der Regel nur der Aktionswert der
-Probe modifiziert, nicht aber die Probe selbst. Es gibt verschiedene Arten von
-Modifikationen. Absolute und Prozentuale. Dabei gilt Prozentuale Modifikationen
-werden vor Absoluten angewendet und mehrere prozentuale Modifikatoren werden
-addiert bevor sie angewendet werden. Werden Aktionswerte miteinander verglichen,
-so gilt der Aktionswert einer Aktion, dessen Probe nicht geglückt ist, kleiner
-als jede Aktion deren Probe gelungen ist.
+Als letztes wird der (modifizierte) Taktikwert berechnet. Hierzu wird für jede
+Taktik der unmodifizierte Taktikwert durch die Mali, bzw. Boni der jeweiligen
+Taktik verändert. Es gibt verschiedene Arten von Modifikationen. Absolute und
+Prozentuale. Dabei gilt, Prozentuale Modifikationen werden vor Absoluten
+angewendet und mehrere prozentuale Modifikatoren werden addiert bevor sie
+angewendet werden. Werden Taktikwerte miteinander verglichen, so gilt der
+Taktikwert einer Taktik, dessen Probe nicht geglückt ist oder welche nicht ein
+Minimum von 1 erreicht falls die belastung 2 übersteigt, kleiner als jeder
+Taktikwert deren Probe gelungen ist. Es ist durchaus möglich das Taktikwerte
+werte kleiner 0 annehmen, sie sind deshalb noch nicht gescheitert.
 
 :::Bsp
-Führt ein Charakter zwei Aktionen durch eine mit einem Malus von 1, eine mit
-einem Bonus von 1 und Erreicht bei seiner Probe einen Wert von 3, so besitzt die
-erste Aktion einen Aktionswert von 2 und die zweite Aktion einen Aktionswert von
-4.
+
+Führt ein Charakter zwei Taktiken mit einer Belastung von jeweils 1 und eine
+Taktik mit einer Belastung von 0,5 durch und behält bei der Probe 5 Punkte über,
+hat er einen unmodifizierten Taktikwert von 2.
+
+Die Summe der Belastung beträgt 2,5, aufgerundet 3. Minus 1 ergibt sich hieraus
+der Teiler von 2. Der Probenwert von 5 durch diese 2 ergibt 2,5 abgerundet 2.
+
+Hat nun die Erste Taktik eine Malus von 3, die zweite einen Bonus von 1 und die
+dritte keine Modifikation, so haben betragen die Taktikwerte -1, 3 und 2.
+
 :::
 
-Jede Aktion hat gewisse Effekte. Es gibt 'Offensiver-', 'Defensiver -' und
-'Sekundärer Erfolg' bzw. '-Misserfolg'. Zudem gibt es noch einen 'Generellen
-Effekt' der immer zum tragen kommt ganz gleich welches Ergebnis erzielt wurde
-und einen 'Augenblicklichen Effekt'. Dieser wirkt sich bereits vor dem Ablegen
-der Probe aus und kann somit auch alle anderen Aktionen beeinflussen.
+Eine Taktik kann einer von vier Typen zugeordnet werden. Offensiv, Defensiv,
+Neutral oder Unterstützend. Zudem können sie einen oder mehrere Effekte haben.
+Es gibt Erfolg-, Misserfolg-, Augenblicklich- und Garantierte Effekte.
 
-Ob eine Aktion nun ein Erfolg ist hängt von den ermittelten Aktionswerten ab und
-ob die zugehörige Talentprobe überhaupt gelingt. Damit eine Aktion ein Erfolg
-sein kann, muss die zugehörige Probe gelingen, falls die Aktion eine Offensive
-oder Defensive Aktion ist, müssen noch zusätzliche Bedingungen erfüllt werden.
+Ob der Erfolgs- oder Misserfolgseffekt eintritt, hängt von dem Typen der Taktik
+ab.
 
-Eine offensive Aktion muss neben dem gelingen der Probe auch einen
-Mindestaktionswert erreichen. Die höhe des Wertes hängt von den gewählten Zielen
-der Aktion ab, muss aber mindestens 1 betragen. Keines der Ziele darf in einer
-Defensiven Aktion einen höheren Aktionswert aufweisen als diese Aktion.
+Neutrale Taktiken sind ein Erfolg, wenn die zugehörige Probe erfolgreich war.
 
-Hingegen gelingt eine defensive Aktion sobald keine offensive Aktion die diesen
-Charakter als Ziel hat einen höheren Aktionswert besitzt. Existiert keine
-offensive Aktion, so ist sie ein Erfolg.
+Offensive Taktiken besitzen normalerweise ein oder mehrere Ziele. Sie sind
+erfolgreich, falls keines der Ziele der Taktik eine Defensivtaktik mit einem
+höherem Taktikwert besitzt.
 
-Ob eine Aktion einen Misserfolg aufweist hängt ebenfalls von der Art der Aktion
-ab. Eine Sekundäre Aktion ist bereits ein Misserfolg, falls die zugehörige Probe
-misslingt.
+Defensivtaktiken sind Erfolgreich falls es keine Offensive Taktik gibt, die
+diesen Charakter zum Ziel hat und mindestens einen Taktikwert entsprechend
+dieser Taktik besitzt.
 
-Eine Offensive Aktion ist ein Misserfolg, falls eines der Ziele einen höheren
-Aktionswert in einer Defensiven Aktion besitzt als diese Aktion aufweist oder
-die Probe der Offensiven Aktion misslungen ist.
+Unterstützende Taktiken sind erfolgreich, falls die Taktik die sie Unterstützen erfolgreich ist.
 
-Eine Defensive Aktion ist ein Misserfolg, sobald eine Offensive Aktion die
-diesen Charakter als Ziel bestimmt einen höheren Aktionswert aufweist als diese
-Aktion. Eine Defensive Aktion ist auch dann ein Erfolg, wenn die zugehörige
-Probe misslungen ist, aber keine Offensive Aktion gegen diesen Charakter
-gelungen ist.
+Wenn eine Taktik nicht Erfolgreich ist, ist sie ein Misserfolg. Es sei denn es handelt sich um Neutrale Taktiken, die weder Erfolg noch Misserfolg besitzen. In diesem fall sind sie weder Erfolg noch Misserfolg.
 
-Neben den bereits genannten Aktionen gibt es noch Freie und Unterstützende
-Aktionen. Freie Aktionen zählen nicht zur Anzahl an Aktionen die in der Runde
-gespielt werden und behindern daher auch nicht andere Aktionen. Unterstützende
-Aktionen sind Aktionen, die andre Aktionen Modifizieren, selbst aber nicht als
-Aktion gelten. Sie können der Aktion zusätzliche Modifikatoren und Effekte
-verpassen.
-
-Wird ein Charakter ziel mehrere offensiver Aktionen, so wird sein Aktionswert
-für defensive Aktionen reduziert. Die Reduktion entspricht der Anzahl der gegen
-ihn gerichteten Offensiven Aktionen minus 1.
+Wird ein Charakter ziel mehrere offensiver Taktiken die einen Taktikwert
+besitzen, so wird sein Taktikwert für defensive Taktiken reduziert. Die
+Reduktion entspricht der Anzahl der gegen ihn gerichteten Offensiven Taktiken
+minus 1.
 
 Ein Charakter kann sich auch nur gegen bekannte Angriffe verteidigen, eine
-Defensive Aktion funktioniert daher nur gegen eine Offensive Aktion, wenn der
-Charakter diese Offensive Aktion auch Wahrnimmt. Allerdings erhält er auch keine
-Mali durch unbemerkte Aktionen.
+Defensive Taktik funktioniert daher nur gegen eine Offensive Taktiken, wenn der
+Charakter diese Offensive Taktik auch Wahrnimmt. Allerdings erhält er auch keine
+Mali durch unbemerkte Taktiken.
 
-Mehrere Aktionen des selben Charakters können sich gegen das selbe Ziel
+Mehrere Taktiken des selben Charakters können sich gegen das selbe Ziel
 richtigen, oder gegen unterschiedliche.
 
 # Schaden
@@ -154,13 +153,15 @@ oder Schmerzen kampfunfähig werden.
 
 ## Nahkampf
 
-Trifft eine Waffe, so verursacht sie entweder Waffenschaden, oder bedrängt den
-Gegner. Welche der beiden Möglichkeiten eintreten hängt davon ab wie hoch die
-Aktionswerte der defensiven Aktionen der Ziele dieser Aktion sind.
-
-Jedes Ziel welches von einer Waffe getroffen wird und mindestens eine Defensive
-Aktion gespielt hat deren Aktionswert größer 0 ist wird bedrängt. Alle anderen
-Ziele erhalten den Waffenschaden der Waffe.
+Ist eine Offensive Taktik erfolgreich, so verursacht sie entweder Waffenschaden,
+oder bedrängt den Gegner, solange die Taktik nichts anderes verlautet. Welche
+der beiden Möglichkeiten eintreten hängt von zwei Faktoren ab. Der Kampfstellung
+des Zieles und ob das Ziel eine defensive Taktik besitzt. Sollte das Ziel keine
+Defensive Taktik besitzen, da z.B. die Probe nicht geklappt hat, verursacht die
+Waffe ihren Schaden. Die Kampfstellung eines Charakters gibt an wie stark dieser
+bereits in Bedrängnis geraten ist. Jedes mal wenn der Charakter bedrängt wird,
+oder schmerzen empfindet, erhält er Mali. Wenn diese Mali eine schwelle
+überschreiten, trifft die Waffe ebenfalls anstelle das Ziel weiter zu bedrängen.
 
 ## Fernkampf
 
@@ -169,15 +170,15 @@ Angreifer weniger gut die Bewegungen des Gegenübers Kontrollieren kann. Im
 Ausgleich dazu kann ein Fernkämpfer sich jedoch auf sein Ziel einschießen,
 sofern es keine Ausweichbewegungen macht. Für jeden Schuss den der Charakter
 letzte Kampfrunde auf das selbe Ziel abgefeuert hat, erhält er einen Bonus von 1
-auf den Aktionswert.
+auf den Taktikwert.
 
 Viele Distanzwaffen sind in der Lage mehrere Schuss in einer Kampfrunde
-abzugeben. Auch wenn effektiv nur eine Aktion ausgeführt wird die mehrere Schuss
+abzugeben. Auch wenn effektiv nur eine Taktik ausgeführt wird die mehrere Schuss
 auf das Ziel abgibt, so zählt für das Ziel jedoch jeder Schuss als eine separate
-Aktion. Dies führt dazu das jeder Schuss nach dem ersten der in der Kampfrunde
-auf das Ziel abgegeben wird seinen Defensiven Aktionswert um eins reduziert.
+Taktik. Dies führt dazu das jeder Schuss nach dem ersten der in der Kampfrunde
+auf das Ziel abgegeben wird seinen Defensiven Taktikwert um eins reduziert.
 
-Für jeweils 3 Punkte die der Aktionswert des Fernkämpfers über dem Defensivwert
+Für jeweils 3 Punkte die der Taktikwert des Fernkämpfers über dem Defensivwert
 des Ziels liegt trifft ein Pfeil und verursacht Waffenschaden.
 
 Eine Zusammenfassung der Modifikationen:
@@ -213,13 +214,15 @@ unterschiedlich.
 +--------------------------------------------------+----------------+
 | Distanzklasse                                    | Positionsmali  |
 +==================================================+================+
-| Angreifer ist 1 Distanzklassen oder mehr größer  | 6              |
+| Angreifer ist 2 Distanzklassen oder mehr größer  | 6              |
++--------------------------------------------------+----------------+
+| Angreifer ist  Distanzklassen                    | 5              |
 +--------------------------------------------------+----------------+
 | Angreifer ist selbe Distanzklasse                | 4              |
 +--------------------------------------------------+----------------+
-| Angreifer ist 1 Distanzklassen kleiner           | 3              |
+| Angreifer ist 1 Distanzklassen kleiner           | 4              |
 +--------------------------------------------------+----------------+
-| Angreifer ist 2 Distanzklassen oder mehr kleiner | 2              |
+| Angreifer ist 2 Distanzklassen oder mehr kleiner | 3              |
 +--------------------------------------------------+----------------+
 
 Die meisten Angriffe bedrängen den Gegner das bedeutet er erhält auf seine
@@ -256,11 +259,11 @@ bestimmt.
 
 ## Ausdauer
 
-Während des Kampfes nutzt der Kämpfer Ausdauer um Aktionen durchzuführen.
+Während des Kampfes nutzt der Kämpfer Ausdauer um Taktiken durchzuführen.
 Verbraucht er Ausdauer erhält er dafür Erschöpfungspunkte. Zudem kann er durch
-gegnerische Aktionen Erschöpfung erhalten.
+gegnerische Taktiken Erschöpfung erhalten.
 
-Erschöpfung kann er wieder mittels der Aktion Erholen Abbauen. Dabei sammelt
+Erschöpfung kann er wieder mittels der Taktik Erholen Abbauen. Dabei sammelt
 sich jedoch Verausgabung an. Der Abbau jeweils 6 Punkte Erschöpfung erzeugt
 einen Punkt Verausgabung. Verausgabung kann nur über rasten abgebaut werden.
 Eine Halbe stunde Rast entfernt eine Verausgabung. Ein Charakter kann maximal 6
@@ -297,7 +300,7 @@ Der Charakter erhält auf alle Proben einen Zusätzlichen Malus von 3.
 ### Ohnmacht
 
 Der Charakter hat das Bewusstsein verloren. Währenddessen baut er Erschöpfung ab
-als würde er die Aktion Erholen nutzen zusammen mit einer anderen Aktion.
+als würde er die Taktik Erholen nutzen zusammen mit einer anderen Taktik.
 
 Nachdem er genügend Erschöpfung abgebaut hat um nicht mehr ohnmächtig zu sein,
 dauert es noch W3 Kampfrunden bis er das Bewusstsein wieder erlangt. In dieser
@@ -388,7 +391,7 @@ Verursacht.
 
 Eine Blutung führt zum regelmäßigen erhalt von Blutungspunkten. Jede Kampfrunde
 erhält der Charakter Blutungspunkte in höhe der Stufe der Blutung. Diese Punkte
-werden wie Erschöpfungspunkte behandelt, jedoch regeneriert die Aktion Erholen
+werden wie Erschöpfungspunkte behandelt, jedoch regeneriert die Taktik Erholen
 diese nicht.
 
 Nachdem eine Blutung schaden verursacht kann sie sich selbst stoppen. Die Chance
@@ -456,7 +459,7 @@ Um einen Gegner zu verletzen benötigt ein Charakter, im Idealfall, eine Waffe.
 
 Eine solche kann Eigenschaften aufweisen, so ist ein Florett beispielsweise eine
 Präzise Waffe. Diese sogenannten Schlüsselwörter können z.B. Einfluss auf
-bestimmte Aktionen haben.
+bestimmte Taktiken haben.
 
 Natürlich gehört zu jeder Waffe auch mit welchem Talenten sie geführt werden
 kann, und wieviel Kraft man benötigt sie zu führen.
@@ -475,14 +478,14 @@ leichter steuern und in eine günstige Position bringen.
 
 Mansche Waffen sind auch besser geeignet zum Angriff als zur Verteidigung, oder
 umgekehrt. Eine Waffe hat einen Modifikator, der angibt ob sie einen Malus oder
-Bonus auf Offensive, bzw. Defensive Aktionen erhält. Dieser Modifikator
-beeinflusst nicht die Talentprobe, sondern den Aktionswert.
+Bonus auf Offensive, bzw. Defensive Taktiken erhält. Dieser Modifikator
+beeinflusst nicht die Talentprobe, sondern den Taktikwert.
 
 Neben der Tatsache das eine Waffe Ungeeignet für die Verteidigung ist, kann es
 auch komplett unmöglich sein sie zum verteidigen zu nutzen. Beispielsweise kann
 man mit einem Bogen niemals Parieren, zumindest nicht wenn man ihn als Bogen
-einsetzt. Aktionen die mit einem Bogen ausgeführt werden sind niemals Defensiv.
-Eine Waffe gibt an ob sie mit Offensiven und / oder Defensiven Aktionen benutzt
+einsetzt. Taktiken die mit einem Bogen ausgeführt werden sind niemals Defensiv.
+Eine Waffe gibt an ob sie mit Offensiven und / oder Defensiven Taktiken benutzt
 werden kann.
 
 #### Distanzwaffe
