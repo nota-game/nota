@@ -1708,18 +1708,7 @@
       </Mod>
     </Taktik>
 
-    <Taktik Name="Angriff" Kosten="2" Belastung="1" Typ="Offensiv">
-      <Beschreibung>Ein standard angriff mit ausgeglichener verteidigung.</Beschreibung>
-    </Taktik>
-
     <Taktik Name="Offensiver Angriff" Kosten="2" Belastung="1.5" Typ="Offensiv">
-      <Beschreibung>Ein Angriff der wenig raum für Verteidigung läßt.</Beschreibung>
-      <Mod ModifierType="Bonus">
-        <ConcreteModValueType Type="Absolute" Value="5"/>      
-      </Mod>
-    </Taktik>
-
-    <Taktik Name="Offensiver Angriff" Kosten="3" Belastung="1.5" Typ="Offensiv">
       <Beschreibung>Ein Angriff der wenig raum für Verteidigung läßt.</Beschreibung>
       <Mod ModifierType="Bonus">
         <ConcreteModValueType Type="Absolute" Value="5"/>      
