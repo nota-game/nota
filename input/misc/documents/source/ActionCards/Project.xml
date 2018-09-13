@@ -44,7 +44,11 @@
     <Font FamilyName="Quivira" />
   </FallbackFonts>
   <Templates>
-    <Template Context="//nota:Daten/aktionen:Taktiken/aktionen:Taktik" Width="64.9 mm" Height="97 mm" Xslt="misc/documents/source/ActionCards/PreProcess.xslt">
+    <Template Context="//nota:Daten/aktionen:Taktiken/aktionen:Taktik" Width="65 mm" Height="97 mm"
+     Xslt="misc/documents/source/ActionCards/PreProcess.xslt">
+     <CropBox left="3 mm" top="3 mm"  width="59 mm" height="91 mm" />
+     <TrimBox left="3 mm" top="3 mm"  width="59 mm" height="91 mm" />
+     <ArtBox left="3 mm" top="3 mm"  width="59 mm" height="91 mm" />
     <!-- Title-->
       <Text left="9.65 mm" top="76.54 mm" width="59.61 mm" height="5.76 mm" rotation="-90" VerticalAlignment="Center">
         <Paragraph  Alignment="Far" EmSize="12" FontStyle="Bold" FontName="Montreal">
@@ -194,6 +198,14 @@
             </TextRun>
           </ForEachRun>
         </Paragraph>
-      </Text>    </Template>
+      </Text>  
+      <Text left="15.92 mm"  top="82.63 mm" width="40.81 mm" height="5.25 mm" VerticalAlignment="Center">
+        <Paragraph EmSize="6" FontName="Montreal" Alignment="Far">
+          <TextRun>
+            <TextPath>Number</TextPath>
+          </TextRun>
+        </Paragraph>
+      </Text>  
+    </Template>
   </Templates>
 </Project>
