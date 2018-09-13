@@ -1825,10 +1825,6 @@ Ausserdem darf eine Waffe Plazieren Taktik die das selbe Ziel wie diese hat in d
       <SofortigerEffekt>Diese Taktik gillt als Defensive Aktion des zu schützenden Ziels und nicht für den ausführenden Charakter.</SofortigerEffekt>
     </Taktik>
 
-    <Taktik Name="Abwarten" Kosten="0" Belastung="2" Typ="Neutral">
-      <Beschreibung>Der Charakter tut nichts</Beschreibung>
-    </Taktik>
-
     <Taktik Name="Position" Kosten="2" Belastung="1" Typ="Defensiv">
       <Beschreibung>Der Charakter versucht seine Position zu verbessern.</Beschreibung>
       <SofortigerEffekt>Diese Defensive Taktik führt nicht zum Misserfolg einer gengerichen Offensiven Taktik und verhindert keinen Schaden.</SofortigerEffekt>
@@ -1881,7 +1877,7 @@ Ausserdem darf eine Waffe Plazieren Taktik die das selbe Ziel wie diese hat in d
       </Eigenschaften>
     </Taktik>
 
-    <Taktik Name="Erholen" Kosten="0" Belastung="1" Typ="Neutral">
+    <Taktik Name="Erholen / Abwarten" Kosten="0" Belastung="1" Typ="Neutral">
       <Beschreibung>Der Charakter erholt sich</Beschreibung>
       <GarantierterEffekt>Der Charakter regeneriert alle Erschöpfung, wenn dies seien einzigste Aktion ist. Andernfalls die Hälfte.</GarantierterEffekt>
     </Taktik>
