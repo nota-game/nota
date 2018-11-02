@@ -1703,6 +1703,7 @@
 
     <Taktik Name="Leichter Angriff" Kosten="1" Belastung="0.5" Typ="Offensiv">
       <Beschreibung>Ein leichter Angriff.</Beschreibung>
+      <Erfolg>Wenn eine andere Offensive Taktik dieses Charakters mehr oder gleich viel Schaden am selben Ziel verursacht, wird der Schaden negiert.</Erfolg>
       <Mod ModifierType="Malus">
         <ConcreteModValueType Type="Absolute" Value="5"/>      
       </Mod>
@@ -2013,6 +2014,19 @@ Ausserdem darf eine Waffe Plazieren Taktik die das selbe Ziel wie diese hat in d
         </Talente>
       </Nahkampfwaffe>
 
+        <Nahkampfwaffe Name="Harpune" Distanzklasse="3">
+        <Schaden>
+          <Wucht  Schaden="1"/>
+          <Schnitt  Schaden="2"/>
+        </Schaden>
+        <Eigenschaften>
+          <Eigenschaft Name="Wiederharken"/>
+        </Eigenschaften>
+        <Talente>
+          <talent:Talent Name="Stangenwaffe"/>
+        </Talente>
+      </Nahkampfwaffe>
+
       <Nahkampfwaffe Name="Gleve" Distanzklasse="3">
         <Schaden>
           <Wucht  Schaden="2"/>
@@ -2045,7 +2059,7 @@ Ausserdem darf eine Waffe Plazieren Taktik die das selbe Ziel wie diese hat in d
         </Talente>
       </Nahkampfwaffe>
 
-      <Nahkampfwaffe Name="Anderthalbhänder" Distanzklasse="2">
+      <Nahkampfwaffe Name="Anderthalbhänder" Distanzklasse="3">
         <Schaden>
           <Wucht Schaden="4"/>
           <Schnitt Schaden="3"/>
@@ -2159,6 +2173,9 @@ Ausserdem darf eine Waffe Plazieren Taktik die das selbe Ziel wie diese hat in d
       </Eigenschaft>
       <Eigenschaft Name="Tödlich">
         <Beschreibung>Schnittschaden der im bereich Kopf, Brust Hüfte verursacht wird, wird verdoppelt.</Beschreibung>
+      </Eigenschaft>
+      <Eigenschaft Name="Wiederharken">
+        <Beschreibung>Waffe kann sich im Opfer verfangen, und fügt beim entfernen 1 Blutungsschaden zu.</Beschreibung>
       </Eigenschaft>
     </Eigenschaften>
   </Ausstattung>
