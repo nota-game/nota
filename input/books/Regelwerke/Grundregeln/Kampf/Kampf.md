@@ -216,7 +216,7 @@ unterschiedlich.
 +==================================================+================+
 | Angreifer ist 2 Distanzklassen oder mehr größer  | 6              |
 +--------------------------------------------------+----------------+
-| Angreifer ist  Distanzklassen                    | 5              |
+| Angreifer ist 1 Distanzklassen größer            | 5              |
 +--------------------------------------------------+----------------+
 | Angreifer ist selbe Distanzklasse                | 4              |
 +--------------------------------------------------+----------------+
@@ -231,6 +231,9 @@ Angriffe Schaden in form von Wunden verursachen.
 
 Hat ein Charakter etwas Zeit kann er seine Stellung wieder verbessern und
 Bedrängungsmalus wieder abbauen.
+
+Führt ein Charakter mehrere Attacken auf das selbe Ziel aus wird nur die höchste
+Bedrängung verrechnet.
 
 Nicht immer ist es aber von Vorteil große Waffen zu nutzen. In beengten
 Umgebungen, für die die Waffe zu groß ist, gilt sie als entsprechend viele
