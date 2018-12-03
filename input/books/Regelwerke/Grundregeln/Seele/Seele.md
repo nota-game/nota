@@ -36,4 +36,11 @@ die Korruption.
 Um zu ermitteln wie viel Korruption man abbaut, wirft man 3W6 und Konsultiert
 folgende Tabelle.
 
-§"books/Regelwerke/Grundregeln/Seele/KorumptionTabelle"
+Miasma Anfälligkeit **Normal**  
+§"books/Regelwerke/Grundregeln/Seele/KorumptionTabelleNormal"
+
+Miasma Anfälligkeit **Anfällig**  
+§"books/Regelwerke/Grundregeln/Seele/KorumptionTabelleAnfällig"
+
+Miasma Anfälligkeit **Resistenz**  
+§"books/Regelwerke/Grundregeln/Seele/KorumptionTabelleResistenz"

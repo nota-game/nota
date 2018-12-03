@@ -347,6 +347,9 @@ Pipelines.Add("books",
 	/// Neded for git modules and history ///
 	Meta("OriginalSource", @doc.Source),
 
+	Where(!@doc.Metadata.Bool("ignore", false)),
+
+
 	/// XLSX ///
 	If(@doc.Source.Extension==".xlsx",
 		ExcelToCsv(),
