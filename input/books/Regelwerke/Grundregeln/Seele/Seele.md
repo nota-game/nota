@@ -22,11 +22,10 @@ irgendetwas gesunken ist. Pervertierte Gebiete kehren diesen Effekt jedoch um
 und verdrängen die Seele und verwandeln das Geschöpf langsam in einen Dämon.
 
 Um zu erfahren ob eine Seele sich regeneriert oder Korruption aufbaut Zieht man
-von dem Seelenwert die doppelte Korruption ab zusätzlich addiert man einen Bonus/Malus (auch hier wird der Malus durch Korruption verdoppelt)
-aus der Umgebung durch 5.
-
-In der Normalen Umgebung beträgt dieser Bonus 150. In Dämonisch Pervertierten
-Gebieten kann er allerdings -375 erreichen.
+von dem Seelenwert die Korruption ab zusätzlich addiert man einen Bonus/Malus
+aus der Umgebung. Dieser wird durch 150 geteilt, bei Miasma verseuchtem Gebiet
+jedoch nur durch 10. Gebiete haben normalerweise einen Akkumulierten wert von
+1500.
 
 Sollte das Ergebnis unter 0 sein, so breitet sich die Korruption im Körper
 weiter aus, ist das Ergebnis über 0 So regeneriert sich die Seele und verdrängt
@@ -39,8 +38,14 @@ folgende Tabelle.
 Miasma Anfälligkeit **Normal**  
 §"books/Regelwerke/Grundregeln/Seele/KorumptionTabelleNormal"
 
-Miasma Anfälligkeit **Anfällig**  
-§"books/Regelwerke/Grundregeln/Seele/KorumptionTabelleAnfällig"
+Miasma Anfälligkeit **Anfällig I**  
+§"books/Regelwerke/Grundregeln/Seele/KorumptionTabelleAnfällig I"
 
-Miasma Anfälligkeit **Resistenz**  
-§"books/Regelwerke/Grundregeln/Seele/KorumptionTabelleResistenz"
+Miasma Anfälligkeit **Anfällig II**  
+§"books/Regelwerke/Grundregeln/Seele/KorumptionTabelleAnfällig II"
+
+Miasma Anfälligkeit **Resistent I**  
+§"books/Regelwerke/Grundregeln/Seele/KorumptionTabelleResistenz I"
+
+Miasma Anfälligkeit **Resistent II**  
+§"books/Regelwerke/Grundregeln/Seele/KorumptionTabelleResistenz II"
