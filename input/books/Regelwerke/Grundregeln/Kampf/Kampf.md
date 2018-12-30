@@ -123,14 +123,17 @@ Defensivtaktiken sind Erfolgreich falls es keine Offensive Taktik gibt, die
 diesen Charakter zum Ziel hat und mindestens einen Taktikwert entsprechend
 dieser Taktik besitzt.
 
-Unterstützende Taktiken sind erfolgreich, falls die Taktik die sie Unterstützen erfolgreich ist.
+Unterstützende Taktiken sind erfolgreich, falls die Taktik die sie Unterstützen
+erfolgreich ist.
 
-Wenn eine Taktik nicht Erfolgreich ist, ist sie ein Misserfolg. Es sei denn es handelt sich um Neutrale Taktiken, die weder Erfolg noch Misserfolg besitzen. In diesem fall sind sie weder Erfolg noch Misserfolg.
+Wenn eine Taktik nicht Erfolgreich ist, ist sie ein Misserfolg. Es sei denn es
+handelt sich um Neutrale Taktiken, die weder Erfolg noch Misserfolg besitzen. In
+diesem fall sind sie weder Erfolg noch Misserfolg.
 
 Wird ein Charakter ziel mehrere offensiver Taktiken die einen Taktikwert
 besitzen, so wird sein Taktikwert für defensive Taktiken reduziert. Die
 Reduktion entspricht der Anzahl der gegen ihn gerichteten Offensiven Taktiken
-minus 1.
+minus 1 (maximum 4).
 
 Ein Charakter kann sich auch nur gegen bekannte Angriffe verteidigen, eine
 Defensive Taktik funktioniert daher nur gegen eine Offensive Taktiken, wenn der
@@ -163,6 +166,9 @@ Waffe ihren Schaden. Die Kampfstellung eines Charakters gibt an wie stark dieser
 bereits in Bedrängnis geraten ist. Jedes mal wenn der Charakter bedrängt wird,
 oder schmerzen empfindet, erhält er Mali. Wenn diese Mali eine schwelle
 überschreiten, trifft die Waffe ebenfalls anstelle das Ziel weiter zu bedrängen.
+
+Der Schwellenwert berechnet sich aus dem Kampfgespür. Kampfgespür / 3 + 1 ist
+der Malus den ein Charakter erhalten muss bevor er waffenschaden erhält.
 
 ## Fernkampf
 
