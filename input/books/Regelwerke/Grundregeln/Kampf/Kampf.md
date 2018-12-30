@@ -72,13 +72,10 @@ nennt sich Probenwert.
 
 Je mehr Taktiken ein Charakter durchführt desto weniger Wirkung zeigt die
 einzelne Taktik. Jede Taktik hat eine Belastung. Ein Charakter kann Taktiken mit
-einer Belastungssumme von bis zu zwei ohne Abzüge nutzen. Nach der Ermittlung
-des Probenwertes wird der unmodifizierte Taktikwert berechnet. Dieser ergibt
-sich aus dem Probenwert geteilt durch die aufgerundete Summe aller Belastungen
-minus eins (Minimum 0) $\(\lfloor\frac{Probenwert}{ \lceil Probenwert \dotminus
-1 \rceil }\rfloor \)$. Wird eine Belastung von zwei überschritten, so gilt jede
-Taktik als fehlgeschlagen (und besitzt somit keinen Taktikwert), falls sie nicht
-mindestens einen Wert von 1 in ihrem unmodifiziertem Taktikwert erreicht.
+einer Belastungssumme von bis zu zwei ohne Abzüge nutzen. Für jede weitere
+(angebrochene) Belastung wird der Talentwert auf den die Probe abgelegt wird
+halbiert (abgerundet). Es ist nicht möglich hierdurch seinen Talentwert auf 0 zu
+bringen. Das Ergebnis der Probe ist der unmodifizierte Taktikwert.
 
 Als letztes wird der (modifizierte) Taktikwert berechnet. Hierzu wird für jede
 Taktik der unmodifizierte Taktikwert durch die Mali, bzw. Boni der jeweiligen
@@ -94,11 +91,15 @@ werte kleiner 0 annehmen, sie sind deshalb noch nicht gescheitert.
 :::Bsp
 
 Führt ein Charakter zwei Taktiken mit einer Belastung von jeweils 1 und eine
-Taktik mit einer Belastung von 0,5 durch und behält bei der Probe 5 Punkte über,
-hat er einen unmodifizierten Taktikwert von 2.
+Taktik mit einer Belastung von 0,5 durch.
 
-Die Summe der Belastung beträgt 2,5, aufgerundet 3. Minus 1 ergibt sich hieraus
-der Teiler von 2. Der Probenwert von 5 durch diese 2 ergibt 2,5 abgerundet 2.
+Die Summe der Belastung beträgt 2,5, aufgerundet 3. Daraus ergibt sich das sein
+Talentwert einmal halbiert wird. Hat der Charakter einen Talentwert von 15
+bleiben ihm noch 7 für die Probe.
+
+Bei der Talentprobe würfelt er 18, 5 und 19. Die fünf reicht nicht aus und er
+muss dies mit seinem Talentwert ausgleichen. Somit behält er 2 Punkte Rest. Der
+unmodifizierten Taktikwert ist dann 2.
 
 Hat nun die Erste Taktik eine Malus von 3, die zweite einen Bonus von 1 und die
 dritte keine Modifikation, so haben betragen die Taktikwerte -1, 3 und 2.
