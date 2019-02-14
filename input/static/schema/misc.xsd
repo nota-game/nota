@@ -30,6 +30,18 @@
     </complexContent>
   </complexType>
 
+  <element name="Tag" type="misc:NamedType"/>
+  
+  <complexType name="Tag">
+    <complexContent>
+      <extension base="misc:NamedType">
+        <sequence>
+          <element name="Beschreibung" type="string"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+
   <element name="Levels">
     <complexType >
       <annotation>
@@ -106,6 +118,14 @@
 
   <element name="Level" type="misc:NamedType"/>
 
+  <element name="Tags">
+    <complexType>
+      <sequence>
+        <element maxOccurs="unbounded" minOccurs="1" name="Tag" type="misc:Tag"/>
+      </sequence>
+    </complexType>
+  </element>
+
   <attributeGroup name="NamedElement">
     <attribute name="Name" use="required" type="string"></attribute>
   </attributeGroup>
@@ -140,6 +160,7 @@
       <element ref="fertigkeit:Fertigkeit"/>
       <element ref="talent:Talent"/>
       <element ref="besonderheit:Besonderheit"/>
+      <element ref="misc:Tag"  />
     </choice>
   </complexType>
   <complexType name="BedingungsAuswahlen">
@@ -150,6 +171,7 @@
       <element ref="fertigkeit:Fertigkeit"/>
       <element ref="talent:Talent"/>
       <element ref="besonderheit:Besonderheit"/>
+      <element ref="misc:Tag"  />
     </choice>
   </complexType>
 

@@ -95,6 +95,8 @@
         <element ref="besonderheit:Besonderheiten"/>
         <element ref="aktion:Taktiken"/>
         <element ref="ausstattung:Ausstattung"/>
+        <element ref="misc:Tags" />
+          
       </sequence>
       <attribute type="positiveInteger" name="Version" use="required"/>
     </complexType>
@@ -129,7 +131,15 @@
       <field xpath="@Name"/>
     </key>
 
+    <key name="TagPK">
+      <selector xpath="./misc:Tags/misc:Tag"/>
+      <field xpath="@Name"/>
+    </key>
 
+    <keyref name="TagFK" refer="nota:TagPK">
+      <selector xpath=".//misc:Tag"/>
+      <field xpath="@Name"/>
+    </keyref>
 
     <keyref name="TalentFK" refer="nota:TalentPK">
       <selector xpath=".//talent:Talent"/>

@@ -1654,6 +1654,12 @@
     <Fertigkeit Name="Kulturkunde Alan">
       <Beschreibung>Das Wissen um die Kultur der Alan</Beschreibung>
     </Fertigkeit>
+    <Fertigkeit Name="Arjuniche Zeichen">
+      <Tags>
+        <misc:Tag Name="Lesen/Schreiben" />
+      </Tags>
+      <Beschreibung>Die Schrift der Arjur</Beschreibung>
+    </Fertigkeit>
   </Fertigkeiten>
   <Besonderheiten
     xmlns="http://nota.org/schema/besonderheit">
@@ -2179,4 +2185,9 @@ Ausserdem darf eine Waffe Plazieren Taktik die das selbe Ziel wie diese hat in d
       </Eigenschaft>
     </Eigenschaften>
   </Ausstattung>
+  <Tags xmlns="http://nota.org/schema/misc">
+    <Tag Name="Lesen/Schreiben">
+      <Beschreibung>Die fähigkeit in mindestens einer Schrift Lesen und Schreiben zu können.</Beschreibung>
+    </Tag>
+  </Tags>
 </Daten>

@@ -22,6 +22,13 @@
         <element name="Fertigkeit" minOccurs="0" maxOccurs="unbounded">
           <complexType>
             <sequence>
+              <element name="Tags" maxOccurs="1" minOccurs="0" >
+                <complexType>
+                  <sequence>
+                    <element ref="misc:Tag" minOccurs="1" maxOccurs="unbounded"/>
+                  </sequence>
+                </complexType>
+              </element>
               <element name="Voraussetzung" type="misc:BedingungsAuswahl" minOccurs="0"/>
               <element name="Beschreibung" type="string"></element>
             </sequence>
