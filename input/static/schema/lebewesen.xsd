@@ -66,9 +66,10 @@
                   </sequence>
                 </complexType>
               </element>
-              <element name="Beschreibung" type="string"/>
+              <element name="Name" type="misc:Lokalisierungen"/>
+              <element name="Beschreibung" type="misc:Lokalisierungen"/>
             </sequence>
-            <attribute type="string" name="Name" use="required"/>
+            <attribute type="string" name="Id" use="required"/>
             <attribute type="string" name="Gattung" use="required"/>
             <attribute type="string" name="Art" use="required"/>
           </complexType>
@@ -103,7 +104,8 @@
 
   <complexType name="Morph" >
     <sequence>
-      <element name="Beschreibung" type="string"/>
+      <element name="Name" type="misc:Lokalisierungen"/>
+      <element name="Beschreibung" type="misc:Lokalisierungen"/>
       <element name="StandardKulturen" minOccurs="0">
         <annotation>
           <documentation xml:lang="de">

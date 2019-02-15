@@ -35,11 +35,13 @@
               <element  name="PfadAuswahl">
                 <complexType>
                   <sequence >
-                    <element name="Beschreibung" type="string"/>
+                    <element name="Name" type="misc:Lokalisierungen"/>
+                    <element name="Beschreibung" type="misc:Lokalisierungen"/>
                     <element name="Pfad" maxOccurs="unbounded">
                       <complexType>
                         <sequence>
-                          <element name="Beschreibung" type="string"/>
+                          <element name="Name" type="misc:Lokalisierungen"/>
+                          <element name="Beschreibung" type="misc:Lokalisierungen"/>
                           <element name="Bedingung" maxOccurs="unbounded" minOccurs="0">
                             <complexType>
                               <annotation>
@@ -103,72 +105,72 @@
 
     <key name="BesonderheitPK">
       <selector xpath="./besonderheit:Besonderheiten/besonderheit:Besonderheit"/>
-      <field xpath="@Name"/>
+      <field xpath="@Id"/>
     </key>
 
     <key name="KulturPK">
       <selector xpath="./kultur:Kulturen/kultur:Kultur"/>
-      <field xpath="@Name"/>
+      <field xpath="@Id"/>
     </key>
 
     <key name="ProfessionPK">
       <selector xpath="./profession:Professionen/profession:Profession"/>
-      <field xpath="@Name"/>
+      <field xpath="@Id"/>
     </key>
 
     <key name="TalentPK">
       <selector xpath="./talent:Talente/talent:Talent"/>
-      <field xpath="@Name"/>
+      <field xpath="@Id"/>
     </key>
 
     <key name="FertigkeitPK">
       <selector xpath="./fertigkeit:Fertigkeiten/fertigkeit:Fertigkeit"/>
-      <field xpath="@Name"/>
+      <field xpath="@Id"/>
     </key>
 
     <key name="ausstattungEigenschaftPK">
       <selector xpath="./ausstattung:Ausstattung/ausstattung:Eigenschaften/ausstattung:Eigenschaft"/>
-      <field xpath="@Name"/>
+      <field xpath="@Id"/>
     </key>
 
     <key name="TagPK">
       <selector xpath="./misc:Tags/misc:Tag"/>
-      <field xpath="@Name"/>
+      <field xpath="@Id"/>
     </key>
 
     <keyref name="TagFK" refer="nota:TagPK">
       <selector xpath=".//misc:Tag"/>
-      <field xpath="@Name"/>
+      <field xpath="@Id"/>
     </keyref>
 
     <keyref name="TalentFK" refer="nota:TalentPK">
       <selector xpath=".//talent:Talent"/>
-      <field xpath="@Name"/>
+      <field xpath="@Id"/>
     </keyref>
 
     <keyref name="FertigkeitFK" refer="nota:FertigkeitPK">
       <selector xpath=".//fertigkeit:Fertigkeit"/>
-      <field xpath="@Name"/>
+      <field xpath="@Id"/>
     </keyref>
 
     <keyref name="BesonderheitFK" refer="nota:BesonderheitPK">
       <selector xpath=".//besonderheit:Besonderheit"/>
-      <field xpath="@Name"/>
+      <field xpath="@Id"/>
     </keyref>
 
     <keyref name="KulturFK" refer="nota:KulturPK">
       <selector xpath=".//kultur:Kultur"/>
-      <field xpath="@Name"/>
+      <field xpath="@Id"/>
     </keyref>
 
     <keyref name="ProfessionFK" refer="nota:ProfessionPK">
       <selector xpath=".//profession:Profession"/>
-      <field xpath="@Name"/>
+      <field xpath="@Id"/>
     </keyref>
 
     <keyref name="ausstattungEigenschaftFK" refer="nota:ausstattungEigenschaftPK">
       <selector xpath=".//ausstattung:Eigenschaft"/>
-      <field xpath="@Name"/>
+      <field xpath="@Id"/>
     </keyref>
 
 

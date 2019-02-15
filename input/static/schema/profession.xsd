@@ -22,7 +22,8 @@
         <element name="Profession" maxOccurs="unbounded" minOccurs="0">
           <complexType>
             <sequence>
-              <element name="Beschreibung" type="string"/>
+              <element name="Name" type="misc:Lokalisierungen"/>
+              <element name="Beschreibung" type="misc:Lokalisierungen"/>
               <element ref="misc:Levels"/>
             </sequence>
              <attributeGroup ref="misc:NamedElement"/>

@@ -74,7 +74,7 @@
                       <complexType>
                         <attribute name="Schussfrequenz" type="positiveInteger" use="required"/>
                         <attribute name="Magazingröße" type="positiveInteger" use="required"/>
-                      </complexType>                      
+                      </complexType>
                     </element>
                     <element name="Reichweiten" >
                       <complexType>
@@ -172,9 +172,10 @@
               <element name="Eigenschaft" minOccurs="0" maxOccurs="unbounded">
                 <complexType>
                   <sequence>
-                    <element name="Beschreibung" type="string" />
+                    <element name="Name" type="misc:Lokalisierungen"/>
+                    <element name="Beschreibung" type="misc:Lokalisierungen"/>
                   </sequence>
-                  <attribute type="string" name="Name" use="required"/>
+                  <attribute type="string" name="Id" use="required"/>
                 </complexType>
               </element>
             </sequence>

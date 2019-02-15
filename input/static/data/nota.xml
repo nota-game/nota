@@ -14,18 +14,25 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://nota.org/schema/nota ../schema/nota.xsd http://nota.org/schema/lebewesen ../schema/Lebewesen.xsd http://nota.org/schema/kultur ../schema/kultur.xsd http://nota.org/schema/profession ../schema/profession.xsd http://nota.org/schema/talent ../schema/talent.xsd http://nota.org/schema/fertigkeit ../schema/fertigkeit.xsd http://nota.org/schema/besonderheit ../schema/besonderheit.xsd http://nota.org/schema/kampf/aktionen ../schema/kampf/aktionen.xsd http://nota.org/schema/kampf/ausstattung ../schema/kampf/ausstattung.xsd http://nota.org/schema/misc ../schema/misc.xsd">
   <Pfade>
-    <PfadAuswahl Name="Götter">
+    <PfadAuswahl Id="Götter">
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Götter]]></misc:Lokalisirung>
+      </Name>
       <Beschreibung>
-        Der Gott dem der Charakter gewidmet ist.
+        <misc:Lokalisirung sparche="de"><![CDATA[Der Gott dem der Charakter gewidmet ist.]]></misc:Lokalisirung>
       </Beschreibung>
-      <Pfad Name="Alsa">
+      <Pfad Id="Alsa">
+        <Name>
+          <misc:Lokalisirung sparche="de"><![CDATA[Alsa]]></misc:Lokalisirung>
+          <misc:Lokalisirung sparche="de"><![CDATA[Alsa]]></misc:Lokalisirung>
+        </Name>
         <Beschreibung>
-          Der Charakter ist ein Diener des Gottes Alsa.
+          <misc:Lokalisirung sparche="de" ><![CDATA[Der Charakter ist ein Diener des Gottes Alsa.]]></misc:Lokalisirung>
         </Beschreibung>
         <Modifikationen>
           <Besonderheiten xmlns="http://nota.org/schema/lebewesen">
-            <besonderheit:Besonderheit Name="Auserwählter"/>
-            <besonderheit:Besonderheit Name="Auserwählter Alsas"/>
+            <besonderheit:Besonderheit Id="Auserwählter"/>
+            <besonderheit:Besonderheit Id="Auserwählter Alsas"/>
           </Besonderheiten>
         </Modifikationen>
       </Pfad>
@@ -33,7 +40,7 @@
   </Pfade>
   <Lebewesene
     xmlns="http://nota.org/schema/lebewesen">
-    <Lebewesen Name="Mensch" Gattung="Homo" Art="Sapiens">
+    <Lebewesen Id="Mensch" Gattung="Homo" Art="Sapiens">
       <Eigenschaften>
         <Mut Durchschnitt="1" Minimum="7" Maximum="13" />
         <Glück Durchschnitt="1" Minimum="7" Maximum="13" />
@@ -47,16 +54,26 @@
         <Konstitution Durchschnitt="1" Minimum="7" Maximum="13" />
       </Eigenschaften>
       <Morphe>
-        <Morph Name="Mann">
-          <Beschreibung></Beschreibung>
+        <Morph Id="Mann">
+          <Name>
+            <misc:Lokalisirung sparche="de"><![CDATA[Mann]]></misc:Lokalisirung>
+          </Name>
+          <Beschreibung>
+            <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+          </Beschreibung>
           <Lebensabschnitte>
             <Lebensabschnitt startAlter="12" endAlter="13"  minGröße="1.41" maxGröße="1.56" minBMI="15" maxBMI="21">
               <Beschreibung>...</Beschreibung>
             </Lebensabschnitt>
           </Lebensabschnitte>
         </Morph>
-        <Morph Name="Frau">
-          <Beschreibung></Beschreibung>
+        <Morph Id="Frau">
+          <Name>
+            <misc:Lokalisirung sparche="de"><![CDATA[Frau]]></misc:Lokalisirung>
+          </Name>
+          <Beschreibung>
+            <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+          </Beschreibung>
           <Lebensabschnitte>
             <Lebensabschnitt startAlter="0" endAlter="3" minGröße="1.44" maxGröße="1.58" minBMI="16" maxBMI="21">
               <Beschreibung>...</Beschreibung>
@@ -64,42 +81,57 @@
           </Lebensabschnitte>
         </Morph>
       </Morphe>
-      <Beschreibung>...</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Mensch]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Lebewesen>
   </Lebewesene>
   <Kulturen
     xmlns="http://nota.org/schema/kultur">
-    <Kultur Name="Alan" Kosten="0">
-      <Beschreibung></Beschreibung>
+    <Kultur Id="Alan" Kosten="0">
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Alan]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
       <Professionen>
-        <profession:Profession Name="Bäcker"/>
+        <profession:Profession Id="Bäcker"/>
       </Professionen>
       <Levels xmlns="http://nota.org/schema/misc">
-        <Level Name="2">
+        <Level Id="2">
           <Bedingungen>
             <LevelVoraussetzung>
-              <Level Name="2"/>
+              <Level Id="2"/>
             </LevelVoraussetzung>
           </Bedingungen>
-          <fertigkeit:Fertigkeit Name="Kulturkunde Alan"/>
+          <fertigkeit:Fertigkeit Id="Kulturkunde Alan"/>
         </Level>
       </Levels>
     </Kultur>
   </Kulturen>
   <Professionen
     xmlns="http://nota.org/schema/profession">
-    <Profession Name="Bäcker" Kosten="3">
-      <Beschreibung></Beschreibung>
+    <Profession Id="Bäcker" Kosten="3">
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Bäcker]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
       <Levels xmlns="http://nota.org/schema/misc">
-        <Level Name="Test3">
-          <talent:Talent Name="Backen" Level="3"/>
-          <talent:Talent Name="Backen" Level="2"/>
-          <talent:Talent Name="Backen" Level="1"/>
+        <Level Id="Test3">
+          <talent:Talent Id="Backen" Level="3"/>
+          <talent:Talent Id="Backen" Level="2"/>
+          <talent:Talent Id="Backen" Level="1"/>
         </Level>
-        <Level Name="">
+        <Level Id="">
           <Bedingungen>
             <LevelVoraussetzung>
-              <Level Name="Test3"/>
+              <Level Id="Test3"/>
             </LevelVoraussetzung>
           </Bedingungen>
         </Level>
@@ -108,1647 +140,2490 @@
   </Professionen>
   <Talente
     xmlns="http://nota.org/schema/talent">
-    <Talent Name="Kampfgespür" Komplexität="D" Kategorie="Kampf">
+    <Talent Id="Kampfgespür" Komplexität="D" Kategorie="Kampf">
       <Probe>
         <Intuition/>
         <Intuition/>
         <Fokus/>
       </Probe>
-      <Beschreibung>Die fähigkeit im Kampf immer den überblick zu halten.</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Kampfgespür]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[Die fähigkeit im Kampf immer den überblick zu halten.]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
-    <Talent Name="Fechtwaffen" Komplexität="B" Kategorie="Kampf">
+    <Talent Id="Fechtwaffen" Komplexität="B" Kategorie="Kampf">
       <Probe>
         <Gewandtheit/>
         <Mut/>
         <Intuition/>
       </Probe>
-      <Beschreibung>Eine leichte und schnelle Waffe die vorallem auf präzision statt kraft setzt.</Beschreibung>
-    <Ableitungen>
-      <Ableitung Name="Kampfgespür" Anzahl="5"/>
-    </Ableitungen>
-    </Talent>
-    <Talent Name="Stumpfe Hiebwaffen" Komplexität="B" Kategorie="Kampf">
-      <Probe>
-        <Gewandtheit/>
-        <Stärke/>
-        <Intuition/>
-      </Probe>
-      <Beschreibung>Eine brachiale Waffe die ihre effiktivität aus der Kraft des nutzers zieht.</Beschreibung>
-    <Ableitungen>
-      <Ableitung Name="Kampfgespür" Anzahl="5"/>
-    </Ableitungen>
-    </Talent>
-    <Talent Name="Einhandäxte" Komplexität="B" Kategorie="Kampf">
-      <Probe>
-        <Gewandtheit/>
-        <Stärke/>
-        <Intuition/>
-      </Probe>
-      <Beschreibung>Test</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Fechtwaffen]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[Eine leichte und schnelle Waffe die vorallem auf präzision statt kraft setzt.]]></misc:Lokalisirung>
+      </Beschreibung>
       <Ableitungen>
-      <Ableitung Name="Kampfgespür" Anzahl="5"/>
-        <Ableitung Name="Stumpfe Hiebwaffen" Anzahl="2"/>
+        <Ableitung Id="Kampfgespür" Anzahl="5"/>
       </Ableitungen>
     </Talent>
-    <Talent Name="Zweihandäxte" Komplexität="B" Kategorie="Kampf">
+    <Talent Id="Stumpfe Hiebwaffen" Komplexität="B" Kategorie="Kampf">
       <Probe>
+        <Gewandtheit/>
         <Stärke/>
-        <Mut/>
-        <Gewandtheit/>
-      </Probe>
-      <Beschreibung>Test</Beschreibung>
-    <Ableitungen>
-      <Ableitung Name="Kampfgespür" Anzahl="5"/>
-    </Ableitungen>
-    </Talent>
-    <Talent Name="Stäbe" Komplexität="B" Kategorie="Kampf">
-      <Probe>
-        <Gewandtheit/>
-        <Mut/>
         <Intuition/>
       </Probe>
-      <Beschreibung>Test</Beschreibung>
-    <Ableitungen>
-      <Ableitung Name="Kampfgespür" Anzahl="5"/>
-    </Ableitungen>
-    </Talent>
-    <Talent Name="Schwerter" Komplexität="B" Kategorie="Kampf">
-      <Probe>
-        <Gewandtheit/>
-        <Mut/>
-        <Intuition/>
-      </Probe>
-      <Beschreibung>Test</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Stumpfe Hiebwaffen]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[Eine brachiale Waffe die ihre effiktivität aus der Kraft des nutzers zieht.]]></misc:Lokalisirung>
+      </Beschreibung>
       <Ableitungen>
-      <Ableitung Name="Kampfgespür" Anzahl="5"/>
-        <Ableitung Name="Säbel" Anzahl="3"/>
+        <Ableitung Id="Kampfgespür" Anzahl="5"/>
       </Ableitungen>
     </Talent>
-    <Talent Name="Säbel" Komplexität="B" Kategorie="Kampf">
+    <Talent Id="Einhandäxte" Komplexität="B" Kategorie="Kampf">
       <Probe>
         <Gewandtheit/>
-        <Mut/>
+        <Stärke/>
         <Intuition/>
       </Probe>
-      <Beschreibung>Test</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Einhandäxte]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
       <Ableitungen>
-        <Ableitung Name="Kampfgespür" Anzahl="5"/>
-        <Ableitung Name="Schwerter" Anzahl="2"/>
+        <Ableitung Id="Kampfgespür" Anzahl="5"/>
+        <Ableitung Id="Stumpfe Hiebwaffen" Anzahl="2"/>
       </Ableitungen>
     </Talent>
-    <Talent Name="Anderthalbhänder" Komplexität="B" Kategorie="Kampf">
+    <Talent Id="Zweihandäxte" Komplexität="B" Kategorie="Kampf">
       <Probe>
-        <Gewandtheit/>
+        <Stärke/>
         <Mut/>
-        <Intuition/>
+        <Gewandtheit/>
       </Probe>
-      <Beschreibung>Test</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Zweihandäxte]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
       <Ableitungen>
-        <Ableitung Name="Kampfgespür" Anzahl="5"/>
-        <Ableitung Name="Säbel" Anzahl="2"/>
-        <Ableitung Name="Schwerter" Anzahl="2"/>
-        <Ableitung Name="Zweihandschwert" Anzahl="2"/>
+        <Ableitung Id="Kampfgespür" Anzahl="5"/>
       </Ableitungen>
     </Talent>
-    <Talent Name="Zweihandschwert" Komplexität="B" Kategorie="Kampf">
-      <Probe>
-        <Stärke/>
-        <Mut/>
-        <Intuition/>
-      </Probe>
-      <Beschreibung>Test</Beschreibung>
-    <Ableitungen>
-      <Ableitung Name="Kampfgespür" Anzahl="5"/>
-    </Ableitungen>
-    </Talent>
-    <Talent Name="Zweihandhiebwaffe" Komplexität="B" Kategorie="Kampf">
-      <Probe>
-        <Stärke/>
-        <Mut/>
-        <Intuition/>
-      </Probe>
-      <Beschreibung>Test</Beschreibung>
-    <Ableitungen>
-      <Ableitung Name="Kampfgespür" Anzahl="5"/>
-    </Ableitungen>
-    </Talent>
-    <Talent Name="Zweihandsäbel" Komplexität="B" Kategorie="Kampf">
-      <Probe>
-        <Stärke/>
-        <Mut/>
-        <Intuition/>
-      </Probe>
-      <Beschreibung>Test</Beschreibung>
-    <Ableitungen>
-      <Ableitung Name="Kampfgespür" Anzahl="5"/>
-    </Ableitungen>
-    </Talent>
-    <Talent Name="Tonfas" Komplexität="B" Kategorie="Kampf">
+    <Talent Id="Stäbe" Komplexität="B" Kategorie="Kampf">
       <Probe>
         <Gewandtheit/>
         <Mut/>
         <Intuition/>
       </Probe>
-      <Beschreibung>Test</Beschreibung>
-    <Ableitungen>
-      <Ableitung Name="Kampfgespür" Anzahl="5"/>
-    </Ableitungen>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Stäbe]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
+      <Ableitungen>
+        <Ableitung Id="Kampfgespür" Anzahl="5"/>
+      </Ableitungen>
     </Talent>
-    <Talent Name="Bogen" Komplexität="B" Kategorie="Kampf">
+    <Talent Id="Schwerter" Komplexität="B" Kategorie="Kampf">
+      <Probe>
+        <Gewandtheit/>
+        <Mut/>
+        <Intuition/>
+      </Probe>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Schwerter]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
+      <Ableitungen>
+        <Ableitung Id="Kampfgespür" Anzahl="5"/>
+        <Ableitung Id="Säbel" Anzahl="3"/>
+      </Ableitungen>
+    </Talent>
+    <Talent Id="Säbel" Komplexität="B" Kategorie="Kampf">
+      <Probe>
+        <Gewandtheit/>
+        <Mut/>
+        <Intuition/>
+      </Probe>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Säbel]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
+      <Ableitungen>
+        <Ableitung Id="Kampfgespür" Anzahl="5"/>
+        <Ableitung Id="Schwerter" Anzahl="2"/>
+      </Ableitungen>
+    </Talent>
+    <Talent Id="Anderthalbhänder" Komplexität="B" Kategorie="Kampf">
+      <Probe>
+        <Gewandtheit/>
+        <Mut/>
+        <Intuition/>
+      </Probe>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Anderthalbhänder]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
+      <Ableitungen>
+        <Ableitung Id="Kampfgespür" Anzahl="5"/>
+        <Ableitung Id="Säbel" Anzahl="2"/>
+        <Ableitung Id="Schwerter" Anzahl="2"/>
+        <Ableitung Id="Zweihandschwert" Anzahl="2"/>
+      </Ableitungen>
+    </Talent>
+    <Talent Id="Zweihandschwert" Komplexität="B" Kategorie="Kampf">
+      <Probe>
+        <Stärke/>
+        <Mut/>
+        <Intuition/>
+      </Probe>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Zweihandschwert]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
+      <Ableitungen>
+        <Ableitung Id="Kampfgespür" Anzahl="5"/>
+      </Ableitungen>
+    </Talent>
+    <Talent Id="Zweihandhiebwaffe" Komplexität="B" Kategorie="Kampf">
+      <Probe>
+        <Stärke/>
+        <Mut/>
+        <Intuition/>
+      </Probe>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Zweihandhiebwaffe]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
+      <Ableitungen>
+        <Ableitung Id="Kampfgespür" Anzahl="5"/>
+      </Ableitungen>
+    </Talent>
+    <Talent Id="Zweihandsäbel" Komplexität="B" Kategorie="Kampf">
+      <Probe>
+        <Stärke/>
+        <Mut/>
+        <Intuition/>
+      </Probe>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Zweihandsäbel]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
+      <Ableitungen>
+        <Ableitung Id="Kampfgespür" Anzahl="5"/>
+      </Ableitungen>
+    </Talent>
+    <Talent Id="Tonfas" Komplexität="B" Kategorie="Kampf">
+      <Probe>
+        <Gewandtheit/>
+        <Mut/>
+        <Intuition/>
+      </Probe>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Tonfas]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
+      <Ableitungen>
+        <Ableitung Id="Kampfgespür" Anzahl="5"/>
+      </Ableitungen>
+    </Talent>
+    <Talent Id="Bogen" Komplexität="B" Kategorie="Kampf">
       <Probe>
         <Fokus/>
         <Präzision/>
         <Intuition/>
       </Probe>
-      <Beschreibung>Test</Beschreibung>
-    <Ableitungen>
-      <Ableitung Name="Kampfgespür" Anzahl="7"/>
-    </Ableitungen>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Bogen]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
+      <Ableitungen>
+        <Ableitung Id="Kampfgespür" Anzahl="7"/>
+      </Ableitungen>
     </Talent>
-    <Talent Name="Faust Projektielwaffen" Komplexität="B" Kategorie="Kampf">
+    <Talent Id="Faust Projektielwaffen" Komplexität="B" Kategorie="Kampf">
       <Probe>
         <Präzision/>
         <Fokus/>
         <Intuition/>
       </Probe>
-      <Beschreibung>Gewehre, Armbrüste</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Faust Projektielwaffen]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[Gewehre, Armbrüste]]></misc:Lokalisirung>
+      </Beschreibung>
       <Ableitungen>
-        <Ableitung Name="Zweihandprojektielwaffen" Anzahl="3"/>
+        <Ableitung Id="Zweihandprojektielwaffen" Anzahl="3"/>
       </Ableitungen>
     </Talent>
-    <Talent Name="Zweihandprojektielwaffen" Komplexität="B" Kategorie="Kampf">
+    <Talent Id="Zweihandprojektielwaffen" Komplexität="B" Kategorie="Kampf">
       <Probe>
         <Präzision/>
         <Fokus/>
         <Intuition/>
       </Probe>
-      <Beschreibung>Gewehre, Armbrüste</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Zweihandprojektielwaffen]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[Gewehre, Armbrüste]]></misc:Lokalisirung>
+      </Beschreibung>
       <Ableitungen>
-        <Ableitung Name="Faust Projektielwaffen" Anzahl="2"/>
+        <Ableitung Id="Faust Projektielwaffen" Anzahl="2"/>
       </Ableitungen>
     </Talent>
-    <Talent Name="Schild" Komplexität="B" Kategorie="Kampf">
+    <Talent Id="Schild" Komplexität="B" Kategorie="Kampf">
       <Probe>
         <Gewandtheit/>
         <Mut/>
         <Intuition/>
       </Probe>
-      <Beschreibung>Test</Beschreibung>
-        <Ableitungen>
-      <Ableitung Name="Kampfgespür" Anzahl="5"/>
-    </Ableitungen>
-</Talent>
-    <Talent Name="Ausweichen" Komplexität="B" Kategorie="Kampf">
-      <Probe>
-        <Gewandtheit/>
-        <Mut/>
-        <Intuition/>
-      </Probe>
-      <Beschreibung>Test</Beschreibung>
-    <Ableitungen>
-      <Ableitung Name="Kampfgespür" Anzahl="5"/>
-    </Ableitungen>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Schild]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
+      <Ableitungen>
+        <Ableitung Id="Kampfgespür" Anzahl="5"/>
+      </Ableitungen>
     </Talent>
-    <Talent Name="Stangenwaffe" Komplexität="B" Kategorie="Kampf">
+    <Talent Id="Ausweichen" Komplexität="B" Kategorie="Kampf">
       <Probe>
         <Gewandtheit/>
         <Mut/>
         <Intuition/>
       </Probe>
-      <Beschreibung>Test</Beschreibung>
-    <Ableitungen>
-      <Ableitung Name="Kampfgespür" Anzahl="5"/>
-    </Ableitungen>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Ausweichen]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
+      <Ableitungen>
+        <Ableitung Id="Kampfgespür" Anzahl="5"/>
+      </Ableitungen>
     </Talent>
-    <Talent Name="Peitche" Komplexität="B" Kategorie="Kampf">
+    <Talent Id="Stangenwaffe" Komplexität="B" Kategorie="Kampf">
+      <Probe>
+        <Gewandtheit/>
+        <Mut/>
+        <Intuition/>
+      </Probe>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Stangenwaffe]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
+      <Ableitungen>
+        <Ableitung Id="Kampfgespür" Anzahl="5"/>
+      </Ableitungen>
+    </Talent>
+    <Talent Id="Peitche" Komplexität="B" Kategorie="Kampf">
       <Probe>
         <Präzision/>
         <Mut/>
         <Intuition/>
       </Probe>
-      <Beschreibung>Test</Beschreibung>
-    <Ableitungen>
-      <Ableitung Name="Kampfgespür" Anzahl="5"/>
-    </Ableitungen>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Peitche]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
+      <Ableitungen>
+        <Ableitung Id="Kampfgespür" Anzahl="5"/>
+      </Ableitungen>
     </Talent>
-    <Talent Name="Dolch" Komplexität="B" Kategorie="Kampf">
+    <Talent Id="Dolch" Komplexität="B" Kategorie="Kampf">
       <Probe>
         <Gewandtheit/>
         <Mut/>
         <Intuition/>
       </Probe>
-      <Beschreibung>Test</Beschreibung>
-    <Ableitungen>
-      <Ableitung Name="Kampfgespür" Anzahl="5"/>
-    </Ableitungen>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Dolch]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
+      <Ableitungen>
+        <Ableitung Id="Kampfgespür" Anzahl="5"/>
+      </Ableitungen>
     </Talent>
-    <Talent Name="Flegel" Komplexität="B" Kategorie="Kampf">
+    <Talent Id="Flegel" Komplexität="B" Kategorie="Kampf">
       <Probe>
         <Gewandtheit/>
         <Mut/>
         <Intuition/>
       </Probe>
-      <Beschreibung>Test</Beschreibung>
-    <Ableitungen>
-      <Ableitung Name="Kampfgespür" Anzahl="5"/>
-    </Ableitungen>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Flegel]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
+      <Ableitungen>
+        <Ableitung Id="Kampfgespür" Anzahl="5"/>
+      </Ableitungen>
     </Talent>
-    <Talent Name="Waffenlos" Komplexität="B" Kategorie="Kampf">
+    <Talent Id="Waffenlos" Komplexität="B" Kategorie="Kampf">
       <Probe>
         <Gewandtheit/>
         <Mut/>
         <Intuition/>
       </Probe>
-      <Beschreibung>Test</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Waffenlos]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
       <Ableitungen>
         <Max Anzahl="3">
-          <Ableitung Name="Schwerter" Anzahl="4"/>
-          <Ableitung Name="Säbel" Anzahl="4"/>
-          <Ableitung Name="Stumpfe Hiebwaffen" Anzahl="3"/>
+          <Ableitung Id="Schwerter" Anzahl="4"/>
+          <Ableitung Id="Säbel" Anzahl="4"/>
+          <Ableitung Id="Stumpfe Hiebwaffen" Anzahl="3"/>
         </Max>
-      <Ableitung Name="Kampfgespür" Anzahl="5"/>
+        <Ableitung Id="Kampfgespür" Anzahl="5"/>
       </Ableitungen>
     </Talent>
-    <Talent Name="Chakram" Komplexität="B" Kategorie="Kampf">
+    <Talent Id="Chakram" Komplexität="B" Kategorie="Kampf">
       <Probe>
         <Gewandtheit/>
         <Mut/>
         <Intuition/>
       </Probe>
-      <Beschreibung>Das Chakram (von Sanskrit: चक्र, cakra n., Nom. Sg. cakram, dt.: „Kreis“ oder „Rad“) ist eine Wurfwaffe, die in Indien benutzt wurde. Sie besteht aus einem flachen Metallring mit einem scharfen äußeren Rand von 12 bis 30 cm Durchmesser.</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Chakram]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[Das Chakram (von Sanskrit: चक्र, cakra n., Nom. Sg. cakram, dt.: „Kreis“ oder „Rad“) ist eine Wurfwaffe, die in Indien benutzt wurde. Sie besteht aus einem flachen Metallring mit einem scharfen äußeren Rand von 12 bis 30 cm Durchmesser.]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
-    <Talent Name="Wurfspeer" Komplexität="B" Kategorie="Kampf">
+    <Talent Id="Wurfspeer" Komplexität="B" Kategorie="Kampf">
       <Probe>
         <Präzision/>
         <Stärke/>
         <Intuition/>
       </Probe>
-      <Beschreibung>Test</Beschreibung>
-    <Ableitungen>
-      <Ableitung Name="Kampfgespür" Anzahl="5"/>
-    </Ableitungen>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Wurfspeer]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
+      <Ableitungen>
+        <Ableitung Id="Kampfgespür" Anzahl="5"/>
+      </Ableitungen>
     </Talent>
-    <Talent Name="Wurfaxt" Komplexität="B" Kategorie="Kampf">
+    <Talent Id="Wurfaxt" Komplexität="B" Kategorie="Kampf">
       <Probe>
         <Präzision/>
         <Stärke/>
         <Intuition/>
       </Probe>
-      <Beschreibung>Test</Beschreibung>
-    <Ableitungen>
-      <Ableitung Name="Kampfgespür" Anzahl="5"/>
-    </Ableitungen>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Wurfaxt]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
+      <Ableitungen>
+        <Ableitung Id="Kampfgespür" Anzahl="5"/>
+      </Ableitungen>
     </Talent>
-    <Talent Name="Wurfmesser" Komplexität="B" Kategorie="Kampf">
+    <Talent Id="Wurfmesser" Komplexität="B" Kategorie="Kampf">
       <Probe>
         <Präzision/>
         <Stärke/>
         <Intuition/>
       </Probe>
-      <Beschreibung>Test</Beschreibung>
-    <Ableitungen>
-      <Ableitung Name="Kampfgespür" Anzahl="5"/>
-    </Ableitungen>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Wurfmesser]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
+      <Ableitungen>
+        <Ableitung Id="Kampfgespür" Anzahl="5"/>
+      </Ableitungen>
     </Talent>
-    <Talent Name="Katar" Komplexität="B" Kategorie="Kampf">
+    <Talent Id="Katar" Komplexität="B" Kategorie="Kampf">
       <Probe>
         <Gewandtheit/>
         <Mut/>
         <Intuition/>
       </Probe>
-      <Beschreibung>Das Katar, auch Coutar, Katah, Koutah, Kutah, Kutar, Bundi Dolch oder Jemdhar genannt, ist ein indischer Faustdolch. Der Ursprung liegt bei den Rajputen, aber die Waffe ist im indischen Raum weit verbreitet</Beschreibung>
-    <Ableitungen>
-      <Ableitung Name="Kampfgespür" Anzahl="5"/>
-    </Ableitungen>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Katar]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[Das Katar, auch Coutar, Katah, Koutah, Kutah, Kutar, Bundi Dolch oder Jemdhar genannt, ist ein indischer Faustdolch. Der Ursprung liegt bei den Rajputen, aber die Waffe ist im indischen Raum weit verbreitet]]></misc:Lokalisirung>
+      </Beschreibung>
+      <Ableitungen>
+        <Ableitung Id="Kampfgespür" Anzahl="5"/>
+      </Ableitungen>
     </Talent>
-    <Talent Name="Wurfwaffe" Komplexität="B" Kategorie="Kampf">
+    <Talent Id="Wurfwaffe" Komplexität="B" Kategorie="Kampf">
       <Probe>
         <Gewandtheit/>
         <Mut/>
         <Intuition/>
       </Probe>
-      <Beschreibung>z.B. Stein</Beschreibung>
-    <Ableitungen>
-      <Ableitung Name="Kampfgespür" Anzahl="5"/>
-    </Ableitungen>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Wurfwaffe]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[z.B. Stein]]></misc:Lokalisirung>
+      </Beschreibung>
+      <Ableitungen>
+        <Ableitung Id="Kampfgespür" Anzahl="5"/>
+      </Ableitungen>
     </Talent>
-    <Talent Name="Schleuder" Komplexität="B" Kategorie="Kampf">
+    <Talent Id="Schleuder" Komplexität="B" Kategorie="Kampf">
       <Probe>
         <Präzision/>
         <Fokus/>
         <Intuition/>
       </Probe>
-      <Beschreibung></Beschreibung>
-    <Ableitungen>
-      <Ableitung Name="Kampfgespür" Anzahl="5"/>
-    </Ableitungen>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Schleuder]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
+      <Ableitungen>
+        <Ableitung Id="Kampfgespür" Anzahl="5"/>
+      </Ableitungen>
     </Talent>
-    <Talent Name="Speerschleuder" Komplexität="B" Kategorie="Kampf">
+    <Talent Id="Speerschleuder" Komplexität="B" Kategorie="Kampf">
       <Probe>
         <Präzision/>
         <Fokus/>
         <Intuition/>
       </Probe>
-      <Beschreibung></Beschreibung>
-    <Ableitungen>
-      <Ableitung Name="Kampfgespür" Anzahl="5"/>
-    </Ableitungen>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Speerschleuder]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
+      <Ableitungen>
+        <Ableitung Id="Kampfgespür" Anzahl="5"/>
+      </Ableitungen>
     </Talent>
-    <Talent Name="Nunchaku" Komplexität="B" Kategorie="Kampf">
+    <Talent Id="Nunchaku" Komplexität="B" Kategorie="Kampf">
       <Probe>
         <Gewandtheit/>
         <Mut/>
         <Fokus/>
       </Probe>
-      <Beschreibung></Beschreibung>
-    <Ableitungen>
-      <Ableitung Name="Kampfgespür" Anzahl="5"/>
-    </Ableitungen>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Nunchaku]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
+      <Ableitungen>
+        <Ableitung Id="Kampfgespür" Anzahl="5"/>
+      </Ableitungen>
     </Talent>
-    <Talent Name="Dreigliederstab" Komplexität="B" Kategorie="Kampf">
+    <Talent Id="Dreigliederstab" Komplexität="B" Kategorie="Kampf">
       <Probe>
         <Gewandtheit/>
         <Fokus/>
         <Intuition/>
       </Probe>
-      <Beschreibung></Beschreibung>
-    <Ableitungen>
-      <Ableitung Name="Nunchaku" Anzahl="2"/>
-      <Ableitung Name="Kampfgespür" Anzahl="5"/>
-    </Ableitungen>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Dreugliederstab]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
+      <Ableitungen>
+        <Ableitung Id="Nunchaku" Anzahl="2"/>
+        <Ableitung Id="Kampfgespür" Anzahl="5"/>
+      </Ableitungen>
     </Talent>
-    <Talent Name="Kettenwaffe" Komplexität="B" Kategorie="Kampf">
+    <Talent Id="Kettenwaffe" Komplexität="B" Kategorie="Kampf">
       <Probe>
         <Fokus/>
         <Mut/>
         <Intuition/>
       </Probe>
-      <Beschreibung>z.B. Suruchin, Manriki Gusari</Beschreibung>
-    <Ableitungen>
-      <Ableitung Name="Kampfgespür" Anzahl="5"/>
-      <Ableitung Name="Flegel" Anzahl="3"/>
-    </Ableitungen>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Kettenwaffe]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[z.B. Suruchin, Manriki Gusari]]></misc:Lokalisirung>
+      </Beschreibung>
+      <Ableitungen>
+        <Ableitung Id="Kampfgespür" Anzahl="5"/>
+        <Ableitung Id="Flegel" Anzahl="3"/>
+      </Ableitungen>
     </Talent>
-    <Talent Name="Sense" Komplexität="B" Kategorie="Kampf">
+    <Talent Id="Sense" Komplexität="B" Kategorie="Kampf">
       <Probe>
         <Gewandtheit/>
         <Mut/>
         <Intuition/>
       </Probe>
-      <Beschreibung></Beschreibung>
-    <Ableitungen>
-      <Ableitung Name="Kampfgespür" Anzahl="5"/>
-      <Ableitung Name="Zweihandhiebwaffe" Anzahl="4"/>
-      <Ableitung Name="Stäbe" Anzahl="3"/>
-    </Ableitungen>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Sense]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
+      <Ableitungen>
+        <Ableitung Id="Kampfgespür" Anzahl="5"/>
+        <Ableitung Id="Zweihandhiebwaffe" Anzahl="4"/>
+        <Ableitung Id="Stäbe" Anzahl="3"/>
+      </Ableitungen>
     </Talent>
     <!--Körper BEGINN-->
-    <Talent Name="Springen" Komplexität="B" Kategorie="Körper">
+    <Talent Id="Springen" Komplexität="B" Kategorie="Körper">
       <Probe>
         <Mut/>
         <Stärke/>
         <Gewandtheit/>
       </Probe>
-      <Beschreibung>Test</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Springen]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
-    <Talent Name="Laufen" Komplexität="B" Kategorie="Körper">
+    <Talent Id="Laufen" Komplexität="B" Kategorie="Körper">
       <Probe>
         <Konstitution/>
         <Stärke/>
         <Gewandtheit/>
       </Probe>
-      <Beschreibung>Test</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Laufen]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
-    <Talent Name="Beschatten" Komplexität="B" Kategorie="Körper">
+    <Talent Id="Beschatten" Komplexität="B" Kategorie="Körper">
       <Probe>
         <Mut/>
         <Intuition/>
         <Sympathie/>
       </Probe>
-      <Beschreibung>Test</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Beschatten]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
-    <Talent Name="Gewichtstemmen" Komplexität="B" Kategorie="Körper">
+    <Talent Id="Gewichtstemmen" Komplexität="B" Kategorie="Körper">
       <Probe>
         <Stärke/>
         <Stärke/>
         <Gewandtheit/>
       </Probe>
-      <Beschreibung>Test</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Gewichtstemmen]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
-    <Talent Name="Schwimmen" Komplexität="B" Kategorie="Körper">
+    <Talent Id="Schwimmen" Komplexität="B" Kategorie="Körper">
       <Probe>
         <Konstitution/>
         <Stärke/>
         <Gewandtheit/>
       </Probe>
-      <Beschreibung>Test</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Schwimmen]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
-    <Talent Name="Körperbeherschung" Komplexität="B" Kategorie="Körper">
+    <Talent Id="Körperbeherschung" Komplexität="B" Kategorie="Körper">
       <Probe>
         <Stärke/>
         <Gewandtheit/>
         <Intuition/>
       </Probe>
-      <Beschreibung>Test</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Körperbeherschung]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
-    <Talent Name="Akrobatik" Komplexität="B" Kategorie="Körper">
+    <Talent Id="Akrobatik" Komplexität="B" Kategorie="Körper">
       <Probe>
         <Mut/>
         <Stärke/>
         <Intuition/>
       </Probe>
-      <Beschreibung>Test</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Akrobatik]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
-    <Talent Name="Fingerübungen" Komplexität="B" Kategorie="Körper">
+    <Talent Id="Fingerübungen" Komplexität="B" Kategorie="Körper">
       <Probe>
         <Präzision/>
         <Präzision/>
         <Intuition/>
       </Probe>
-      <Beschreibung>Manschmal muss ein Charakter sehr prezise arbeit mit seinen Fingern durchführen. Seien es Taschenspieler Triks, wie das Hervorziehen einer Münze, oder den Bolzen möglichst zügig aus einer Felsspalte zu ziehen. In solchen Fällen steht das Tallent Fingerübungen zur verfügung.</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Fingerübungen]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[Manschmal muss ein Charakter sehr prezise arbeit mit seinen Fingern durchführen. Seien es Taschenspieler Triks, wie das Hervorziehen einer Münze, oder den Bolzen möglichst zügig aus einer Felsspalte zu ziehen. In solchen Fällen steht das Tallent Fingerübungen zur verfügung.]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
-    <Talent Name="Klettern" Komplexität="B" Kategorie="Körper">
+    <Talent Id="Klettern" Komplexität="B" Kategorie="Körper">
       <Probe>
         <Mut/>
         <Klugheit/>
         <Mut/>
       </Probe>
-      <Beschreibung>Test</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Klettern]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
-    <Talent Name="Schleichen" Komplexität="B" Kategorie="Körper">
+    <Talent Id="Schleichen" Komplexität="B" Kategorie="Körper">
       <Probe>
         <Mut/>
         <Klugheit/>
         <Mut/>
       </Probe>
-      <Beschreibung>Test</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Schleichen]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
-    <Talent Name="Fliegen" Komplexität="B" Kategorie="Körper">
+    <Talent Id="Fliegen" Komplexität="B" Kategorie="Körper">
       <Probe>
         <Mut/>
         <Intuition/>
         <Gewandtheit/>
       </Probe>
-      <Beschreibung>TBD</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Fliegen]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
 
-    <Talent Name="Gaukeleien" Komplexität="B" Kategorie="Körper">
+    <Talent Id="Gaukeleien" Komplexität="B" Kategorie="Körper">
       <Probe>
         <Mut/>
         <Sympathie/>
         <Präzision/>
       </Probe>
-      <Beschreibung>TBD</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Gaukelein]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
 
-    <Talent Name="Reiten" Komplexität="B" Kategorie="Körper">
+    <Talent Id="Reiten" Komplexität="B" Kategorie="Körper">
       <Probe>
         <Sympathie/>
         <Gewandtheit/>
         <Stärke/>
       </Probe>
-      <Beschreibung>TBD</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Reiten]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
 
-    <Talent Name="Sich Verstecken" Komplexität="B" Kategorie="Körper">
+    <Talent Id="Sich Verstecken" Komplexität="B" Kategorie="Körper">
       <Probe>
         <Mut/>
         <Intuition/>
         <Gewandtheit/>
       </Probe>
-      <Beschreibung>TBD</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Sich Verstecken]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
 
-    <Talent Name="Singen" Komplexität="B" Kategorie="Körper">
+    <Talent Id="Singen" Komplexität="B" Kategorie="Körper">
       <Probe>
         <Intuition/>
         <Sympathie/>
         <Sympathie/>
       </Probe>
-      <Beschreibung>TBD</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Singen]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
 
-    <Talent Name="Skifahren" Komplexität="B" Kategorie="Körper">
+    <Talent Id="Skifahren" Komplexität="B" Kategorie="Körper">
       <Probe>
         <Gewandtheit/>
         <Gewandtheit/>
         <Konstitution/>
       </Probe>
-      <Beschreibung>TBD</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Skifahren]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
 
-    <Talent Name="Stimmen Imitieren" Komplexität="B" Kategorie="Körper">
+    <Talent Id="Stimmen Imitieren" Komplexität="B" Kategorie="Körper">
       <Probe>
         <Klugheit/>
         <Intuition/>
         <Sympathie/>
       </Probe>
-      <Beschreibung>TBD</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Stimmen Imitieren]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
 
-    <Talent Name="Taschendiebstahl" Komplexität="B" Kategorie="Körper">
+    <Talent Id="Taschendiebstahl" Komplexität="B" Kategorie="Körper">
       <Probe>
         <Mut/>
         <Intuition/>
         <Präzision/>
       </Probe>
-      <Beschreibung>TBD</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Taschendiebstahl]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
 
-    <Talent Name="Zechen" Komplexität="B" Kategorie="Körper">
+    <Talent Id="Zechen" Komplexität="B" Kategorie="Körper">
       <Probe>
         <Intuition/>
         <Konstitution/>
         <Stärke/>
       </Probe>
-      <Beschreibung>TBD</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Zechen]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
-    <Talent Name="Entfesseln" Komplexität="B" Kategorie="Körper">
+    <Talent Id="Entfesseln" Komplexität="B" Kategorie="Körper">
       <Probe>
         <Präzision/>
         <Gewandtheit/>
         <Stärke/>
       </Probe>
-      <Beschreibung>TBD</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Entfesseln]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
 
     <!--Geist BEGINN-->
-    <Talent Name="Fährtensuche" Komplexität="B" Kategorie="Geist">
+    <Talent Id="Fährtensuche" Komplexität="B" Kategorie="Geist">
       <Probe>
         <Klugheit/>
         <Intuition/>
         <Konstitution/>
       </Probe>
-      <Beschreibung>TBD</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Fährtensuche]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
 
-    <Talent Name="Orientierung" Komplexität="B" Kategorie="Geist">
+    <Talent Id="Orientierung" Komplexität="B" Kategorie="Geist">
       <Probe>
         <Klugheit/>
         <Intuition/>
         <Intuition/>
       </Probe>
-      <Beschreibung>TBD</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Orientierung]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
 
-    <Talent Name="Selbstbeherchung" Komplexität="B" Kategorie="Geist">
+    <Talent Id="Selbstbeherchung" Komplexität="B" Kategorie="Geist">
       <Probe>
         <Mut/>
         <Mut/>
         <Klugheit/>
       </Probe>
-      <Beschreibung>Test</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Selbstbeherchung]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
-    <Talent Name="Wahrnehmung" Komplexität="B" Kategorie="Geist">
+    <Talent Id="Wahrnehmung" Komplexität="B" Kategorie="Geist">
       <Probe>
         <Intuition/>
         <Intuition/>
         <Klugheit/>
       </Probe>
-      <Beschreibung>Test</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Wahrnehmung]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
       <Ableitungen>
-        <Ableitung Name="Sehen" Anzahl="3"/>
-        <Ableitung Name="Hören" Anzahl="3"/>
-        <Ableitung Name="Fühlen" Anzahl="4"/>
-        <Ableitung Name="Richen und Schmeken" Anzahl="5"/>
+        <Ableitung Id="Sehen" Anzahl="3"/>
+        <Ableitung Id="Hören" Anzahl="3"/>
+        <Ableitung Id="Fühlen" Anzahl="4"/>
+        <Ableitung Id="Richen und Schmeken" Anzahl="5"/>
       </Ableitungen>
     </Talent>
-    <Talent Name="Sehen" Komplexität="B" Kategorie="Geist">
+    <Talent Id="Sehen" Komplexität="B" Kategorie="Geist">
       <Probe>
         <Intuition/>
         <Intuition/>
         <Klugheit/>
       </Probe>
-      <Beschreibung>Test</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Sehen]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
       <Ableitungen>
-        <Ableitung Name="Wahrnehmung" Anzahl="4"/>
+        <Ableitung Id="Wahrnehmung" Anzahl="4"/>
       </Ableitungen>
     </Talent>
-    <Talent Name="Hören" Komplexität="B" Kategorie="Geist">
+    <Talent Id="Hören" Komplexität="B" Kategorie="Geist">
       <Probe>
         <Intuition/>
         <Intuition/>
         <Klugheit/>
       </Probe>
-      <Beschreibung>Test</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Hören]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
       <Ableitungen>
-        <Ableitung Name="Wahrnehmung" Anzahl="4"/>
+        <Ableitung Id="Wahrnehmung" Anzahl="4"/>
       </Ableitungen>
     </Talent>
-    <Talent Name="Richen und Schmeken" Komplexität="B" Kategorie="Geist">
+    <Talent Id="Richen und Schmeken" Komplexität="B" Kategorie="Geist">
       <Probe>
         <Intuition/>
         <Intuition/>
         <Klugheit/>
       </Probe>
-      <Beschreibung>Test</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Richen und Schmeken]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
       <Ableitungen>
-        <Ableitung Name="Wahrnehmung" Anzahl="6"/>
+        <Ableitung Id="Wahrnehmung" Anzahl="6"/>
       </Ableitungen>
     </Talent>
-    <Talent Name="Fühlen" Komplexität="B" Kategorie="Geist">
+    <Talent Id="Fühlen" Komplexität="B" Kategorie="Geist">
       <Probe>
         <Intuition/>
         <Präzision/>
         <Klugheit/>
       </Probe>
-      <Beschreibung>Test</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Fühlen]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
       <Ableitungen>
-        <Ableitung Name="Wahrnehmung" Anzahl="5"/>
+        <Ableitung Id="Wahrnehmung" Anzahl="5"/>
       </Ableitungen>
     </Talent>
     <!--Gesellschaft BEGINN-->
-    <Talent Name="Menschenkentniss" Komplexität="B" Kategorie="Gesellschaft">
+    <Talent Id="Menschenkentniss" Komplexität="B" Kategorie="Gesellschaft">
       <Probe>
         <Intuition/>
         <Antipathie/>
         <Sympathie/>
       </Probe>
-      <Beschreibung>Test</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Menschenkentniss]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
-    <Talent Name="Verführen" Komplexität="B" Kategorie="Gesellschaft">
+    <Talent Id="Verführen" Komplexität="B" Kategorie="Gesellschaft">
       <Probe>
         <Mut/>
         <Intuition/>
         <Sympathie/>
       </Probe>
-      <Beschreibung>Test</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Verführen]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
-    <Talent Name="Lügen" Komplexität="B" Kategorie="Gesellschaft">
+    <Talent Id="Lügen" Komplexität="B" Kategorie="Gesellschaft">
       <Probe>
         <Mut/>
         <Klugheit/>
         <Sympathie/>
       </Probe>
-      <Beschreibung>Test</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Lügen]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
-    <Talent Name="Überreden" Komplexität="B" Kategorie="Gesellschaft">
+    <Talent Id="Überreden" Komplexität="B" Kategorie="Gesellschaft">
       <Probe>
         <Intuition/>
         <Klugheit/>
         <Sympathie/>
       </Probe>
-      <Beschreibung>Test</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Überreden]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
-    <Talent Name="Einschüchtern" Komplexität="B" Kategorie="Gesellschaft">
+    <Talent Id="Einschüchtern" Komplexität="B" Kategorie="Gesellschaft">
       <Probe>
         <Mut/>
         <Intuition/>
         <Antipathie/>
       </Probe>
-      <Beschreibung>Test</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Einschüchtern]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
 
-    <Talent Name="Lehren" Komplexität="B" Kategorie="Gesellschaft">
+    <Talent Id="Lehren" Komplexität="B" Kategorie="Gesellschaft">
       <Probe>
         <Klugheit/>
         <Intuition/>
         <Sympathie/>
       </Probe>
-      <Beschreibung>TBD</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Gesellschaft]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
 
-    <Talent Name="Schauspielerei" Komplexität="B" Kategorie="Gesellschaft">
+    <Talent Id="Schauspielerei" Komplexität="B" Kategorie="Gesellschaft">
       <Probe>
         <Mut/>
         <Klugheit/>
         <Sympathie/>
       </Probe>
-      <Beschreibung>TBD</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Schauspielerei]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
 
-    <Talent Name="Schriftlicher Ausdruck" Komplexität="B" Kategorie="Gesellschaft">
+    <Talent Id="Schriftlicher Ausdruck" Komplexität="B" Kategorie="Gesellschaft">
       <Probe>
         <Klugheit/>
         <Intuition/>
         <Intuition/>
       </Probe>
-      <Beschreibung>TBD</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Schriftlicher Ausdruck]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
-    <Talent Name="Etikette" Komplexität="B" Kategorie="Gesellschaft">
+    <Talent Id="Etikette" Komplexität="B" Kategorie="Gesellschaft">
       <Probe>
         <Klugheit/>
         <Intuition/>
         <Sympathie/>
       </Probe>
-      <Beschreibung>TBD</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Etikette]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
-    <Talent Name="Seelsorge" Komplexität="B" Kategorie="Gesellschaft">
+    <Talent Id="Seelsorge" Komplexität="B" Kategorie="Gesellschaft">
       <Probe>
         <Intuition/>
         <Sympathie/>
         <Sympathie/>
       </Probe>
-      <Beschreibung>TBD</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Seelsorge]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
 
 
-    <Talent Name="Sich Verkleiden" Komplexität="B" Kategorie="Gesellschaft">
+    <Talent Id="Sich Verkleiden" Komplexität="B" Kategorie="Gesellschaft">
       <Probe>
         <Mut/>
         <Sympathie/>
         <Gewandtheit/>
       </Probe>
-      <Beschreibung>TBD</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Sich Verkleiden]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
 
-    <Talent Name="Tanzen" Komplexität="B" Kategorie="Gesellschaft">
+    <Talent Id="Tanzen" Komplexität="B" Kategorie="Gesellschaft">
       <Probe>
         <Intuition/>
         <Gewandtheit/>
         <Konstitution/>
       </Probe>
-      <Beschreibung>Test</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Tanzen]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
     <!--Wissen BEGINN-->
-    <Talent Name="Gassenwissen" Komplexität="B" Kategorie="Wissen">
+    <Talent Id="Gassenwissen" Komplexität="B" Kategorie="Wissen">
       <Probe>
         <Klugheit/>
         <Intuition/>
         <Sympathie/>
       </Probe>
-      <Beschreibung>TBD</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Gassenwissen]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
-    <Talent Name="Rechnen" Komplexität="B" Kategorie="Wissen">
+    <Talent Id="Rechnen" Komplexität="B" Kategorie="Wissen">
       <Probe>
         <Klugheit/>
         <Klugheit/>
         <Intuition/>
       </Probe>
-      <Beschreibung>Test</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Rechnen]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
-    <Talent Name="Sagen" Komplexität="B" Kategorie="Wissen">
+    <Talent Id="Sagen" Komplexität="B" Kategorie="Wissen">
       <Probe>
         <Klugheit/>
         <Klugheit/>
         <Mut/>
       </Probe>
-      <Beschreibung>Test</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Sagen]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
-    <Talent Name="Astronomi" Komplexität="B" Kategorie="Wissen">
+    <Talent Id="Astronomi" Komplexität="B" Kategorie="Wissen">
       <Probe>
         <Klugheit/>
         <Klugheit/>
         <Intuition/>
       </Probe>
-      <Beschreibung>Test</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Astronomi]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
-    <Talent Name="Geographie" Komplexität="B" Kategorie="Wissen">
+    <Talent Id="Geographie" Komplexität="B" Kategorie="Wissen">
       <Probe>
         <Klugheit/>
         <Klugheit/>
         <Intuition/>
       </Probe>
-      <Beschreibung>Test</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Geographie]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
-    <Talent Name="Schriftlicherausdruck" Komplexität="B" Kategorie="Wissen">
-      <Probe>
-        <Klugheit/>
-        <Präzision/>
-        <Intuition/>
-      </Probe>
-      <Beschreibung>Test</Beschreibung>
-    </Talent>
-    <Talent Name="Gesteinskunde" Komplexität="B" Kategorie="Wissen">
+    <Talent Id="Gesteinskunde" Komplexität="B" Kategorie="Wissen">
       <Probe>
         <Intuition/>
-        <Klugheit/>
-        <Präzision/>
-      </Probe>
-      <Beschreibung>Test</Beschreibung>
-    </Talent>
-    <Talent Name="Recherche" Komplexität="B" Kategorie="Wissen">
-      <Probe>
-        <Klugheit/>
-        <Klugheit/>
-        <Intuition/>
-      </Probe>
-      <Beschreibung>Das finden von informationen in Büchern und Bibliotheken.</Beschreibung>
-    </Talent>
-    <Talent Name="Buchführung" Komplexität="B" Kategorie="Wissen">
-      <Probe>
-        <Klugheit/>
         <Klugheit/>
         <Präzision/>
       </Probe>
-      <Beschreibung>Test</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Gesteinskunde]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
-    <Talent Name="Medizin" Komplexität="B" Kategorie="Wissen">
+    <Talent Id="Recherche" Komplexität="B" Kategorie="Wissen">
       <Probe>
         <Klugheit/>
         <Klugheit/>
         <Intuition/>
       </Probe>
-      <Beschreibung>Test</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Recherche]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[Das finden von informationen in Büchern und Bibliotheken.]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
-    <Talent Name="Tierkunde" Komplexität="B" Kategorie="Wissen">
+    <Talent Id="Buchführung" Komplexität="B" Kategorie="Wissen">
+      <Probe>
+        <Klugheit/>
+        <Klugheit/>
+        <Präzision/>
+      </Probe>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Buchführung]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
+    </Talent>
+    <Talent Id="Medizin" Komplexität="B" Kategorie="Wissen">
       <Probe>
         <Klugheit/>
         <Klugheit/>
         <Intuition/>
       </Probe>
-      <Beschreibung>Test</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Medizin]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
-    <Talent Name="Pflanzenkunde" Komplexität="B" Kategorie="Wissen">
+    <Talent Id="Tierkunde" Komplexität="B" Kategorie="Wissen">
       <Probe>
         <Klugheit/>
         <Klugheit/>
         <Intuition/>
       </Probe>
-      <Beschreibung>Test</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Tierkunde]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
-    <Talent Name="Kunst" Komplexität="B" Kategorie="Wissen">
+    <Talent Id="Pflanzenkunde" Komplexität="B" Kategorie="Wissen">
+      <Probe>
+        <Klugheit/>
+        <Klugheit/>
+        <Intuition/>
+      </Probe>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Pflanzenkunde]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
+    </Talent>
+    <Talent Id="Kunst" Komplexität="B" Kategorie="Wissen">
       <Probe>
         <Intuition/>
         <Glück/>
         <Mut/>
       </Probe>
-      <Beschreibung>Test</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Kunst]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
-    <Talent Name="Alchemischeswissen" Komplexität="B" Kategorie="Wissen">
+    <Talent Id="Alchemischeswissen" Komplexität="B" Kategorie="Wissen">
       <Probe>
         <Intuition/>
         <Klugheit/>
         <Klugheit/>
       </Probe>
-      <Beschreibung>Test</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Alchemischeswissen]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
-    <Talent Name="Wettervorhersage" Komplexität="B" Kategorie="Wissen">
+    <Talent Id="Wettervorhersage" Komplexität="B" Kategorie="Wissen">
       <Probe>
         <Klugheit/>
         <Intuition/>
         <Intuition/>
       </Probe>
-      <Beschreibung>TBD</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Wettervorhersage]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
 
 
-    <Talent Name="Anatomie" Komplexität="B" Kategorie="Wissen">
+    <Talent Id="Anatomie" Komplexität="B" Kategorie="Wissen">
       <Probe>
         <Mut/>
         <Klugheit/>
         <Präzision/>
       </Probe>
-      <Beschreibung>TBD</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Anatomie]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
 
-    <Talent Name="Baukunst" Komplexität="B" Kategorie="Wissen">
+    <Talent Id="Baukunst" Komplexität="B" Kategorie="Wissen">
       <Probe>
         <Klugheit/>
         <Klugheit/>
         <Präzision/>
       </Probe>
-      <Beschreibung>TBD</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Baukunst]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
 
-    <Talent Name="Geselchaftsspiel" Komplexität="B" Kategorie="Wissen">
+    <Talent Id="Geselchaftsspiel" Komplexität="B" Kategorie="Wissen">
       <Probe>
         <Klugheit/>
         <Klugheit/>
         <Intuition/>
       </Probe>
-      <Beschreibung>TBD</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Geselchaftsspiele]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
 
-    <Talent Name="Geschichtswissen" Komplexität="B" Kategorie="Wissen">
+    <Talent Id="Geschichtswissen" Komplexität="B" Kategorie="Wissen">
       <Probe>
         <Klugheit/>
         <Klugheit/>
         <Intuition/>
       </Probe>
-      <Beschreibung>TBD</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Geschichtswissen]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
 
-    <Talent Name="Mystik" Komplexität="B" Kategorie="Wissen">
+    <Talent Id="Mystik" Komplexität="B" Kategorie="Wissen">
       <Probe>
         <Klugheit/>
         <Klugheit/>
         <Intuition/>
       </Probe>
-      <Beschreibung>TBD</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Mystik]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
-    <Talent Name="Religion" Komplexität="B" Kategorie="Wissen">
+    <Talent Id="Religion" Komplexität="B" Kategorie="Wissen">
       <Probe>
         <Klugheit/>
         <Klugheit/>
         <Intuition/>
       </Probe>
-      <Beschreibung>TBD</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Religion]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
 
-    <Talent Name="Heraldik" Komplexität="B" Kategorie="Wissen">
+    <Talent Id="Heraldik" Komplexität="B" Kategorie="Wissen">
       <Probe>
         <Klugheit/>
         <Klugheit/>
         <Präzision/>
       </Probe>
-      <Beschreibung>TBD</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Heraldik]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
 
-    <Talent Name="Hüttenkunde" Komplexität="B" Kategorie="Wissen">
+    <Talent Id="Hüttenkunde" Komplexität="B" Kategorie="Wissen">
       <Probe>
         <Klugheit/>
         <Intuition/>
         <Konstitution/>
       </Probe>
-      <Beschreibung>TBD</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Hüttenkunde]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
 
-    <Talent Name="Kriegskunst" Komplexität="B" Kategorie="Wissen">
+    <Talent Id="Kriegskunst" Komplexität="B" Kategorie="Wissen">
       <Probe>
         <Mut/>
         <Klugheit/>
         <Sympathie/>
       </Probe>
-      <Beschreibung>TBD</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Krigskunst]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
 
-    <Talent Name="Kryptographie" Komplexität="B" Kategorie="Wissen">
+    <Talent Id="Kryptographie" Komplexität="B" Kategorie="Wissen">
       <Probe>
         <Klugheit/>
         <Klugheit/>
         <Intuition/>
       </Probe>
-      <Beschreibung>TBD</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Kryptographie]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
 
-    <Talent Name="Magiekunde" Komplexität="B" Kategorie="Wissen">
+    <Talent Id="Magiekunde" Komplexität="B" Kategorie="Wissen">
       <Probe>
         <Klugheit/>
         <Klugheit/>
         <Intuition/>
       </Probe>
-      <Beschreibung>TBD</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Magiekunde]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
 
-    <Talent Name="Mechanik" Komplexität="B" Kategorie="Wissen">
+    <Talent Id="Mechanik" Komplexität="B" Kategorie="Wissen">
       <Probe>
         <Klugheit/>
         <Klugheit/>
         <Präzision/>
       </Probe>
-      <Beschreibung>TBD</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Mechanik]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
 
-    <Talent Name="Philosophie" Komplexität="B" Kategorie="Wissen">
+    <Talent Id="Philosophie" Komplexität="B" Kategorie="Wissen">
       <Probe>
         <Klugheit/>
         <Klugheit/>
         <Intuition/>
       </Probe>
-      <Beschreibung>TBD</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Philosophie]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
 
-    <Talent Name="Rechtskunde" Komplexität="B" Kategorie="Wissen">
+    <Talent Id="Rechtskunde" Komplexität="B" Kategorie="Wissen">
       <Probe>
         <Klugheit/>
         <Klugheit/>
         <Intuition/>
       </Probe>
-      <Beschreibung>TBD</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Rechtskunde]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
 
-    <Talent Name="Schätzen" Komplexität="B" Kategorie="Wissen">
+    <Talent Id="Schätzen" Komplexität="B" Kategorie="Wissen">
       <Probe>
         <Klugheit/>
         <Intuition/>
         <Intuition/>
       </Probe>
-      <Beschreibung>TBD</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Schätzen]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
 
-    <Talent Name="Sprachenkunde" Komplexität="B" Kategorie="Wissen">
+    <Talent Id="Sprachenkunde" Komplexität="B" Kategorie="Wissen">
       <Probe>
         <Klugheit/>
         <Klugheit/>
         <Intuition/>
       </Probe>
-      <Beschreibung>TBD</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Sprachenkunde]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
 
-    <Talent Name="Staatskunst" Komplexität="B" Kategorie="Wissen">
+    <Talent Id="Staatskunst" Komplexität="B" Kategorie="Wissen">
       <Probe>
         <Klugheit/>
         <Intuition/>
         <Sympathie/>
       </Probe>
-      <Beschreibung>TBD</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Staatskunst]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
 
-    <Talent Name="Sternkunde" Komplexität="B" Kategorie="Wissen">
+    <Talent Id="Sternkunde" Komplexität="B" Kategorie="Wissen">
       <Probe>
         <Klugheit/>
         <Klugheit/>
         <Intuition/>
       </Probe>
-      <Beschreibung>TBD</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Sternenkunde]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
-    <Talent Name="Giftkunde" Komplexität="B" Kategorie="Wissen">
+    <Talent Id="Giftkunde" Komplexität="B" Kategorie="Wissen">
       <Probe>
         <Mut/>
         <Klugheit/>
         <Intuition/>
       </Probe>
-      <Beschreibung>TBD</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Giftkunde]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
-    <Talent Name="Krankheitskunde" Komplexität="B" Kategorie="Wissen">
+    <Talent Id="Krankheitskunde" Komplexität="B" Kategorie="Wissen">
       <Probe>
         <Mut/>
         <Klugheit/>
         <Sympathie/>
       </Probe>
-      <Beschreibung>TBD</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Krankheitskunde]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
 
     <!--Handwerk BEGINN-->
-    <Talent Name="Alchemie" Komplexität="B" Kategorie="Handwerk">
+    <Talent Id="Alchemie" Komplexität="B" Kategorie="Handwerk">
       <Probe>
         <Präzision/>
         <Klugheit/>
         <Intuition/>
       </Probe>
-      <Beschreibung>Test</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Alchemie]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
-    <Talent Name="Backen" Komplexität="B" Kategorie="Handwerk">
+    <Talent Id="Backen" Komplexität="B" Kategorie="Handwerk">
       <Probe>
         <Intuition/>
         <Klugheit/>
         <Präzision/>
       </Probe>
-      <Beschreibung>Test</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Backen]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
       <Ableitungen>
-        <Ableitung Name="Richen und Schmeken" Anzahl="3"/>
+        <Ableitung Id="Richen und Schmeken" Anzahl="3"/>
       </Ableitungen>
     </Talent>
-    <Talent Name="Kochen" Komplexität="B" Kategorie="Handwerk">
+    <Talent Id="Kochen" Komplexität="B" Kategorie="Handwerk">
       <Probe>
         <Intuition/>
         <Präzision/>
         <Klugheit/>
       </Probe>
-      <Beschreibung>Test</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Kochen]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
       <Bedingugen>
         <Bedingung Wert="4">
-          <Talent Name="Backen" Level="2"/>
+          <Talent Id="Backen" Level="2"/>
         </Bedingung>
       </Bedingugen>
       <Ableitungen>
-        <Ableitung Name="Backen" Anzahl="2"/>
+        <Ableitung Id="Backen" Anzahl="2"/>
       </Ableitungen>
     </Talent>
 
-    <Talent Name="Abrichten" Komplexität="B" Kategorie="Handwerk">
+    <Talent Id="Abrichten" Komplexität="B" Kategorie="Handwerk">
       <Probe>
         <Mut/>
         <Intuition/>
         <Sympathie/>
       </Probe>
-      <Beschreibung>TBD</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Abrichten]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
 
-    <Talent Name="Ackerbau" Komplexität="B" Kategorie="Handwerk">
+    <Talent Id="Ackerbau" Komplexität="B" Kategorie="Handwerk">
       <Probe>
         <Intuition/>
         <Präzision/>
         <Konstitution/>
       </Probe>
-      <Beschreibung>TBD</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Ackerbau]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
 
-    <Talent Name="Alchimie" Komplexität="B" Kategorie="Handwerk">
+    <Talent Id="Alchimie" Komplexität="B" Kategorie="Handwerk">
       <Probe>
         <Mut/>
         <Klugheit/>
         <Präzision/>
       </Probe>
-      <Beschreibung>TBD</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Alchimie]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
 
-    <Talent Name="Bauer" Komplexität="B" Kategorie="Handwerk">
+    <Talent Id="Bauer" Komplexität="B" Kategorie="Handwerk">
       <Probe>
         <Klugheit/>
         <Präzision/>
         <Stärke/>
       </Probe>
-      <Beschreibung>TBD</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Bauer]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
 
-    <Talent Name="Bergbau" Komplexität="B" Kategorie="Handwerk">
+    <Talent Id="Bergbau" Komplexität="B" Kategorie="Handwerk">
       <Probe>
         <Intuition/>
         <Konstitution/>
         <Stärke/>
       </Probe>
-      <Beschreibung>TBD</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Bergbau]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
 
-    <Talent Name="Bogenbau" Komplexität="B" Kategorie="Handwerk">
+    <Talent Id="Bogenbau" Komplexität="B" Kategorie="Handwerk">
       <Probe>
         <Klugheit/>
         <Intuition/>
         <Präzision/>
       </Probe>
-      <Beschreibung>TBD</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Botenbau]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
 
-    <Talent Name="Pfeilmacher" Komplexität="B" Kategorie="Handwerk">
+    <Talent Id="Pfeilmacher" Komplexität="B" Kategorie="Handwerk">
       <Probe>
         <Klugheit/>
         <Intuition/>
         <Präzision/>
       </Probe>
-      <Beschreibung>TBD</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Pfeilmacher]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
 
-    <Talent Name="Boote Fahren" Komplexität="B" Kategorie="Handwerk">
+    <Talent Id="Boote Fahren" Komplexität="B" Kategorie="Handwerk">
       <Probe>
         <Gewandtheit/>
         <Konstitution/>
         <Stärke/>
       </Probe>
-      <Beschreibung>TBD</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Boote Fahren]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
 
-    <Talent Name="Drucker" Komplexität="B" Kategorie="Handwerk">
+    <Talent Id="Drucker" Komplexität="B" Kategorie="Handwerk">
       <Probe>
         <Klugheit/>
         <Präzision/>
         <Stärke/>
       </Probe>
-      <Beschreibung>TBD</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Drucker]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
 
-    <Talent Name="Fahrzeuge Lenken" Komplexität="B" Kategorie="Handwerk">
+    <Talent Id="Fahrzeuge Lenken" Komplexität="B" Kategorie="Handwerk">
       <Probe>
         <Intuition/>
         <Sympathie/>
         <Präzision/>
       </Probe>
-      <Beschreibung>TBD</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Fahrzeuge Lenken]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
 
-    <Talent Name="Falschspiel" Komplexität="B" Kategorie="Handwerk">
+    <Talent Id="Falschspiel" Komplexität="B" Kategorie="Handwerk">
       <Probe>
         <Mut/>
         <Sympathie/>
         <Präzision/>
       </Probe>
-      <Beschreibung>TBD</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Faöschspiel]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
 
-    <Talent Name="Feinmechanik" Komplexität="B" Kategorie="Handwerk">
+    <Talent Id="Feinmechanik" Komplexität="B" Kategorie="Handwerk">
       <Probe>
         <Klugheit/>
         <Präzision/>
         <Präzision/>
       </Probe>
-      <Beschreibung>TBD</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Feinmechanik]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
 
-    <Talent Name="Feuersteinbearbeitung" Komplexität="B" Kategorie="Handwerk">
+    <Talent Id="Feuersteinbearbeitung" Komplexität="B" Kategorie="Handwerk">
       <Probe>
         <Klugheit/>
         <Präzision/>
         <Präzision/>
       </Probe>
-      <Beschreibung>TBD</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Feuersteinbearbeitung]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
 
-    <Talent Name="Fleischer" Komplexität="B" Kategorie="Handwerk">
+    <Talent Id="Fleischer" Komplexität="B" Kategorie="Handwerk">
       <Probe>
         <Klugheit/>
         <Präzision/>
         <Stärke/>
       </Probe>
-      <Beschreibung>TBD</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Fleicher]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
 
-    <Talent Name="Gerber" Komplexität="B" Kategorie="Handwerk">
+    <Talent Id="Gerber" Komplexität="B" Kategorie="Handwerk">
       <Probe>
         <Klugheit/>
         <Präzision/>
         <Konstitution/>
       </Probe>
-      <Beschreibung>TBD</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Gerber]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
       <Ableitungen>
-        <Ableitung Name="Kürschner" Anzahl="2"/>
+        <Ableitung Id="Kürschner" Anzahl="2"/>
       </Ableitungen>
     </Talent>
 
-    <Talent Name="Kürschner" Komplexität="B" Kategorie="Handwerk">
+    <Talent Id="Kürschner" Komplexität="B" Kategorie="Handwerk">
       <Probe>
         <Klugheit/>
         <Präzision/>
         <Konstitution/>
       </Probe>
-      <Beschreibung>TBD</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Kürschner]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
       <Ableitungen>
-        <Ableitung Name="Gerber" Anzahl="2"/>
+        <Ableitung Id="Gerber" Anzahl="2"/>
       </Ableitungen>
     </Talent>
 
-    <Talent Name="Glaskunst" Komplexität="B" Kategorie="Handwerk">
+    <Talent Id="Glaskunst" Komplexität="B" Kategorie="Handwerk">
       <Probe>
         <Präzision/>
         <Präzision/>
         <Konstitution/>
       </Probe>
-      <Beschreibung>TBD</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Glaskunst]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
 
-    <Talent Name="Schmieden" Komplexität="B" Kategorie="Handwerk">
+    <Talent Id="Schmieden" Komplexität="B" Kategorie="Handwerk">
       <Probe>
         <Präzision/>
         <Konstitution/>
         <Stärke/>
       </Probe>
-      <Beschreibung>TBD</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Schmieden]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
 
-    <Talent Name="Handel" Komplexität="B" Kategorie="Handwerk">
+    <Talent Id="Handel" Komplexität="B" Kategorie="Handwerk">
       <Probe>
         <Klugheit/>
         <Intuition/>
         <Sympathie/>
       </Probe>
-      <Beschreibung>TBD</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Handel]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
 
-    <Talent Name="Hauswirtschaft" Komplexität="B" Kategorie="Handwerk">
+    <Talent Id="Hauswirtschaft" Komplexität="B" Kategorie="Handwerk">
       <Probe>
         <Intuition/>
         <Sympathie/>
         <Präzision/>
       </Probe>
-      <Beschreibung>TBD</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Hauswirtschaft]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
 
 
 
-    <Talent Name="Wundenversorgung" Komplexität="B" Kategorie="Handwerk">
+    <Talent Id="Wundenversorgung" Komplexität="B" Kategorie="Handwerk">
       <Probe>
         <Klugheit/>
         <Sympathie/>
         <Präzision/>
       </Probe>
-      <Beschreibung>TBD</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Wundversorgung]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
 
-    <Talent Name="Holzbearbeitung" Komplexität="B" Kategorie="Handwerk">
+    <Talent Id="Holzbearbeitung" Komplexität="B" Kategorie="Handwerk">
       <Probe>
         <Klugheit/>
         <Präzision/>
         <Stärke/>
       </Probe>
-      <Beschreibung>TBD</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Holzbbearbeitung]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
 
-    <Talent Name="Instrumentenbauer" Komplexität="B" Kategorie="Handwerk">
+    <Talent Id="Instrumentenbauer" Komplexität="B" Kategorie="Handwerk">
       <Probe>
         <Klugheit/>
         <Intuition/>
         <Präzision/>
       </Probe>
-      <Beschreibung>TBD</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Instrumentenbauer]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
 
-    <Talent Name="Kartographie" Komplexität="B" Kategorie="Handwerk">
+    <Talent Id="Kartographie" Komplexität="B" Kategorie="Handwerk">
       <Probe>
         <Klugheit/>
         <Klugheit/>
         <Präzision/>
       </Probe>
-      <Beschreibung>TBD</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Kartographie]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
 
 
-    <Talent Name="Lederarbeiten" Komplexität="B" Kategorie="Handwerk">
+    <Talent Id="Lederarbeiten" Komplexität="B" Kategorie="Handwerk">
       <Probe>
         <Klugheit/>
         <Präzision/>
         <Präzision/>
       </Probe>
-      <Beschreibung>TBD</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Lederarbeiten]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
 
-    <Talent Name="Zeichnen" Komplexität="B" Kategorie="Handwerk">
+    <Talent Id="Zeichnen" Komplexität="B" Kategorie="Handwerk">
       <Probe>
         <Klugheit/>
         <Intuition/>
         <Präzision/>
       </Probe>
-      <Beschreibung>TBD</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Zeichnen]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
-    <Talent Name="Malen" Komplexität="B" Kategorie="Handwerk">
+    <Talent Id="Malen" Komplexität="B" Kategorie="Handwerk">
       <Probe>
         <Intuition/>
         <Intuition/>
         <Präzision/>
       </Probe>
-      <Beschreibung>TBD</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Malen]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
 
-    <Talent Name="Maurer" Komplexität="B" Kategorie="Handwerk">
+    <Talent Id="Maurer" Komplexität="B" Kategorie="Handwerk">
       <Probe>
         <Präzision/>
         <Gewandtheit/>
         <Stärke/>
       </Probe>
-      <Beschreibung>TBD</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Maurer]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
 
-    <Talent Name="Metallguss" Komplexität="B" Kategorie="Handwerk">
+    <Talent Id="Metallguss" Komplexität="B" Kategorie="Handwerk">
       <Probe>
         <Klugheit/>
         <Präzision/>
         <Stärke/>
       </Probe>
-      <Beschreibung>TBD</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Metallguss]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
 
-    <Talent Name="Musizieren" Komplexität="B" Kategorie="Handwerk">
+    <Talent Id="Musizieren" Komplexität="B" Kategorie="Handwerk">
       <Probe>
         <Intuition/>
         <Sympathie/>
         <Präzision/>
       </Probe>
-      <Beschreibung>TBD</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Musizieren]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
 
-    <Talent Name="Schlösser Knacken" Komplexität="B" Kategorie="Handwerk">
+    <Talent Id="Schlösser Knacken" Komplexität="B" Kategorie="Handwerk">
       <Probe>
         <Intuition/>
         <Präzision/>
         <Präzision/>
       </Probe>
-      <Beschreibung>TBD</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Schlösser Knacken]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
 
-    <Talent Name="Schnaps brennen" Komplexität="B" Kategorie="Handwerk">
+    <Talent Id="Schnaps brennen" Komplexität="B" Kategorie="Handwerk">
       <Probe>
         <Klugheit/>
         <Intuition/>
         <Präzision/>
       </Probe>
-      <Beschreibung>TBD</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Schnaps brennen]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
 
-    <Talent Name="Schneidern" Komplexität="B" Kategorie="Handwerk">
+    <Talent Id="Schneidern" Komplexität="B" Kategorie="Handwerk">
       <Probe>
         <Klugheit/>
         <Präzision/>
         <Präzision/>
       </Probe>
-      <Beschreibung>TBD</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Schneidern]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
 
-    <Talent Name="Seefahrt" Komplexität="B" Kategorie="Handwerk">
+    <Talent Id="Seefahrt" Komplexität="B" Kategorie="Handwerk">
       <Probe>
         <Präzision/>
         <Gewandtheit/>
         <Stärke/>
       </Probe>
-      <Beschreibung>TBD</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Seefahrt]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
 
-    <Talent Name="Seiler" Komplexität="B" Kategorie="Handwerk">
+    <Talent Id="Seiler" Komplexität="B" Kategorie="Handwerk">
       <Probe>
         <Präzision/>
         <Präzision/>
         <Stärke/>
       </Probe>
-      <Beschreibung>TBD</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Seiler]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
 
-    <Talent Name="Steinmetz" Komplexität="B" Kategorie="Handwerk">
+    <Talent Id="Steinmetz" Komplexität="B" Kategorie="Handwerk">
       <Probe>
         <Präzision/>
         <Präzision/>
         <Stärke/>
       </Probe>
-      <Beschreibung>TBD</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Steinmetz]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
 
-    <Talent Name="Juwelier" Komplexität="B" Kategorie="Handwerk">
+    <Talent Id="Juwelier" Komplexität="B" Kategorie="Handwerk">
       <Probe>
         <Intuition/>
         <Präzision/>
         <Präzision/>
       </Probe>
-      <Beschreibung>TBD</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Juwelier]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
 
-    <Talent Name="Stellmacher" Komplexität="B" Kategorie="Handwerk">
+    <Talent Id="Stellmacher" Komplexität="B" Kategorie="Handwerk">
       <Probe>
         <Klugheit/>
         <Präzision/>
         <Stärke/>
       </Probe>
-      <Beschreibung>TBD</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Stellmacher]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
 
-    <Talent Name="Stoffe Färben" Komplexität="B" Kategorie="Handwerk">
+    <Talent Id="Stoffe Färben" Komplexität="B" Kategorie="Handwerk">
       <Probe>
         <Klugheit/>
         <Präzision/>
         <Stärke/>
       </Probe>
-      <Beschreibung>TBD</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Stoffe Färben]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
 
-    <Talent Name="Tätowieren" Komplexität="B" Kategorie="Handwerk">
+    <Talent Id="Tätowieren" Komplexität="B" Kategorie="Handwerk">
       <Probe>
         <Intuition/>
         <Präzision/>
         <Präzision/>
       </Probe>
-      <Beschreibung>TBD</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Tätowiren]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
 
-    <Talent Name="Töpfern" Komplexität="B" Kategorie="Handwerk">
+    <Talent Id="Töpfern" Komplexität="B" Kategorie="Handwerk">
       <Probe>
         <Klugheit/>
         <Präzision/>
         <Präzision/>
       </Probe>
-      <Beschreibung>TBD</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Töpfern]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
 
-    <Talent Name="Viehzucht" Komplexität="B" Kategorie="Handwerk">
+    <Talent Id="Viehzucht" Komplexität="B" Kategorie="Handwerk">
       <Probe>
         <Klugheit/>
         <Intuition/>
         <Stärke/>
       </Probe>
-      <Beschreibung>TBD</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Viehzucht]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
 
-    <Talent Name="Webkunst" Komplexität="B" Kategorie="Handwerk">
+    <Talent Id="Webkunst" Komplexität="B" Kategorie="Handwerk">
       <Probe>
         <Präzision/>
         <Präzision/>
         <Stärke/>
       </Probe>
-      <Beschreibung>TBD</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Webkunst]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
 
-    <Talent Name="Winzer" Komplexität="B" Kategorie="Handwerk">
-      <Probe>
-        <Klugheit/>
-        <Präzision/>
-        <Stärke/>
-      </Probe>
-      <Beschreibung>TBD</Beschreibung>
-    </Talent>
-
-    <Talent Name="Zimmermann" Komplexität="B" Kategorie="Handwerk">
-      <Probe>
-        <Klugheit/>
-        <Präzision/>
-        <Stärke/>
-      </Probe>
-      <Beschreibung>TBD</Beschreibung>
-    </Talent>
-    <Talent Name="Fallenstellen" Komplexität="B" Kategorie="Handwerk">
+    <Talent Id="Winzer" Komplexität="B" Kategorie="Handwerk">
       <Probe>
         <Klugheit/>
         <Präzision/>
         <Stärke/>
       </Probe>
-      <Beschreibung>TBD</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Winzer]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
 
-    <Talent Name="Fesseln" Komplexität="B" Kategorie="Handwerk">
+    <Talent Id="Zimmermann" Komplexität="B" Kategorie="Handwerk">
+      <Probe>
+        <Klugheit/>
+        <Präzision/>
+        <Stärke/>
+      </Probe>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Zimmermann]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
+    </Talent>
+    <Talent Id="Fallenstellen" Komplexität="B" Kategorie="Handwerk">
+      <Probe>
+        <Klugheit/>
+        <Präzision/>
+        <Stärke/>
+      </Probe>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Fallenstellen]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
+    </Talent>
+
+    <Talent Id="Fesseln" Komplexität="B" Kategorie="Handwerk">
       <Probe>
         <Präzision/>
         <Gewandtheit/>
         <Stärke/>
       </Probe>
-      <Beschreibung>TBD</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Fesseln]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
-    <Talent Name="Fischen" Komplexität="B" Kategorie="Handwerk">
+    <Talent Id="Fischen" Komplexität="B" Kategorie="Handwerk">
       <Probe>
         <Intuition/>
         <Präzision/>
         <Stärke/>
       </Probe>
-      <Beschreibung>TBD</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Fischen]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
-    <Talent Name="Wildnisleben" Komplexität="B" Kategorie="Handwerk">
+    <Talent Id="Wildnisleben" Komplexität="B" Kategorie="Handwerk">
       <Probe>
         <Intuition/>
         <Gewandtheit/>
         <Konstitution/>
       </Probe>
-      <Beschreibung>TBD</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Wildnissleben]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
     </Talent>
-    
-    
 
 
-    
+
+
+
 
   </Talente>
   <Fertigkeiten
     xmlns="http://nota.org/schema/fertigkeit">
-    <Fertigkeit Name="Kulturkunde Alan">
-      <Beschreibung>Das Wissen um die Kultur der Alan</Beschreibung>
+    <Fertigkeit Id="Kulturkunde Alan">
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Kulturkunde Alan]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[Das Wissen um die Kultur der Alan]]></misc:Lokalisirung>
+      </Beschreibung>
     </Fertigkeit>
-    <Fertigkeit Name="Arjuniche Zeichen">
+    <Fertigkeit Id="Arjuniche Zeichen">
       <Tags>
-        <misc:Tag Name="Lesen/Schreiben" />
+        <misc:Tag Id="Lesen/Schreiben" />
       </Tags>
-      <Beschreibung>Die Schrift der Arjur</Beschreibung>
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Arjuniche Zeichen]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de"><![CDATA[Die Schrift der Arjur]]></misc:Lokalisirung>
+      </Beschreibung>
     </Fertigkeit>
   </Fertigkeiten>
   <Besonderheiten
     xmlns="http://nota.org/schema/besonderheit">
-    <Besonderheit Name="Auserwählter" Gebunden="true" Kosten="0">
+    <Besonderheit Id="Auserwählter" Gebunden="true" Kosten="0">
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Auserwählter]]></misc:Lokalisirung>
+      </Name>
       <Beschreibung>
-        Der Charakter wurde von einem der Götter auserwählt
+        <misc:Lokalisirung sparche="de"><![CDATA[Der Charakter wurde von einem der Götter auserwählt]]></misc:Lokalisirung>
       </Beschreibung>
     </Besonderheit>
 
-    <Besonderheit Name="Auserwählter Alsas" Gebunden="true" Kosten="0">
+    <Besonderheit Id="Auserwählter Alsas" Gebunden="true" Kosten="0">
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Auserwählter Alsas]]></misc:Lokalisirung>
+      </Name>
       <Beschreibung>
-        Der Charakter wurde von einem der Götter auserwählt
+        <misc:Lokalisirung sparche="de">
+          <![CDATA[Der Charakter wurde von einem der Götter auserwählt]]>
+        </misc:Lokalisirung>
       </Beschreibung>
     </Besonderheit>
 
 
-    <Besonderheit Name="Miasma Resistenz" Kosten="0">
-      <Beschreibung>Der Charakter hat eine erhöte Resistenz gegen das dämonische Miasma</Beschreibung>
+    <Besonderheit Id="Miasma Resistenz" Kosten="0">
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Miasma Resistenz]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de">
+          <![CDATA[Der Charakter hat eine erhöte Resistenz gegen das dämonische Miasma]]>
+        </misc:Lokalisirung>
+      </Beschreibung>
       <Bedingung>
-        <Besonderheit Name="Auserwählter"/>
+        <Besonderheit Id="Auserwählter"/>
       </Bedingung>
     </Besonderheit>
 
-    <Besonderheit Name="Verbesserte Wundheilung" Kosten="0">
-      <Beschreibung>Die Wunden des Charakters heilen Schneller.</Beschreibung>
+    <Besonderheit Id="Verbesserte Wundheilung" Kosten="0">
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Verbesserte Wundheilung]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de">
+          <![CDATA[Die Wunden des Charakters heilen Schneller.]]>
+        </misc:Lokalisirung>
+      </Beschreibung>
       <Bedingung>
-        <Besonderheit Name="Auserwählter"/>
+        <Besonderheit Id="Auserwählter"/>
       </Bedingung>
     </Besonderheit>
 
-    <Besonderheit Name="Krankheitsresistenz" Kosten="0">
-      <Beschreibung>Der Charakter wird troz wiedriger Umstände nicht so leicht Krank.</Beschreibung>
+    <Besonderheit Id="Krankheitsresistenz" Kosten="0">
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Krankheitsresistenz]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de">
+          <![CDATA[Der Charakter wird troz wiedriger Umstände nicht so leicht Krank.]]>
+        </misc:Lokalisirung>
+      </Beschreibung>
       <Bedingung>
-        <Besonderheit Name="Auserwählter"/>
+        <Besonderheit Id="Auserwählter"/>
       </Bedingung>
     </Besonderheit>
 
-    <Besonderheit Name="Beidhändig" Kosten="3"     >
-      <Beschreibung></Beschreibung>
+    <Besonderheit Id="Beidhändig" Kosten="3"     >
+      <Name>
+        <misc:Lokalisirung sparche="de"><![CDATA[Beidhändig]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </Beschreibung>
     </Besonderheit>
   </Besonderheiten>
 
   <Taktiken xmlns="http://nota.org/schema/kampf/aktionen">
-    <Taktik Name="Angriff" Kosten="2" Belastung="1" Typ="Offensiv">
+    <Taktik Id="Angriff" Kosten="2" Belastung="1" Typ="Offensiv">
       <Beschreibung>Ein standard angriff.</Beschreibung>
     </Taktik>
 
-    <Taktik Name="Leichter Angriff" Kosten="1" Belastung="0.5" Typ="Offensiv">
+    <Taktik Id="Leichter Angriff" Kosten="1" Belastung="0.5" Typ="Offensiv">
       <Beschreibung>Ein leichter Angriff.</Beschreibung>
       <Erfolg>Wenn eine andere Offensive Taktik dieses Charakters mehr oder gleich viel Schaden am selben Ziel verursacht, wird der Schaden negiert.</Erfolg>
       <Mod ModifierType="Malus">
-        <ConcreteModValueType Type="Absolute" Value="5"/>      
+        <ConcreteModValueType Type="Absolute" Value="5"/>
       </Mod>
     </Taktik>
 
-    <Taktik Name="Offensiver Angriff" Kosten="2" Belastung="1.5" Typ="Offensiv">
+    <Taktik Id="Offensiver Angriff" Kosten="2" Belastung="1.5" Typ="Offensiv">
       <Beschreibung>Ein Angriff der wenig raum für Verteidigung läßt.</Beschreibung>
       <Mod ModifierType="Bonus">
-        <ConcreteModValueType Type="Absolute" Value="5"/>      
+        <ConcreteModValueType Type="Absolute" Value="5"/>
       </Mod>
     </Taktik>
 
-    <Taktik Name="Agressiver Angriff" Kosten="4" Belastung="2" Typ="Offensiv">
+    <Taktik Id="Agressiver Angriff" Kosten="4" Belastung="2" Typ="Offensiv">
       <Beschreibung>Ein Angriff der die Verteidigung ignoriert.</Beschreibung>
       <Bedingung>Keine Defensiven Taktiken.</Bedingung>
       <Mod ModifierType="Bonus">
-        <ConcreteModValueType Type="Percent" Value="100"/>      
+        <ConcreteModValueType Type="Percent" Value="100"/>
       </Mod>
     </Taktik>
 
-    <Taktik Name="Leichte Verteidigung" Kosten="1" Belastung="0.5" Typ="Defensiv">
+    <Taktik Id="Leichte Verteidigung" Kosten="1" Belastung="0.5" Typ="Defensiv">
       <Beschreibung>Eine leichte Verteidigung.</Beschreibung>
-    <Mod ModifierType="Malus">
-        <ConcreteModValueType Type="Absolute" Value="5"/>      
+      <Mod ModifierType="Malus">
+        <ConcreteModValueType Type="Absolute" Value="5"/>
       </Mod>
     </Taktik>
-    
-    <Taktik Name="Verteidigung" Kosten="2" Belastung="1" Typ="Defensiv">
+
+    <Taktik Id="Verteidigung" Kosten="2" Belastung="1" Typ="Defensiv">
       <Beschreibung>Eine Standard Verteidigung.</Beschreibung>
     </Taktik>
 
-    <Taktik Name="Starke Verteidigung" Kosten="3" Belastung="1.5" Typ="Defensiv">
+    <Taktik Id="Starke Verteidigung" Kosten="3" Belastung="1.5" Typ="Defensiv">
       <Beschreibung>Eine Schwer durchdringbare verteidigung.</Beschreibung>
-    <Mod ModifierType="Bonus">
-        <ConcreteModValueType Type="Absolute" Value="5"/>      
+      <Mod ModifierType="Bonus">
+        <ConcreteModValueType Type="Absolute" Value="5"/>
       </Mod>
     </Taktik>
-    
-    <Taktik Name="Verteidigungshaltung" Kosten="3" Belastung="2"  Typ="Defensiv">
+
+    <Taktik Id="Verteidigungshaltung" Kosten="3" Belastung="2"  Typ="Defensiv">
       <Beschreibung>Der Charakter konzentriert sich auf seine Verteidigung, auf kosten seiner Angriffe.</Beschreibung>
       <Bedingung>Keine offensiven Taktiken.</Bedingung>
       <Mod ModifierType="Bonus">
@@ -1756,17 +2631,17 @@
       </Mod>
     </Taktik>
 
-    <Taktik Name="Rückzug" Kosten="2" Belastung="2" Typ="Defensiv">
+    <Taktik Id="Rückzug" Kosten="2" Belastung="2" Typ="Defensiv">
       <Beschreibung>Ein gezielter Rückzug bei dem sich der Charakter aus dem Nahkampf lößt, ohne sich Preis zu geben</Beschreibung>
       <Erfolg>Der Charakter lößt sich aus dem Nahkampf.</Erfolg>
     </Taktik>
 
-    <Taktik Name="Flucht" Kosten="3" Belastung="1" Typ="Neutral">
+    <Taktik Id="Flucht" Kosten="3" Belastung="1" Typ="Neutral">
       <Beschreibung>Der Charakter entfernt sich aus dem Nahkampf ohne sich um seine Deckung zu kümmern.</Beschreibung>
       <GarantierterEffekt>Der Charakter lößt sich aus dem Nahkampf.</GarantierterEffekt>
     </Taktik>
 
-    <Taktik Name="Finte" Kosten="1" Belastung="1" Typ="Offensiv">
+    <Taktik Id="Finte" Kosten="1" Belastung="1" Typ="Offensiv">
       <Beschreibung>Der Charakter versucht mit dem Angriff den gegner eine Falle zu stellen und so stärker zu bedrängen.</Beschreibung>
       <SofortigerEffekt>$x entspricht dem Bedränungsmalus des Ziels</SofortigerEffekt>
       <Erfolg>Das Ziel wird writer bedrängt anstelle das Schaden verursact wird.</Erfolg>
@@ -1774,12 +2649,12 @@
         <VariableModValueType Value="X"/>
       </Mod>
       <Eigenschaften>
-        <Eigenschaft Name="Präzise"/>
+        <Eigenschaft Id="Präzise"/>
       </Eigenschaften>
 
     </Taktik>
 
-    <Taktik Name="Wuchtiger Angriff" Kosten="3" Belastung="1" Typ="Offensiv">
+    <Taktik Id="Wuchtiger Angriff" Kosten="3" Belastung="1" Typ="Offensiv">
       <Beschreibung>Setzt mehr Wucht in einen auszuführenden Angriff.</Beschreibung>
       <SofortigerEffekt>$x ist  belibiger Wert bis zum doppelten Basiswuchtschaden der Waffe.</SofortigerEffekt>
       <Erfolg>Die Waffe Trift. Erhöht den Wuchtschaden der Waffe um $x.</Erfolg>
@@ -1791,11 +2666,11 @@
         </MultiplyModValueType>
       </Mod>
       <Eigenschaften>
-        <Eigenschaft Name="Wuchtig"/>
+        <Eigenschaft Id="Wuchtig"/>
       </Eigenschaften>
     </Taktik>
 
-    <Taktik Name="Todesstoß" Kosten="5" Belastung="2" Typ="Offensiv">
+    <Taktik Id="Todesstoß" Kosten="5" Belastung="2" Typ="Offensiv">
       <Beschreibung>Der Charakter leitet einen Riskanten Angriff ein um den gegner einen Gefährlichen Treffer zu versetzen.</Beschreibung>
       <SofortigerEffekt>$x ist ein belibiger Wert.</SofortigerEffekt>
       <GarantierterEffekt>Die Defensiv Taktik des Ziels wird um $x reduziert.</GarantierterEffekt>
@@ -1809,15 +2684,17 @@
       </Mod>
     </Taktik>
 
-    <Taktik Name="Waffe Platzieren" Kosten="2" Belastung="2" Typ="Offensiv">
+    <Taktik Id="Waffe Platzieren" Kosten="2" Belastung="2" Typ="Offensiv">
       <Beschreibung>Eine Taktik an deren ende die Waffe an eine empfindliche stelle, wie beispielsweise Kehle, Plaziert wurde.</Beschreibung>
       <Bedingung>Pro Waffe kann nur eine Aktion Waffe Platzieren gewählt werden.</Bedingung>
       <SofortigerEffekt>$x ist ein belibiger Wert.</SofortigerEffekt>
-      <Erfolg>Führt das Ziel nächste Runde eine Offensive Taktik aus erhält es den Schnittschaden der Waffe. Sollte die Taktik nur eine Defensive sein, so wird der Schaden nur erlitten falls diese ein Misserfolg ist.
+      <Erfolg>
+        Führt das Ziel nächste Runde eine Offensive Taktik aus erhält es den Schnittschaden der Waffe. Sollte die Taktik nur eine Defensive sein, so wird der Schaden nur erlitten falls diese ein Misserfolg ist.
 
-Zusätzlich erhällt das Ziel nächste runde einen zusätzlichen Malus von $x auf alle Offensiven Taktiken und der Charakter einen Bonus von $x auf alle Defensiven Taktiken.
+        Zusätzlich erhällt das Ziel nächste runde einen zusätzlichen Malus von $x auf alle Offensiven Taktiken und der Charakter einen Bonus von $x auf alle Defensiven Taktiken.
 
-Ausserdem darf eine Waffe Plazieren Taktik die das selbe Ziel wie diese hat in der Nächsten runde durch eine andere Taktik ausgetauscht werden, nachdem alle Aktionen bekannt gegeben wurden. Als Trefferzone kann die selebe Zone gewählt werden die diese Aktion getroffen hat. In diesem Fall kann eine belibige Unterzone gewählt werden.</Erfolg>
+        Ausserdem darf eine Waffe Plazieren Taktik die das selbe Ziel wie diese hat in der Nächsten runde durch eine andere Taktik ausgetauscht werden, nachdem alle Aktionen bekannt gegeben wurden. Als Trefferzone kann die selebe Zone gewählt werden die diese Aktion getroffen hat. In diesem Fall kann eine belibige Unterzone gewählt werden.
+      </Erfolg>
       <Mod ModifierType="Malus">
         <AddModValueType>
           <VariableModValueType Value="X"/>
@@ -1826,25 +2703,25 @@ Ausserdem darf eine Waffe Plazieren Taktik die das selbe Ziel wie diese hat in d
       </Mod>
     </Taktik>
 
-    <Taktik Name="Schutz" Kosten="3" Belastung="1" Typ="Defensiv">
+    <Taktik Id="Schutz" Kosten="3" Belastung="1" Typ="Defensiv">
       <Beschreibung>Der Charakter übernimmt den Schutz eines anderen.</Beschreibung>
       <Bedingung>Das Ziel darf keine Offensive Taktik nutzen.</Bedingung>
       <SofortigerEffekt>Diese Taktik gillt als Defensive Aktion des zu schützenden Ziels und nicht für den ausführenden Charakter.</SofortigerEffekt>
     </Taktik>
 
-    <Taktik Name="Position" Kosten="2" Belastung="1" Typ="Defensiv">
+    <Taktik Id="Position" Kosten="2" Belastung="1" Typ="Defensiv">
       <Beschreibung>Der Charakter versucht seine Position zu verbessern.</Beschreibung>
       <SofortigerEffekt>Diese Defensive Taktik führt nicht zum Misserfolg einer gengerichen Offensiven Taktik und verhindert keinen Schaden.</SofortigerEffekt>
       <Erfolg>Der Charakter baut die hälfte seiner Stellenmali ab (aufgerundet).</Erfolg>
       <Misserfolg>Der Charakter baut ein virtel seiner Stellenmali ab (aufgerundet). Würde der Charakter diese runde Stellen Mali bekommen, entfellt der Effekt dafür wird der erhaltene Mali um die hälfte Reduziert.</Misserfolg>
     </Taktik>
 
-    <Taktik Name="Reden" Kosten="1" Belastung="0" Typ="Neutral">
+    <Taktik Id="Reden" Kosten="1" Belastung="0" Typ="Neutral">
       <Beschreibung>Der Charakter kann am ende der Kampfrunde mehr sagen als er eigentlich dürfte. Er kann einen ungefähr 5 sekunden lange nachricht von sich geben.</Beschreibung>
       <SofortigerEffekt>Der Charakter erhält einen Malus von 1 auf alle Aktionen. Wenn dies die einzige Aktion ist, werden die Kosten auf 0 reduziert.</SofortigerEffekt>
     </Taktik>
 
-    <Taktik Name="Zustechen" Kosten="2" Belastung="0.5" Typ="Unterstützend">
+    <Taktik Id="Zustechen" Kosten="2" Belastung="0.5" Typ="Unterstützend">
       <Beschreibung>Bei diesem Angriff nutzt der Charakter die Schneide seiner Waffe an einer äußerst empfindlichen stelle, wie beispielsweise dem Hals. Oder Durschtößt mit der Klinge den Körper des Gegners. Ein bevorzugter Angriff von meuchlern.</Beschreibung>
       <Erfolg>Der Wuchtschaden der Waffe wird auf 0 gesetzt (Wuchtschläge funktionieren). Der Angriff erhält die Eigenschaft Tödlich.</Erfolg>
       <Mod ModifierType="Malus">
@@ -1853,7 +2730,7 @@ Ausserdem darf eine Waffe Plazieren Taktik die das selbe Ziel wie diese hat in d
 
     </Taktik>
 
-    <Taktik Name="Gezielter Angriff" Kosten="1" Belastung="0" Typ="Unterstützend">
+    <Taktik Id="Gezielter Angriff" Kosten="1" Belastung="0" Typ="Unterstützend">
       <Beschreibung>Der Kämpfer versucht ein bestimmtes Körperteil gezielt zu treffen.</Beschreibung>
       <SofortigerEffekt>$x ist ien belibiger Wert.</SofortigerEffekt>
       <Erfolg>Die bestimmung der Trefferzone (W20 Gliedmaße) kann $x mal wiederholt werden.</Erfolg>
@@ -1864,32 +2741,32 @@ Ausserdem darf eine Waffe Plazieren Taktik die das selbe Ziel wie diese hat in d
         </MultiplyModValueType>
       </Mod>
       <Eigenschaften>
-        <Eigenschaft Name="Präzise"/>
+        <Eigenschaft Id="Präzise"/>
       </Eigenschaften>
     </Taktik>
 
-    <Taktik Name="Präziser Angriff" Kosten="1" Belastung="0" Typ="Unterstützend">
+    <Taktik Id="Präziser Angriff" Kosten="1" Belastung="0" Typ="Unterstützend">
       <Beschreibung>Erlaubt dem Angreifer an der Rüstung des Gegners Vorbei zu stechen..</Beschreibung>
       <Bedingung>Nur mit Präzisen Waffen möglich.</Bedingung>
       <SofortigerEffekt>$x ist ien belibiger Wert.</SofortigerEffekt>
       <Erfolg>Bei genauer bestimmung der Trefferzone (W10) kann $x zum Ergebniss Addiert oder Subtrahiert werden.</Erfolg>
       <Mod ModifierType="Malus">
-      <MultiplyModValueType>
-        <ConcreteModValueType Type="Absolute" Value="2" /> 
-        <VariableModValueType Value="X"/>
-      </MultiplyModValueType>
+        <MultiplyModValueType>
+          <ConcreteModValueType Type="Absolute" Value="2" />
+          <VariableModValueType Value="X"/>
+        </MultiplyModValueType>
       </Mod>
       <Eigenschaften>
-        <Eigenschaft Name="Präzise"/>
+        <Eigenschaft Id="Präzise"/>
       </Eigenschaften>
     </Taktik>
 
-    <Taktik Name="Erholen / Abwarten" Kosten="0" Belastung="1" Typ="Neutral">
+    <Taktik Id="Erholen / Abwarten" Kosten="0" Belastung="1" Typ="Neutral">
       <Beschreibung>Der Charakter erholt sich</Beschreibung>
       <GarantierterEffekt>Der Charakter regeneriert alle Erschöpfung, wenn dies seien einzigste Aktion ist. Andernfalls die Hälfte.</GarantierterEffekt>
     </Taktik>
 
-    <Taktik Name="Zielen" Kosten="1" Belastung="2" Typ="Neutral">
+    <Taktik Id="Zielen" Kosten="1" Belastung="2" Typ="Neutral">
       <Beschreibung>Der Charakter bereitet einen gezielten Schuss vor.</Beschreibung>
       <Bedingung>Nur mit Fernkampfwaffe</Bedingung>
       <SofortigerEffekt>$x entspricht der Fernkampfmodifikation. (Siehe Tabelle)</SofortigerEffekt>
@@ -1902,7 +2779,7 @@ Ausserdem darf eine Waffe Plazieren Taktik die das selbe Ziel wie diese hat in d
       </Mod>
     </Taktik>
 
-    <Taktik Name="Gezielter Schuss" Kosten="1" Belastung="2" Typ="Offensiv">
+    <Taktik Id="Gezielter Schuss" Kosten="1" Belastung="2" Typ="Offensiv">
       <Beschreibung>Der Charakter führt einen gezielten Schuss durch.</Beschreibung>
       <SofortigerEffekt>$x entspricht der Fernkampf modifikation.</SofortigerEffekt>
       <Erfolg>Der Charakter Trifft das Ziel einmal.</Erfolg>
@@ -1914,7 +2791,7 @@ Ausserdem darf eine Waffe Plazieren Taktik die das selbe Ziel wie diese hat in d
       </Mod>
     </Taktik>
 
-    <!-- <Taktik Name="Steilshuss" Kosten="1" Belastung="2" Typ="Offensiv">
+    <!-- <Taktik Id="Steilshuss" Kosten="1" Belastung="2" Typ="Offensiv">
       <Beschreibung>Der Charakter führt einen Balistischen Schuss durch. Dieses kann beispielsweise auch gegner hinter Dekung treffen. Durch die Balistische Flugbahn ist das geschoss jedoch lönger unterwegs.</Beschreibung>
       <SofortigerEffekt>Der Angriff erfolgt diese Kampfrunde, trifft sein Ziel aber erst nächste. Dabei ist das Problem weniger den Anvisierten Punkt zu treffe, als vorherzusehen wo sich der gegner zu diesem Zeitpunkt befinden wird.</SofortigerEffekt>
       <Mod ModifierType="Malus">
@@ -1922,7 +2799,7 @@ Ausserdem darf eine Waffe Plazieren Taktik die das selbe Ziel wie diese hat in d
       </Mod>
     </Taktik> -->
 
-    <Taktik Name="Mehrfachschuss" Kosten="2" Belastung="2" Typ="Offensiv">
+    <Taktik Id="Mehrfachschuss" Kosten="2" Belastung="2" Typ="Offensiv">
       <Beschreibung>Schießt mit einer Distanzwaffe bis zur maximalen schussfrequenz.</Beschreibung>
       <SofortigerEffekt>$x entspricht der Fernkampfmodifikation.</SofortigerEffekt>
       <Erfolg>Der Charakter Trifft das Ziel entsprechend der Feuerrate.</Erfolg>
@@ -1931,28 +2808,46 @@ Ausserdem darf eine Waffe Plazieren Taktik die das selbe Ziel wie diese hat in d
       </Mod>
     </Taktik>
 
-    <Taktik Kosten="3" Name="Ausweichen" Belastung="1" Typ="Defensiv">
+    <Taktik Kosten="3" Id="Ausweichen" Belastung="1" Typ="Defensiv">
       <Beschreibung>In manschen situation ist es ratsam nicht mit der Waffe zu parieren, sondern dem Angriff aus dem Weg zughen.</Beschreibung>
     </Taktik>
 
-    <Taktik Kosten="4" Name="Flammenklinge" Belastung="2" Typ="Neutral">
+    <Taktik Kosten="4" Id="Flammenklinge" Belastung="2" Typ="Neutral">
       <Beschreibung>Hüllt die Waffe in Flammen und erhöt die Reichweite.</Beschreibung>
       <Bedingung>Charakter Feueradept</Bedingung>
       <Erfolg>Erhöt die DK der Waffe nächste Runde um eins. Für je volle 3 Punkte hält der Effekt 1 Runde länger.</Erfolg>
     </Taktik>
 
-    <Taktik Kosten="9" Name="Flammenwand" Belastung="2" Typ="Neutral">
+    <Taktik Kosten="9" Id="Flammenwand" Belastung="2" Typ="Neutral">
       <Beschreibung>Erzeugt Flammenwände.</Beschreibung>
       <Bedingung>Charakter Feueradept</Bedingung>
       <Erfolg>Für je 2 Punkte kann der Charakter einen Meter wand erzeugen startend vor ihm. Die Wand hält 3 Runden.</Erfolg>
     </Taktik>
 
     <Eigenschaften>
-      <Eigenschaft Name="Präzise">
-        <Beschreibung>Eine Aktion die besonders Präzises vorgehen verlangt.</Beschreibung>
+      <Eigenschaft Id="Präzise">
+        <Name>
+          <misc:Lokalisirung sparche="de">
+            <![CDATA[Präzise]]>
+          </misc:Lokalisirung>
+        </Name>
+        <Beschreibung>
+          <misc:Lokalisirung sparche="de">
+            <![CDATA[Eine Aktion die besonders Präzises vorgehen verlangt.]]>
+          </misc:Lokalisirung>
+        </Beschreibung>
       </Eigenschaft>
-      <Eigenschaft Name="Wuchtig">
-        <Beschreibung>Eine Aktoin bei der es auf Brachiale gewalt ankommt.</Beschreibung>
+      <Eigenschaft Id="Wuchtig">
+        <Name>
+          <misc:Lokalisirung sparche="de">
+            <![CDATA[Wuchtig]]>
+          </misc:Lokalisirung>
+        </Name>
+        <Beschreibung>
+          <misc:Lokalisirung sparche="de">
+            <![CDATA[Eine Aktoin bei der es auf Brachiale gewalt ankommt.]]>
+          </misc:Lokalisirung>
+        </Beschreibung>
       </Eigenschaft>
     </Eigenschaften>
 
@@ -1960,122 +2855,122 @@ Ausserdem darf eine Waffe Plazieren Taktik die das selbe Ziel wie diese hat in d
 
   <Ausstattung xmlns="http://nota.org/schema/kampf/ausstattung">
     <Waffen>
-      <Nahkampfwaffe Name="Floret"  Distanzklasse="2"  >
+      <Nahkampfwaffe Id="Floret"  Distanzklasse="2"  >
         <Schaden>
           <Schnitt  Schaden="2"/>
         </Schaden>
         <Eigenschaften>
-          <Eigenschaft Name="Präzise"/>
+          <Eigenschaft Id="Präzise"/>
         </Eigenschaften>
         <Talente>
-          <talent:Talent Name="Fechtwaffen"/>
+          <talent:Talent Id="Fechtwaffen"/>
         </Talente>
       </Nahkampfwaffe>
-      <Nahkampfwaffe Name="Rapier"  Distanzklasse="2"  >
+      <Nahkampfwaffe Id="Rapier"  Distanzklasse="2"  >
         <Schaden>
           <Wucht Schaden="1"/>
           <Schnitt  Schaden="3"/>
         </Schaden>
         <Eigenschaften>
-          <Eigenschaft Name="Präzise"/>
+          <Eigenschaft Id="Präzise"/>
         </Eigenschaften>
         <Talente>
-          <talent:Talent Name="Fechtwaffen"/>
+          <talent:Talent Id="Fechtwaffen"/>
         </Talente>
       </Nahkampfwaffe>
-      <Nahkampfwaffe Name="Schwert" Distanzklasse="2">
+      <Nahkampfwaffe Id="Schwert" Distanzklasse="2">
         <Schaden>
           <Wucht Schaden="3"/>
           <Schnitt  Schaden="3"/>
         </Schaden>
         <Talente>
-          <talent:Talent Name="Schwerter"/>
+          <talent:Talent Id="Schwerter"/>
         </Talente>
       </Nahkampfwaffe>
-      <Nahkampfwaffe Name="Axt" Distanzklasse="2">
+      <Nahkampfwaffe Id="Axt" Distanzklasse="2">
         <Schaden>
           <Wucht Schaden="5"/>
           <Schnitt  Schaden="4"/>
         </Schaden>
         <Talente>
-          <talent:Talent Name="Einhandäxte"/>
+          <talent:Talent Id="Einhandäxte"/>
         </Talente>
       </Nahkampfwaffe>
-      <Nahkampfwaffe Name="Dolch" Distanzklasse="1">
+      <Nahkampfwaffe Id="Dolch" Distanzklasse="1">
         <Schaden>
           <Schnitt  Schaden="2"/>
         </Schaden>
         <Talente>
-          <talent:Talent Name="Dolch"/>
+          <talent:Talent Id="Dolch"/>
         </Talente>
       </Nahkampfwaffe>
 
-      <Nahkampfwaffe Name="Speer" Distanzklasse="3">
+      <Nahkampfwaffe Id="Speer" Distanzklasse="3">
         <Schaden>
           <Wucht  Schaden="1"/>
           <Schnitt  Schaden="2"/>
         </Schaden>
         <Talente>
-          <talent:Talent Name="Stangenwaffe"/>
+          <talent:Talent Id="Stangenwaffe"/>
         </Talente>
       </Nahkampfwaffe>
 
-        <Nahkampfwaffe Name="Harpune" Distanzklasse="3">
+      <Nahkampfwaffe Id="Harpune" Distanzklasse="3">
         <Schaden>
           <Wucht  Schaden="1"/>
           <Schnitt  Schaden="2"/>
         </Schaden>
         <Eigenschaften>
-          <Eigenschaft Name="Wiederharken"/>
+          <Eigenschaft Id="Wiederharken"/>
         </Eigenschaften>
         <Talente>
-          <talent:Talent Name="Stangenwaffe"/>
+          <talent:Talent Id="Stangenwaffe"/>
         </Talente>
       </Nahkampfwaffe>
 
-      <Nahkampfwaffe Name="Gleve" Distanzklasse="3">
+      <Nahkampfwaffe Id="Gleve" Distanzklasse="3">
         <Schaden>
           <Wucht  Schaden="2"/>
           <Schnitt  Schaden="2"/>
         </Schaden>
         <Talente>
-          <talent:Talent Name="Stangenwaffe"/>
+          <talent:Talent Id="Stangenwaffe"/>
         </Talente>
       </Nahkampfwaffe>
 
 
-      <Nahkampfwaffe Name="Keule" Distanzklasse="2">
+      <Nahkampfwaffe Id="Keule" Distanzklasse="2">
         <Schaden>
           <Wucht Schaden="3"/>
         </Schaden>
         <Talente>
-          <talent:Talent Name="Stumpfe Hiebwaffen"/>
+          <talent:Talent Id="Stumpfe Hiebwaffen"/>
         </Talente>
       </Nahkampfwaffe>
 
-      <Nahkampfwaffe Name="Hammer" Distanzklasse="2">
+      <Nahkampfwaffe Id="Hammer" Distanzklasse="2">
         <Schaden>
           <Wucht Schaden="6"/>
         </Schaden>
         <Eigenschaften>
-          <Eigenschaft Name="Wuchtig"/>
+          <Eigenschaft Id="Wuchtig"/>
         </Eigenschaften>
         <Talente>
-          <talent:Talent Name="Stumpfe Hiebwaffen"/>
+          <talent:Talent Id="Stumpfe Hiebwaffen"/>
         </Talente>
       </Nahkampfwaffe>
 
-      <Nahkampfwaffe Name="Anderthalbhänder" Distanzklasse="3">
+      <Nahkampfwaffe Id="Anderthalbhänder" Distanzklasse="3">
         <Schaden>
           <Wucht Schaden="4"/>
           <Schnitt Schaden="3"/>
         </Schaden>
         <Talente>
-          <talent:Talent Name="Anderthalbhänder"/>
+          <talent:Talent Id="Anderthalbhänder"/>
         </Talente>
       </Nahkampfwaffe>
 
-      <Fernkampfwaffe Name="Kompositbogen">
+      <Fernkampfwaffe Id="Kompositbogen">
         <Schaden>
           <Wucht Schaden="2"/>
           <Schnitt Schaden="2"/>
@@ -2095,14 +2990,14 @@ Ausserdem darf eine Waffe Plazieren Taktik die das selbe Ziel wie diese hat in d
         </Reichweiten>
         <Nachladezeit Wert="1" Einheit="S"/>
         <Eigenschaften>
-          <Eigenschaft Name="Rüstungsbrechend"/>
-          <Eigenschaft Name="Tödlich"/>
+          <Eigenschaft Id="Rüstungsbrechend"/>
+          <Eigenschaft Id="Tödlich"/>
         </Eigenschaften>
       </Fernkampfwaffe>
 
     </Waffen>
     <Rüstungen>
-      <Rüstung Name="Lederharnisch" Erschwernis="1">
+      <Rüstung Id="Lederharnisch" Erschwernis="1">
         <Schutz >
           <Flexibilität Wert="3"/>
           <Härte Wert="3"/>
@@ -2117,7 +3012,7 @@ Ausserdem darf eine Waffe Plazieren Taktik die das selbe Ziel wie diese hat in d
         </Trefferzonen>
       </Rüstung>
 
-      <Rüstung Name="MetallHarnich" Erschwernis="1">
+      <Rüstung Id="MetallHarnich" Erschwernis="1">
         <Schutz >
           <Flexibilität Wert="1"/>
           <Härte Wert="6"/>
@@ -2132,7 +3027,7 @@ Ausserdem darf eine Waffe Plazieren Taktik die das selbe Ziel wie diese hat in d
         </Trefferzonen>
       </Rüstung>
 
-      <Rüstung Name="Kettenhemd" Erschwernis="1">
+      <Rüstung Id="Kettenhemd" Erschwernis="1">
         <Schutz >
           <Flexibilität Wert="2"/>
           <Härte Wert="6"/>
@@ -2147,7 +3042,7 @@ Ausserdem darf eine Waffe Plazieren Taktik die das selbe Ziel wie diese hat in d
         </Trefferzonen>
       </Rüstung>
 
-      <Rüstung Name="Gambesong" Erschwernis="1">
+      <Rüstung Id="Gambesong" Erschwernis="1">
         <Schutz >
           <Flexibilität Wert="4"/>
           <Dämpfung Wert="4"/>
@@ -2165,29 +3060,92 @@ Ausserdem darf eine Waffe Plazieren Taktik die das selbe Ziel wie diese hat in d
 
     </Rüstungen>
     <Eigenschaften>
-      <Eigenschaft Name="Präzise">
-        <Beschreibung>Eine Waffe mit der Eigenschaft Präzise ist in der Lage die Rüstung des Gegners zu umgehen. Für alle Präzisen Manöver sind die Erschwernisse halbiert.</Beschreibung>
+      <Eigenschaft Id="Präzise">
+        <Name>
+          <misc:Lokalisirung sparche="de">
+            <![CDATA[Präzise]]>
+          </misc:Lokalisirung>
+        </Name>
+        <Beschreibung>
+          <misc:Lokalisirung sparche="de">
+            <![CDATA[Eine Waffe mit der Eigenschaft Präzise ist in der Lage die Rüstung des Gegners zu umgehen. Für alle Präzisen Manöver sind die Erschwernisse halbiert.]]>
+          </misc:Lokalisirung>
+        </Beschreibung>
       </Eigenschaft>
-      <Eigenschaft Name="Wuchtig">
-        <Beschreibung>Wuchtige waffen erleichtern es sie mit brachialer gewallt einzusetzen. Für alle Aktionen mit der Eigenschaft Wuchtig ist die Erschwerniss halbiert.</Beschreibung>
+      <Eigenschaft Id="Wuchtig">
+        <Name>
+          <misc:Lokalisirung sparche="de">
+            <![CDATA[Wuchtig]]>
+          </misc:Lokalisirung>
+        </Name>
+        <Beschreibung>
+          <misc:Lokalisirung sparche="de">
+            <![CDATA[Wuchtige waffen erleichtern es sie mit brachialer gewallt einzusetzen. Für alle Aktionen mit der Eigenschaft Wuchtig ist die Erschwerniss halbiert.]]>
+          </misc:Lokalisirung>
+        </Beschreibung>
       </Eigenschaft>
-      <Eigenschaft Name="Durchschalgend">
-        <Beschreibung>Der Wuchtschaden wird für die berechnungs des Schnittschadens verdoppelt.</Beschreibung>
+      <Eigenschaft Id="Durchschalgend">
+        <Name>
+          <misc:Lokalisirung sparche="de">
+            <![CDATA[Durchschalgend]]>
+          </misc:Lokalisirung>
+        </Name>
+        <Beschreibung>
+          <misc:Lokalisirung sparche="de">
+            <![CDATA[Der Wuchtschaden wird für die berechnungs des Schnittschadens verdoppelt.]]>
+          </misc:Lokalisirung>
+        </Beschreibung>
       </Eigenschaft>
-      <Eigenschaft Name="Rüstungsbrechend">
-        <Beschreibung>Der Wuchtschaden wird für die berechnungs des Schnittschadens Verdreifacht.</Beschreibung>
+      <Eigenschaft Id="Rüstungsbrechend">
+        <Name>
+          <misc:Lokalisirung sparche="de">
+            <![CDATA[Rüstungsbrechend]]>
+          </misc:Lokalisirung>
+        </Name>
+        <Beschreibung>
+          <misc:Lokalisirung sparche="de">
+            <![CDATA[Der Wuchtschaden wird für die berechnungs des Schnittschadens Verdreifacht.]]>
+          </misc:Lokalisirung>
+        </Beschreibung>
       </Eigenschaft>
-      <Eigenschaft Name="Tödlich">
-        <Beschreibung>Schnittschaden der im bereich Kopf, Brust Hüfte verursacht wird, wird verdoppelt.</Beschreibung>
+      <Eigenschaft Id="Tödlich">
+        <Name>
+          <misc:Lokalisirung sparche="de">
+            <![CDATA[Tödlich]]>
+          </misc:Lokalisirung>
+        </Name>
+        <Beschreibung>
+          <misc:Lokalisirung sparche="de">
+            <![CDATA[Schnittschaden der im bereich Kopf, Brust Hüfte verursacht wird, wird verdoppelt.]]>
+          </misc:Lokalisirung>
+        </Beschreibung>
       </Eigenschaft>
-      <Eigenschaft Name="Wiederharken">
-        <Beschreibung>Waffe kann sich im Opfer verfangen, und fügt beim entfernen 1 Blutungsschaden zu.</Beschreibung>
+      <Eigenschaft Id="Wiederharken">
+        <Name>
+          <misc:Lokalisirung sparche="de">
+            <![CDATA[Wiederharken]]>
+          </misc:Lokalisirung>
+        </Name>
+        <Beschreibung>
+          <misc:Lokalisirung sparche="de">
+            <![CDATA[Waffe kann sich im Opfer verfangen, und fügt beim entfernen 1 Blutungsschaden zu.]]>
+          </misc:Lokalisirung>
+        </Beschreibung>
       </Eigenschaft>
     </Eigenschaften>
   </Ausstattung>
   <Tags xmlns="http://nota.org/schema/misc">
-    <Tag Name="Lesen/Schreiben">
-      <Beschreibung>Die fähigkeit in mindestens einer Schrift Lesen und Schreiben zu können.</Beschreibung>
+    <Tag Id="Lesen/Schreiben">
+      <Name>
+        <misc:Lokalisirung sparche="de">
+          <![CDATA[Lesen und Schreiben]]>
+        </misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung sparche="de">
+          <![CDATA[Die fähigkeit in mindestens einer Schrift Lesen und Schreiben zu können.]]>
+        </misc:Lokalisirung>
+      </Beschreibung>
     </Tag>
   </Tags>
 </Daten>

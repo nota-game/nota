@@ -61,9 +61,10 @@
               <element name="Eigenschaft" minOccurs="0" maxOccurs="unbounded">
                 <complexType>
                   <sequence>
-                    <element name="Beschreibung" type="string" />
+                    <element name="Name" type="misc:Lokalisierungen"/>
+                    <element name="Beschreibung" type="misc:Lokalisierungen"/>
                   </sequence>
-                  <attribute type="string" name="Name" use="required"/>
+                  <attribute type="string" name="Id" use="required"/>
                 </complexType>
               </element>
             </sequence>

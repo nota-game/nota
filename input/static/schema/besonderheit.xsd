@@ -29,7 +29,8 @@
                   </sequence>
                 </complexType>
               </element>
-              <element name="Beschreibung" type="string"/>
+              <element name="Name" type="misc:Lokalisierungen"/>
+              <element name="Beschreibung" type="misc:Lokalisierungen"/>
               <element name="Verbessert" minOccurs="0">
                 <complexType>
                   <sequence>
@@ -52,7 +53,7 @@
           </complexType>
           <unique name="BesonderheitUniqness">
             <selector xpath=".//besonderheit:Besonderheit"/>
-            <field xpath="@Name"/>
+            <field xpath="@Id"/>
           </unique>
         </element>
       </sequence>

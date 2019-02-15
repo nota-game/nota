@@ -43,7 +43,8 @@
                   </sequence>
                 </complexType>
               </element>
-              <element name="Beschreibung"  type="string"/>
+              <element name="Name" type="misc:Lokalisierungen"/>
+              <element name="Beschreibung" type="misc:Lokalisierungen"/>
               <element name="Bedingugen" minOccurs="0">
                 <complexType>
                   <sequence>
@@ -72,7 +73,7 @@
               <element name="Ableitungen" minOccurs="0" maxOccurs="1"  type="talent:AbleitungsAuswahl">
               </element>
             </sequence>
-            <attribute type="string" name="Name" use="required"/>
+            <attribute type="string" name="Id" use="required"/>
             <attribute type="talent:Kategorie" use="required" name="Kategorie"/>
             <attribute type="talent:Komplexität" use="required" name="Komplexität"/>
           </complexType>
@@ -81,11 +82,11 @@
     </complexType>
     <key name="TalentPK">
       <selector xpath="./talent:Talent"/>
-      <field xpath="@Name"/>
+      <field xpath="@Id"/>
     </key>
     <keyref name="TalentFK" refer="talent:TalentPK">
       <selector xpath=".//talent:Ableitung"/>
-      <field xpath="@Name"/>
+      <field xpath="@Id"/>
     </keyref>
   </element>
 

@@ -31,12 +31,13 @@
   </complexType>
 
   <element name="Tag" type="misc:NamedType"/>
-  
+
   <complexType name="Tag">
     <complexContent>
       <extension base="misc:NamedType">
         <sequence>
-          <element name="Beschreibung" type="string"/>
+          <element name="Name" type="misc:Lokalisierungen"/>
+          <element name="Beschreibung" type="misc:Lokalisierungen"/>
         </sequence>
       </extension>
     </complexContent>
@@ -90,14 +91,14 @@
               </choice>
             </sequence>
             <attributeGroup ref="misc:KostenElement"/>
-            <attribute name="Name" use="optional" >
+            <attribute name="Id" use="optional" >
               <annotation>
                 <documentation xml:lang="de">
-                  Der Name des Levels, dies wird verwendet damit andere Level auf dieses verweisen können. (Nicht übergreifend)
+                  Die Id des Levels, dies wird verwendet damit andere Level auf dieses verweisen können. (Nicht übergreifend)
                 </documentation>
               </annotation>
             </attribute>
-            
+
           </complexType>
 
 
@@ -107,12 +108,12 @@
     </complexType>
     <key name="LevelPK">
       <selector xpath='./misc:Level'/>
-      <field xpath="@Name"/>
+      <field xpath="@Id"/>
     </key>
 
     <keyref name="LevelFK" refer="misc:LevelPK">
       <selector xpath=".//misc:LevelVoraussetzung/misc:Level"/>
-      <field xpath="@Name"/>
+      <field xpath="@Id"/>
     </keyref>
   </element>
 
@@ -127,7 +128,7 @@
   </element>
 
   <attributeGroup name="NamedElement">
-    <attribute name="Name" use="required" type="string"></attribute>
+    <attribute name="Id" use="required" type="string"></attribute>
   </attributeGroup>
 
   <attributeGroup name="KostenElement">
@@ -176,12 +177,28 @@
   </complexType>
 
 
-
+  <complexType name="Lokalisierungen">
+    <sequence>
+      <element name="Lokalisirung" maxOccurs="unbounded">
+        <complexType>
+          <simpleContent>
+            <extension base="string">
+              <attribute name="sparche" type="string" use="required" />
+            </extension>
+          </simpleContent>
+        </complexType>
+        <unique name="SpracheUnique">
+          <selector xpath="."/>
+          <field xpath="@sprache"/>
+        </unique>
+      </element>
+    </sequence>
+  </complexType>
 
   <!--<element name="Or" type="misc:LevelAuswahlen" />
   <element name="And" type="misc:LevelAuswahlen" />
   <element name="Not" type="misc:LevelAuswahl" />-->
 
-  
+
 
 </schema>
