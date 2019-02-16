@@ -43,7 +43,7 @@
                   <field xpath="./@Geschlecht"/>
                 </unique>
               </element>
-              <element name="Verbessert" minOccurs="0">
+              <element name="Ersetzt" minOccurs="0">
                 <complexType>
                   <sequence>
                     <element ref="besonderheit:Besonderheit"/>

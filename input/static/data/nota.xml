@@ -2489,7 +2489,7 @@
   </Talente>
   <Fertigkeiten
     xmlns="http://nota.org/schema/fertigkeit">
-    <Fertigkeit Id="Kulturkunde Alan">
+    <Fertigkeit Id="Kulturkunde Alan" Kosten="100">
       <Name>
         <misc:Lokalisirung Sparche="de"><![CDATA[Kulturkunde Alan]]></misc:Lokalisirung>
       </Name>
@@ -2497,7 +2497,7 @@
         <misc:Lokalisirung Sparche="de"><![CDATA[Das Wissen um die Kultur der Alan]]></misc:Lokalisirung>
       </Beschreibung>
     </Fertigkeit>
-    <Fertigkeit Id="Arjuniche Zeichen">
+    <Fertigkeit Id="Arjuniche Zeichen" Kosten="100">
       <Tags>
         <misc:Tag Id="Lesen/Schreiben" />
       </Tags>

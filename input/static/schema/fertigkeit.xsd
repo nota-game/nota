@@ -29,6 +29,13 @@
                   </sequence>
                 </complexType>
               </element>
+              <element name="Ersetzt" minOccurs="0">
+                <complexType>
+                  <sequence>
+                    <element ref="fertigkeit:Fertigkeit" minOccurs="1" maxOccurs="1"/>
+                  </sequence>
+                </complexType>
+              </element>
               <element name="Voraussetzung" type="misc:BedingungsAuswahl" minOccurs="0"/>
               <element name="Name" type="misc:Lokalisierungen">
                 <unique name="SpracheUnique">
@@ -46,6 +53,7 @@
               </element>
             </sequence>
             <attribute type="string" name="Id" use="required"/>
+            <attribute type="int" name="Kosten" use="required"/>
           </complexType>
         </element>
       </sequence>
@@ -53,6 +61,6 @@
   </element>
 
   <element name="Fertigkeit" type="misc:NamedType"/>
-  
+
 
 </schema>
