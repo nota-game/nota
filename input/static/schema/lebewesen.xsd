@@ -36,7 +36,7 @@
                     <element name="Stärke" type="lebewesen:EigenschaftsWert" />
                     <element name="Konstitution" type="lebewesen:EigenschaftsWert" />
                   </sequence>
-                  <attribute type="int" name="Punkte">
+                  <attribute type="int" name="Punkte" use="required">
                     <annotation>
                       <documentation xml:lang="de">
                         <![CDATA[Die Anzahl der Punkte die auf die Eigneschaften verteilt werden müssen.]]>
@@ -163,6 +163,7 @@
       </element>
     </sequence>
     <attributeGroup ref="misc:NamedElement"/>
+    <attribute type="misc:Geschlecht" name="Geschlecht" default="Neutral" use="optional"/>
   </complexType>
 
 

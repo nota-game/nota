@@ -40,7 +40,7 @@
   <Lebewesene
     xmlns="http://nota.org/schema/lebewesen">
     <Lebewesen Id="Mensch" Gattung="Homo" Art="Sapiens">
-      <Eigenschaften>
+      <Eigenschaften Punkte="15">
         <Mut Durchschnitt="1" Minimum="7" Maximum="13" />
         <Glück Durchschnitt="1" Minimum="7" Maximum="13" />
         <Klugheit Durchschnitt="1" Minimum="7" Maximum="13" />
@@ -53,7 +53,7 @@
         <Konstitution Durchschnitt="1" Minimum="7" Maximum="13" />
       </Eigenschaften>
       <Morphe>
-        <Morph Id="Mann">
+        <Morph Id="Mann" Geschlecht="Mänlich">
           <Name>
             <misc:Lokalisirung Sparche="de"><![CDATA[Mann]]></misc:Lokalisirung>
           </Name>
@@ -71,7 +71,7 @@
             </Lebensabschnitt>
           </Lebensabschnitte>
         </Morph>
-        <Morph Id="Frau">
+        <Morph Id="Frau" Geschlecht="Weiblich">
           <Name>
             <misc:Lokalisirung Sparche="de"><![CDATA[Frau]]></misc:Lokalisirung>
           </Name>

@@ -71,6 +71,20 @@
           </annotation>
           <complexType>
             <sequence>
+              <element name="Name" type="misc:Lokalisierungen" minOccurs="0">
+                <unique name="SpracheUnique2">
+                  <selector xpath="misc:Lokalisirung"/>
+                  <field xpath="./@Sparche"/>
+                  <field xpath="./@Geschlecht"/>
+                </unique>
+              </element>
+              <element name="Beschreibung" type="misc:Lokalisierungen" minOccurs="0">
+                <unique name="SpracheUnique3">
+                  <selector xpath="misc:Lokalisirung"/>
+                  <field xpath="./@Sparche"/>
+                  <field xpath="./@Geschlecht"/>
+                </unique>
+              </element>
               <element name="Bedingungen" minOccurs="0">
                 <annotation>
                   <documentation xml:lang="de">
