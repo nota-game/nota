@@ -81,6 +81,7 @@
       <element ref="besonderheit:And"></element>
       <element ref="besonderheit:Not"></element>
       <element ref="besonderheit:Besonderheit"/>
+      <element ref="misc:Tag"  />
     </choice>
   </complexType>
   <complexType name="BedingugsAuswahlen">
@@ -89,6 +90,7 @@
       <element ref="besonderheit:And"></element>
       <element ref="besonderheit:Not"></element>
       <element ref="besonderheit:Besonderheit"/>
+      <element ref="misc:Tag"  />
     </choice>
   </complexType>
 
