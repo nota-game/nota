@@ -64,12 +64,17 @@
                       <complexType  >
                         <complexContent>
                           <extension base="misc:BedingungsAuswahl">
-                            <attribute name="Wert">
+                            <attribute name="Wert" use="required">
                               <annotation>
                                 <documentation xml:lang="de">
                                   Der Wert ab dem die Bedingung erfüllt sein muss.
                                 </documentation>
                               </annotation>
+                              <simpleType>
+                                <restriction base="int">
+                                  <minInclusive value="1"/>
+                                </restriction>
+                              </simpleType>
                             </attribute>
                           </extension>
                         </complexContent>
