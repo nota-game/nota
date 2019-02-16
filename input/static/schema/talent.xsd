@@ -72,7 +72,7 @@
                               </annotation>
                             </attribute>
                           </extension>
-                        </complexContent> 
+                        </complexContent>
                       </complexType>
                       <unique name="WertUniqueForBedingung">
                         <selector xpath=".//Bedingung"></selector>
@@ -106,7 +106,13 @@
     <complexType>
 
       <attributeGroup ref="misc:NamedElement"/>
-      <attribute name="Level" type="int" use="optional"/>
+      <attribute name="Level" use="optional" default="1">
+        <simpleType>
+          <restriction base="int">
+            <minInclusive value="1"/>
+          </restriction>
+        </simpleType>
+      </attribute>
     </complexType>
   </element>
 
@@ -142,7 +148,7 @@
 
   <element name="Ableitung">
     <complexType  >
-       <attributeGroup ref="misc:NamedElement"/>
+      <attributeGroup ref="misc:NamedElement"/>
       <attribute name="Anzahl" type="int" use="required" />
     </complexType>
   </element>

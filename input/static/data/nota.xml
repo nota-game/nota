@@ -2487,6 +2487,7 @@
 
 
   </Talente>
+  <!-- Ⅰ Ⅱ Ⅲ Ⅳ Ⅴ Ⅵ Ⅶ Ⅷ Ⅸ Ⅹ Ⅺ Ⅻ -->
   <Fertigkeiten
     xmlns="http://nota.org/schema/fertigkeit">
     <Fertigkeit Id="Kulturkunde Alan" Kosten="100">
