@@ -57,7 +57,7 @@
                   <field xpath="./@Geschlecht"/>
                 </unique>
               </element>
-              <element name="Bedingugen" minOccurs="0">
+              <element name="Bedingungen" minOccurs="0">
                 <complexType>
                   <sequence>
                     <element name="Bedingung" maxOccurs="unbounded">

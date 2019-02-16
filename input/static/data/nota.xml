@@ -1780,11 +1780,11 @@
       <Beschreibung>
         <misc:Lokalisirung Sparche="de"><![CDATA[]]></misc:Lokalisirung>
       </Beschreibung>
-      <Bedingugen>
+      <Bedingungen>
         <Bedingung Wert="4">
           <Talent Id="Backen" Level="2"/>
         </Bedingung>
-      </Bedingugen>
+      </Bedingungen>
       <Ableitungen>
         <Ableitung Id="Backen" Anzahl="2"/>
       </Ableitungen>
