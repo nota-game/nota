@@ -50,7 +50,7 @@
                   </sequence>
                 </complexType>
               </element>
-              <element name="Bedingung" type="besonderheit:BedingugsAuswahl" minOccurs="0" />
+              <element name="Bedingung" type="besonderheit:BedingungsAuswahl" minOccurs="0" />
             </sequence>
              <attributeGroup ref="misc:NamedElement"/>
             <attributeGroup ref="misc:KostenElement"/>
@@ -75,7 +75,7 @@
   <element name="Besonderheit" type="misc:NamedType"/>
 
 
-  <complexType name="BedingugsAuswahl">
+  <complexType name="BedingungsAuswahl">
     <choice>
       <element ref="besonderheit:Or"></element>
       <element ref="besonderheit:And"></element>
@@ -84,7 +84,7 @@
       <element ref="misc:Tag"  />
     </choice>
   </complexType>
-  <complexType name="BedingugsAuswahlen">
+  <complexType name="BedingungsAuswahlen">
     <choice maxOccurs="unbounded">
       <element ref="besonderheit:Or"></element>
       <element ref="besonderheit:And"></element>
@@ -94,9 +94,9 @@
     </choice>
   </complexType>
 
-  <element name="Or" type="besonderheit:BedingugsAuswahlen" />
-  <element name="And" type="besonderheit:BedingugsAuswahlen" />
-  <element name="Not" type="besonderheit:BedingugsAuswahl" />
+  <element name="Or" type="besonderheit:BedingungsAuswahlen" />
+  <element name="And" type="besonderheit:BedingungsAuswahlen" />
+  <element name="Not" type="besonderheit:BedingungsAuswahl" />
 
 
 
