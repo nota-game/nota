@@ -43,8 +43,20 @@
                   </sequence>
                 </complexType>
               </element>
-              <element name="Name" type="misc:Lokalisierungen"/>
-              <element name="Beschreibung" type="misc:Lokalisierungen"/>
+              <element name="Name" type="misc:Lokalisierungen">
+                <unique name="SpracheUnique">
+                  <selector xpath="misc:Lokalisirung"/>
+                  <field xpath="./@Sparche"/>
+                  <field xpath="./@Geschlecht"/>
+                </unique>
+              </element>
+              <element name="Beschreibung" type="misc:Lokalisierungen">
+                <unique name="SpracheUnique1">
+                  <selector xpath="misc:Lokalisirung"/>
+                  <field xpath="./@Sparche"/>
+                  <field xpath="./@Geschlecht"/>
+                </unique>
+              </element>
               <element name="Bedingugen" minOccurs="0">
                 <complexType>
                   <sequence>

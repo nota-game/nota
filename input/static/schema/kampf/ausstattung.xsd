@@ -29,6 +29,20 @@
               <element name="Nahkampfwaffe" maxOccurs="unbounded" minOccurs="0">
                 <complexType>
                   <sequence>
+                    <element name="Name" type="misc:Lokalisierungen">
+                      <unique name="SpracheUnique7">
+                        <selector xpath="misc:Lokalisirung"/>
+                        <field xpath="./@Sparche"/>
+                        <field xpath="./@Geschlecht"/>
+                      </unique>
+                    </element>
+                    <element name="Beschreibung" type="misc:Lokalisierungen">
+                      <unique name="SpracheUnique8">
+                        <selector xpath="misc:Lokalisirung"/>
+                        <field xpath="./@Sparche"/>
+                        <field xpath="./@Geschlecht"/>
+                      </unique>
+                    </element>
                     <element name="Schaden">
                       <complexType>
                         <sequence>
@@ -62,6 +76,20 @@
               <element name="Fernkampfwaffe" maxOccurs="unbounded" minOccurs="0">
                 <complexType>
                   <sequence>
+                    <element name="Name" type="misc:Lokalisierungen">
+                      <unique name="SpracheUnique5">
+                        <selector xpath="misc:Lokalisirung"/>
+                        <field xpath="./@Sparche"/>
+                        <field xpath="./@Geschlecht"/>
+                      </unique>
+                    </element>
+                    <element name="Beschreibung" type="misc:Lokalisierungen">
+                      <unique name="SpracheUnique6">
+                        <selector xpath="misc:Lokalisirung"/>
+                        <field xpath="./@Sparche"/>
+                        <field xpath="./@Geschlecht"/>
+                      </unique>
+                    </element>
                     <element name="Schaden">
                       <complexType>
                         <sequence>
@@ -127,6 +155,20 @@
               <element name="Rüstung" minOccurs="0" maxOccurs="unbounded">
                 <complexType>
                   <sequence>
+                    <element name="Name" type="misc:Lokalisierungen">
+                      <unique name="SpracheUnique2">
+                        <selector xpath="misc:Lokalisirung"/>
+                        <field xpath="./@Sparche"/>
+                        <field xpath="./@Geschlecht"/>
+                      </unique>
+                    </element>
+                    <element name="Beschreibung" type="misc:Lokalisierungen">
+                      <unique name="SpracheUnique3">
+                        <selector xpath="misc:Lokalisirung"/>
+                        <field xpath="./@Sparche"/>
+                        <field xpath="./@Geschlecht"/>
+                      </unique>
+                    </element>
                     <element name="Schutz">
                       <complexType>
                         <sequence>
@@ -172,8 +214,20 @@
               <element name="Eigenschaft" minOccurs="0" maxOccurs="unbounded">
                 <complexType>
                   <sequence>
-                    <element name="Name" type="misc:Lokalisierungen"/>
-                    <element name="Beschreibung" type="misc:Lokalisierungen"/>
+                    <element name="Name" type="misc:Lokalisierungen">
+                      <unique name="SpracheUnique">
+                        <selector xpath="misc:Lokalisirung"/>
+                        <field xpath="./@Sparche"/>
+                        <field xpath="./@Geschlecht"/>
+                      </unique>
+                    </element>
+                    <element name="Beschreibung" type="misc:Lokalisierungen">
+                      <unique name="SpracheUnique1">
+                        <selector xpath="misc:Lokalisirung"/>
+                        <field xpath="./@Sparche"/>
+                        <field xpath="./@Geschlecht"/>
+                      </unique>
+                    </element>
                   </sequence>
                   <attribute type="string" name="Id" use="required"/>
                 </complexType>

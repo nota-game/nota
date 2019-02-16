@@ -30,8 +30,20 @@
                 </complexType>
               </element>
               <element name="Voraussetzung" type="misc:BedingungsAuswahl" minOccurs="0"/>
-              <element name="Name" type="misc:Lokalisierungen"/>
-              <element name="Beschreibung" type="misc:Lokalisierungen"/>
+              <element name="Name" type="misc:Lokalisierungen">
+                <unique name="SpracheUnique">
+                  <selector xpath="misc:Lokalisirung"/>
+                  <field xpath="./@Sparche"/>
+                  <field xpath="./@Geschlecht"/>
+                </unique>
+              </element>
+              <element name="Beschreibung" type="misc:Lokalisierungen">
+                <unique name="SpracheUnique1">
+                  <selector xpath="misc:Lokalisirung"/>
+                  <field xpath="./@Sparche"/>
+                  <field xpath="./@Geschlecht"/>
+                </unique>
+              </element>
             </sequence>
             <attribute type="string" name="Id" use="required"/>
           </complexType>

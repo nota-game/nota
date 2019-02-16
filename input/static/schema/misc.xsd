@@ -36,8 +36,20 @@
     <complexContent>
       <extension base="misc:NamedType">
         <sequence>
-          <element name="Name" type="misc:Lokalisierungen"/>
-          <element name="Beschreibung" type="misc:Lokalisierungen"/>
+          <element name="Name" type="misc:Lokalisierungen">
+            <unique name="SpracheUnique">
+              <selector xpath="misc:Lokalisirung"/>
+              <field xpath="./@Sparche"/>
+              <field xpath="./@Geschlecht"/>
+            </unique>
+          </element>
+          <element name="Beschreibung" type="misc:Lokalisierungen">
+            <unique name="SpracheUnique1">
+              <selector xpath="misc:Lokalisirung"/>
+              <field xpath="./@Sparche"/>
+              <field xpath="./@Geschlecht"/>
+            </unique>
+          </element>
         </sequence>
       </extension>
     </complexContent>
@@ -177,23 +189,29 @@
   </complexType>
 
 
+  
   <complexType name="Lokalisierungen">
     <sequence>
       <element name="Lokalisirung" maxOccurs="unbounded">
         <complexType>
           <simpleContent>
             <extension base="string">
-              <attribute name="sparche" type="string" use="required" />
+              <attribute name="Sparche" type="language" use="required" />
+              <attribute name="Geschlecht" use="optional" default="Neutral" type="misc:Geschlecht" />
             </extension>
           </simpleContent>
         </complexType>
-        <unique name="SpracheUnique">
-          <selector xpath="."/>
-          <field xpath="@sprache"/>
-        </unique>
       </element>
     </sequence>
   </complexType>
+
+  <simpleType name="Geschlecht">
+    <restriction base="token">
+      <enumeration value="Neutral"/>
+      <enumeration value="Mänlich"/>
+      <enumeration value="Weiblich"/>
+    </restriction>
+  </simpleType>
 
   <!--<element name="Or" type="misc:LevelAuswahlen" />
   <element name="And" type="misc:LevelAuswahlen" />

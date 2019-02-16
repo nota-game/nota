@@ -35,13 +35,37 @@
               <element  name="PfadAuswahl">
                 <complexType>
                   <sequence >
-                    <element name="Name" type="misc:Lokalisierungen"/>
-                    <element name="Beschreibung" type="misc:Lokalisierungen"/>
+                    <element name="Name" type="misc:Lokalisierungen">
+                      <unique name="SpracheUnique1">
+                        <selector xpath="misc:Lokalisirung"/>
+                        <field xpath="./@Sparche"/>
+                        <field xpath="./@Geschlecht"/>
+                      </unique>
+                    </element>
+                    <element name="Beschreibung" type="misc:Lokalisierungen">
+                      <unique name="SpracheUnique2">
+                        <selector xpath="misc:Lokalisirung"/>
+                        <field xpath="./@Sparche"/>
+                        <field xpath="./@Geschlecht"/>
+                      </unique>
+                    </element>
                     <element name="Pfad" maxOccurs="unbounded">
                       <complexType>
                         <sequence>
-                          <element name="Name" type="misc:Lokalisierungen"/>
-                          <element name="Beschreibung" type="misc:Lokalisierungen"/>
+                          <element name="Name" type="misc:Lokalisierungen">
+                            <unique name="SpracheUnique3">
+                              <selector xpath="misc:Lokalisirung"/>
+                              <field xpath="./@Sparche"/>
+                               <field xpath="./@Geschlecht"/>
+                            </unique>
+                          </element>
+                          <element name="Beschreibung" type="misc:Lokalisierungen">
+                            <unique name="SpracheUnique4">
+                              <selector xpath="misc:Lokalisirung"/>
+                              <field xpath="./@Geschlecht"/>
+                              <field xpath="./@Sparche"/>
+                            </unique>
+                          </element>
                           <element name="Bedingung" maxOccurs="unbounded" minOccurs="0">
                             <complexType>
                               <annotation>
@@ -98,7 +122,7 @@
         <element ref="aktion:Taktiken"/>
         <element ref="ausstattung:Ausstattung"/>
         <element ref="misc:Tags" />
-          
+
       </sequence>
       <attribute type="positiveInteger" name="Version" use="required"/>
     </complexType>
