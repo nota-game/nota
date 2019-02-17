@@ -4,7 +4,7 @@
   xmlns='http://nota.org/schema/nota'
   xmlns:misc='http://nota.org/schema/misc'
   xmlns:lebewesen="http://nota.org/schema/wesen"
-  xmlns:kultur="http://nota.org/schema/kultur"
+  xmlns:pfad="http://nota.org/schema/pfad"
   xmlns:profession="http://nota.org/schema/profession"
   xmlns:talent="http://nota.org/schema/talent"
   xmlns:fertigkeit="http://nota.org/schema/fertigkeit"
@@ -12,8 +12,8 @@
   xmlns:Belastung="http://nota.org/schema/kampf/aktionen"
   xmlns:ausstattung="http://nota.org/schema/kampf/ausstattung"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://nota.org/schema/nota ../schema/nota.xsd http://nota.org/schema/lebewesen ../schema/Lebewesen.xsd http://nota.org/schema/kultur ../schema/kultur.xsd http://nota.org/schema/profession ../schema/profession.xsd http://nota.org/schema/talent ../schema/talent.xsd http://nota.org/schema/fertigkeit ../schema/fertigkeit.xsd http://nota.org/schema/besonderheit ../schema/besonderheit.xsd http://nota.org/schema/kampf/aktionen ../schema/kampf/aktionen.xsd http://nota.org/schema/kampf/ausstattung ../schema/kampf/ausstattung.xsd http://nota.org/schema/misc ../schema/misc.xsd">
-  <Pfade>
+  xsi:schemaLocation="http://nota.org/schema/nota ../schema/nota.xsd http://nota.org/schema/lebewesen ../schema/Lebewesen.xsd http://nota.org/schema/pfad ../schema/pfad.xsd http://nota.org/schema/profession ../schema/profession.xsd http://nota.org/schema/talent ../schema/talent.xsd http://nota.org/schema/fertigkeit ../schema/fertigkeit.xsd http://nota.org/schema/besonderheit ../schema/besonderheit.xsd http://nota.org/schema/kampf/aktionen ../schema/kampf/aktionen.xsd http://nota.org/schema/kampf/ausstattung ../schema/kampf/ausstattung.xsd http://nota.org/schema/misc ../schema/misc.xsd">
+  <!--<Pfade>
     <PfadAuswahl Id="Götter">
       <Name>
         <misc:Lokalisirung Sparche="de"><![CDATA[Götter]]></misc:Lokalisirung>
@@ -36,7 +36,8 @@
         </Modifikationen>
       </Pfad>
     </PfadAuswahl>
-  </Pfade>
+  </Pfade>-->
+
   <Lebewesene
     xmlns="http://nota.org/schema/lebewesen">
     <Lebewesen Id="Mensch" Gattung="Homo" Art="Sapiens">
@@ -98,7 +99,97 @@
       </Beschreibung>
     </Lebewesen>
   </Lebewesene>
-  <Kulturen
+  <PfadGruppen xmlns="http://nota.org/schema/pfad">
+    <Pfade  Id="Kultur">
+      <Name >
+        <misc:Lokalisirung Sparche="de">
+          <![CDATA[Kultur]]>
+        </misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung Sparche="de">
+          <![CDATA[Wähle die Kultur des Charakters]]>
+        </misc:Lokalisirung>
+      </Beschreibung>
+      <Pfad Id="Test">
+        <Name>
+          <misc:Lokalisirung Sparche="de">
+            <![CDATA[]]>
+          </misc:Lokalisirung>
+        </Name>
+        <Beschreibung>
+          <misc:Lokalisirung Sparche="de">
+            <![CDATA[]]>
+          </misc:Lokalisirung>
+        </Beschreibung>
+        <NächstePfade>
+          <pfad:Pfad Id="Koch"/>
+        </NächstePfade>
+        <misc:Levels>
+          <misc:Level Id="T">
+          </misc:Level>
+        </misc:Levels>
+      </Pfad>
+    </Pfade>
+
+    <pfad:Pfade  Id="Proffession">
+      <pfad:Name >
+        <misc:Lokalisirung Sparche="de">
+          <![CDATA[Proffession]]>
+        </misc:Lokalisirung>
+      </pfad:Name>
+      <pfad:Beschreibung>
+        <misc:Lokalisirung Sparche="de">
+          <![CDATA[Wähle die Proffession]]>
+        </misc:Lokalisirung>
+      </pfad:Beschreibung>
+      <pfad:Pfad Id="Koch">
+        <pfad:Name>
+          <misc:Lokalisirung Sparche="de">
+            <![CDATA[]]>
+          </misc:Lokalisirung>
+        </pfad:Name>
+        <pfad:Beschreibung>
+          <misc:Lokalisirung Sparche="de">
+            <![CDATA[]]>
+          </misc:Lokalisirung>
+        </pfad:Beschreibung>
+
+        <misc:Levels>
+          <misc:Level Id="T">
+            <talent:Talent Id="Kochen" Level="3"/>
+          </misc:Level>
+        </misc:Levels>
+      </pfad:Pfad>
+    </pfad:Pfade>
+
+    <Pfade  Id="Götter">
+      <Name >
+        <misc:Lokalisirung Sparche="de">
+          <![CDATA[Götter]]>
+        </misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung Sparche="de">
+          <![CDATA[Wähle den Gott des Charakters]]>
+        </misc:Lokalisirung>
+      </Beschreibung>
+      <Pfad Id="Alsas">
+        <Name>
+          <misc:Lokalisirung Sparche="de"><![CDATA[Alsa]]></misc:Lokalisirung>
+        </Name>
+        <Beschreibung>
+          <misc:Lokalisirung Sparche="de" ><![CDATA[Der Charakter ist ein Diener des Gottes Alsa.]]></misc:Lokalisirung>
+        </Beschreibung>
+        <misc:Levels>
+          <misc:Level Id="T">
+            <besonderheit:Besonderheit Id="Auserwählter Alsas"/>
+          </misc:Level>
+        </misc:Levels>
+      </Pfad>
+    </Pfade>
+  </PfadGruppen>
+  <!--<Kulturen
     xmlns="http://nota.org/schema/kultur">
     <Kultur Id="Alan" >
       <Name>
@@ -121,8 +212,8 @@
         </Level>
       </Levels>
     </Kultur>
-  </Kulturen>
-  <Professionen
+  </Kulturen>-->
+  <!--<Professionen
     xmlns="http://nota.org/schema/profession">
     <Profession Id="Bäcker" >
       <Name>
@@ -146,7 +237,7 @@
         </Level>
       </Levels>
     </Profession>
-  </Professionen>
+  </Professionen>-->
   <Talente
     xmlns="http://nota.org/schema/talent">
     <Talent Id="Kampfgespür" Komplexität="D" Kategorie="Kampf">

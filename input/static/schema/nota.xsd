@@ -3,7 +3,7 @@
         xmlns:nota="http://nota.org/schema/nota"
         xmlns:misc="http://nota.org/schema/misc"
         xmlns:lebewesen="http://nota.org/schema/lebewesen"
-        xmlns:kultur="http://nota.org/schema/kultur"
+        xmlns:pfad="http://nota.org/schema/pfad"
         xmlns:profession="http://nota.org/schema/profession"
         xmlns:talent="http://nota.org/schema/talent"
         xmlns:fertigkeit="http://nota.org/schema/fertigkeit"
@@ -14,7 +14,7 @@
         elementFormDefault="qualified"   >
   <import namespace="http://nota.org/schema/misc" schemaLocation="misc.xsd"></import>
   <import namespace="http://nota.org/schema/lebewesen" schemaLocation="lebewesen.xsd"></import>
-  <import namespace="http://nota.org/schema/kultur" schemaLocation="kultur.xsd"></import>
+  <import namespace="http://nota.org/schema/pfad" schemaLocation="pfad.xsd"></import>
   <import namespace="http://nota.org/schema/profession" schemaLocation="profession.xsd"></import>
   <import namespace="http://nota.org/schema/talent" schemaLocation="talent.xsd"></import>
   <import namespace="http://nota.org/schema/fertigkeit" schemaLocation="fertigkeit.xsd"></import>
@@ -24,7 +24,7 @@
   <element name="Daten">
     <complexType>
       <sequence>
-        <element minOccurs="0" name="Pfade">
+        <!--<element minOccurs="0" name="Pfade">
           <annotation>
             <documentation xml:lang="de">
               Neben Gattung Kultur und Profession, können noch weitere Entscheidungen bei der Charakterschaffung beschritten werden. Welche dies sind wird an dieser Stelle definiert.
@@ -75,7 +75,7 @@
                               </annotation>
                               <sequence>
                                 <element name="ProfessionsBedingung" type="profession:ProfessionAuswahlen" minOccurs="0" />
-                                <element name="KulturBedingung" type="kultur:KulturAuswahlen" minOccurs="0"/>
+                                <element name="KulturBedingung" type="pfad:KulturAuswahlen" minOccurs="0"/>
                                 <element name="LebewesenBedingung" type="lebewesen:LebewesenAuswahlen" minOccurs="0"/>
                               </sequence>
                             </complexType>
@@ -112,10 +112,11 @@
               </element>
             </sequence>
           </complexType>
-        </element>
+        </element>-->
         <element ref="lebewesen:Lebewesene"/>
-        <element ref="kultur:Kulturen"/>
-        <element ref="profession:Professionen"/>
+        
+        <element ref="pfad:PfadGruppen"/>
+        <!--<element ref="profession:Professionen"/>-->
         <element ref="talent:Talente"/>
         <element ref="fertigkeit:Fertigkeiten"/>
         <element ref="besonderheit:Besonderheiten"/>
@@ -133,7 +134,7 @@
     </key>
 
     <key name="KulturPK">
-      <selector xpath="./kultur:Kulturen/kultur:Kultur"/>
+      <selector xpath="./pfad:Kulturen/pfad:Kultur"/>
       <field xpath="@Id"/>
     </key>
 
@@ -183,7 +184,7 @@
     </keyref>
 
     <keyref name="KulturFK" refer="nota:KulturPK">
-      <selector xpath=".//kultur:Kultur"/>
+      <selector xpath=".//pfad:Kultur"/>
       <field xpath="@Id"/>
     </keyref>
 

@@ -3,7 +3,7 @@
         xmlns:nota="http://nota.org/schema/nota"
         xmlns:misc="http://nota.org/schema/misc"
         xmlns:lebewesen="http://nota.org/schema/lebewesen"
-        xmlns:kultur="http://nota.org/schema/kultur"
+        xmlns:pfad="http://nota.org/schema/pfad"
         xmlns:profession="http://nota.org/schema/profession"
         xmlns:talent="http://nota.org/schema/talent"
         xmlns:fertigkeit="http://nota.org/schema/fertigkeit"
@@ -11,7 +11,7 @@
         targetNamespace="http://nota.org/schema/lebewesen"
         elementFormDefault="qualified">
   <import namespace="http://nota.org/schema/misc" schemaLocation="misc.xsd"></import>
-  <import namespace="http://nota.org/schema/kultur" schemaLocation="kultur.xsd"></import>
+  <import namespace="http://nota.org/schema/pfad" schemaLocation="pfad.xsd"></import>
   <import namespace="http://nota.org/schema/profession" schemaLocation="profession.xsd"></import>
   <import namespace="http://nota.org/schema/talent" schemaLocation="talent.xsd"></import>
   <import namespace="http://nota.org/schema/fertigkeit" schemaLocation="fertigkeit.xsd"></import>
@@ -46,18 +46,7 @@
                 </complexType>
               </element>
 
-              <element name="StandardKulturen" minOccurs="0">
-                <annotation>
-                  <documentation xml:lang="de">
-                    Die Kulturen in denen sich dieses Wesen üblicherweise aufhält.
-                  </documentation>
-                </annotation>
-                <complexType>
-                  <sequence>
-                    <element ref="kultur:Kultur" maxOccurs="unbounded"/>
-                  </sequence>
-                </complexType>
-              </element>
+              <element ref="lebewesen:StandardPfade" minOccurs="0"/>
 
               <element name="Morphe">
                 <complexType>
@@ -98,6 +87,21 @@
   </element>
 
   <element name="Lebewesen" type="misc:NamedType"/>
+  <element name="Morph" type="misc:NamedType"/>
+  <element name="Lebensabschnitt" type="misc:NamedType"/>
+
+  <element name="StandardPfade" >
+    <annotation>
+      <documentation xml:lang="de">
+        Die Kulturen in denen sich dieses Wesen üblicherweise aufhält.
+      </documentation>
+    </annotation>
+    <complexType>
+      <sequence>
+        <element ref="pfad:Pfad" maxOccurs="unbounded"/>
+      </sequence>
+    </complexType>
+  </element>
 
   <complexType name="LebewesenAuswahl">
     <choice>
@@ -137,17 +141,13 @@
           <field xpath="./@Geschlecht"/>
         </unique>
       </element>
-      <element name="StandardKulturen" minOccurs="0">
+      <element ref="lebewesen:StandardPfade" minOccurs="0">
         <annotation>
           <documentation xml:lang="de">
             Die Kulturen in denen sich dieser Morph üblicherweise aufhält.
           </documentation>
         </annotation>
-        <complexType>
-          <sequence>
-            <element ref="kultur:Kultur" maxOccurs="unbounded"/>
-          </sequence>
-        </complexType>
+
       </element>
 
       <element name="EigenschaftModifikation" minOccurs="0" type="lebewesen:EigenschaftsMods"/>
