@@ -29,7 +29,7 @@
             <attribute name="GenerierungsPunkte" type="positiveInteger" use="required"/>
           </complexType>
         </element>
-        <element ref="lebewesen:Lebewesene"/>
+        <element ref="lebewesen:Organismen"/>
         
         <element ref="pfad:PfadGruppen"/>
         <element ref="talent:Talente"/>

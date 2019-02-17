@@ -37,10 +37,18 @@
       </Pfad>
     </PfadAuswahl>
   </Pfade>-->
-
-  <Lebewesene
+  <StandardDaten GenerierungsPunkte="120"/>
+  <Organismen
     xmlns="http://nota.org/schema/lebewesen">
-    <Lebewesen Id="Mensch" Gattung="Homo" Art="Sapiens">
+    <Gattung Id="Homo">
+      <Name>
+        <misc:Lokalisirung Sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung Sparche="de"><![CDATA[]]></misc:Lokalisirung>
+      </Beschreibung>
+    </Gattung>
+    <Organismus Id="Mensch" Gattung="Homo">
       <Eigenschaften Punkte="15">
         <Mut Durchschnitt="1" Minimum="7" Maximum="13" />
         <Glück Durchschnitt="1" Minimum="7" Maximum="13" />
@@ -97,11 +105,14 @@
       <Name>
         <misc:Lokalisirung Sparche="de"><![CDATA[Mensch]]></misc:Lokalisirung>
       </Name>
+      <Art>
+        <misc:Lokalisirung Sparche="de"><![CDATA[Sapiens]]></misc:Lokalisirung>
+      </Art>
       <Beschreibung>
         <misc:Lokalisirung Sparche="de"><![CDATA[]]></misc:Lokalisirung>
       </Beschreibung>
-    </Lebewesen>
-  </Lebewesene>
+    </Organismus>
+  </Organismen>
   <PfadGruppen xmlns="http://nota.org/schema/pfad">
     <Pfade  Id="Kultur">
       <Name >

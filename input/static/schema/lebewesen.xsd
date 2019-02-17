@@ -16,10 +16,31 @@
   <import namespace="http://nota.org/schema/talent" schemaLocation="talent.xsd"></import>
   <import namespace="http://nota.org/schema/fertigkeit" schemaLocation="fertigkeit.xsd"></import>
   <import namespace="http://nota.org/schema/besonderheit" schemaLocation="besonderheit.xsd"></import>
-  <element name="Lebewesene">
+  <element name="Organismen">
     <complexType>
       <sequence>
-        <element name="Lebewesen" maxOccurs="unbounded" minOccurs="0" >
+        <element name="Gattung" minOccurs="1" maxOccurs="unbounded">
+          <complexType>
+            <sequence>
+              <element name="Name" type="misc:Lokalisierungen">
+                <unique name="SpracheUnique6">
+                  <selector xpath="misc:Lokalisirung"/>
+                  <field xpath="./@Sparche"/>
+                  <field xpath="./@Geschlecht"/>
+                </unique>
+              </element>
+              <element name="Beschreibung" type="misc:Lokalisierungen">
+                <unique name="SpracheUnique5">
+                  <selector xpath="misc:Lokalisirung"/>
+                  <field xpath="./@Sparche"/>
+                  <field xpath="./@Geschlecht"/>
+                </unique>
+              </element>
+            </sequence>
+            <attributeGroup ref="misc:NamedElement"/>
+          </complexType>
+        </element>
+        <element name="Organismus" maxOccurs="unbounded" minOccurs="1" >
           <complexType>
             <sequence>
               <element name="Eigenschaften">
@@ -69,6 +90,13 @@
                   <field xpath="./@Geschlecht"/>
                 </unique>
               </element>
+              <element name="Art" type="misc:Lokalisierungen">
+                <unique name="SpracheUnique4">
+                  <selector xpath="misc:Lokalisirung"/>
+                  <field xpath="./@Sparche"/>
+                  <field xpath="./@Geschlecht"/>
+                </unique>
+              </element>
               <element name="Beschreibung" type="misc:Lokalisierungen">
                 <unique name="SpracheUnique1">
                   <selector xpath="misc:Lokalisirung"/>
@@ -79,14 +107,25 @@
             </sequence>
             <attribute type="string" name="Id" use="required"/>
             <attribute type="string" name="Gattung" use="required"/>
-            <attribute type="string" name="Art" use="required"/>
           </complexType>
         </element>
       </sequence>
     </complexType>
+    <key name="GattungPK">
+      <selector xpath="./lebewesen:Gattung"/>
+      <field xpath="@Id"/>
+    </key>
+
+    <keyref name="GattungFK" refer="lebewesen:GattungPK">
+      <selector xpath=".//lebewesen:Organismus"/>
+      <field xpath="@Gattung"/>
+    </keyref>
+
   </element>
 
-  <element name="Lebewesen" type="misc:NamedType"/>
+
+  <element name="Gattung" type="misc:NamedType"/>
+  <element name="Organismus" type="misc:NamedType"/>
   <element name="Morph" type="misc:NamedType"/>
   <element name="Lebensabschnitt" type="misc:NamedType"/>
 
@@ -108,7 +147,7 @@
       <element ref="lebewesen:Or"></element>
       <element ref="lebewesen:And"></element>
       <element ref="lebewesen:Not"></element>
-      <element ref="lebewesen:Lebewesen"/>
+      <element ref="lebewesen:Organismus"/>
     </choice>
   </complexType>
   <complexType name="LebewesenAuswahlen">
@@ -116,7 +155,7 @@
       <element ref="lebewesen:Or"></element>
       <element ref="lebewesen:And"></element>
       <element ref="lebewesen:Not"></element>
-      <element ref="lebewesen:Lebewesen"/>
+      <element ref="lebewesen:Organismus"/>
     </choice>
   </complexType>
 
