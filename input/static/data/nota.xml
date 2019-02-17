@@ -63,6 +63,9 @@
           </Beschreibung>
           <Lebensabschnitte>
             <Lebensabschnitt Id="JugendlicherM1" startAlter="12" endAlter="13"  minGröße="1.41" maxGröße="1.56" minBMI="15" maxBMI="21">
+              <Spielbar Kosten="3">
+                <PfadPunkte Pfade="Kultur" Punkte="223"/>
+              </Spielbar>
               <Name>
                 <misc:Lokalisirung Sparche="de"><![CDATA[Jugendlicher]]></misc:Lokalisirung>
               </Name>

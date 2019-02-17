@@ -199,6 +199,17 @@
     </keyref>
 
 
+    <key name="PfadPunktePK">
+      <selector xpath="./pfad:PfadGruppen/pfad:Pfade"/>
+      <field xpath="@Id"/>
+    </key>
+
+    <keyref name="PfadPunkteFK" refer="nota:PfadPunktePK">
+      <selector xpath=".//lebewesen:PfadPunkte"/>
+      <field xpath="./@Pfade"/>
+    </keyref>
+
+
   </element>
 
 </schema>

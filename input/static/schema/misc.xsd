@@ -118,6 +118,7 @@
                 <element ref="misc:Tag"/>
               </choice>
             </sequence>
+            <attribute name="PfadKosten"  type="integer" use="optional" default="0"/>
             <attributeGroup ref="misc:KostenElement"/>
             <attribute name="Id" use="optional" >
               <annotation>

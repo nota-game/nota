@@ -173,9 +173,15 @@
     <sequence>
       <element name="Spielbar" minOccurs="0">
         <complexType>
+          <sequence>
+            <element name="PfadPunkte" minOccurs="0" maxOccurs="unbounded" >
+              <complexType>
+                <attribute name="Pfade"  type="string" use="required"/>
+                <attribute name="Punkte"  type="positiveInteger" use="required"/>
+              </complexType>
+            </element>
+          </sequence>
           <attributeGroup ref="misc:KostenElement"/>
-          <attribute name="professionsLevel"  type="positiveInteger"/>
-          <attribute name="kulturLevel"  type="positiveInteger"/>
         </complexType>
       </element>
       <element name="Name" type="misc:Lokalisierungen"/>
