@@ -189,8 +189,6 @@
 
       </element>
 
-      <element name="EigenschaftModifikation" minOccurs="0" type="lebewesen:EigenschaftsMods"/>
-
       <element name="Mods" minOccurs="0" type="lebewesen:Mods"/>
       <element name="Lebensabschnitte"  >
         <complexType>
