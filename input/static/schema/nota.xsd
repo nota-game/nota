@@ -24,99 +24,14 @@
   <element name="Daten">
     <complexType>
       <sequence>
-        <!--<element minOccurs="0" name="Pfade">
-          <annotation>
-            <documentation xml:lang="de">
-              Neben Gattung Kultur und Profession, können noch weitere Entscheidungen bei der Charakterschaffung beschritten werden. Welche dies sind wird an dieser Stelle definiert.
-            </documentation>
-          </annotation>
+        <element name="StandardDaten">
           <complexType>
-            <sequence maxOccurs="unbounded">
-              <element  name="PfadAuswahl">
-                <complexType>
-                  <sequence >
-                    <element name="Name" type="misc:Lokalisierungen">
-                      <unique name="SpracheUnique1">
-                        <selector xpath="misc:Lokalisirung"/>
-                        <field xpath="./@Sparche"/>
-                        <field xpath="./@Geschlecht"/>
-                      </unique>
-                    </element>
-                    <element name="Beschreibung" type="misc:Lokalisierungen">
-                      <unique name="SpracheUnique2">
-                        <selector xpath="misc:Lokalisirung"/>
-                        <field xpath="./@Sparche"/>
-                        <field xpath="./@Geschlecht"/>
-                      </unique>
-                    </element>
-                    <element name="Pfad" maxOccurs="unbounded">
-                      <complexType>
-                        <sequence>
-                          <element name="Name" type="misc:Lokalisierungen">
-                            <unique name="SpracheUnique3">
-                              <selector xpath="misc:Lokalisirung"/>
-                              <field xpath="./@Sparche"/>
-                               <field xpath="./@Geschlecht"/>
-                            </unique>
-                          </element>
-                          <element name="Beschreibung" type="misc:Lokalisierungen">
-                            <unique name="SpracheUnique4">
-                              <selector xpath="misc:Lokalisirung"/>
-                              <field xpath="./@Geschlecht"/>
-                              <field xpath="./@Sparche"/>
-                            </unique>
-                          </element>
-                          <element name="Bedingung" maxOccurs="unbounded" minOccurs="0">
-                            <complexType>
-                              <annotation>
-                                <documentation xml:lang="de">
-                                  Falls es mindestens eine Bedingung Existiert, muss mindestens eine Bedingung Wahr sein damit die Auswahl gültig ist. Eine Bedingung ist wahr falls alle seine Kunder Wahr sind.
-                                </documentation>
-                              </annotation>
-                              <sequence>
-                                <element name="ProfessionsBedingung" type="profession:ProfessionAuswahlen" minOccurs="0" />
-                                <element name="KulturBedingung" type="pfad:KulturAuswahlen" minOccurs="0"/>
-                                <element name="LebewesenBedingung" type="lebewesen:LebewesenAuswahlen" minOccurs="0"/>
-                              </sequence>
-                            </complexType>
-                          </element>
-                          <element name="Modifikationen" type="lebewesen:Mods" minOccurs="0" />
-                          <choice maxOccurs="unbounded" minOccurs="0">
-                            <element ref="fertigkeit:Fertigkeit"/>
-                            <element ref="talent:Talent"/>
-                          </choice>
-                        </sequence>
-                        <attributeGroup ref="misc:NamedElement"/>
-
-                      </complexType>
-                    </element>
-                  </sequence>
-
-                  <attributeGroup ref="misc:NamedElement"/>
-
-                  <attribute name="MinimumAuswahl" type="positiveInteger" default="1">
-                    <annotation>
-                      <documentation xml:lang="de">
-                        Der Nutzer muss mindestens die angegebene Anzahl an auswahlen treffen. (Default ist 1)
-                      </documentation>
-                    </annotation>
-                  </attribute>
-                  <attribute name="MaximumAuswahl" type="positiveInteger" default="1">
-                    <annotation>
-                      <documentation xml:lang="de">
-                        Der Nutzer muss mindestens die angegebene Anzahl an auswahlen treffen. (Default ist 1)
-                      </documentation>
-                    </annotation>
-                  </attribute>
-                </complexType>
-              </element>
-            </sequence>
+            <attribute name="GenerierungsPunkte" type="positiveInteger" use="required"/>
           </complexType>
-        </element>-->
+        </element>
         <element ref="lebewesen:Lebewesene"/>
         
         <element ref="pfad:PfadGruppen"/>
-        <!--<element ref="profession:Professionen"/>-->
         <element ref="talent:Talente"/>
         <element ref="fertigkeit:Fertigkeiten"/>
         <element ref="besonderheit:Besonderheiten"/>
