@@ -93,13 +93,6 @@
                 </annotation>
                 <complexType>
                   <sequence>
-                    <element name="Besonderheiten" type="misc:BedingungsAuswahl" minOccurs="0"  maxOccurs="1">
-                      <annotation>
-                        <documentation xml:lang="de">
-                          Die besonderheiten die ein Charakter besizten muss um dieses level zu erlernen.
-                        </documentation>
-                      </annotation>
-                    </element>
                     <element name="LevelVoraussetzung" type="misc:LevelAuswahl" minOccurs="0"  maxOccurs="1">
                       <annotation>
                         <documentation xml:lang="de">
@@ -107,6 +100,14 @@
                         </documentation>
                       </annotation>
                     </element>
+                    <element name="Zusätzlich" type="misc:BedingungsAuswahl" minOccurs="0"  maxOccurs="1">
+                      <annotation>
+                        <documentation xml:lang="de">
+                          Weitres bedingungen die der Charakter erfüllen muss. ACHTUNG, zu diesem Zeitpunkt gab es noch keine möglichkeit Vorteile und Fertigkeiten zu erwerben.
+                        </documentation>
+                      </annotation>
+                    </element>
+
                   </sequence>
                 </complexType>
               </element>
@@ -114,6 +115,7 @@
                 <element ref="fertigkeit:Fertigkeit"/>
                 <element ref="talent:Talent"/>
                 <element ref="besonderheit:Besonderheit"/>
+                <element ref="misc:Tag"/>
               </choice>
             </sequence>
             <attributeGroup ref="misc:KostenElement"/>
@@ -152,6 +154,7 @@
       </sequence>
     </complexType>
   </element>
+
 
   <attributeGroup name="NamedElement">
     <attribute name="Id" use="required" type="string"></attribute>
@@ -203,7 +206,7 @@
   </complexType>
 
 
-  
+
   <complexType name="Lokalisierungen">
     <sequence>
       <element name="Lokalisirung" maxOccurs="unbounded">
