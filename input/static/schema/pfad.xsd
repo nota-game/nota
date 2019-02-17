@@ -12,7 +12,7 @@
         elementFormDefault="qualified"
         >
   <import namespace="http://nota.org/schema/misc" schemaLocation="misc.xsd"></import>
-  
+
   <element name="PfadGruppen">
     <complexType>
       <sequence>
@@ -66,12 +66,13 @@
               </element>
             </sequence>
             <attributeGroup ref="misc:NamedElement"/>
+            <attribute name="Mehrfachauswahl" type="boolean" default="false" use="optional" />
           </complexType>
 
         </element>
       </sequence>
     </complexType>
-    
+
     <key name="PfadPK">
       <selector xpath="./pfad:Pfade/pfad:Pfad"/>
       <field xpath="@Id"/>
