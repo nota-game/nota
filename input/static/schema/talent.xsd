@@ -112,7 +112,13 @@
 
       <attributeGroup ref="misc:NamedElement"/>
       <attribute name="LevelTyp" use="optional" default="Effektiv" type="talent:LevelBedingungsTyp" />
-      <attribute name="Level" use="optional" default="1" type="positiveInteger" />
+      <attribute name="Level" use="optional" default="1" >
+        <simpleType>
+          <restriction base="int">
+            <minInclusive value="1"/>
+          </restriction>
+        </simpleType>
+      </attribute>
     </complexType>
   </element>
 

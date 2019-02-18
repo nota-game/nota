@@ -26,7 +26,13 @@
       <sequence>
         <element name="StandardDaten">
           <complexType>
-            <attribute name="GenerierungsPunkte" type="positiveInteger" use="required"/>
+            <attribute name="GenerierungsPunkte"  use="required">
+              <simpleType>
+                <restriction base="int">
+                  <minInclusive value="1"/>
+                </restriction>
+              </simpleType>
+            </attribute>
           </complexType>
         </element>
         <element ref="lebewesen:Organismen"/>
@@ -40,7 +46,13 @@
         <element ref="misc:Tags" />
 
       </sequence>
-      <attribute type="positiveInteger" name="Version" use="required"/>
+      <attribute  name="Version" use="required">
+        <simpleType>
+          <restriction base="int">
+            <minInclusive value="1"/>
+          </restriction>
+        </simpleType>
+      </attribute>
     </complexType>
 
     <key name="BesonderheitPK">
