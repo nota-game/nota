@@ -111,16 +111,18 @@
     <complexType>
 
       <attributeGroup ref="misc:NamedElement"/>
-      <attribute name="Level" use="optional" default="1">
-        <simpleType>
-          <restriction base="int">
-            <minInclusive value="1"/>
-          </restriction>
-        </simpleType>
-      </attribute>
+      <attribute name="LevelTyp" use="optional" default="Effektiv" type="talent:LevelBedingungsTyp" />
+      <attribute name="Level" use="optional" default="1" type="positiveInteger" />
     </complexType>
   </element>
 
+  <simpleType name="LevelBedingungsTyp">
+    <restriction base="string">
+      <enumeration value="Basis"/>
+      <enumeration value="Effektiv"/>
+      <enumeration value="Unterstützung"/>
+    </restriction>
+  </simpleType>
 
   <simpleType name="Kategorie">
     <restriction base="string">
