@@ -206,7 +206,7 @@
       </element>
     </sequence>
     <attributeGroup ref="misc:NamedElement"/>
-    <attribute type="misc:Geschlecht" name="Geschlecht" default="Neutral" use="optional"/>
+    <attribute type="misc:Geschlecht" name="Geschlecht" default="Unspezifiziert" use="optional"/>
   </complexType>
 
 

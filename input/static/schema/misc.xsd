@@ -215,7 +215,7 @@
           <simpleContent>
             <extension base="string">
               <attribute name="Sparche" type="language" use="required" />
-              <attribute name="Geschlecht" use="optional" default="Neutral" type="misc:Geschlecht" />
+              <attribute name="Geschlecht" use="optional" default="Unspezifiziert" type="misc:Geschlecht" />
             </extension>
           </simpleContent>
         </complexType>
@@ -228,6 +228,7 @@
       <enumeration value="Neutral"/>
       <enumeration value="Mänlich"/>
       <enumeration value="Weiblich"/>
+      <enumeration value="Unspezifiziert"/>
     </restriction>
   </simpleType>
 
