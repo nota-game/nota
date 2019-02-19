@@ -43,29 +43,6 @@
         <element name="Organismus" maxOccurs="unbounded" minOccurs="1" >
           <complexType>
             <sequence>
-              <element name="Eigenschaften">
-                <complexType>
-                  <sequence>
-                    <element name="Mut" type="lebewesen:EigenschaftsWert" />
-                    <element name="Glück" type="lebewesen:EigenschaftsWert" />
-                    <element name="Klugheit" type="lebewesen:EigenschaftsWert" />
-                    <element name="Intuition" type="lebewesen:EigenschaftsWert" />
-                    <element name="Gewandtheit" type="lebewesen:EigenschaftsWert" />
-                    <element name="Feinmotorik" type="lebewesen:EigenschaftsWert" />
-                    <element name="Sympathie" type="lebewesen:EigenschaftsWert" />
-                    <element name="Antipathie" type="lebewesen:EigenschaftsWert" />
-                    <element name="Stärke" type="lebewesen:EigenschaftsWert" />
-                    <element name="Konstitution" type="lebewesen:EigenschaftsWert" />
-                  </sequence>
-                  <attribute type="int" name="Punkte" use="required">
-                    <annotation>
-                      <documentation xml:lang="de">
-                        <![CDATA[Die Anzahl der Punkte die auf die Eigneschaften verteilt werden müssen.]]>
-                      </documentation>
-                    </annotation>
-                  </attribute>
-                </complexType>
-              </element>
 
               <element ref="lebewesen:StandardPfade" minOccurs="0"/>
 
@@ -180,6 +157,30 @@
           <field xpath="./@Geschlecht"/>
         </unique>
       </element>
+      <element name="Eigenschaften">
+        <complexType>
+          <sequence>
+            <element name="Mut" type="lebewesen:EigenschaftsWert" />
+            <element name="Glück" type="lebewesen:EigenschaftsWert" />
+            <element name="Klugheit" type="lebewesen:EigenschaftsWert" />
+            <element name="Intuition" type="lebewesen:EigenschaftsWert" />
+            <element name="Gewandtheit" type="lebewesen:EigenschaftsWert" />
+            <element name="Feinmotorik" type="lebewesen:EigenschaftsWert" />
+            <element name="Sympathie" type="lebewesen:EigenschaftsWert" />
+            <element name="Antipathie" type="lebewesen:EigenschaftsWert" />
+            <element name="Stärke" type="lebewesen:EigenschaftsWert" />
+            <element name="Konstitution" type="lebewesen:EigenschaftsWert" />
+          </sequence>
+          <attribute type="int" name="Punkte" use="required">
+            <annotation>
+              <documentation xml:lang="de">
+                <![CDATA[Die Anzahl der Punkte die auf die Eigneschaften verteilt werden müssen.]]>
+              </documentation>
+            </annotation>
+          </attribute>
+        </complexType>
+      </element>
+
       <element ref="lebewesen:StandardPfade" minOccurs="0">
         <annotation>
           <documentation xml:lang="de">
@@ -188,8 +189,13 @@
         </annotation>
 
       </element>
-
-      <element name="Mods" minOccurs="0" type="lebewesen:Mods"/>
+      <element name="Besonderheiten"  minOccurs="0"  >
+        <complexType>
+          <sequence>
+            <element ref="besonderheit:Besonderheit" maxOccurs="unbounded"/>
+          </sequence>
+        </complexType>
+      </element>
       <element name="Lebensabschnitte"  >
         <complexType>
           <sequence>
@@ -214,7 +220,13 @@
             <element name="PfadPunkte" minOccurs="0" maxOccurs="unbounded" >
               <complexType>
                 <attribute name="Pfade"  type="string" use="required"/>
-                <attribute name="Punkte"  type="positiveInteger" use="required"/>
+                <attribute name="Punkte"  use="required">
+                  <simpleType>
+                    <restriction base="int">
+                      <minInclusive value="1"/>
+                    </restriction>
+                  </simpleType>
+                </attribute>
               </complexType>
             </element>
           </sequence>
