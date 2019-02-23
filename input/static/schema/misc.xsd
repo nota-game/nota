@@ -118,8 +118,8 @@
                 <element ref="misc:Tag"/>
               </choice>
             </sequence>
-            <attribute name="PfadKosten"  type="integer" use="optional" default="0"/>
-            <attribute name="WiederhoteNutzung"  type="integer" use="optional" default="1"/>
+            <attribute name="PfadKosten"  type="int" use="optional" default="0"/>
+            <attribute name="WiederhoteNutzung"  type="int" use="optional" default="1"/>
             <attributeGroup ref="misc:KostenElement"/>
             <attribute name="Id" use="optional" >
               <annotation>
