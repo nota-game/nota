@@ -21,6 +21,21 @@
         <element name="Fertigkeit" minOccurs="0" maxOccurs="unbounded">
           <complexType>
             <sequence>
+              <element name="Name" type="misc:Lokalisierungen">
+                <unique name="SpracheUnique">
+                  <selector xpath="misc:Lokalisirung"/>
+                  <field xpath="./@Sparche"/>
+                  <field xpath="./@Geschlecht"/>
+                </unique>
+              </element>
+              <element name="Beschreibung" type="misc:Lokalisierungen">
+                <unique name="SpracheUnique1">
+                  <selector xpath="misc:Lokalisirung"/>
+                  <field xpath="./@Sparche"/>
+                  <field xpath="./@Geschlecht"/>
+                </unique>
+              </element>
+              <element name="Verbreitung" type="misc:Verbreitung"/>
               <element name="Tags" maxOccurs="1" minOccurs="0" >
                 <complexType>
                   <sequence>
@@ -36,20 +51,7 @@
                 </complexType>
               </element>
               <element name="Voraussetzung" type="misc:BedingungsAuswahl" minOccurs="0"/>
-              <element name="Name" type="misc:Lokalisierungen">
-                <unique name="SpracheUnique">
-                  <selector xpath="misc:Lokalisirung"/>
-                  <field xpath="./@Sparche"/>
-                  <field xpath="./@Geschlecht"/>
-                </unique>
-              </element>
-              <element name="Beschreibung" type="misc:Lokalisierungen">
-                <unique name="SpracheUnique1">
-                  <selector xpath="misc:Lokalisirung"/>
-                  <field xpath="./@Sparche"/>
-                  <field xpath="./@Geschlecht"/>
-                </unique>
-              </element>
+
             </sequence>
             <attribute type="string" name="Id" use="required"/>
             <attribute type="int" name="Kosten" use="required"/>

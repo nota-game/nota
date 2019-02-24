@@ -23,19 +23,14 @@
   <element name="Daten">
     <complexType>
       <sequence>
-        <element name="StandardDaten">
+        <element name="GenerierungsDaten">
           <complexType>
-            <attribute name="GenerierungsPunkte"  use="required">
-              <simpleType>
-                <restriction base="int">
-                  <minInclusive value="1"/>
-                </restriction>
-              </simpleType>
-            </attribute>
+            <attribute name="GenerierungsPunkte"  use="required" type="misc:positiveInt" />
+            <attribute name="MinimumVerbreitung"  use="required" type="int" />
           </complexType>
         </element>
         <element ref="lebewesen:Organismen"/>
-        
+
         <element ref="pfad:PfadGruppen"/>
         <element ref="talent:Talente"/>
         <element ref="fertigkeit:Fertigkeiten"/>
@@ -45,12 +40,7 @@
         <element ref="misc:Tags" />
 
       </sequence>
-      <attribute  name="Version" use="required">
-        <simpleType>
-          <restriction base="int">
-            <minInclusive value="1"/>
-          </restriction>
-        </simpleType>
+      <attribute  name="Version" use="required" type="misc:positiveInt">
       </attribute>
     </complexType>
 
@@ -135,6 +125,13 @@
       <field xpath="./@Pfade"/>
     </keyref>
 
+    <key name="PfadePK">
+      <selector xpath="./pfad:PfadGruppen/pfad:Pfade/pfad:Pfad"/>
+      <field xpath="@Id"/>
+    </key>
+
+
+ 
 
   </element>
 

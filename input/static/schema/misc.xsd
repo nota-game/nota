@@ -3,12 +3,16 @@
         xmlns:misc="http://nota.org/schema/misc"
         xmlns:talent="http://nota.org/schema/talent"
         xmlns:fertigkeit="http://nota.org/schema/fertigkeit"
+        xmlns:nota="http://nota.org/schema/nota"
+        xmlns:pfad="http://nota.org/schema/pfad"
         xmlns:besonderheit="http://nota.org/schema/besonderheit"
         targetNamespace="http://nota.org/schema/misc"
         elementFormDefault="qualified"   >
   <import namespace="http://nota.org/schema/besonderheit" schemaLocation="besonderheit.xsd"></import>
   <import namespace="http://nota.org/schema/fertigkeit" schemaLocation="fertigkeit.xsd"></import>
+  <import namespace="http://nota.org/schema/pfad" schemaLocation="pfad.xsd"></import>
   <import namespace="http://nota.org/schema/talent" schemaLocation="talent.xsd"></import>
+  <import namespace="http://nota.org/schema/nota" schemaLocation="nota.xsd"></import>
 
   <complexType name="NamedType">
     <attributeGroup ref="misc:NamedElement"/>
@@ -157,7 +161,29 @@
     </complexType>
   </element>
 
+  <complexType name="Verbreitung">
+    <sequence>
+      <element name="Pfad" minOccurs="0" maxOccurs="unbounded" >
+        <complexType>
+          <attributeGroup ref="misc:NamedElement"/>
+          <attribute name="Verbreitung" use="required" />
+        </complexType>
+        <keyref name="PfadeFK" refer="nota:PfadePK">
+          <selector xpath="."/>
+          <field xpath="@Id"/>
+        </keyref>
+      </element>
+    </sequence>
+    <attribute name="Wert" use="required" />
 
+  </complexType>
+
+  <simpleType name="positiveInt">
+    <restriction base="int">
+      <minInclusive value="1"/>
+    </restriction>
+  </simpleType>
+  
   <attributeGroup name="NamedElement">
     <attribute name="Id" use="required" type="string"></attribute>
   </attributeGroup>
