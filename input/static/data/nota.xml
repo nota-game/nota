@@ -127,7 +127,7 @@
     </Organismus>
   </Organismen>
   <PfadGruppen xmlns="http://nota.org/schema/pfad">
-    <Pfade  Id="Kultur">
+    <Pfade  Id="Kultur" WiderholungMaximum="2">
       <Name >
         <misc:Lokalisirung Sparche="de">
           <![CDATA[Kultur]]>
@@ -159,7 +159,7 @@
       </Pfad>
     </Pfade>
 
-    <pfad:Pfade  Id="Proffession">
+    <pfad:Pfade  Id="Proffession" WiderholungMaximum="3">
       <pfad:Name >
         <misc:Lokalisirung Sparche="de">
           <![CDATA[Proffession]]>
