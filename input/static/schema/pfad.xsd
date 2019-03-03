@@ -55,7 +55,7 @@
                     <element name="NächstePfade" minOccurs="0">
                       <complexType>
                         <sequence>
-                          <element ref="pfad:Pfad"/>
+                          <element ref="pfad:Pfad" maxOccurs="unbounded" />
                         </sequence>
                       </complexType>
                     </element>

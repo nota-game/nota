@@ -70,6 +70,9 @@
             <Stärke Durchschnitt="1" Minimum="7" Maximum="13" />
             <Konstitution Durchschnitt="1" Minimum="7" Maximum="13" />
           </Eigenschaften>
+          <StandardPfade>
+            <pfad:Pfad Id="Alan"/>
+          </StandardPfade>
           <Lebensabschnitte>
             <Lebensabschnitt Id="JugendlicherM1" startAlter="12" endAlter="13"  minGröße="1.41" maxGröße="1.56" minBMI="15" maxBMI="21">
               <Spielbar Kosten="3">
@@ -103,8 +106,14 @@
             <Stärke Durchschnitt="1" Minimum="7" Maximum="13" />
             <Konstitution Durchschnitt="1" Minimum="7" Maximum="13" />
           </Eigenschaften>
+          <StandardPfade>
+            <pfad:Pfad Id="Kirin"/>
+          </StandardPfade>
           <Lebensabschnitte>
             <Lebensabschnitt Id="JugendlicherW1" startAlter="0" endAlter="3" minGröße="1.44" maxGröße="1.58" minBMI="16" maxBMI="21">
+              <Spielbar Kosten="3">
+                <PfadPunkte Pfade="Kultur" Punkte="223"/>
+              </Spielbar>
               <Name>
                 <misc:Lokalisirung Sparche="de"><![CDATA[Jugendlicher]]></misc:Lokalisirung>
               </Name>
@@ -138,10 +147,11 @@
           <![CDATA[Wähle die Kultur des Charakters]]>
         </misc:Lokalisirung>
       </Beschreibung>
+
       <Pfad Id="Alan">
         <Name>
           <misc:Lokalisirung Sparche="de">
-            <![CDATA[]]>
+            <![CDATA[Alan]]>
           </misc:Lokalisirung>
         </Name>
         <Beschreibung>
@@ -151,6 +161,26 @@
         </Beschreibung>
         <NächstePfade>
           <pfad:Pfad Id="Koch"/>
+        </NächstePfade>
+        <misc:Levels>
+          <misc:Level Id="T">
+          </misc:Level>
+        </misc:Levels>
+      </Pfad>
+      
+      <Pfad Id="Kirin">
+        <Name>
+          <misc:Lokalisirung Sparche="de">
+            <![CDATA[Kirin]]>
+          </misc:Lokalisirung>
+        </Name>
+        <Beschreibung>
+          <misc:Lokalisirung Sparche="de">
+            <![CDATA[]]>
+          </misc:Lokalisirung>
+        </Beschreibung>
+        <NächstePfade>
+          <pfad:Pfad Id="Soldat"/>
         </NächstePfade>
         <misc:Levels>
           <misc:Level Id="T">
@@ -173,7 +203,7 @@
       <pfad:Pfad Id="Koch">
         <pfad:Name>
           <misc:Lokalisirung Sparche="de">
-            <![CDATA[]]>
+            <![CDATA[Koch]]>
           </misc:Lokalisirung>
         </pfad:Name>
         <pfad:Beschreibung>
@@ -185,6 +215,24 @@
         <misc:Levels>
           <misc:Level Id="T">
             <talent:Talent Id="Kochen" Level="3"/>
+          </misc:Level>
+        </misc:Levels>
+      </pfad:Pfad>
+      <pfad:Pfad Id="Soldat">
+        <pfad:Name>
+          <misc:Lokalisirung Sparche="de">
+            <![CDATA[Soldat]]>
+          </misc:Lokalisirung>
+        </pfad:Name>
+        <pfad:Beschreibung>
+          <misc:Lokalisirung Sparche="de">
+            <![CDATA[]]>
+          </misc:Lokalisirung>
+        </pfad:Beschreibung>
+
+        <misc:Levels>
+          <misc:Level Id="T">
+            <talent:Talent Id="Schwerter" Level="3"/>
           </misc:Level>
         </misc:Levels>
       </pfad:Pfad>
