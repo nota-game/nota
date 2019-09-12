@@ -3075,7 +3075,7 @@ Ausserdem darf eine Waffe Plazieren Taktik die das selbe Ziel wie diese hat in d
     <Taktik Id="Gezielter Angriff" Kosten="1" Belastung="0" Typ="Unterstützend">
       <Beschreibung><![CDATA[Der Kämpfer versucht ein bestimmtes Körperteil gezielt zu treffen.]]></Beschreibung>
       <SofortigerEffekt><![CDATA[$x ist ien belibiger Wert.]]></SofortigerEffekt>
-      <Erfolg><![CDATA[Die bestimmung der Trefferzone (W20 Gliedmaße) kann $x mal wiederholt werden.]]></Erfolg>
+      <Erfolg><![CDATA[Es werden $x mehr Trefferzonen bestimmt. Wähle eine dieser.]]></Erfolg>
       <Mod ModifierType="Malus">
         <MultiplyModValueType>
           <VariableModValueType Value="X"/>
