@@ -12,14 +12,14 @@
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
   <xsl:output method="html" indent="no" />
   <xsl:template match="nota:Daten">
-    <xsl:apply-templates select="aktionen:Aktionen"/>
+      <xsl:apply-templates select="aktionen:Taktiken"/>
   </xsl:template>
-  <xsl:template match="aktionen:Aktionen">
+  <xsl:template match="aktionen:Taktiken">
 
 # Aktionen
 
-<xsl:for-each select="aktionen:Aktion">
-<xsl:sort select="@Name" />
+<xsl:for-each select="aktionen:Taktik">
+<xsl:sort select="@Id" />
 :::Action
 
 <xsl:apply-templates select="."/>
@@ -28,10 +28,10 @@
 </xsl:for-each>
 </xsl:template>
 
-  <xsl:template match="aktionen:Aktion" >
+  <xsl:template match="aktionen:Taktik" >
 
 
-## <xsl:value-of select="@Name"/>  
+## <xsl:value-of select="@Id"/>  
 
 <xsl:value-of select="aktionen:Beschreibung"/>
 
@@ -70,7 +70,7 @@
               <xsl:when test="@Typ='Defensiv'">Defensiv</xsl:when>
               <xsl:when test="@Typ='Ausgeglieschen'">Offensiv und Passiv</xsl:when>
               <xsl:when test="@Typ='Frei'">Frei</xsl:when>
-              <xsl:when test="@Typ='Sekundär'">Sekundär</xsl:when>
+              <xsl:when test="@Typ='Neutral'">Neutral</xsl:when>
               <xsl:when test="@Typ='Unterstützend'">Unterstützend</xsl:when>
               <xsl:otherwise>[Ungültiger wert] (<xsl:value-of select="@Typ"/>)</xsl:otherwise>
             </xsl:choose>_

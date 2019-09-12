@@ -53,7 +53,7 @@
       <Text left="9.65 mm" top="76.54 mm" width="59.61 mm" height="5.76 mm" rotation="-90" VerticalAlignment="Center">
         <Paragraph  Alignment="Far" EmSize="12" FontStyle="Bold" FontName="Montreal">
           <TextRun>
-            <TextPath>Original/aktionen:Taktik/@Name</TextPath>
+            <TextPath>Original/aktionen:Taktik/@Id</TextPath>
           </TextRun>
         </Paragraph>
       </Text>
