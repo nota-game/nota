@@ -1,6 +1,7 @@
 <xsl:stylesheet 
   xml:space="preserve"
   xmlns:nota="http://nota.org/schema/nota" 
+  xmlns:misc='http://nota.org/schema/misc'
   xmlns:lebewesen="http://nota.org/schema/lebewesen" 
   xmlns:kultur="http://nota.org/schema/kultur" 
   xmlns:profession="http://nota.org/schema/profession" 
@@ -19,9 +20,9 @@
 
 <xsl:template match="ausstattung:Eigenschaft">
 
-## <xsl:value-of select="@Name"/>  
+### <xsl:value-of select="normalize-space(./ausstattung:Name/misc:Lokalisirung[@Sparche='de']/text())"/>  
 
-<xsl:value-of select="./ausstattung:Beschreibung"/>
+<xsl:value-of select="normalize-space(./ausstattung:Beschreibung/misc:Lokalisirung[@Sparche='de']/text())"/>
 
 </xsl:template>
 

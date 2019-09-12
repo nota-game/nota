@@ -1,18 +1,17 @@
 <?xml version='1.0'?>
 <!-- This file represents a fragment of a book store inventory database -->
-<Daten Version='1'
-  xmlns='http://nota.org/schema/nota'
-  xmlns:misc='http://nota.org/schema/misc'
-  xmlns:lebewesen="http://nota.org/schema/wesen"
-  xmlns:pfad="http://nota.org/schema/pfad"
-  xmlns:profession="http://nota.org/schema/profession"
-  xmlns:talent="http://nota.org/schema/talent"
-  xmlns:fertigkeit="http://nota.org/schema/fertigkeit"
-  xmlns:besonderheit="http://nota.org/schema/besonderheit"
-  xmlns:Belastung="http://nota.org/schema/kampf/aktionen"
-  xmlns:ausstattung="http://nota.org/schema/kampf/ausstattung"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://nota.org/schema/nota ../schema/nota.xsd http://nota.org/schema/lebewesen ../schema/Lebewesen.xsd http://nota.org/schema/pfad ../schema/pfad.xsd http://nota.org/schema/talent ../schema/talent.xsd http://nota.org/schema/fertigkeit ../schema/fertigkeit.xsd http://nota.org/schema/besonderheit ../schema/besonderheit.xsd http://nota.org/schema/kampf/aktionen ../schema/kampf/aktionen.xsd http://nota.org/schema/kampf/ausstattung ../schema/kampf/ausstattung.xsd http://nota.org/schema/misc ../schema/misc.xsd">
+<Daten Version='1' 
+  xmlns='http://nota.org/schema/nota' 
+  xmlns:misc='http://nota.org/schema/misc' 
+  xmlns:lebewesen="http://nota.org/schema/wesen" 
+  xmlns:pfad="http://nota.org/schema/pfad" 
+  xmlns:profession="http://nota.org/schema/profession" 
+  xmlns:talent="http://nota.org/schema/talent" 
+  xmlns:fertigkeit="http://nota.org/schema/fertigkeit" 
+  xmlns:besonderheit="http://nota.org/schema/besonderheit" 
+  xmlns:Belastung="http://nota.org/schema/kampf/aktionen" 
+  xmlns:ausstattung="http://nota.org/schema/kampf/ausstattung" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://nota.org/schema/nota ../schema/nota.xsd http://nota.org/schema/lebewesen ../schema/Lebewesen.xsd http://nota.org/schema/pfad ../schema/pfad.xsd http://nota.org/schema/talent ../schema/talent.xsd http://nota.org/schema/fertigkeit ../schema/fertigkeit.xsd http://nota.org/schema/besonderheit ../schema/besonderheit.xsd http://nota.org/schema/kampf/aktionen ../schema/kampf/aktionen.xsd http://nota.org/schema/kampf/ausstattung ../schema/kampf/ausstattung.xsd http://nota.org/schema/misc ../schema/misc.xsd">
   <!--<Pfade>
     <PfadAuswahl Id="Götter">
       <Name>
@@ -26,7 +25,7 @@
           <misc:Lokalisirung Sparche="de"><![CDATA[Alsa]]></misc:Lokalisirung>
         </Name>
         <Beschreibung>
-          <misc:Lokalisirung Sparche="de" ><![CDATA[Der Charakter ist ein Diener des Gottes Alsa.]]></misc:Lokalisirung>
+          <misc:Lokalisirung Sparche="de"><![CDATA[Der Charakter ist ein Diener des Gottes Alsa.]]></misc:Lokalisirung>
         </Beschreibung>
         <Modifikationen>
           <Besonderheiten xmlns="http://nota.org/schema/lebewesen">
@@ -37,9 +36,8 @@
       </Pfad>
     </PfadAuswahl>
   </Pfade>-->
-  <GenerierungsDaten GenerierungsPunkte="120"  MinimumVerbreitung="3" />
-  <Organismen
-    xmlns="http://nota.org/schema/lebewesen">
+  <GenerierungsDaten GenerierungsPunkte="120" MinimumVerbreitung="3" />
+  <Organismen xmlns="http://nota.org/schema/lebewesen">
     <Gattung Id="Homo">
       <Name>
         <misc:Lokalisirung Sparche="de"><![CDATA[]]></misc:Lokalisirung>
@@ -74,7 +72,7 @@
             <pfad:Pfad Id="Alan"/>
           </StandardPfade>
           <Lebensabschnitte>
-            <Lebensabschnitt Id="JugendlicherM1" startAlter="12" endAlter="13"  minGröße="1.41" maxGröße="1.56" minBMI="15" maxBMI="21">
+            <Lebensabschnitt Id="JugendlicherM1" startAlter="12" endAlter="13" minGröße="1.41" maxGröße="1.56" minBMI="15" maxBMI="21">
               <Spielbar Kosten="3">
                 <PfadPunkte Pfade="Kultur" Punkte="223"/>
               </Spielbar>
@@ -136,7 +134,7 @@
     </Organismus>
   </Organismen>
   <PfadGruppen xmlns="http://nota.org/schema/pfad">
-    <Pfade  Id="Kultur" WiderholungMaximum="2">
+    <Pfade Id="Kultur" WiderholungMaximum="2">
       <Name >
         <misc:Lokalisirung Sparche="de">
           <![CDATA[Kultur]]>
@@ -167,7 +165,7 @@
           </misc:Level>
         </misc:Levels>
       </Pfad>
-      
+
       <Pfad Id="Kirin">
         <Name>
           <misc:Lokalisirung Sparche="de">
@@ -189,7 +187,7 @@
       </Pfad>
     </Pfade>
 
-    <pfad:Pfade  Id="Proffession" WiderholungMaximum="3">
+    <pfad:Pfade Id="Proffession" WiderholungMaximum="3">
       <pfad:Name >
         <misc:Lokalisirung Sparche="de">
           <![CDATA[Proffession]]>
@@ -238,7 +236,7 @@
       </pfad:Pfad>
     </pfad:Pfade>
 
-    <Pfade  Id="Götter">
+    <Pfade Id="Götter">
       <Name >
         <misc:Lokalisirung Sparche="de">
           <![CDATA[Götter]]>
@@ -254,7 +252,7 @@
           <misc:Lokalisirung Sparche="de"><![CDATA[Alsa]]></misc:Lokalisirung>
         </Name>
         <Beschreibung>
-          <misc:Lokalisirung Sparche="de" ><![CDATA[Der Charakter ist ein Diener des Gottes Alsa.]]></misc:Lokalisirung>
+          <misc:Lokalisirung Sparche="de"><![CDATA[Der Charakter ist ein Diener des Gottes Alsa.]]></misc:Lokalisirung>
         </Beschreibung>
         <misc:Levels>
           <misc:Level Id="T">
@@ -266,7 +264,7 @@
   </PfadGruppen>
   <!--<Kulturen
     xmlns="http://nota.org/schema/kultur">
-    <Kultur Id="Alan" >
+    <Kultur Id="Alan">
       <Name>
         <misc:Lokalisirung Sparche="de"><![CDATA[Alan]]></misc:Lokalisirung>
       </Name>
@@ -290,7 +288,7 @@
   </Kulturen>-->
   <!--<Professionen
     xmlns="http://nota.org/schema/profession">
-    <Profession Id="Bäcker" >
+    <Profession Id="Bäcker">
       <Name>
         <misc:Lokalisirung Sparche="de"><![CDATA[Bäcker]]></misc:Lokalisirung>
       </Name>
@@ -313,8 +311,7 @@
       </Levels>
     </Profession>
   </Professionen>-->
-  <Talente
-    xmlns="http://nota.org/schema/talent">
+  <Talente xmlns="http://nota.org/schema/talent">
     <Talent Id="Kampfgespür" Komplexität="D" Kategorie="Kampf">
       <Probe>
         <Intuition/>
@@ -2815,8 +2812,7 @@
 
   </Talente>
   <!-- Ⅰ Ⅱ Ⅲ Ⅳ Ⅴ Ⅵ Ⅶ Ⅷ Ⅸ Ⅹ Ⅺ Ⅻ -->
-  <Fertigkeiten
-    xmlns="http://nota.org/schema/fertigkeit">
+  <Fertigkeiten xmlns="http://nota.org/schema/fertigkeit">
     <Fertigkeit Id="Kulturkunde Alan" Kosten="100">
       <Name>
         <misc:Lokalisirung Sparche="de"><![CDATA[Kulturkunde Alan]]></misc:Lokalisirung>
@@ -2824,12 +2820,12 @@
       <Beschreibung>
         <misc:Lokalisirung Sparche="de"><![CDATA[Das Wissen um die Kultur der Alan]]></misc:Lokalisirung>
       </Beschreibung>
-      <Verbreitung Wert="3">    
-        <misc:Pfad Id="Alan" Verbreitung="7"/>  
+      <Verbreitung Wert="3">
+        <misc:Pfad Id="Alan" Verbreitung="7"/>
       </Verbreitung>
     </Fertigkeit>
     <Fertigkeit Id="Arjuniche Zeichen" Kosten="100">
-    
+
       <Name>
         <misc:Lokalisirung Sparche="de"><![CDATA[Arjuniche Zeichen]]></misc:Lokalisirung>
       </Name>
@@ -2842,8 +2838,7 @@
       </Tags>
     </Fertigkeit>
   </Fertigkeiten>
-  <Besonderheiten
-    xmlns="http://nota.org/schema/besonderheit">
+  <Besonderheiten xmlns="http://nota.org/schema/besonderheit">
     <Besonderheit Id="Auserwählter" Gebunden="true" Kosten="0">
       <Name>
         <misc:Lokalisirung Sparche="de"><![CDATA[Auserwählter]]></misc:Lokalisirung>
@@ -2907,7 +2902,7 @@
       </Bedingung>
     </Besonderheit>
 
-    <Besonderheit Id="Beidhändig" Kosten="3"     >
+    <Besonderheit Id="Beidhändig" Kosten="3">
       <Name>
         <misc:Lokalisirung Sparche="de"><![CDATA[Beidhändig]]></misc:Lokalisirung>
       </Name>
@@ -2965,7 +2960,7 @@
       </Mod>
     </Taktik>
 
-    <Taktik Id="Verteidigungshaltung" Kosten="3" Belastung="2"  Typ="Defensiv">
+    <Taktik Id="Verteidigungshaltung" Kosten="3" Belastung="2" Typ="Defensiv">
       <Beschreibung><![CDATA[Der Charakter konzentriert sich auf seine Verteidigung, auf kosten seiner Angriffe.]]></Beschreibung>
       <Bedingung><![CDATA[Keine offensiven Taktiken.]]></Bedingung>
       <Mod ModifierType="Bonus">
@@ -3169,26 +3164,18 @@ Ausserdem darf eine Waffe Plazieren Taktik die das selbe Ziel wie diese hat in d
     <Eigenschaften>
       <Eigenschaft Id="Präzise">
         <Name>
-          <misc:Lokalisirung Sparche="de">
-            <![CDATA[Präzise]]>
-          </misc:Lokalisirung>
+          <misc:Lokalisirung Sparche="de"><![CDATA[Präzise]]></misc:Lokalisirung>
         </Name>
         <Beschreibung>
-          <misc:Lokalisirung Sparche="de">
-            <![CDATA[Eine Aktion die besonders Präzises vorgehen verlangt.]]>
-          </misc:Lokalisirung>
+          <misc:Lokalisirung Sparche="de"><![CDATA[Eine Aktion die besonders Präzises vorgehen verlangt.]]></misc:Lokalisirung>
         </Beschreibung>
       </Eigenschaft>
       <Eigenschaft Id="Wuchtig">
         <Name>
-          <misc:Lokalisirung Sparche="de">
-            <![CDATA[Wuchtig]]>
-          </misc:Lokalisirung>
+          <misc:Lokalisirung Sparche="de"><![CDATA[Wuchtig]]></misc:Lokalisirung>
         </Name>
         <Beschreibung>
-          <misc:Lokalisirung Sparche="de">
-            <![CDATA[Eine Aktoin bei der es auf Brachiale gewalt ankommt.]]>
-          </misc:Lokalisirung>
+          <misc:Lokalisirung Sparche="de"><![CDATA[Eine Aktoin bei der es auf Brachiale gewalt ankommt.]]></misc:Lokalisirung>
         </Beschreibung>
       </Eigenschaft>
     </Eigenschaften>
@@ -3197,7 +3184,7 @@ Ausserdem darf eine Waffe Plazieren Taktik die das selbe Ziel wie diese hat in d
 
   <Ausstattung xmlns="http://nota.org/schema/kampf/ausstattung">
     <Waffen>
-      <Nahkampfwaffe Id="Floret"  Distanzklasse="2"  >
+      <Nahkampfwaffe Id="Floret" Distanzklasse="2">
         <Name>
           <misc:Lokalisirung Sparche="de"><![CDATA[Floret]]></misc:Lokalisirung>
         </Name>
@@ -3205,7 +3192,7 @@ Ausserdem darf eine Waffe Plazieren Taktik die das selbe Ziel wie diese hat in d
           <misc:Lokalisirung Sparche="de"><![CDATA[]]></misc:Lokalisirung>
         </Beschreibung>
         <Schaden>
-          <Schnitt  Schaden="2"/>
+          <Schnitt Schaden="2"/>
         </Schaden>
         <Eigenschaften>
           <Eigenschaft Id="Präzise"/>
@@ -3214,7 +3201,7 @@ Ausserdem darf eine Waffe Plazieren Taktik die das selbe Ziel wie diese hat in d
           <talent:Talent Id="Fechtwaffen"/>
         </Talente>
       </Nahkampfwaffe>
-      <Nahkampfwaffe Id="Rapier"  Distanzklasse="2"  >
+      <Nahkampfwaffe Id="Rapier" Distanzklasse="2">
         <Name>
           <misc:Lokalisirung Sparche="de"><![CDATA[Rapier]]></misc:Lokalisirung>
         </Name>
@@ -3223,7 +3210,7 @@ Ausserdem darf eine Waffe Plazieren Taktik die das selbe Ziel wie diese hat in d
         </Beschreibung>
         <Schaden>
           <Wucht Schaden="1"/>
-          <Schnitt  Schaden="3"/>
+          <Schnitt Schaden="3"/>
         </Schaden>
         <Eigenschaften>
           <Eigenschaft Id="Präzise"/>
@@ -3241,7 +3228,7 @@ Ausserdem darf eine Waffe Plazieren Taktik die das selbe Ziel wie diese hat in d
         </Beschreibung>
         <Schaden>
           <Wucht Schaden="3"/>
-          <Schnitt  Schaden="3"/>
+          <Schnitt Schaden="3"/>
         </Schaden>
         <Talente>
           <talent:Talent Id="Schwerter"/>
@@ -3256,7 +3243,7 @@ Ausserdem darf eine Waffe Plazieren Taktik die das selbe Ziel wie diese hat in d
         </Beschreibung>
         <Schaden>
           <Wucht Schaden="5"/>
-          <Schnitt  Schaden="4"/>
+          <Schnitt Schaden="4"/>
         </Schaden>
         <Talente>
           <talent:Talent Id="Einhandäxte"/>
@@ -3270,7 +3257,7 @@ Ausserdem darf eine Waffe Plazieren Taktik die das selbe Ziel wie diese hat in d
           <misc:Lokalisirung Sparche="de"><![CDATA[]]></misc:Lokalisirung>
         </Beschreibung>
         <Schaden>
-          <Schnitt  Schaden="2"/>
+          <Schnitt Schaden="2"/>
         </Schaden>
         <Talente>
           <talent:Talent Id="Dolch"/>
@@ -3285,8 +3272,8 @@ Ausserdem darf eine Waffe Plazieren Taktik die das selbe Ziel wie diese hat in d
           <misc:Lokalisirung Sparche="de"><![CDATA[]]></misc:Lokalisirung>
         </Beschreibung>
         <Schaden>
-          <Wucht  Schaden="1"/>
-          <Schnitt  Schaden="2"/>
+          <Wucht Schaden="1"/>
+          <Schnitt Schaden="2"/>
         </Schaden>
         <Talente>
           <talent:Talent Id="Stangenwaffe"/>
@@ -3301,8 +3288,8 @@ Ausserdem darf eine Waffe Plazieren Taktik die das selbe Ziel wie diese hat in d
           <misc:Lokalisirung Sparche="de"><![CDATA[]]></misc:Lokalisirung>
         </Beschreibung>
         <Schaden>
-          <Wucht  Schaden="1"/>
-          <Schnitt  Schaden="2"/>
+          <Wucht Schaden="1"/>
+          <Schnitt Schaden="2"/>
         </Schaden>
         <Eigenschaften>
           <Eigenschaft Id="Wiederharken"/>
@@ -3320,8 +3307,8 @@ Ausserdem darf eine Waffe Plazieren Taktik die das selbe Ziel wie diese hat in d
           <misc:Lokalisirung Sparche="de"><![CDATA[]]></misc:Lokalisirung>
         </Beschreibung>
         <Schaden>
-          <Wucht  Schaden="2"/>
-          <Schnitt  Schaden="2"/>
+          <Wucht Schaden="2"/>
+          <Schnitt Schaden="2"/>
         </Schaden>
         <Talente>
           <talent:Talent Id="Stangenwaffe"/>
@@ -3391,7 +3378,7 @@ Ausserdem darf eine Waffe Plazieren Taktik die das selbe Ziel wie diese hat in d
         </Schaden>
         <Schusseigenschaften Magazingröße="1" Schussfrequenz="5"/>
         <Reichweiten>
-          <Reichweite Distanz="Nahkampf" Schadensreduktion="2" Modifikator="-10"  />
+          <Reichweite Distanz="Nahkampf" Schadensreduktion="2" Modifikator="-10" />
           <Reichweite Distanz="10" Modifikator="0"/>
           <Reichweite Distanz="20" Modifikator="-2"/>
           <Reichweite Distanz="40" Modifikator="-4"/>
@@ -3500,14 +3487,10 @@ Ausserdem darf eine Waffe Plazieren Taktik die das selbe Ziel wie diese hat in d
     <Eigenschaften>
       <Eigenschaft Id="Präzise">
         <Name>
-          <misc:Lokalisirung Sparche="de">
-            <![CDATA[Präzise]]>
-          </misc:Lokalisirung>
+          <misc:Lokalisirung Sparche="de"><![CDATA[Präzise]]></misc:Lokalisirung>
         </Name>
         <Beschreibung>
-          <misc:Lokalisirung Sparche="de">
-            <![CDATA[Eine Waffe mit der Eigenschaft Präzise ist in der Lage die Rüstung des Gegners zu umgehen. Für alle Präzisen Manöver sind die Erschwernisse halbiert.]]>
-          </misc:Lokalisirung>
+          <misc:Lokalisirung Sparche="de"><![CDATA[Eine Waffe mit der Eigenschaft Präzise ist in der Lage die Rüstung des Gegners zu umgehen. Für alle Präzisen Manöver sind die Erschwernisse halbiert.]]></misc:Lokalisirung>
         </Beschreibung>
       </Eigenschaft>
       <Eigenschaft Id="Wuchtig">
