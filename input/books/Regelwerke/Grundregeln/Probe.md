@@ -67,7 +67,9 @@ Ein Charakter besitzt 21 - GL viele Glückspunkte (GlP). Diese Repräsentieren w
 +:------:+:---------------------------------------------------------+
 | Kosten | Effekt                                                   |
 +:======:+:=========================================================+
-| 2      | Ändere das Ergebnis eines Würfels um 1                   |
+| 2      | Reduziere das Ergebnis eines Würfels um 1                |
++--------+----------------------------------------------------------+
+| 3      | Erhöhe das Ergebnis eines Würfels um 1 wenn es min. 2 ist|
 +--------+----------------------------------------------------------+
 | 3      | Wiederhole eine Probe                                    |
 +--------+----------------------------------------------------------+
