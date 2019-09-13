@@ -578,5 +578,13 @@ Einige Ausrüstungsgegenstände besitzen Eigenschaften, die ihre Regeln verände
 
 §"books/Regelwerke/Grundregeln/Kampf/WaffenEigenschaften"
 
+# Waffen
+
+§"books/Regelwerke/Grundregeln/Kampf/Waffen"
+
+# Rüstungen
+
+§"books/Regelwerke/Grundregeln/Kampf/Rüstung"
+
 
 §"books/Regelwerke/Grundregeln/Kampf/Aktionen"
