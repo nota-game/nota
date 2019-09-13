@@ -1,6 +1,7 @@
 <xsl:stylesheet
         xml:space="preserve"
         xmlns:nota="http://nota.org/schema/nota"
+        xmlns:misc='http://nota.org/schema/misc'
         xmlns:lebewesen="http://nota.org/schema/lebewesen"
         xmlns:kultur="http://nota.org/schema/kultur"
         xmlns:profession="http://nota.org/schema/profession"
@@ -24,7 +25,7 @@
 
 <xsl:template match="talent:Talente">
 <xsl:for-each select="talent:Talent[@Kategorie='Kampf']">
-<xsl:sort select="@Name" />
+<xsl:sort select="normalize-space(./talent:Name/misc:Lokalisirung[@Sparche='de']/text())" />
 :::Talent
 <xsl:apply-templates select="."/>
 :::
@@ -33,11 +34,11 @@
 </xsl:template>
 
 <xsl:template match="talent:Talent">
-## <xsl:value-of select="@Name"/> *(<xsl:apply-templates  select="talent:Probe/*[1]" />/<xsl:apply-templates  select="talent:Probe/*[2]" />/<xsl:apply-templates  select="talent:Probe/*[3]" />)*
+## <xsl:value-of select="normalize-space(./talent:Name/misc:Lokalisirung[@Sparche='de']/text())"/> *(<xsl:apply-templates  select="talent:Probe/*[1]" />/<xsl:apply-templates  select="talent:Probe/*[2]" />/<xsl:apply-templates  select="talent:Probe/*[3]" />)*
 **Komplexität**: <xsl:value-of select="@Komplexität"/>
 
 :::Description
-<xsl:value-of select="talent:Beschreibung"/>
+<xsl:value-of select="normalize-space(talent:Beschreibung)"/>
 :::
 
 <xsl:if test="talent:Ableitungen">
@@ -63,7 +64,7 @@ Ableitung
 </xsl:for-each>
 </xsl:template>
 
-<xsl:template match="talent:Ableitung">+ <xsl:value-of select="@Name" /> _(<xsl:value-of select="@Anzahl" />)_</xsl:template>
+<xsl:template match="talent:Ableitung">+ <xsl:value-of select="@Id" /> _(<xsl:value-of select="@Anzahl" />)_</xsl:template>
 
 <xsl:template match="talent:Mut">MU</xsl:template>
 <xsl:template match="talent:Glück">GL</xsl:template>
