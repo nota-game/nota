@@ -12,7 +12,9 @@
     "editor.wordWrapColumn": 80,
     "editor.wrappingIndent": "indent",
     "editor.renderWhitespace": "boundary",
-    "spellright.language": "de",
+    "spellright.language": [
+        "de"
+    ],
     "spellright.documentTypes": [
         "markdown",
         "latex",
