@@ -1,7 +1,8 @@
-Order: 1
-Title: 'Charakter'
-
 ---
+after: Grundregeln.md
+---
+# Charakter
+
 Der Charakter stellt den Avatar des Spielers in der Welt dar. Über diesen
 interagiert der Spieler mit seiner Umwelt. Im Folgendem werden die wichtigsten
 Punkte zu einem Charakter erklärt. Dies gilt nicht nur für Spieler Charaktere,

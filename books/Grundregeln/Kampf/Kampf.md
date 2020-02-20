@@ -1,4 +1,6 @@
-
+---
+after: ../Magie/Alchemie/Alchemie.md
+---
 # Kampf
 
 Eine Kampfrunde besteht aus drei Phasen. Phase eins ist Bewegung, Phase zwei

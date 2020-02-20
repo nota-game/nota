@@ -1,7 +1,7 @@
-Order: 5
-Title: 'Seele'
-
 ---
+after: /Kampf/Kampf.md
+---
+# Seele
 
 Die Seele ist der Quell des seins, die Essenz die einen Jeden ausmacht. Sollte
 eine Person seine Seele verlieren, so bleibt nur noch eine Leere Hülle zurück,

@@ -1,6 +1,7 @@
-Order: 1
-Title: "Talentsteigern"
 ---
+after : talente.md
+---
+# Talentsteigern
 
 Um ein Talent um einen Punkt zu steigern, müssen Ep ausgegeben werden. Man sucht
 sich zu dem zu steigernden Talent die Komplexität und erhält somit die Spalte
