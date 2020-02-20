@@ -419,7 +419,7 @@ vorausgesetzt das medizinische wissen dazu ist vorhanden.
 Voraussetzung zum Abbau der Blutpunkte ist Ruhe und genügend Flüssigkeit und
 Nahrung. Andernfalls kann der Abbau geringer ausfallen.
 
-~[books/Regelwerke/Grundregeln/Kampf/BlutungsTabelle.xlsx]
+~[BlutungsTabelle.xlsx]
 
 ### Schmerzen
 
