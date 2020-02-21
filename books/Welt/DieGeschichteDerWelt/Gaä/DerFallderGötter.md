@@ -1,5 +1,5 @@
 ---
-after: DerAufstiegDerTheokratie.md
+after: Gaä.md
 ---
 
 # Der Fall der Götter

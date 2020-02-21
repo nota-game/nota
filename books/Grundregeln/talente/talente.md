@@ -1,5 +1,6 @@
 ---
-after: Probe.md
+after: ../Gotter/Gotter.md
+
 ---
 # Talente
 
@@ -33,38 +34,38 @@ günstigsten Talente gehören und zur Komplexitätsklasse *Z* die Teuersten.
  werden nur die Talente mit dem Höchstem Wert berücksichtigt, entsprechend der
  Zahl die bei Maximum angegeben ist.
 
-# Geistig
+## Geistig
 
 Geistige Talente sind Intuitive Fähigkeiten, die jeder beherrscht
 
 §"books/Regelwerke/Grundregeln/talente/GeistTalente"
 
-# Körper
+## Körper
 
 Sei es nun Klettern oder Laufen, alle Sportlichen Fähigkeiten fallen unter diese
 Kategorie.
 
 §"books/Regelwerke/Grundregeln/talente/KörperTalente"
 
-# Gesellschaft
+## Gesellschaft
 
 Talente für die Integration mit anderen Charakteren sind hier zu finden.
 
 §"books/Regelwerke/Grundregeln/talente/GesellschaftTalente"
 
-# Kampf
+## Kampf
 
 Der geschulte Umgang mit und ohne Waffen.
 
 §"books/Regelwerke/Grundregeln/talente/KampfTalente"
 
-# Wissen
+## Wissen
 
 Bücherwissen. 
 
 §"books/Regelwerke/Grundregeln/talente/WissenTalente"
 
-# Handwerk
+## Handwerk
 
 Handwerkliche Tätigkeiten
 

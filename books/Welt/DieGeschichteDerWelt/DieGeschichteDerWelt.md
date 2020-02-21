@@ -1,5 +1,5 @@
 ---
-after: ../../Welt.md
+after: ../Welt.md
 ---
 
 # Die Geschichte der Welt

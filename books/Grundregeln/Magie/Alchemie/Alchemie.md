@@ -1,5 +1,5 @@
 ---
-after: ../../talente/talente.md
+after: ../../talente/Kosten.md
 ---
 # Alchemie
 
