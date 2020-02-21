@@ -1,5 +1,5 @@
 ---
-after: Gaä/DerAufstiegDerTheokratie.md
+after: Gaä/DerFallderGötter.md
 ---
 
 # Tallos
