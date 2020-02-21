@@ -1,5 +1,5 @@
 ---
-after: Probe.md
+after: ../Probe.md
 ---
 # Talente
 
