@@ -1,6 +1,8 @@
-Title: Die Geschichte der Welt
-Order: 1
 ---
+after: ../../Welt.md
+---
+
+# Die Geschichte der Welt
 
 Viele Mythen ranken sich um die Schöpfung der Welt, und es Heißt das in jeder
 Legende ein Funken Wahrheit steckt. Aufgrund ihres Einflusses ist der

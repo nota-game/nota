@@ -1,5 +1,5 @@
 ---
-after: ../../Welt.md
+after: DerFallderGötter.md
 ---
 
 # Der Aufstieg der Theokraten
