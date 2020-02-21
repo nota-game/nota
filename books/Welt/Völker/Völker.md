@@ -1,5 +1,5 @@
 ---
-after: ../Tallos.md
+after: ../DieGeschichteDerWelt/Tallos.md
 ---
 
 # Die Völker

@@ -1,5 +1,5 @@
 ---
-after: ../DieGeschicteDerWelt.md
+after: ../DieGeschichteDerWelt.md
 ---
 # Gaä
 
