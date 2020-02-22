@@ -1,8 +1,3 @@
-Title: Grundregelbuch
-BookType: Regelbuch
-BookNumber: 1
-Alias: ['Grundregeln']
----
 
 In Nota (lat. für Zeichen, Mal) schlüpfen die Spieler in die Rolle eines
 Charakters, welcher von den alten Göttern auserwählt wurde. Sein Ziel solle es
