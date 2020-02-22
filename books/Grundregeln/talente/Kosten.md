@@ -17,7 +17,7 @@ steigern um einen Bonus zu erhalten anstelle den Basis Wert um eins zu erhöhen.
 Daher können die können die Kosten durchaus geringer ausfallen als zuerst
 vermutet.
 
-:::span
-§"books/Regelwerke/Grundregeln/talente/KostenTabelle"
-:::
+
+~[KostenTabelle.xlsx]
+
 

@@ -88,23 +88,21 @@ Minimum von 1 erreicht falls die belastung 2 übersteigt, kleiner als jeder
 Taktikwert deren Probe gelungen ist. Es ist durchaus möglich das Taktikwerte
 werte kleiner 0 annehmen, sie sind deshalb noch nicht gescheitert.
 
-:::Bsp
-
-Führt ein Charakter zwei Taktiken mit einer Belastung von jeweils 1 und eine
-Taktik mit einer Belastung von 0,5 durch.
-
-Die Summe der Belastung beträgt 2,5, aufgerundet 3. Daraus ergibt sich das sein
-Talentwert einmal halbiert wird. Hat der Charakter einen Talentwert von 15
-bleiben ihm noch 7 für die Probe.
-
-Bei der Talentprobe würfelt er 18, 5 und 19. Die fünf reicht nicht aus und er
-muss dies mit seinem Talentwert ausgleichen. Somit behält er 2 Punkte Rest. Der
-unmodifizierten Taktikwert ist dann 2.
-
-Hat nun die Erste Taktik eine Malus von 3, die zweite einen Bonus von 1 und die
-dritte keine Modifikation, so haben betragen die Taktikwerte -1, 3 und 2.
-
-:::
+| Sample
+|-----------------------------------------------------------------------------
+| Führt ein Charakter zwei Taktiken mit einer Belastung von jeweils 1 und eine
+| Taktik mit einer Belastung von 0,5 durch.
+| 
+| Die Summe der Belastung beträgt 2,5, aufgerundet 3. Daraus ergibt sich das
+| sein Talentwert einmal halbiert wird. Hat der Charakter einen Talentwert von
+| 15 bleiben ihm noch 7 für die Probe.
+| 
+| Bei der Talentprobe würfelt er 18, 5 und 19. Die fünf reicht nicht aus und er
+| muss dies mit seinem Talentwert ausgleichen. Somit behält er 2 Punkte Rest.
+| Der unmodifizierten Taktikwert ist dann 2.
+| 
+| Hat nun die Erste Taktik eine Malus von 3, die zweite einen Bonus von 1 und
+| die dritte keine Modifikation, so haben betragen die Taktikwerte -1, 3 und 2.
 
 Eine Taktik kann einer von vier Typen zugeordnet werden. Offensiv, Defensiv,
 Neutral oder Unterstützend. Zudem können sie einen oder mehrere Effekte haben.
@@ -358,10 +356,10 @@ Die Zuordnung des W20 zu den Einzelnen Zonen ist wie folgt.
 | Rechtes Bein| 15%                |(18-20)|
 +-------------+--------------------+-------+
 
-:::Info
-Die Aufteilung ist Kompatible zu DSA 4.1, daher können auch Hilfsmittel zur
-Zonenbestimmung verwendet werden die Kompatible zu DSA 4.1 sind.
-:::
+| Information
+|----------------------------------------------------------------------------
+| Die Aufteilung ist Kompatible zu DSA 4.1, daher können auch Hilfsmittel zur
+| Zonenbestimmung verwendet werden die Kompatible zu DSA 4.1 sind.
 
 ### Stumpfe Wunden (Prellungen/Brüche)
 
@@ -511,13 +509,14 @@ Je nach Waffe kann das nachladen unterschiedlich lange dauern. Entweder ist die
 Dauer in Kampfrunden (*x KR*) angegeben, diese kann auch 0 KR betragen. Oder mit
 Schnell (*x S*) dies bedeutet das die Waffe sich sehr schnell nachladen lässt
 und das Nachladen solange dauert wie *x* Schuss abzugeben. 
-:::Bsp
-Eine Waffe die noch zwei Schuss im Magazin hat und einen Nachladenwert von 2 S
-besitzt bei einer feuerrate von 5, kann in der nächsten Kampfrunde 3 Schuss
-abgeben. zwei die sich noch in der Waffe befinden, dann dauert das nachladen
-solange wie 2 Schuss abzugeben (insgesamt wurde Zeit in höhe von 4 Schuss
-verbraucht). Damit bleibt noch ein Schuss der abgegeben werden kann.
-:::
+
+| Sample
+|-------------------------------------------------------------------------------
+| Eine Waffe die noch zwei Schuss im Magazin hat und einen Nachladenwert von 2 S
+| besitzt bei einer feuerrate von 5, kann in der nächsten Kampfrunde 3 Schuss
+| abgeben. zwei die sich noch in der Waffe befinden, dann dauert das nachladen
+| solange wie 2 Schuss abzugeben (insgesamt wurde Zeit in höhe von 4 Schuss
+| verbraucht). Damit bleibt noch ein Schuss der abgegeben werden kann.
 
 Die Reichweite einer Waffe ist in mehreren paaren (Distanz/Erschwernis)
 angegeben. Dabei wird die kleinste Erschwernis gewählt, sodass die tatsächliche
