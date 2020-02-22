@@ -19,13 +19,11 @@ beachtliche Kultur aufgebaut haben.
 Die Art unterteilt die Mitglieder einer Gattung weiter. So stellen die Menschen
 (Homo Sapiens) und die Meermenschen (Homo Marinus) zwei Vertreter dar.
 
+| Information
+|------------------------------
+| Da es in der Welt von Nota keine Evolution gab, haben diese begriffe eine
+| etwas andere Bedeutung als in der Realität. 
 
-
-
-:::{.hidden-information .Information}
-Da es in der Welt von Nota keine Evolution gab, haben diese begriffe eine
-etwas andere Bedeutung als in der Realität. 
-:::
 
 
 ## Kultur
@@ -124,7 +122,7 @@ der Welt, mittels Magie manipulieren wollen.
 Ob ein Charakter vor einer drohenden Gefahr wegläuft oder sich ihr stellt,
 hängt auch von seinem Mut ab.
 
-### Glück
+## Glück
 Nicht immer muss es Können sein welches benötigt wird. Glück erlaubt es das
 Schicksal zu wenden. 
 
@@ -187,6 +185,9 @@ Die folgende Tabelle listet die Gewischt und stärke Verhältnisse dar.
 |**13**| 28    | 32    | 37    | 42    |
 +------+-------+-------+-------+-------+
 
-:::{.hidden-information .Information}
-Dies ergibt sich aus der Tragkraft eines durchschnittlichen Menschen von 60% seines Körpergewichtes (Stärke 10 [Quelle](http://www.spiegel.de/wissenschaft/mensch/warum-nepalesen-so-viel-tragen-koennen-a-1121522.html)). Annahme sehr kräftiger Mensch (Stärke 7) 85% und schwach (Stärke 13) 47%.
-:::
+| Information
+|------------------------------------------------------------------------------
+| Dies ergibt sich aus der Tragkraft eines durchschnittlichen Menschen von 60%
+| seines Körpergewichtes (Stärke 10
+| [Quelle](http://www.spiegel.de/wissenschaft/mensch/warum-nepalesen-so-viel-tragen-koennen-a-1121522.html)).
+| Annahme sehr kräftiger Mensch (Stärke 7) 85% und schwach (Stärke 13) 47%.
