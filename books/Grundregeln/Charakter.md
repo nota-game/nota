@@ -76,6 +76,7 @@ Jede Eigenschaft kann im Normalfall Werte zwischen 7 und 12 Annehmen.
 Dabei gilt je niedriger der Wert desto besser.
 
 Zusätzlich besitzen Charaktere noch Sekundäreigenschaften.
+
  + Größe
  + Gewicht 
  + Erscheinung
