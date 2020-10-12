@@ -9,7 +9,7 @@ die zwar noch atmet, aber alleine nicht mehr über lebensfähig ist.
 
 
 Hochentwickelte Spezies wie die Menschlichen Arten haben einen Seelenwert von
-100. Tiere haben einen wesentlich niedrigeren wert, Insekten kommen eventuell
+\100. Tiere haben einen wesentlich niedrigeren wert, Insekten kommen eventuell
 noch in den zweistelligen Bereich und Pflanzen haben werte von unter 10.
 
 Eine Gefahr für die Seele eines jeden ist Dämonischer Einfluss, beispielsweise
