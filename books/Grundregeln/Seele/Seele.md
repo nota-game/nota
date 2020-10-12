@@ -44,7 +44,7 @@ Miasma Anfälligkeit **Anfällig II**
 ~[KorumptionTabelleAnfällig II.xlsx]
 
 Miasma Anfälligkeit **Resistent I**  
-~[KorumptionTabelleResistenz I.xlsx]
+~[KorumptionTabelleResistent I.xlsx]
 
 Miasma Anfälligkeit **Resistent II**  
-~[KorumptionTabelleResistenz II.xlsx]
+~[KorumptionTabelleResistent II.xlsx]
