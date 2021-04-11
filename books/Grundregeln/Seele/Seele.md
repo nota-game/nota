@@ -8,8 +8,8 @@ eine Person seine Seele verlieren, so bleibt nur noch eine Leere Hülle zurück,
 die zwar noch atmet, aber alleine nicht mehr über lebensfähig ist.
 
 
-Hochentwickelte Spezies wie die Menschlichen Arten haben einen Seelenwert von
-100. Tiere haben einen wesentlich niedrigeren wert, Insekten kommen eventuell
+Hochentwickelte Spezies wie die Menschlichen Arten haben einen Seelenwert von 100.
+Tiere haben einen wesentlich niedrigeren wert, Insekten kommen eventuell
 noch in den zweistelligen Bereich und Pflanzen haben werte von unter 10.
 
 Eine Gefahr für die Seele eines jeden ist Dämonischer Einfluss, beispielsweise
@@ -24,8 +24,7 @@ und verdrängen die Seele und verwandeln das Geschöpf langsam in einen Dämon.
 Um zu erfahren ob eine Seele sich regeneriert oder Korruption aufbaut Zieht man
 von dem Seelenwert die Korruption ab zusätzlich addiert man einen Bonus/Malus
 aus der Umgebung. Dieser wird durch 150 geteilt, bei Miasma verseuchtem Gebiet
-jedoch nur durch 10. Gebiete haben normalerweise einen Akkumulierten wert von
-1500.
+jedoch nur durch 10. Gebiete haben normalerweise einen Akkumulierten wert von 1500.
 
 Sollte das Ergebnis unter 0 sein, so breitet sich die Korruption im Körper
 weiter aus, ist das Ergebnis über 0 So regeneriert sich die Seele und verdrängt
@@ -36,16 +35,16 @@ Um zu ermitteln wie viel Korruption man abbaut, wirft man 3W6 und Konsultiert
 folgende Tabelle.
 
 Miasma Anfälligkeit **Normal**  
-§"books/Regelwerke/Grundregeln/Seele/KorumptionTabelleNormal"
+~[KorumptionTabelleNormal.xlsx]
 
 Miasma Anfälligkeit **Anfällig I**  
-§"books/Regelwerke/Grundregeln/Seele/KorumptionTabelleAnfällig I"
+~[KorumptionTabelleAnfällig I.xlsx]
 
 Miasma Anfälligkeit **Anfällig II**  
-§"books/Regelwerke/Grundregeln/Seele/KorumptionTabelleAnfällig II"
+~[KorumptionTabelleAnfällig II.xlsx]
 
 Miasma Anfälligkeit **Resistent I**  
-§"books/Regelwerke/Grundregeln/Seele/KorumptionTabelleResistenz I"
+~[KorumptionTabelleResistent I.xlsx]
 
 Miasma Anfälligkeit **Resistent II**  
-§"books/Regelwerke/Grundregeln/Seele/KorumptionTabelleResistenz II"
+~[KorumptionTabelleResistent II.xlsx]

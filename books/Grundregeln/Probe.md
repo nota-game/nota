@@ -18,10 +18,13 @@ noch Positiv sein, so hat man die Probe erfolgreich bestanden.
 Neben der Frage, ob eine Probe geschafft wurde, kann auch die abgelieferte
 Qualität von Bedeutung sein. Diese ergibt sich aus den bei der Probe noch nicht
 verbrauchten Talentpunkten. Um die Qualität zu bestimmen, kann folgende Tabelle
-zu raten gezogen werden. +----------+----+----+----+----+----+-----+-----+-----+
-| Punkte | 0 | 1+ | 2+ | 4+ | 8+ | 16+ | 32+ | ... |
-+----------+----+----+----+----+----+-----+-----+-----+ | Qualität | 0 | 1 | 2 |
-3 | 4 | 5 | 6 | ... | +----------+----+----+----+----+----+-----+-----+-----+
+zu raten gezogen werden.
+
++----------+----+----+----+----+----+-----+-----+-----+
+| Punkte   | 0  | 1+ | 2+ | 4+ | 8+ | 16+ | 32+ | ... |
++----------+----+----+----+----+----+-----+-----+-----+ 
+| Qualität | 0  | 1  | 2  |  3 |  4 |  5  |  6  | ... |
++----------+----+----+----+----+----+-----+-----+-----+
 
 Formel zur Berechnung: $\(\log_2 punkte + 1\)$ mit dem Sonderfall für 0 Punkte. 
 

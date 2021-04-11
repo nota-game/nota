@@ -166,11 +166,11 @@ Die Stärke eines Charakters ergibt sich aus seiner Kraft und seiner Masse.
 
 $\(Kraft = \frac{91}{30}ST^2+\frac{1529}{300}ST+\frac{3}{50}\)$
 
-Die folgende Tabelle listet die Gewischt und stärke Verhältnisse dar.
+Die folgende Tabelle listet die Gewischt und stärke Verhältnisse dar.3
 
 +------+-------+-------+-------+-------+
 |Stärke| 60 kg | 70 kg | 80 kg | 90 kg |
-+======+=======+=======+=======+=======+
++:====:+:=====:+:=====:+:=====:+:=====:+
 |**7** | 51    | 59    | 68    | 76    |
 +------+-------+-------+-------+-------+
 |**8** | 44    | 52    | 59    | 67    |
@@ -185,6 +185,7 @@ Die folgende Tabelle listet die Gewischt und stärke Verhältnisse dar.
 +------+-------+-------+-------+-------+
 |**13**| 28    | 32    | 37    | 42    |
 +------+-------+-------+-------+-------+
+
 
 | Information
 |------------------------------------------------------------------------------

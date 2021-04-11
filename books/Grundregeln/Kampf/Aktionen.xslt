@@ -77,10 +77,10 @@
           <xsl:if test="./aktionen:Mod">
 **Modifikation**
 
-<xsl:if test="./aktionen:Mod/@ModifierType eq 'Bonus'">
+<xsl:if test="./aktionen:Mod/@ModifierType = 'Bonus'">
 ::&#65291;<xsl:apply-templates select="./aktionen:Mod/*"/>::{.bonus}
 </xsl:if>
-<xsl:if test="./aktionen:Mod/@ModifierType eq 'Malus'">
+<xsl:if test="./aktionen:Mod/@ModifierType = 'Malus'">
 ::&#x2212;<xsl:apply-templates select="./aktionen:Mod/*"/>::{.malus}
 </xsl:if>
 </xsl:if>

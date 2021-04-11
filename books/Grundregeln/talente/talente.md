@@ -38,20 +38,20 @@ günstigsten Talente gehören und zur Komplexitätsklasse *Z* die Teuersten.
 
 Geistige Talente sind Intuitive Fähigkeiten, die jeder beherrscht
 
-§"books/Regelwerke/Grundregeln/talente/GeistTalente"
+~[GeistTalente.xslt]
 
 ## Körper
 
 Sei es nun Klettern oder Laufen, alle Sportlichen Fähigkeiten fallen unter diese
 Kategorie.
 
-§"books/Regelwerke/Grundregeln/talente/KörperTalente"
+~[KörperTalente.xslt]s
 
 ## Gesellschaft
 
 Talente für die Integration mit anderen Charakteren sind hier zu finden.
 
-§"books/Regelwerke/Grundregeln/talente/GesellschaftTalente"
+~[GesellschaftTalente.xslt]s
 
 ## Kampf
 
