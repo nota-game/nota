@@ -57,17 +57,17 @@ Talente für die Integration mit anderen Charakteren sind hier zu finden.
 
 Der geschulte Umgang mit und ohne Waffen.
 
-§"books/Regelwerke/Grundregeln/talente/KampfTalente"
+~[books/Regelwerke/Grundregeln/talente/KampfTalente]
 
 ## Wissen
 
 Bücherwissen. 
 
-§"books/Regelwerke/Grundregeln/talente/WissenTalente"
+~[books/Regelwerke/Grundregeln/talente/WissenTalente]
 
 ## Handwerk
 
 Handwerkliche Tätigkeiten
 
-§"books/Regelwerke/Grundregeln/talente/HandwerkTalente"
+~[books/Regelwerke/Grundregeln/talente/HandwerkTalente]
 
