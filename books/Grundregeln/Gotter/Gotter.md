@@ -10,5 +10,5 @@ vom jeweiligen Gott abhängigen Gaben.
 Zusätzlich erhalten sie zugriff auf folgende Vorteile:
 
 # Gaben
-~[books/Regelwerke/Grundregeln/Gotter/GenericGaben]
+~[GenericGaben.xslt]
  

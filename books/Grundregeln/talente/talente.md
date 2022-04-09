@@ -45,29 +45,29 @@ Geistige Talente sind Intuitive Fähigkeiten, die jeder beherrscht
 Sei es nun Klettern oder Laufen, alle Sportlichen Fähigkeiten fallen unter diese
 Kategorie.
 
-~[KörperTalente.xslt]s
+~[KörperTalente.xslt]
 
 ## Gesellschaft
 
 Talente für die Integration mit anderen Charakteren sind hier zu finden.
 
-~[GesellschaftTalente.xslt]s
+~[GesellschaftTalente.xslt]
 
 ## Kampf
 
 Der geschulte Umgang mit und ohne Waffen.
 
-~[books/Regelwerke/Grundregeln/talente/KampfTalente]
+~[KampfTalente.xslt]
 
 ## Wissen
 
 Bücherwissen. 
 
-~[books/Regelwerke/Grundregeln/talente/WissenTalente]
+~[WissenTalente.xslt]
 
 ## Handwerk
 
 Handwerkliche Tätigkeiten
 
-~[books/Regelwerke/Grundregeln/talente/HandwerkTalente]
+~[HandwerkTalente.xslt]
 

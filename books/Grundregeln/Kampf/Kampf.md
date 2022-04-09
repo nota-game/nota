@@ -575,15 +575,15 @@ alleine Anzuziehen, und wie lange man mit Hilfe braucht.
 
 Einige Ausrüstungsgegenstände besitzen Eigenschaften, die ihre Regeln verändern.
 
-~[books/Regelwerke/Grundregeln/Kampf/WaffenEigenschaften]
+~[WaffenEigenschaften.xslt]
 
 # Waffen
 
-~[books/Regelwerke/Grundregeln/Kampf/Waffen]
+~[Waffen.xslt]
 
 # Rüstungen
 
-~[books/Regelwerke/Grundregeln/Kampf/Rüstung]
+~[Rüstung.xslt]
 
 
-~[books/Regelwerke/Grundregeln/Kampf/Aktionen]
+~[Aktionen.xslt]
