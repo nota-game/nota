@@ -189,7 +189,7 @@ Die folgende Tabelle listet die Gewischt und stärke Verhältnisse dar.3
 
 | Information
 |------------------------------------------------------------------------------
-| Dies ergibt sich aus der Tragkraft eines durchschnittlichen Menschen von 60%
+| Dies ergibt sich aus der Tragkraft eines trainierter Menschen von 60%
 | seines Körpergewichtes (Stärke 10
-| [Quelle](http://www.spiegel.de/wissenschaft/mensch/warum-nepalesen-so-viel-tragen-koennen-a-1121522.html)).
+| [Quelle](http://www.spiegel.de/wissenschaft/mensch/warum-nepalesen-so-viel-tragen-koennen-a-1121522.html)) [WayBackMachine](https://web.archive.org/web/20161119053820/https://www.spiegel.de/wissenschaft/mensch/warum-nepalesen-so-viel-tragen-koennen-a-1121522.html).
 | Annahme sehr kräftiger Mensch (Stärke 7) 85% und schwach (Stärke 13) 47%.
