@@ -3,12 +3,11 @@
 	// Extension identifier format: ${publisher}.${name}. Example: vscode.csharp
 
 	// List of extensions which should be recommended for users of this workspace.
-	"recommendations": ["cake-build.cake-vscode",
-		"michelemelluso.code-beautifier",
-		"austincummings.razor-plus",
+	"recommendations": [
 		"ban.spellright",
 		"marvhen.reflow-markdown",
-		"IBM.XMLLanguageSupport"		
+		"ibm.xmllanguagesupport",
+		"redhat.vscode-xml"
 	],
 	// List of extensions recommended by VS Code that should not be recommended for users of this workspace.
 	"unwantedRecommendations": [
