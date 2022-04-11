@@ -162,6 +162,16 @@ Die Initiative berechnet sich durch $\(100 - (MU + IN + GE + GE)\)$
 Gibt in der Regel an, wie schnell sich ein Charakter fortbewegt.
 
 ## Kraft
+
+| Information
+|------------------------------------------------------------------------------
+| Dies ergibt sich aus der Tragkraft eines trainierter Menschen von 60%
+| seines Körpergewichtes (Stärke 10
+| [Quelle](http://www.spiegel.de/wissenschaft/mensch/warum-nepalesen-so-viel-tragen-koennen-a-1121522.html))
+| [WayBackMachine](https://web.archive.org/web/20161119053820/https://www.spiegel.de/wissenschaft/mensch/warum-nepalesen-so-viel-tragen-koennen-a-1121522.html).
+| Annahme sehr kräftiger Mensch (Stärke 7) 85% und schwach (Stärke 13) 47%.
+
+
 Die Stärke eines Charakters ergibt sich aus seiner Kraft und seiner Masse.
 
 $\(Kraft = \frac{91}{30}ST^2+\frac{1529}{300}ST+\frac{3}{50}\)$
@@ -186,10 +196,3 @@ Die folgende Tabelle listet die Gewischt und stärke Verhältnisse dar.3
 |**13**| 28    | 32    | 37    | 42    |
 +------+-------+-------+-------+-------+
 
-
-| Information
-|------------------------------------------------------------------------------
-| Dies ergibt sich aus der Tragkraft eines trainierter Menschen von 60%
-| seines Körpergewichtes (Stärke 10
-| [Quelle](http://www.spiegel.de/wissenschaft/mensch/warum-nepalesen-so-viel-tragen-koennen-a-1121522.html)) [WayBackMachine](https://web.archive.org/web/20161119053820/https://www.spiegel.de/wissenschaft/mensch/warum-nepalesen-so-viel-tragen-koennen-a-1121522.html).
-| Annahme sehr kräftiger Mensch (Stärke 7) 85% und schwach (Stärke 13) 47%.
