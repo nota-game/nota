@@ -11,7 +11,7 @@
   xmlns:besonderheit="http://nota.org/schema/besonderheit" 
   xmlns:Belastung="http://nota.org/schema/kampf/aktionen" 
   xmlns:ausstattung="http://nota.org/schema/kampf/ausstattung" 
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://nota.org/schema/nota ../schema/nota.xsd http://nota.org/schema/lebewesen ../schema/Lebewesen.xsd http://nota.org/schema/pfad ../schema/pfad.xsd http://nota.org/schema/talent ../schema/talent.xsd http://nota.org/schema/fertigkeit ../schema/fertigkeit.xsd http://nota.org/schema/besonderheit ../schema/besonderheit.xsd http://nota.org/schema/kampf/aktionen ../schema/kampf/aktionen.xsd http://nota.org/schema/kampf/ausstattung ../schema/kampf/ausstattung.xsd http://nota.org/schema/misc ../schema/misc.xsd">
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://nota.org/schema/nota ../../nota-schema/nota.xsd http://nota.org/schema/lebewesen ../../nota-schema/Lebewesen.xsd http://nota.org/schema/pfad ../../nota-schema/pfad.xsd http://nota.org/schema/talent ../../nota-schema/talent.xsd http://nota.org/schema/fertigkeit ../../nota-schema/fertigkeit.xsd http://nota.org/schema/besonderheit ../../nota-schema/besonderheit.xsd http://nota.org/schema/kampf/aktionen ../../nota-schema/kampf/aktionen.xsd http://nota.org/schema/kampf/ausstattung ../../nota-schema/kampf/ausstattung.xsd http://nota.org/schema/misc ../../nota-schema/misc.xsd">
   <!--<Pfade>
     <PfadAuswahl Id="Götter">
       <Name>
