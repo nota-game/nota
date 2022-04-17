@@ -28,7 +28,7 @@
 <xsl:sort select="@Id" />
 :::Talent
 <xsl:apply-templates select="."/>
-:::
+/::
 
 </xsl:for-each>
 </xsl:template>
@@ -39,7 +39,7 @@
 
 :::Description
 <xsl:value-of select="normalize-space(talent:Beschreibung)"/>
-:::
+/::
 
 <xsl:if test="talent:Ableitungen">
 Ableitung

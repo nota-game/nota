@@ -22,12 +22,13 @@
 :::Gabe
 
 ::<xsl:value-of select="@Name"/>::{.Titel}
+/::
 
 :::Beschreibung
 
 <xsl:value-of select="besonderheit:Beschreibung"/>
 
-::: 
+/:: 
 
   </xsl:template>
   <xsl:template match="*">[FEHLER IM XSLT]</xsl:template>

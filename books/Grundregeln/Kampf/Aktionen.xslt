@@ -23,7 +23,7 @@
 :::Action
 
 <xsl:apply-templates select="."/>
-:::
+/::
 
 </xsl:for-each>
 </xsl:template>
