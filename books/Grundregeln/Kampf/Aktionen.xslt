@@ -31,6 +31,18 @@
   <xsl:template match="aktionen:Taktik" >
 
 
+  <!-- 
+
+             <element name="Beschreibung" type="string" />
+              <element name="Bedingung" type="string" minOccurs="0" />
+              <element name="SofortigerEffekt" type="string" minOccurs="0" />
+              <element name="GarantierterEffekt" type="string" minOccurs="0" />
+              <element name="Erfolg" type="string" minOccurs="0" />
+              <element name="Misserfolg" type="string" minOccurs="0" />
+     
+
+  -->
+
 ## <xsl:value-of select="@Id"/>  
 
 <xsl:value-of select="aktionen:Beschreibung"/>
@@ -39,31 +51,26 @@
 ### Bedingung
 <xsl:value-of select="./aktionen:Bedingung"/>
         </xsl:if>
-        <xsl:if test="./aktionen:InstantEffekt">
+        <xsl:if test="./aktionen:SofortigerEffekt">
 ### Augenblicklicher Effekt
-<xsl:value-of select="./aktionen:InstantEffekt"/>
+<xsl:value-of select="./aktionen:SofortigerEffekt"/>
         </xsl:if>
         <xsl:if test="./aktionen:GarantierterEffekt">
 ### Garantierter Effekt
 <xsl:value-of select="./aktionen:GarantierterEffekt"/>
         </xsl:if>
-        <xsl:if test="./aktionen:OffensivErfolg">
-### Offensiver Erfolg
-<xsl:value-of select="./aktionen:OffensivErfolg"/>
+        <xsl:if test="./aktionen:Erfolg">
+### Erfolg
+<xsl:value-of select="./aktionen:Erfolg"/>
         </xsl:if>
-        <xsl:if test="./aktionen:DefensivErfolg">
-### Defensiver Erfolg
-<xsl:value-of select="./aktionen:DefensivErfolg"/>
+        <xsl:if test="./aktionen:Misserfolg">
+### Misserfolg
+<xsl:value-of select="./aktionen:Misserfolg"/>
         </xsl:if>
-        <xsl:if test="./aktionen:OffensivMiserfolg">
-### Offensiver Misserfolg
-<xsl:value-of select="./aktionen:OffensivMiserfolg"/>
-        </xsl:if>
-        <xsl:if test="./aktionen:DefensivMiserfolg">
-### Defensiver Misserfolg
-<xsl:value-of select="./aktionen:DefensivMiserfolg"/>
-        </xsl:if>
+
 **Ausdauerkosten** _<xsl:value-of select="@Kosten"/>_
+
+**Belastuntg** _<xsl:value-of select="@Belastung"/>_
 
 **Typ** _<xsl:choose>
               <xsl:when test="@Typ='Offensiv'">Offensiv</xsl:when>
@@ -78,10 +85,14 @@
 **Modifikation**
 
 <xsl:if test="./aktionen:Mod/@ModifierType = 'Bonus'">
-::&#65291;<xsl:apply-templates select="./aktionen:Mod/*"/>::{.bonus}
+:::bonus
+&#65291;<xsl:apply-templates select="./aktionen:Mod/*"/>
+/::
 </xsl:if>
 <xsl:if test="./aktionen:Mod/@ModifierType = 'Malus'">
-::&#x2212;<xsl:apply-templates select="./aktionen:Mod/*"/>::{.malus}
+:::malus
+&#x2212;<xsl:apply-templates select="./aktionen:Mod/*"/>
+/::
 </xsl:if>
 </xsl:if>
 
