@@ -68,7 +68,7 @@
 <xsl:value-of select="./aktionen:Misserfolg"/>
         </xsl:if>
 
-**Ausdauerkosten** _<xsl:value-of select="@Kosten"/>_
+**Ausdauerkosten** _<xsl:value-of select="@Kosten"/>_ 
 
 **Belastuntg** _<xsl:value-of select="@Belastung"/>_
 
@@ -97,7 +97,9 @@
 </xsl:if>
 
 <xsl:if test="./aktionen:Eigenschaften">
-**Schlüsselwörter**: _<xsl:for-each select="./aktionen:Eigenschaften/*" ><xsl:value-of select="@Name"/></xsl:for-each>_
+**Schlüsselwörter**: <xsl:for-each select="./aktionen:Eigenschaften/*" >
+- <xsl:value-of select="@Id"/>
+</xsl:for-each>
 </xsl:if>
 </xsl:template>
 
