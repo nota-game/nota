@@ -15,17 +15,18 @@
       <xsl:apply-templates select="aktionen:Taktiken"/>
   </xsl:template>
   <xsl:template match="aktionen:Taktiken">
-
-# Aktionen
+# Taktiken
+:::taktiken
 
 <xsl:for-each select="aktionen:Taktik">
 <xsl:sort select="@Id" />
-:::Action
+:::taktik
 
 <xsl:apply-templates select="."/>
 /::
 
 </xsl:for-each>
+/::
 </xsl:template>
 
   <xsl:template match="aktionen:Taktik" >
