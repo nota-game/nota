@@ -46,27 +46,42 @@
 
 ## <xsl:value-of select="@Id"/>  
 
-<xsl:value-of select="aktionen:Beschreibung"/>
+<xsl:call-template name="replace">
+  <xsl:with-param name="text" select="./aktionen:Beschreibung"/>
+</xsl:call-template>
 
         <xsl:if test="./aktionen:Bedingung">
 ### Bedingung
-<xsl:value-of select="./aktionen:Bedingung"/>
+<xsl:call-template name="replace">
+  <xsl:with-param name="text" select="./aktionen:Bedingung"/>
+</xsl:call-template>
         </xsl:if>
         <xsl:if test="./aktionen:SofortigerEffekt">
 ### Augenblicklicher Effekt
-<xsl:value-of select="./aktionen:SofortigerEffekt"/>
+<xsl:call-template name="replace">
+  <xsl:with-param name="text" select="./aktionen:SofortigerEffekt"/>
+</xsl:call-template>
         </xsl:if>
         <xsl:if test="./aktionen:GarantierterEffekt">
 ### Garantierter Effekt
-<xsl:value-of select="./aktionen:GarantierterEffekt"/>
+<xsl:call-template name="replace">
+  <xsl:with-param name="text" select="./aktionen:GarantierterEffekt"/>
+</xsl:call-template>
         </xsl:if>
         <xsl:if test="./aktionen:Erfolg">
 ### Erfolg
-<xsl:value-of select="./aktionen:Erfolg"/>
+
+<xsl:call-template name="replace">
+  <xsl:with-param name="text" select="./aktionen:Erfolg"/>
+</xsl:call-template>
+
+<!-- <xsl:value-of select="replace(./aktionen:Erfolg, '$x', '')"/> -->
         </xsl:if>
         <xsl:if test="./aktionen:Misserfolg">
 ### Misserfolg
-<xsl:value-of select="./aktionen:Misserfolg"/>
+<xsl:call-template name="replace">
+  <xsl:with-param name="text" select="./aktionen:Misserfolg"/>
+</xsl:call-template>
         </xsl:if>
 
 **Ausdauerkosten** _<xsl:value-of select="@Kosten"/>_ 
@@ -106,13 +121,21 @@
 
 <xsl:template match="aktionen:ConcreteModValueType"><xsl:value-of select="@Value"/><xsl:if test="@Type='Percent'">%</xsl:if></xsl:template>
 
-<xsl:template match="aktionen:VariableModValueType"><xsl:value-of select="@Value"/></xsl:template>
+<xsl:template match="aktionen:VariableModValueType"><xsl:call-template name="replace"><xsl:with-param name="text" select="@Value"/></xsl:call-template></xsl:template>
 
   <xsl:template match="aktionen:AddModValueType"><xsl:apply-templates select="./*[1]"/> <xsl:for-each select="./*[position()>1]"> &#65291; <xsl:apply-templates select="."/></xsl:for-each></xsl:template>
 
   <xsl:template match="aktionen:SubstractModValueType"><xsl:apply-templates select="./*[1]"/> <xsl:for-each select="./*[position()>1]"> &#x2212; <xsl:apply-templates select="."/></xsl:for-each></xsl:template>
 
   <xsl:template match="aktionen:MultiplyModValueType"><xsl:apply-templates select="./*[1]"/><xsl:for-each select="./*[position()>1]"> &#8226; <xsl:apply-templates select="."/></xsl:for-each></xsl:template>
+
+<!-- -->
+
+<xsl:template name="replace"><xsl:param name="text"/><xsl:call-template name="replace-string"><xsl:with-param name="text" select="$text"/><xsl:with-param name="replace" select="'$x'" /><xsl:with-param name="with" select="'&#119987;'"/></xsl:call-template></xsl:template>
+
+
+<xsl:template name="replace-string" ><xsl:param name="text"/><xsl:param name="replace"/><xsl:param name="with"/><xsl:choose><xsl:when test="contains($text,$replace)"><xsl:value-of select="substring-before($text,$replace)"/><xsl:value-of select="$with"/><xsl:call-template name="replace-string"><xsl:with-param name="text"
+select="substring-after($text,$replace)"/><xsl:with-param name="replace" select="$replace"/><xsl:with-param name="with" select="$with"/></xsl:call-template></xsl:when><xsl:otherwise><xsl:value-of select="$text"/></xsl:otherwise></xsl:choose></xsl:template>
 
   <xsl:template match="*">  [[FEHLER IM XSLT]] (<xsl:value-of select="local-name()"/>)
   </xsl:template>

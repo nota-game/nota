@@ -24,13 +24,15 @@
 
 
 <xsl:template match="talent:Talente">
+:::talente
 <xsl:for-each select="talent:Talent[@Kategorie='Geist']">
 <xsl:sort select="@Id" />
-:::Talent
+:::talent
 <xsl:apply-templates select="."/>
 /::
 
 </xsl:for-each>
+/::
 </xsl:template>
 <!-- normalize-space(./talent:Name/misc:Lokalisirung[@Sparche='de']/text()) -->
 <xsl:template match="talent:Talent">
