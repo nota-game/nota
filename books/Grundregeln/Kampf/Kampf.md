@@ -20,28 +20,28 @@ die Charaktere ihre Bewegung ansagen verläuft in umgekehrter Initiative
 Reihenfolge, d.h. der langsamste Charakter hat die erste Möglichkeit seine
 Bewegung festzulegen.
 
-Bsp.: Alice Bob und Charlie sind an einem Kampf beteiligt. Alice ist die
-langsamste, Bob ist der zweitschnellste und Charlie besitzt die höchste
-Initiative. Alice hat also als erstes die Möglichkeit ihre Bewegung anzusagen.
-Sie entscheidet sich aber noch zu warten, da sie wissen möchte was Charlie
-unternimmt. Als nächstes kann Bob seine Bewegung bestimmen. Bob bestimmt das er
-zu Charlie geht. Da Bob in dieser Runde eine Bewegung angesagt hat, beginnt eine
-neue Runde und Alice muss wieder sagen ob sie sich bewegen möchte. Da sie immer
-noch nicht weiß wie Charlie sich bewegt möchte sie sich immer noch nicht
-bewegen. Da Bob seine Bewegung bereits bestimmt hat, darf nun Charlie seine
-Bewegung ansagen. Aber Charlie entscheidet das er sich nicht bewegen möchte.
-Somit hat diese Runde kein Charakter eine Bewegung angesagt und Phase 1 wird
-beendet, ohne das Alice oder Charlie sich bewegt hat.
+| Sample
+|-------------------------------------------------------------------------------
+| Alice Bob und Charlie sind an einem Kampf beteiligt. Alice ist die langsamste,
+| Bob ist der zweitschnellste und Charlie besitzt die höchste Initiative. Alice
+| hat also als erstes die Möglichkeit ihre Bewegung anzusagen. Sie entscheidet
+| sich aber noch zu warten, da sie wissen möchte was Charlie unternimmt. Als
+| nächstes kann Bob seine Bewegung bestimmen. Bob bestimmt das er zu Charlie
+| geht. Da Bob in dieser Runde eine Bewegung angesagt hat, beginnt eine neue
+| Runde und Alice muss wieder sagen ob sie sich bewegen möchte. Da sie immer
+| noch nicht weiß wie Charlie sich bewegt möchte sie sich immer noch nicht
+| bewegen. Da Bob seine Bewegung bereits bestimmt hat, darf nun Charlie seine
+| Bewegung ansagen. Aber Charlie entscheidet das er sich nicht bewegen möchte.
+| Somit hat diese Runde kein Charakter eine Bewegung angesagt und Phase 1 wird
+| beendet, ohne das Alice oder Charlie sich bewegt hat.
 
-Beim festlegen der Bewegung muss eine bis 4 Bewegungsarten gespielt werden. Je
-mehr karten gespielt werden desto weiter kommt der Charakter in der Runde, aber
-desto mehr Abzüge bekommt er auf eventuelle weitere Aktionen. Pro gespielte
-Karte erhält der Charakter 1/4 seiner Bewegung. Wenn alle Karten gespielt wurden
-legt der Charakter zusätzlich einen Athletiktest ab, dieser kann seine
-Geschwindigkeit (zurückgelegte Distanz) noch weiter erhöhen.
+Beim festlegen der Bewegung muss die Belastung (s.u.) festgelegt werden. Je
+weiter man sich bewegen will, desto höher die Belastung und eventuelle Mali auf
+weitere Aktionen. Maximal können 4 Belastung genutzt werden. Pro Belastung kann
+man sich seine Bewegung bewegen.
 
 Zum ende der Bewegungsphase hat jeder Charakter noch einmal die Chance, sofern
-er sich überhaupt bewegt, seine Bewegung auf das Maximum (vier Karten) zu
+er sich überhaupt bewegt, seine Bewegung auf das Maximum (vier Belastung) zu
 erhöhen oder auf eins zu reduzieren. Wieder beginnend bei dem Langsamsten
 Charakter. Dies erlaubt es einen Angreifer, der sich auf einen Gegner zubewegt
 nochmals seine Geschwindigkeit zu erhöhen falls dieser als Reaktion auf den
@@ -54,9 +54,10 @@ welcher Charakter sich wo befindet.
 
 ## Phase 2 Taktik wählen
 
-Die Spieler wählen gleichzeitig, durch legen verdeckter Karten welche Taktiken
-sie ausführen wollen. Ein Charakter kann beliebig viele Taktiken wählen, erhält
-bei mehr Taktiken aber auch höhere Mali.
+Die Spieler wählen gleichzeitig ihre Taktiken, zur Hilfe können Karten verwendet
+werden um einen Überblick zu behalten, welcher Charakter welche Taktiken
+ausführt. Ein Charakter kann beliebig viele Taktiken wählen, erhält bei mehr
+Taktiken aber auch höhere Mali.
 
 ## Phase 3 Kampfrunde auswerten
 
@@ -73,9 +74,9 @@ nennt sich Probenwert.
 Je mehr Taktiken ein Charakter durchführt desto weniger Wirkung zeigt die
 einzelne Taktik. Jede Taktik hat eine Belastung. Ein Charakter kann Taktiken mit
 einer Belastungssumme von bis zu zwei ohne Abzüge nutzen. Für jede weitere
-(angebrochene) Belastung wird der Talentwert auf den die Probe abgelegt wird
-halbiert (abgerundet). Es ist nicht möglich hierdurch seinen Talentwert auf 0 zu
-bringen. Das Ergebnis der Probe ist der unmodifizierte Taktikwert.
+(angebrochene) Belastung wird der Talentwert aller Proben halbiert (abgerundet).
+Es ist nicht möglich hierdurch seinen Talentwert auf 0 zu bringen. Das Ergebnis
+der Probe ist der unmodifizierte Taktikwert.
 
 Als letztes wird der (modifizierte) Taktikwert berechnet. Hierzu wird für jede
 Taktik der unmodifizierte Taktikwert durch die Mali, bzw. Boni der jeweiligen
@@ -165,7 +166,7 @@ bereits in Bedrängnis geraten ist. Jedes mal wenn der Charakter bedrängt wird,
 oder schmerzen empfindet, erhält er Mali. Wenn diese Mali eine schwelle
 überschreiten, trifft die Waffe ebenfalls anstelle das Ziel weiter zu bedrängen.
 
-Der Schwellenwert berechnet sich aus dem Kampfgespür. Kampfgespür / 3 + 1 ist
+Der Schwellenwert berechnet sich aus dem Kampfgespür. $Kampfgespür / 3 + 1$ ist
 der Malus den ein Charakter erhalten muss bevor er waffenschaden erhält.
 
 ## Fernkampf
@@ -191,23 +192,23 @@ Eine Zusammenfassung der Modifikationen:
 +--------------------------------------------+--------------+
 | Situation                                  | Modifikator  |
 +============================================+==============+
-| Distanz zum Ziel Nah                       | Siehe Waffe  |
+| Distanz zum Ziel Nah                       | $Siehe Waffe$|
 +--------------------------------------------+--------------+
-| Ziel bewegt sich horizontal zum Schützen   | - GS / 2     |
+| Ziel bewegt sich horizontal zum Schützen   | $- GS / 2$   |
 +--------------------------------------------+--------------+
-| Ziel bewegt sich vertikal zum Schützen     | - GS / 4     |
+| Ziel bewegt sich vertikal zum Schützen     | $- GS / 4$   |
 +--------------------------------------------+--------------+
-| Ziel vollführt Ausweichbewegungen          | - GS         |
+| Ziel vollführt Ausweichbewegungen          | $- GS$       |
 +--------------------------------------------+--------------+
-| Ziel sucht Deckung                         | - (GS + 4)   |
+| Ziel sucht Deckung                         | $- (GS + 4)$ |
 +--------------------------------------------+--------------+
-| Ziel nicht sichtbar                        | Unmöglich    |
+| Ziel nicht sichtbar                        | $Unmöglich$  |
 +--------------------------------------------+--------------+
-| Schlechte Sicht auf Ziel                   | - 3-9        |
+| Schlechte Sicht auf Ziel                   | $- 3-9$      |
 +--------------------------------------------+--------------+
-| Seitenwind (falls Projektil beeinflusst)   | - 2-8        |
+| Seitenwind (falls Projektil beeinflusst)   | $- 2-8$      |
 +--------------------------------------------+--------------+
-| Pro Runde die auf das Ziel geschossen wurde| + 1          |
+| Pro Runde die auf das Ziel geschossen wurde| $+ 1$        |
 +--------------------------------------------+--------------+
 
 ## Bedrängen
@@ -330,11 +331,10 @@ Auswirkungen auftreten.
 ### Trefferzonen
 
 Je nach Art der Verletzung ist es nötig die Zone zu bestimmen, welche verletzt
-wurde. Dazu wird ein W20 und ein W10 geworfen. Der W20 gibt die Gliedmaße an
-welche getroffen wurde. Muss genauer bestimmt werden wo der Treffer landet, wird
-der W10 zu rate gezogen. Dies ist in erster Linie wichtig bei Rüstungen. Muss
-die stelle nicht genauer bestimmt werden, so muss auch kein zweiter Würfel
-geworfen werden.
+wurde. Dazu wird ein W20 geworfen. Der W20 gibt die Gliedmaße an welche
+getroffen wurde. Werden mehrere Zonen bestimmt, werden alle Würfel gleichzeitig
+geworfen, und doppelte Werte wiederholt. Alternativ kann statt Würfel auch ein
+Beutel mit entsprechend Markierten Tokens verwendet werden.
 
 Die Zuordnung des W20 zu den Einzelnen Zonen ist wie folgt.
 
@@ -559,9 +559,8 @@ als Schutzgrad deckt sie nicht viel Fläche der Trefferzone ab, beispielsweise
 ein Handschuh. Besitzt sie hingegen 8 oder mehr Werte, bietet sie beinahe einen
 Perfekten Schutz wie ein Vollhelm mit Visier.
 
-Der Schutzwert wird verwendet, um herauszufinden ob ein Angriff auf eine
-Trefferzone die Rüstung umgangen hat. Hierzu wird der zweite Würfel der
-Trefferzonenbestimmung verwendet. Sollte dieser eine Zone bestimmen, deren Wert
+Der Schutzwert wird verwendet wenn eine Waffe ist die Rüstung zu umgehen. Hierzu
+wird zusätzlich ein W10 geworfen. Sollte dieser eine Zone bestimmen, deren Wert
 als Schutzgrad aufgeführt ist, wird der Schaden um die entsprechenden werte der
 Rüstung reduziert.
 
