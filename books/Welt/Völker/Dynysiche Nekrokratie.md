@@ -128,4 +128,8 @@ man eventuell seinen Körper dem Opfer zur verfügung stellen muss.
 
 ### Militär
 
-Nicht direkt Militär, aber in den Sümpfen im Land sind Unzählige Skellte Verteilt. Sollte eine Feindliche Armee durch diese wagen, kann eine Übermacht innerhalb weniger Stunden Mobilisiert werden. Nicht gut bewaffnet wenn überhaupt, doch auch unbewaffnet kann ein Skellet gefährlich werden, vom Psychologichem Effekt mal ganz abgesehen
+Nicht direkt Militär, aber in den Sümpfen im Land sind Unzählige Skellte
+Verteilt. Sollte eine Feindliche Armee durch diese wagen, kann eine Übermacht
+innerhalb weniger Stunden Mobilisiert werden. Nicht gut bewaffnet wenn
+überhaupt, doch auch unbewaffnet kann ein Skellet gefährlich werden, vom
+Psychologichem Effekt mal ganz abgesehen
