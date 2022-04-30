@@ -125,11 +125,11 @@ Verfügung, nachdem wie viele GlP der Charakter ausgibt.
 +:======:+:=========================================================+
 | 2      | Reduziere das Ergebnis eines Würfels um 1                |
 +--------+----------------------------------------------------------+
-| 3      | Erhöhe das Ergebnis eines Würfels um 1 wenn es min. 2 ist|
-+--------+----------------------------------------------------------+
 | 3      | Wiederhole eine Probe                                    |
 +--------+----------------------------------------------------------+
 | 3      | Tausche das Ergebnis zweier Würfel einer Probe           |
++--------+----------------------------------------------------------+
+| 4      | Erhöhe das Ergebnis eines Würfels um 1 wenn es min. 2 ist|
 +--------+----------------------------------------------------------+
 | 5      | Wiederhole einen Würfel einer Probe                      |
 +--------+----------------------------------------------------------+
