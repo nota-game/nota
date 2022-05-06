@@ -42,10 +42,10 @@
   <Organismen xmlns="http://nota.org/schema/lebewesen.xsd">
     <Gattung Id="Homo">
       <Name>
-        <misc:Lokalisirung Sparche="de"><![CDATA[]]></misc:Lokalisirung>
+        <misc:Lokalisirung Sparche="de"><![CDATA[Homo]]></misc:Lokalisirung>
       </Name>
       <Beschreibung>
-        <misc:Lokalisirung Sparche="de"><![CDATA[]]></misc:Lokalisirung>
+        <misc:Lokalisirung Sparche="de"><![CDATA[Die Gattung der Menschen]]></misc:Lokalisirung>
       </Beschreibung>
     </Gattung>
     <Organismus Id="Mensch" Gattung="Homo">
