@@ -215,6 +215,8 @@
         <misc:Levels>
           <misc:Level Id="T">
             <talent:Talent Id="Kochen" Level="3"/>
+            <fertigkeit:Fertigkeit Id="Konditor" />
+            <talent:Talent Id="Backen" Level="3"/>
           </misc:Level>
         </misc:Levels>
       </pfad:Pfad>
@@ -2839,6 +2841,15 @@
         <misc:Tag Id="Lesen/Schreiben" />
       </Tags>
     </Fertigkeit>
+    <fertigkeit:Fertigkeit Id="Konditor" Kosten="30">
+      <fertigkeit:Name>
+        <misc:Lokalisirung Sparche="de">Konditor</misc:Lokalisirung>
+      </fertigkeit:Name>
+      <fertigkeit:Beschreibung>
+        <misc:Lokalisirung Sparche="de"><![CDATA[Die kunst Süßes zu erstellen]]></misc:Lokalisirung>
+      </fertigkeit:Beschreibung>
+      <fertigkeit:Verbreitung Wert="4"></fertigkeit:Verbreitung>
+    </fertigkeit:Fertigkeit>
   </Fertigkeiten>
   <Besonderheiten xmlns="http://nota.org/schema/besonderheit.xsd">
     <Besonderheit Id="Auserwählter" Gebunden="true" Kosten="0">
