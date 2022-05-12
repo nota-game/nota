@@ -106,6 +106,9 @@
           </misc:Lokalisirung>
       </misc:Beschreibung>
     </misc:KostenDefinition>
+    <misc:TalentKostenFunktion>
+      <misc:Funktion KostenArt="EP" ResultType="total">ceil(KOMPLEXITÄT_NUM * ((11/36)  LEVEL ^ 2 + (25/12)  LEVEL + (-25/18)  ))</misc:Funktion>
+    </misc:TalentKostenFunktion>
   </KostenDefinitionen>
   <GenerierungsDaten MinimumVerbreitung="3">
     <misc:Kosten Id="GP" Wert="120" />
@@ -237,7 +240,7 @@
     </Organismus>
   </Organismen>
   <PfadGruppen xmlns="http://nota.org/schema/pfad.xsd">
-    <Pfade Id="Kultur" >
+    <Pfade Id="Kultur">
       <Name>
         <misc:Lokalisirung Sprache="de">
           <![CDATA[Kultur]]>
