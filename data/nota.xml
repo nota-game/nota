@@ -154,90 +154,86 @@
         <Konstitution Durchschnitt="9" Start="13" />
       </Eigenschaften>
 
-    </Gattung>
-    <Organismus Id="Mensch" Gattung="Homo">
-      <Morphe>
-        <Morph Id="Mann" Geschlecht="Mänlich">
-          <Name>
-            <misc:Lokalisirung Sprache="de">
-              <![CDATA[Mann]]>
-            </misc:Lokalisirung>
-          </Name>
-          <Beschreibung>
-            <misc:Lokalisirung Sprache="de">
-              <![CDATA[]]>
-            </misc:Lokalisirung>
-          </Beschreibung>
-          <StandardPfade>
-            <pfad:Pfad Id="Alan" />
-          </StandardPfade>
-          <Lebensabschnitte>
-            <Lebensabschnitt Id="JugendlicherM1" startAlter="12" endAlter="13" minGröße="1.41" maxGröße="1.56" minBMI="15" maxBMI="21">
-              <Spielbar>
-                <misc:Kosten Id="Kultur" Wert="-100" />
-              </Spielbar>
-              <Name>
-                <misc:Lokalisirung Sprache="de">
-                  <![CDATA[Jugendlicher]]>
-                </misc:Lokalisirung>
-              </Name>
-              <Beschreibung>
-                <misc:Lokalisirung Sprache="de">
-                  <![CDATA[]]>
-                </misc:Lokalisirung>
-              </Beschreibung>
-            </Lebensabschnitt>
-          </Lebensabschnitte>
-        </Morph>
-        <Morph Id="Frau" Geschlecht="Weiblich">
-          <Name>
-            <misc:Lokalisirung Sprache="de">
-              <![CDATA[Frau]]>
-            </misc:Lokalisirung>
-          </Name>
-          <Beschreibung>
-            <misc:Lokalisirung Sprache="de">
-              <![CDATA[]]>
-            </misc:Lokalisirung>
-          </Beschreibung>
-          <StandardPfade>
-            <pfad:Pfad Id="Kirin" />
-          </StandardPfade>
-          <Lebensabschnitte>
-            <Lebensabschnitt Id="JugendlicherW1" startAlter="0" endAlter="3" minGröße="1.44" maxGröße="1.58" minBMI="16" maxBMI="21">
-              <Spielbar>
-                <misc:Kosten Id="Kultur" Wert="-100" />
-              </Spielbar>
-              <Name>
-                <misc:Lokalisirung Sprache="de">
-                  <![CDATA[Jugendlicher]]>
-                </misc:Lokalisirung>
-              </Name>
-              <Beschreibung>
-                <misc:Lokalisirung Sprache="de">
-                  <![CDATA[]]>
-                </misc:Lokalisirung>
-              </Beschreibung>
-            </Lebensabschnitt>
-          </Lebensabschnitte>
-        </Morph>
-      </Morphe>
-      <Name>
-        <misc:Lokalisirung Sprache="de">
-          <![CDATA[Mensch]]>
-        </misc:Lokalisirung>
-      </Name>
-      <Art>
-        <misc:Lokalisirung Sprache="de">
-          <![CDATA[Sapiens]]>
-        </misc:Lokalisirung>
+
+      <Art Id="Mensch">
+        <Morphe>
+          <Morph Id="Mann" Geschlecht="Mänlich">
+            <Name>
+              <misc:Lokalisirung Sprache="de">
+                <![CDATA[Mann]]>
+              </misc:Lokalisirung>
+            </Name>
+            <Beschreibung>
+              <misc:Lokalisirung Sprache="de">
+                <![CDATA[]]>
+              </misc:Lokalisirung>
+            </Beschreibung>
+            <StandardPfade>
+              <pfad:Pfad Id="Alan" />
+            </StandardPfade>
+            <Lebensabschnitte>
+              <Lebensabschnitt Id="JugendlicherM1" startAlter="12" endAlter="13" minGröße="1.41" maxGröße="1.56" minBMI="15" maxBMI="21">
+                <Spielbar>
+                  <misc:Kosten Id="Kultur" Wert="-100" />
+                </Spielbar>
+                <Name>
+                  <misc:Lokalisirung Sprache="de">
+                    <![CDATA[Jugendlicher]]>
+                  </misc:Lokalisirung>
+                </Name>
+                <Beschreibung>
+                  <misc:Lokalisirung Sprache="de">
+                    <![CDATA[]]>
+                  </misc:Lokalisirung>
+                </Beschreibung>
+              </Lebensabschnitt>
+            </Lebensabschnitte>
+          </Morph>
+          <Morph Id="Frau" Geschlecht="Weiblich">
+            <Name>
+              <misc:Lokalisirung Sprache="de">
+                <![CDATA[Frau]]>
+              </misc:Lokalisirung>
+            </Name>
+            <Beschreibung>
+              <misc:Lokalisirung Sprache="de">
+                <![CDATA[]]>
+              </misc:Lokalisirung>
+            </Beschreibung>
+            <StandardPfade>
+              <pfad:Pfad Id="Kirin" />
+            </StandardPfade>
+            <Lebensabschnitte>
+              <Lebensabschnitt Id="JugendlicherW1" startAlter="0" endAlter="3" minGröße="1.44" maxGröße="1.58" minBMI="16" maxBMI="21">
+                <Spielbar>
+                  <misc:Kosten Id="Kultur" Wert="-100" />
+                </Spielbar>
+                <Name>
+                  <misc:Lokalisirung Sprache="de">
+                    <![CDATA[Jugendlicher]]>
+                  </misc:Lokalisirung>
+                </Name>
+                <Beschreibung>
+                  <misc:Lokalisirung Sprache="de">
+                    <![CDATA[]]>
+                  </misc:Lokalisirung>
+                </Beschreibung>
+              </Lebensabschnitt>
+            </Lebensabschnitte>
+          </Morph>
+        </Morphe>
+        <Name>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Mensch]]>
+          </misc:Lokalisirung>
+        </Name>
+        <Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[]]>
+          </misc:Lokalisirung>
+        </Beschreibung>
       </Art>
-      <Beschreibung>
-        <misc:Lokalisirung Sprache="de">
-          <![CDATA[]]>
-        </misc:Lokalisirung>
-      </Beschreibung>
-    </Organismus>
+    </Gattung>
   </Organismen>
   <PfadGruppen xmlns="http://nota.org/schema/pfad.xsd">
     <Pfade Id="Kultur">
