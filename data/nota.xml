@@ -307,7 +307,7 @@
 
         <misc:Levels>
           <misc:Level Id="Grundlagen">
-
+            <misc:Kosten Id="GP" Wert="2" />
             <misc:Talent Id="Kochen" EP="20" />
             <misc:Talent Id="Backen" EP="20" />
             <fertigkeit:Fertigkeit Id="Konditor" />
@@ -327,7 +327,8 @@
         </pfad:Beschreibung>
 
         <misc:Levels>
-          <misc:Level Id="T">
+          <misc:Level Id="T" WiederhoteNutzung="2">
+            <misc:Kosten Id="GP" Wert="1" />
             <misc:Talent Id="Schwerter" EP="30" />
           </misc:Level>
         </misc:Levels>
