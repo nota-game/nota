@@ -111,12 +111,12 @@
     </misc:TalentKostenFunktion>
   </KostenDefinitionen>
   <GenerierungsDaten MinimumVerbreitung="3">
-    <misc:Kosten Id="GP" Wert="120" />
-    <misc:Kosten Id="Eigenschaften" Wert="55" />
+    <misc:Kosten Id="GP" Wert="65" />
+    <misc:Kosten Id="Eigenschaften" Wert="45" />
   </GenerierungsDaten>
   <Organismen xmlns="http://nota.org/schema/lebewesen.xsd">
     <EigenschaftsKosten>
-      <Abschnitt von="1" bis="7">
+      <Abschnitt von="1" bis="6">
         <misc:Kosten Id="GP" Wert="1" />
         <misc:Kosten Id="Eigenschaften" Wert="1" />
       </Abschnitt>
