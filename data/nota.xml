@@ -156,6 +156,24 @@
 
 
       <Art Id="Mensch">
+        <Name>
+          <misc:Lokalisirung Sprache="de" Geschlecht="Mänlich">
+            <![CDATA[Imp]]>
+          </misc:Lokalisirung>
+          <misc:Lokalisirung Sprache="de" Geschlecht="Weiblich">
+            <![CDATA[Impa]]>
+          </misc:Lokalisirung>
+        </Name>
+        <Art>
+          <misc:Lokalisirung Sprache="de" Geschlecht="Mänlich">
+            <![CDATA[Primus]]>
+          </misc:Lokalisirung>
+        </Art>
+        <Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[]]>
+          </misc:Lokalisirung>
+        </Beschreibung>
         <Morphe>
           <Morph Id="Mann" Geschlecht="Mänlich">
             <Name>
@@ -209,8 +227,8 @@
                   <misc:Kosten Id="Kultur" Wert="-100" />
                 </Spielbar>
                 <Name>
-                  <misc:Lokalisirung Sprache="de">
-                    <![CDATA[Jugendlicher]]>
+                  <misc:Lokalisirung Sprache="de" Geschlecht="Weiblich">
+                    <![CDATA[Jugendliche]]>
                   </misc:Lokalisirung>
                 </Name>
                 <Beschreibung>
@@ -222,16 +240,6 @@
             </Lebensabschnitte>
           </Morph>
         </Morphe>
-        <Name>
-          <misc:Lokalisirung Sprache="de">
-            <![CDATA[Mensch]]>
-          </misc:Lokalisirung>
-        </Name>
-        <Beschreibung>
-          <misc:Lokalisirung Sprache="de">
-            <![CDATA[]]>
-          </misc:Lokalisirung>
-        </Beschreibung>
       </Art>
     </Gattung>
   </Organismen>
@@ -308,6 +316,63 @@
         <misc:Levels>
           <misc:Level Id="Grundlagen">
             <misc:Kosten Id="GP" Wert="2" />
+            <misc:Kosten Id="Kultur" Wert="10" />
+            <misc:Talent Id="Kochen" EP="20" />
+            <misc:Talent Id="Backen" EP="20" />
+            <fertigkeit:Fertigkeit Id="Konditor" />
+          </misc:Level>
+          <misc:Level Id="Erweitert" WiederhoteNutzung="2">
+            <misc:Kosten Id="Kultur" Wert="20" />
+            <misc:Bedingungen>
+              <misc:LevelVoraussetzung>
+                <misc:Level Id="Grundlagen" />
+              </misc:LevelVoraussetzung>
+            </misc:Bedingungen>
+            <misc:Talent Id="Kochen" EP="20" />
+            <misc:Talent Id="Backen" EP="20" />
+          </misc:Level>
+          <misc:Level Id="Konditor" WiederhoteNutzung="1">
+            <misc:Kosten Id="Kultur" Wert="20" />
+            <misc:Bedingungen>
+              <misc:LevelVoraussetzung>
+                <misc:And>
+                  <misc:Not>
+                    <misc:Level Id="Bäcker"/>
+                  </misc:Not>
+                  <misc:Level Id="Erweitert" mindestVorkommen="2" />
+                </misc:And> 
+              </misc:LevelVoraussetzung>
+            </misc:Bedingungen>
+            <misc:Talent Id="Kochen" EP="20" />
+            <misc:Talent Id="Backen" EP="20" />
+            <fertigkeit:Fertigkeit Id="Konditor" />
+          </misc:Level>
+          <misc:Level Id="Bäcker" WiederhoteNutzung="1">
+            <misc:Kosten Id="Kultur" Wert="20" />
+            <misc:Bedingungen>
+              <misc:LevelVoraussetzung>
+                <misc:And>
+                  <misc:Not>
+                    <misc:Level Id="Konditor"/>
+                  </misc:Not>
+                  <misc:Level Id="Erweitert"  />
+                </misc:And>
+              </misc:LevelVoraussetzung>
+            </misc:Bedingungen>
+            <misc:Talent Id="Kochen" EP="20" />
+            <misc:Talent Id="Backen" EP="20" />
+            <fertigkeit:Fertigkeit Id="Konditor" />
+          </misc:Level>
+          <misc:Level Id="Meister">
+            <misc:Kosten Id="Kultur" Wert="20" />
+            <misc:Bedingungen>
+              <misc:LevelVoraussetzung>
+                <misc:Or>
+                  <misc:Level Id="Konditor"/>
+                  <misc:Level Id="Bäcker"/>
+                </misc:Or>
+              </misc:LevelVoraussetzung>
+            </misc:Bedingungen>
             <misc:Talent Id="Kochen" EP="20" />
             <misc:Talent Id="Backen" EP="20" />
             <fertigkeit:Fertigkeit Id="Konditor" />
