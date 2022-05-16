@@ -224,7 +224,7 @@
             <Lebensabschnitte>
               <Lebensabschnitt Id="JugendlicherW1" startAlter="0" endAlter="3" minGröße="1.44" maxGröße="1.58" minBMI="16" maxBMI="21">
                 <Spielbar>
-                  <misc:Kosten Id="Kultur" Wert="-100" />
+                  <misc:Kosten Id="Kultur" Wert="-110" />
                 </Spielbar>
                 <Name>
                   <misc:Lokalisirung Sprache="de" Geschlecht="Weiblich">
