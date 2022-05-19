@@ -337,10 +337,10 @@
               <misc:LevelVoraussetzung>
                 <misc:And>
                   <misc:Not>
-                    <misc:Level Id="Bäcker"/>
+                    <misc:Level Id="Bäcker" />
                   </misc:Not>
                   <misc:Level Id="Erweitert" mindestVorkommen="2" />
-                </misc:And> 
+                </misc:And>
               </misc:LevelVoraussetzung>
             </misc:Bedingungen>
             <misc:Talent Id="Kochen" EP="20" />
@@ -353,9 +353,9 @@
               <misc:LevelVoraussetzung>
                 <misc:And>
                   <misc:Not>
-                    <misc:Level Id="Konditor"/>
+                    <misc:Level Id="Konditor" />
                   </misc:Not>
-                  <misc:Level Id="Erweitert"  />
+                  <misc:Level Id="Erweitert" />
                 </misc:And>
               </misc:LevelVoraussetzung>
             </misc:Bedingungen>
@@ -368,8 +368,8 @@
             <misc:Bedingungen>
               <misc:LevelVoraussetzung>
                 <misc:Or>
-                  <misc:Level Id="Konditor"/>
-                  <misc:Level Id="Bäcker"/>
+                  <misc:Level Id="Konditor" />
+                  <misc:Level Id="Bäcker" />
                 </misc:Or>
               </misc:LevelVoraussetzung>
             </misc:Bedingungen>
@@ -3620,48 +3620,57 @@
   </Talente>
   <!-- Ⅰ Ⅱ Ⅲ Ⅳ Ⅴ Ⅵ Ⅶ Ⅷ Ⅸ Ⅹ Ⅺ Ⅻ -->
   <Fertigkeiten xmlns="http://nota.org/schema/fertigkeit.xsd">
-    <Fertigkeit Id="Kulturkunde Alan" Kosten="100">
+    <Fertigkeit Id="Kulturkunde Alan">
       <Name>
         <misc:Lokalisirung Sprache="de">
           <![CDATA[Kulturkunde Alan]]>
         </misc:Lokalisirung>
       </Name>
-      <Beschreibung>
-        <misc:Lokalisirung Sprache="de">
-          <![CDATA[Das Wissen um die Kultur der Alan]]>
-        </misc:Lokalisirung>
-      </Beschreibung>
-      <Verbreitung Wert="3">
-        <misc:Pfad Id="Alan" Verbreitung="7" />
-      </Verbreitung>
+      <fertigkeit:Stufe Kosten="95">
+
+        <Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Das Wissen um die Kultur der Alan]]>
+          </misc:Lokalisirung>
+        </Beschreibung>
+        <Verbreitung Wert="3">
+          <misc:Pfad Id="Alan" Verbreitung="7" />
+        </Verbreitung>
+      </fertigkeit:Stufe>
     </Fertigkeit>
-    <Fertigkeit Id="Arjuniche Zeichen" Kosten="100">
+    <Fertigkeit Id="Arjuniche Zeichen">
 
       <Name>
         <misc:Lokalisirung Sprache="de">
           <![CDATA[Arjuniche Zeichen]]>
         </misc:Lokalisirung>
       </Name>
-      <Beschreibung>
-        <misc:Lokalisirung Sprache="de">
-          <![CDATA[Die Schrift der Arjur]]>
-        </misc:Lokalisirung>
-      </Beschreibung>
-      <Verbreitung Wert="7" />
-      <Tags>
-        <misc:Tag Id="Lesen/Schreiben" />
-      </Tags>
+      <fertigkeit:Stufe Kosten="100">
+
+        <Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Die Schrift der Arjur]]>
+          </misc:Lokalisirung>
+        </Beschreibung>
+        <Verbreitung Wert="7" />
+        <Tags>
+          <misc:Tag Id="Lesen/Schreiben" />
+        </Tags>
+      </fertigkeit:Stufe>
     </Fertigkeit>
-    <fertigkeit:Fertigkeit Id="Konditor" Kosten="30">
+    <fertigkeit:Fertigkeit Id="Konditor">
       <fertigkeit:Name>
         <misc:Lokalisirung Sprache="de">Konditor</misc:Lokalisirung>
       </fertigkeit:Name>
-      <fertigkeit:Beschreibung>
-        <misc:Lokalisirung Sprache="de">
-          <![CDATA[Die kunst Süßes zu erstellen]]>
-        </misc:Lokalisirung>
-      </fertigkeit:Beschreibung>
-      <fertigkeit:Verbreitung Wert="4"></fertigkeit:Verbreitung>
+      <fertigkeit:Stufe Kosten="30">
+
+        <fertigkeit:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Die kunst Süßes zu erstellen]]>
+          </misc:Lokalisirung>
+        </fertigkeit:Beschreibung>
+        <fertigkeit:Verbreitung Wert="4"></fertigkeit:Verbreitung>
+      </fertigkeit:Stufe>
     </fertigkeit:Fertigkeit>
   </Fertigkeiten>
   <Besonderheiten xmlns="http://nota.org/schema/besonderheit.xsd">
