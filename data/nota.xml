@@ -62,7 +62,7 @@
         </misc:Lokalisirung>
       </misc:Beschreibung>
     </misc:KostenDefinition>
-    <KostenDefinition Id="EP">
+    <KostenDefinition Id="EP" StandardKosten="true">
       <Name>
         <Lokalisirung Sprache="de">
           Erfahrungspunkte
@@ -106,8 +106,8 @@
           </misc:Lokalisirung>
       </misc:Beschreibung>
     </misc:KostenDefinition>
-    <misc:TalentKostenFunktion>
-      <misc:Funktion KostenArt="EP" ResultType="total">ceil(KOMPLEXITÄT_NUM * ((11/36)  LEVEL ^ 2 + (25/12)  LEVEL + (-25/18)  ))</misc:Funktion>
+    <misc:TalentKostenFunktion KostenArt="EP" ResultType="total">
+      ceil(KOMPLEXITÄT_NUM * ((11/36)  LEVEL ^ 2 + (25/12)  LEVEL + (-25/18)  ))
     </misc:TalentKostenFunktion>
   </KostenDefinitionen>
   <GenerierungsDaten MinimumVerbreitung="3">
