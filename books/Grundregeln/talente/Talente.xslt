@@ -24,9 +24,15 @@
 
 
 <xsl:template match="talent:Talente">
+  
+
+##  <xsl:value-of select="normalize-space(./talent:Kategorie/misc:Lokalisirung[@Sprache='de']/text())"/>
+
+~[<xsl:value-of select="./@KategorieId" />.md]
+  
 :::talente
-<xsl:for-each select="talent:Talent[@Kategorie='Körper']">
-<xsl:sort select="normalize-space(./talent:Name/misc:Lokalisirung[@Sparche='de']/text())" />
+<xsl:for-each select="talent:Talent">
+<xsl:sort select="normalize-space(./talent:Name/misc:Lokalisirung[@Sprache='de']/text())" />
 :::talent
 <xsl:apply-templates select="."/>
 /::
@@ -36,7 +42,8 @@
 </xsl:template>
 
 <xsl:template match="talent:Talent">
-## <xsl:value-of select="normalize-space(./talent:Name/misc:Lokalisirung[@Sparche='de']/text())"/> *(<xsl:apply-templates  select="talent:Probe/*[1]" />/<xsl:apply-templates  select="talent:Probe/*[2]" />/<xsl:apply-templates  select="talent:Probe/*[3]" />)*
+
+## <xsl:value-of select="normalize-space(./talent:Name/misc:Lokalisirung[@Sprache='de']/text())"/> *(<xsl:apply-templates  select="talent:Probe/*[1]" />/<xsl:apply-templates  select="talent:Probe/*[2]" />/<xsl:apply-templates  select="talent:Probe/*[3]" />)*
 **Komplexität**: <xsl:value-of select="@Komplexität"/>
 
 :::Description

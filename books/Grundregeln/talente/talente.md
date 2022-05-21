@@ -34,40 +34,5 @@ günstigsten Talente gehören und zur Komplexitätsklasse *Z* die Teuersten.
  werden nur die Talente mit dem Höchstem Wert berücksichtigt, entsprechend der
  Zahl die bei Maximum angegeben ist.
 
-## Geistig
 
-Geistige Talente sind Intuitive Fähigkeiten, die jeder beherrscht
-
-~[GeistTalente.xslt]
-
-## Körper
-
-Sei es nun Klettern oder Laufen, alle Sportlichen Fähigkeiten fallen unter diese
-Kategorie.
-
-~[KörperTalente.xslt]
-
-## Gesellschaft
-
-Talente für die Integration mit anderen Charakteren sind hier zu finden.
-
-~[GesellschaftTalente.xslt]
-
-## Kampf
-
-Der geschulte Umgang mit und ohne Waffen.
-
-~[KampfTalente.xslt]
-
-## Wissen
-
-Bücherwissen. 
-
-~[WissenTalente.xslt]
-
-## Handwerk
-
-Handwerkliche Tätigkeiten
-
-~[HandwerkTalente.xslt]
-
+~[Talente.xslt]

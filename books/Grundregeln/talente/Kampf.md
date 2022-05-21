@@ -1,0 +1,1 @@
+Der geschulte Umgang mit und ohne Waffen.

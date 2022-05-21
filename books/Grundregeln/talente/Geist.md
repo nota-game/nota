@@ -1,0 +1,1 @@
+Geistige Talente sind Intuitive Fähigkeiten, die jeder beherrscht

@@ -1611,7 +1611,7 @@
   <Talente xmlns="http://nota.org/schema/talent.xsd" KategorieId="Geist">
     <talent:Kategorie>
       <misc:Lokalisirung Sprache="de">
-        <![CDATA[Geist]]>
+        <![CDATA[Geistig]]>
       </misc:Lokalisirung>
     </talent:Kategorie>
 
