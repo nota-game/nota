@@ -3750,11 +3750,13 @@
           <![CDATA[Auserwählter]]>
         </misc:Lokalisirung>
       </Name>
-      <Beschreibung>
-        <misc:Lokalisirung Sprache="de">
-          <![CDATA[Der Charakter wurde von einem der Götter auserwählt]]>
-        </misc:Lokalisirung>
-      </Beschreibung>
+      <besonderheit:Stufe>
+        <Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Der Charakter wurde von einem der Götter auserwählt]]>
+          </misc:Lokalisirung>
+        </Beschreibung>
+      </besonderheit:Stufe>
     </Besonderheit>
 
     <Besonderheit Id="Auserwählter Alsas" Gebunden="true">
@@ -3763,11 +3765,13 @@
           <![CDATA[Auserwählter Alsas]]>
         </misc:Lokalisirung>
       </Name>
-      <Beschreibung>
-        <misc:Lokalisirung Sprache="de">
-          <![CDATA[Der Charakter wurde von einem der Götter auserwählt]]>
-        </misc:Lokalisirung>
-      </Beschreibung>
+      <besonderheit:Stufe>
+        <Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Der Charakter wurde von einem der Götter auserwählt]]>
+          </misc:Lokalisirung>
+        </Beschreibung>
+      </besonderheit:Stufe>
     </Besonderheit>
 
 
@@ -3777,14 +3781,17 @@
           <![CDATA[Miasma Resistenz]]>
         </misc:Lokalisirung>
       </Name>
-      <Beschreibung>
-        <misc:Lokalisirung Sprache="de">
-          <![CDATA[Der Charakter hat eine erhöte Resistenz gegen das dämonische Miasma]]>
-        </misc:Lokalisirung>
-      </Beschreibung>
-      <Bedingung>
-        <Besonderheit Id="Auserwählter" />
-      </Bedingung>
+      <besonderheit:Stufe>
+
+        <Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Der Charakter hat eine erhöte Resistenz gegen das dämonische Miasma]]>
+          </misc:Lokalisirung>
+        </Beschreibung>
+        <Bedingung>
+          <Besonderheit Id="Auserwählter" />
+        </Bedingung>
+      </besonderheit:Stufe>
     </Besonderheit>
 
     <Besonderheit Id="Verbesserte Wundheilung">
@@ -3793,14 +3800,16 @@
           <![CDATA[Verbesserte Wundheilung]]>
         </misc:Lokalisirung>
       </Name>
-      <Beschreibung>
-        <misc:Lokalisirung Sprache="de">
-          <![CDATA[Die Wunden des Charakters heilen Schneller.]]>
-        </misc:Lokalisirung>
-      </Beschreibung>
-      <Bedingung>
-        <Besonderheit Id="Auserwählter" />
-      </Bedingung>
+      <besonderheit:Stufe>
+        <Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Die Wunden des Charakters heilen Schneller.]]>
+          </misc:Lokalisirung>
+        </Beschreibung>
+        <Bedingung>
+          <Besonderheit Id="Auserwählter" />
+        </Bedingung>
+      </besonderheit:Stufe>
     </Besonderheit>
   </Besonderheiten>
   <Besonderheiten xmlns="http://nota.org/schema/besonderheit.xsd" KategorieId="Vorteile">
@@ -3815,14 +3824,17 @@
           <![CDATA[Krankheitsresistenz]]>
         </misc:Lokalisirung>
       </Name>
-      <Beschreibung>
-        <misc:Lokalisirung Sprache="de">
-          <![CDATA[Der Charakter wird troz wiedriger Umstände nicht so leicht Krank.]]>
-        </misc:Lokalisirung>
-      </Beschreibung>
-      <Bedingung>
-        <Besonderheit Id="Auserwählter" />
-      </Bedingung>
+      <besonderheit:Stufe>
+
+        <Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Der Charakter wird troz wiedriger Umstände nicht so leicht Krank.]]>
+          </misc:Lokalisirung>
+        </Beschreibung>
+        <Bedingung>
+          <Besonderheit Id="Auserwählter" />
+        </Bedingung>
+      </besonderheit:Stufe>
     </Besonderheit>
 
     <Besonderheit Id="Beidhändig">
@@ -3833,11 +3845,14 @@
           <![CDATA[Beidhändig]]>
         </misc:Lokalisirung>
       </Name>
-      <Beschreibung>
-        <misc:Lokalisirung Sprache="de">
-          <![CDATA[]]>
-        </misc:Lokalisirung>
-      </Beschreibung>
+      <besonderheit:Stufe>
+
+        <Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[]]>
+          </misc:Lokalisirung>
+        </Beschreibung>
+      </besonderheit:Stufe>
     </Besonderheit>
   </Besonderheiten>
 
