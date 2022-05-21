@@ -3619,7 +3619,7 @@
 
   </Talente>
   <!-- Ⅰ Ⅱ Ⅲ Ⅳ Ⅴ Ⅵ Ⅶ Ⅷ Ⅸ Ⅹ Ⅺ Ⅻ -->
-  <Fertigkeiten xmlns="http://nota.org/schema/fertigkeit.xsd">
+  <Fertigkeiten xmlns="http://nota.org/schema/fertigkeit.xsd" Kategorie="Kulturele">
     <Fertigkeit Id="Kulturkunde Alan">
       <Name>
         <misc:Lokalisirung Sprache="de">
@@ -3638,15 +3638,15 @@
         </Verbreitung>
       </fertigkeit:Stufe>
     </Fertigkeit>
+  </Fertigkeiten>
+  <Fertigkeiten xmlns="http://nota.org/schema/fertigkeit.xsd" Kategorie="Schriften">
     <Fertigkeit Id="Arjuniche Zeichen">
-
       <Name>
         <misc:Lokalisirung Sprache="de">
           <![CDATA[Arjuniche Zeichen]]>
         </misc:Lokalisirung>
       </Name>
       <fertigkeit:Stufe Kosten="100">
-
         <Beschreibung>
           <misc:Lokalisirung Sprache="de">
             <![CDATA[Die Schrift der Arjur]]>
@@ -3658,6 +3658,9 @@
         </Tags>
       </fertigkeit:Stufe>
     </Fertigkeit>
+  </Fertigkeiten>
+  <Fertigkeiten xmlns="http://nota.org/schema/fertigkeit.xsd" Kategorie="Handwerk">
+
     <fertigkeit:Fertigkeit Id="Konditor">
       <fertigkeit:Name>
         <misc:Lokalisirung Sprache="de">Konditor</misc:Lokalisirung>
@@ -3673,7 +3676,8 @@
       </fertigkeit:Stufe>
     </fertigkeit:Fertigkeit>
   </Fertigkeiten>
-  <Besonderheiten xmlns="http://nota.org/schema/besonderheit.xsd">
+  <Besonderheiten xmlns="http://nota.org/schema/besonderheit.xsd" Kategorie="Gaben">
+
     <Besonderheit Id="Auserwählter" Gebunden="true">
       <Name>
         <misc:Lokalisirung Sprache="de">
@@ -3732,7 +3736,8 @@
         <Besonderheit Id="Auserwählter" />
       </Bedingung>
     </Besonderheit>
-
+  </Besonderheiten>
+  <Besonderheiten xmlns="http://nota.org/schema/besonderheit.xsd" Kategorie="Vorteile">
     <Besonderheit Id="Krankheitsresistenz">
       <Name>
         <misc:Lokalisirung Sprache="de">
