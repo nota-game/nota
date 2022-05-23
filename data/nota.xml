@@ -2145,6 +2145,11 @@
         </misc:Lokalisirung>
       </Beschreibung>
       <Verbreitung Wert="7" />
+      <talent:Bedingungen>
+        <talent:Bedingung Wert="1">
+          <misc:Tag Id="Lesen/Schreiben" />
+        </talent:Bedingung>
+      </talent:Bedingungen>
     </Talent>
     <Talent Id="Buchführung" Komplexität="B">
       <Probe>
