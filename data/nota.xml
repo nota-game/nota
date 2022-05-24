@@ -243,193 +243,193 @@
       </Art>
     </Gattung>
   </Organismen>
-  <PfadGruppen xmlns="http://nota.org/schema/pfad.xsd">
-    <Pfade Id="Kultur">
+
+  <Pfade Id="Kultur" xmlns="http://nota.org/schema/pfad.xsd">
+    <Name>
+      <misc:Lokalisirung Sprache="de">
+        <![CDATA[Kultur]]>
+      </misc:Lokalisirung>
+    </Name>
+    <Beschreibung>
+      <misc:Lokalisirung Sprache="de">
+        <![CDATA[Wähle die Kultur des Charakters]]>
+      </misc:Lokalisirung>
+    </Beschreibung>
+
+    <Pfad Id="Alan">
       <Name>
         <misc:Lokalisirung Sprache="de">
-          <![CDATA[Kultur]]>
+          <![CDATA[Alan]]>
         </misc:Lokalisirung>
       </Name>
       <Beschreibung>
         <misc:Lokalisirung Sprache="de">
-          <![CDATA[Wähle die Kultur des Charakters]]>
+          <![CDATA[]]>
         </misc:Lokalisirung>
       </Beschreibung>
 
-      <Pfad Id="Alan">
-        <Name>
-          <misc:Lokalisirung Sprache="de">
-            <![CDATA[Alan]]>
-          </misc:Lokalisirung>
-        </Name>
-        <Beschreibung>
-          <misc:Lokalisirung Sprache="de">
-            <![CDATA[]]>
-          </misc:Lokalisirung>
-        </Beschreibung>
+      <misc:Levels>
+        <misc:Level Id="T"></misc:Level>
+      </misc:Levels>
+    </Pfad>
 
-        <misc:Levels>
-          <misc:Level Id="T"></misc:Level>
-        </misc:Levels>
-      </Pfad>
+    <Pfad Id="Kirin">
+      <Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Kirin]]>
+        </misc:Lokalisirung>
+      </Name>
+      <Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </Beschreibung>
+      <misc:Levels>
+        <misc:Level Id="T"></misc:Level>
+      </misc:Levels>
+    </Pfad>
+  </Pfade>
 
-      <Pfad Id="Kirin">
-        <Name>
-          <misc:Lokalisirung Sprache="de">
-            <![CDATA[Kirin]]>
-          </misc:Lokalisirung>
-        </Name>
-        <Beschreibung>
-          <misc:Lokalisirung Sprache="de">
-            <![CDATA[]]>
-          </misc:Lokalisirung>
-        </Beschreibung>
-        <misc:Levels>
-          <misc:Level Id="T"></misc:Level>
-        </misc:Levels>
-      </Pfad>
-    </Pfade>
-
-    <pfad:Pfade Id="Proffession">
+  <pfad:Pfade Id="Proffession">
+    <pfad:Name>
+      <misc:Lokalisirung Sprache="de">
+        <![CDATA[Proffession]]>
+      </misc:Lokalisirung>
+    </pfad:Name>
+    <pfad:Beschreibung>
+      <misc:Lokalisirung Sprache="de">
+        <![CDATA[Wähle die Proffession]]>
+      </misc:Lokalisirung>
+    </pfad:Beschreibung>
+    <pfad:Pfad Id="Koch">
       <pfad:Name>
         <misc:Lokalisirung Sprache="de">
-          <![CDATA[Proffession]]>
+          <![CDATA[Koch]]>
         </misc:Lokalisirung>
       </pfad:Name>
       <pfad:Beschreibung>
         <misc:Lokalisirung Sprache="de">
-          <![CDATA[Wähle die Proffession]]>
+          <![CDATA[]]>
         </misc:Lokalisirung>
       </pfad:Beschreibung>
-      <pfad:Pfad Id="Koch">
-        <pfad:Name>
-          <misc:Lokalisirung Sprache="de">
-            <![CDATA[Koch]]>
-          </misc:Lokalisirung>
-        </pfad:Name>
-        <pfad:Beschreibung>
-          <misc:Lokalisirung Sprache="de">
-            <![CDATA[]]>
-          </misc:Lokalisirung>
-        </pfad:Beschreibung>
 
-        <misc:Levels>
-          <misc:Level Id="Grundlagen">
-            <misc:Kosten Id="GP" Wert="2" />
-            <misc:Kosten Id="Kultur" Wert="10" />
-            <misc:Talent Id="Kochen" EP="20" />
-            <misc:Talent Id="Backen" EP="20" />
-            <fertigkeit:Fertigkeit Id="Konditor" />
-          </misc:Level>
-          <misc:Level Id="Erweitert" WiederhoteNutzung="2">
-            <misc:Kosten Id="Kultur" Wert="20" />
-            <misc:Bedingungen>
-              <misc:LevelVoraussetzung>
-                <misc:Level Id="Grundlagen" />
-              </misc:LevelVoraussetzung>
-            </misc:Bedingungen>
-            <misc:Talent Id="Kochen" EP="20" />
-            <misc:Talent Id="Backen" EP="20" />
-          </misc:Level>
-          <misc:Level Id="Konditor" WiederhoteNutzung="1">
-            <misc:Kosten Id="Kultur" Wert="20" />
-            <misc:Bedingungen>
-              <misc:LevelVoraussetzung>
-                <misc:And>
-                  <misc:Not>
-                    <misc:Level Id="Bäcker" />
-                  </misc:Not>
-                  <misc:Level Id="Erweitert" mindestVorkommen="2" />
-                </misc:And>
-              </misc:LevelVoraussetzung>
-            </misc:Bedingungen>
-            <misc:Talent Id="Kochen" EP="20" />
-            <misc:Talent Id="Backen" EP="20" />
-            <fertigkeit:Fertigkeit Id="Konditor" />
-          </misc:Level>
-          <misc:Level Id="Bäcker" WiederhoteNutzung="1">
-            <misc:Kosten Id="Kultur" Wert="20" />
-            <misc:Bedingungen>
-              <misc:LevelVoraussetzung>
-                <misc:And>
-                  <misc:Not>
-                    <misc:Level Id="Konditor" />
-                  </misc:Not>
-                  <misc:Level Id="Erweitert" />
-                </misc:And>
-              </misc:LevelVoraussetzung>
-            </misc:Bedingungen>
-            <misc:Talent Id="Kochen" EP="20" />
-            <misc:Talent Id="Backen" EP="20" />
-            <fertigkeit:Fertigkeit Id="Konditor" />
-          </misc:Level>
-          <misc:Level Id="Meister">
-            <misc:Kosten Id="Kultur" Wert="20" />
-            <misc:Bedingungen>
-              <misc:LevelVoraussetzung>
-                <misc:Or>
-                  <misc:Level Id="Konditor" />
+      <misc:Levels>
+        <misc:Level Id="Grundlagen">
+          <misc:Kosten Id="GP" Wert="2" />
+          <misc:Kosten Id="Kultur" Wert="10" />
+          <misc:Talent Id="Kochen" EP="20" />
+          <misc:Talent Id="Backen" EP="20" />
+          <fertigkeit:Fertigkeit Id="Konditor" />
+        </misc:Level>
+        <misc:Level Id="Erweitert" WiederhoteNutzung="2">
+          <misc:Kosten Id="Kultur" Wert="20" />
+          <misc:Bedingungen>
+            <misc:LevelVoraussetzung>
+              <misc:Level Id="Grundlagen" />
+            </misc:LevelVoraussetzung>
+          </misc:Bedingungen>
+          <misc:Talent Id="Kochen" EP="20" />
+          <misc:Talent Id="Backen" EP="20" />
+        </misc:Level>
+        <misc:Level Id="Konditor" WiederhoteNutzung="1">
+          <misc:Kosten Id="Kultur" Wert="20" />
+          <misc:Bedingungen>
+            <misc:LevelVoraussetzung>
+              <misc:And>
+                <misc:Not>
                   <misc:Level Id="Bäcker" />
-                </misc:Or>
-              </misc:LevelVoraussetzung>
-            </misc:Bedingungen>
-            <misc:Talent Id="Kochen" EP="20" />
-            <misc:Talent Id="Backen" EP="20" />
-            <fertigkeit:Fertigkeit Id="Konditor" />
-          </misc:Level>
-        </misc:Levels>
-      </pfad:Pfad>
-      <pfad:Pfad Id="Soldat">
-        <pfad:Name>
-          <misc:Lokalisirung Sprache="de">
-            <![CDATA[Soldat]]>
-          </misc:Lokalisirung>
-        </pfad:Name>
-        <pfad:Beschreibung>
-          <misc:Lokalisirung Sprache="de">
-            <![CDATA[]]>
-          </misc:Lokalisirung>
-        </pfad:Beschreibung>
+                </misc:Not>
+                <misc:Level Id="Erweitert" mindestVorkommen="2" />
+              </misc:And>
+            </misc:LevelVoraussetzung>
+          </misc:Bedingungen>
+          <misc:Talent Id="Kochen" EP="20" />
+          <misc:Talent Id="Backen" EP="20" />
+          <fertigkeit:Fertigkeit Id="Konditor" />
+        </misc:Level>
+        <misc:Level Id="Bäcker" WiederhoteNutzung="1">
+          <misc:Kosten Id="Kultur" Wert="20" />
+          <misc:Bedingungen>
+            <misc:LevelVoraussetzung>
+              <misc:And>
+                <misc:Not>
+                  <misc:Level Id="Konditor" />
+                </misc:Not>
+                <misc:Level Id="Erweitert" />
+              </misc:And>
+            </misc:LevelVoraussetzung>
+          </misc:Bedingungen>
+          <misc:Talent Id="Kochen" EP="20" />
+          <misc:Talent Id="Backen" EP="20" />
+          <fertigkeit:Fertigkeit Id="Konditor" />
+        </misc:Level>
+        <misc:Level Id="Meister">
+          <misc:Kosten Id="Kultur" Wert="20" />
+          <misc:Bedingungen>
+            <misc:LevelVoraussetzung>
+              <misc:Or>
+                <misc:Level Id="Konditor" />
+                <misc:Level Id="Bäcker" />
+              </misc:Or>
+            </misc:LevelVoraussetzung>
+          </misc:Bedingungen>
+          <misc:Talent Id="Kochen" EP="20" />
+          <misc:Talent Id="Backen" EP="20" />
+          <fertigkeit:Fertigkeit Id="Konditor" />
+        </misc:Level>
+      </misc:Levels>
+    </pfad:Pfad>
+    <pfad:Pfad Id="Soldat">
+      <pfad:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Soldat]]>
+        </misc:Lokalisirung>
+      </pfad:Name>
+      <pfad:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </pfad:Beschreibung>
 
-        <misc:Levels>
-          <misc:Level Id="T" WiederhoteNutzung="2">
-            <misc:Kosten Id="GP" Wert="1" />
-            <misc:Talent Id="Schwerter" EP="30" />
-          </misc:Level>
-        </misc:Levels>
-      </pfad:Pfad>
-    </pfad:Pfade>
+      <misc:Levels>
+        <misc:Level Id="T" WiederhoteNutzung="2">
+          <misc:Kosten Id="GP" Wert="1" />
+          <misc:Talent Id="Schwerter" EP="30" />
+        </misc:Level>
+      </misc:Levels>
+    </pfad:Pfad>
+  </pfad:Pfade>
 
-    <Pfade Id="Götter">
+  <Pfade Id="Götter" xmlns="http://nota.org/schema/pfad.xsd">
+    <Name>
+      <misc:Lokalisirung Sprache="de">
+        <![CDATA[Götter]]>
+      </misc:Lokalisirung>
+    </Name>
+    <Beschreibung>
+      <misc:Lokalisirung Sprache="de">
+        <![CDATA[Wähle den Gott des Charakters]]>
+      </misc:Lokalisirung>
+    </Beschreibung>
+    <Pfad Id="Alsas">
       <Name>
         <misc:Lokalisirung Sprache="de">
-          <![CDATA[Götter]]>
+          <![CDATA[Alsa]]>
         </misc:Lokalisirung>
       </Name>
       <Beschreibung>
         <misc:Lokalisirung Sprache="de">
-          <![CDATA[Wähle den Gott des Charakters]]>
+          <![CDATA[Der Charakter ist ein Diener des Gottes Alsa.]]>
         </misc:Lokalisirung>
       </Beschreibung>
-      <Pfad Id="Alsas">
-        <Name>
-          <misc:Lokalisirung Sprache="de">
-            <![CDATA[Alsa]]>
-          </misc:Lokalisirung>
-        </Name>
-        <Beschreibung>
-          <misc:Lokalisirung Sprache="de">
-            <![CDATA[Der Charakter ist ein Diener des Gottes Alsa.]]>
-          </misc:Lokalisirung>
-        </Beschreibung>
-        <misc:Levels>
-          <misc:Level Id="T">
-            <besonderheit:Besonderheit Id="Auserwählter Alsas" />
-          </misc:Level>
-        </misc:Levels>
-      </Pfad>
-    </Pfade>
-  </PfadGruppen>
+      <misc:Levels>
+        <misc:Level Id="T">
+          <besonderheit:Besonderheit Id="Auserwählter Alsas" />
+        </misc:Level>
+      </misc:Levels>
+    </Pfad>
+  </Pfade>
+
   <!--<Kulturen
     xmlns="http://nota.org/schema/kultur.xsd">
     <Kultur Id="Alan">
@@ -3817,6 +3817,40 @@
       </besonderheit:Stufe>
     </Besonderheit>
   </Besonderheiten>
+  <Besonderheiten xmlns="http://nota.org/schema/besonderheit.xsd" KategorieId="Nachteile">
+    <besonderheit:Kategorie>
+      <misc:Lokalisirung Sprache="de">
+        <![CDATA[Nachteile]]>
+      </misc:Lokalisirung>
+    </besonderheit:Kategorie>
+
+    <besonderheit:Besonderheit Id="Arm">
+      <besonderheit:Name>
+        <misc:Lokalisirung Sprache="de">Arm</misc:Lokalisirung>
+      </besonderheit:Name>
+      <besonderheit:Stufe>
+        <besonderheit:Beschreibung>
+          <misc:Lokalisirung Sprache="de">Dem Charakter staht wenig Geld zur verfügung.</misc:Lokalisirung>
+        </besonderheit:Beschreibung>
+        <misc:Kosten Id="GP" Wert="-2" />
+        <besonderheit:Bedingung>
+          <besonderheit:Not>
+            <besonderheit:Besonderheit Id="Wohlhabend" />
+          </besonderheit:Not>
+        </besonderheit:Bedingung>
+      </besonderheit:Stufe>
+      <besonderheit:Stufe>
+        <besonderheit:Name>
+          <misc:Lokalisirung Sprache="de">Mittellos</misc:Lokalisirung>
+        </besonderheit:Name>
+        <besonderheit:Beschreibung>
+          <misc:Lokalisirung Sprache="de">Dem Charakter staht kein Geld zur verfügung.</misc:Lokalisirung>
+        </besonderheit:Beschreibung>
+        <misc:Kosten Id="GP" Wert="-4" />
+      </besonderheit:Stufe>
+    </besonderheit:Besonderheit>
+
+  </Besonderheiten>
   <Besonderheiten xmlns="http://nota.org/schema/besonderheit.xsd" KategorieId="Vorteile">
     <besonderheit:Kategorie>
       <misc:Lokalisirung Sprache="de">
@@ -3841,6 +3875,39 @@
         </Bedingung>
       </besonderheit:Stufe>
     </Besonderheit>
+    <besonderheit:Besonderheit Id="Wohlhabend">
+      <besonderheit:Name>
+        <misc:Lokalisirung Sprache="de">Wohlhabend</misc:Lokalisirung>
+      </besonderheit:Name>
+      <besonderheit:Stufe>
+        <besonderheit:Beschreibung>
+          <misc:Lokalisirung Sprache="de">Dem Charakter staht etwas Geld zur verfügung.</misc:Lokalisirung>
+        </besonderheit:Beschreibung>
+        <misc:Kosten Id="GP" Wert="2" />
+      </besonderheit:Stufe>
+      <besonderheit:Stufe>
+        <besonderheit:Beschreibung>
+          <misc:Lokalisirung Sprache="de">Dem Charakter staht einiges Geld zur verfügung.</misc:Lokalisirung>
+        </besonderheit:Beschreibung>
+        <misc:Kosten Id="GP" Wert="2" />
+      </besonderheit:Stufe>
+      <besonderheit:Stufe>
+        <besonderheit:Name>
+          <misc:Lokalisirung Sprache="de">Reich</misc:Lokalisirung>
+        </besonderheit:Name>
+        <besonderheit:Beschreibung>
+          <misc:Lokalisirung Sprache="de">Dem Charakter staht eine beträchtige summe Geld zur verfügung.</misc:Lokalisirung>
+        </besonderheit:Beschreibung>
+        <misc:Kosten Id="GP" Wert="4" />
+      </besonderheit:Stufe>
+      <besonderheit:Stufe>
+        <besonderheit:Beschreibung>
+          <misc:Lokalisirung Sprache="de">Der Charakter hat keine Geldsorgen.</misc:Lokalisirung>
+        </besonderheit:Beschreibung>
+        <misc:Kosten Id="GP" Wert="5" />
+      </besonderheit:Stufe>
+    </besonderheit:Besonderheit>
+
 
     <Besonderheit Id="Beidhändig">
       <Name>
