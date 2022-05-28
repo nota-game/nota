@@ -3744,6 +3744,28 @@
       </fertigkeit:Stufe>
     </fertigkeit:Fertigkeit>
   </Fertigkeiten>
+  <Fertigkeiten xmlns="http://nota.org/schema/fertigkeit.xsd" KategorieId="Kampf">
+    <fertigkeit:Kategorie>
+      <misc:Lokalisirung Sprache="de">
+        <![CDATA[Handwerk]]>
+      </misc:Lokalisirung>
+    </fertigkeit:Kategorie>
+
+    <fertigkeit:Fertigkeit Id="Schildkampf">
+      <fertigkeit:Name>
+        <misc:Lokalisirung Sprache="de">Schildkampf</misc:Lokalisirung>
+      </fertigkeit:Name>
+      <fertigkeit:Stufe Kosten="30">
+
+        <fertigkeit:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Die kunst Schildkampf]]>
+          </misc:Lokalisirung>
+        </fertigkeit:Beschreibung>
+        <fertigkeit:Verbreitung Wert="4"></fertigkeit:Verbreitung>
+      </fertigkeit:Stufe>
+    </fertigkeit:Fertigkeit>
+  </Fertigkeiten>
   <Besonderheiten xmlns="http://nota.org/schema/besonderheit.xsd" KategorieId="Gaben">
     <besonderheit:Kategorie>
       <misc:Lokalisirung Sprache="de">
@@ -3917,6 +3939,7 @@
           <![CDATA[Beidhändig]]>
         </misc:Lokalisirung>
       </Name>
+      <besonderheit:SubKategorie>Kampf</besonderheit:SubKategorie>
       <besonderheit:Stufe>
         <Beschreibung>
           <misc:Lokalisirung Sprache="de">
