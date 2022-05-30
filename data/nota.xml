@@ -1,6 +1,6 @@
 <?xml version='1.0'?>
 <!-- This file represents a fragment of a book store inventory database -->
-<Daten Version='1' xmlns='http://nota.org/schema/nota.xsd' xmlns:nota='http://nota.org/schema/nota.xsd' xmlns:misc='http://nota.org/schema/misc.xsd' xmlns:lebewesen="http://nota.org/schema/wesen.xsd" xmlns:pfad="http://nota.org/schema/pfad.xsd" xmlns:profession="http://nota.org/schema/profession.xsd" xmlns:talent="http://nota.org/schema/talent.xsd" xmlns:fertigkeit="http://nota.org/schema/fertigkeit.xsd" xmlns:besonderheit="http://nota.org/schema/besonderheit.xsd" xmlns:Belastung="http://nota.org/schema/kampf/aktionen.xsd" xmlns:ausstattung="http://nota.org/schema/kampf/ausstattung.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://nota.org/schema/nota.xsd ../../nota-schema/nota.xsd http://nota.org/schema/lebewesen.xsd ../../nota-schema/Lebewesen.xsd http://nota.org/schema/pfad.xsd ../../nota-schema/pfad.xsd http://nota.org/schema/talent.xsd ../../nota-schema/talent.xsd http://nota.org/schema/fertigkeit.xsd ../../nota-schema/fertigkeit.xsd http://nota.org/schema/besonderheit.xsd ../../nota-schema/besonderheit.xsd http://nota.org/schema/kampf/aktionen.xsd ../../nota-schema/kampf/aktionen.xsd http://nota.org/schema/kampf/ausstattung.xsd ../../nota-schema/kampf/ausstattung.xsd http://nota.org/schema/misc.xsd ../../nota-schema/misc.xsd">
+<Daten Version='1' xmlns='http://nota.org/schema/nota.xsd' xmlns:nota='http://nota.org/schema/nota.xsd' xmlns:misc='http://nota.org/schema/misc.xsd' xmlns:lebewesen="http://nota.org/schema/lebewesen.xsd" xmlns:pfad="http://nota.org/schema/pfad.xsd" xmlns:talent="http://nota.org/schema/talent.xsd" xmlns:fertigkeit="http://nota.org/schema/fertigkeit.xsd" xmlns:besonderheit="http://nota.org/schema/besonderheit.xsd" xmlns:Belastung="http://nota.org/schema/kampf/aktionen.xsd" xmlns:ausstattung="http://nota.org/schema/kampf/ausstattung.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://nota.org/schema/nota.xsd ../../nota-schema/nota.xsd http://nota.org/schema/lebewesen.xsd ../../nota-schema/Lebewesen.xsd http://nota.org/schema/pfad.xsd ../../nota-schema/pfad.xsd http://nota.org/schema/talent.xsd ../../nota-schema/talent.xsd http://nota.org/schema/fertigkeit.xsd ../../nota-schema/fertigkeit.xsd http://nota.org/schema/besonderheit.xsd ../../nota-schema/besonderheit.xsd http://nota.org/schema/kampf/aktionen.xsd ../../nota-schema/kampf/aktionen.xsd http://nota.org/schema/kampf/ausstattung.xsd ../../nota-schema/kampf/ausstattung.xsd http://nota.org/schema/misc.xsd ../../nota-schema/misc.xsd">
   <!-- xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://nota.org/schema/nota.xsd http://nota.org/schema/nota.xsd http://nota.org/schema/misc.xsd http://nota.org/schema/misc.xsd http://nota.org/schema/wesen.xsd http://nota.org/schema/wesen.xsd http://nota.org/schema/pfad.xsd http://nota.org/schema/pfad.xsd http://nota.org/schema/profession.xsd http://nota.org/schema/profession.xsd http://nota.org/schema/talent.xsd http://nota.org/schema/talent.xsd http://nota.org/schema/fertigkeit.xsd http://nota.org/schema/fertigkeit.xsd http://nota.org/schema/besonderheit.xsd http://nota.org/schema/besonderheit.xsd http://nota.org/schema/kampf/aktionen.xsd http://nota.org/schema/kampf/aktionen.xsd http://nota.org/schema/kampf/ausstattung.xsd http://nota.org/schema/kampf/ausstattung.xsd" -->
   <!--<Pfade>
     <PfadAuswahl Id="Götter">
@@ -2147,11 +2147,11 @@
         </misc:Lokalisirung>
       </Beschreibung>
       <Verbreitung Wert="7" />
-      <talent:Bedingungen>
-        <talent:Bedingung Wert="1">
+      <talent:Level Wert="1">
+        <talent:Bedingung>
           <misc:Tag Id="Lesen/Schreiben" />
         </talent:Bedingung>
-      </talent:Bedingungen>
+      </talent:Level>
     </Talent>
     <Talent Id="Buchführung" Komplexität="B">
       <Probe>
@@ -2722,11 +2722,11 @@
         </misc:Lokalisirung>
       </Beschreibung>
       <Verbreitung Wert="7" />
-      <Bedingungen>
-        <Bedingung Wert="4">
+      <talent:Level Wert="4">
+        <Bedingung>
           <Talent Id="Backen" Level="2" />
         </Bedingung>
-      </Bedingungen>
+      </talent:Level>
       <Ableitungen>
         <Ableitung Id="Backen" Anzahl="2" />
       </Ableitungen>
@@ -3716,9 +3716,11 @@
           </misc:Lokalisirung>
         </Beschreibung>
         <Verbreitung Wert="7" />
-        <Tags>
-          <misc:Tag Id="Lesen/Schreiben" />
-        </Tags>
+        <fertigkeit:Mods>
+          <misc:Tags>
+            <misc:Tag Id="Lesen/Schreiben" />
+          </misc:Tags>
+        </fertigkeit:Mods>
       </fertigkeit:Stufe>
     </Fertigkeit>
   </Fertigkeiten>
