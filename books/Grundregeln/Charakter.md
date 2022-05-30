@@ -174,7 +174,7 @@ Gibt in der Regel an, wie schnell sich ein Charakter fortbewegt.
 
 Die Stärke eines Charakters ergibt sich aus seiner Kraft und seiner Masse.
 
-$\(Kraft = \frac{91}{30}ST^2+\frac{1529}{300}ST+\frac{3}{50}\)$
+$\(Kraft = \frac{91}{30}\frac{1}{ST})^2+\frac{1529}{300}\frac{1}{ST}+\frac{3}{50} * Gewicht\)$
 
 Die folgende Tabelle listet die Gewischt und stärke Verhältnisse dar.3
 
