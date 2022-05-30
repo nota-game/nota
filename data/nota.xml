@@ -2148,9 +2148,9 @@
       </Beschreibung>
       <Verbreitung Wert="7" />
       <talent:Level Wert="1">
-        <talent:Bedingung>
+        <talent:Voraussetzung>
           <misc:Tag Id="Lesen/Schreiben" />
-        </talent:Bedingung>
+        </talent:Voraussetzung>
       </talent:Level>
     </Talent>
     <Talent Id="Buchführung" Komplexität="B">
@@ -2723,9 +2723,9 @@
       </Beschreibung>
       <Verbreitung Wert="7" />
       <talent:Level Wert="4">
-        <Bedingung>
+        <Voraussetzung>
           <Talent Id="Backen" Level="2" />
-        </Bedingung>
+        </Voraussetzung>
       </talent:Level>
       <Ableitungen>
         <Ableitung Id="Backen" Anzahl="2" />
@@ -3819,9 +3819,9 @@
             <![CDATA[Der Charakter hat eine erhöte Resistenz gegen das dämonische Miasma]]>
           </misc:Lokalisirung>
         </Beschreibung>
-        <Bedingung>
+        <Voraussetzung>
           <Besonderheit Id="Auserwählter" />
-        </Bedingung>
+        </Voraussetzung>
       </besonderheit:Stufe>
     </Besonderheit>
 
@@ -3837,9 +3837,9 @@
             <![CDATA[Die Wunden des Charakters heilen Schneller.]]>
           </misc:Lokalisirung>
         </Beschreibung>
-        <Bedingung>
+        <Voraussetzung>
           <Besonderheit Id="Auserwählter" />
-        </Bedingung>
+        </Voraussetzung>
       </besonderheit:Stufe>
     </Besonderheit>
   </Besonderheiten>
@@ -3859,11 +3859,11 @@
           <misc:Lokalisirung Sprache="de">Dem Charakter staht wenig Geld zur verfügung.</misc:Lokalisirung>
         </besonderheit:Beschreibung>
         <misc:Kosten Id="GP" Wert="-2" />
-        <besonderheit:Bedingung>
+        <besonderheit:Voraussetzung>
           <besonderheit:Not>
             <besonderheit:Besonderheit Id="Wohlhabend" />
           </besonderheit:Not>
-        </besonderheit:Bedingung>
+        </besonderheit:Voraussetzung>
       </besonderheit:Stufe>
       <besonderheit:Stufe>
         <besonderheit:Name>
@@ -3896,9 +3896,9 @@
             <![CDATA[Der Charakter wird troz wiedriger Umstände nicht so leicht Krank.]]>
           </misc:Lokalisirung>
         </Beschreibung>
-        <Bedingung>
+        <Voraussetzung>
           <Besonderheit Id="Auserwählter" />
-        </Bedingung>
+        </Voraussetzung>
       </besonderheit:Stufe>
     </Besonderheit>
     <besonderheit:Besonderheit Id="Wohlhabend">
