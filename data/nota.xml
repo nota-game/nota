@@ -4646,9 +4646,9 @@ Ausserdem darf eine Waffe Plazieren Taktik die das selbe Ziel wie diese hat in d
           <Brust>
             <Schutz Von="2" Bis="10" />
           </Brust>
-          <Bauch>
+          <Hüfte>
             <Schutz Von="1" Bis="9" />
-          </Bauch>
+          </Hüfte>
         </Trefferzonen>
       </Rüstung>
 
@@ -4671,9 +4671,9 @@ Ausserdem darf eine Waffe Plazieren Taktik die das selbe Ziel wie diese hat in d
           <Brust>
             <Schutz Von="2" Bis="10" />
           </Brust>
-          <Bauch>
+          <Hüfte>
             <Schutz Von="1" Bis="9" />
-          </Bauch>
+          </Hüfte>
         </Trefferzonen>
       </Rüstung>
 
@@ -4696,9 +4696,9 @@ Ausserdem darf eine Waffe Plazieren Taktik die das selbe Ziel wie diese hat in d
           <Brust>
             <Schutz Von="2" Bis="10" />
           </Brust>
-          <Bauch>
+          <Hüfte>
             <Schutz Von="1" Bis="9" />
-          </Bauch>
+          </Hüfte>
         </Trefferzonen>
       </Rüstung>
 
@@ -4721,9 +4721,9 @@ Ausserdem darf eine Waffe Plazieren Taktik die das selbe Ziel wie diese hat in d
           <Brust>
             <Schutz Von="2" Bis="10" />
           </Brust>
-          <Bauch>
+          <Hüfte>
             <Schutz Von="1" Bis="9" />
-          </Bauch>
+          </Hüfte>
         </Trefferzonen>
       </Rüstung>
 
