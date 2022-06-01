@@ -325,17 +325,17 @@
         </misc:Level>
         <misc:Level Id="Erweitert" WiederhoteNutzung="2">
           <misc:Kosten Id="Kultur" Wert="20" />
-          <misc:Bedingungen>
+          <misc:Voraussetzung>
             <misc:LevelVoraussetzung>
               <misc:Level Id="Grundlagen" />
             </misc:LevelVoraussetzung>
-          </misc:Bedingungen>
+          </misc:Voraussetzung>
           <misc:Talent Id="Kochen" EP="20" />
           <misc:Talent Id="Backen" EP="20" />
         </misc:Level>
         <misc:Level Id="Konditor" WiederhoteNutzung="1">
           <misc:Kosten Id="Kultur" Wert="20" />
-          <misc:Bedingungen>
+          <misc:Voraussetzung>
             <misc:LevelVoraussetzung>
               <misc:And>
                 <misc:Not>
@@ -344,14 +344,14 @@
                 <misc:Level Id="Erweitert" mindestVorkommen="2" />
               </misc:And>
             </misc:LevelVoraussetzung>
-          </misc:Bedingungen>
+          </misc:Voraussetzung>
           <misc:Talent Id="Kochen" EP="20" />
           <misc:Talent Id="Backen" EP="20" />
           <fertigkeit:Fertigkeit Id="Konditor" />
         </misc:Level>
         <misc:Level Id="Bäcker" WiederhoteNutzung="1">
           <misc:Kosten Id="Kultur" Wert="20" />
-          <misc:Bedingungen>
+          <misc:Voraussetzung>
             <misc:LevelVoraussetzung>
               <misc:And>
                 <misc:Not>
@@ -360,21 +360,21 @@
                 <misc:Level Id="Erweitert" />
               </misc:And>
             </misc:LevelVoraussetzung>
-          </misc:Bedingungen>
+          </misc:Voraussetzung>
           <misc:Talent Id="Kochen" EP="20" />
           <misc:Talent Id="Backen" EP="20" />
           <fertigkeit:Fertigkeit Id="Konditor" />
         </misc:Level>
         <misc:Level Id="Meister">
           <misc:Kosten Id="Kultur" Wert="20" />
-          <misc:Bedingungen>
+          <misc:Voraussetzung>
             <misc:LevelVoraussetzung>
               <misc:Or>
                 <misc:Level Id="Konditor" />
                 <misc:Level Id="Bäcker" />
               </misc:Or>
             </misc:LevelVoraussetzung>
-          </misc:Bedingungen>
+          </misc:Voraussetzung>
           <misc:Talent Id="Kochen" EP="20" />
           <misc:Talent Id="Backen" EP="20" />
           <fertigkeit:Fertigkeit Id="Konditor" />
@@ -827,7 +827,7 @@
         <Ableitung Id="Faust Projektielwaffen" Anzahl="2" />
       </Ableitungen>
     </Talent>
-    <Talent Id="Schild" Komplexität="B">
+    <Talent Id="Schilder" Komplexität="B">
       <Probe>
         <Gewandtheit />
         <Mut />
@@ -835,7 +835,7 @@
       </Probe>
       <Name>
         <misc:Lokalisirung Sprache="de">
-          <![CDATA[Schild]]>
+          <![CDATA[Schilder]]>
         </misc:Lokalisirung>
       </Name>
       <Beschreibung>
@@ -3746,12 +3746,75 @@
       </fertigkeit:Stufe>
     </fertigkeit:Fertigkeit>
   </Fertigkeiten>
+  <Fertigkeiten xmlns="http://nota.org/schema/fertigkeit.xsd" KategorieId="Kampfstiele">
+    <fertigkeit:Kategorie>
+      <misc:Lokalisirung Sprache="de">
+        <![CDATA[Kampfstiele]]>
+      </misc:Lokalisirung>
+    </fertigkeit:Kategorie>
+    <fertigkeit:Fertigkeit Id="Si am">
+      <fertigkeit:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Si‘am]]>
+        </misc:Lokalisirung>
+      </fertigkeit:Name>
+      <fertigkeit:Stufe Kosten="100">
+        <fertigkeit:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Dieser Kampfstiel legt den Fokus auf die Abwehr mit einem Stark gepanzerten Arm, Der Schwertarm ist normalerweise hingegen ungeschützt. Diesern Kampfstiel verwendt eine alternative Trefferzonen verteilung.]]>
+          </misc:Lokalisirung>
+        </fertigkeit:Beschreibung>
+        <fertigkeit:Verbreitung Wert="4" />
+        <fertigkeit:Voraussetzung>
+          <misc:And>
+            <talent:Talent Id="Schwerter" Level="12"></talent:Talent>
+            <talent:Talent Id="Schilder" Level="8"></talent:Talent>
+          </misc:And>
+        </fertigkeit:Voraussetzung>
+      </fertigkeit:Stufe>
+    </fertigkeit:Fertigkeit>
+  </Fertigkeiten>
   <Fertigkeiten xmlns="http://nota.org/schema/fertigkeit.xsd" KategorieId="Kampf">
     <fertigkeit:Kategorie>
       <misc:Lokalisirung Sprache="de">
         <![CDATA[Handwerk]]>
       </misc:Lokalisirung>
     </fertigkeit:Kategorie>
+
+    <fertigkeit:Fertigkeit Id="Leibwächter">
+      <fertigkeit:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Leibwächter]]>
+        </misc:Lokalisirung>
+      </fertigkeit:Name>
+      <fertigkeit:Stufe Kosten="100">
+        <fertigkeit:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Kann die Taktik Schützen zu halbiertenKosten nutzen]]>
+          </misc:Lokalisirung>
+        </fertigkeit:Beschreibung>
+        <fertigkeit:Verbreitung Wert="5"></fertigkeit:Verbreitung>
+      </fertigkeit:Stufe>
+    </fertigkeit:Fertigkeit>
+
+    <fertigkeit:Fertigkeit Id="Kampfkontrolle">
+      <fertigkeit:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Kampfkontrolle]]>
+        </misc:Lokalisirung>
+      </fertigkeit:Name>
+      <fertigkeit:Stufe Kosten="100">
+        <fertigkeit:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Bei der bestimmung der Trefferzonen wird eine mehr bestimmt. Der Charakter kann eine ablegen die der Gegner nicht bestimmen kann.]]>
+          </misc:Lokalisirung>
+        </fertigkeit:Beschreibung>
+        <fertigkeit:Verbreitung Wert="4"></fertigkeit:Verbreitung>
+        <fertigkeit:Voraussetzung>
+          <talent:Talent Id="Kampfgespür" Level="10" />
+        </fertigkeit:Voraussetzung>
+      </fertigkeit:Stufe>
+    </fertigkeit:Fertigkeit>
 
     <fertigkeit:Fertigkeit Id="Schildkampf">
       <fertigkeit:Name>
@@ -3883,6 +3946,110 @@
         <![CDATA[Vorteil]]>
       </misc:Lokalisirung>
     </besonderheit:Kategorie>
+
+    <besonderheit:Besonderheit Id="Unauffällig">
+      <besonderheit:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Unauffällig]]>
+        </misc:Lokalisirung>
+      </besonderheit:Name>
+      <besonderheit:Stufe>
+        <besonderheit:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Der Charakter bleibt niemanden lange im Gedächtniss solange er nicht ausgibig interagiert.]]>
+          </misc:Lokalisirung>
+        </besonderheit:Beschreibung>
+        <misc:Kosten Id="GP" Wert="3" />
+        <besonderheit:Voraussetzung>
+          <besonderheit:Not>
+            <besonderheit:Besonderheit Id="Auffällig" />
+          </besonderheit:Not>
+        </besonderheit:Voraussetzung>
+      </besonderheit:Stufe>
+    </besonderheit:Besonderheit>
+    <besonderheit:Besonderheit Id="Gutes Gehör">
+      <besonderheit:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Gutes Gehör]]>
+        </misc:Lokalisirung>
+      </besonderheit:Name>
+      <besonderheit:Stufe>
+        <besonderheit:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Alle erschwernisse auf das talent Hören sind halbiet, auf das talent Wahrnehmung erleichtert um 2. Die Quarität jeder Probe ist um eins erhöt]]>
+          </misc:Lokalisirung>
+        </besonderheit:Beschreibung>
+        <misc:Kosten Id="GP" Wert="5" />
+      </besonderheit:Stufe>
+    </besonderheit:Besonderheit>
+    <besonderheit:Besonderheit Id="Meermensch" Gebunden="true">
+      <besonderheit:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Meermensch]]>
+        </misc:Lokalisirung>
+      </besonderheit:Name>
+      <besonderheit:Stufe>
+        <besonderheit:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Die fähigkeit der Meermenschn unter Wasser Kimen und eine Schwanzflosse zu bilden.]]>
+          </misc:Lokalisirung>
+        </besonderheit:Beschreibung>
+      </besonderheit:Stufe>
+    </besonderheit:Besonderheit>
+    <besonderheit:Besonderheit Id="Glückspilz">
+      <besonderheit:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Glückspilz]]>
+        </misc:Lokalisirung>
+      </besonderheit:Name>
+      <besonderheit:Stufe>
+        <besonderheit:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Erhalte +3GlP]]>
+          </misc:Lokalisirung>
+        </besonderheit:Beschreibung>
+        <besonderheit:Mods>
+          <misc:Eigenschaften>
+            <lebewesen:GlücksPunkte Mod='3' />
+          </misc:Eigenschaften>
+        </besonderheit:Mods>
+      </besonderheit:Stufe>
+    </besonderheit:Besonderheit>
+    <besonderheit:Besonderheit Id="Glücksritter">
+      <besonderheit:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Glücksritter]]>
+        </misc:Lokalisirung>
+      </besonderheit:Name>
+      <besonderheit:Stufe>
+        <besonderheit:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Substituire 1 Eigenschaft mit GL]]>
+          </misc:Lokalisirung>
+        </besonderheit:Beschreibung>
+      </besonderheit:Stufe>
+    </besonderheit:Besonderheit>
+    <besonderheit:Besonderheit Id="Auffällig">
+      <besonderheit:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Auffällig]]>
+        </misc:Lokalisirung>
+      </besonderheit:Name>
+      <besonderheit:Stufe>
+        <besonderheit:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Der Charakter zieht auf natürliche weise die Blicke auf sich. Dies kann hilfreich sein sich bei diskusionen gehör zu schaffen. Dies macht es aber nicht leichter jemanden zu überzeugen.]]>
+          </misc:Lokalisirung>
+        </besonderheit:Beschreibung>
+        <misc:Kosten Id="GP" Wert="3" />
+        <besonderheit:Voraussetzung>
+          <besonderheit:Not>
+            <besonderheit:Besonderheit Id="Unauffällig" />
+          </besonderheit:Not>
+        </besonderheit:Voraussetzung>
+      </besonderheit:Stufe>
+    </besonderheit:Besonderheit>
+
     <Besonderheit Id="Krankheitsresistenz">
       <Name>
         <misc:Lokalisirung Sprache="de">
@@ -3945,7 +4112,7 @@
       <besonderheit:Stufe>
         <Beschreibung>
           <misc:Lokalisirung Sprache="de">
-            <![CDATA[]]>
+            <![CDATA[Falls keine Taktik mit wert größer 1 gespielt wurde, können Taktiken im gesammtwert von 3 gespielt werden.]]>
           </misc:Lokalisirung>
         </Beschreibung>
         <misc:Kosten Id="GP" Wert="3" />
