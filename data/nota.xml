@@ -902,6 +902,7 @@
       <Verbreitung Wert="7" />
       <Ableitungen>
         <Ableitung Id="Kampfgespür" Anzahl="3" />
+        <Ableitung Id="Tanzen" Anzahl="8" />
       </Ableitungen>
     </Talent>
     <Talent Id="Stangenwaffen" Komplexität="B">
@@ -1308,6 +1309,9 @@
         </misc:Lokalisirung>
       </Beschreibung>
       <Verbreitung Wert="7" />
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Laufen" Anzahl="4" />
+      </talent:Ableitungen>
     </Talent>
     <Talent Id="Laufen" Komplexität="B">
       <Probe>
@@ -1326,6 +1330,9 @@
         </misc:Lokalisirung>
       </Beschreibung>
       <Verbreitung Wert="7" />
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Springen" Anzahl="8" />
+      </talent:Ableitungen>
     </Talent>
     <Talent Id="Beschatten" Komplexität="B">
       <Probe>
@@ -1344,6 +1351,11 @@
         </misc:Lokalisirung>
       </Beschreibung>
       <Verbreitung Wert="7" />
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Wahrnehmung" Anzahl="4" />
+        <talent:Ableitung Id="Hören" Anzahl="3" />
+        <talent:Ableitung Id="Sehen" Anzahl="3" />
+      </talent:Ableitungen>
     </Talent>
     <Talent Id="Gewichtstemmen" Komplexität="B">
       <Probe>
@@ -1398,6 +1410,9 @@
         </misc:Lokalisirung>
       </Beschreibung>
       <Verbreitung Wert="7" />
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Akrobatik" Anzahl="3" />
+      </talent:Ableitungen>
     </Talent>
     <Talent Id="Akrobatik" Komplexität="B">
       <Probe>
@@ -1416,6 +1431,9 @@
         </misc:Lokalisirung>
       </Beschreibung>
       <Verbreitung Wert="7" />
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Akrobatik" Anzahl="4" />
+      </talent:Ableitungen>
     </Talent>
     <Talent Id="Fingerübungen" Komplexität="B">
       <Probe>
@@ -1452,6 +1470,11 @@
         </misc:Lokalisirung>
       </Beschreibung>
       <Verbreitung Wert="7" />
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Fingerübungen" Anzahl="5" />
+        <talent:Ableitung Id="Akrobatik" Anzahl="3" />
+        <talent:Ableitung Id="Körperbeherschung" Anzahl="3" />
+      </talent:Ableitungen>
     </Talent>
     <Talent Id="Schleichen" Komplexität="B">
       <Probe>
@@ -1470,6 +1493,9 @@
         </misc:Lokalisirung>
       </Beschreibung>
       <Verbreitung Wert="7" />
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Körperbeherschung" Anzahl="3" />
+      </talent:Ableitungen>
     </Talent>
     <Talent Id="Fliegen" Komplexität="B">
       <Probe>
@@ -1488,6 +1514,9 @@
         </misc:Lokalisirung>
       </Beschreibung>
       <Verbreitung Wert="7" />
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Körperbeherschung" Anzahl="3" />
+      </talent:Ableitungen>
     </Talent>
 
     <Talent Id="Gaukeleien" Komplexität="B">
@@ -1507,6 +1536,11 @@
         </misc:Lokalisirung>
       </Beschreibung>
       <Verbreitung Wert="7" />
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Körperbeherschung" Anzahl="4" />
+        <talent:Ableitung Id="Fingerübungen" Anzahl="3" />
+      </talent:Ableitungen>
+
     </Talent>
 
     <Talent Id="Reiten" Komplexität="B">
@@ -1526,6 +1560,10 @@
         </misc:Lokalisirung>
       </Beschreibung>
       <Verbreitung Wert="7" />
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Körperbeherschung" Anzahl="3" />
+        <talent:Ableitung Id="Tierkunde" Anzahl="5" />
+      </talent:Ableitungen>
     </Talent>
 
     <Talent Id="Sich Verstecken" Komplexität="B">
