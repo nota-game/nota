@@ -1495,6 +1495,9 @@
       <Verbreitung Wert="7" />
       <talent:Ableitungen>
         <talent:Ableitung Id="Körperbeherschung" Anzahl="3" />
+        <talent:Ableitung Id="Wahrnehmung" Anzahl="4" />
+        <talent:Ableitung Id="Sehen" Anzahl="5" />
+        <talent:Ableitung Id="Hören" Anzahl="5" />
       </talent:Ableitungen>
     </Talent>
     <Talent Id="Fliegen" Komplexität="B">
@@ -1583,6 +1586,9 @@
         </misc:Lokalisirung>
       </Beschreibung>
       <Verbreitung Wert="7" />
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Körperbeherschung" Anzahl="4" />
+      </talent:Ableitungen>
     </Talent>
 
     <Talent Id="Singen" Komplexität="B">
@@ -1602,6 +1608,10 @@
         </misc:Lokalisirung>
       </Beschreibung>
       <Verbreitung Wert="7" />
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Körperbeherschung" Anzahl="7" />
+        <talent:Ableitung Id="Stimmen Imitieren" Anzahl="7" />
+      </talent:Ableitungen>
     </Talent>
 
     <Talent Id="Skifahren" Komplexität="B">
@@ -1621,6 +1631,9 @@
         </misc:Lokalisirung>
       </Beschreibung>
       <Verbreitung Wert="7" />
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Körperbeherschung" Anzahl="7" />
+      </talent:Ableitungen>
     </Talent>
 
     <Talent Id="Stimmen Imitieren" Komplexität="B">
@@ -1640,6 +1653,10 @@
         </misc:Lokalisirung>
       </Beschreibung>
       <Verbreitung Wert="7" />
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Körperbeherschung" Anzahl="7" />
+        <talent:Ableitung Id="Singen" Anzahl="7" />
+      </talent:Ableitungen>
     </Talent>
 
     <Talent Id="Taschendiebstahl" Komplexität="B">
@@ -1659,6 +1676,10 @@
         </misc:Lokalisirung>
       </Beschreibung>
       <Verbreitung Wert="7" />
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Fingerübungen" Anzahl="3" />
+        <talent:Ableitung Id="Gaukeleien" Anzahl="5" />
+      </talent:Ableitungen>
     </Talent>
 
     <Talent Id="Zechen" Komplexität="B">
@@ -1696,6 +1717,11 @@
         </misc:Lokalisirung>
       </Beschreibung>
       <Verbreitung Wert="7" />
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Körperbeherschung" Anzahl="3" />
+        <talent:Ableitung Id="Fesseln" Anzahl="5" />
+      </talent:Ableitungen>
+
     </Talent>
   </Talente>
   <Talente xmlns="http://nota.org/schema/talent.xsd" KategorieId="Geist">
@@ -1710,7 +1736,7 @@
       <Probe>
         <Klugheit />
         <Intuition />
-        <Konstitution />
+        <talent:Fokus />
       </Probe>
       <Name>
         <misc:Lokalisirung Sprache="de">
@@ -1723,6 +1749,11 @@
         </misc:Lokalisirung>
       </Beschreibung>
       <Verbreitung Wert="7" />
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Wahrnehmung" Anzahl="5" />
+        <talent:Ableitung Id="Sehen" Anzahl="3" />
+      </talent:Ableitungen>
+
     </Talent>
 
     <Talent Id="Orientierung" Komplexität="B">
@@ -1896,6 +1927,11 @@
         </misc:Lokalisirung>
       </Beschreibung>
       <Verbreitung Wert="7" />
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Wahrnehmung" Anzahl="5" />
+        <talent:Ableitung Id="Seelsorge" Anzahl="3" />
+      </talent:Ableitungen>
+
     </Talent>
     <Talent Id="Verführen" Komplexität="B">
       <Probe>
@@ -1914,6 +1950,11 @@
         </misc:Lokalisirung>
       </Beschreibung>
       <Verbreitung Wert="7" />
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Wahrnehmung" Anzahl="5" />
+        <talent:Ableitung Id="Menschenkentniss" Anzahl="3" />
+      </talent:Ableitungen>
+
     </Talent>
     <Talent Id="Lügen" Komplexität="B">
       <Probe>
@@ -1932,6 +1973,10 @@
         </misc:Lokalisirung>
       </Beschreibung>
       <Verbreitung Wert="7" />
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Menschenkentniss" Anzahl="3" />
+        <talent:Ableitung Id="Überreden" Anzahl="5" />
+      </talent:Ableitungen>
     </Talent>
     <Talent Id="Überreden" Komplexität="B">
       <Probe>
@@ -1950,6 +1995,10 @@
         </misc:Lokalisirung>
       </Beschreibung>
       <Verbreitung Wert="7" />
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Menschenkentniss" Anzahl="3" />
+        <talent:Ableitung Id="Lügen" Anzahl="3" />
+      </talent:Ableitungen>
     </Talent>
     <Talent Id="Einschüchtern" Komplexität="B">
       <Probe>
@@ -1968,6 +2017,10 @@
         </misc:Lokalisirung>
       </Beschreibung>
       <Verbreitung Wert="7" />
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Menschenkentniss" Anzahl="5" />
+        <talent:Ableitung Id="Überreden" Anzahl="4" />
+      </talent:Ableitungen>
     </Talent>
 
     <Talent Id="Lehren" Komplexität="B">
@@ -1987,6 +2040,10 @@
         </misc:Lokalisirung>
       </Beschreibung>
       <Verbreitung Wert="7" />
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Menschenkentniss" Anzahl="4" />
+        <talent:Ableitung Id="Überreden" Anzahl="6" />
+      </talent:Ableitungen>
     </Talent>
 
     <Talent Id="Schauspielerei" Komplexität="B">
@@ -2006,6 +2063,11 @@
         </misc:Lokalisirung>
       </Beschreibung>
       <Verbreitung Wert="7" />
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Menschenkentniss" Anzahl="4" />
+        <talent:Ableitung Id="Überreden" Anzahl="7" />
+        <talent:Ableitung Id="Lügen" Anzahl="7" />
+      </talent:Ableitungen>
     </Talent>
 
     <Talent Id="Schriftlicher Ausdruck" Komplexität="B">
@@ -2025,6 +2087,11 @@
         </misc:Lokalisirung>
       </Beschreibung>
       <Verbreitung Wert="7" />
+      <talent:Level Wert="1">
+        <talent:Voraussetzung>
+          <misc:Tag Id="Lesen/Schreiben" />
+        </talent:Voraussetzung>
+      </talent:Level>
     </Talent>
     <Talent Id="Etikette" Komplexität="B">
       <Probe>
@@ -2061,6 +2128,20 @@
         </misc:Lokalisirung>
       </Beschreibung>
       <Verbreitung Wert="7" />
+      <talent:Level Wert="4">
+        <talent:Voraussetzung>
+          <talent:Talent Id="Menschenkentniss" Level="5" />
+        </talent:Voraussetzung>
+      </talent:Level>
+      <talent:Level Wert="8">
+        <talent:Voraussetzung>
+          <talent:Talent Id="Menschenkentniss" Level="10" />
+        </talent:Voraussetzung>
+      </talent:Level>
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Menschenkentniss" Anzahl="4" />
+        <talent:Ableitung Id="Überreden" Anzahl="7" />
+      </talent:Ableitungen>
     </Talent>
 
 
@@ -2100,6 +2181,10 @@
         </misc:Lokalisirung>
       </Beschreibung>
       <Verbreitung Wert="7" />
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Körperbeherschung" Anzahl="3" />
+      </talent:Ableitungen>
+
     </Talent>
     <!--Wissen BEGINN-->
   </Talente>
@@ -2258,6 +2343,18 @@
         </misc:Lokalisirung>
       </Beschreibung>
       <Verbreitung Wert="7" />
+      <talent:Level Wert="1">
+        <talent:Voraussetzung>
+          <misc:And>
+            <misc:Tag Id='Lesen/Schreiben'></misc:Tag>
+            <talent:Talent Id="Rechnen" Level="4" />
+          </misc:And>
+        </talent:Voraussetzung>
+      </talent:Level>
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Recherche" Anzahl="8" />
+        <talent:Ableitung Id="Rechnen" Anzahl="5" />
+      </talent:Ableitungen>
     </Talent>
     <Talent Id="Medizin" Komplexität="B">
       <Probe>
@@ -2276,6 +2373,15 @@
         </misc:Lokalisirung>
       </Beschreibung>
       <Verbreitung Wert="7" />
+      <talent:Level Wert="8">
+        <talent:Voraussetzung>
+          <talent:Talent Id="Anatomie" Level="1" />
+        </talent:Voraussetzung>
+      </talent:Level>
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Anatomie" Anzahl="5" />
+        <talent:Ableitung Id="Pflanzenkunde" Anzahl="8" />
+      </talent:Ableitungen>
     </Talent>
     <Talent Id="Tierkunde" Komplexität="B">
       <Probe>
@@ -2312,6 +2418,9 @@
         </misc:Lokalisirung>
       </Beschreibung>
       <Verbreitung Wert="7" />
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Medizin" Anzahl="5" />
+      </talent:Ableitungen>
     </Talent>
     <Talent Id="Kunst" Komplexität="B">
       <Probe>
@@ -2348,6 +2457,12 @@
         </misc:Lokalisirung>
       </Beschreibung>
       <Verbreitung Wert="7" />
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Pflanzenkunde" Anzahl="4" />
+        <talent:Ableitung Id="Gesteinskunde" Anzahl="4" />
+        <talent:Ableitung Id="Hüttenkunde" Anzahl="8" />
+        <talent:Ableitung Id="Magiekunde" Anzahl="7" />
+      </talent:Ableitungen>
     </Talent>
     <Talent Id="Wettervorhersage" Komplexität="B">
       <Probe>
@@ -2405,9 +2520,19 @@
         </misc:Lokalisirung>
       </Beschreibung>
       <Verbreitung Wert="7" />
+      <talent:Level Wert="5">
+        <talent:Voraussetzung>
+          <talent:Talent Id="Rechnen" Level="4" />
+        </talent:Voraussetzung>
+      </talent:Level>
+      <talent:Level Wert="8">
+        <talent:Voraussetzung>
+          <fertigkeit:Fertigkeit Id="Geometrie" />
+        </talent:Voraussetzung>
+      </talent:Level>
     </Talent>
 
-    <Talent Id="Geselchaftsspiel" Komplexität="B">
+    <Talent Id="Geselchaftsspiele" Komplexität="B">
       <Probe>
         <Klugheit />
         <Klugheit />
@@ -2424,6 +2549,9 @@
         </misc:Lokalisirung>
       </Beschreibung>
       <Verbreitung Wert="7" />
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Kriegskunst" Anzahl="7" />
+      </talent:Ableitungen>
     </Talent>
 
     <Talent Id="Geschichtswissen" Komplexität="B">
@@ -2443,6 +2571,10 @@
         </misc:Lokalisirung>
       </Beschreibung>
       <Verbreitung Wert="7" />
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Religion" Anzahl="5" />
+        <talent:Ableitung Id="Mystik" Anzahl="5" />
+      </talent:Ableitungen>
     </Talent>
 
     <Talent Id="Mystik" Komplexität="B">
@@ -2462,6 +2594,9 @@
         </misc:Lokalisirung>
       </Beschreibung>
       <Verbreitung Wert="7" />
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Religion" Anzahl="3" />
+      </talent:Ableitungen>
     </Talent>
     <Talent Id="Religion" Komplexität="B">
       <Probe>
@@ -2480,6 +2615,9 @@
         </misc:Lokalisirung>
       </Beschreibung>
       <Verbreitung Wert="7" />
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Mystik" Anzahl="3" />
+      </talent:Ableitungen>
     </Talent>
 
     <Talent Id="Heraldik" Komplexität="B">
@@ -2499,6 +2637,9 @@
         </misc:Lokalisirung>
       </Beschreibung>
       <Verbreitung Wert="7" />
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Staatskunst" Anzahl="5" />
+      </talent:Ableitungen>
     </Talent>
 
     <Talent Id="Hüttenkunde" Komplexität="B">
@@ -2518,6 +2659,9 @@
         </misc:Lokalisirung>
       </Beschreibung>
       <Verbreitung Wert="7" />
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Gesteinskunde" Anzahl="4" />
+      </talent:Ableitungen>
     </Talent>
 
     <Talent Id="Kriegskunst" Komplexität="B">
@@ -2537,6 +2681,9 @@
         </misc:Lokalisirung>
       </Beschreibung>
       <Verbreitung Wert="7" />
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Geselchaftsspiele" Anzahl="7" />
+      </talent:Ableitungen>
     </Talent>
 
     <Talent Id="Kryptographie" Komplexität="B">
@@ -2556,6 +2703,24 @@
         </misc:Lokalisirung>
       </Beschreibung>
       <Verbreitung Wert="7" />
+      <talent:Level Wert="1">
+        <talent:Voraussetzung>
+          <misc:And>
+            <fertigkeit:Fertigkeit Id="Höhere Mathematik" />
+            <misc:Tag Id="Lesen/Schreiben" />
+          </misc:And>
+        </talent:Voraussetzung>
+      </talent:Level>
+      <talent:Level Wert="11">
+        <talent:Voraussetzung>
+          <fertigkeit:Fertigkeit Id="Höhere Mathematik" Stufe="2" />
+        </talent:Voraussetzung>
+      </talent:Level>
+      <talent:Level Wert="15">
+        <talent:Voraussetzung>
+          <fertigkeit:Fertigkeit Id="Geometrie" Stufe="2" />
+        </talent:Voraussetzung>
+      </talent:Level>
     </Talent>
 
     <Talent Id="Magiekunde" Komplexität="B">
@@ -2594,6 +2759,26 @@
         </misc:Lokalisirung>
       </Beschreibung>
       <Verbreitung Wert="7" />
+      <talent:Level Wert="5">
+        <talent:Voraussetzung>
+          <talent:Talent Id="Rechnen" Level="5" />
+        </talent:Voraussetzung>
+      </talent:Level>
+      <talent:Level Wert="8">
+        <talent:Voraussetzung>
+          <fertigkeit:Fertigkeit Id="Geometrie" />
+        </talent:Voraussetzung>
+      </talent:Level>
+      <talent:Level Wert="10">
+        <talent:Voraussetzung>
+          <fertigkeit:Fertigkeit Id="Höhere Mathematik" />
+        </talent:Voraussetzung>
+      </talent:Level>
+      <talent:Level Wert="15">
+        <talent:Voraussetzung>
+          <fertigkeit:Fertigkeit Id="Höhere Mathematik" Stufe="2" />
+        </talent:Voraussetzung>
+      </talent:Level>
     </Talent>
 
     <Talent Id="Philosophie" Komplexität="B">
@@ -2726,6 +2911,10 @@
         </misc:Lokalisirung>
       </Beschreibung>
       <Verbreitung Wert="7" />
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Pflanzenkunde" Anzahl="5" />
+        <talent:Ableitung Id="Alchemie" Anzahl="5" />
+      </talent:Ableitungen>
     </Talent>
     <Talent Id="Krankheitskunde" Komplexität="B">
       <Probe>
@@ -2771,6 +2960,16 @@
         </misc:Lokalisirung>
       </Beschreibung>
       <Verbreitung Wert="7" />
+      <talent:Level Wert="4">
+        <talent:Voraussetzung>
+          <talent:Talent Id="Alchemischeswissen" Level="1" />
+        </talent:Voraussetzung>
+      </talent:Level>
+      <talent:Level Wert="8">
+        <talent:Voraussetzung>
+          <talent:Talent Id="Alchemischeswissen" Level="5" />
+        </talent:Voraussetzung>
+      </talent:Level>
     </Talent>
     <Talent Id="Backen" Komplexität="B">
       <Probe>
@@ -2789,8 +2988,14 @@
         </misc:Lokalisirung>
       </Beschreibung>
       <Verbreitung Wert="7" />
+      <talent:Level Wert="5">
+        <talent:Voraussetzung>
+          <talent:Talent Id="Richen und Schmeken" Level="3" />
+        </talent:Voraussetzung>
+      </talent:Level>
       <Ableitungen>
-        <Ableitung Id="Richen und Schmeken" Anzahl="3" />
+        <Ableitung Id="Richen und Schmeken" Anzahl="8" />
+        <Ableitung Id="Kochen" Anzahl="3" />
       </Ableitungen>
     </Talent>
     <Talent Id="Kochen" Komplexität="B">
@@ -2810,13 +3015,14 @@
         </misc:Lokalisirung>
       </Beschreibung>
       <Verbreitung Wert="7" />
-      <talent:Level Wert="4">
-        <Voraussetzung>
-          <Talent Id="Backen" Level="2" />
-        </Voraussetzung>
+      <talent:Level Wert="5">
+        <talent:Voraussetzung>
+          <talent:Talent Id="Richen und Schmeken" Level="3" />
+        </talent:Voraussetzung>
       </talent:Level>
+
       <Ableitungen>
-        <Ableitung Id="Backen" Anzahl="2" />
+        <Ableitung Id="Backen" Anzahl="3" />
       </Ableitungen>
     </Talent>
 
@@ -2837,6 +3043,15 @@
         </misc:Lokalisirung>
       </Beschreibung>
       <Verbreitung Wert="7" />
+      <talent:Level Wert="4">
+        <talent:Voraussetzung>
+          <talent:Talent Id="Tierkunde" Level="5" />
+        </talent:Voraussetzung>
+      </talent:Level>
+      <Ableitungen>
+        <Ableitung Id="Tierkunde" Anzahl="3" />
+      </Ableitungen>
+
     </Talent>
 
     <Talent Id="Ackerbau" Komplexität="B">
@@ -2856,44 +3071,10 @@
         </misc:Lokalisirung>
       </Beschreibung>
       <Verbreitung Wert="7" />
-    </Talent>
+      <Ableitungen>
+        <Ableitung Id="Pflanzenkunde" Anzahl="5" />
+      </Ableitungen>
 
-    <Talent Id="Alchimie" Komplexität="B">
-      <Probe>
-        <Mut />
-        <Klugheit />
-        <Präzision />
-      </Probe>
-      <Name>
-        <misc:Lokalisirung Sprache="de">
-          <![CDATA[Alchimie]]>
-        </misc:Lokalisirung>
-      </Name>
-      <Beschreibung>
-        <misc:Lokalisirung Sprache="de">
-          <![CDATA[]]>
-        </misc:Lokalisirung>
-      </Beschreibung>
-      <Verbreitung Wert="7" />
-    </Talent>
-
-    <Talent Id="Bauer" Komplexität="B">
-      <Probe>
-        <Klugheit />
-        <Präzision />
-        <Stärke />
-      </Probe>
-      <Name>
-        <misc:Lokalisirung Sprache="de">
-          <![CDATA[Bauer]]>
-        </misc:Lokalisirung>
-      </Name>
-      <Beschreibung>
-        <misc:Lokalisirung Sprache="de">
-          <![CDATA[]]>
-        </misc:Lokalisirung>
-      </Beschreibung>
-      <Verbreitung Wert="7" />
     </Talent>
 
     <Talent Id="Bergbau" Komplexität="B">
@@ -2913,6 +3094,9 @@
         </misc:Lokalisirung>
       </Beschreibung>
       <Verbreitung Wert="7" />
+      <Ableitungen>
+        <Ableitung Id="Gesteinskunde" Anzahl="5" />
+      </Ableitungen>
     </Talent>
 
     <Talent Id="Bogenbau" Komplexität="B">
@@ -2932,6 +3116,11 @@
         </misc:Lokalisirung>
       </Beschreibung>
       <Verbreitung Wert="7" />
+      <Ableitungen>
+        <Ableitung Id="Pfeilmacher" Anzahl="4" />
+        <talent:Ableitung Id="Holzbearbeitung" Anzahl="2" />
+      </Ableitungen>
+
     </Talent>
 
     <Talent Id="Pfeilmacher" Komplexität="B">
@@ -2951,6 +3140,10 @@
         </misc:Lokalisirung>
       </Beschreibung>
       <Verbreitung Wert="7" />
+      <Ableitungen>
+        <Ableitung Id="Bogenbau" Anzahl="4" />
+        <talent:Ableitung Id="Holzbearbeitung" Anzahl="2" />
+      </Ableitungen>
     </Talent>
 
     <Talent Id="Boote Fahren" Komplexität="B">
@@ -3185,6 +3378,15 @@
         </misc:Lokalisirung>
       </Beschreibung>
       <Verbreitung Wert="7" />
+      <talent:Level Wert="5">
+        <talent:Voraussetzung>
+          <talent:Talent Id="Rechnen" Level="4" />
+        </talent:Voraussetzung>
+      </talent:Level>
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Rechnen" Anzahl="5" />
+        <talent:Ableitung Id="Menschenkentniss" Anzahl="8" />
+      </talent:Ableitungen>
     </Talent>
 
     <Talent Id="Hauswirtschaft" Komplexität="B">
@@ -3224,6 +3426,9 @@
         </misc:Lokalisirung>
       </Beschreibung>
       <Verbreitung Wert="7" />
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Medizin" Anzahl="3" />
+      </talent:Ableitungen>
     </Talent>
 
     <Talent Id="Holzbearbeitung" Komplexität="B">
@@ -3281,6 +3486,16 @@
         </misc:Lokalisirung>
       </Beschreibung>
       <Verbreitung Wert="7" />
+      <talent:Level Wert="3">
+        <talent:Voraussetzung>
+          <talent:Talent Id="Zeichnen" Level="3" />
+        </talent:Voraussetzung>
+      </talent:Level>
+      <talent:Level Wert="10">
+        <talent:Voraussetzung>
+          <talent:Talent Id="Zeichnen" Level="5" />
+        </talent:Voraussetzung>
+      </talent:Level>
     </Talent>
 
 
@@ -3320,6 +3535,11 @@
         </misc:Lokalisirung>
       </Beschreibung>
       <Verbreitung Wert="7" />
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Kartographie" Anzahl="5" />
+        <talent:Ableitung Id="Malen" Anzahl="2" />
+      </talent:Ableitungen>
+
     </Talent>
     <Talent Id="Malen" Komplexität="B">
       <Probe>
@@ -3338,6 +3558,10 @@
         </misc:Lokalisirung>
       </Beschreibung>
       <Verbreitung Wert="7" />
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Kartographie" Anzahl="5" />
+        <talent:Ableitung Id="Zeichnen" Anzahl="2" />
+      </talent:Ableitungen>
     </Talent>
 
     <Talent Id="Maurer" Komplexität="B">
@@ -3414,6 +3638,9 @@
         </misc:Lokalisirung>
       </Beschreibung>
       <Verbreitung Wert="7" />
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Fingerübungen" Anzahl="5" />
+      </talent:Ableitungen>
     </Talent>
 
     <Talent Id="Schnaps brennen" Komplexität="B">
@@ -3452,6 +3679,9 @@
         </misc:Lokalisirung>
       </Beschreibung>
       <Verbreitung Wert="7" />
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Fingerübungen" Anzahl="5" />
+      </talent:Ableitungen>
     </Talent>
 
     <Talent Id="Seefahrt" Komplexität="B">
@@ -3471,6 +3701,10 @@
         </misc:Lokalisirung>
       </Beschreibung>
       <Verbreitung Wert="7" />
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Orientierung" Anzahl="5" />
+      </talent:Ableitungen>
+
     </Talent>
 
     <Talent Id="Seiler" Komplexität="B">
@@ -3585,6 +3819,9 @@
         </misc:Lokalisirung>
       </Beschreibung>
       <Verbreitung Wert="7" />
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Zeichnen" Anzahl="3" />
+      </talent:Ableitungen>
     </Talent>
 
     <Talent Id="Töpfern" Komplexität="B">
@@ -3623,6 +3860,9 @@
         </misc:Lokalisirung>
       </Beschreibung>
       <Verbreitung Wert="7" />
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Tierkunde" Anzahl="5" />
+      </talent:Ableitungen>
     </Talent>
 
     <Talent Id="Webkunst" Komplexität="B">
@@ -3680,6 +3920,9 @@
         </misc:Lokalisirung>
       </Beschreibung>
       <Verbreitung Wert="7" />
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Holzbearbeitung" Anzahl="3" />
+      </talent:Ableitungen>
     </Talent>
     <Talent Id="Fallenstellen" Komplexität="B">
       <Probe>
@@ -3771,15 +4014,59 @@
           <![CDATA[Kulturkunde Alan]]>
         </misc:Lokalisirung>
       </Name>
-      <fertigkeit:Stufe Kosten="95">
 
+      <fertigkeit:Stufe Kosten="10">
         <Beschreibung>
           <misc:Lokalisirung Sprache="de">
-            <![CDATA[Das Wissen um die Kultur der Alan]]>
+            <![CDATA[Die Weit verbreitesten informationen. Viele Vorurteile Positv wie negativ]]>
           </misc:Lokalisirung>
         </Beschreibung>
-        <Verbreitung Wert="3">
+        <Verbreitung Wert="6">
           <misc:Pfad Id="Alan" Verbreitung="7" />
+        </Verbreitung>
+      </fertigkeit:Stufe>
+
+      <fertigkeit:Stufe Kosten="35">
+        <Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Tiefgehenderes wissen der Kultur. Das verhalten kann aber immernoch als aussenseiter wahrgenommen werden]]>
+          </misc:Lokalisirung>
+        </Beschreibung>
+        <Verbreitung Wert="5">
+          <misc:Pfad Id="Alan" Verbreitung="7" />
+        </Verbreitung>
+      </fertigkeit:Stufe>
+
+      <fertigkeit:Stufe Kosten="55">
+        <Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Ein Wissen der Kultlur und verhaltensregln der in diese Kultur geborenen.]]>
+          </misc:Lokalisirung>
+        </Beschreibung>
+        <Verbreitung Wert="4">
+          <misc:Pfad Id="Alan" Verbreitung="7" />
+        </Verbreitung>
+      </fertigkeit:Stufe>
+
+      <fertigkeit:Stufe Kosten="60">
+        <Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Grundlagen und Hintergründe der Kultur, alte bräuche etc. Dinge die auch nicht jeder der Kultur angehörige kennt.]]>
+          </misc:Lokalisirung>
+        </Beschreibung>
+        <Verbreitung Wert="2">
+          <misc:Pfad Id="Alan" Verbreitung="4" />
+        </Verbreitung>
+      </fertigkeit:Stufe>
+
+      <fertigkeit:Stufe Kosten="90">
+        <Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Geheimes wissen welches nur wenige auserlesene kennen]]>
+          </misc:Lokalisirung>
+        </Beschreibung>
+        <Verbreitung Wert="1">
+          <misc:Pfad Id="Alan" Verbreitung="2" />
         </Verbreitung>
       </fertigkeit:Stufe>
     </Fertigkeit>
@@ -3812,6 +4099,62 @@
       </fertigkeit:Stufe>
     </Fertigkeit>
   </Fertigkeiten>
+  <Fertigkeiten xmlns="http://nota.org/schema/fertigkeit.xsd" KategorieId="Sprachen">
+    <fertigkeit:Kategorie>
+      <misc:Lokalisirung Sprache="de">
+        <![CDATA[Schriften]]>
+      </misc:Lokalisirung>
+    </fertigkeit:Kategorie>
+
+    <Fertigkeit Id="Arjunisch">
+      <Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Arjunisch]]>
+        </misc:Lokalisirung>
+      </Name>
+      <fertigkeit:Stufe Kosten="5">
+        <Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Arjunisch erkennen]]>
+          </misc:Lokalisirung>
+        </Beschreibung>
+        <Verbreitung Wert="7" />
+      </fertigkeit:Stufe>
+
+      <fertigkeit:Stufe Kosten="10">
+        <Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Einige Arjunisch Wörter. Wie essen ja,nein, etc… ]]>
+          </misc:Lokalisirung>
+        </Beschreibung>
+        <Verbreitung Wert="7" />
+      </fertigkeit:Stufe>
+      <fertigkeit:Stufe Kosten="35">
+        <Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Gebrochenes Arjunisch]]>
+          </misc:Lokalisirung>
+        </Beschreibung>
+        <Verbreitung Wert="7" />
+      </fertigkeit:Stufe>
+      <fertigkeit:Stufe Kosten="40">
+        <Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Arjunisch mit Aktzent]]>
+          </misc:Lokalisirung>
+        </Beschreibung>
+        <Verbreitung Wert="7" />
+      </fertigkeit:Stufe>
+      <fertigkeit:Stufe Kosten="60">
+        <Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Arjunisch Aktzent frei]]>
+          </misc:Lokalisirung>
+        </Beschreibung>
+        <Verbreitung Wert="7" />
+      </fertigkeit:Stufe>
+    </Fertigkeit>
+  </Fertigkeiten>
   <Fertigkeiten xmlns="http://nota.org/schema/fertigkeit.xsd" KategorieId="Handwerk">
     <fertigkeit:Kategorie>
       <misc:Lokalisirung Sprache="de">
@@ -3831,6 +4174,71 @@
           </misc:Lokalisirung>
         </fertigkeit:Beschreibung>
         <fertigkeit:Verbreitung Wert="4"></fertigkeit:Verbreitung>
+      </fertigkeit:Stufe>
+    </fertigkeit:Fertigkeit>
+  </Fertigkeiten>
+  <Fertigkeiten xmlns="http://nota.org/schema/fertigkeit.xsd" KategorieId="Wissen">
+    <fertigkeit:Kategorie>
+      <misc:Lokalisirung Sprache="de">
+        <![CDATA[Wissen]]>
+      </misc:Lokalisirung>
+    </fertigkeit:Kategorie>
+
+    <fertigkeit:Fertigkeit Id="Höhere Mathematik">
+      <fertigkeit:Name>
+        <misc:Lokalisirung Sprache="de">Höhere Mathematik</misc:Lokalisirung>
+      </fertigkeit:Name>
+      <fertigkeit:Stufe Kosten="30">
+        <fertigkeit:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Mathemati die über die Grundrechenarten hinausgeht Sowie die vewendung und umstellung einfacher Formeln]]>
+          </misc:Lokalisirung>
+        </fertigkeit:Beschreibung>
+        <fertigkeit:Verbreitung Wert="4"></fertigkeit:Verbreitung>
+        <fertigkeit:Voraussetzung>
+          <talent:Talent Id="Rechnen" Level="6" />
+        </fertigkeit:Voraussetzung>
+      </fertigkeit:Stufe>
+      <fertigkeit:Stufe Kosten="30">
+        <fertigkeit:Name>
+          <misc:Lokalisirung Sprache="de">Abstrakte Mathematik</misc:Lokalisirung>
+        </fertigkeit:Name>
+        <fertigkeit:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Beschäftigung mit unendlichkeit Differentialgleichungen]]>
+          </misc:Lokalisirung>
+        </fertigkeit:Beschreibung>
+        <fertigkeit:Verbreitung Wert="4"></fertigkeit:Verbreitung>
+        <fertigkeit:Voraussetzung>
+          <talent:Talent Id="Rechnen" Level="12" />
+        </fertigkeit:Voraussetzung>
+      </fertigkeit:Stufe>
+    </fertigkeit:Fertigkeit>
+    <fertigkeit:Fertigkeit Id="Geometrie">
+      <fertigkeit:Name>
+        <misc:Lokalisirung Sprache="de">Geometrie</misc:Lokalisirung>
+      </fertigkeit:Name>
+      <fertigkeit:Stufe Kosten="30">
+        <fertigkeit:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Beschäftigt sich mit Prakticher Geometrie]]>
+          </misc:Lokalisirung>
+        </fertigkeit:Beschreibung>
+        <fertigkeit:Verbreitung Wert="4"></fertigkeit:Verbreitung>
+        <fertigkeit:Voraussetzung>
+          <talent:Talent Id="Rechnen" Level="8" />
+        </fertigkeit:Voraussetzung>
+      </fertigkeit:Stufe>
+      <fertigkeit:Stufe Kosten="30">
+        <fertigkeit:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Nicht euklidiche Geometrie und Multidimensionale Räme.]]>
+          </misc:Lokalisirung>
+        </fertigkeit:Beschreibung>
+        <fertigkeit:Verbreitung Wert="4"></fertigkeit:Verbreitung>
+        <fertigkeit:Voraussetzung>
+          <talent:Talent Id="Rechnen" Level="12" />
+        </fertigkeit:Voraussetzung>
       </fertigkeit:Stufe>
     </fertigkeit:Fertigkeit>
   </Fertigkeiten>
