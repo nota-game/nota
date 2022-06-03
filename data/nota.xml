@@ -106,8 +106,8 @@
           </misc:Lokalisirung>
       </misc:Beschreibung>
     </misc:KostenDefinition>
-    <misc:TalentKostenFunktion KostenArt="EP" ResultType="total">
-      ceil(KOMPLEXITÄT_NUM * ((11/36)  LEVEL ^ 2 + (25/12)  LEVEL + (-25/18)  ))
+    <misc:TalentKostenFunktion KostenArt="EP" ResultType="differenz">
+      ceil(KOMPLEXITÄT_NUM * ((0.02125)  LEVEL ^ 2 + (0.95)  LEVEL + (0)  ))
     </misc:TalentKostenFunktion>
   </KostenDefinitionen>
   <GenerierungsDaten MinimumVerbreitung="3">

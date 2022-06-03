@@ -9,13 +9,10 @@ der hier abgebildeten Tabelle. Den Wert auf den man den TaB steigern möchte gib
 die Zeile an. Die Kosten beziehen sich immer auf eine Steigerung von dem
 Vorherigen TaB.
 
-Die Kosten sind so gehalten, das die gesamt Kosten um ein Talent der Komplexität
-*A* auf 10 zu steigern 50 Ep benötigt werden. Für Komplexität *B* fallen 100 Ep
-an, für *C* sind 150 Ep zu zahlen und für *Z* fallen 1300 Ep zu Buche. Dabei ist
-zu beachten das es günstiger sein kann ein Abgeleitetes Talent öfters zu
-steigern um einen Bonus zu erhalten anstelle den Basis Wert um eins zu erhöhen.
-Daher können die können die Kosten durchaus geringer ausfallen als zuerst
-vermutet.
+Dabei ist zu beachten das es günstiger sein kann ein Abgeleitetes Talent öfters
+zu steigern um einen Bonus zu erhalten anstelle den Basis Wert um eins zu
+erhöhen. Daher können die können die Kosten durchaus geringer ausfallen als
+zuerst vermutet.
 
 
 ~[KostenTabelle.xlsx]
