@@ -5124,7 +5124,7 @@ Ausserdem darf eine Waffe Plazieren Taktik die das selbe Ziel wie diese hat in d
           <Schnitt Schaden="2" />
         </Schaden>
         <Talente>
-          <ausstattung:Talent Id="Dolch" />
+          <ausstattung:Talent Id="Dolche" />
         </Talente>
       </Nahkampfwaffe>
 
@@ -5144,7 +5144,7 @@ Ausserdem darf eine Waffe Plazieren Taktik die das selbe Ziel wie diese hat in d
           <Schnitt Schaden="2" />
         </Schaden>
         <Talente>
-          <ausstattung:Talent Id="Stangenwaffe" />
+          <ausstattung:Talent Id="Stangenwaffen" />
         </Talente>
       </Nahkampfwaffe>
 
@@ -5167,7 +5167,7 @@ Ausserdem darf eine Waffe Plazieren Taktik die das selbe Ziel wie diese hat in d
           <Eigenschaft Id="Wiederharken" />
         </Eigenschaften>
         <Talente>
-          <ausstattung:Talent Id="Stangenwaffe" />
+          <ausstattung:Talent Id="Stangenwaffen" />
         </Talente>
       </Nahkampfwaffe>
 
@@ -5187,7 +5187,7 @@ Ausserdem darf eine Waffe Plazieren Taktik die das selbe Ziel wie diese hat in d
           <Schnitt Schaden="2" />
         </Schaden>
         <Talente>
-          <ausstattung:Talent Id="Stangenwaffe" />
+          <ausstattung:Talent Id="Stangenwaffen" />
         </Talente>
       </Nahkampfwaffe>
 
