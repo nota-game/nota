@@ -11,7 +11,7 @@ Vorherigen TaB.
 
 
 Die Formel lautet
-$\(Ep Kosten= (\frac{8.517}{400.000}Stufe^2+\frac{9.519}{10.000}Stufe) * Komplexität\)$
+$\(Ep Kosten= (\frac{1.689}{80.000}Stufe^2+\frac{1.888}{2.000}Stufe) * Komplexität\)$
 
 Dabei ist zu beachten das es günstiger sein kann ein Abgeleitetes Talent öfters
 zu steigern um einen Bonus zu erhalten anstelle den Basis Wert um eins zu
