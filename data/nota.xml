@@ -160,7 +160,7 @@
    https://www.rki.de/DE/Content/Gesundheitsmonitoring/Gesundheitsberichterstattung/GBEDownloadsB/KiGGS_Referenzperzentile.pdf?__blob=publicationFile -->
       <Art Id="Imp">
         <misc:Name>
-          <misc:Lokalisirung Sprache="de" Geschlecht="Mänlich">
+          <misc:Lokalisirung Sprache="de" Geschlecht="Männlich">
             <![CDATA[Imp]]>
           </misc:Lokalisirung>
           <misc:Lokalisirung Sprache="de" Geschlecht="Weiblich">
@@ -168,7 +168,7 @@
           </misc:Lokalisirung>
         </misc:Name>
         <Art>
-          <misc:Lokalisirung Sprache="de" Geschlecht="Mänlich">
+          <misc:Lokalisirung Sprache="de" Geschlecht="Männlich">
             <![CDATA[Primus]]>
           </misc:Lokalisirung>
         </Art>
@@ -186,7 +186,7 @@ Ihre Hautfarbe reicht von blass rosa bis zu Ash grau, wenn sie starker Sonnenstr
           </misc:Eigenschaften>
         </lebewesen:Mods>
         <Morphe>
-          <Morph Id="Mann" Geschlecht="Mänlich">
+          <Morph Id="Mann" Geschlecht="Männlich">
             <misc:Name>
               <misc:Lokalisirung Sprache="de">
                 <![CDATA[Mann]]>
@@ -201,7 +201,7 @@ Ihre Hautfarbe reicht von blass rosa bis zu Ash grau, wenn sie starker Sonnenstr
               <pfad:Pfad Id="Alan" />
             </StandardPfade>
             <lebewesen:Entwiklung>
-              <lebewesen:Reihe id="größe" einheit="m">
+              <lebewesen:Reihe id="größe" einheit="m" startAlter="12">
                 <misc:Name>
                   <misc:Lokalisirung Sprache="de">
                     <![CDATA[Größe]]>
@@ -209,6 +209,17 @@ Ihre Hautfarbe reicht von blass rosa bis zu Ash grau, wenn sie starker Sonnenstr
                 </misc:Name>
                 <lebewesen:Spalte Quantil="10">
                   <lebewesen:Wert>1</lebewesen:Wert>
+                  <lebewesen:Wert>2</lebewesen:Wert>
+                  <lebewesen:Wert>3</lebewesen:Wert>
+                  <lebewesen:Wert>4</lebewesen:Wert>
+                  <lebewesen:Wert>6</lebewesen:Wert>
+                  <lebewesen:Wert>8</lebewesen:Wert>
+                  <lebewesen:Wert>10</lebewesen:Wert>
+                  <lebewesen:Wert>11</lebewesen:Wert>
+                  <lebewesen:Wert>13</lebewesen:Wert>
+                  <lebewesen:Wert>13</lebewesen:Wert>
+                  <lebewesen:Wert>14</lebewesen:Wert>
+                  <lebewesen:Wert>14</lebewesen:Wert>
                 </lebewesen:Spalte>
               </lebewesen:Reihe>
             </lebewesen:Entwiklung>
