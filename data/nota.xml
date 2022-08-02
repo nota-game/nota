@@ -158,6 +158,786 @@
 
       <!-- Gewicht / Größe refernz
    https://www.rki.de/DE/Content/Gesundheitsmonitoring/Gesundheitsberichterstattung/GBEDownloadsB/KiGGS_Referenzperzentile.pdf?__blob=publicationFile -->
+      <Art Id="Proto">
+        <misc:Name>
+          <misc:Lokalisirung Sprache="de" Geschlecht="Männlich">
+            <![CDATA[Imp]]>
+          </misc:Lokalisirung>
+          <misc:Lokalisirung Sprache="de" Geschlecht="Weiblich">
+            <![CDATA[Impa]]>
+          </misc:Lokalisirung>
+        </misc:Name>
+        <Art>
+          <misc:Lokalisirung Sprache="de" Geschlecht="Männlich">
+            <![CDATA[Primus]]>
+          </misc:Lokalisirung>
+        </Art>
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[]]>
+          </misc:Lokalisirung>
+        </misc:Beschreibung>
+        <Morphe>
+          <Morph Id="Mann" Geschlecht="Männlich">
+            <misc:Name>
+              <misc:Lokalisirung Sprache="de">
+                <![CDATA[Mann]]>
+              </misc:Lokalisirung>
+            </misc:Name>
+            <misc:Beschreibung>
+              <misc:Lokalisirung Sprache="de">
+                <![CDATA[]]>
+              </misc:Lokalisirung>
+            </misc:Beschreibung>
+            <StandardPfade>
+              <pfad:Pfad Id="Alan" />
+            </StandardPfade>
+            <lebewesen:Entwiklung>
+              <lebewesen:Reihe id="größe" einheit="m" startAlter="0">
+                <misc:Name>
+                  <misc:Lokalisirung Sprache="de">
+                    <![CDATA[Größe]]>
+                  </misc:Lokalisirung>
+                </misc:Name>
+                <lebewesen:Spalte Quantil="3">
+                  <lebewesen:Wert>47.77</lebewesen:Wert>
+                  <lebewesen:Wert>63.84</lebewesen:Wert>
+                  <lebewesen:Wert>71.95</lebewesen:Wert>
+                  <lebewesen:Wert>77.72</lebewesen:Wert>
+                  <lebewesen:Wert>82.57</lebewesen:Wert>
+                  <lebewesen:Wert>86.78</lebewesen:Wert>
+                  <lebewesen:Wert>90.55</lebewesen:Wert>
+                  <lebewesen:Wert>93.96</lebewesen:Wert>
+                  <lebewesen:Wert>97.12</lebewesen:Wert>
+                  <lebewesen:Wert>100.12</lebewesen:Wert>
+                  <lebewesen:Wert>103.04</lebewesen:Wert>
+                  <lebewesen:Wert>105.97</lebewesen:Wert>
+                  <lebewesen:Wert>108.9</lebewesen:Wert>
+                  <lebewesen:Wert>111.95</lebewesen:Wert>
+                  <lebewesen:Wert>115.03</lebewesen:Wert>
+                  <lebewesen:Wert>117.98</lebewesen:Wert>
+                  <lebewesen:Wert>120.68</lebewesen:Wert>
+                  <lebewesen:Wert>123.16</lebewesen:Wert>
+                  <lebewesen:Wert>125.5</lebewesen:Wert>
+                  <lebewesen:Wert>127.69</lebewesen:Wert>
+                  <lebewesen:Wert>129.77</lebewesen:Wert>
+                  <lebewesen:Wert>131.76</lebewesen:Wert>
+                  <lebewesen:Wert>133.72</lebewesen:Wert>
+                  <lebewesen:Wert>135.72</lebewesen:Wert>
+                  <lebewesen:Wert>137.87</lebewesen:Wert>
+                  <lebewesen:Wert>140.36</lebewesen:Wert>
+                  <lebewesen:Wert>143.4</lebewesen:Wert>
+                  <lebewesen:Wert>146.94</lebewesen:Wert>
+                  <lebewesen:Wert>150.75</lebewesen:Wert>
+                  <lebewesen:Wert>154.53</lebewesen:Wert>
+                  <lebewesen:Wert>157.94</lebewesen:Wert>
+                  <lebewesen:Wert>160.72</lebewesen:Wert>
+                  <lebewesen:Wert>162.74</lebewesen:Wert>
+                  <lebewesen:Wert>164.09</lebewesen:Wert>
+                  <lebewesen:Wert>164.97</lebewesen:Wert>
+                  <lebewesen:Wert>165.59</lebewesen:Wert>
+                  <lebewesen:Wert>166.11</lebewesen:Wert>
+                </lebewesen:Spalte>
+                <lebewesen:Spalte Quantil="10">
+                  <lebewesen:Wert>49.17</lebewesen:Wert>
+                  <lebewesen:Wert>65.25</lebewesen:Wert>
+                  <lebewesen:Wert>73.41</lebewesen:Wert>
+                  <lebewesen:Wert>79.33</lebewesen:Wert>
+                  <lebewesen:Wert>84.32</lebewesen:Wert>
+                  <lebewesen:Wert>88.67</lebewesen:Wert>
+                  <lebewesen:Wert>92.59</lebewesen:Wert>
+                  <lebewesen:Wert>96.14</lebewesen:Wert>
+                  <lebewesen:Wert>99.43</lebewesen:Wert>
+                  <lebewesen:Wert>102.54</lebewesen:Wert>
+                  <lebewesen:Wert>105.58</lebewesen:Wert>
+                  <lebewesen:Wert>108.62</lebewesen:Wert>
+                  <lebewesen:Wert>111.66</lebewesen:Wert>
+                  <lebewesen:Wert>114.81</lebewesen:Wert>
+                  <lebewesen:Wert>117.98</lebewesen:Wert>
+                  <lebewesen:Wert>121.03</lebewesen:Wert>
+                  <lebewesen:Wert>123.83</lebewesen:Wert>
+                  <lebewesen:Wert>126.43</lebewesen:Wert>
+                  <lebewesen:Wert>128.9</lebewesen:Wert>
+                  <lebewesen:Wert>131.23</lebewesen:Wert>
+                  <lebewesen:Wert>133.47</lebewesen:Wert>
+                  <lebewesen:Wert>135.64</lebewesen:Wert>
+                  <lebewesen:Wert>137.8</lebewesen:Wert>
+                  <lebewesen:Wert>140.02</lebewesen:Wert>
+                  <lebewesen:Wert>142.42</lebewesen:Wert>
+                  <lebewesen:Wert>145.16</lebewesen:Wert>
+                  <lebewesen:Wert>148.42</lebewesen:Wert>
+                  <lebewesen:Wert>152.13</lebewesen:Wert>
+                  <lebewesen:Wert>155.97</lebewesen:Wert>
+                  <lebewesen:Wert>159.67</lebewesen:Wert>
+                  <lebewesen:Wert>162.88</lebewesen:Wert>
+                  <lebewesen:Wert>165.44</lebewesen:Wert>
+                  <lebewesen:Wert>167.28</lebewesen:Wert>
+                  <lebewesen:Wert>168.51</lebewesen:Wert>
+                  <lebewesen:Wert>169.3</lebewesen:Wert>
+                  <lebewesen:Wert>169.87</lebewesen:Wert>
+                  <lebewesen:Wert>170.33</lebewesen:Wert>
+
+                </lebewesen:Spalte>
+                <lebewesen:Spalte Quantil="25">
+                  <lebewesen:Wert>50.58</lebewesen:Wert>
+                  <lebewesen:Wert>66.71</lebewesen:Wert>
+                  <lebewesen:Wert>74.92</lebewesen:Wert>
+                  <lebewesen:Wert>80.99</lebewesen:Wert>
+                  <lebewesen:Wert>86.14</lebewesen:Wert>
+                  <lebewesen:Wert>90.64</lebewesen:Wert>
+                  <lebewesen:Wert>94.72</lebewesen:Wert>
+                  <lebewesen:Wert>98.41</lebewesen:Wert>
+                  <lebewesen:Wert>101.83</lebewesen:Wert>
+                  <lebewesen:Wert>105.06</lebewesen:Wert>
+                  <lebewesen:Wert>108.22</lebewesen:Wert>
+                  <lebewesen:Wert>111.37</lebewesen:Wert>
+                  <lebewesen:Wert>114.52</lebewesen:Wert>
+                  <lebewesen:Wert>117.76</lebewesen:Wert>
+                  <lebewesen:Wert>121.03</lebewesen:Wert>
+                  <lebewesen:Wert>124.19</lebewesen:Wert>
+                  <lebewesen:Wert>127.09</lebewesen:Wert>
+                  <lebewesen:Wert>129.8</lebewesen:Wert>
+                  <lebewesen:Wert>132.39</lebewesen:Wert>
+                  <lebewesen:Wert>134.86</lebewesen:Wert>
+                  <lebewesen:Wert>137.27</lebewesen:Wert>
+                  <lebewesen:Wert>139.61</lebewesen:Wert>
+                  <lebewesen:Wert>141.98</lebewesen:Wert>
+                  <lebewesen:Wert>144.42</lebewesen:Wert>
+                  <lebewesen:Wert>147.04</lebewesen:Wert>
+                  <lebewesen:Wert>150.02</lebewesen:Wert>
+                  <lebewesen:Wert>153.5</lebewesen:Wert>
+                  <lebewesen:Wert>157.35</lebewesen:Wert>
+                  <lebewesen:Wert>161.2</lebewesen:Wert>
+                  <lebewesen:Wert>164.77</lebewesen:Wert>
+                  <lebewesen:Wert>167.78</lebewesen:Wert>
+                  <lebewesen:Wert>170.12</lebewesen:Wert>
+                  <lebewesen:Wert>171.78</lebewesen:Wert>
+                  <lebewesen:Wert>172.88</lebewesen:Wert>
+                  <lebewesen:Wert>173.59</lebewesen:Wert>
+                  <lebewesen:Wert>174.09</lebewesen:Wert>
+                  <lebewesen:Wert>174.51</lebewesen:Wert>
+
+                </lebewesen:Spalte>
+                <lebewesen:Spalte Quantil="50">
+                  <lebewesen:Wert>52.09</lebewesen:Wert>
+                  <lebewesen:Wert>68.37</lebewesen:Wert>
+                  <lebewesen:Wert>76.63</lebewesen:Wert>
+                  <lebewesen:Wert>82.88</lebewesen:Wert>
+                  <lebewesen:Wert>88.21</lebewesen:Wert>
+                  <lebewesen:Wert>92.88</lebewesen:Wert>
+                  <lebewesen:Wert>97.14</lebewesen:Wert>
+                  <lebewesen:Wert>101</lebewesen:Wert>
+                  <lebewesen:Wert>104.56</lebewesen:Wert>
+                  <lebewesen:Wert>107.94</lebewesen:Wert>
+                  <lebewesen:Wert>111.23</lebewesen:Wert>
+                  <lebewesen:Wert>114.51</lebewesen:Wert>
+                  <lebewesen:Wert>117.78</lebewesen:Wert>
+                  <lebewesen:Wert>121.13</lebewesen:Wert>
+                  <lebewesen:Wert>124.51</lebewesen:Wert>
+                  <lebewesen:Wert>127.77</lebewesen:Wert>
+                  <lebewesen:Wert>130.79</lebewesen:Wert>
+                  <lebewesen:Wert>133.62</lebewesen:Wert>
+                  <lebewesen:Wert>136.35</lebewesen:Wert>
+                  <lebewesen:Wert>138.98</lebewesen:Wert>
+                  <lebewesen:Wert>141.55</lebewesen:Wert>
+                  <lebewesen:Wert>144.09</lebewesen:Wert>
+                  <lebewesen:Wert>146.68</lebewesen:Wert>
+                  <lebewesen:Wert>149.35</lebewesen:Wert>
+                  <lebewesen:Wert>152.22</lebewesen:Wert>
+                  <lebewesen:Wert>155.43</lebewesen:Wert>
+                  <lebewesen:Wert>159.13</lebewesen:Wert>
+                  <lebewesen:Wert>163.1</lebewesen:Wert>
+                  <lebewesen:Wert>166.93</lebewesen:Wert>
+                  <lebewesen:Wert>170.35</lebewesen:Wert>
+                  <lebewesen:Wert>173.12</lebewesen:Wert>
+                  <lebewesen:Wert>175.2</lebewesen:Wert>
+                  <lebewesen:Wert>176.66</lebewesen:Wert>
+                  <lebewesen:Wert>177.62</lebewesen:Wert>
+                  <lebewesen:Wert>178.24</lebewesen:Wert>
+                  <lebewesen:Wert>178.68</lebewesen:Wert>
+                  <lebewesen:Wert>179.04</lebewesen:Wert>
+
+                </lebewesen:Spalte>
+                <lebewesen:Spalte Quantil="75">
+                  <lebewesen:Wert>53.69</lebewesen:Wert>
+                  <lebewesen:Wert>70.07</lebewesen:Wert>
+                  <lebewesen:Wert>78.37</lebewesen:Wert>
+                  <lebewesen:Wert>84.82</lebewesen:Wert>
+                  <lebewesen:Wert>90.33</lebewesen:Wert>
+                  <lebewesen:Wert>95.18</lebewesen:Wert>
+                  <lebewesen:Wert>99.63</lebewesen:Wert>
+                  <lebewesen:Wert>103.66</lebewesen:Wert>
+                  <lebewesen:Wert>107.38</lebewesen:Wert>
+                  <lebewesen:Wert>110.89</lebewesen:Wert>
+                  <lebewesen:Wert>114.33</lebewesen:Wert>
+                  <lebewesen:Wert>117.74</lebewesen:Wert>
+                  <lebewesen:Wert>121.13</lebewesen:Wert>
+                  <lebewesen:Wert>124.59</lebewesen:Wert>
+                  <lebewesen:Wert>128.06</lebewesen:Wert>
+                  <lebewesen:Wert>131.44</lebewesen:Wert>
+                  <lebewesen:Wert>134.57</lebewesen:Wert>
+                  <lebewesen:Wert>137.52</lebewesen:Wert>
+                  <lebewesen:Wert>140.38</lebewesen:Wert>
+                  <lebewesen:Wert>143.16</lebewesen:Wert>
+                  <lebewesen:Wert>145.91</lebewesen:Wert>
+                  <lebewesen:Wert>148.64</lebewesen:Wert>
+                  <lebewesen:Wert>151.43</lebewesen:Wert>
+                  <lebewesen:Wert>154.33</lebewesen:Wert>
+                  <lebewesen:Wert>157.42</lebewesen:Wert>
+                  <lebewesen:Wert>160.86</lebewesen:Wert>
+                  <lebewesen:Wert>164.73</lebewesen:Wert>
+                  <lebewesen:Wert>168.8</lebewesen:Wert>
+                  <lebewesen:Wert>172.59</lebewesen:Wert>
+                  <lebewesen:Wert>175.83</lebewesen:Wert>
+                  <lebewesen:Wert>178.35</lebewesen:Wert>
+                  <lebewesen:Wert>180.18</lebewesen:Wert>
+                  <lebewesen:Wert>181.44</lebewesen:Wert>
+                  <lebewesen:Wert>182.26</lebewesen:Wert>
+                  <lebewesen:Wert>182.78</lebewesen:Wert>
+                  <lebewesen:Wert>183.16</lebewesen:Wert>
+                  <lebewesen:Wert>183.47</lebewesen:Wert>
+
+                </lebewesen:Spalte>
+                <lebewesen:Spalte Quantil="90">
+                  <lebewesen:Wert>55.1</lebewesen:Wert>
+                  <lebewesen:Wert>71.62</lebewesen:Wert>
+                  <lebewesen:Wert>79.98</lebewesen:Wert>
+                  <lebewesen:Wert>86.61</lebewesen:Wert>
+                  <lebewesen:Wert>92.29</lebewesen:Wert>
+                  <lebewesen:Wert>97.3</lebewesen:Wert>
+                  <lebewesen:Wert>101.93</lebewesen:Wert>
+                  <lebewesen:Wert>106.12</lebewesen:Wert>
+                  <lebewesen:Wert>109.98</lebewesen:Wert>
+                  <lebewesen:Wert>113.62</lebewesen:Wert>
+                  <lebewesen:Wert>117.18</lebewesen:Wert>
+                  <lebewesen:Wert>120.72</lebewesen:Wert>
+                  <lebewesen:Wert>124.22</lebewesen:Wert>
+                  <lebewesen:Wert>127.77</lebewesen:Wert>
+                  <lebewesen:Wert>131.34</lebewesen:Wert>
+                  <lebewesen:Wert>134.81</lebewesen:Wert>
+                  <lebewesen:Wert>138.04</lebewesen:Wert>
+                  <lebewesen:Wert>141.1</lebewesen:Wert>
+                  <lebewesen:Wert>144.08</lebewesen:Wert>
+                  <lebewesen:Wert>146.98</lebewesen:Wert>
+                  <lebewesen:Wert>149.88</lebewesen:Wert>
+                  <lebewesen:Wert>152.78</lebewesen:Wert>
+                  <lebewesen:Wert>155.76</lebewesen:Wert>
+                  <lebewesen:Wert>158.85</lebewesen:Wert>
+                  <lebewesen:Wert>162.13</lebewesen:Wert>
+                  <lebewesen:Wert>165.75</lebewesen:Wert>
+                  <lebewesen:Wert>169.77</lebewesen:Wert>
+                  <lebewesen:Wert>173.89</lebewesen:Wert>
+                  <lebewesen:Wert>177.61</lebewesen:Wert>
+                  <lebewesen:Wert>180.68</lebewesen:Wert>
+                  <lebewesen:Wert>182.97</lebewesen:Wert>
+                  <lebewesen:Wert>184.57</lebewesen:Wert>
+                  <lebewesen:Wert>185.64</lebewesen:Wert>
+                  <lebewesen:Wert>186.34</lebewesen:Wert>
+                  <lebewesen:Wert>186.79</lebewesen:Wert>
+                  <lebewesen:Wert>187.11</lebewesen:Wert>
+                  <lebewesen:Wert>187.37</lebewesen:Wert>
+
+                </lebewesen:Spalte>
+                <lebewesen:Spalte Quantil="97">
+                  <lebewesen:Wert>56.4</lebewesen:Wert>
+                  <lebewesen:Wert>73.19</lebewesen:Wert>
+                  <lebewesen:Wert>81.6</lebewesen:Wert>
+                  <lebewesen:Wert>88.4</lebewesen:Wert>
+                  <lebewesen:Wert>94.26</lebewesen:Wert>
+                  <lebewesen:Wert>99.45</lebewesen:Wert>
+                  <lebewesen:Wert>104.25</lebewesen:Wert>
+                  <lebewesen:Wert>108.61</lebewesen:Wert>
+                  <lebewesen:Wert>112.61</lebewesen:Wert>
+                  <lebewesen:Wert>116.39</lebewesen:Wert>
+                  <lebewesen:Wert>120.08</lebewesen:Wert>
+                  <lebewesen:Wert>123.74</lebewesen:Wert>
+                  <lebewesen:Wert>127.35</lebewesen:Wert>
+                  <lebewesen:Wert>130.99</lebewesen:Wert>
+                  <lebewesen:Wert>134.64</lebewesen:Wert>
+                  <lebewesen:Wert>138.2</lebewesen:Wert>
+                  <lebewesen:Wert>141.53</lebewesen:Wert>
+                  <lebewesen:Wert>144.7</lebewesen:Wert>
+                  <lebewesen:Wert>147.78</lebewesen:Wert>
+                  <lebewesen:Wert>150.82</lebewesen:Wert>
+                  <lebewesen:Wert>153.86</lebewesen:Wert>
+                  <lebewesen:Wert>156.91</lebewesen:Wert>
+                  <lebewesen:Wert>160.07</lebewesen:Wert>
+                  <lebewesen:Wert>163.34</lebewesen:Wert>
+                  <lebewesen:Wert>166.8</lebewesen:Wert>
+                  <lebewesen:Wert>170.59</lebewesen:Wert>
+                  <lebewesen:Wert>174.73</lebewesen:Wert>
+                  <lebewesen:Wert>178.88</lebewesen:Wert>
+                  <lebewesen:Wert>182.52</lebewesen:Wert>
+                  <lebewesen:Wert>185.4</lebewesen:Wert>
+                  <lebewesen:Wert>187.45</lebewesen:Wert>
+                  <lebewesen:Wert>188.82</lebewesen:Wert>
+                  <lebewesen:Wert>189.72</lebewesen:Wert>
+                  <lebewesen:Wert>190.3</lebewesen:Wert>
+                  <lebewesen:Wert>190.66</lebewesen:Wert>
+                  <lebewesen:Wert>190.93</lebewesen:Wert>
+                  <lebewesen:Wert>191.14</lebewesen:Wert>
+                </lebewesen:Spalte>
+              </lebewesen:Reihe>
+            </lebewesen:Entwiklung>
+            <Lebensabschnitte>
+              <Lebensabschnitt Id="ImpM1" startAlter="12" endAlter="13" minGröße="1.41" maxGröße="1.56" minBMI="15" maxBMI="21">
+                <Spielbar>
+                  <misc:Kosten Id="Kultur" Wert="-75" />
+                </Spielbar>
+                <Name>
+                  <misc:Lokalisirung Sprache="de">
+                    <![CDATA[Herranwchsender]]>
+                  </misc:Lokalisirung>
+                </Name>
+                <lebewesen:Beschreibung>
+                  <misc:Lokalisirung Sprache="de">
+                    <![CDATA[]]>
+                  </misc:Lokalisirung>
+                </lebewesen:Beschreibung>
+                <Mods>
+                  <misc:Eigenschaften>
+                    <lebewesen:Glück Mod='3' />
+                    <lebewesen:Mut Mod='1' />
+                  </misc:Eigenschaften>
+                </Mods>
+              </Lebensabschnitt>
+              <Lebensabschnitt Id="ImpM2" startAlter="13" endAlter="14" minGröße="1.41" maxGröße="1.56" minBMI="15" maxBMI="21">
+                <Spielbar>
+                  <misc:Kosten Id="Kultur" Wert="-80" />
+                </Spielbar>
+                <Name>
+                  <misc:Lokalisirung Sprache="de">
+                    <![CDATA[Herranwchsender]]>
+                  </misc:Lokalisirung>
+                </Name>
+                <Beschreibung>
+                  <misc:Lokalisirung Sprache="de">
+                    <![CDATA[]]>
+                  </misc:Lokalisirung>
+                </Beschreibung>
+              </Lebensabschnitt>
+              <Lebensabschnitt Id="M3" startAlter="14" endAlter="15" minGröße="1.41" maxGröße="1.56" minBMI="15" maxBMI="21">
+                <Spielbar>
+                  <misc:Kosten Id="Kultur" Wert="-90" />
+                </Spielbar>
+                <Name>
+                  <misc:Lokalisirung Sprache="de">
+                    <![CDATA[Herranwchsender]]>
+                  </misc:Lokalisirung>
+                </Name>
+                <Beschreibung>
+                  <misc:Lokalisirung Sprache="de">
+                    <![CDATA[]]>
+                  </misc:Lokalisirung>
+                </Beschreibung>
+              </Lebensabschnitt>
+              <Lebensabschnitt Id="M4" startAlter="16" endAlter="18" minGröße="1.41" maxGröße="1.56" minBMI="15" maxBMI="21">
+                <Spielbar>
+                  <misc:Kosten Id="Kultur" Wert="-100" />
+                </Spielbar>
+                <Name>
+                  <misc:Lokalisirung Sprache="de">
+                    <![CDATA[Junger Erwachsener]]>
+                  </misc:Lokalisirung>
+                </Name>
+                <Beschreibung>
+                  <misc:Lokalisirung Sprache="de">
+                    <![CDATA[]]>
+                  </misc:Lokalisirung>
+                </Beschreibung>
+              </Lebensabschnitt>
+              <Lebensabschnitt Id="M5" startAlter="18" endAlter="21" minGröße="1.41" maxGröße="1.56" minBMI="15" maxBMI="21">
+                <Spielbar>
+                  <misc:Kosten Id="Kultur" Wert="-100" />
+                </Spielbar>
+                <Name>
+                  <misc:Lokalisirung Sprache="de">
+                    <![CDATA[Junger Erwachsener]]>
+                  </misc:Lokalisirung>
+                </Name>
+                <Beschreibung>
+                  <misc:Lokalisirung Sprache="de">
+                    <![CDATA[]]>
+                  </misc:Lokalisirung>
+                </Beschreibung>
+              </Lebensabschnitt>
+              <Lebensabschnitt Id="M6" startAlter="21" endAlter="25" minGröße="1.41" maxGröße="1.56" minBMI="15" maxBMI="21">
+                <Spielbar>
+                  <misc:Kosten Id="Kultur" Wert="-110" />
+                </Spielbar>
+                <Name>
+                  <misc:Lokalisirung Sprache="de">
+                    <![CDATA[Junger Erwachsener]]>
+                  </misc:Lokalisirung>
+                </Name>
+                <Beschreibung>
+                  <misc:Lokalisirung Sprache="de">
+                    <![CDATA[]]>
+                  </misc:Lokalisirung>
+                </Beschreibung>
+              </Lebensabschnitt>
+              <Lebensabschnitt Id="M7" startAlter="25" endAlter="30" minGröße="1.41" maxGröße="1.56" minBMI="15" maxBMI="21">
+                <Spielbar>
+                  <misc:Kosten Id="Kultur" Wert="-120" />
+                </Spielbar>
+                <Name>
+                  <misc:Lokalisirung Sprache="de">
+                    <![CDATA[Erwachsener]]>
+                  </misc:Lokalisirung>
+                </Name>
+                <Beschreibung>
+                  <misc:Lokalisirung Sprache="de">
+                    <![CDATA[]]>
+                  </misc:Lokalisirung>
+                </Beschreibung>
+              </Lebensabschnitt>
+              <Lebensabschnitt Id="M8" startAlter="30" endAlter="35" minGröße="1.41" maxGröße="1.56" minBMI="15" maxBMI="21">
+                <Spielbar>
+                  <misc:Kosten Id="Kultur" Wert="-120" />
+                </Spielbar>
+                <Name>
+                  <misc:Lokalisirung Sprache="de">
+                    <![CDATA[Erwachsener]]>
+                  </misc:Lokalisirung>
+                </Name>
+                <Beschreibung>
+                  <misc:Lokalisirung Sprache="de">
+                    <![CDATA[]]>
+                  </misc:Lokalisirung>
+                </Beschreibung>
+              </Lebensabschnitt>
+              <Lebensabschnitt Id="M9" startAlter="35" endAlter="40" minGröße="1.41" maxGröße="1.56" minBMI="15" maxBMI="21">
+                <Spielbar>
+                  <misc:Kosten Id="Kultur" Wert="-120" />
+                </Spielbar>
+                <Name>
+                  <misc:Lokalisirung Sprache="de">
+                    <![CDATA[Erwachsener]]>
+                  </misc:Lokalisirung>
+                </Name>
+                <Beschreibung>
+                  <misc:Lokalisirung Sprache="de">
+                    <![CDATA[]]>
+                  </misc:Lokalisirung>
+                </Beschreibung>
+              </Lebensabschnitt>
+            </Lebensabschnitte>
+          </Morph>
+          <Morph Id="Frau" Geschlecht="Weiblich">
+            <misc:Name>
+              <misc:Lokalisirung Sprache="de">
+                <![CDATA[Frau]]>
+              </misc:Lokalisirung>
+            </misc:Name>
+            <misc:Beschreibung>
+              <misc:Lokalisirung Sprache="de">
+                <![CDATA[]]>
+              </misc:Lokalisirung>
+            </misc:Beschreibung>
+            <StandardPfade>
+              <pfad:Pfad Id="Kirin" />
+            </StandardPfade>
+            <lebewesen:Entwiklung>
+              <lebewesen:Reihe id="gr">
+                <misc:Name>
+                  <misc:Lokalisirung Sprache="de"></misc:Lokalisirung>
+                </misc:Name>
+                <lebewesen:Spalte Quantil="3">
+                  <lebewesen:Wert>47.17</lebewesen:Wert>
+                  <lebewesen:Wert>50.56</lebewesen:Wert>
+                  <lebewesen:Wert>53.06</lebewesen:Wert>
+                  <lebewesen:Wert>55.09</lebewesen:Wert>
+                  <lebewesen:Wert>57.56</lebewesen:Wert>
+                  <lebewesen:Wert>59.79</lebewesen:Wert>
+                  <lebewesen:Wert>61.74</lebewesen:Wert>
+                  <lebewesen:Wert>63.45</lebewesen:Wert>
+                  <lebewesen:Wert>64.99</lebewesen:Wert>
+                  <lebewesen:Wert>66.41</lebewesen:Wert>
+                  <lebewesen:Wert>67.75</lebewesen:Wert>
+                  <lebewesen:Wert>69.03</lebewesen:Wert>
+                  <lebewesen:Wert>70.23</lebewesen:Wert>
+                  <lebewesen:Wert>73.48</lebewesen:Wert>
+                  <lebewesen:Wert>76.29</lebewesen:Wert>
+                  <lebewesen:Wert>78.72</lebewesen:Wert>
+                  <lebewesen:Wert>80.93</lebewesen:Wert>
+                  <lebewesen:Wert>85.08</lebewesen:Wert>
+                  <lebewesen:Wert>89.06</lebewesen:Wert>
+                  <lebewesen:Wert>92.69</lebewesen:Wert>
+                  <lebewesen:Wert>96</lebewesen:Wert>
+                  <lebewesen:Wert>99.24</lebewesen:Wert>
+                  <lebewesen:Wert>102.5</lebewesen:Wert>
+                  <lebewesen:Wert>105.61</lebewesen:Wert>
+                  <lebewesen:Wert>108.54</lebewesen:Wert>
+                  <lebewesen:Wert>111.29</lebewesen:Wert>
+                  <lebewesen:Wert>113.89</lebewesen:Wert>
+                  <lebewesen:Wert>116.4</lebewesen:Wert>
+                  <lebewesen:Wert>118.92</lebewesen:Wert>
+                  <lebewesen:Wert>121.39</lebewesen:Wert>
+                  <lebewesen:Wert>123.83</lebewesen:Wert>
+                  <lebewesen:Wert>126.3</lebewesen:Wert>
+                  <lebewesen:Wert>128.92</lebewesen:Wert>
+                  <lebewesen:Wert>131.75</lebewesen:Wert>
+                  <lebewesen:Wert>134.86</lebewesen:Wert>
+                  <lebewesen:Wert>138.15</lebewesen:Wert>
+                  <lebewesen:Wert>141.46</lebewesen:Wert>
+                </lebewesen:Spalte>
+                <lebewesen:Spalte Quantil="10">
+                  <lebewesen:Wert>48.49</lebewesen:Wert>
+                  <lebewesen:Wert>51.95</lebewesen:Wert>
+                  <lebewesen:Wert>54.52</lebewesen:Wert>
+                  <lebewesen:Wert>56.59</lebewesen:Wert>
+                  <lebewesen:Wert>59.07</lebewesen:Wert>
+                  <lebewesen:Wert>61.3</lebewesen:Wert>
+                  <lebewesen:Wert>63.25</lebewesen:Wert>
+                  <lebewesen:Wert>64.96</lebewesen:Wert>
+                  <lebewesen:Wert>66.5</lebewesen:Wert>
+                  <lebewesen:Wert>67.93</lebewesen:Wert>
+                  <lebewesen:Wert>69.28</lebewesen:Wert>
+                  <lebewesen:Wert>70.56</lebewesen:Wert>
+                  <lebewesen:Wert>71.78</lebewesen:Wert>
+                  <lebewesen:Wert>75.1</lebewesen:Wert>
+                  <lebewesen:Wert>77.98</lebewesen:Wert>
+                  <lebewesen:Wert>80.49</lebewesen:Wert>
+                  <lebewesen:Wert>82.78</lebewesen:Wert>
+                  <lebewesen:Wert>87.08</lebewesen:Wert>
+                  <lebewesen:Wert>91.19</lebewesen:Wert>
+                  <lebewesen:Wert>94.95</lebewesen:Wert>
+                  <lebewesen:Wert>98.39</lebewesen:Wert>
+                  <lebewesen:Wert>101.76</lebewesen:Wert>
+                  <lebewesen:Wert>105.15</lebewesen:Wert>
+                  <lebewesen:Wert>108.38</lebewesen:Wert>
+                  <lebewesen:Wert>111.42</lebewesen:Wert>
+                  <lebewesen:Wert>114.29</lebewesen:Wert>
+                  <lebewesen:Wert>117</lebewesen:Wert>
+                  <lebewesen:Wert>119.64</lebewesen:Wert>
+                  <lebewesen:Wert>122.29</lebewesen:Wert>
+                  <lebewesen:Wert>124.9</lebewesen:Wert>
+                  <lebewesen:Wert>127.48</lebewesen:Wert>
+                  <lebewesen:Wert>130.09</lebewesen:Wert>
+                  <lebewesen:Wert>132.82</lebewesen:Wert>
+                  <lebewesen:Wert>135.76</lebewesen:Wert>
+                  <lebewesen:Wert>138.94</lebewesen:Wert>
+                  <lebewesen:Wert>142.25</lebewesen:Wert>
+                  <lebewesen:Wert>145.55</lebewesen:Wert>
+                </lebewesen:Spalte>
+                <lebewesen:Spalte Quantil="25">
+                  <lebewesen:Wert>49.82</lebewesen:Wert>
+                  <lebewesen:Wert>53.36</lebewesen:Wert>
+                  <lebewesen:Wert>55.99</lebewesen:Wert>
+                  <lebewesen:Wert>58.11</lebewesen:Wert>
+                  <lebewesen:Wert>60.6</lebewesen:Wert>
+                  <lebewesen:Wert>62.83</lebewesen:Wert>
+                  <lebewesen:Wert>64.78</lebewesen:Wert>
+                  <lebewesen:Wert>66.49</lebewesen:Wert>
+                  <lebewesen:Wert>68.03</lebewesen:Wert>
+                  <lebewesen:Wert>69.46</lebewesen:Wert>
+                  <lebewesen:Wert>70.82</lebewesen:Wert>
+                  <lebewesen:Wert>72.11</lebewesen:Wert>
+                  <lebewesen:Wert>73.35</lebewesen:Wert>
+                  <lebewesen:Wert>76.73</lebewesen:Wert>
+                  <lebewesen:Wert>79.69</lebewesen:Wert>
+                  <lebewesen:Wert>82.28</lebewesen:Wert>
+                  <lebewesen:Wert>84.65</lebewesen:Wert>
+                  <lebewesen:Wert>89.1</lebewesen:Wert>
+                  <lebewesen:Wert>93.35</lebewesen:Wert>
+                  <lebewesen:Wert>97.24</lebewesen:Wert>
+                  <lebewesen:Wert>100.82</lebewesen:Wert>
+                  <lebewesen:Wert>104.31</lebewesen:Wert>
+                  <lebewesen:Wert>107.83</lebewesen:Wert>
+                  <lebewesen:Wert>111.19</lebewesen:Wert>
+                  <lebewesen:Wert>114.34</lebewesen:Wert>
+                  <lebewesen:Wert>117.32</lebewesen:Wert>
+                  <lebewesen:Wert>120.15</lebewesen:Wert>
+                  <lebewesen:Wert>122.92</lebewesen:Wert>
+                  <lebewesen:Wert>125.7</lebewesen:Wert>
+                  <lebewesen:Wert>128.45</lebewesen:Wert>
+                  <lebewesen:Wert>131.17</lebewesen:Wert>
+                  <lebewesen:Wert>133.92</lebewesen:Wert>
+                  <lebewesen:Wert>136.78</lebewesen:Wert>
+                  <lebewesen:Wert>139.82</lebewesen:Wert>
+                  <lebewesen:Wert>143.06</lebewesen:Wert>
+                  <lebewesen:Wert>146.41</lebewesen:Wert>
+                  <lebewesen:Wert>149.7</lebewesen:Wert>
+
+                </lebewesen:Spalte>
+                <lebewesen:Spalte Quantil="50">
+                  <lebewesen:Wert>51.32</lebewesen:Wert>
+                  <lebewesen:Wert>54.94</lebewesen:Wert>
+                  <lebewesen:Wert>57.63</lebewesen:Wert>
+                  <lebewesen:Wert>59.81</lebewesen:Wert>
+                  <lebewesen:Wert>62.3</lebewesen:Wert>
+                  <lebewesen:Wert>64.54</lebewesen:Wert>
+                  <lebewesen:Wert>66.48</lebewesen:Wert>
+                  <lebewesen:Wert>68.19</lebewesen:Wert>
+                  <lebewesen:Wert>69.73</lebewesen:Wert>
+                  <lebewesen:Wert>71.16</lebewesen:Wert>
+                  <lebewesen:Wert>72.53</lebewesen:Wert>
+                  <lebewesen:Wert>73.84</lebewesen:Wert>
+                  <lebewesen:Wert>75.09</lebewesen:Wert>
+                  <lebewesen:Wert>78.54</lebewesen:Wert>
+                  <lebewesen:Wert>81.59</lebewesen:Wert>
+                  <lebewesen:Wert>84.28</lebewesen:Wert>
+                  <lebewesen:Wert>86.73</lebewesen:Wert>
+                  <lebewesen:Wert>91.34</lebewesen:Wert>
+                  <lebewesen:Wert>95.75</lebewesen:Wert>
+                  <lebewesen:Wert>99.79</lebewesen:Wert>
+                  <lebewesen:Wert>103.51</lebewesen:Wert>
+                  <lebewesen:Wert>107.15</lebewesen:Wert>
+                  <lebewesen:Wert>110.82</lebewesen:Wert>
+                  <lebewesen:Wert>114.31</lebewesen:Wert>
+                  <lebewesen:Wert>117.59</lebewesen:Wert>
+                  <lebewesen:Wert>120.69</lebewesen:Wert>
+                  <lebewesen:Wert>123.65</lebewesen:Wert>
+                  <lebewesen:Wert>126.56</lebewesen:Wert>
+                  <lebewesen:Wert>129.49</lebewesen:Wert>
+                  <lebewesen:Wert>132.4</lebewesen:Wert>
+                  <lebewesen:Wert>135.28</lebewesen:Wert>
+                  <lebewesen:Wert>138.18</lebewesen:Wert>
+                  <lebewesen:Wert>141.18</lebewesen:Wert>
+                  <lebewesen:Wert>144.33</lebewesen:Wert>
+                  <lebewesen:Wert>147.65</lebewesen:Wert>
+                  <lebewesen:Wert>151.04</lebewesen:Wert>
+                  <lebewesen:Wert>154.31</lebewesen:Wert>
+                </lebewesen:Spalte>
+                <lebewesen:Spalte Quantil="75">
+                  <lebewesen:Wert>52.85</lebewesen:Wert>
+                  <lebewesen:Wert>56.53</lebewesen:Wert>
+                  <lebewesen:Wert>59.27</lebewesen:Wert>
+                  <lebewesen:Wert>61.5</lebewesen:Wert>
+                  <lebewesen:Wert>64</lebewesen:Wert>
+                  <lebewesen:Wert>66.24</lebewesen:Wert>
+                  <lebewesen:Wert>68.19</lebewesen:Wert>
+                  <lebewesen:Wert>69.89</lebewesen:Wert>
+                  <lebewesen:Wert>71.43</lebewesen:Wert>
+                  <lebewesen:Wert>72.87</lebewesen:Wert>
+                  <lebewesen:Wert>74.24</lebewesen:Wert>
+                  <lebewesen:Wert>75.57</lebewesen:Wert>
+                  <lebewesen:Wert>76.84</lebewesen:Wert>
+                  <lebewesen:Wert>80.36</lebewesen:Wert>
+                  <lebewesen:Wert>83.49</lebewesen:Wert>
+                  <lebewesen:Wert>86.27</lebewesen:Wert>
+                  <lebewesen:Wert>88.81</lebewesen:Wert>
+                  <lebewesen:Wert>93.58</lebewesen:Wert>
+                  <lebewesen:Wert>98.15</lebewesen:Wert>
+                  <lebewesen:Wert>102.34</lebewesen:Wert>
+                  <lebewesen:Wert>106.2</lebewesen:Wert>
+                  <lebewesen:Wert>109.98</lebewesen:Wert>
+                  <lebewesen:Wert>113.8</lebewesen:Wert>
+                  <lebewesen:Wert>117.43</lebewesen:Wert>
+                  <lebewesen:Wert>120.83</lebewesen:Wert>
+                  <lebewesen:Wert>124.06</lebewesen:Wert>
+                  <lebewesen:Wert>127.15</lebewesen:Wert>
+                  <lebewesen:Wert>130.2</lebewesen:Wert>
+                  <lebewesen:Wert>133.29</lebewesen:Wert>
+                  <lebewesen:Wert>136.35</lebewesen:Wert>
+                  <lebewesen:Wert>139.39</lebewesen:Wert>
+                  <lebewesen:Wert>142.43</lebewesen:Wert>
+                  <lebewesen:Wert>145.57</lebewesen:Wert>
+                  <lebewesen:Wert>148.84</lebewesen:Wert>
+                  <lebewesen:Wert>152.24</lebewesen:Wert>
+                  <lebewesen:Wert>155.66</lebewesen:Wert>
+                  <lebewesen:Wert>158.92</lebewesen:Wert>
+                </lebewesen:Spalte>
+                <lebewesen:Spalte Quantil="90">
+                  <lebewesen:Wert>54.17</lebewesen:Wert>
+                  <lebewesen:Wert>57.93</lebewesen:Wert>
+                  <lebewesen:Wert>60.74</lebewesen:Wert>
+                  <lebewesen:Wert>63.02</lebewesen:Wert>
+                  <lebewesen:Wert>65.53</lebewesen:Wert>
+                  <lebewesen:Wert>67.77</lebewesen:Wert>
+                  <lebewesen:Wert>69.72</lebewesen:Wert>
+                  <lebewesen:Wert>71.42</lebewesen:Wert>
+                  <lebewesen:Wert>72.96</lebewesen:Wert>
+                  <lebewesen:Wert>74.4</lebewesen:Wert>
+                  <lebewesen:Wert>75.78</lebewesen:Wert>
+                  <lebewesen:Wert>77.12</lebewesen:Wert>
+                  <lebewesen:Wert>78.41</lebewesen:Wert>
+                  <lebewesen:Wert>81.99</lebewesen:Wert>
+                  <lebewesen:Wert>85.21</lebewesen:Wert>
+                  <lebewesen:Wert>88.06</lebewesen:Wert>
+                  <lebewesen:Wert>90.69</lebewesen:Wert>
+                  <lebewesen:Wert>95.6</lebewesen:Wert>
+                  <lebewesen:Wert>100.31</lebewesen:Wert>
+                  <lebewesen:Wert>104.64</lebewesen:Wert>
+                  <lebewesen:Wert>108.62</lebewesen:Wert>
+                  <lebewesen:Wert>112.54</lebewesen:Wert>
+                  <lebewesen:Wert>116.49</lebewesen:Wert>
+                  <lebewesen:Wert>120.23</lebewesen:Wert>
+                  <lebewesen:Wert>123.75</lebewesen:Wert>
+                  <lebewesen:Wert>127.1</lebewesen:Wert>
+                  <lebewesen:Wert>130.31</lebewesen:Wert>
+                  <lebewesen:Wert>133.48</lebewesen:Wert>
+                  <lebewesen:Wert>136.7</lebewesen:Wert>
+                  <lebewesen:Wert>139.9</lebewesen:Wert>
+                  <lebewesen:Wert>143.08</lebewesen:Wert>
+                  <lebewesen:Wert>146.26</lebewesen:Wert>
+                  <lebewesen:Wert>149.53</lebewesen:Wert>
+                  <lebewesen:Wert>152.89</lebewesen:Wert>
+                  <lebewesen:Wert>156.37</lebewesen:Wert>
+                  <lebewesen:Wert>159.82</lebewesen:Wert>
+                  <lebewesen:Wert>163.07</lebewesen:Wert>
+                </lebewesen:Spalte>
+                <lebewesen:Spalte Quantil="97">
+                  <lebewesen:Wert>55.4</lebewesen:Wert>
+                  <lebewesen:Wert>59.3</lebewesen:Wert>
+                  <lebewesen:Wert>62.1</lebewesen:Wert>
+                  <lebewesen:Wert>64.5</lebewesen:Wert>
+                  <lebewesen:Wert>67.04</lebewesen:Wert>
+                  <lebewesen:Wert>69.28</lebewesen:Wert>
+                  <lebewesen:Wert>71.23</lebewesen:Wert>
+                  <lebewesen:Wert>72.93</lebewesen:Wert>
+                  <lebewesen:Wert>74.47</lebewesen:Wert>
+                  <lebewesen:Wert>75.91</lebewesen:Wert>
+                  <lebewesen:Wert>77.31</lebewesen:Wert>
+                  <lebewesen:Wert>78.65</lebewesen:Wert>
+                  <lebewesen:Wert>79.95</lebewesen:Wert>
+                  <lebewesen:Wert>83.6</lebewesen:Wert>
+                  <lebewesen:Wert>86.9</lebewesen:Wert>
+                  <lebewesen:Wert>89.83</lebewesen:Wert>
+                  <lebewesen:Wert>92.53</lebewesen:Wert>
+                  <lebewesen:Wert>97.59</lebewesen:Wert>
+                  <lebewesen:Wert>102.45</lebewesen:Wert>
+                  <lebewesen:Wert>106.9</lebewesen:Wert>
+                  <lebewesen:Wert>111.01</lebewesen:Wert>
+                  <lebewesen:Wert>115.06</lebewesen:Wert>
+                  <lebewesen:Wert>119.14</lebewesen:Wert>
+                  <lebewesen:Wert>123</lebewesen:Wert>
+                  <lebewesen:Wert>126.64</lebewesen:Wert>
+                  <lebewesen:Wert>130.09</lebewesen:Wert>
+                  <lebewesen:Wert>133.42</lebewesen:Wert>
+                  <lebewesen:Wert>136.71</lebewesen:Wert>
+                  <lebewesen:Wert>140.07</lebewesen:Wert>
+                  <lebewesen:Wert>143.41</lebewesen:Wert>
+                  <lebewesen:Wert>146.73</lebewesen:Wert>
+                  <lebewesen:Wert>150.05</lebewesen:Wert>
+                  <lebewesen:Wert>153.44</lebewesen:Wert>
+                  <lebewesen:Wert>156.9</lebewesen:Wert>
+                  <lebewesen:Wert>160.44</lebewesen:Wert>
+                  <lebewesen:Wert>163.92</lebewesen:Wert>
+                  <lebewesen:Wert>167.17</lebewesen:Wert>
+                </lebewesen:Spalte>
+              </lebewesen:Reihe>
+            </lebewesen:Entwiklung>
+            <Lebensabschnitte>
+              <Lebensabschnitt Id="JugendlicherW1" startAlter="0" endAlter="3" minGröße="1.44" maxGröße="1.58" minBMI="16" maxBMI="21">
+                <Spielbar>
+                  <misc:Kosten Id="Kultur" Wert="-110" />
+                </Spielbar>
+                <Name>
+                  <misc:Lokalisirung Sprache="de" Geschlecht="Weiblich">
+                    <![CDATA[Jugendliche]]>
+                  </misc:Lokalisirung>
+                </Name>
+                <Beschreibung>
+                  <misc:Lokalisirung Sprache="de">
+                    <![CDATA[]]>
+                  </misc:Lokalisirung>
+                </Beschreibung>
+              </Lebensabschnitt>
+            </Lebensabschnitte>
+          </Morph>
+        </Morphe>
+      </Art>
       <Art Id="Imp">
         <misc:Name>
           <misc:Lokalisirung Sprache="de" Geschlecht="Männlich">
@@ -4368,7 +5148,7 @@ Ihre Hautfarbe reicht von blass rosa bis zu Ash grau, wenn sie starker Sonnenstr
         </fertigkeit:Voraussetzung>
       </fertigkeit:Stufe>
       <fertigkeit:Stufe Kosten="30">
-        
+
         <misc:Name>
           <misc:Lokalisirung Sprache="de">Abstrakte Mathematik</misc:Lokalisirung>
         </misc:Name>
