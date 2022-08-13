@@ -2286,7 +2286,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
           </misc:Eigenschaften>
         </lebewesen:Mods>
         <Morphe>
-          <Morph Id="Mann" Geschlecht="Männlich">
+          <Morph Id="ImpMann" Geschlecht="Männlich">
             <misc:Name>
               <misc:Lokalisirung Sprache="de">
                 <![CDATA[Mann]]>
@@ -2957,7 +2957,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
               </Lebensabschnitt>
             </Lebensabschnitte>
           </Morph>
-          <Morph Id="Frau" Geschlecht="Weiblich">
+          <Morph Id="ImpFrau" Geschlecht="Weiblich">
             <misc:Name>
               <misc:Lokalisirung Sprache="de">
                 <![CDATA[Frau]]>
