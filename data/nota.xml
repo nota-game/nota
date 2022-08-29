@@ -93,6 +93,19 @@
           </misc:Lokalisirung>
       </misc:Beschreibung>
     </misc:KostenDefinition>
+    <misc:KostenDefinition Id="Göttlicher Einfluss">
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">Göttlicher Einfluss</misc:Lokalisirung>
+      </misc:Name>
+      <misc:Abkürzung>
+        <misc:Lokalisirung Sprache="de">GeP</misc:Lokalisirung>
+      </misc:Abkürzung>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+            Das abstrakte maß wie stark ein Charakter von den Göttern beeinflusst wird.
+          </misc:Lokalisirung>
+      </misc:Beschreibung>
+    </misc:KostenDefinition>
     <misc:KostenDefinition Id="Alter">
       <misc:Name>
         <misc:Lokalisirung Sprache="de">Alterspunkte</misc:Lokalisirung>
@@ -113,6 +126,7 @@
   <GenerierungsDaten MinimumVerbreitung="3">
     <misc:Kosten Id="GP" Wert="74" />
     <misc:Kosten Id="Eigenschaften" Wert="54" />
+    <misc:Kosten Id="Göttlicher Einfluss" Wert="-1" />
   </GenerierungsDaten>
   <Organismen xmlns="http://nota.org/schema/lebewesen.xsd">
     <EigenschaftsKosten>
@@ -22776,66 +22790,145 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
       </misc:Name>
       <misc:Beschreibung>
         <misc:Lokalisirung Sprache="de">
-          <![CDATA[Der Charakter ist ein Diener des Gottes Alsa.]]>
+          <![CDATA[Der Gott des Wissens und Wissenschaft.]]>
         </misc:Lokalisirung>
       </misc:Beschreibung>
       <misc:Levels>
         <misc:Level Id="T">
+          <misc:Kosten Id="Göttlicher Einfluss" Wert="-1" />
           <besonderheit:Besonderheit Id="Auserwählter Alsas" />
+        </misc:Level>
+      </misc:Levels>
+    </Pfad>
+    <Pfad Id="Yoguu">
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Yoguu]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Der Gott der Magie und Mysterien.]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <misc:Levels>
+        <misc:Level Id="T">
+          <misc:Kosten Id="Göttlicher Einfluss" Wert="-1" />
+          <besonderheit:Besonderheit Id="Auserwählter Yoguu" />
+        </misc:Level>
+      </misc:Levels>
+    </Pfad>
+    <Pfad Id="Bartimus">
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Bartimus]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Der Gott der es Kampfes.]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <misc:Levels>
+        <misc:Level Id="T">
+          <misc:Kosten Id="Göttlicher Einfluss" Wert="-1" />
+          <besonderheit:Besonderheit Id="Auserwählter Bartimus" />
+        </misc:Level>
+      </misc:Levels>
+    </Pfad>
+    <Pfad Id="Heros">
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Heros]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Der Gott des Handwerkes und Arbeit.]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <misc:Levels>
+        <misc:Level Id="T">
+          <misc:Kosten Id="Göttlicher Einfluss" Wert="-1" />
+          <besonderheit:Besonderheit Id="Auserwählter Heros" />
+        </misc:Level>
+      </misc:Levels>
+    </Pfad>
+    <Pfad Id="Karins">
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Karins]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Der Gott der Liebe, leidenschaft und Bindung.]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <misc:Levels>
+        <misc:Level Id="T">
+          <misc:Kosten Id="Göttlicher Einfluss" Wert="-1" />
+          <besonderheit:Besonderheit Id="Auserwählter Karins" />
+        </misc:Level>
+      </misc:Levels>
+    </Pfad>
+    <Pfad Id="Iru">
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Iru]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Der Gott der Jugend und des Glücks. Schutzpatron der Kinder.]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <misc:Levels>
+        <misc:Level Id="T">
+          <misc:Kosten Id="Göttlicher Einfluss" Wert="-1" />
+          <besonderheit:Besonderheit Id="Auserwählter Iru" />
+        </misc:Level>
+      </misc:Levels>
+    </Pfad>
+    <Pfad Id="Kalim">
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Kalim]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Der Gott der Wanderer und Seefahrt.]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <misc:Levels>
+        <misc:Level Id="T">
+          <misc:Kosten Id="Göttlicher Einfluss" Wert="-1" />
+          <besonderheit:Besonderheit Id="Auserwählter Kalim" />
+        </misc:Level>
+      </misc:Levels>
+    </Pfad>
+    <Pfad Id="Nalum">
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Nalum]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Der Gott der Natur, Wildniss und Jagd.]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <misc:Levels>
+        <misc:Level Id="T">
+          <misc:Kosten Id="Göttlicher Einfluss" Wert="-1" />
+          <besonderheit:Besonderheit Id="Auserwählter Nalum" />
         </misc:Level>
       </misc:Levels>
     </Pfad>
   </Pfade>
 
-  <!--<Kulturen
-    xmlns="http://nota.org/schema/kultur.xsd">
-    <Kultur Id="Alan">
-      <misc:Name>
-        <misc:Lokalisirung Sprache="de"><![CDATA[Alan]]></misc:Lokalisirung>
-      </misc:Name>
-      <misc:Beschreibung>
-        <misc:Lokalisirung Sprache="de"><![CDATA[]]></misc:Lokalisirung>
-      </misc:Beschreibung>
-      <Professionen>
-        <profession:Profession Id="Bäcker"/>
-      </Professionen>
-      <Levels xmlns="http://nota.org/schema/misc">
-        <Level Id="2">
-          <Bedingungen>
-            <LevelVoraussetzung>
-              <Level Id="2"/>
-            </LevelVoraussetzung>
-          </Bedingungen>
-          <fertigkeit:Fertigkeit Id="Kulturkunde Alan"/>
-        </Level>
-      </Levels>
-    </Kultur>
-  </Kulturen>-->
-  <!--<Professionen
-    xmlns="http://nota.org/schema/profession.xsd">
-    <Profession Id="Bäcker">
-      <misc:Name>
-        <misc:Lokalisirung Sprache="de"><![CDATA[Bäcker]]></misc:Lokalisirung>
-      </misc:Name>
-      <misc:Beschreibung>
-        <misc:Lokalisirung Sprache="de"><![CDATA[]]></misc:Lokalisirung>
-      </misc:Beschreibung>
-      <Levels xmlns="http://nota.org/schema/misc">
-        <Level Id="Test3">
-          <talent:Talent Id="Backen" Level="3"/>
-          <talent:Talent Id="Backen" Level="2"/>
-          <talent:Talent Id="Backen" Level="1"/>
-        </Level>
-        <Level Id="">
-          <Bedingungen>
-            <LevelVoraussetzung>
-              <Level Id="Test3"/>
-            </LevelVoraussetzung>
-          </Bedingungen>
-        </Level>
-      </Levels>
-    </Profession>
-  </Professionen>-->
+
   <Talente xmlns="http://nota.org/schema/talent.xsd" KategorieId="Kampf">
     <talent:Kategorie>
       <misc:Lokalisirung Sprache="de">
@@ -23710,6 +23803,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
         <talent:Ableitung Id="Wahrnehmung" Anzahl="4" />
         <talent:Ableitung Id="Hören" Anzahl="3" />
         <talent:Ableitung Id="Sehen" Anzahl="3" />
+        <talent:Ableitung Id="Schleichen" Anzahl="4" />
       </talent:Ableitungen>
     </Talent>
     <Talent Id="Gewichtstemmen" Komplexität="B">
@@ -23729,6 +23823,10 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
         </misc:Lokalisirung>
       </misc:Beschreibung>
       <Verbreitung Wert="7" />
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Körperbeherschung" Anzahl="5" />
+      </talent:Ableitungen>
+
     </Talent>
     <Talent Id="Schwimmen" Komplexität="B">
       <Probe>
@@ -23787,7 +23885,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
       </misc:Beschreibung>
       <Verbreitung Wert="7" />
       <talent:Ableitungen>
-        <talent:Ableitung Id="Akrobatik" Anzahl="4" />
+        <talent:Ableitung Id="Körperbeherschung" Anzahl="4" />
       </talent:Ableitungen>
     </Talent>
     <Talent Id="Fingerübungen" Komplexität="B">
@@ -23874,6 +23972,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
       <Verbreitung Wert="7" />
       <talent:Ableitungen>
         <talent:Ableitung Id="Körperbeherschung" Anzahl="3" />
+        <talent:Ableitung Id="Wahrnehmung" Anzahl="4" />
       </talent:Ableitungen>
     </Talent>
 
@@ -23897,6 +23996,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
       <talent:Ableitungen>
         <talent:Ableitung Id="Körperbeherschung" Anzahl="4" />
         <talent:Ableitung Id="Fingerübungen" Anzahl="3" />
+        <talent:Ableitung Id="Wahrnehmung" Anzahl="4" />
       </talent:Ableitungen>
 
     </Talent>
@@ -23943,6 +24043,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
       <Verbreitung Wert="7" />
       <talent:Ableitungen>
         <talent:Ableitung Id="Körperbeherschung" Anzahl="4" />
+        <talent:Ableitung Id="Sehen" Anzahl="5" />
       </talent:Ableitungen>
     </Talent>
 
@@ -24621,6 +24722,12 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
         </misc:Lokalisirung>
       </misc:Beschreibung>
       <Verbreitung Wert="7" />
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Sagen" Anzahl="7" />
+
+      </talent:Ableitungen>
+
+
     </Talent>
     <Talent Id="Geographie" Komplexität="B">
       <Probe>
@@ -26717,6 +26824,151 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
             <![CDATA[Der Charakter wurde von einem der Götter auserwählt]]>
           </misc:Lokalisirung>
         </misc:Beschreibung>
+        <besonderheit:Mods>
+          <misc:Besonderheiten>
+            <besonderheit:Besonderheit Id="Auserwählter" />
+          </misc:Besonderheiten>
+        </besonderheit:Mods>
+      </besonderheit:Stufe>
+    </Besonderheit>
+
+    <Besonderheit Id="Auserwählter Yoguu" Gebunden="true">
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Auserwählter Alsas]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <besonderheit:Stufe>
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Der Charakter wurde von einem der Götter auserwählt]]>
+          </misc:Lokalisirung>
+        </misc:Beschreibung>
+        <besonderheit:Mods>
+          <misc:Besonderheiten>
+            <besonderheit:Besonderheit Id="Auserwählter" />
+          </misc:Besonderheiten>
+        </besonderheit:Mods>
+      </besonderheit:Stufe>
+    </Besonderheit>
+
+    <Besonderheit Id="Auserwählter Bartimus" Gebunden="true">
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Auserwählter Alsas]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <besonderheit:Stufe>
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Der Charakter wurde von einem der Götter auserwählt]]>
+          </misc:Lokalisirung>
+        </misc:Beschreibung>
+        <besonderheit:Mods>
+          <misc:Besonderheiten>
+            <besonderheit:Besonderheit Id="Auserwählter" />
+          </misc:Besonderheiten>
+        </besonderheit:Mods>
+      </besonderheit:Stufe>
+    </Besonderheit>
+
+    <Besonderheit Id="Auserwählter Heros" Gebunden="true">
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Auserwählter Alsas]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <besonderheit:Stufe>
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Der Charakter wurde von einem der Götter auserwählt]]>
+          </misc:Lokalisirung>
+        </misc:Beschreibung>
+        <besonderheit:Mods>
+          <misc:Besonderheiten>
+            <besonderheit:Besonderheit Id="Auserwählter" />
+          </misc:Besonderheiten>
+        </besonderheit:Mods>
+      </besonderheit:Stufe>
+    </Besonderheit>
+
+    <Besonderheit Id="Auserwählter Karins" Gebunden="true">
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Auserwählter Alsas]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <besonderheit:Stufe>
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Der Charakter wurde von einem der Götter auserwählt]]>
+          </misc:Lokalisirung>
+        </misc:Beschreibung>
+        <besonderheit:Mods>
+          <misc:Besonderheiten>
+            <besonderheit:Besonderheit Id="Auserwählter" />
+          </misc:Besonderheiten>
+        </besonderheit:Mods>
+      </besonderheit:Stufe>
+    </Besonderheit>
+
+    <Besonderheit Id="Auserwählter Iru" Gebunden="true">
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Auserwählter Alsas]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <besonderheit:Stufe>
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Der Charakter wurde von einem der Götter auserwählt]]>
+          </misc:Lokalisirung>
+        </misc:Beschreibung>
+        <besonderheit:Mods>
+          <misc:Besonderheiten>
+            <besonderheit:Besonderheit Id="Auserwählter" />
+          </misc:Besonderheiten>
+        </besonderheit:Mods>
+      </besonderheit:Stufe>
+    </Besonderheit>
+
+    <Besonderheit Id="Auserwählter Kalim" Gebunden="true">
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Auserwählter Alsas]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <besonderheit:Stufe>
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Der Charakter wurde von einem der Götter auserwählt]]>
+          </misc:Lokalisirung>
+        </misc:Beschreibung>
+        <besonderheit:Mods>
+          <misc:Besonderheiten>
+            <besonderheit:Besonderheit Id="Auserwählter" />
+          </misc:Besonderheiten>
+        </besonderheit:Mods>
+      </besonderheit:Stufe>
+    </Besonderheit>
+
+    <Besonderheit Id="Auserwählter Nalum" Gebunden="true">
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Auserwählter Alsas]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <besonderheit:Stufe>
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Der Charakter wurde von einem der Götter auserwählt]]>
+          </misc:Lokalisirung>
+        </misc:Beschreibung>
+        <besonderheit:Mods>
+          <misc:Besonderheiten>
+            <besonderheit:Besonderheit Id="Auserwählter" />
+          </misc:Besonderheiten>
+        </besonderheit:Mods>
       </besonderheit:Stufe>
     </Besonderheit>
 
