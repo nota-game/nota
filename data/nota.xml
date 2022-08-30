@@ -4710,7 +4710,9 @@ Wassermenschen beisitzen eine Natürliche Magie welche Ihren Unterkörper in ein
                     <lebewesen:Glück Mod='3' />
                     <lebewesen:Mut Mod='1' />
                   </misc:Eigenschaften>
-                  <besonderheit:Besonderheit Id="Segen Irus" />
+                  <misc:Besonderheiten>
+                    <besonderheit:Besonderheit Id="Segen Irus" />
+                  </misc:Besonderheiten>
                 </Mods>
               </Lebensabschnitt>
               <Lebensabschnitt startAlter="13">
@@ -4732,7 +4734,10 @@ Wassermenschen beisitzen eine Natürliche Magie welche Ihren Unterkörper in ein
                     <lebewesen:Glück Mod='2' />
                     <lebewesen:Mut Mod='1' />
                   </misc:Eigenschaften>
-                  <besonderheit:Besonderheit Id="Segen Irus" />
+                  <misc:Besonderheiten>
+                    <besonderheit:Besonderheit Id="Segen Irus" />
+                  </misc:Besonderheiten>
+
                 </Mods>
               </Lebensabschnitt>
               <Lebensabschnitt startAlter="14" >
@@ -9418,7 +9423,7 @@ Wassermenschen beisitzen eine Natürliche Magie welche Ihren Unterkörper in ein
               </lebewesen:Reihe>
             </lebewesen:Entwiklung>
             <Lebensabschnitte>
-              <Lebensabschnitt Id="JugendlicherW1" startAlter="0" endAlter="3" minGröße="1.44" maxGröße="1.58" minBMI="16" maxBMI="21">
+              <Lebensabschnitt startAlter="0" endAlter="3" >
                 <Spielbar>
                   <misc:Kosten Id="Kultur" Wert="-110" />
                 </Spielbar>
@@ -15991,7 +15996,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
             </lebewesen:Entwiklung>
             <Lebensabschnitte>
-              <Lebensabschnitt Id="ImpM1" startAlter="12" endAlter="13" minGröße="1.41" maxGröße="1.56" minBMI="15" maxBMI="21">
+              <Lebensabschnitt  startAlter="12" endAlter="13" >
                 <Spielbar>
                   <misc:Kosten Id="Kultur" Wert="-75" />
                 </Spielbar>
@@ -16012,7 +16017,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
                   </misc:Eigenschaften>
                 </Mods>
               </Lebensabschnitt>
-              <Lebensabschnitt Id="ImpM2" startAlter="13" endAlter="14" minGröße="1.41" maxGröße="1.56" minBMI="15" maxBMI="21">
+              <Lebensabschnitt  startAlter="13" endAlter="14" >
                 <Spielbar>
                   <misc:Kosten Id="Kultur" Wert="-80" />
                 </Spielbar>
@@ -16027,7 +16032,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
                   </misc:Lokalisirung>
                 </Beschreibung>
               </Lebensabschnitt>
-              <Lebensabschnitt Id="M3" startAlter="14" endAlter="15" minGröße="1.41" maxGröße="1.56" minBMI="15" maxBMI="21">
+              <Lebensabschnitt  startAlter="14" endAlter="15" >
                 <Spielbar>
                   <misc:Kosten Id="Kultur" Wert="-90" />
                 </Spielbar>
@@ -16042,7 +16047,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
                   </misc:Lokalisirung>
                 </Beschreibung>
               </Lebensabschnitt>
-              <Lebensabschnitt Id="M4" startAlter="16" endAlter="18" minGröße="1.41" maxGröße="1.56" minBMI="15" maxBMI="21">
+              <Lebensabschnitt  startAlter="16" endAlter="18" >
                 <Spielbar>
                   <misc:Kosten Id="Kultur" Wert="-100" />
                 </Spielbar>
@@ -16057,7 +16062,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
                   </misc:Lokalisirung>
                 </Beschreibung>
               </Lebensabschnitt>
-              <Lebensabschnitt Id="M5" startAlter="18" endAlter="21" minGröße="1.41" maxGröße="1.56" minBMI="15" maxBMI="21">
+              <Lebensabschnitt startAlter="18" endAlter="21" >
                 <Spielbar>
                   <misc:Kosten Id="Kultur" Wert="-100" />
                 </Spielbar>
@@ -16072,7 +16077,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
                   </misc:Lokalisirung>
                 </Beschreibung>
               </Lebensabschnitt>
-              <Lebensabschnitt Id="M6" startAlter="21" endAlter="25" minGröße="1.41" maxGröße="1.56" minBMI="15" maxBMI="21">
+              <Lebensabschnitt  startAlter="21" endAlter="25" >
                 <Spielbar>
                   <misc:Kosten Id="Kultur" Wert="-110" />
                 </Spielbar>
@@ -16087,7 +16092,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
                   </misc:Lokalisirung>
                 </Beschreibung>
               </Lebensabschnitt>
-              <Lebensabschnitt Id="M7" startAlter="25" endAlter="30" minGröße="1.41" maxGröße="1.56" minBMI="15" maxBMI="21">
+              <Lebensabschnitt  startAlter="25" endAlter="30" >
                 <Spielbar>
                   <misc:Kosten Id="Kultur" Wert="-120" />
                 </Spielbar>
@@ -16102,7 +16107,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
                   </misc:Lokalisirung>
                 </Beschreibung>
               </Lebensabschnitt>
-              <Lebensabschnitt Id="M8" startAlter="30" endAlter="35" minGröße="1.41" maxGröße="1.56" minBMI="15" maxBMI="21">
+              <Lebensabschnitt  startAlter="30" endAlter="35" >
                 <Spielbar>
                   <misc:Kosten Id="Kultur" Wert="-120" />
                 </Spielbar>
@@ -16117,7 +16122,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
                   </misc:Lokalisirung>
                 </Beschreibung>
               </Lebensabschnitt>
-              <Lebensabschnitt Id="M9" startAlter="35" endAlter="40" minGröße="1.41" maxGröße="1.56" minBMI="15" maxBMI="21">
+              <Lebensabschnitt  startAlter="35" endAlter="40" >
                 <Spielbar>
                   <misc:Kosten Id="Kultur" Wert="-120" />
                 </Spielbar>
@@ -22660,7 +22665,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
             </lebewesen:Entwiklung>
             <Lebensabschnitte>
-              <Lebensabschnitt Id="JugendlicherW1" startAlter="0" endAlter="3" minGröße="1.44" maxGröße="1.58" minBMI="16" maxBMI="21">
+              <Lebensabschnitt startAlter="0" endAlter="3" >
                 <Spielbar>
                   <misc:Kosten Id="Kultur" Wert="-110" />
                 </Spielbar>
