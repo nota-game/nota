@@ -2,30 +2,7 @@
 <!-- This file represents a fragment of a book store inventory database -->
 <Daten Version='1' xmlns='http://nota.org/schema/nota.xsd' xmlns:nota='http://nota.org/schema/nota.xsd' xmlns:misc='http://nota.org/schema/misc.xsd' xmlns:lebewesen="http://nota.org/schema/lebewesen.xsd" xmlns:pfad="http://nota.org/schema/pfad.xsd" xmlns:talent="http://nota.org/schema/talent.xsd" xmlns:fertigkeit="http://nota.org/schema/fertigkeit.xsd" xmlns:besonderheit="http://nota.org/schema/besonderheit.xsd" xmlns:Belastung="http://nota.org/schema/kampf/aktionen.xsd" xmlns:ausstattung="http://nota.org/schema/kampf/ausstattung.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://nota.org/schema/nota.xsd ../../nota-schema/nota.xsd http://nota.org/schema/lebewesen.xsd ../../nota-schema/Lebewesen.xsd http://nota.org/schema/pfad.xsd ../../nota-schema/pfad.xsd http://nota.org/schema/talent.xsd ../../nota-schema/talent.xsd http://nota.org/schema/fertigkeit.xsd ../../nota-schema/fertigkeit.xsd http://nota.org/schema/besonderheit.xsd ../../nota-schema/besonderheit.xsd http://nota.org/schema/kampf/aktionen.xsd ../../nota-schema/kampf/aktionen.xsd http://nota.org/schema/kampf/ausstattung.xsd ../../nota-schema/kampf/ausstattung.xsd http://nota.org/schema/misc.xsd ../../nota-schema/misc.xsd">
   <!-- xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://nota.org/schema/nota.xsd http://nota.org/schema/nota.xsd http://nota.org/schema/misc.xsd http://nota.org/schema/misc.xsd http://nota.org/schema/wesen.xsd http://nota.org/schema/wesen.xsd http://nota.org/schema/pfad.xsd http://nota.org/schema/pfad.xsd http://nota.org/schema/profession.xsd http://nota.org/schema/profession.xsd http://nota.org/schema/talent.xsd http://nota.org/schema/talent.xsd http://nota.org/schema/fertigkeit.xsd http://nota.org/schema/fertigkeit.xsd http://nota.org/schema/besonderheit.xsd http://nota.org/schema/besonderheit.xsd http://nota.org/schema/kampf/aktionen.xsd http://nota.org/schema/kampf/aktionen.xsd http://nota.org/schema/kampf/ausstattung.xsd http://nota.org/schema/kampf/ausstattung.xsd" -->
-  <!--<Pfade>
-    <PfadAuswahl Id="Götter">
-      <misc:Name>
-        <misc:Lokalisirung Sprache="de"><![CDATA[Götter]]></misc:Lokalisirung>
-      </misc:Name>
-      <misc:Beschreibung>
-        <misc:Lokalisirung Sprache="de"><![CDATA[Der Gott dem der Charakter gewidmet ist.]]></misc:Lokalisirung>
-      </misc:Beschreibung>
-      <Pfad Id="Alsa">
-        <misc:Name>
-          <misc:Lokalisirung Sprache="de"><![CDATA[Alsa]]></misc:Lokalisirung>
-        </misc:Name>
-        <misc:Beschreibung>
-          <misc:Lokalisirung Sprache="de"><![CDATA[Der Charakter ist ein Diener des Gottes Alsa.]]></misc:Lokalisirung>
-        </misc:Beschreibung>
-        <Modifikationen>
-          <Besonderheiten xmlns="http://nota.org/schema/lebewesen.xsd">
-            <besonderheit:Besonderheit Id="Auserwählter"/>
-            <besonderheit:Besonderheit Id="Auserwählter Alsas"/>
-          </Besonderheiten>
-        </Modifikationen>
-      </Pfad>
-    </PfadAuswahl>
-  </Pfade>-->
+
   <KostenDefinitionen xmlns="http://nota.org/schema/misc.xsd">
     <KostenDefinition Id="GP">
       <misc:Name>
@@ -4714,7 +4691,7 @@ Wassermenschen beisitzen eine Natürliche Magie welche Ihren Unterkörper in ein
 
             </lebewesen:Entwiklung>
             <Lebensabschnitte>
-              <Lebensabschnitt Id="ImpM1" startAlter="12" endAlter="13" minGröße="1.41" maxGröße="1.56" minBMI="15" maxBMI="21">
+              <Lebensabschnitt startAlter="12">
                 <Spielbar>
                   <misc:Kosten Id="Kultur" Wert="-75" />
                 </Spielbar>
@@ -4733,9 +4710,10 @@ Wassermenschen beisitzen eine Natürliche Magie welche Ihren Unterkörper in ein
                     <lebewesen:Glück Mod='3' />
                     <lebewesen:Mut Mod='1' />
                   </misc:Eigenschaften>
+                  <besonderheit:Besonderheit Id="Segen Irus" />
                 </Mods>
               </Lebensabschnitt>
-              <Lebensabschnitt Id="ImpM2" startAlter="13" endAlter="14" minGröße="1.41" maxGröße="1.56" minBMI="15" maxBMI="21">
+              <Lebensabschnitt startAlter="13">
                 <Spielbar>
                   <misc:Kosten Id="Kultur" Wert="-80" />
                 </Spielbar>
@@ -4749,8 +4727,15 @@ Wassermenschen beisitzen eine Natürliche Magie welche Ihren Unterkörper in ein
                     <![CDATA[]]>
                   </misc:Lokalisirung>
                 </Beschreibung>
+                <Mods>
+                  <misc:Eigenschaften>
+                    <lebewesen:Glück Mod='2' />
+                    <lebewesen:Mut Mod='1' />
+                  </misc:Eigenschaften>
+                  <besonderheit:Besonderheit Id="Segen Irus" />
+                </Mods>
               </Lebensabschnitt>
-              <Lebensabschnitt Id="M3" startAlter="14" endAlter="15" minGröße="1.41" maxGröße="1.56" minBMI="15" maxBMI="21">
+              <Lebensabschnitt startAlter="14" >
                 <Spielbar>
                   <misc:Kosten Id="Kultur" Wert="-90" />
                 </Spielbar>
@@ -4764,8 +4749,14 @@ Wassermenschen beisitzen eine Natürliche Magie welche Ihren Unterkörper in ein
                     <![CDATA[]]>
                   </misc:Lokalisirung>
                 </Beschreibung>
+                <Mods>
+                  <misc:Eigenschaften>
+                    <lebewesen:Glück Mod='2' />
+                    <lebewesen:Mut Mod='1' />
+                  </misc:Eigenschaften>
+                </Mods>
               </Lebensabschnitt>
-              <Lebensabschnitt Id="M4" startAlter="16" endAlter="18" minGröße="1.41" maxGröße="1.56" minBMI="15" maxBMI="21">
+              <Lebensabschnitt startAlter="16">
                 <Spielbar>
                   <misc:Kosten Id="Kultur" Wert="-100" />
                 </Spielbar>
@@ -4779,23 +4770,14 @@ Wassermenschen beisitzen eine Natürliche Magie welche Ihren Unterkörper in ein
                     <![CDATA[]]>
                   </misc:Lokalisirung>
                 </Beschreibung>
+                <Mods>
+                  <misc:Eigenschaften>
+                    <lebewesen:Glück Mod='1' />
+                    <lebewesen:Mut Mod='1' />
+                  </misc:Eigenschaften>
+                </Mods>
               </Lebensabschnitt>
-              <Lebensabschnitt Id="M5" startAlter="18" endAlter="21" minGröße="1.41" maxGröße="1.56" minBMI="15" maxBMI="21">
-                <Spielbar>
-                  <misc:Kosten Id="Kultur" Wert="-100" />
-                </Spielbar>
-                <Name>
-                  <misc:Lokalisirung Sprache="de">
-                    <![CDATA[Junger Erwachsener]]>
-                  </misc:Lokalisirung>
-                </Name>
-                <Beschreibung>
-                  <misc:Lokalisirung Sprache="de">
-                    <![CDATA[]]>
-                  </misc:Lokalisirung>
-                </Beschreibung>
-              </Lebensabschnitt>
-              <Lebensabschnitt Id="M6" startAlter="21" endAlter="25" minGröße="1.41" maxGröße="1.56" minBMI="15" maxBMI="21">
+              <Lebensabschnitt startAlter="18" >
                 <Spielbar>
                   <misc:Kosten Id="Kultur" Wert="-110" />
                 </Spielbar>
@@ -4809,10 +4791,30 @@ Wassermenschen beisitzen eine Natürliche Magie welche Ihren Unterkörper in ein
                     <![CDATA[]]>
                   </misc:Lokalisirung>
                 </Beschreibung>
+                <Mods>
+                  <misc:Eigenschaften>
+                    <lebewesen:Glück Mod='1' />
+                  </misc:Eigenschaften>
+                </Mods>
               </Lebensabschnitt>
-              <Lebensabschnitt Id="M7" startAlter="25" endAlter="30" minGröße="1.41" maxGröße="1.56" minBMI="15" maxBMI="21">
+              <Lebensabschnitt startAlter="21" >
                 <Spielbar>
                   <misc:Kosten Id="Kultur" Wert="-120" />
+                </Spielbar>
+                <Name>
+                  <misc:Lokalisirung Sprache="de">
+                    <![CDATA[Junger Erwachsener]]>
+                  </misc:Lokalisirung>
+                </Name>
+                <Beschreibung>
+                  <misc:Lokalisirung Sprache="de">
+                    <![CDATA[]]>
+                  </misc:Lokalisirung>
+                </Beschreibung>
+              </Lebensabschnitt>
+              <Lebensabschnitt startAlter="25" >
+                <Spielbar>
+                  <misc:Kosten Id="Kultur" Wert="-130" />
                 </Spielbar>
                 <Name>
                   <misc:Lokalisirung Sprache="de">
@@ -4825,9 +4827,9 @@ Wassermenschen beisitzen eine Natürliche Magie welche Ihren Unterkörper in ein
                   </misc:Lokalisirung>
                 </Beschreibung>
               </Lebensabschnitt>
-              <Lebensabschnitt Id="M8" startAlter="30" endAlter="35" minGröße="1.41" maxGröße="1.56" minBMI="15" maxBMI="21">
+              <Lebensabschnitt startAlter="30" >
                 <Spielbar>
-                  <misc:Kosten Id="Kultur" Wert="-120" />
+                  <misc:Kosten Id="Kultur" Wert="-140" />
                 </Spielbar>
                 <Name>
                   <misc:Lokalisirung Sprache="de">
@@ -4840,9 +4842,74 @@ Wassermenschen beisitzen eine Natürliche Magie welche Ihren Unterkörper in ein
                   </misc:Lokalisirung>
                 </Beschreibung>
               </Lebensabschnitt>
-              <Lebensabschnitt Id="M9" startAlter="35" endAlter="40" minGröße="1.41" maxGröße="1.56" minBMI="15" maxBMI="21">
+              <Lebensabschnitt startAlter="35">
                 <Spielbar>
-                  <misc:Kosten Id="Kultur" Wert="-120" />
+                  <misc:Kosten Id="Kultur" Wert="-150" />
+                  <misc:Kosten Id="Alter" Wert="1" />
+                </Spielbar>
+                <Name>
+                  <misc:Lokalisirung Sprache="de">
+                    <![CDATA[Erwachsener]]>
+                  </misc:Lokalisirung>
+                </Name>
+                <Beschreibung>
+                  <misc:Lokalisirung Sprache="de">
+                    <![CDATA[]]>
+                  </misc:Lokalisirung>
+                </Beschreibung>
+              </Lebensabschnitt>
+              <Lebensabschnitt startAlter="40">
+                <Spielbar>
+                  <misc:Kosten Id="Kultur" Wert="-160" />
+                  <misc:Kosten Id="Alter" Wert="2" />
+                </Spielbar>
+                <Name>
+                  <misc:Lokalisirung Sprache="de">
+                    <![CDATA[Erwachsener]]>
+                  </misc:Lokalisirung>
+                </Name>
+                <Beschreibung>
+                  <misc:Lokalisirung Sprache="de">
+                    <![CDATA[]]>
+                  </misc:Lokalisirung>
+                </Beschreibung>
+              </Lebensabschnitt>
+              <Lebensabschnitt startAlter="50">
+                <Spielbar>
+                  <misc:Kosten Id="Kultur" Wert="-170" />
+                  <misc:Kosten Id="Alter" Wert="3" />
+                </Spielbar>
+                <Name>
+                  <misc:Lokalisirung Sprache="de">
+                    <![CDATA[Erwachsener]]>
+                  </misc:Lokalisirung>
+                </Name>
+                <Beschreibung>
+                  <misc:Lokalisirung Sprache="de">
+                    <![CDATA[]]>
+                  </misc:Lokalisirung>
+                </Beschreibung>
+              </Lebensabschnitt>
+              <Lebensabschnitt startAlter="60">
+                <Spielbar>
+                  <misc:Kosten Id="Kultur" Wert="-180" />
+                  <misc:Kosten Id="Alter" Wert="4" />
+                </Spielbar>
+                <Name>
+                  <misc:Lokalisirung Sprache="de">
+                    <![CDATA[Erwachsener]]>
+                  </misc:Lokalisirung>
+                </Name>
+                <Beschreibung>
+                  <misc:Lokalisirung Sprache="de">
+                    <![CDATA[]]>
+                  </misc:Lokalisirung>
+                </Beschreibung>
+              </Lebensabschnitt>
+              <Lebensabschnitt startAlter="70" endAlter="80">
+                <Spielbar>
+                  <misc:Kosten Id="Kultur" Wert="-190" />
+                  <misc:Kosten Id="Alter" Wert="5" />
                 </Spielbar>
                 <Name>
                   <misc:Lokalisirung Sprache="de">
@@ -26797,6 +26864,20 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
       </misc:Lokalisirung>
     </besonderheit:Kategorie>
 
+    <Besonderheit Id="Segen Irus" Gebunden="true">
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Segen Irus]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <besonderheit:Stufe>
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Irus schenkt den Kindern seinen Segen. Der Spieler kann 2 GlP ausgeben um nach einer Probe einen zusätslichen Eigenschaftswurf auf GL zu machen. Dieser Würfel kann einen Belibigen Eigenschaftswurf der Probe ersetzen.]]>
+          </misc:Lokalisirung>
+        </misc:Beschreibung>
+      </besonderheit:Stufe>
+    </Besonderheit>
     <Besonderheit Id="Auserwählter" Gebunden="true">
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
