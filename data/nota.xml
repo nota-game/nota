@@ -9455,7 +9455,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
         </misc:Beschreibung>
         <lebewesen:Mods>
           <misc:Eigenschaften>
-            <lebewesen:Kraft Mod='1.6' Type='multiplikativ' />
+            <lebewesen:Kraft Mod='2' Type='multiplikativ' />
 
           </misc:Eigenschaften>
         </lebewesen:Mods>
