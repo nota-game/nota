@@ -146,6 +146,244 @@
         <Fokus Durchschnitt="9" Start="13" />
         <Einfluss Durchschnitt="9" Start="13" />
       </Eigenschaften>
+      <Lebensabschnitte>
+        <Lebensabschnitt startAlter="12">
+          <Spielbar>
+            <misc:Kosten Id="Kultur" Wert="-75" />
+          </Spielbar>
+          <Name>
+            <misc:Lokalisirung Sprache="de">
+              <![CDATA[Herranwchsender]]>
+            </misc:Lokalisirung>
+          </Name>
+          <lebewesen:Beschreibung>
+            <misc:Lokalisirung Sprache="de">
+              <![CDATA[]]>
+            </misc:Lokalisirung>
+          </lebewesen:Beschreibung>
+          <Mods>
+            <misc:Eigenschaften>
+              <lebewesen:Glück Mod='3' />
+              <lebewesen:Mut Mod='1' />
+            </misc:Eigenschaften>
+            <misc:Besonderheiten>
+              <besonderheit:Besonderheit Id="Segen Irus" />
+            </misc:Besonderheiten>
+          </Mods>
+        </Lebensabschnitt>
+        <Lebensabschnitt startAlter="13">
+          <Spielbar>
+            <misc:Kosten Id="Kultur" Wert="-80" />
+          </Spielbar>
+          <Name>
+            <misc:Lokalisirung Sprache="de">
+              <![CDATA[Herranwchsender]]>
+            </misc:Lokalisirung>
+          </Name>
+          <Beschreibung>
+            <misc:Lokalisirung Sprache="de">
+              <![CDATA[]]>
+            </misc:Lokalisirung>
+          </Beschreibung>
+          <Mods>
+            <misc:Eigenschaften>
+              <lebewesen:Glück Mod='2' />
+              <lebewesen:Mut Mod='1' />
+            </misc:Eigenschaften>
+            <misc:Besonderheiten>
+              <besonderheit:Besonderheit Id="Segen Irus" />
+            </misc:Besonderheiten>
+
+          </Mods>
+        </Lebensabschnitt>
+        <Lebensabschnitt startAlter="14">
+          <Spielbar>
+            <misc:Kosten Id="Kultur" Wert="-90" />
+          </Spielbar>
+          <Name>
+            <misc:Lokalisirung Sprache="de">
+              <![CDATA[Herranwchsender]]>
+            </misc:Lokalisirung>
+          </Name>
+          <Beschreibung>
+            <misc:Lokalisirung Sprache="de">
+              <![CDATA[]]>
+            </misc:Lokalisirung>
+          </Beschreibung>
+          <Mods>
+            <misc:Eigenschaften>
+              <lebewesen:Glück Mod='2' />
+              <lebewesen:Mut Mod='1' />
+            </misc:Eigenschaften>
+          </Mods>
+        </Lebensabschnitt>
+        <Lebensabschnitt startAlter="16">
+          <Spielbar>
+            <misc:Kosten Id="Kultur" Wert="-100" />
+          </Spielbar>
+          <Name>
+            <misc:Lokalisirung Sprache="de">
+              <![CDATA[Junger Erwachsener]]>
+            </misc:Lokalisirung>
+          </Name>
+          <Beschreibung>
+            <misc:Lokalisirung Sprache="de">
+              <![CDATA[]]>
+            </misc:Lokalisirung>
+          </Beschreibung>
+          <Mods>
+            <misc:Eigenschaften>
+              <lebewesen:Glück Mod='1' />
+              <lebewesen:Mut Mod='1' />
+            </misc:Eigenschaften>
+          </Mods>
+        </Lebensabschnitt>
+        <Lebensabschnitt startAlter="18">
+          <Spielbar>
+            <misc:Kosten Id="Kultur" Wert="-110" />
+          </Spielbar>
+          <Name>
+            <misc:Lokalisirung Sprache="de">
+              <![CDATA[Junger Erwachsener]]>
+            </misc:Lokalisirung>
+          </Name>
+          <Beschreibung>
+            <misc:Lokalisirung Sprache="de">
+              <![CDATA[]]>
+            </misc:Lokalisirung>
+          </Beschreibung>
+          <Mods>
+            <misc:Eigenschaften>
+              <lebewesen:Glück Mod='1' />
+            </misc:Eigenschaften>
+          </Mods>
+        </Lebensabschnitt>
+        <Lebensabschnitt startAlter="21">
+          <Spielbar>
+            <misc:Kosten Id="Kultur" Wert="-120" />
+          </Spielbar>
+          <Name>
+            <misc:Lokalisirung Sprache="de">
+              <![CDATA[Junger Erwachsener]]>
+            </misc:Lokalisirung>
+          </Name>
+          <Beschreibung>
+            <misc:Lokalisirung Sprache="de">
+              <![CDATA[]]>
+            </misc:Lokalisirung>
+          </Beschreibung>
+        </Lebensabschnitt>
+        <Lebensabschnitt startAlter="25">
+          <Spielbar>
+            <misc:Kosten Id="Kultur" Wert="-130" />
+          </Spielbar>
+          <Name>
+            <misc:Lokalisirung Sprache="de">
+              <![CDATA[Erwachsener]]>
+            </misc:Lokalisirung>
+          </Name>
+          <Beschreibung>
+            <misc:Lokalisirung Sprache="de">
+              <![CDATA[]]>
+            </misc:Lokalisirung>
+          </Beschreibung>
+        </Lebensabschnitt>
+        <Lebensabschnitt startAlter="30">
+          <Spielbar>
+            <misc:Kosten Id="Kultur" Wert="-140" />
+          </Spielbar>
+          <Name>
+            <misc:Lokalisirung Sprache="de">
+              <![CDATA[Erwachsener]]>
+            </misc:Lokalisirung>
+          </Name>
+          <Beschreibung>
+            <misc:Lokalisirung Sprache="de">
+              <![CDATA[]]>
+            </misc:Lokalisirung>
+          </Beschreibung>
+        </Lebensabschnitt>
+        <Lebensabschnitt startAlter="35">
+          <Spielbar>
+            <misc:Kosten Id="Kultur" Wert="-150" />
+            <misc:Kosten Id="Alter" Wert="1" />
+          </Spielbar>
+          <Name>
+            <misc:Lokalisirung Sprache="de">
+              <![CDATA[Erwachsener]]>
+            </misc:Lokalisirung>
+          </Name>
+          <Beschreibung>
+            <misc:Lokalisirung Sprache="de">
+              <![CDATA[]]>
+            </misc:Lokalisirung>
+          </Beschreibung>
+        </Lebensabschnitt>
+        <Lebensabschnitt startAlter="40">
+          <Spielbar>
+            <misc:Kosten Id="Kultur" Wert="-160" />
+            <misc:Kosten Id="Alter" Wert="2" />
+          </Spielbar>
+          <Name>
+            <misc:Lokalisirung Sprache="de">
+              <![CDATA[Erwachsener]]>
+            </misc:Lokalisirung>
+          </Name>
+          <Beschreibung>
+            <misc:Lokalisirung Sprache="de">
+              <![CDATA[]]>
+            </misc:Lokalisirung>
+          </Beschreibung>
+        </Lebensabschnitt>
+        <Lebensabschnitt startAlter="50">
+          <Spielbar>
+            <misc:Kosten Id="Kultur" Wert="-170" />
+            <misc:Kosten Id="Alter" Wert="3" />
+          </Spielbar>
+          <Name>
+            <misc:Lokalisirung Sprache="de">
+              <![CDATA[Erwachsener]]>
+            </misc:Lokalisirung>
+          </Name>
+          <Beschreibung>
+            <misc:Lokalisirung Sprache="de">
+              <![CDATA[]]>
+            </misc:Lokalisirung>
+          </Beschreibung>
+        </Lebensabschnitt>
+        <Lebensabschnitt startAlter="60">
+          <Spielbar>
+            <misc:Kosten Id="Kultur" Wert="-180" />
+            <misc:Kosten Id="Alter" Wert="4" />
+          </Spielbar>
+          <Name>
+            <misc:Lokalisirung Sprache="de">
+              <![CDATA[Erwachsener]]>
+            </misc:Lokalisirung>
+          </Name>
+          <Beschreibung>
+            <misc:Lokalisirung Sprache="de">
+              <![CDATA[]]>
+            </misc:Lokalisirung>
+          </Beschreibung>
+        </Lebensabschnitt>
+        <Lebensabschnitt startAlter="70" endAlter="80">
+          <Spielbar>
+            <misc:Kosten Id="Kultur" Wert="-190" />
+            <misc:Kosten Id="Alter" Wert="5" />
+          </Spielbar>
+          <Name>
+            <misc:Lokalisirung Sprache="de">
+              <![CDATA[Erwachsener]]>
+            </misc:Lokalisirung>
+          </Name>
+          <Beschreibung>
+            <misc:Lokalisirung Sprache="de">
+              <![CDATA[]]>
+            </misc:Lokalisirung>
+          </Beschreibung>
+        </Lebensabschnitt>
+      </Lebensabschnitte>
 
       <!-- Gewicht / Größe refernz
   Jugend: https://www.rki.de/DE/Content/Gesundheitsmonitoring/Gesundheitsberichterstattung/GBEDownloadsB/KiGGS_Referenzperzentile.pdf?__blob=publicationFile
@@ -4691,242 +4929,7 @@ Wassermenschen beisitzen eine Natürliche Magie welche Ihren Unterkörper in ein
 
             </lebewesen:Entwiklung>
             <Lebensabschnitte>
-              <Lebensabschnitt startAlter="12">
-                <Spielbar>
-                  <misc:Kosten Id="Kultur" Wert="-75" />
-                </Spielbar>
-                <Name>
-                  <misc:Lokalisirung Sprache="de">
-                    <![CDATA[Herranwchsender]]>
-                  </misc:Lokalisirung>
-                </Name>
-                <lebewesen:Beschreibung>
-                  <misc:Lokalisirung Sprache="de">
-                    <![CDATA[]]>
-                  </misc:Lokalisirung>
-                </lebewesen:Beschreibung>
-                <Mods>
-                  <misc:Eigenschaften>
-                    <lebewesen:Glück Mod='3' />
-                    <lebewesen:Mut Mod='1' />
-                  </misc:Eigenschaften>
-                  <misc:Besonderheiten>
-                    <besonderheit:Besonderheit Id="Segen Irus" />
-                  </misc:Besonderheiten>
-                </Mods>
-              </Lebensabschnitt>
-              <Lebensabschnitt startAlter="13">
-                <Spielbar>
-                  <misc:Kosten Id="Kultur" Wert="-80" />
-                </Spielbar>
-                <Name>
-                  <misc:Lokalisirung Sprache="de">
-                    <![CDATA[Herranwchsender]]>
-                  </misc:Lokalisirung>
-                </Name>
-                <Beschreibung>
-                  <misc:Lokalisirung Sprache="de">
-                    <![CDATA[]]>
-                  </misc:Lokalisirung>
-                </Beschreibung>
-                <Mods>
-                  <misc:Eigenschaften>
-                    <lebewesen:Glück Mod='2' />
-                    <lebewesen:Mut Mod='1' />
-                  </misc:Eigenschaften>
-                  <misc:Besonderheiten>
-                    <besonderheit:Besonderheit Id="Segen Irus" />
-                  </misc:Besonderheiten>
-
-                </Mods>
-              </Lebensabschnitt>
-              <Lebensabschnitt startAlter="14" >
-                <Spielbar>
-                  <misc:Kosten Id="Kultur" Wert="-90" />
-                </Spielbar>
-                <Name>
-                  <misc:Lokalisirung Sprache="de">
-                    <![CDATA[Herranwchsender]]>
-                  </misc:Lokalisirung>
-                </Name>
-                <Beschreibung>
-                  <misc:Lokalisirung Sprache="de">
-                    <![CDATA[]]>
-                  </misc:Lokalisirung>
-                </Beschreibung>
-                <Mods>
-                  <misc:Eigenschaften>
-                    <lebewesen:Glück Mod='2' />
-                    <lebewesen:Mut Mod='1' />
-                  </misc:Eigenschaften>
-                </Mods>
-              </Lebensabschnitt>
-              <Lebensabschnitt startAlter="16">
-                <Spielbar>
-                  <misc:Kosten Id="Kultur" Wert="-100" />
-                </Spielbar>
-                <Name>
-                  <misc:Lokalisirung Sprache="de">
-                    <![CDATA[Junger Erwachsener]]>
-                  </misc:Lokalisirung>
-                </Name>
-                <Beschreibung>
-                  <misc:Lokalisirung Sprache="de">
-                    <![CDATA[]]>
-                  </misc:Lokalisirung>
-                </Beschreibung>
-                <Mods>
-                  <misc:Eigenschaften>
-                    <lebewesen:Glück Mod='1' />
-                    <lebewesen:Mut Mod='1' />
-                  </misc:Eigenschaften>
-                </Mods>
-              </Lebensabschnitt>
-              <Lebensabschnitt startAlter="18" >
-                <Spielbar>
-                  <misc:Kosten Id="Kultur" Wert="-110" />
-                </Spielbar>
-                <Name>
-                  <misc:Lokalisirung Sprache="de">
-                    <![CDATA[Junger Erwachsener]]>
-                  </misc:Lokalisirung>
-                </Name>
-                <Beschreibung>
-                  <misc:Lokalisirung Sprache="de">
-                    <![CDATA[]]>
-                  </misc:Lokalisirung>
-                </Beschreibung>
-                <Mods>
-                  <misc:Eigenschaften>
-                    <lebewesen:Glück Mod='1' />
-                  </misc:Eigenschaften>
-                </Mods>
-              </Lebensabschnitt>
-              <Lebensabschnitt startAlter="21" >
-                <Spielbar>
-                  <misc:Kosten Id="Kultur" Wert="-120" />
-                </Spielbar>
-                <Name>
-                  <misc:Lokalisirung Sprache="de">
-                    <![CDATA[Junger Erwachsener]]>
-                  </misc:Lokalisirung>
-                </Name>
-                <Beschreibung>
-                  <misc:Lokalisirung Sprache="de">
-                    <![CDATA[]]>
-                  </misc:Lokalisirung>
-                </Beschreibung>
-              </Lebensabschnitt>
-              <Lebensabschnitt startAlter="25" >
-                <Spielbar>
-                  <misc:Kosten Id="Kultur" Wert="-130" />
-                </Spielbar>
-                <Name>
-                  <misc:Lokalisirung Sprache="de">
-                    <![CDATA[Erwachsener]]>
-                  </misc:Lokalisirung>
-                </Name>
-                <Beschreibung>
-                  <misc:Lokalisirung Sprache="de">
-                    <![CDATA[]]>
-                  </misc:Lokalisirung>
-                </Beschreibung>
-              </Lebensabschnitt>
-              <Lebensabschnitt startAlter="30" >
-                <Spielbar>
-                  <misc:Kosten Id="Kultur" Wert="-140" />
-                </Spielbar>
-                <Name>
-                  <misc:Lokalisirung Sprache="de">
-                    <![CDATA[Erwachsener]]>
-                  </misc:Lokalisirung>
-                </Name>
-                <Beschreibung>
-                  <misc:Lokalisirung Sprache="de">
-                    <![CDATA[]]>
-                  </misc:Lokalisirung>
-                </Beschreibung>
-              </Lebensabschnitt>
-              <Lebensabschnitt startAlter="35">
-                <Spielbar>
-                  <misc:Kosten Id="Kultur" Wert="-150" />
-                  <misc:Kosten Id="Alter" Wert="1" />
-                </Spielbar>
-                <Name>
-                  <misc:Lokalisirung Sprache="de">
-                    <![CDATA[Erwachsener]]>
-                  </misc:Lokalisirung>
-                </Name>
-                <Beschreibung>
-                  <misc:Lokalisirung Sprache="de">
-                    <![CDATA[]]>
-                  </misc:Lokalisirung>
-                </Beschreibung>
-              </Lebensabschnitt>
-              <Lebensabschnitt startAlter="40">
-                <Spielbar>
-                  <misc:Kosten Id="Kultur" Wert="-160" />
-                  <misc:Kosten Id="Alter" Wert="2" />
-                </Spielbar>
-                <Name>
-                  <misc:Lokalisirung Sprache="de">
-                    <![CDATA[Erwachsener]]>
-                  </misc:Lokalisirung>
-                </Name>
-                <Beschreibung>
-                  <misc:Lokalisirung Sprache="de">
-                    <![CDATA[]]>
-                  </misc:Lokalisirung>
-                </Beschreibung>
-              </Lebensabschnitt>
-              <Lebensabschnitt startAlter="50">
-                <Spielbar>
-                  <misc:Kosten Id="Kultur" Wert="-170" />
-                  <misc:Kosten Id="Alter" Wert="3" />
-                </Spielbar>
-                <Name>
-                  <misc:Lokalisirung Sprache="de">
-                    <![CDATA[Erwachsener]]>
-                  </misc:Lokalisirung>
-                </Name>
-                <Beschreibung>
-                  <misc:Lokalisirung Sprache="de">
-                    <![CDATA[]]>
-                  </misc:Lokalisirung>
-                </Beschreibung>
-              </Lebensabschnitt>
-              <Lebensabschnitt startAlter="60">
-                <Spielbar>
-                  <misc:Kosten Id="Kultur" Wert="-180" />
-                  <misc:Kosten Id="Alter" Wert="4" />
-                </Spielbar>
-                <Name>
-                  <misc:Lokalisirung Sprache="de">
-                    <![CDATA[Erwachsener]]>
-                  </misc:Lokalisirung>
-                </Name>
-                <Beschreibung>
-                  <misc:Lokalisirung Sprache="de">
-                    <![CDATA[]]>
-                  </misc:Lokalisirung>
-                </Beschreibung>
-              </Lebensabschnitt>
-              <Lebensabschnitt startAlter="70" endAlter="80">
-                <Spielbar>
-                  <misc:Kosten Id="Kultur" Wert="-190" />
-                  <misc:Kosten Id="Alter" Wert="5" />
-                </Spielbar>
-                <Name>
-                  <misc:Lokalisirung Sprache="de">
-                    <![CDATA[Erwachsener]]>
-                  </misc:Lokalisirung>
-                </Name>
-                <Beschreibung>
-                  <misc:Lokalisirung Sprache="de">
-                    <![CDATA[]]>
-                  </misc:Lokalisirung>
-                </Beschreibung>
-              </Lebensabschnitt>
+              <Lebensabschnitt startAlter="12" endAlter="80" />
             </Lebensabschnitte>
           </Morph>
           <Morph Id="Frau" Geschlecht="Weiblich">
@@ -9423,22 +9426,9 @@ Wassermenschen beisitzen eine Natürliche Magie welche Ihren Unterkörper in ein
               </lebewesen:Reihe>
             </lebewesen:Entwiklung>
             <Lebensabschnitte>
-              <Lebensabschnitt startAlter="0" endAlter="3" >
-                <Spielbar>
-                  <misc:Kosten Id="Kultur" Wert="-110" />
-                </Spielbar>
-                <Name>
-                  <misc:Lokalisirung Sprache="de" Geschlecht="Weiblich">
-                    <![CDATA[Jugendliche]]>
-                  </misc:Lokalisirung>
-                </Name>
-                <Beschreibung>
-                  <misc:Lokalisirung Sprache="de">
-                    <![CDATA[]]>
-                  </misc:Lokalisirung>
-                </Beschreibung>
-              </Lebensabschnitt>
+              <Lebensabschnitt startAlter="12" endAlter="80" />
             </Lebensabschnitte>
+
           </Morph>
         </Morphe>
       </Art>
@@ -15996,148 +15986,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
             </lebewesen:Entwiklung>
             <Lebensabschnitte>
-              <Lebensabschnitt  startAlter="12" endAlter="13" >
-                <Spielbar>
-                  <misc:Kosten Id="Kultur" Wert="-75" />
-                </Spielbar>
-                <Name>
-                  <misc:Lokalisirung Sprache="de">
-                    <![CDATA[Herranwchsender]]>
-                  </misc:Lokalisirung>
-                </Name>
-                <lebewesen:Beschreibung>
-                  <misc:Lokalisirung Sprache="de">
-                    <![CDATA[]]>
-                  </misc:Lokalisirung>
-                </lebewesen:Beschreibung>
-                <Mods>
-                  <misc:Eigenschaften>
-                    <lebewesen:Glück Mod='3' />
-                    <lebewesen:Mut Mod='1' />
-                  </misc:Eigenschaften>
-                </Mods>
-              </Lebensabschnitt>
-              <Lebensabschnitt  startAlter="13" endAlter="14" >
-                <Spielbar>
-                  <misc:Kosten Id="Kultur" Wert="-80" />
-                </Spielbar>
-                <Name>
-                  <misc:Lokalisirung Sprache="de">
-                    <![CDATA[Herranwchsender]]>
-                  </misc:Lokalisirung>
-                </Name>
-                <Beschreibung>
-                  <misc:Lokalisirung Sprache="de">
-                    <![CDATA[]]>
-                  </misc:Lokalisirung>
-                </Beschreibung>
-              </Lebensabschnitt>
-              <Lebensabschnitt  startAlter="14" endAlter="15" >
-                <Spielbar>
-                  <misc:Kosten Id="Kultur" Wert="-90" />
-                </Spielbar>
-                <Name>
-                  <misc:Lokalisirung Sprache="de">
-                    <![CDATA[Herranwchsender]]>
-                  </misc:Lokalisirung>
-                </Name>
-                <Beschreibung>
-                  <misc:Lokalisirung Sprache="de">
-                    <![CDATA[]]>
-                  </misc:Lokalisirung>
-                </Beschreibung>
-              </Lebensabschnitt>
-              <Lebensabschnitt  startAlter="16" endAlter="18" >
-                <Spielbar>
-                  <misc:Kosten Id="Kultur" Wert="-100" />
-                </Spielbar>
-                <Name>
-                  <misc:Lokalisirung Sprache="de">
-                    <![CDATA[Junger Erwachsener]]>
-                  </misc:Lokalisirung>
-                </Name>
-                <Beschreibung>
-                  <misc:Lokalisirung Sprache="de">
-                    <![CDATA[]]>
-                  </misc:Lokalisirung>
-                </Beschreibung>
-              </Lebensabschnitt>
-              <Lebensabschnitt startAlter="18" endAlter="21" >
-                <Spielbar>
-                  <misc:Kosten Id="Kultur" Wert="-100" />
-                </Spielbar>
-                <Name>
-                  <misc:Lokalisirung Sprache="de">
-                    <![CDATA[Junger Erwachsener]]>
-                  </misc:Lokalisirung>
-                </Name>
-                <Beschreibung>
-                  <misc:Lokalisirung Sprache="de">
-                    <![CDATA[]]>
-                  </misc:Lokalisirung>
-                </Beschreibung>
-              </Lebensabschnitt>
-              <Lebensabschnitt  startAlter="21" endAlter="25" >
-                <Spielbar>
-                  <misc:Kosten Id="Kultur" Wert="-110" />
-                </Spielbar>
-                <Name>
-                  <misc:Lokalisirung Sprache="de">
-                    <![CDATA[Junger Erwachsener]]>
-                  </misc:Lokalisirung>
-                </Name>
-                <Beschreibung>
-                  <misc:Lokalisirung Sprache="de">
-                    <![CDATA[]]>
-                  </misc:Lokalisirung>
-                </Beschreibung>
-              </Lebensabschnitt>
-              <Lebensabschnitt  startAlter="25" endAlter="30" >
-                <Spielbar>
-                  <misc:Kosten Id="Kultur" Wert="-120" />
-                </Spielbar>
-                <Name>
-                  <misc:Lokalisirung Sprache="de">
-                    <![CDATA[Erwachsener]]>
-                  </misc:Lokalisirung>
-                </Name>
-                <Beschreibung>
-                  <misc:Lokalisirung Sprache="de">
-                    <![CDATA[]]>
-                  </misc:Lokalisirung>
-                </Beschreibung>
-              </Lebensabschnitt>
-              <Lebensabschnitt  startAlter="30" endAlter="35" >
-                <Spielbar>
-                  <misc:Kosten Id="Kultur" Wert="-120" />
-                </Spielbar>
-                <Name>
-                  <misc:Lokalisirung Sprache="de">
-                    <![CDATA[Erwachsener]]>
-                  </misc:Lokalisirung>
-                </Name>
-                <Beschreibung>
-                  <misc:Lokalisirung Sprache="de">
-                    <![CDATA[]]>
-                  </misc:Lokalisirung>
-                </Beschreibung>
-              </Lebensabschnitt>
-              <Lebensabschnitt  startAlter="35" endAlter="40" >
-                <Spielbar>
-                  <misc:Kosten Id="Kultur" Wert="-120" />
-                </Spielbar>
-                <Name>
-                  <misc:Lokalisirung Sprache="de">
-                    <![CDATA[Erwachsener]]>
-                  </misc:Lokalisirung>
-                </Name>
-                <Beschreibung>
-                  <misc:Lokalisirung Sprache="de">
-                    <![CDATA[]]>
-                  </misc:Lokalisirung>
-                </Beschreibung>
-              </Lebensabschnitt>
+              <Lebensabschnitt startAlter="12" endAlter="80" />
             </Lebensabschnitte>
+
           </Morph>
           <Morph Id="ImpFrau" Geschlecht="Weiblich">
             <misc:Name>
@@ -22665,22 +22516,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
             </lebewesen:Entwiklung>
             <Lebensabschnitte>
-              <Lebensabschnitt startAlter="0" endAlter="3" >
-                <Spielbar>
-                  <misc:Kosten Id="Kultur" Wert="-110" />
-                </Spielbar>
-                <Name>
-                  <misc:Lokalisirung Sprache="de" Geschlecht="Weiblich">
-                    <![CDATA[Jugendliche]]>
-                  </misc:Lokalisirung>
-                </Name>
-                <Beschreibung>
-                  <misc:Lokalisirung Sprache="de">
-                    <![CDATA[]]>
-                  </misc:Lokalisirung>
-                </Beschreibung>
-              </Lebensabschnitt>
+              <Lebensabschnitt startAlter="12" endAlter="80" />
             </Lebensabschnitte>
+
           </Morph>
         </Morphe>
       </Art>
