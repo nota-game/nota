@@ -412,6 +412,11 @@ Aus nächster nähe jedoch kann ein leichtes schimmern wargenommen werden. Hapts
 Wassermenschen beisitzen eine Natürliche Magie welche Ihren Unterkörper in eine Kräftige Flosse wandelt. Zudem öffnen sich ein paar Kimen an der Seite Ihres Halses. Unterwasser dienen sowohl die Kimen als auch Ihre Komplette Haut als Atemorgan. Dies macht die Haut jedoch sehr empfindlich gegenüber giften und Gasen. Stoffe die normalerweise über die Schleimheute Aufkenommen werden, können auch über Hautkontakt wirken. Bestonders Rauchgase können schnell Problematich werden. Zudem muss die Haut eine gewisse Feuchtigkeit behalten. Alle 8 bis 10 Stunden sollte sie befeuchtet werden.]]>
           </misc:Lokalisirung>
         </misc:Beschreibung>
+        <lebewesen:Mods>
+          <misc:Besonderheiten>
+            <besonderheit:Besonderheit Id="Meermensch" />
+          </misc:Besonderheiten>
+        </lebewesen:Mods>
         <Morphe>
           <Morph Id="Mann" Geschlecht="Männlich">
             <misc:Name>
@@ -22599,6 +22604,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
           <misc:Kosten Id="GP" Wert="2" />
           <misc:Kosten Id="Kultur" Wert="10" />
           <misc:Talent Id="Kochen" EP="20" />
+          <misc:Talent Id="Kochen" EP="20" />
           <misc:Talent Id="Backen" EP="20" />
           <fertigkeit:Fertigkeit Id="Konditor" />
         </misc:Level>
@@ -22610,6 +22616,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
             </misc:LevelVoraussetzung>
           </misc:Voraussetzung>
           <misc:Talent Id="Kochen" EP="20" />
+          <misc:Talent Id="Richen und Schmeken" EP="200" />
           <misc:Talent Id="Backen" EP="20" />
         </misc:Level>
         <misc:Level Id="Konditor" WiederhoteNutzung="1">
