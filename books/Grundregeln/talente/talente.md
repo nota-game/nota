@@ -19,6 +19,15 @@ Wissen und Erfahrung in einem Tätigkeitsfeld auch in einem anderen Feld
 einsetzen kann. Im Normalfall steuert jedes verwandte Talent einen Wert kleiner
 gleich 50% bei.
 
+Ein TaW von 10 ist ca. das was ein ausgebildeter Geselle in seinem Feld haben
+sollte. Bei durchschnittlicher Begabung (Beteiligte Eigenschaften 10), hat
+dieser eine 67,72% Chance eine unmodifizierte Probe zu schaffen. Jemand mit
+guter Eignung für sein Feld (beteiligte Eigenschaften auf 8) kommt auf 84,92%
+und mit sehr guter Eignung (beteiligte Eigenschaften auf 7) auf 91,57%. Dabei
+ist auch zu beachten das ein Fehlschlagen einer Probe normalerweise nicht direkt
+ein Scheitern bedeutet, eventuel dauert es etwas länger und die Qualität ist
+nicht die beste.
+
 Im Folgendem sind die Einzelnen Talente aufgeführt.
 
 Zu jedem Talent wird die Komplexität angegeben. Dies bestimmt wie viel Ep von
