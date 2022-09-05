@@ -146,6 +146,26 @@
         <Fokus Durchschnitt="9" Start="13" />
         <Einfluss Durchschnitt="9" Start="13" />
       </Eigenschaften>
+      <lebewesen:Entwiklung>
+        <lebewesen:Berechnung id="gewicht" einheit="kg" >
+          <misc:Name>
+            <misc:Lokalisirung Sprache="de">Gewicht</misc:Lokalisirung>
+          </misc:Name>
+          <lebewesen:Formel>bmi()*(größe()/100)*(größe()/100)</lebewesen:Formel>
+        </lebewesen:Berechnung>
+        <lebewesen:Berechnung id="ausdauer">
+          <misc:Name>
+            <misc:Lokalisirung Sprache="de">Ausdaure</misc:Lokalisirung>
+          </misc:Name>
+          <lebewesen:Formel>70-(KO+KO+ST)</lebewesen:Formel>
+        </lebewesen:Berechnung>
+        <lebewesen:Berechnung id="kraft">
+          <misc:Name>
+            <misc:Lokalisirung Sprache="de">Kraft</misc:Lokalisirung>
+          </misc:Name>
+          <lebewesen:Formel>ceil((91/30 * (1/ ST )*(1/ ST )+1529/300*1/ST+3/50)*gewicht())</lebewesen:Formel>
+        </lebewesen:Berechnung>
+      </lebewesen:Entwiklung>
       <Lebensabschnitte>
         <Lebensabschnitt startAlter="12">
           <Spielbar>
