@@ -121,6 +121,32 @@
         <misc:Kosten Id="GP" Wert="10" />
       </Abschnitt>
     </EigenschaftsKosten>
+    <lebewesen:Entwiklung>
+      <lebewesen:Berechnung id="gewicht" Reihenfolge="2" einheit="kg">
+        <misc:Name>
+          <misc:Lokalisirung Sprache="de">Gewicht</misc:Lokalisirung>
+        </misc:Name>
+        <lebewesen:Formel>bmi()*(größe()/100)*(größe()/100)</lebewesen:Formel>
+      </lebewesen:Berechnung>
+      <lebewesen:Berechnung id="ausdauer" Reihenfolge="10">
+        <misc:Name>
+          <misc:Lokalisirung Sprache="de">Ausdaure</misc:Lokalisirung>
+        </misc:Name>
+        <lebewesen:Formel>70-(KO+KO+ST)</lebewesen:Formel>
+      </lebewesen:Berechnung>
+      <lebewesen:Berechnung id="kraft" Reihenfolge="10">
+        <misc:Name>
+          <misc:Lokalisirung Sprache="de">Kraft</misc:Lokalisirung>
+        </misc:Name>
+        <lebewesen:Formel>ceil((91/30 * (1/ ST )*(1/ ST )+1529/300*1/ST+3/50)*gewicht())</lebewesen:Formel>
+      </lebewesen:Berechnung>
+      <lebewesen:Berechnung id="GlP" Reihenfolge="10">
+        <misc:Name>
+          <misc:Lokalisirung Sprache="de">Glücks Punkte</misc:Lokalisirung>
+        </misc:Name>
+        <lebewesen:Formel>21 - GL</lebewesen:Formel>
+      </lebewesen:Berechnung>
+    </lebewesen:Entwiklung>
     <Gattung Id="Homo">
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -146,26 +172,6 @@
         <Fokus Durchschnitt="9" Start="13" />
         <Einfluss Durchschnitt="9" Start="13" />
       </Eigenschaften>
-      <lebewesen:Entwiklung>
-        <lebewesen:Berechnung id="gewicht" einheit="kg" >
-          <misc:Name>
-            <misc:Lokalisirung Sprache="de">Gewicht</misc:Lokalisirung>
-          </misc:Name>
-          <lebewesen:Formel>bmi()*(größe()/100)*(größe()/100)</lebewesen:Formel>
-        </lebewesen:Berechnung>
-        <lebewesen:Berechnung id="ausdauer">
-          <misc:Name>
-            <misc:Lokalisirung Sprache="de">Ausdaure</misc:Lokalisirung>
-          </misc:Name>
-          <lebewesen:Formel>70-(KO+KO+ST)</lebewesen:Formel>
-        </lebewesen:Berechnung>
-        <lebewesen:Berechnung id="kraft">
-          <misc:Name>
-            <misc:Lokalisirung Sprache="de">Kraft</misc:Lokalisirung>
-          </misc:Name>
-          <lebewesen:Formel>ceil((91/30 * (1/ ST )*(1/ ST )+1529/300*1/ST+3/50)*gewicht())</lebewesen:Formel>
-        </lebewesen:Berechnung>
-      </lebewesen:Entwiklung>
       <Lebensabschnitte>
         <Lebensabschnitt startAlter="12">
           <Spielbar>
@@ -183,8 +189,8 @@
           </lebewesen:Beschreibung>
           <Mods>
             <misc:Eigenschaften>
-              <lebewesen:Glück Mod='3' />
-              <lebewesen:Mut Mod='1' />
+              <lebewesen:Mod Eigenschaft="GL" Mod="3" />
+              <lebewesen:Mod Eigenschaft="MU" Mod="1" />
             </misc:Eigenschaften>
             <misc:Besonderheiten>
               <besonderheit:Besonderheit Id="Segen Irus" />
@@ -207,8 +213,8 @@
           </Beschreibung>
           <Mods>
             <misc:Eigenschaften>
-              <lebewesen:Glück Mod='2' />
-              <lebewesen:Mut Mod='1' />
+              <lebewesen:Mod Eigenschaft="GL" Mod="2" />
+              <lebewesen:Mod Eigenschaft="MU" Mod="1" />
             </misc:Eigenschaften>
             <misc:Besonderheiten>
               <besonderheit:Besonderheit Id="Segen Irus" />
@@ -232,8 +238,8 @@
           </Beschreibung>
           <Mods>
             <misc:Eigenschaften>
-              <lebewesen:Glück Mod='2' />
-              <lebewesen:Mut Mod='1' />
+              <lebewesen:Mod Eigenschaft="GL" Mod="2" />
+              <lebewesen:Mod Eigenschaft="MU" Mod="1" />
             </misc:Eigenschaften>
           </Mods>
         </Lebensabschnitt>
@@ -253,8 +259,8 @@
           </Beschreibung>
           <Mods>
             <misc:Eigenschaften>
-              <lebewesen:Glück Mod='1' />
-              <lebewesen:Mut Mod='1' />
+              <lebewesen:Mod Eigenschaft="GL" Mod="1" />
+              <lebewesen:Mod Eigenschaft="MU" Mod="1" />
             </misc:Eigenschaften>
           </Mods>
         </Lebensabschnitt>
@@ -274,7 +280,7 @@
           </Beschreibung>
           <Mods>
             <misc:Eigenschaften>
-              <lebewesen:Glück Mod='1' />
+              <lebewesen:Mod Eigenschaft="GL" Mod="1" />
             </misc:Eigenschaften>
           </Mods>
         </Lebensabschnitt>
@@ -4610,7 +4616,7 @@ Wassermenschen beisitzen eine Natürliche Magie welche Ihren Unterkörper in ein
                   <misc:Kosten Id="GP" Wert="-5" />
                   <lebewesen:Mods>
                     <misc:Eigenschaften>
-                      <lebewesen:Kraft Mod="0.8" Type="multiplikativ" />
+                      <lebewesen:Mod Eigenschaft="kraft" Mod="0.8" Type="multiplikativ" />
                     </misc:Eigenschaften>
                   </lebewesen:Mods>
                   <lebewesen:Wert>18.80</lebewesen:Wert>
@@ -4785,7 +4791,7 @@ Wassermenschen beisitzen eine Natürliche Magie welche Ihren Unterkörper in ein
                   <misc:Kosten Id="GP" Wert="-10" />
                   <lebewesen:Mods>
                     <misc:Eigenschaften>
-                      <lebewesen:Kraft Mod="0.7" Type="multiplikativ" />
+                      <lebewesen:Mod Eigenschaft="kraft" Mod="0.7" Type="multiplikativ" />
                     </misc:Eigenschaften>
                   </lebewesen:Mods>
                   <lebewesen:Wert>19.80</lebewesen:Wert>
@@ -9480,7 +9486,8 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
         </misc:Beschreibung>
         <lebewesen:Mods>
           <misc:Eigenschaften>
-            <lebewesen:Kraft Mod='2' Type='multiplikativ' />
+            <lebewesen:Mod Eigenschaft="kraft" Mod="2" Type="multiplikativ" />
+
 
           </misc:Eigenschaften>
         </lebewesen:Mods>
@@ -27065,7 +27072,8 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
         </misc:Beschreibung>
         <besonderheit:Mods>
           <misc:Eigenschaften>
-            <lebewesen:GlücksPunkte Mod='3' />
+            <lebewesen:Mod Eigenschaft="GlP" Mod="3" />
+
           </misc:Eigenschaften>
         </besonderheit:Mods>
       </besonderheit:Stufe>
