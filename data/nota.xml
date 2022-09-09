@@ -22630,6 +22630,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
         <misc:Level Id="Grundlagen">
           <misc:Kosten Id="GP" Wert="2" />
           <misc:Kosten Id="Kultur" Wert="10" />
+          <misc:Name>
+            <misc:Lokalisirung Sprache="de">Grundlage</misc:Lokalisirung>
+          </misc:Name>
 
           <misc:Talent Id="Backen" EP="2" />
           <misc:Talent Id="Hauswirtschaft" EP="6" />
@@ -22639,6 +22642,10 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
         </misc:Level>
         <misc:Level Id="Vertiefung" WiederhoteNutzung="2">
           <misc:Kosten Id="Kultur" Wert="20" />
+          <misc:Name>
+            <misc:Lokalisirung Sprache="de">Vertiefung</misc:Lokalisirung>
+          </misc:Name>
+
           <misc:Voraussetzung>
             <misc:LevelVoraussetzung>
               <misc:Level Id="Grundlagen" />
@@ -22647,7 +22654,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
           <misc:Talent Id="Backen" EP="4" />
           <misc:Talent Id="Fingerübungen" EP="3" />
-          <misc:Talent Id="Fleicher" EP="13" />
+          <misc:Talent Id="Fleischer" EP="13" />
           <misc:Talent Id="Fühlen" EP="3" />
           <misc:Talent Id="Handel" EP="6" />
           <misc:Talent Id="Kochen" EP="25" />
@@ -22661,6 +22668,10 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
           
         <misc:Level Id="Geselle" WiederhoteNutzung="1">
           <misc:Kosten Id="Kultur" Wert="20" />
+          <misc:Name>
+            <misc:Lokalisirung Sprache="de">Geselle</misc:Lokalisirung>
+          </misc:Name>
+
           <misc:Voraussetzung>
             <misc:LevelVoraussetzung>
               <misc:And>
@@ -22671,10 +22682,10 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
                     <misc:Talent Id="Backen" EP="3" />
           <misc:Talent Id="Fingerübungen" EP="7" />
-          <misc:Talent Id="Fleicher" EP="20" />
+          <misc:Talent Id="Fleischer" EP="20" />
           <misc:Talent Id="Fühlen" EP="7" />
           <misc:Talent Id="Handel" EP="2" />
-          <misc:Talent Id="Hauswirtchaft" EP="7" />
+          <misc:Talent Id="Hauswirtschaft" EP="7" />
           <misc:Talent Id="Kochen" EP="38" />
           <misc:Talent Id="Lehren" EP="9" />
           <misc:Talent Id="Pflanzenkunde" EP="12" />
@@ -22687,6 +22698,10 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
         <misc:Level Id="Resturant" WiederhoteNutzung="1">
           <misc:Kosten Id="Kultur" Wert="20" />
+          <misc:Name>
+            <misc:Lokalisirung Sprache="de">Returant Koch</misc:Lokalisirung>
+          </misc:Name>
+
           <misc:Voraussetzung>
             <misc:LevelVoraussetzung>
               <misc:And>
@@ -22694,13 +22709,18 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
               </misc:And>
             </misc:LevelVoraussetzung>
           </misc:Voraussetzung>
-          <misc:Talent Id="Kochen" EP="20" />
-          <misc:Talent Id="Backen" EP="20" />
+          <misc:Talent Id="Kochen" EP="62" />
+          <misc:Talent Id="Pflanzenkunde" EP="16" />
+          <misc:Talent Id="Fleischer" EP="16" />
           <fertigkeit:Fertigkeit Id="Konditor" />
         </misc:Level>
 
         <misc:Level Id="Chefkoch" WiederhoteNutzung="1">
           <misc:Kosten Id="Kultur" Wert="20" />
+                    <misc:Name>
+            <misc:Lokalisirung Sprache="de">Chefkoch</misc:Lokalisirung>
+          </misc:Name>
+
           <misc:Voraussetzung>
             <misc:LevelVoraussetzung>
               <misc:And>
@@ -22708,14 +22728,21 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
               </misc:And>
             </misc:LevelVoraussetzung>
           </misc:Voraussetzung>
-          <misc:Talent Id="Kochen" EP="20" />
-          <misc:Talent Id="Backen" EP="20" />
-          <fertigkeit:Fertigkeit Id="Konditor" />
+          <misc:Talent Id="Handel" EP="22" />
+          <misc:Talent Id="Hauswirtschaft" EP="49" />
+          <misc:Talent Id="Kochen" EP="50" />
+          <misc:Talent Id="Lehren" EP="9" />
+          <misc:Talent Id="Buchführung" EP="33" />
+          <misc:Talent Id="Etikette" EP="22" />
         </misc:Level>
 
 
         <misc:Level Id="Straßenverkauf" WiederhoteNutzung="2">
           <misc:Kosten Id="Kultur" Wert="20" />
+          <misc:Name>
+            <misc:Lokalisirung Sprache="de">Straßenverkäufer</misc:Lokalisirung>
+          </misc:Name>
+
           <misc:Voraussetzung>
             <misc:LevelVoraussetzung>
               <misc:And>
@@ -22723,14 +22750,22 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
               </misc:And>
             </misc:LevelVoraussetzung>
           </misc:Voraussetzung>
-          <misc:Talent Id="Kochen" EP="20" />
-          <misc:Talent Id="Backen" EP="20" />
-          <fertigkeit:Fertigkeit Id="Konditor" />
+          <misc:Talent Id="Handel" EP="17" />
+          <misc:Talent Id="Kochen" EP="56" />
+          <misc:Talent Id="Zechen" EP="20" />
+          <misc:Talent Id="Gassenwissen" EP="31" />
+          <misc:Talent Id="Wettervorhersage" EP="7" />
+          <misc:Talent Id="Menschenkentniss" EP="33" />
+          <misc:Talent Id="Überreden" EP="22" />
         </misc:Level>
 
 
         <misc:Level Id="Meister" WiederhoteNutzung="1">
           <misc:Kosten Id="Kultur" Wert="20" />
+          <misc:Name>
+            <misc:Lokalisirung Sprache="de">Meister</misc:Lokalisirung>
+          </misc:Name>
+
           <misc:Voraussetzung>
             <misc:LevelVoraussetzung>
               <misc:Or>
@@ -22739,9 +22774,10 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
               </misc:Or>
             </misc:LevelVoraussetzung>
           </misc:Voraussetzung>
-          <misc:Talent Id="Kochen" EP="20" />
-          <misc:Talent Id="Backen" EP="20" />
-          <fertigkeit:Fertigkeit Id="Konditor" />
+          <misc:Talent Id="Kochen" EP="72" />
+          <misc:Talent Id="Backen" EP="33" />
+          <misc:Talent Id="Lehren" EP="60" />
+          
         </misc:Level>
 
 
@@ -25728,7 +25764,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
-          <![CDATA[Fleicher]]>
+          <![CDATA[Fleischer]]>
         </misc:Lokalisirung>
       </misc:Name>
       <misc:Beschreibung>
