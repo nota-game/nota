@@ -22634,7 +22634,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
           <misc:Talent Id="Backen" EP="2" />
           <misc:Talent Id="Hauswirtschaft" EP="6" />
           <misc:Talent Id="Kochen" EP="13" />
-          <misc:Talent Id="Richen und Schmecken" EP="2" />
+          <misc:Talent Id="Riechen und Schmecken" EP="2" />
           
         </misc:Level>
         <misc:Level Id="Vertiefung" WiederhoteNutzung="2">
@@ -22653,7 +22653,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
           <misc:Talent Id="Kochen" EP="25" />
           <misc:Talent Id="Lehren" EP="2" />
           <misc:Talent Id="Pflanzenkunde" EP="5" />
-          <misc:Talent Id="Richen und Schmecken" EP="11" />
+          <misc:Talent Id="Riechen und Schmecken" EP="11" />
           <misc:Talent Id="Sehen" EP="3" />
           <misc:Talent Id="Tierkunde" EP="3" />
           <misc:Talent Id="Zechen" EP="3" />
@@ -22678,7 +22678,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
           <misc:Talent Id="Kochen" EP="38" />
           <misc:Talent Id="Lehren" EP="9" />
           <misc:Talent Id="Pflanzenkunde" EP="12" />
-          <misc:Talent Id="Richen und Schmecken" EP="38" />
+          <misc:Talent Id="Riechen und Schmecken" EP="38" />
           <misc:Talent Id="Sehen" EP="7" />
           <misc:Talent Id="Tierkunde" EP="7" />
           <misc:Talent Id="Zechen" EP="7" />
@@ -24268,7 +24268,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
         <Ableitung Id="Sehen" Anzahl="3" />
         <Ableitung Id="Hören" Anzahl="3" />
         <Ableitung Id="Fühlen" Anzahl="4" />
-        <Ableitung Id="Richen und Schmeken" Anzahl="5" />
+        <Ableitung Id="Riechen und Schmecken" Anzahl="5" />
       </Ableitungen>
     </Talent>
     <Talent Id="Sehen" Komplexität="B">
@@ -24313,7 +24313,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
         <Ableitung Id="Wahrnehmung" Anzahl="4" />
       </Ableitungen>
     </Talent>
-    <Talent Id="Richen und Schmeken" Komplexität="B">
+    <Talent Id="Riechen und Schmecken" Komplexität="B">
       <Probe>
         <Intuition />
         <Intuition />
@@ -24321,7 +24321,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
-          <![CDATA[Richen und Schmeken]]>
+          <![CDATA[Riechen und Schmecken]]>
         </misc:Lokalisirung>
       </misc:Name>
       <misc:Beschreibung>
@@ -25450,11 +25450,11 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
       <Verbreitung Wert="7" />
       <talent:Level Wert="5">
         <talent:Voraussetzung>
-          <talent:Talent Id="Richen und Schmeken" Level="3" />
+          <talent:Talent Id="Riechen und Schmecken" Level="3" />
         </talent:Voraussetzung>
       </talent:Level>
       <Ableitungen>
-        <Ableitung Id="Richen und Schmeken" Anzahl="8" />
+        <Ableitung Id="Riechen und Schmecken" Anzahl="8" />
         <Ableitung Id="Kochen" Anzahl="3" />
       </Ableitungen>
     </Talent>
@@ -25477,7 +25477,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
       <Verbreitung Wert="7" />
       <talent:Level Wert="5">
         <talent:Voraussetzung>
-          <talent:Talent Id="Richen und Schmeken" Level="3" />
+          <talent:Talent Id="Riechen und Schmecken" Level="3" />
         </talent:Voraussetzung>
       </talent:Level>
 
