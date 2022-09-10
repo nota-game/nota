@@ -43,16 +43,8 @@
 
 <xsl:template match="talent:Talent">
 
-## <xsl:value-of select="normalize-space(./talent:Name/misc:Lokalisirung[@Sprache='de']/text())"/> *(<xsl:apply-templates  select="talent:Probe/*[1]" />/<xsl:apply-templates  select="talent:Probe/*[2]" />/<xsl:apply-templates  select="talent:Probe/*[3]" />)*
+## <xsl:value-of select="normalize-space(talent:Name)"/> *(<xsl:apply-templates  select="talent:Probe/*[1]" />/<xsl:apply-templates  select="talent:Probe/*[2]" />/<xsl:apply-templates  select="talent:Probe/*[3]" />)*
 **Komplexität**: <xsl:value-of select="@Komplexität"/>
-
-Normal <xsl:value-of select="normalize-space(./talent:Name/misc:Lokalisirung[@Sprache='de']/text())"/>
-<xsl:value-of select="./talent:Name/misc:Lokalisirung[@Sprache='de']/text()"/>
-<xsl:value-of select="normalize-space(./talent:Name/misc:Lokalisirung[@Sprache='de'])"/>
-<xsl:value-of select="normalize-space(./talent:Name)"/>
-Name <xsl:value-of select="./talent:Name"/>
-Name2 <xsl:value-of select="talent:Name"/>
-Punkt <xsl:value-of select="."/>
 
 :::Description
 <xsl:value-of select="normalize-space(talent:Beschreibung)"/>
