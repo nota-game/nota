@@ -22605,7 +22605,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
           <fertigkeit:Fertigkeit Id="Kurturkunde Gariches Reich" Stufe="3" />
           <fertigkeit:Fertigkeit Id="Kurturkunde Uranien" Stufe="3" />
           <fertigkeit:Fertigkeit Id="Uranisch" Stufe="2" />
-          <fertigkeit:Fertigkeit Id="Garich" Stufe="3" />
+          <fertigkeit:Fertigkeit Id="Garich" Stufe="2" />
         </misc:Level>
         <misc:Level Id="Imegrant">
           <misc:Kosten Id="Kultur" Wert="10" />
@@ -22623,7 +22623,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
             </misc:LevelVoraussetzung>
           </misc:Voraussetzung>
           <fertigkeit:Fertigkeit Id="Uranisch" Stufe="1" />
-          <fertigkeit:Fertigkeit Id="Garich" Stufe="2" />
+          <fertigkeit:Fertigkeit Id="Garich" Stufe="1" />
           
         </misc:Level>
         <misc:Level Id="Land" WiederhoteNutzung="5">
