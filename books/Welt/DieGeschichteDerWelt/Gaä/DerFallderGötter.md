@@ -71,6 +71,32 @@ stellte sich dennoch als äußerst schwer heraus. Und so beschlossen die
 Bündnispartner den elenden Kampf ein für alle mal ein ende zu setzen. Sie
 beschlossen den Grund des Konfliktes auszumerzen. Die Götter.
 
+| GameMaster
+|-------------------------------------------------------------------------------
+| Die Waffe die, die Minzk mit Hilfe der Ajour errichten benötigte Unmengen an
+| Energie um in der Lage zu sein den Göttern zu schaden. Und diese Energie zogen
+| Sie aus der Barriere zwischen den Welten. Die selbe Technologie, die die das
+| letzte Zeitalter vernichtete, war kurz davor auch diese zu vernichten. Und
+| niemand konnte sagen ob es noch eine nächste geben würde.
+| 
+| In Anbetracht dieser Lage beschlossen sich die Götter in die belange der
+| Menschen einzumischen. So erschienen sie vor Natsuda und verkündigtem ihn das
+| Baldige ende der Welt. Sie baten ihm von seinem Plan abzusehen, und die
+| Inbetriebnahme der Waffe zu unterbinden. Und nach einiger Überzeugungsarbeit
+| seitens der Götter willigte er ein. Jedoch nur unter einer Bedingung, die
+| Götter die er für all das Leid verantwortlich machte müssten sich zurück
+| ziehen und ihr Antlitz nie wieder Zeigen.
+| 
+| Zum Zeichen ihres Bundes und um der Aufgabe gewachsen zu sein verliehen die
+| Götter Natsuda ihre Macht und machten ihm zum ersten Gezeichneten.
+| 
+| Als Natsuda bei der Waffe eintraf war diese Jedoch bereits Aktiviert. Er
+| konnte sie jedoch zerstören bevor Zuviel schaden anrichtet wurde. Somit
+| wurde nur ein kleiner Teil der Barriere zerstört. Und dort wo die beiden
+| Welten Gaä und Tallos sich nun berührten verzerrten die entstehenden Energien
+| die Realität und das Leben. Somit entstanden die Dämonen.
+
+
 Zusammen erschufen Sie eine Waffe die dies vollbringen sollte. In der Hauptstadt
 Minzks, in der Mitte des Reiches an der am besten gesichertsten Position der
 Welt wurde eine Waffe errichtet, welche den Kampf beenden sollte. Ihre Ausmaße
@@ -105,27 +131,3 @@ reich der Dämonen, das Schwarze Land. Die letzte Schmach die die Götter den
 Sterblichen zufügten. An diesen grenzen bezog die inzwischen entstandene Armee
 der Ajour Stellung und verteidigt seither die Realität gegen das Chaos.
 
-| GameMaster
-|-------------------------------------------------------------------------------
-| Die Waffe die, die Minzk mit Hilfe der Ajour errichten benötigte Unmengen an
-| Energie um in der Lage zu sein den Göttern zu schaden. Und diese Energie zogen
-| Sie aus der Barriere zwischen den Welten. Die selbe Technologie, die die das
-| letzte Zeitalter vernichtete, war kurz davor auch diese zu vernichten. Und
-| niemand konnte sagen ob es noch eine nächste geben würde.
-| 
-| In Anbetracht dieser Lage beschlossen sich die Götter in die belange der
-| Menschen einzumischen. So erschienen sie vor Natsuda und verkündigtem ihn das
-| Baldige ende der Welt. Sie baten ihm von seinem Plan abzusehen, und die
-| Inbetriebnahme der Waffe zu unterbinden. Und nach einiger Überzeugungsarbeit
-| seitens der Götter willigte er ein. Jedoch nur unter einer Bedingung, die
-| Götter die er für all das Leid verantwortlich machte müssten sich zurück
-| ziehen und ihr Antlitz nie wieder Zeigen.
-| 
-| Zum Zeichen ihres Bundes und um der Aufgabe gewachsen zu sein verliehen die
-| Götter Natsuda ihre Macht und machten ihm zum ersten Gezeichneten.
-| 
-| Als Natsuda bei der Waffe eintraf war diese Jedoch bereits Aktiviert. Er
-| konnte sie jedoch zerstören bevor Zuviel schaden anrichtet wurde. Somit
-| wurde nur ein kleiner Teil der Barriere zerstört. Und dort wo die beiden
-| Welten Gaä und Tallos sich nun berührten verzerrten die entstehenden Energien
-| die Realität und das Leben. Somit entstanden die Dämonen.

@@ -4,53 +4,6 @@ after: ../Welt.md
 
 # Die Geschichte der Welt
 
-Viele Mythen ranken sich um die Schöpfung der Welt, und es Heißt das in jeder
-Legende ein Funken Wahrheit steckt. Aufgrund ihres Einflusses ist der
-Schöpfungsmythos der Ajour weit verbreitet. Er beschreibt den Anfang der Zeit,
-die Schöpfung der Welt und den letztendlichen aufstand der Ajour der in dem
-Krieg wieder der Götter endete.
-
-Zu beginn des Zeitalters herrschte das Chaos. Alles war eins und doch war es
-nichts. Es gab weder ein hier noch gab es ein dort. Kein gestern und kein
-Morgen. Dies missfiel den Göttern sehr. Doch wo es nur das Jetzt gibt, gibt es
-kein Morgen welches anders sein könnte. Jedoch gab Chronos sich hiermit nicht
-zufrieden, und so erschuf er die Zeit, auf das es ein Morgen gibt wie es den
-Göttern beliebe. Denn das Jetzt missfiel den Göttern sehr.
-
-Und der erste Morgen brach an, und die Götter erschufen einen Wall der das
-Nichts von dem Sein trennen sollte. Sie erschufen eine gewaltige Sphäre die den
-Mächten des Chaos trotzen würde auf das Ihre zukünftige Schöpfung bestand habe.
-Denn das Chaos missfiel den Göttern sehr.
-
-Und der zweite Morgen brach an, und die Götter spalteten Gut von Böse. Die erste
-Hälfte wurde Tallos genannt unsere Welt. Die Zweite hälfte Gaä, die Welt der
-Dämonen. Da diese Welten nicht wider vereint werden sollten und somit wieder zum
-Chaos werden. Zogen die Götter einen weiteren Wall der die Welten auf alle Zeit
-voneinander trennen sollte. Denn das Chaos missfiel den Göttern sehr.
-
-Und der dritte Morgen brach an, und die Götter hoben Täler aus, erhoben Massive
-und füllten die Flüsse, Seen und Meere. Sie formten Buchten und Fjorde, Ebenen
-und Berge. Doch die Welt war triste und leer. Und dies missfiel den Göttern
-sehr.
-
-Und der vierte Morgen brach an, und die Götter schufen Pflanzen, Bäume und
-Sträucher. Sie zeugten Tiere, Fische und Vögel. Kreierten kleine und große
-Wesen, leichte und schwere. Und ihre Schöpfung wurde mit Leben erfüllt auf dass
-die Götter sich ihrer erfreuen. Doch ehe der Tag vorüber war langweilte es Sie.
-Und dies missfiel den Göttern sehr.
-
-Und der fünfte Morgen brach an, und die Götter beschlossen Wesen zu erschaffen
-welche ihrem tristen Dasein Erheiterung verschaffen solle. Und so schufen Sie
-viele Wesen die selbst vom Schaffenstrieb gesteuert einen jeden Tag die Götter
-mit neuem erfreuen. Die den Göttern huldigen und dienen, die Treu und gehorsam
-sind. Und um dies zu erreichen übergaben sie ihnen den Funken des Lebens, den
-freien Willen. Und dies gefiel den Göttern sehr.
-
-Und der sechste Morgen brach an, und die Götter waren wütend. Denn die Wesen
-denen Sie den freien Willen schenkten taten nicht wie ihnen geheißen. Sie
-widersetzten sich ihren Schöpfern und lehnten sich auf. Und dies missfiel den
-Göttern sehr.
-
 | GameMaster
 |-------------------------------------------------------------------------------
 | Die Welt wurde nicht aus dem
@@ -128,3 +81,52 @@ Göttern sehr.
 | Veränderungen an allem und jedem das aus der einen in die andere Welt
 | wechselt. So entstehen gefährliche dämonenartige Wesen die alles um sich
 | herum verseuchen und ebenfalls korrumpieren. 
+
+
+Viele Mythen ranken sich um die Schöpfung der Welt, und es Heißt das in jeder
+Legende ein Funken Wahrheit steckt. Aufgrund ihres Einflusses ist der
+Schöpfungsmythos der Ajour weit verbreitet. Er beschreibt den Anfang der Zeit,
+die Schöpfung der Welt und den letztendlichen aufstand der Ajour der in dem
+Krieg wieder der Götter endete.
+
+Zu beginn des Zeitalters herrschte das Chaos. Alles war eins und doch war es
+nichts. Es gab weder ein hier noch gab es ein dort. Kein gestern und kein
+Morgen. Dies missfiel den Göttern sehr. Doch wo es nur das Jetzt gibt, gibt es
+kein Morgen welches anders sein könnte. Jedoch gab Chronos sich hiermit nicht
+zufrieden, und so erschuf er die Zeit, auf das es ein Morgen gibt wie es den
+Göttern beliebe. Denn das Jetzt missfiel den Göttern sehr.
+
+Und der erste Morgen brach an, und die Götter erschufen einen Wall der das
+Nichts von dem Sein trennen sollte. Sie erschufen eine gewaltige Sphäre die den
+Mächten des Chaos trotzen würde auf das Ihre zukünftige Schöpfung bestand habe.
+Denn das Chaos missfiel den Göttern sehr.
+
+Und der zweite Morgen brach an, und die Götter spalteten Gut von Böse. Die erste
+Hälfte wurde Tallos genannt unsere Welt. Die Zweite hälfte Gaä, die Welt der
+Dämonen. Da diese Welten nicht wider vereint werden sollten und somit wieder zum
+Chaos werden. Zogen die Götter einen weiteren Wall der die Welten auf alle Zeit
+voneinander trennen sollte. Denn das Chaos missfiel den Göttern sehr.
+
+Und der dritte Morgen brach an, und die Götter hoben Täler aus, erhoben Massive
+und füllten die Flüsse, Seen und Meere. Sie formten Buchten und Fjorde, Ebenen
+und Berge. Doch die Welt war triste und leer. Und dies missfiel den Göttern
+sehr.
+
+Und der vierte Morgen brach an, und die Götter schufen Pflanzen, Bäume und
+Sträucher. Sie zeugten Tiere, Fische und Vögel. Kreierten kleine und große
+Wesen, leichte und schwere. Und ihre Schöpfung wurde mit Leben erfüllt auf dass
+die Götter sich ihrer erfreuen. Doch ehe der Tag vorüber war langweilte es Sie.
+Und dies missfiel den Göttern sehr.
+
+Und der fünfte Morgen brach an, und die Götter beschlossen Wesen zu erschaffen
+welche ihrem tristen Dasein Erheiterung verschaffen solle. Und so schufen Sie
+viele Wesen die selbst vom Schaffenstrieb gesteuert einen jeden Tag die Götter
+mit neuem erfreuen. Die den Göttern huldigen und dienen, die Treu und gehorsam
+sind. Und um dies zu erreichen übergaben sie ihnen den Funken des Lebens, den
+freien Willen. Und dies gefiel den Göttern sehr.
+
+Und der sechste Morgen brach an, und die Götter waren wütend. Denn die Wesen
+denen Sie den freien Willen schenkten taten nicht wie ihnen geheißen. Sie
+widersetzten sich ihren Schöpfern und lehnten sich auf. Und dies missfiel den
+Göttern sehr.
+
