@@ -49,7 +49,8 @@
 <xsl:value-of select="normalize-space(./talent:Name/misc:Lokalisirung[@Sprache='de']/text())"/>
 <xsl:value-of select="./talent:Name/misc:Lokalisirung[@Sprache='de']/text()"/>
 <xsl:value-of select="normalize-space(./talent:Name/misc:Lokalisirung[@Sprache='de'])"/>
-<xsl:value-of select="normalize-space(./talent:Name"/>
+<xsl:value-of select="normalize-space(./talent:Name)"/>
+<xsl:value-of select="./talent:Name"/>
 
 :::Description
 <xsl:value-of select="normalize-space(talent:Beschreibung)"/>
