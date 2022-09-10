@@ -22615,8 +22615,16 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
               <![CDATA[Zuzügler]]>
             </misc:Lokalisirung>
           </misc:Name>
+          <misc:Voraussetzung>
+            <misc:LevelVoraussetzung>
+              <misc:Not>
+                <misc:Level Id="Einheimicher" />
+              </misc:Not>
+            </misc:LevelVoraussetzung>
+          </misc:Voraussetzung>
           <fertigkeit:Fertigkeit Id="Uranisch" Stufe="1" />
           <fertigkeit:Fertigkeit Id="Garich" Stufe="2" />
+          
         </misc:Level>
         <misc:Level Id="Land" WiederhoteNutzung="5">
           <misc:Kosten Id="Kultur" Wert="10" />
@@ -22627,6 +22635,14 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
               <![CDATA[Landbevölkerung]]>
             </misc:Lokalisirung>
           </misc:Name>
+          <misc:Voraussetzung>
+            <misc:LevelVoraussetzung>
+              <misc:Or>
+                <misc:Level Id="Einheimicher" />
+                <misc:Level Id="Imegrant" />
+              </misc:Or>
+            </misc:LevelVoraussetzung>
+          </misc:Voraussetzung>
           <misc:Talent EP="2" Id="Ackerbau" />
           <misc:Talent EP="3" Id="Wettervorhersage" />
           <misc:Talent EP="3" Id="Pflanzenkunde" />
@@ -22642,6 +22658,14 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
               <![CDATA[Stadtbevölkerung]]>
             </misc:Lokalisirung>
           </misc:Name>
+          <misc:Voraussetzung>
+            <misc:LevelVoraussetzung>
+              <misc:Or>
+                <misc:Level Id="Einheimicher" />
+                <misc:Level Id="Imegrant" />
+              </misc:Or>
+            </misc:LevelVoraussetzung>
+          </misc:Voraussetzung>
           <misc:Talent EP="3" Id="Gassenwissen" />
           <misc:Talent EP="3" Id="Menschenkentniss" />
           <misc:Talent EP="3" Id="Orientierung" />
@@ -22652,6 +22676,15 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
           <misc:Kosten Id="Kultur" Wert="10" />
           <misc:Kosten Id="Proffession" Wert="-10" />
           <misc:Kosten Id="EP" Wert="-10" />
+          <misc:Voraussetzung>
+            <misc:LevelVoraussetzung>
+              <misc:Or>
+                <misc:Level Id="Land" mindestVorkommen="5" />
+                <misc:Level Id="Stadt" mindestVorkommen="5" />
+              </misc:Or>
+            </misc:LevelVoraussetzung>
+          </misc:Voraussetzung>
+
         </misc:Level>
       </misc:Levels>
     </Pfad>
