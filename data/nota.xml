@@ -70,6 +70,19 @@
           </misc:Lokalisirung>
       </misc:Beschreibung>
     </misc:KostenDefinition>
+    <misc:KostenDefinition Id="Proffession">
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">Proffessionspunkte</misc:Lokalisirung>
+      </misc:Name>
+      <misc:Abkürzung>
+        <misc:Lokalisirung Sprache="de">PoP</misc:Lokalisirung>
+      </misc:Abkürzung>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+            Das abstrakte maß in wie weit jemand aus eine Ausbildung oder ähnliches genossen hat.
+          </misc:Lokalisirung>
+      </misc:Beschreibung>
+    </misc:KostenDefinition>
     <misc:KostenDefinition Id="Göttlicher Einfluss" type="epual zero">
       <misc:Name>
         <misc:Lokalisirung Sprache="de">Göttlicher Einfluss</misc:Lokalisirung>
@@ -22569,6 +22582,80 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
       </misc:Lokalisirung>
     </misc:Beschreibung>
 
+    <Pfad Id="Gariches Reich">
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Gariches Reich]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+
+      <misc:Levels>
+        <misc:Level Id="Einheimicher">
+          <misc:Kosten Id="Kultur" Wert="30" />
+          <misc:Name>
+            <misc:Lokalisirung Sprache="de">
+              <![CDATA[Einheimicher]]>
+            </misc:Lokalisirung>
+          </misc:Name>
+          <fertigkeit:Fertigkeit Id="Kurturkunde Gariches Reich" Stufe="3" />
+          <fertigkeit:Fertigkeit Id="Kurturkunde Uranien" Stufe="3" />
+          <fertigkeit:Fertigkeit Id="Uranisch" Stufe="2" />
+          <fertigkeit:Fertigkeit Id="Garich" Stufe="3" />
+        </misc:Level>
+        <misc:Level Id="Imegrant">
+          <misc:Kosten Id="Kultur" Wert="10" />
+          <misc:Kosten Id="Proffession" Wert="-10" />
+          <misc:Name>
+            <misc:Lokalisirung Sprache="de">
+              <![CDATA[Zuzügler]]>
+            </misc:Lokalisirung>
+          </misc:Name>
+          <fertigkeit:Fertigkeit Id="Uranisch" Stufe="1" />
+          <fertigkeit:Fertigkeit Id="Garich" Stufe="2" />
+        </misc:Level>
+        <misc:Level Id="Land" WiederhoteNutzung="5">
+          <misc:Kosten Id="Kultur" Wert="10" />
+          <misc:Kosten Id="Proffession" Wert="-10" />
+          <misc:Kosten Id="EP" Wert="-5" />
+          <misc:Name>
+            <misc:Lokalisirung Sprache="de">
+              <![CDATA[Landbevölkerung]]>
+            </misc:Lokalisirung>
+          </misc:Name>
+          <misc:Talent EP="2" Id="Ackerbau" />
+          <misc:Talent EP="3" Id="Wettervorhersage" />
+          <misc:Talent EP="3" Id="Pflanzenkunde" />
+          <misc:Talent EP="1" Id="Reiten" />
+          <misc:Talent EP="3" Id="Tierkunde" />
+        </misc:Level>
+        <misc:Level Id="Stadt" WiederhoteNutzung="5">
+          <misc:Kosten Id="Kultur" Wert="10" />
+          <misc:Kosten Id="Proffession" Wert="-10" />
+          <misc:Kosten Id="EP" Wert="-5" />
+          <misc:Name>
+            <misc:Lokalisirung Sprache="de">
+              <![CDATA[Stadtbevölkerung]]>
+            </misc:Lokalisirung>
+          </misc:Name>
+          <misc:Talent EP="3" Id="Gassenwissen" />
+          <misc:Talent EP="3" Id="Menschenkentniss" />
+          <misc:Talent EP="3" Id="Orientierung" />
+          <misc:Talent EP="1" Id="Rechtskunde" />
+          <misc:Talent EP="2" Id="Handel" />
+        </misc:Level>
+        <misc:Level Id="Sonstiges" WiederhoteNutzung="99">
+          <misc:Kosten Id="Kultur" Wert="10" />
+          <misc:Kosten Id="Proffession" Wert="-10" />
+          <misc:Kosten Id="EP" Wert="-10" />
+        </misc:Level>
+      </misc:Levels>
+    </Pfad>
+
     <Pfad Id="Alan">
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -22628,8 +22715,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
       <misc:Levels>
         <misc:Level Id="Grundlagen">
-          <misc:Kosten Id="GP" Wert="2" />
-          <misc:Kosten Id="Kultur" Wert="10" />
+          <misc:Kosten Id="Proffession" Wert="10" />
           <misc:Name>
             <misc:Lokalisirung Sprache="de">Grundlage</misc:Lokalisirung>
           </misc:Name>
@@ -22638,10 +22724,10 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
           <misc:Talent Id="Hauswirtschaft" EP="6" />
           <misc:Talent Id="Kochen" EP="13" />
           <misc:Talent Id="Riechen und Schmecken" EP="2" />
-          
+
         </misc:Level>
         <misc:Level Id="Vertiefung" WiederhoteNutzung="2">
-          <misc:Kosten Id="Kultur" Wert="20" />
+          <misc:Kosten Id="Proffession" Wert="20" />
           <misc:Name>
             <misc:Lokalisirung Sprache="de">Vertiefung</misc:Lokalisirung>
           </misc:Name>
@@ -22665,9 +22751,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
           <misc:Talent Id="Tierkunde" EP="3" />
           <misc:Talent Id="Zechen" EP="3" />
         </misc:Level>
-          
+
         <misc:Level Id="Geselle" WiederhoteNutzung="1">
-          <misc:Kosten Id="Kultur" Wert="20" />
+          <misc:Kosten Id="Proffession" Wert="20" />
           <misc:Name>
             <misc:Lokalisirung Sprache="de">Geselle</misc:Lokalisirung>
           </misc:Name>
@@ -22680,7 +22766,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
             </misc:LevelVoraussetzung>
           </misc:Voraussetzung>
 
-                    <misc:Talent Id="Backen" EP="3" />
+          <misc:Talent Id="Backen" EP="3" />
           <misc:Talent Id="Fingerübungen" EP="7" />
           <misc:Talent Id="Fleischer" EP="20" />
           <misc:Talent Id="Fühlen" EP="7" />
@@ -22705,26 +22791,25 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
           <misc:Voraussetzung>
             <misc:LevelVoraussetzung>
               <misc:And>
-                <misc:Level Id="Geselle"  />
+                <misc:Level Id="Geselle" />
               </misc:And>
             </misc:LevelVoraussetzung>
           </misc:Voraussetzung>
           <misc:Talent Id="Kochen" EP="62" />
           <misc:Talent Id="Pflanzenkunde" EP="16" />
           <misc:Talent Id="Fleischer" EP="16" />
-          <fertigkeit:Fertigkeit Id="Konditor" />
         </misc:Level>
 
         <misc:Level Id="Chefkoch" WiederhoteNutzung="1">
           <misc:Kosten Id="Kultur" Wert="20" />
-                    <misc:Name>
+          <misc:Name>
             <misc:Lokalisirung Sprache="de">Chefkoch</misc:Lokalisirung>
           </misc:Name>
 
           <misc:Voraussetzung>
             <misc:LevelVoraussetzung>
               <misc:And>
-                <misc:Level Id="Resturant"  />
+                <misc:Level Id="Resturant" />
               </misc:And>
             </misc:LevelVoraussetzung>
           </misc:Voraussetzung>
@@ -22746,7 +22831,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
           <misc:Voraussetzung>
             <misc:LevelVoraussetzung>
               <misc:And>
-                <misc:Level Id="Geselle"  />
+                <misc:Level Id="Geselle" />
               </misc:And>
             </misc:LevelVoraussetzung>
           </misc:Voraussetzung>
@@ -22769,19 +22854,17 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
           <misc:Voraussetzung>
             <misc:LevelVoraussetzung>
               <misc:Or>
-                <misc:Level Id="Chefkoch"  />
-                <misc:Level Id="Straßenverkauf" mindestVorkommen="2"  />
+                <misc:Level Id="Chefkoch" />
+                <misc:Level Id="Straßenverkauf" mindestVorkommen="2" />
               </misc:Or>
             </misc:LevelVoraussetzung>
           </misc:Voraussetzung>
           <misc:Talent Id="Kochen" EP="72" />
           <misc:Talent Id="Backen" EP="33" />
           <misc:Talent Id="Lehren" EP="60" />
-          
         </misc:Level>
 
 
-     
       </misc:Levels>
     </pfad:Pfad>
     <pfad:Pfad Id="Soldat">
@@ -26504,6 +26587,139 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
       </misc:Lokalisirung>
     </fertigkeit:Kategorie>
 
+              <Fertigkeit Id="Kurturkunde Uranien">
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Kurturkunde Uranien]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+
+      <fertigkeit:Stufe Kosten="10">
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Die Weit verbreitesten informationen. Viele Vorurteile Positv wie negativ]]>
+          </misc:Lokalisirung>
+        </misc:Beschreibung>
+        <Verbreitung Wert="6">
+          <misc:Pfad Id="Alan" Verbreitung="7" />
+        </Verbreitung>
+      </fertigkeit:Stufe>
+
+      <fertigkeit:Stufe Kosten="35">
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Tiefgehenderes wissen der Kultur. Das verhalten kann aber immernoch als aussenseiter wahrgenommen werden]]>
+          </misc:Lokalisirung>
+        </misc:Beschreibung>
+        <Verbreitung Wert="5">
+          <misc:Pfad Id="Alan" Verbreitung="7" />
+        </Verbreitung>
+      </fertigkeit:Stufe>
+
+      <fertigkeit:Stufe Kosten="55">
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Ein Wissen der Kultlur und verhaltensregln der in diese Kultur geborenen.]]>
+          </misc:Lokalisirung>
+        </misc:Beschreibung>
+        <Verbreitung Wert="4">
+          <misc:Pfad Id="Alan" Verbreitung="7" />
+        </Verbreitung>
+      </fertigkeit:Stufe>
+
+      <fertigkeit:Stufe Kosten="60">
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Grundlagen und Hintergründe der Kultur, alte bräuche etc. Dinge die auch nicht jeder der Kultur angehörige kennt.]]>
+          </misc:Lokalisirung>
+        </misc:Beschreibung>
+        <Verbreitung Wert="2">
+          <misc:Pfad Id="Alan" Verbreitung="4" />
+        </Verbreitung>
+      </fertigkeit:Stufe>
+
+      <fertigkeit:Stufe Kosten="90">
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Geheimes wissen welches nur wenige auserlesene kennen]]>
+          </misc:Lokalisirung>
+        </misc:Beschreibung>
+        <Verbreitung Wert="1">
+          <misc:Pfad Id="Alan" Verbreitung="2" />
+        </Verbreitung>
+      </fertigkeit:Stufe>
+    </Fertigkeit>
+
+              <Fertigkeit Id="Kurturkunde Gariches Reich">
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Kurturkunde Gariches Reich]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+
+      <fertigkeit:Stufe Kosten="10">
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Die Weit verbreitesten informationen. Viele Vorurteile Positv wie negativ]]>
+          </misc:Lokalisirung>
+        </misc:Beschreibung>
+        <Verbreitung Wert="6">
+          <misc:Pfad Id="Alan" Verbreitung="7" />
+        </Verbreitung>
+      </fertigkeit:Stufe>
+
+      <fertigkeit:Stufe Kosten="35">
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Tiefgehenderes wissen der Kultur. Das verhalten kann aber immernoch als aussenseiter wahrgenommen werden]]>
+          </misc:Lokalisirung>
+        </misc:Beschreibung>
+        <Verbreitung Wert="5">
+          <misc:Pfad Id="Alan" Verbreitung="7" />
+        </Verbreitung>
+        <fertigkeit:Voraussetzung>
+          <fertigkeit:Fertigkeit Id="Kurturkunde Uranien" Stufe="1" />
+        </fertigkeit:Voraussetzung>
+      </fertigkeit:Stufe>
+
+      <fertigkeit:Stufe Kosten="55">
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Ein Wissen der Kultlur und verhaltensregln der in diese Kultur geborenen.]]>
+          </misc:Lokalisirung>
+        </misc:Beschreibung>
+        <Verbreitung Wert="4">
+          <misc:Pfad Id="Alan" Verbreitung="7" />
+        </Verbreitung>
+        <fertigkeit:Voraussetzung>
+          <fertigkeit:Fertigkeit Id="Kurturkunde Uranien" Stufe="2" />
+        </fertigkeit:Voraussetzung>
+
+      </fertigkeit:Stufe>
+
+      <fertigkeit:Stufe Kosten="60">
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Grundlagen und Hintergründe der Kultur, alte bräuche etc. Dinge die auch nicht jeder der Kultur angehörige kennt.]]>
+          </misc:Lokalisirung>
+        </misc:Beschreibung>
+        <Verbreitung Wert="2">
+          <misc:Pfad Id="Alan" Verbreitung="4" />
+        </Verbreitung>
+      </fertigkeit:Stufe>
+
+      <fertigkeit:Stufe Kosten="90">
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Geheimes wissen welches nur wenige auserlesene kennen]]>
+          </misc:Lokalisirung>
+        </misc:Beschreibung>
+        <Verbreitung Wert="1">
+          <misc:Pfad Id="Alan" Verbreitung="2" />
+        </Verbreitung>
+      </fertigkeit:Stufe>
+    </Fertigkeit>
+
     <Fertigkeit Id="Kulturkunde Alan">
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26574,6 +26790,31 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
       </misc:Lokalisirung>
     </fertigkeit:Kategorie>
 
+
+    
+
+
+    <Fertigkeit Id="Uranisch Zeichen">
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Uranisch]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <fertigkeit:Stufe Kosten="100">
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Die Schrift die in großen tielen Uraniens verwendet wird.]]>
+          </misc:Lokalisirung>
+        </misc:Beschreibung>
+        <Verbreitung Wert="7" />
+        <fertigkeit:Mods>
+          <misc:Tags>
+            <misc:Tag Id="Lesen/Schreiben" />
+          </misc:Tags>
+        </fertigkeit:Mods>
+      </fertigkeit:Stufe>
+    </Fertigkeit>
+  
     <Fertigkeit Id="Arjuniche Zeichen">
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26598,9 +26839,80 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
   <Fertigkeiten xmlns="http://nota.org/schema/fertigkeit.xsd" KategorieId="Sprachen">
     <fertigkeit:Kategorie>
       <misc:Lokalisirung Sprache="de">
-        <![CDATA[Schriften]]>
+        <![CDATA[Sprachen]]>
       </misc:Lokalisirung>
     </fertigkeit:Kategorie>
+
+    
+<!-- 
+         <fertigkeit:Fertigkeit Id="Kurturkunde Gariches Reich" Stufe="3" />
+          <fertigkeit:Fertigkeit Id="Kurturkunde Uranien" Stufe="3" />
+          <fertigkeit:Fertigkeit Id="Uranisch" Stufe="3" />
+          <fertigkeit:Fertigkeit Id="Garich" Stufe="3" /> -->
+
+
+
+    <Fertigkeit Id="Uranisch">
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Uranisch]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <fertigkeit:Stufe Kosten="5">
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Uranisch erkennen]]>
+          </misc:Lokalisirung>
+        </misc:Beschreibung>
+        <Verbreitung Wert="7" />
+      </fertigkeit:Stufe>
+
+      <fertigkeit:Stufe Kosten="10">
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Einige Uranisch Wörter. Wie essen ja,nein, etc… ]]>
+          </misc:Lokalisirung>
+        </misc:Beschreibung>
+        <Verbreitung Wert="7" />
+      </fertigkeit:Stufe>
+      <fertigkeit:Stufe Kosten="35">
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Gebrochenes Uranisch]]>
+          </misc:Lokalisirung>
+        </misc:Beschreibung>
+        <Verbreitung Wert="7" />
+      </fertigkeit:Stufe>
+    </Fertigkeit>
+
+
+    <Fertigkeit Id="Garich">
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Garich]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <fertigkeit:Stufe Kosten="40">
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Garich mit Aktzent]]>
+          </misc:Lokalisirung>
+        </misc:Beschreibung>
+        <Verbreitung Wert="7" />
+        <fertigkeit:Voraussetzung>
+          <fertigkeit:Fertigkeit Id="Uranisch" Stufe="3" />
+        </fertigkeit:Voraussetzung>
+      </fertigkeit:Stufe>
+      <fertigkeit:Stufe Kosten="60">
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Garich Aktzent frei]]>
+          </misc:Lokalisirung>
+        </misc:Beschreibung>
+        <Verbreitung Wert="7" />
+      </fertigkeit:Stufe>
+    </Fertigkeit>
+
 
     <Fertigkeit Id="Arjunisch">
       <misc:Name>
