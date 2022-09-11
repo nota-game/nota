@@ -56,7 +56,7 @@ zugeordnet sind. Diese Lauten wie folgt:
     - Konstitution (KO)
   + Geschick
     - Gewandtheit (GE)
-    - Präzision (PR)
+    - Feinmotorik (FM)
 + Geist
   + Charisma
     - Antipathie (AN)
@@ -94,9 +94,9 @@ die Konstitution festgelegt.
 ## Gewandtheit
 Gewandtheit gibt den grad der Kontrolle über den Körper als Ganzes an.
 
-## Präzision
+## Feinmotorik
 Während Gewandtheit im Normalfall den ganzen Körper involviert, so stellt
-Präzision vor allem das Fingerspitzengefühl dar. Für filigrane Arbeiten ist dies eine wichtige Eigenschaft.
+Feinmotorik vor allem das Fingerspitzengefühl dar. Für filigrane Arbeiten ist dies eine wichtige Eigenschaft.
 
 ## Antipathie
 Dies ist teil der eigenen Ausstrahlung. Wie der Name vermuten lässt, dient sie

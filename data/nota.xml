@@ -23278,7 +23278,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
       </misc:Name>
       <misc:Beschreibung>
         <misc:Lokalisirung Sprache="de">
-          <![CDATA[Eine leichte und schnelle Waffe die vorallem auf präzision statt kraft setzt.]]>
+          <![CDATA[Eine leichte und schnelle Waffe die vorallem auf Feinmotorik statt kraft setzt.]]>
         </misc:Lokalisirung>
       </misc:Beschreibung>
       <Verbreitung Wert="7" />
@@ -23455,7 +23455,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     <Talent Id="Bögen" Komplexität="B">
       <Probe>
         <Fokus />
-        <Präzision />
+        <Feinmotorik />
         <Intuition />
       </Probe>
       <misc:Name>
@@ -23477,7 +23477,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Faustprojektielwaffen" Komplexität="B">
       <Probe>
-        <Präzision />
+        <Feinmotorik />
         <Fokus />
         <Intuition />
       </Probe>
@@ -23500,7 +23500,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Zweihandprojektielwaffen" Komplexität="B">
       <Probe>
-        <Präzision />
+        <Feinmotorik />
         <Fokus />
         <Intuition />
       </Probe>
@@ -23588,7 +23588,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Peitschen" Komplexität="B">
       <Probe>
-        <Präzision />
+        <Feinmotorik />
         <Mut />
         <Intuition />
       </Probe>
@@ -23695,7 +23695,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Wurfspeere" Komplexität="B">
       <Probe>
-        <Präzision />
+        <Feinmotorik />
         <Stärke />
         <Intuition />
       </Probe>
@@ -23718,7 +23718,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Wurfäxte" Komplexität="B">
       <Probe>
-        <Präzision />
+        <Feinmotorik />
         <Stärke />
         <Intuition />
       </Probe>
@@ -23741,7 +23741,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Wurfmesser" Komplexität="B">
       <Probe>
-        <Präzision />
+        <Feinmotorik />
         <Stärke />
         <Intuition />
       </Probe>
@@ -23810,7 +23810,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Schleudern" Komplexität="B">
       <Probe>
-        <Präzision />
+        <Feinmotorik />
         <Fokus />
         <Intuition />
       </Probe>
@@ -23832,7 +23832,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Speerschleudern" Komplexität="B">
       <Probe>
-        <Präzision />
+        <Feinmotorik />
         <Fokus />
         <Intuition />
       </Probe>
@@ -24101,8 +24101,8 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Fingerübungen" Komplexität="B">
       <Probe>
-        <Präzision />
-        <Präzision />
+        <Feinmotorik />
+        <Feinmotorik />
         <Intuition />
       </Probe>
       <misc:Name>
@@ -24191,7 +24191,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
       <Probe>
         <Mut />
         <Sympathie />
-        <Präzision />
+        <Feinmotorik />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -24330,7 +24330,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
       <Probe>
         <Mut />
         <Intuition />
-        <Präzision />
+        <Feinmotorik />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -24369,7 +24369,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Entfesseln" Komplexität="B">
       <Probe>
-        <Präzision />
+        <Feinmotorik />
         <Gewandtheit />
         <Stärke />
       </Probe>
@@ -24550,7 +24550,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     <Talent Id="Fühlen" Komplexität="B">
       <Probe>
         <Intuition />
-        <Präzision />
+        <Feinmotorik />
         <Klugheit />
       </Probe>
       <misc:Name>
@@ -24962,7 +24962,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
       <Probe>
         <Intuition />
         <Klugheit />
-        <Präzision />
+        <Feinmotorik />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25003,7 +25003,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
       <Probe>
         <Klugheit />
         <Klugheit />
-        <Präzision />
+        <Feinmotorik />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25161,7 +25161,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
       <Probe>
         <Mut />
         <Klugheit />
-        <Präzision />
+        <Feinmotorik />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25180,7 +25180,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
       <Probe>
         <Klugheit />
         <Klugheit />
-        <Präzision />
+        <Feinmotorik />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25297,7 +25297,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
       <Probe>
         <Klugheit />
         <Klugheit />
-        <Präzision />
+        <Feinmotorik />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25419,7 +25419,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
       <Probe>
         <Klugheit />
         <Klugheit />
-        <Präzision />
+        <Feinmotorik />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25618,7 +25618,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     <!--Handwerk BEGINN-->
     <Talent Id="Alchemie" Komplexität="B">
       <Probe>
-        <Präzision />
+        <Feinmotorik />
         <Klugheit />
         <Intuition />
       </Probe>
@@ -25648,7 +25648,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
       <Probe>
         <Intuition />
         <Klugheit />
-        <Präzision />
+        <Feinmotorik />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25674,7 +25674,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     <Talent Id="Kochen" Komplexität="B">
       <Probe>
         <Intuition />
-        <Präzision />
+        <Feinmotorik />
         <Klugheit />
       </Probe>
       <misc:Name>
@@ -25730,7 +25730,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     <Talent Id="Ackerbau" Komplexität="B">
       <Probe>
         <Intuition />
-        <Präzision />
+        <Feinmotorik />
         <Konstitution />
       </Probe>
       <misc:Name>
@@ -25776,7 +25776,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
       <Probe>
         <Klugheit />
         <Intuition />
-        <Präzision />
+        <Feinmotorik />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25800,7 +25800,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
       <Probe>
         <Klugheit />
         <Intuition />
-        <Präzision />
+        <Feinmotorik />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25841,7 +25841,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     <Talent Id="Drucker" Komplexität="B">
       <Probe>
         <Klugheit />
-        <Präzision />
+        <Feinmotorik />
         <Stärke />
       </Probe>
       <misc:Name>
@@ -25861,7 +25861,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
       <Probe>
         <Intuition />
         <Sympathie />
-        <Präzision />
+        <Feinmotorik />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25880,7 +25880,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
       <Probe>
         <Mut />
         <Sympathie />
-        <Präzision />
+        <Feinmotorik />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25898,8 +25898,8 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     <Talent Id="Feinmechanik" Komplexität="B">
       <Probe>
         <Klugheit />
-        <Präzision />
-        <Präzision />
+        <Feinmotorik />
+        <Feinmotorik />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25917,8 +25917,8 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     <Talent Id="Feuersteinbearbeitung" Komplexität="B">
       <Probe>
         <Klugheit />
-        <Präzision />
-        <Präzision />
+        <Feinmotorik />
+        <Feinmotorik />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25936,7 +25936,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     <Talent Id="Fleischer" Komplexität="B">
       <Probe>
         <Klugheit />
-        <Präzision />
+        <Feinmotorik />
         <Stärke />
       </Probe>
       <misc:Name>
@@ -25955,7 +25955,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     <Talent Id="Gerber" Komplexität="B">
       <Probe>
         <Klugheit />
-        <Präzision />
+        <Feinmotorik />
         <Konstitution />
       </Probe>
       <misc:Name>
@@ -25977,7 +25977,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     <Talent Id="Kürschner" Komplexität="B">
       <Probe>
         <Klugheit />
-        <Präzision />
+        <Feinmotorik />
         <Konstitution />
       </Probe>
       <misc:Name>
@@ -25998,8 +25998,8 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Glaskunst" Komplexität="B">
       <Probe>
-        <Präzision />
-        <Präzision />
+        <Feinmotorik />
+        <Feinmotorik />
         <Konstitution />
       </Probe>
       <misc:Name>
@@ -26017,7 +26017,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Schmieden" Komplexität="B">
       <Probe>
-        <Präzision />
+        <Feinmotorik />
         <Konstitution />
         <Stärke />
       </Probe>
@@ -26066,7 +26066,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
       <Probe>
         <Intuition />
         <Sympathie />
-        <Präzision />
+        <Feinmotorik />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26086,7 +26086,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
       <Probe>
         <Klugheit />
         <Sympathie />
-        <Präzision />
+        <Feinmotorik />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26107,7 +26107,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     <Talent Id="Holzbearbeitung" Komplexität="B">
       <Probe>
         <Klugheit />
-        <Präzision />
+        <Feinmotorik />
         <Stärke />
       </Probe>
       <misc:Name>
@@ -26127,7 +26127,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
       <Probe>
         <Klugheit />
         <Intuition />
-        <Präzision />
+        <Feinmotorik />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26146,7 +26146,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
       <Probe>
         <Klugheit />
         <Klugheit />
-        <Präzision />
+        <Feinmotorik />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26175,8 +26175,8 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     <Talent Id="Lederarbeiten" Komplexität="B">
       <Probe>
         <Klugheit />
-        <Präzision />
-        <Präzision />
+        <Feinmotorik />
+        <Feinmotorik />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26195,7 +26195,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
       <Probe>
         <Klugheit />
         <Intuition />
-        <Präzision />
+        <Feinmotorik />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26218,7 +26218,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
       <Probe>
         <Intuition />
         <Intuition />
-        <Präzision />
+        <Feinmotorik />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26239,7 +26239,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Maurer" Komplexität="B">
       <Probe>
-        <Präzision />
+        <Feinmotorik />
         <Gewandtheit />
         <Stärke />
       </Probe>
@@ -26259,7 +26259,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     <Talent Id="Metallguss" Komplexität="B">
       <Probe>
         <Klugheit />
-        <Präzision />
+        <Feinmotorik />
         <Stärke />
       </Probe>
       <misc:Name>
@@ -26279,7 +26279,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
       <Probe>
         <Intuition />
         <Sympathie />
-        <Präzision />
+        <Feinmotorik />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26297,8 +26297,8 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     <Talent Id="Schlösser Knacken" Komplexität="B">
       <Probe>
         <Intuition />
-        <Präzision />
-        <Präzision />
+        <Feinmotorik />
+        <Feinmotorik />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26320,7 +26320,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
       <Probe>
         <Klugheit />
         <Intuition />
-        <Präzision />
+        <Feinmotorik />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26338,8 +26338,8 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     <Talent Id="Schneidern" Komplexität="B">
       <Probe>
         <Klugheit />
-        <Präzision />
-        <Präzision />
+        <Feinmotorik />
+        <Feinmotorik />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26359,7 +26359,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Seefahrt" Komplexität="B">
       <Probe>
-        <Präzision />
+        <Feinmotorik />
         <Gewandtheit />
         <Stärke />
       </Probe>
@@ -26382,8 +26382,8 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Seiler" Komplexität="B">
       <Probe>
-        <Präzision />
-        <Präzision />
+        <Feinmotorik />
+        <Feinmotorik />
         <Stärke />
       </Probe>
       <misc:Name>
@@ -26401,8 +26401,8 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Steinmetz" Komplexität="B">
       <Probe>
-        <Präzision />
-        <Präzision />
+        <Feinmotorik />
+        <Feinmotorik />
         <Stärke />
       </Probe>
       <misc:Name>
@@ -26421,8 +26421,8 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     <Talent Id="Juwelier" Komplexität="B">
       <Probe>
         <Intuition />
-        <Präzision />
-        <Präzision />
+        <Feinmotorik />
+        <Feinmotorik />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26440,7 +26440,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     <Talent Id="Stellmacher" Komplexität="B">
       <Probe>
         <Klugheit />
-        <Präzision />
+        <Feinmotorik />
         <Stärke />
       </Probe>
       <misc:Name>
@@ -26459,7 +26459,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     <Talent Id="Stoffe Färben" Komplexität="B">
       <Probe>
         <Klugheit />
-        <Präzision />
+        <Feinmotorik />
         <Stärke />
       </Probe>
       <misc:Name>
@@ -26478,8 +26478,8 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     <Talent Id="Tätowieren" Komplexität="B">
       <Probe>
         <Intuition />
-        <Präzision />
-        <Präzision />
+        <Feinmotorik />
+        <Feinmotorik />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26500,8 +26500,8 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     <Talent Id="Töpfern" Komplexität="B">
       <Probe>
         <Klugheit />
-        <Präzision />
-        <Präzision />
+        <Feinmotorik />
+        <Feinmotorik />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26540,8 +26540,8 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Webkunst" Komplexität="B">
       <Probe>
-        <Präzision />
-        <Präzision />
+        <Feinmotorik />
+        <Feinmotorik />
         <Stärke />
       </Probe>
       <misc:Name>
@@ -26560,7 +26560,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     <Talent Id="Winzer" Komplexität="B">
       <Probe>
         <Klugheit />
-        <Präzision />
+        <Feinmotorik />
         <Stärke />
       </Probe>
       <misc:Name>
@@ -26579,7 +26579,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     <Talent Id="Zimmermann" Komplexität="B">
       <Probe>
         <Klugheit />
-        <Präzision />
+        <Feinmotorik />
         <Stärke />
       </Probe>
       <misc:Name>
@@ -26600,7 +26600,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     <Talent Id="Fallenstellen" Komplexität="B">
       <Probe>
         <Klugheit />
-        <Präzision />
+        <Feinmotorik />
         <Stärke />
       </Probe>
       <misc:Name>
@@ -26618,7 +26618,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Fesseln" Komplexität="B">
       <Probe>
-        <Präzision />
+        <Feinmotorik />
         <Gewandtheit />
         <Stärke />
       </Probe>
@@ -26637,7 +26637,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     <Talent Id="Fischen" Komplexität="B">
       <Probe>
         <Intuition />
-        <Präzision />
+        <Feinmotorik />
         <Stärke />
       </Probe>
       <misc:Name>
