@@ -194,6 +194,10 @@
             <misc:Lokalisirung Sprache="de">
               <![CDATA[Herranwchsender]]>
             </misc:Lokalisirung>
+            <misc:Lokalisirung Sprache="de" Geschlecht="Weiblich" >
+              <![CDATA[Herranwchsende]]>
+            </misc:Lokalisirung>
+
           </Name>
           <lebewesen:Beschreibung>
             <misc:Lokalisirung Sprache="de">
@@ -218,6 +222,10 @@
             <misc:Lokalisirung Sprache="de">
               <![CDATA[Herranwchsender]]>
             </misc:Lokalisirung>
+            <misc:Lokalisirung Sprache="de" Geschlecht="Weiblich" >
+              <![CDATA[Herranwchsende]]>
+            </misc:Lokalisirung>
+
           </Name>
           <Beschreibung>
             <misc:Lokalisirung Sprache="de">
@@ -243,6 +251,10 @@
             <misc:Lokalisirung Sprache="de">
               <![CDATA[Herranwchsender]]>
             </misc:Lokalisirung>
+            <misc:Lokalisirung Sprache="de" Geschlecht="Weiblich" >
+              <![CDATA[Herranwchsende]]>
+            </misc:Lokalisirung>
+
           </Name>
           <Beschreibung>
             <misc:Lokalisirung Sprache="de">
@@ -263,6 +275,9 @@
           <Name>
             <misc:Lokalisirung Sprache="de">
               <![CDATA[Junger Erwachsener]]>
+            </misc:Lokalisirung>
+            <misc:Lokalisirung Sprache="de" Geschlecht="Weiblich" >
+              <![CDATA[Junger Erwachsene]]>
             </misc:Lokalisirung>
           </Name>
           <Beschreibung>
@@ -285,6 +300,10 @@
             <misc:Lokalisirung Sprache="de">
               <![CDATA[Junger Erwachsener]]>
             </misc:Lokalisirung>
+            <misc:Lokalisirung Sprache="de" Geschlecht="Weiblich" >
+              <![CDATA[Junge Erwachsene]]>
+            </misc:Lokalisirung>
+
           </Name>
           <Beschreibung>
             <misc:Lokalisirung Sprache="de">
@@ -305,6 +324,10 @@
             <misc:Lokalisirung Sprache="de">
               <![CDATA[Junger Erwachsener]]>
             </misc:Lokalisirung>
+            <misc:Lokalisirung Sprache="de" Geschlecht="Weiblich" >
+              <![CDATA[Junge Erwachsene]]>
+            </misc:Lokalisirung>
+
           </Name>
           <Beschreibung>
             <misc:Lokalisirung Sprache="de">
@@ -320,6 +343,10 @@
             <misc:Lokalisirung Sprache="de">
               <![CDATA[Erwachsener]]>
             </misc:Lokalisirung>
+                        <misc:Lokalisirung Sprache="de" Geschlecht="Weiblich" >
+              <![CDATA[Erwachsene]]>
+            </misc:Lokalisirung>
+
           </Name>
           <Beschreibung>
             <misc:Lokalisirung Sprache="de">
@@ -335,6 +362,10 @@
             <misc:Lokalisirung Sprache="de">
               <![CDATA[Erwachsener]]>
             </misc:Lokalisirung>
+                        <misc:Lokalisirung Sprache="de" Geschlecht="Weiblich" >
+              <![CDATA[Erwachsene]]>
+            </misc:Lokalisirung>
+
           </Name>
           <Beschreibung>
             <misc:Lokalisirung Sprache="de">
@@ -351,6 +382,10 @@
             <misc:Lokalisirung Sprache="de">
               <![CDATA[Erwachsener]]>
             </misc:Lokalisirung>
+                        <misc:Lokalisirung Sprache="de" Geschlecht="Weiblich" >
+              <![CDATA[Erwachsene]]>
+            </misc:Lokalisirung>
+
           </Name>
           <Beschreibung>
             <misc:Lokalisirung Sprache="de">
@@ -367,6 +402,10 @@
             <misc:Lokalisirung Sprache="de">
               <![CDATA[Erwachsener]]>
             </misc:Lokalisirung>
+                        <misc:Lokalisirung Sprache="de" Geschlecht="Weiblich" >
+              <![CDATA[Erwachsene]]>
+            </misc:Lokalisirung>
+
           </Name>
           <Beschreibung>
             <misc:Lokalisirung Sprache="de">
@@ -383,6 +422,10 @@
             <misc:Lokalisirung Sprache="de">
               <![CDATA[Erwachsener]]>
             </misc:Lokalisirung>
+                        <misc:Lokalisirung Sprache="de" Geschlecht="Weiblich" >
+              <![CDATA[Erwachsene]]>
+            </misc:Lokalisirung>
+
           </Name>
           <Beschreibung>
             <misc:Lokalisirung Sprache="de">
@@ -399,6 +442,10 @@
             <misc:Lokalisirung Sprache="de">
               <![CDATA[Erwachsener]]>
             </misc:Lokalisirung>
+                        <misc:Lokalisirung Sprache="de" Geschlecht="Weiblich" >
+              <![CDATA[Erwachsene]]>
+            </misc:Lokalisirung>
+
           </Name>
           <Beschreibung>
             <misc:Lokalisirung Sprache="de">
@@ -415,6 +462,10 @@
             <misc:Lokalisirung Sprache="de">
               <![CDATA[Erwachsener]]>
             </misc:Lokalisirung>
+                        <misc:Lokalisirung Sprache="de" Geschlecht="Weiblich" >
+              <![CDATA[Erwachsene]]>
+            </misc:Lokalisirung>
+
           </Name>
           <Beschreibung>
             <misc:Lokalisirung Sprache="de">
