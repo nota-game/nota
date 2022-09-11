@@ -22624,7 +22624,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
           </misc:Voraussetzung>
           <fertigkeit:Fertigkeit Id="Uranisch" Stufe="1" />
           <fertigkeit:Fertigkeit Id="Garich" Stufe="1" />
-          
+
         </misc:Level>
         <misc:Level Id="Land" WiederhoteNutzung="5">
           <misc:Kosten Id="Kultur" Wert="10" />
@@ -22739,6 +22739,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
         <misc:Lokalisirung Sprache="de">
           <![CDATA[Koch]]>
         </misc:Lokalisirung>
+        <misc:Lokalisirung Sprache="de" Geschlecht="Weiblich">
+          <![CDATA[Köchin]]>
+        </misc:Lokalisirung>
       </misc:Name>
       <misc:Beschreibung>
         <misc:Lokalisirung Sprache="de">
@@ -22789,7 +22792,11 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
           <misc:Kosten Id="Proffession" Wert="20" />
           <misc:Name>
             <misc:Lokalisirung Sprache="de">Geselle</misc:Lokalisirung>
+            <misc:Lokalisirung Sprache="de" Geschlecht="Weiblich">
+              <![CDATA[Gesellin]]>
+            </misc:Lokalisirung>
           </misc:Name>
+
 
           <misc:Voraussetzung>
             <misc:LevelVoraussetzung>
@@ -22819,6 +22826,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
           <misc:Kosten Id="Kultur" Wert="20" />
           <misc:Name>
             <misc:Lokalisirung Sprache="de">Returant Koch</misc:Lokalisirung>
+            <misc:Lokalisirung Sprache="de" Geschlecht="Weiblich">Returant Köchin</misc:Lokalisirung>
           </misc:Name>
 
           <misc:Voraussetzung>
@@ -22837,6 +22845,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
           <misc:Kosten Id="Kultur" Wert="20" />
           <misc:Name>
             <misc:Lokalisirung Sprache="de">Chefkoch</misc:Lokalisirung>
+            <misc:Lokalisirung Sprache="de" Geschlecht="Weiblich">Chefköchin</misc:Lokalisirung>
           </misc:Name>
 
           <misc:Voraussetzung>
@@ -22859,6 +22868,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
           <misc:Kosten Id="Kultur" Wert="20" />
           <misc:Name>
             <misc:Lokalisirung Sprache="de">Straßenverkäufer</misc:Lokalisirung>
+            <misc:Lokalisirung Sprache="de" Geschlecht="Weiblich">Straßenverkäuferin</misc:Lokalisirung>
           </misc:Name>
 
           <misc:Voraussetzung>
@@ -26620,7 +26630,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
       </misc:Lokalisirung>
     </fertigkeit:Kategorie>
 
-              <Fertigkeit Id="Kurturkunde Uranien">
+    <Fertigkeit Id="Kurturkunde Uranien">
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
           <![CDATA[Kurturkunde Uranien]]>
@@ -26683,7 +26693,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
       </fertigkeit:Stufe>
     </Fertigkeit>
 
-              <Fertigkeit Id="Kurturkunde Gariches Reich">
+    <Fertigkeit Id="Kurturkunde Gariches Reich">
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
           <![CDATA[Kurturkunde Gariches Reich]]>
@@ -26824,9 +26834,6 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </fertigkeit:Kategorie>
 
 
-    
-
-
     <Fertigkeit Id="Uranisch Zeichen">
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26847,7 +26854,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
         </fertigkeit:Mods>
       </fertigkeit:Stufe>
     </Fertigkeit>
-  
+
     <Fertigkeit Id="Arjuniche Zeichen">
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26875,14 +26882,6 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
         <![CDATA[Sprachen]]>
       </misc:Lokalisirung>
     </fertigkeit:Kategorie>
-
-    
-<!-- 
-         <fertigkeit:Fertigkeit Id="Kurturkunde Gariches Reich" Stufe="3" />
-          <fertigkeit:Fertigkeit Id="Kurturkunde Uranien" Stufe="3" />
-          <fertigkeit:Fertigkeit Id="Uranisch" Stufe="3" />
-          <fertigkeit:Fertigkeit Id="Garich" Stufe="3" /> -->
-
 
 
     <Fertigkeit Id="Uranisch">
