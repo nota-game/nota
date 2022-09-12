@@ -80,7 +80,7 @@ Ableitung
 <xsl:template match="talent:Klugheit">KL</xsl:template>
 <xsl:template match="talent:Intuition">IN</xsl:template>
 <xsl:template match="talent:Gewandtheit">GE</xsl:template>
-<xsl:template match="talent:Präzision">PR</xsl:template>
+<xsl:template match="talent:Feinmotorik">FM</xsl:template>
 <xsl:template match="talent:Sympathie">SY</xsl:template>
 <xsl:template match="talent:Antipathie">AN</xsl:template>
 <xsl:template match="talent:Stärke">ST</xsl:template>
