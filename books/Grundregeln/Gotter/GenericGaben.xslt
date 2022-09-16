@@ -15,11 +15,11 @@ xmlns:nota="http://nota.org/schema/nota.xsd" xmlns:lebewesen="http://nota.org/sc
     
 :::Gabe
     
-### <xsl:value-of select="misc:Name" />
+### <xsl:value-of select="normalize-space(./misc:Name/misc:Lokalisirung[@Sprache='de']/text())" />
   
 
 
-<xsl:value-of select="misc:Beschreibung" />
+<xsl:value-of select="normalize-space(./misc:Beschreibung/misc:Lokalisirung[@Sprache='de']/text())" />
 /::
   </xsl:template>
   <xsl:template match="*">[FEHLER IM XSLT]</xsl:template>
