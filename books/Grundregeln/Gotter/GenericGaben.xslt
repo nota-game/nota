@@ -18,8 +18,11 @@ xmlns:nota="http://nota.org/schema/nota.xsd" xmlns:lebewesen="http://nota.org/sc
 ### <xsl:value-of select="normalize-space(./misc:Name/misc:Lokalisirung[@Sprache='de']/text())" />
   
 
+<xsl:for-each select="besonderheit:Stufe">
+#### <xsl:value-of select="normalize-space(./misc:Name/misc:Lokalisirung[@Sprache='de']/text())" />
 
-<xsl:value-of select="normalize-space(./misc:Beschreibung/misc:Lokalisirung[@Sprache='de']/text())" />
+  <xsl:value-of select="normalize-space(./misc:Beschreibung/misc:Lokalisirung[@Sprache='de']/text())" />
+</xsl:for-each>
 /::
   </xsl:template>
   <xsl:template match="*">[FEHLER IM XSLT]</xsl:template>
