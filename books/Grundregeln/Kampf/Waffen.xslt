@@ -20,9 +20,9 @@
 
 <xsl:template match="ausstattung:Nahkampfwaffe">
 
-### <xsl:value-of select="normalize-space(./ausstattung:Name/misc:Lokalisirung[@Sprache='de']/text())"/>  
+### <xsl:value-of select="normalize-space(./misc:Name/misc:Lokalisirung[@Sprache='de']/text())"/>  
 
-<xsl:value-of select="normalize-space(./ausstattung:Beschreibung/misc:Lokalisirung[@Sprache='de']/text())"/>
+<xsl:value-of select="normalize-space(./misc:Beschreibung/misc:Lokalisirung[@Sprache='de']/text())"/>
 
 **Distanzklasse** <xsl:value-of select="@Distanzklasse"/>
 
