@@ -13,11 +13,11 @@
     
 :::Gabe
     
-### <xsl:value-of select="besonderheit:Name" />
+### <xsl:value-of select="misc:Name" />
   
 
 
-<xsl:value-of select="besonderheit:Beschreibung" />
+<xsl:value-of select="misc:Beschreibung" />
 /::
   </xsl:template>
   <xsl:template match="*">[FEHLER IM XSLT]</xsl:template>
