@@ -134,7 +134,7 @@ besitzen, so wird sein Taktikwert für defensive Taktiken reduziert. Die
 Reduktion entspricht der Anzahl der gegen ihn gerichteten Offensiven Taktiken
 minus 1 (maximum 4).
 
-Ein Charakter kann sich auch nur gegen bekannte Angriffe verteidigen, eine
+Ein Charakter kann sich auch nur gegen wahrgenommene Angriffe verteidigen, eine
 Defensive Taktik funktioniert daher nur gegen eine Offensive Taktiken, wenn der
 Charakter diese Offensive Taktik auch Wahrnimmt. Allerdings erhält er auch keine
 Mali durch unbemerkte Taktiken.
