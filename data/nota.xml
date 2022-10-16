@@ -114,27 +114,19 @@
     </misc:TalentKostenFunktion>
   </KostenDefinitionen>
   <GenerierungsDaten MinimumVerbreitung="3">
-    <misc:Kosten Id="GP" Wert="74" />
-    <misc:Kosten Id="Eigenschaften" Wert="54" />
-    <misc:Kosten Id="Göttlicher Einfluss" Wert="-1" />
+    <misc:Kosten Id="GP" Berechnung="74" />
+    <misc:Kosten Id="Eigenschaften" Berechnung="54" />
+    <misc:Kosten Id="Göttlicher Einfluss" Berechnung="-1" />
   </GenerierungsDaten>
   <Organismen xmlns="http://nota.org/schema/lebewesen.xsd">
-    <EigenschaftsKosten>
-      <Abschnitt von="1" bis="6">
-        <misc:Kosten Id="GP" Wert="1" />
-        <misc:Kosten Id="Eigenschaften" Wert="1" />
-      </Abschnitt>
-      <Abschnitt von="-1" bis="-2">
-        <misc:Kosten Id="GP" Wert="-3" />
-      </Abschnitt>
-      <Abschnitt von="7" bis="7">
-        <misc:Kosten Id="GP" Wert="5" />
-      </Abschnitt>
-      <Abschnitt von="8" bis="8">
-        <misc:Kosten Id="GP" Wert="10" />
-      </Abschnitt>
-    </EigenschaftsKosten>
+
     <lebewesen:Entwiklung>
+      <lebewesen:Berechnung id="bmi" Reihenfolge="99999" einheit="kg">
+        <misc:Name>
+          <misc:Lokalisirung Sprache="de">Platzhalter</misc:Lokalisirung>
+        </misc:Name>
+        <lebewesen:Formel>1</lebewesen:Formel>
+      </lebewesen:Berechnung>
       <lebewesen:Berechnung id="gewicht" Reihenfolge="2" einheit="kg">
         <misc:Name>
           <misc:Lokalisirung Sprache="de">Gewicht</misc:Lokalisirung>
@@ -147,11 +139,17 @@
         </misc:Name>
         <lebewesen:Formel>70-(KO+KO+ST)</lebewesen:Formel>
       </lebewesen:Berechnung>
+      <lebewesen:Berechnung id="kraftGewichtCap" Reihenfolge="10">
+        <misc:Name>
+          <misc:Lokalisirung Sprache="de">Maximales Gewicht für Kraft</misc:Lokalisirung>
+        </misc:Name>
+        <lebewesen:Formel>9999999999</lebewesen:Formel>
+      </lebewesen:Berechnung>
       <lebewesen:Berechnung id="kraft" Reihenfolge="10">
         <misc:Name>
           <misc:Lokalisirung Sprache="de">Kraft</misc:Lokalisirung>
         </misc:Name>
-        <lebewesen:Formel>ceil((91/30 * (1/ ST )*(1/ ST )+1529/300*1/ST+3/50)*gewicht())</lebewesen:Formel>
+        <lebewesen:Formel>_over = max(0,gewicht()-kraftGewichtCap());_under = min(kraftGewichtCap(),gewicht());ceil((91/30 * (1/ ST )*(1/ ST )+1529/300*1/ST+3/50)*_under)</lebewesen:Formel>
       </lebewesen:Berechnung>
       <lebewesen:Berechnung id="GlP" Reihenfolge="10">
         <misc:Name>
@@ -159,6 +157,654 @@
         </misc:Name>
         <lebewesen:Formel>21 - GL</lebewesen:Formel>
       </lebewesen:Berechnung>
+
+      <lebewesen:Reihe id="mut" startAlter="0" step="1" Reihenfolge="-12">
+        <misc:Name>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Mut]]>
+          </misc:Lokalisirung>
+        </misc:Name>
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Wie Mutig ein Charackter ist]]>
+          </misc:Lokalisirung>
+        </misc:Beschreibung>
+        <misc:Abkürzung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[MU]]>
+          </misc:Lokalisirung>
+        </misc:Abkürzung>
+        <lebewesen:Verteilung>
+          <lebewesen:Wert Quantil="0">7</lebewesen:Wert>
+          <lebewesen:Wert Quantil="50">10</lebewesen:Wert>
+          <lebewesen:Wert Quantil="100">13</lebewesen:Wert>
+        </lebewesen:Verteilung>
+        <lebewesen:Schwelle>
+          <misc:Kosten Id="GP" Berechnung="6" />
+          <misc:Kosten Id="Eigenschaften" Berechnung="6" />
+          <lebewesen:Wert>7</lebewesen:Wert>
+        </lebewesen:Schwelle>
+        <lebewesen:Schwelle>
+          <misc:Kosten Id="GP" Berechnung="5" />
+          <misc:Kosten Id="Eigenschaften" Berechnung="5" />
+          <lebewesen:Wert>8</lebewesen:Wert>
+        </lebewesen:Schwelle>
+        <lebewesen:Schwelle>
+          <misc:Kosten Id="GP" Berechnung="4" />
+          <misc:Kosten Id="Eigenschaften" Berechnung="4" />
+          <lebewesen:Wert>9</lebewesen:Wert>
+        </lebewesen:Schwelle>
+        <lebewesen:Schwelle>
+          <misc:Kosten Id="GP" Berechnung="3" />
+          <misc:Kosten Id="Eigenschaften" Berechnung="3" />
+          <lebewesen:Wert>10</lebewesen:Wert>
+        </lebewesen:Schwelle>
+        <lebewesen:Schwelle>
+          <misc:Kosten Id="GP" Berechnung="2" />
+          <misc:Kosten Id="Eigenschaften" Berechnung="2" />
+          <lebewesen:Wert>11</lebewesen:Wert>
+        </lebewesen:Schwelle>
+        <lebewesen:Schwelle>
+          <misc:Kosten Id="GP" Berechnung="1" />
+          <misc:Kosten Id="Eigenschaften" Berechnung="1" />
+          <lebewesen:Wert>12</lebewesen:Wert>
+        </lebewesen:Schwelle>
+      </lebewesen:Reihe>
+      <lebewesen:Reihe id="glück" startAlter="0" step="1" Reihenfolge="-12">
+        <misc:Name>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Glück]]>
+          </misc:Lokalisirung>
+        </misc:Name>
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[ ]]>
+          </misc:Lokalisirung>
+        </misc:Beschreibung>
+        <misc:Abkürzung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[GL]]>
+          </misc:Lokalisirung>
+        </misc:Abkürzung>
+
+        <lebewesen:Verteilung>
+          <lebewesen:Wert Quantil="0">7</lebewesen:Wert>
+          <lebewesen:Wert Quantil="50">10</lebewesen:Wert>
+          <lebewesen:Wert Quantil="100">13</lebewesen:Wert>
+        </lebewesen:Verteilung>
+        <lebewesen:Schwelle>
+          <misc:Kosten Id="GP" Berechnung="6" />
+          <misc:Kosten Id="Eigenschaften" Berechnung="6" />
+          <lebewesen:Wert>7</lebewesen:Wert>
+        </lebewesen:Schwelle>
+        <lebewesen:Schwelle>
+          <misc:Kosten Id="GP" Berechnung="5" />
+          <misc:Kosten Id="Eigenschaften" Berechnung="5" />
+          <lebewesen:Wert>8</lebewesen:Wert>
+        </lebewesen:Schwelle>
+        <lebewesen:Schwelle>
+          <misc:Kosten Id="GP" Berechnung="4" />
+          <misc:Kosten Id="Eigenschaften" Berechnung="4" />
+          <lebewesen:Wert>9</lebewesen:Wert>
+        </lebewesen:Schwelle>
+        <lebewesen:Schwelle>
+          <misc:Kosten Id="GP" Berechnung="3" />
+          <misc:Kosten Id="Eigenschaften" Berechnung="3" />
+          <lebewesen:Wert>10</lebewesen:Wert>
+        </lebewesen:Schwelle>
+        <lebewesen:Schwelle>
+          <misc:Kosten Id="GP" Berechnung="2" />
+          <misc:Kosten Id="Eigenschaften" Berechnung="2" />
+          <lebewesen:Wert>11</lebewesen:Wert>
+        </lebewesen:Schwelle>
+        <lebewesen:Schwelle>
+          <misc:Kosten Id="GP" Berechnung="1" />
+          <misc:Kosten Id="Eigenschaften" Berechnung="1" />
+          <lebewesen:Wert>12</lebewesen:Wert>
+        </lebewesen:Schwelle>
+      </lebewesen:Reihe>
+      <lebewesen:Reihe id="klugheit" startAlter="0" step="1" Reihenfolge="-12">
+        <misc:Name>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Klugheit]]>
+          </misc:Lokalisirung>
+        </misc:Name>
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[ ]]>
+          </misc:Lokalisirung>
+        </misc:Beschreibung>
+        <misc:Abkürzung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[KL]]>
+          </misc:Lokalisirung>
+        </misc:Abkürzung>
+
+        <lebewesen:Verteilung>
+          <lebewesen:Wert Quantil="0">7</lebewesen:Wert>
+          <lebewesen:Wert Quantil="50">10</lebewesen:Wert>
+          <lebewesen:Wert Quantil="100">13</lebewesen:Wert>
+        </lebewesen:Verteilung>
+        <lebewesen:Schwelle>
+          <misc:Kosten Id="GP" Berechnung="6" />
+          <misc:Kosten Id="Eigenschaften" Berechnung="6" />
+          <lebewesen:Wert>7</lebewesen:Wert>
+        </lebewesen:Schwelle>
+        <lebewesen:Schwelle>
+          <misc:Kosten Id="GP" Berechnung="5" />
+          <misc:Kosten Id="Eigenschaften" Berechnung="5" />
+          <lebewesen:Wert>8</lebewesen:Wert>
+        </lebewesen:Schwelle>
+        <lebewesen:Schwelle>
+          <misc:Kosten Id="GP" Berechnung="4" />
+          <misc:Kosten Id="Eigenschaften" Berechnung="4" />
+          <lebewesen:Wert>9</lebewesen:Wert>
+        </lebewesen:Schwelle>
+        <lebewesen:Schwelle>
+          <misc:Kosten Id="GP" Berechnung="3" />
+          <misc:Kosten Id="Eigenschaften" Berechnung="3" />
+          <lebewesen:Wert>10</lebewesen:Wert>
+        </lebewesen:Schwelle>
+        <lebewesen:Schwelle>
+          <misc:Kosten Id="GP" Berechnung="2" />
+          <misc:Kosten Id="Eigenschaften" Berechnung="2" />
+          <lebewesen:Wert>11</lebewesen:Wert>
+        </lebewesen:Schwelle>
+        <lebewesen:Schwelle>
+          <misc:Kosten Id="GP" Berechnung="1" />
+          <misc:Kosten Id="Eigenschaften" Berechnung="1" />
+          <lebewesen:Wert>12</lebewesen:Wert>
+        </lebewesen:Schwelle>
+      </lebewesen:Reihe>
+      <lebewesen:Reihe id="intuition" startAlter="0" step="1" Reihenfolge="-12">
+        <misc:Name>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Intuition]]>
+          </misc:Lokalisirung>
+        </misc:Name>
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[ ]]>
+          </misc:Lokalisirung>
+        </misc:Beschreibung>
+        <misc:Abkürzung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[IN]]>
+          </misc:Lokalisirung>
+        </misc:Abkürzung>
+
+        <lebewesen:Verteilung>
+          <lebewesen:Wert Quantil="0">7</lebewesen:Wert>
+          <lebewesen:Wert Quantil="50">10</lebewesen:Wert>
+          <lebewesen:Wert Quantil="100">13</lebewesen:Wert>
+        </lebewesen:Verteilung>
+        <lebewesen:Schwelle>
+          <misc:Kosten Id="GP" Berechnung="6" />
+          <misc:Kosten Id="Eigenschaften" Berechnung="6" />
+          <lebewesen:Wert>7</lebewesen:Wert>
+        </lebewesen:Schwelle>
+        <lebewesen:Schwelle>
+          <misc:Kosten Id="GP" Berechnung="5" />
+          <misc:Kosten Id="Eigenschaften" Berechnung="5" />
+          <lebewesen:Wert>8</lebewesen:Wert>
+        </lebewesen:Schwelle>
+        <lebewesen:Schwelle>
+          <misc:Kosten Id="GP" Berechnung="4" />
+          <misc:Kosten Id="Eigenschaften" Berechnung="4" />
+          <lebewesen:Wert>9</lebewesen:Wert>
+        </lebewesen:Schwelle>
+        <lebewesen:Schwelle>
+          <misc:Kosten Id="GP" Berechnung="3" />
+          <misc:Kosten Id="Eigenschaften" Berechnung="3" />
+          <lebewesen:Wert>10</lebewesen:Wert>
+        </lebewesen:Schwelle>
+        <lebewesen:Schwelle>
+          <misc:Kosten Id="GP" Berechnung="2" />
+          <misc:Kosten Id="Eigenschaften" Berechnung="2" />
+          <lebewesen:Wert>11</lebewesen:Wert>
+        </lebewesen:Schwelle>
+        <lebewesen:Schwelle>
+          <misc:Kosten Id="GP" Berechnung="1" />
+          <misc:Kosten Id="Eigenschaften" Berechnung="1" />
+          <lebewesen:Wert>12</lebewesen:Wert>
+        </lebewesen:Schwelle>
+      </lebewesen:Reihe>
+
+      <lebewesen:Reihe id="gewandtheit" startAlter="0" step="1" Reihenfolge="-12">
+        <misc:Name>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Gewandtheit]]>
+          </misc:Lokalisirung>
+        </misc:Name>
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[ ]]>
+          </misc:Lokalisirung>
+        </misc:Beschreibung>
+        <misc:Abkürzung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[GE]]>
+          </misc:Lokalisirung>
+        </misc:Abkürzung>
+
+        <lebewesen:Verteilung>
+          <lebewesen:Wert Quantil="0">7</lebewesen:Wert>
+          <lebewesen:Wert Quantil="50">10</lebewesen:Wert>
+          <lebewesen:Wert Quantil="100">13</lebewesen:Wert>
+        </lebewesen:Verteilung>
+        <lebewesen:Schwelle>
+          <misc:Kosten Id="GP" Berechnung="6" />
+          <misc:Kosten Id="Eigenschaften" Berechnung="6" />
+          <lebewesen:Wert>7</lebewesen:Wert>
+        </lebewesen:Schwelle>
+        <lebewesen:Schwelle>
+          <misc:Kosten Id="GP" Berechnung="5" />
+          <misc:Kosten Id="Eigenschaften" Berechnung="5" />
+          <lebewesen:Wert>8</lebewesen:Wert>
+        </lebewesen:Schwelle>
+        <lebewesen:Schwelle>
+          <misc:Kosten Id="GP" Berechnung="4" />
+          <misc:Kosten Id="Eigenschaften" Berechnung="4" />
+          <lebewesen:Wert>9</lebewesen:Wert>
+        </lebewesen:Schwelle>
+        <lebewesen:Schwelle>
+          <misc:Kosten Id="GP" Berechnung="3" />
+          <misc:Kosten Id="Eigenschaften" Berechnung="3" />
+          <lebewesen:Wert>10</lebewesen:Wert>
+        </lebewesen:Schwelle>
+        <lebewesen:Schwelle>
+          <misc:Kosten Id="GP" Berechnung="2" />
+          <misc:Kosten Id="Eigenschaften" Berechnung="2" />
+          <lebewesen:Wert>11</lebewesen:Wert>
+        </lebewesen:Schwelle>
+        <lebewesen:Schwelle>
+          <misc:Kosten Id="GP" Berechnung="1" />
+          <misc:Kosten Id="Eigenschaften" Berechnung="1" />
+          <lebewesen:Wert>12</lebewesen:Wert>
+        </lebewesen:Schwelle>
+      </lebewesen:Reihe>
+
+      <lebewesen:Reihe id="feinmotorik" startAlter="0" step="1" Reihenfolge="-12">
+        <misc:Name>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Feinmotorik]]>
+          </misc:Lokalisirung>
+        </misc:Name>
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[ ]]>
+          </misc:Lokalisirung>
+        </misc:Beschreibung>
+        <misc:Abkürzung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[FM]]>
+          </misc:Lokalisirung>
+        </misc:Abkürzung>
+
+        <lebewesen:Verteilung>
+          <lebewesen:Wert Quantil="0">7</lebewesen:Wert>
+          <lebewesen:Wert Quantil="50">10</lebewesen:Wert>
+          <lebewesen:Wert Quantil="100">13</lebewesen:Wert>
+        </lebewesen:Verteilung>
+        <lebewesen:Schwelle>
+          <misc:Kosten Id="GP" Berechnung="6" />
+          <misc:Kosten Id="Eigenschaften" Berechnung="6" />
+          <lebewesen:Wert>7</lebewesen:Wert>
+        </lebewesen:Schwelle>
+        <lebewesen:Schwelle>
+          <misc:Kosten Id="GP" Berechnung="5" />
+          <misc:Kosten Id="Eigenschaften" Berechnung="5" />
+          <lebewesen:Wert>8</lebewesen:Wert>
+        </lebewesen:Schwelle>
+        <lebewesen:Schwelle>
+          <misc:Kosten Id="GP" Berechnung="4" />
+          <misc:Kosten Id="Eigenschaften" Berechnung="4" />
+          <lebewesen:Wert>9</lebewesen:Wert>
+        </lebewesen:Schwelle>
+        <lebewesen:Schwelle>
+          <misc:Kosten Id="GP" Berechnung="3" />
+          <misc:Kosten Id="Eigenschaften" Berechnung="3" />
+          <lebewesen:Wert>10</lebewesen:Wert>
+        </lebewesen:Schwelle>
+        <lebewesen:Schwelle>
+          <misc:Kosten Id="GP" Berechnung="2" />
+          <misc:Kosten Id="Eigenschaften" Berechnung="2" />
+          <lebewesen:Wert>11</lebewesen:Wert>
+        </lebewesen:Schwelle>
+        <lebewesen:Schwelle>
+          <misc:Kosten Id="GP" Berechnung="1" />
+          <misc:Kosten Id="Eigenschaften" Berechnung="1" />
+          <lebewesen:Wert>12</lebewesen:Wert>
+        </lebewesen:Schwelle>
+      </lebewesen:Reihe>
+
+      <lebewesen:Reihe id="sympathie" startAlter="0" step="1" Reihenfolge="-12">
+        <misc:Name>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Sympathie]]>
+          </misc:Lokalisirung>
+        </misc:Name>
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[ ]]>
+          </misc:Lokalisirung>
+        </misc:Beschreibung>
+        <misc:Abkürzung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[SY]]>
+          </misc:Lokalisirung>
+        </misc:Abkürzung>
+
+        <lebewesen:Verteilung>
+          <lebewesen:Wert Quantil="0">7</lebewesen:Wert>
+          <lebewesen:Wert Quantil="50">10</lebewesen:Wert>
+          <lebewesen:Wert Quantil="100">13</lebewesen:Wert>
+        </lebewesen:Verteilung>
+        <lebewesen:Schwelle>
+          <misc:Kosten Id="GP" Berechnung="6" />
+          <misc:Kosten Id="Eigenschaften" Berechnung="6" />
+          <lebewesen:Wert>7</lebewesen:Wert>
+        </lebewesen:Schwelle>
+        <lebewesen:Schwelle>
+          <misc:Kosten Id="GP" Berechnung="5" />
+          <misc:Kosten Id="Eigenschaften" Berechnung="5" />
+          <lebewesen:Wert>8</lebewesen:Wert>
+        </lebewesen:Schwelle>
+        <lebewesen:Schwelle>
+          <misc:Kosten Id="GP" Berechnung="4" />
+          <misc:Kosten Id="Eigenschaften" Berechnung="4" />
+          <lebewesen:Wert>9</lebewesen:Wert>
+        </lebewesen:Schwelle>
+        <lebewesen:Schwelle>
+          <misc:Kosten Id="GP" Berechnung="3" />
+          <misc:Kosten Id="Eigenschaften" Berechnung="3" />
+          <lebewesen:Wert>10</lebewesen:Wert>
+        </lebewesen:Schwelle>
+        <lebewesen:Schwelle>
+          <misc:Kosten Id="GP" Berechnung="2" />
+          <misc:Kosten Id="Eigenschaften" Berechnung="2" />
+          <lebewesen:Wert>11</lebewesen:Wert>
+        </lebewesen:Schwelle>
+        <lebewesen:Schwelle>
+          <misc:Kosten Id="GP" Berechnung="1" />
+          <misc:Kosten Id="Eigenschaften" Berechnung="1" />
+          <lebewesen:Wert>12</lebewesen:Wert>
+        </lebewesen:Schwelle>
+      </lebewesen:Reihe>
+
+      <lebewesen:Reihe id="Antipathie" startAlter="0" step="1" Reihenfolge="-12">
+        <misc:Name>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[antipathie]]>
+          </misc:Lokalisirung>
+        </misc:Name>
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[ ]]>
+          </misc:Lokalisirung>
+        </misc:Beschreibung>
+        <misc:Abkürzung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[AN]]>
+          </misc:Lokalisirung>
+        </misc:Abkürzung>
+
+        <lebewesen:Verteilung>
+          <lebewesen:Wert Quantil="0">7</lebewesen:Wert>
+          <lebewesen:Wert Quantil="50">10</lebewesen:Wert>
+          <lebewesen:Wert Quantil="100">13</lebewesen:Wert>
+        </lebewesen:Verteilung>
+        <lebewesen:Schwelle>
+          <misc:Kosten Id="GP" Berechnung="6" />
+          <misc:Kosten Id="Eigenschaften" Berechnung="6" />
+          <lebewesen:Wert>7</lebewesen:Wert>
+        </lebewesen:Schwelle>
+        <lebewesen:Schwelle>
+          <misc:Kosten Id="GP" Berechnung="5" />
+          <misc:Kosten Id="Eigenschaften" Berechnung="5" />
+          <lebewesen:Wert>8</lebewesen:Wert>
+        </lebewesen:Schwelle>
+        <lebewesen:Schwelle>
+          <misc:Kosten Id="GP" Berechnung="4" />
+          <misc:Kosten Id="Eigenschaften" Berechnung="4" />
+          <lebewesen:Wert>9</lebewesen:Wert>
+        </lebewesen:Schwelle>
+        <lebewesen:Schwelle>
+          <misc:Kosten Id="GP" Berechnung="3" />
+          <misc:Kosten Id="Eigenschaften" Berechnung="3" />
+          <lebewesen:Wert>10</lebewesen:Wert>
+        </lebewesen:Schwelle>
+        <lebewesen:Schwelle>
+          <misc:Kosten Id="GP" Berechnung="2" />
+          <misc:Kosten Id="Eigenschaften" Berechnung="2" />
+          <lebewesen:Wert>11</lebewesen:Wert>
+        </lebewesen:Schwelle>
+        <lebewesen:Schwelle>
+          <misc:Kosten Id="GP" Berechnung="1" />
+          <misc:Kosten Id="Eigenschaften" Berechnung="1" />
+          <lebewesen:Wert>12</lebewesen:Wert>
+        </lebewesen:Schwelle>
+      </lebewesen:Reihe>
+
+      <lebewesen:Reihe id="stärke" startAlter="0" step="1" Reihenfolge="-12">
+        <misc:Name>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Stärke]]>
+          </misc:Lokalisirung>
+        </misc:Name>
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[ ]]>
+          </misc:Lokalisirung>
+        </misc:Beschreibung>
+        <misc:Abkürzung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[ST]]>
+          </misc:Lokalisirung>
+        </misc:Abkürzung>
+
+        <lebewesen:Verteilung>
+          <lebewesen:Wert Quantil="0">7</lebewesen:Wert>
+          <lebewesen:Wert Quantil="50">10</lebewesen:Wert>
+          <lebewesen:Wert Quantil="100">13</lebewesen:Wert>
+        </lebewesen:Verteilung>
+        <lebewesen:Schwelle>
+          <misc:Kosten Id="GP" Berechnung="6" />
+          <misc:Kosten Id="Eigenschaften" Berechnung="6" />
+          <lebewesen:Wert>7</lebewesen:Wert>
+        </lebewesen:Schwelle>
+        <lebewesen:Schwelle>
+          <misc:Kosten Id="GP" Berechnung="5" />
+          <misc:Kosten Id="Eigenschaften" Berechnung="5" />
+          <lebewesen:Wert>8</lebewesen:Wert>
+        </lebewesen:Schwelle>
+        <lebewesen:Schwelle>
+          <misc:Kosten Id="GP" Berechnung="4" />
+          <misc:Kosten Id="Eigenschaften" Berechnung="4" />
+          <lebewesen:Wert>9</lebewesen:Wert>
+        </lebewesen:Schwelle>
+        <lebewesen:Schwelle>
+          <misc:Kosten Id="GP" Berechnung="3" />
+          <misc:Kosten Id="Eigenschaften" Berechnung="3" />
+          <lebewesen:Wert>10</lebewesen:Wert>
+        </lebewesen:Schwelle>
+        <lebewesen:Schwelle>
+          <misc:Kosten Id="GP" Berechnung="2" />
+          <misc:Kosten Id="Eigenschaften" Berechnung="2" />
+          <lebewesen:Wert>11</lebewesen:Wert>
+        </lebewesen:Schwelle>
+        <lebewesen:Schwelle>
+          <misc:Kosten Id="GP" Berechnung="1" />
+          <misc:Kosten Id="Eigenschaften" Berechnung="1" />
+          <lebewesen:Wert>12</lebewesen:Wert>
+        </lebewesen:Schwelle>
+      </lebewesen:Reihe>
+
+
+      <lebewesen:Reihe id="konstitution" startAlter="0" step="1" Reihenfolge="-12">
+        <misc:Name>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Kontitution]]>
+          </misc:Lokalisirung>
+        </misc:Name>
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[ ]]>
+          </misc:Lokalisirung>
+        </misc:Beschreibung>
+        <misc:Abkürzung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[KO]]>
+          </misc:Lokalisirung>
+        </misc:Abkürzung>
+
+        <lebewesen:Verteilung>
+          <lebewesen:Wert Quantil="0">7</lebewesen:Wert>
+          <lebewesen:Wert Quantil="50">10</lebewesen:Wert>
+          <lebewesen:Wert Quantil="100">13</lebewesen:Wert>
+        </lebewesen:Verteilung>
+        <lebewesen:Schwelle>
+          <misc:Kosten Id="GP" Berechnung="6" />
+          <misc:Kosten Id="Eigenschaften" Berechnung="6" />
+          <lebewesen:Wert>7</lebewesen:Wert>
+        </lebewesen:Schwelle>
+        <lebewesen:Schwelle>
+          <misc:Kosten Id="GP" Berechnung="5" />
+          <misc:Kosten Id="Eigenschaften" Berechnung="5" />
+          <lebewesen:Wert>8</lebewesen:Wert>
+        </lebewesen:Schwelle>
+        <lebewesen:Schwelle>
+          <misc:Kosten Id="GP" Berechnung="4" />
+          <misc:Kosten Id="Eigenschaften" Berechnung="4" />
+          <lebewesen:Wert>9</lebewesen:Wert>
+        </lebewesen:Schwelle>
+        <lebewesen:Schwelle>
+          <misc:Kosten Id="GP" Berechnung="3" />
+          <misc:Kosten Id="Eigenschaften" Berechnung="3" />
+          <lebewesen:Wert>10</lebewesen:Wert>
+        </lebewesen:Schwelle>
+        <lebewesen:Schwelle>
+          <misc:Kosten Id="GP" Berechnung="2" />
+          <misc:Kosten Id="Eigenschaften" Berechnung="2" />
+          <lebewesen:Wert>11</lebewesen:Wert>
+        </lebewesen:Schwelle>
+        <lebewesen:Schwelle>
+          <misc:Kosten Id="GP" Berechnung="1" />
+          <misc:Kosten Id="Eigenschaften" Berechnung="1" />
+          <lebewesen:Wert>12</lebewesen:Wert>
+        </lebewesen:Schwelle>
+      </lebewesen:Reihe>
+
+
+      <lebewesen:Reihe id="fokus" startAlter="0" step="1" Reihenfolge="-12">
+        <misc:Name>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Fokus]]>
+          </misc:Lokalisirung>
+        </misc:Name>
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[ ]]>
+          </misc:Lokalisirung>
+        </misc:Beschreibung>
+        <misc:Abkürzung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[FO]]>
+          </misc:Lokalisirung>
+        </misc:Abkürzung>
+
+        <lebewesen:Verteilung>
+          <lebewesen:Wert Quantil="0">7</lebewesen:Wert>
+          <lebewesen:Wert Quantil="50">10</lebewesen:Wert>
+          <lebewesen:Wert Quantil="100">13</lebewesen:Wert>
+        </lebewesen:Verteilung>
+        <lebewesen:Schwelle>
+          <misc:Kosten Id="GP" Berechnung="6" />
+          <misc:Kosten Id="Eigenschaften" Berechnung="6" />
+          <lebewesen:Wert>7</lebewesen:Wert>
+        </lebewesen:Schwelle>
+        <lebewesen:Schwelle>
+          <misc:Kosten Id="GP" Berechnung="5" />
+          <misc:Kosten Id="Eigenschaften" Berechnung="5" />
+          <lebewesen:Wert>8</lebewesen:Wert>
+        </lebewesen:Schwelle>
+        <lebewesen:Schwelle>
+          <misc:Kosten Id="GP" Berechnung="4" />
+          <misc:Kosten Id="Eigenschaften" Berechnung="4" />
+          <lebewesen:Wert>9</lebewesen:Wert>
+        </lebewesen:Schwelle>
+        <lebewesen:Schwelle>
+          <misc:Kosten Id="GP" Berechnung="3" />
+          <misc:Kosten Id="Eigenschaften" Berechnung="3" />
+          <lebewesen:Wert>10</lebewesen:Wert>
+        </lebewesen:Schwelle>
+        <lebewesen:Schwelle>
+          <misc:Kosten Id="GP" Berechnung="2" />
+          <misc:Kosten Id="Eigenschaften" Berechnung="2" />
+          <lebewesen:Wert>11</lebewesen:Wert>
+        </lebewesen:Schwelle>
+        <lebewesen:Schwelle>
+          <misc:Kosten Id="GP" Berechnung="1" />
+          <misc:Kosten Id="Eigenschaften" Berechnung="1" />
+          <lebewesen:Wert>12</lebewesen:Wert>
+        </lebewesen:Schwelle>
+      </lebewesen:Reihe>
+
+      <lebewesen:Reihe id="einfluss" startAlter="0" step="1" Reihenfolge="-12">
+        <misc:Name>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Einfluss]]>
+          </misc:Lokalisirung>
+        </misc:Name>
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[ ]]>
+          </misc:Lokalisirung>
+        </misc:Beschreibung>
+        <misc:Abkürzung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[EI]]>
+          </misc:Lokalisirung>
+        </misc:Abkürzung>
+
+        <lebewesen:Verteilung>
+          <lebewesen:Wert Quantil="0">7</lebewesen:Wert>
+          <lebewesen:Wert Quantil="50">10</lebewesen:Wert>
+          <lebewesen:Wert Quantil="100">13</lebewesen:Wert>
+        </lebewesen:Verteilung>
+        <lebewesen:Schwelle>
+          <misc:Kosten Id="GP" Berechnung="6" />
+          <misc:Kosten Id="Eigenschaften" Berechnung="6" />
+          <lebewesen:Wert>7</lebewesen:Wert>
+        </lebewesen:Schwelle>
+        <lebewesen:Schwelle>
+          <misc:Kosten Id="GP" Berechnung="5" />
+          <misc:Kosten Id="Eigenschaften" Berechnung="5" />
+          <lebewesen:Wert>8</lebewesen:Wert>
+        </lebewesen:Schwelle>
+        <lebewesen:Schwelle>
+          <misc:Kosten Id="GP" Berechnung="4" />
+          <misc:Kosten Id="Eigenschaften" Berechnung="4" />
+          <lebewesen:Wert>9</lebewesen:Wert>
+        </lebewesen:Schwelle>
+        <lebewesen:Schwelle>
+          <misc:Kosten Id="GP" Berechnung="3" />
+          <misc:Kosten Id="Eigenschaften" Berechnung="3" />
+          <lebewesen:Wert>10</lebewesen:Wert>
+        </lebewesen:Schwelle>
+        <lebewesen:Schwelle>
+          <misc:Kosten Id="GP" Berechnung="2" />
+          <misc:Kosten Id="Eigenschaften" Berechnung="2" />
+          <lebewesen:Wert>11</lebewesen:Wert>
+        </lebewesen:Schwelle>
+        <lebewesen:Schwelle>
+          <misc:Kosten Id="GP" Berechnung="1" />
+          <misc:Kosten Id="Eigenschaften" Berechnung="1" />
+          <lebewesen:Wert>12</lebewesen:Wert>
+        </lebewesen:Schwelle>
+      </lebewesen:Reihe>
+
+
     </lebewesen:Entwiklung>
     <Gattung Id="Homo">
       <misc:Name>
@@ -171,30 +817,17 @@
           <![CDATA[Die Gattung der Menschen]]>
         </misc:Lokalisirung>
       </misc:Beschreibung>
-      <Eigenschaften>
-        <Mut Durchschnitt="9" Start="13" />
-        <Glück Durchschnitt="9" Start="13" />
-        <Klugheit Durchschnitt="9" Start="13" />
-        <Intuition Durchschnitt="9" Start="13" />
-        <Gewandtheit Durchschnitt="9" Start="13" />
-        <Feinmotorik Durchschnitt="9" Start="13" />
-        <Sympathie Durchschnitt="9" Start="13" />
-        <Antipathie Durchschnitt="9" Start="13" />
-        <Stärke Durchschnitt="9" Start="13" />
-        <Konstitution Durchschnitt="9" Start="13" />
-        <Fokus Durchschnitt="9" Start="13" />
-        <Einfluss Durchschnitt="9" Start="13" />
-      </Eigenschaften>
+
       <Lebensabschnitte>
         <Lebensabschnitt startAlter="12">
           <Spielbar>
-            <misc:Kosten Id="Kultur" Wert="-75" />
+            <misc:Kosten Id="Kultur" Berechnung="-75" />
           </Spielbar>
           <Name>
             <misc:Lokalisirung Sprache="de">
               <![CDATA[Herranwchsender]]>
             </misc:Lokalisirung>
-            <misc:Lokalisirung Sprache="de" Geschlecht="Weiblich" >
+            <misc:Lokalisirung Sprache="de" Geschlecht="Weiblich">
               <![CDATA[Herranwchsende]]>
             </misc:Lokalisirung>
 
@@ -216,13 +849,13 @@
         </Lebensabschnitt>
         <Lebensabschnitt startAlter="13">
           <Spielbar>
-            <misc:Kosten Id="Kultur" Wert="-80" />
+            <misc:Kosten Id="Kultur" Berechnung="-80" />
           </Spielbar>
           <Name>
             <misc:Lokalisirung Sprache="de">
               <![CDATA[Herranwchsender]]>
             </misc:Lokalisirung>
-            <misc:Lokalisirung Sprache="de" Geschlecht="Weiblich" >
+            <misc:Lokalisirung Sprache="de" Geschlecht="Weiblich">
               <![CDATA[Herranwchsende]]>
             </misc:Lokalisirung>
 
@@ -245,13 +878,13 @@
         </Lebensabschnitt>
         <Lebensabschnitt startAlter="14">
           <Spielbar>
-            <misc:Kosten Id="Kultur" Wert="-90" />
+            <misc:Kosten Id="Kultur" Berechnung="-90" />
           </Spielbar>
           <Name>
             <misc:Lokalisirung Sprache="de">
               <![CDATA[Herranwchsender]]>
             </misc:Lokalisirung>
-            <misc:Lokalisirung Sprache="de" Geschlecht="Weiblich" >
+            <misc:Lokalisirung Sprache="de" Geschlecht="Weiblich">
               <![CDATA[Herranwchsende]]>
             </misc:Lokalisirung>
 
@@ -270,13 +903,13 @@
         </Lebensabschnitt>
         <Lebensabschnitt startAlter="16">
           <Spielbar>
-            <misc:Kosten Id="Kultur" Wert="-100" />
+            <misc:Kosten Id="Kultur" Berechnung="-100" />
           </Spielbar>
           <Name>
             <misc:Lokalisirung Sprache="de">
               <![CDATA[Junger Erwachsener]]>
             </misc:Lokalisirung>
-            <misc:Lokalisirung Sprache="de" Geschlecht="Weiblich" >
+            <misc:Lokalisirung Sprache="de" Geschlecht="Weiblich">
               <![CDATA[Junger Erwachsene]]>
             </misc:Lokalisirung>
           </Name>
@@ -294,13 +927,13 @@
         </Lebensabschnitt>
         <Lebensabschnitt startAlter="18">
           <Spielbar>
-            <misc:Kosten Id="Kultur" Wert="-110" />
+            <misc:Kosten Id="Kultur" Berechnung="-110" />
           </Spielbar>
           <Name>
             <misc:Lokalisirung Sprache="de">
               <![CDATA[Junger Erwachsener]]>
             </misc:Lokalisirung>
-            <misc:Lokalisirung Sprache="de" Geschlecht="Weiblich" >
+            <misc:Lokalisirung Sprache="de" Geschlecht="Weiblich">
               <![CDATA[Junge Erwachsene]]>
             </misc:Lokalisirung>
 
@@ -318,13 +951,13 @@
         </Lebensabschnitt>
         <Lebensabschnitt startAlter="21">
           <Spielbar>
-            <misc:Kosten Id="Kultur" Wert="-120" />
+            <misc:Kosten Id="Kultur" Berechnung="-120" />
           </Spielbar>
           <Name>
             <misc:Lokalisirung Sprache="de">
               <![CDATA[Junger Erwachsener]]>
             </misc:Lokalisirung>
-            <misc:Lokalisirung Sprache="de" Geschlecht="Weiblich" >
+            <misc:Lokalisirung Sprache="de" Geschlecht="Weiblich">
               <![CDATA[Junge Erwachsene]]>
             </misc:Lokalisirung>
 
@@ -337,13 +970,13 @@
         </Lebensabschnitt>
         <Lebensabschnitt startAlter="25">
           <Spielbar>
-            <misc:Kosten Id="Kultur" Wert="-130" />
+            <misc:Kosten Id="Kultur" Berechnung="-130" />
           </Spielbar>
           <Name>
             <misc:Lokalisirung Sprache="de">
               <![CDATA[Erwachsener]]>
             </misc:Lokalisirung>
-                        <misc:Lokalisirung Sprache="de" Geschlecht="Weiblich" >
+            <misc:Lokalisirung Sprache="de" Geschlecht="Weiblich">
               <![CDATA[Erwachsene]]>
             </misc:Lokalisirung>
 
@@ -356,13 +989,13 @@
         </Lebensabschnitt>
         <Lebensabschnitt startAlter="30">
           <Spielbar>
-            <misc:Kosten Id="Kultur" Wert="-140" />
+            <misc:Kosten Id="Kultur" Berechnung="-140" />
           </Spielbar>
           <Name>
             <misc:Lokalisirung Sprache="de">
               <![CDATA[Erwachsener]]>
             </misc:Lokalisirung>
-                        <misc:Lokalisirung Sprache="de" Geschlecht="Weiblich" >
+            <misc:Lokalisirung Sprache="de" Geschlecht="Weiblich">
               <![CDATA[Erwachsene]]>
             </misc:Lokalisirung>
 
@@ -375,14 +1008,14 @@
         </Lebensabschnitt>
         <Lebensabschnitt startAlter="35">
           <Spielbar>
-            <misc:Kosten Id="Kultur" Wert="-150" />
-            <misc:Kosten Id="Alter" Wert="1" />
+            <misc:Kosten Id="Kultur" Berechnung="-150" />
+            <misc:Kosten Id="Alter" Berechnung="1" />
           </Spielbar>
           <Name>
             <misc:Lokalisirung Sprache="de">
               <![CDATA[Erwachsener]]>
             </misc:Lokalisirung>
-                        <misc:Lokalisirung Sprache="de" Geschlecht="Weiblich" >
+            <misc:Lokalisirung Sprache="de" Geschlecht="Weiblich">
               <![CDATA[Erwachsene]]>
             </misc:Lokalisirung>
 
@@ -395,14 +1028,14 @@
         </Lebensabschnitt>
         <Lebensabschnitt startAlter="40">
           <Spielbar>
-            <misc:Kosten Id="Kultur" Wert="-160" />
-            <misc:Kosten Id="Alter" Wert="2" />
+            <misc:Kosten Id="Kultur" Berechnung="-160" />
+            <misc:Kosten Id="Alter" Berechnung="2" />
           </Spielbar>
           <Name>
             <misc:Lokalisirung Sprache="de">
               <![CDATA[Erwachsener]]>
             </misc:Lokalisirung>
-                        <misc:Lokalisirung Sprache="de" Geschlecht="Weiblich" >
+            <misc:Lokalisirung Sprache="de" Geschlecht="Weiblich">
               <![CDATA[Erwachsene]]>
             </misc:Lokalisirung>
 
@@ -415,14 +1048,14 @@
         </Lebensabschnitt>
         <Lebensabschnitt startAlter="50">
           <Spielbar>
-            <misc:Kosten Id="Kultur" Wert="-170" />
-            <misc:Kosten Id="Alter" Wert="3" />
+            <misc:Kosten Id="Kultur" Berechnung="-170" />
+            <misc:Kosten Id="Alter" Berechnung="3" />
           </Spielbar>
           <Name>
             <misc:Lokalisirung Sprache="de">
               <![CDATA[Erwachsener]]>
             </misc:Lokalisirung>
-                        <misc:Lokalisirung Sprache="de" Geschlecht="Weiblich" >
+            <misc:Lokalisirung Sprache="de" Geschlecht="Weiblich">
               <![CDATA[Erwachsene]]>
             </misc:Lokalisirung>
 
@@ -435,14 +1068,14 @@
         </Lebensabschnitt>
         <Lebensabschnitt startAlter="60">
           <Spielbar>
-            <misc:Kosten Id="Kultur" Wert="-180" />
-            <misc:Kosten Id="Alter" Wert="4" />
+            <misc:Kosten Id="Kultur" Berechnung="-180" />
+            <misc:Kosten Id="Alter" Berechnung="4" />
           </Spielbar>
           <Name>
             <misc:Lokalisirung Sprache="de">
               <![CDATA[Erwachsener]]>
             </misc:Lokalisirung>
-                        <misc:Lokalisirung Sprache="de" Geschlecht="Weiblich" >
+            <misc:Lokalisirung Sprache="de" Geschlecht="Weiblich">
               <![CDATA[Erwachsene]]>
             </misc:Lokalisirung>
 
@@ -455,14 +1088,14 @@
         </Lebensabschnitt>
         <Lebensabschnitt startAlter="70" endAlter="80">
           <Spielbar>
-            <misc:Kosten Id="Kultur" Wert="-190" />
-            <misc:Kosten Id="Alter" Wert="5" />
+            <misc:Kosten Id="Kultur" Berechnung="-190" />
+            <misc:Kosten Id="Alter" Berechnung="5" />
           </Spielbar>
           <Name>
             <misc:Lokalisirung Sprache="de">
               <![CDATA[Erwachsener]]>
             </misc:Lokalisirung>
-                        <misc:Lokalisirung Sprache="de" Geschlecht="Weiblich" >
+            <misc:Lokalisirung Sprache="de" Geschlecht="Weiblich">
               <![CDATA[Erwachsene]]>
             </misc:Lokalisirung>
 
@@ -4342,7 +4975,7 @@ Wassermenschen beisitzen eine Natürliche Magie welche Ihren Unterkörper in ein
                       <![CDATA[Untergewicht]]>
                     </misc:Lokalisirung>
                   </misc:Name>
-                  <misc:Kosten Id="GP" Wert="-5" />
+                  <misc:Kosten Id="GP" Berechnung="-5" />
 
                   <lebewesen:Wert>11.42</lebewesen:Wert>
                   <lebewesen:Wert>11.63</lebewesen:Wert>
@@ -4677,7 +5310,7 @@ Wassermenschen beisitzen eine Natürliche Magie welche Ihren Unterkörper in ein
                       <![CDATA[Übergewichtig]]>
                     </misc:Lokalisirung>
                   </misc:Name>
-                  <misc:Kosten Id="GP" Wert="-5" />
+                  <misc:Kosten Id="GP" Berechnung="-5" />
                   <lebewesen:Mods>
                     <misc:Eigenschaften>
                       <lebewesen:Mod Eigenschaft="kraft" Mod="0.8" Type="multiplikativ" />
@@ -4852,7 +5485,7 @@ Wassermenschen beisitzen eine Natürliche Magie welche Ihren Unterkörper in ein
                       <![CDATA[Adipös  ]]>
                     </misc:Lokalisirung>
                   </misc:Name>
-                  <misc:Kosten Id="GP" Wert="-10" />
+                  <misc:Kosten Id="GP" Berechnung="-10" />
                   <lebewesen:Mods>
                     <misc:Eigenschaften>
                       <lebewesen:Mod Eigenschaft="kraft" Mod="0.7" Type="multiplikativ" />
@@ -22647,7 +23280,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
       <misc:Levels>
         <misc:Level Id="Einheimicher">
-          <misc:Kosten Id="Kultur" Wert="30" />
+          <misc:Kosten Id="Kultur" Berechnung="30" />
           <misc:Name>
             <misc:Lokalisirung Sprache="de">
               <![CDATA[Einheimicher]]>
@@ -22659,8 +23292,8 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
           <fertigkeit:Fertigkeit Id="Garich" Stufe="2" />
         </misc:Level>
         <misc:Level Id="Imegrant">
-          <misc:Kosten Id="Kultur" Wert="10" />
-          <misc:Kosten Id="Proffession" Wert="-10" />
+          <misc:Kosten Id="Kultur" Berechnung="10" />
+          <misc:Kosten Id="Proffession" Berechnung="-10" />
           <misc:Name>
             <misc:Lokalisirung Sprache="de">
               <![CDATA[Zuzügler]]>
@@ -22678,9 +23311,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
         </misc:Level>
         <misc:Level Id="Land" WiederhoteNutzung="5">
-          <misc:Kosten Id="Kultur" Wert="10" />
-          <misc:Kosten Id="Proffession" Wert="-10" />
-          <misc:Kosten Id="EP" Wert="-5" />
+          <misc:Kosten Id="Kultur" Berechnung="10" />
+          <misc:Kosten Id="Proffession" Berechnung="-10" />
+          <misc:Kosten Id="EP" Berechnung="-5" />
           <misc:Name>
             <misc:Lokalisirung Sprache="de">
               <![CDATA[Landbevölkerung]]>
@@ -22701,9 +23334,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
           <misc:Talent EP="3" Id="Tierkunde" />
         </misc:Level>
         <misc:Level Id="Stadt" WiederhoteNutzung="5">
-          <misc:Kosten Id="Kultur" Wert="10" />
-          <misc:Kosten Id="Proffession" Wert="-10" />
-          <misc:Kosten Id="EP" Wert="-5" />
+          <misc:Kosten Id="Kultur" Berechnung="10" />
+          <misc:Kosten Id="Proffession" Berechnung="-10" />
+          <misc:Kosten Id="EP" Berechnung="-5" />
           <misc:Name>
             <misc:Lokalisirung Sprache="de">
               <![CDATA[Stadtbevölkerung]]>
@@ -22724,9 +23357,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
           <misc:Talent EP="2" Id="Handel" />
         </misc:Level>
         <misc:Level Id="Sonstiges" WiederhoteNutzung="99">
-          <misc:Kosten Id="Kultur" Wert="10" />
-          <misc:Kosten Id="Proffession" Wert="-10" />
-          <misc:Kosten Id="EP" Wert="-10" />
+          <misc:Kosten Id="Kultur" Berechnung="10" />
+          <misc:Kosten Id="Proffession" Berechnung="-10" />
+          <misc:Kosten Id="EP" Berechnung="-10" />
           <misc:Voraussetzung>
             <misc:LevelVoraussetzung>
               <misc:Or>
@@ -22802,7 +23435,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
       <misc:Levels>
         <misc:Level Id="Grundlagen">
-          <misc:Kosten Id="Proffession" Wert="10" />
+          <misc:Kosten Id="Proffession" Berechnung="10" />
           <misc:Name>
             <misc:Lokalisirung Sprache="de">Grundlage</misc:Lokalisirung>
           </misc:Name>
@@ -22814,7 +23447,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
         </misc:Level>
         <misc:Level Id="Vertiefung" WiederhoteNutzung="2">
-          <misc:Kosten Id="Proffession" Wert="20" />
+          <misc:Kosten Id="Proffession" Berechnung="20" />
           <misc:Name>
             <misc:Lokalisirung Sprache="de">Vertiefung</misc:Lokalisirung>
           </misc:Name>
@@ -22840,7 +23473,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
         </misc:Level>
 
         <misc:Level Id="Geselle" WiederhoteNutzung="1">
-          <misc:Kosten Id="Proffession" Wert="20" />
+          <misc:Kosten Id="Proffession" Berechnung="20" />
           <misc:Name>
             <misc:Lokalisirung Sprache="de">Geselle</misc:Lokalisirung>
             <misc:Lokalisirung Sprache="de" Geschlecht="Weiblich">
@@ -22874,7 +23507,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
 
         <misc:Level Id="Resturant" WiederhoteNutzung="1">
-          <misc:Kosten Id="Kultur" Wert="20" />
+          <misc:Kosten Id="Kultur" Berechnung="20" />
           <misc:Name>
             <misc:Lokalisirung Sprache="de">Returant Koch</misc:Lokalisirung>
             <misc:Lokalisirung Sprache="de" Geschlecht="Weiblich">Returant Köchin</misc:Lokalisirung>
@@ -22893,7 +23526,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
         </misc:Level>
 
         <misc:Level Id="Chefkoch" WiederhoteNutzung="1">
-          <misc:Kosten Id="Kultur" Wert="20" />
+          <misc:Kosten Id="Kultur" Berechnung="20" />
           <misc:Name>
             <misc:Lokalisirung Sprache="de">Chefkoch</misc:Lokalisirung>
             <misc:Lokalisirung Sprache="de" Geschlecht="Weiblich">Chefköchin</misc:Lokalisirung>
@@ -22916,7 +23549,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
 
         <misc:Level Id="Straßenverkauf" WiederhoteNutzung="2">
-          <misc:Kosten Id="Kultur" Wert="20" />
+          <misc:Kosten Id="Kultur" Berechnung="20" />
           <misc:Name>
             <misc:Lokalisirung Sprache="de">Straßenverkäufer</misc:Lokalisirung>
             <misc:Lokalisirung Sprache="de" Geschlecht="Weiblich">Straßenverkäuferin</misc:Lokalisirung>
@@ -22940,7 +23573,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
 
         <misc:Level Id="Meister" WiederhoteNutzung="1">
-          <misc:Kosten Id="Kultur" Wert="20" />
+          <misc:Kosten Id="Kultur" Berechnung="20" />
           <misc:Name>
             <misc:Lokalisirung Sprache="de">Meister</misc:Lokalisirung>
           </misc:Name>
@@ -22975,7 +23608,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
       <misc:Levels>
         <misc:Level Id="T" WiederhoteNutzung="2">
-          <misc:Kosten Id="GP" Wert="1" />
+          <misc:Kosten Id="GP" Berechnung="1" />
           <misc:Talent Id="Schwerter" EP="30" />
         </misc:Level>
       </misc:Levels>
@@ -23006,7 +23639,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
       </misc:Beschreibung>
       <misc:Levels>
         <misc:Level Id="T">
-          <misc:Kosten Id="Göttlicher Einfluss" Wert="-1" />
+          <misc:Kosten Id="Göttlicher Einfluss" Berechnung="-1" />
           <besonderheit:Besonderheit Id="Auserwählter Alsas" />
         </misc:Level>
       </misc:Levels>
@@ -23024,7 +23657,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
       </misc:Beschreibung>
       <misc:Levels>
         <misc:Level Id="T">
-          <misc:Kosten Id="Göttlicher Einfluss" Wert="-1" />
+          <misc:Kosten Id="Göttlicher Einfluss" Berechnung="-1" />
           <besonderheit:Besonderheit Id="Auserwählter Yoguu" />
         </misc:Level>
       </misc:Levels>
@@ -23042,7 +23675,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
       </misc:Beschreibung>
       <misc:Levels>
         <misc:Level Id="T">
-          <misc:Kosten Id="Göttlicher Einfluss" Wert="-1" />
+          <misc:Kosten Id="Göttlicher Einfluss" Berechnung="-1" />
           <besonderheit:Besonderheit Id="Auserwählter Bartimus" />
         </misc:Level>
       </misc:Levels>
@@ -23060,7 +23693,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
       </misc:Beschreibung>
       <misc:Levels>
         <misc:Level Id="T">
-          <misc:Kosten Id="Göttlicher Einfluss" Wert="-1" />
+          <misc:Kosten Id="Göttlicher Einfluss" Berechnung="-1" />
           <besonderheit:Besonderheit Id="Auserwählter Heros" />
         </misc:Level>
       </misc:Levels>
@@ -23078,7 +23711,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
       </misc:Beschreibung>
       <misc:Levels>
         <misc:Level Id="T">
-          <misc:Kosten Id="Göttlicher Einfluss" Wert="-1" />
+          <misc:Kosten Id="Göttlicher Einfluss" Berechnung="-1" />
           <besonderheit:Besonderheit Id="Auserwählter Karins" />
         </misc:Level>
       </misc:Levels>
@@ -23096,7 +23729,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
       </misc:Beschreibung>
       <misc:Levels>
         <misc:Level Id="T">
-          <misc:Kosten Id="Göttlicher Einfluss" Wert="-1" />
+          <misc:Kosten Id="Göttlicher Einfluss" Berechnung="-1" />
           <besonderheit:Besonderheit Id="Auserwählter Iru" />
         </misc:Level>
       </misc:Levels>
@@ -23114,7 +23747,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
       </misc:Beschreibung>
       <misc:Levels>
         <misc:Level Id="T">
-          <misc:Kosten Id="Göttlicher Einfluss" Wert="-1" />
+          <misc:Kosten Id="Göttlicher Einfluss" Berechnung="-1" />
           <besonderheit:Besonderheit Id="Auserwählter Kalim" />
         </misc:Level>
       </misc:Levels>
@@ -23132,7 +23765,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
       </misc:Beschreibung>
       <misc:Levels>
         <misc:Level Id="T">
-          <misc:Kosten Id="Göttlicher Einfluss" Wert="-1" />
+          <misc:Kosten Id="Göttlicher Einfluss" Berechnung="-1" />
           <besonderheit:Besonderheit Id="Auserwählter Nalum" />
         </misc:Level>
       </misc:Levels>
@@ -23149,9 +23782,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Kampfgespür" Komplexität="D">
       <Probe>
-        <Intuition />
-        <Intuition />
-        <Fokus />
+        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="fokus" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -23170,9 +23803,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Stumpfe Hiebwaffen" Komplexität="B">
       <Probe>
-        <Gewandtheit />
-        <Stärke />
-        <Intuition />
+        <talent:Eigenschaft Name="gewandtheit" />
+        <talent:Eigenschaft Name="stärke" />
+        <talent:Eigenschaft Name="intuition" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -23194,9 +23827,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Einhandäxte" Komplexität="B">
       <Probe>
-        <Gewandtheit />
-        <Stärke />
-        <Intuition />
+        <talent:Eigenschaft Name="gewandtheit" />
+        <talent:Eigenschaft Name="stärke" />
+        <talent:Eigenschaft Name="intuition" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -23218,9 +23851,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Zweihandäxte" Komplexität="B">
       <Probe>
-        <Stärke />
-        <Mut />
-        <Gewandtheit />
+        <talent:Eigenschaft Name="stärke" />
+        <talent:Eigenschaft Name="mut" />
+        <talent:Eigenschaft Name="gewandtheit" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -23243,9 +23876,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Stäbe" Komplexität="B">
       <Probe>
-        <Gewandtheit />
-        <Mut />
-        <Intuition />
+        <talent:Eigenschaft Name="gewandtheit" />
+        <talent:Eigenschaft Name="mut" />
+        <talent:Eigenschaft Name="intuition" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -23267,9 +23900,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Fechtwaffen" Komplexität="B">
       <Probe>
-        <Gewandtheit />
-        <Mut />
-        <Intuition />
+        <talent:Eigenschaft Name="gewandtheit" />
+        <talent:Eigenschaft Name="mut" />
+        <talent:Eigenschaft Name="intuition" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -23290,9 +23923,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Schwerter" Komplexität="B">
       <Probe>
-        <Gewandtheit />
-        <Mut />
-        <Intuition />
+        <talent:Eigenschaft Name="gewandtheit" />
+        <talent:Eigenschaft Name="mut" />
+        <talent:Eigenschaft Name="intuition" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -23313,9 +23946,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Säbel" Komplexität="B">
       <Probe>
-        <Gewandtheit />
-        <Mut />
-        <Intuition />
+        <talent:Eigenschaft Name="gewandtheit" />
+        <talent:Eigenschaft Name="mut" />
+        <talent:Eigenschaft Name="intuition" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -23336,9 +23969,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Anderthalbhänder" Komplexität="B">
       <Probe>
-        <Gewandtheit />
-        <Mut />
-        <Intuition />
+        <talent:Eigenschaft Name="gewandtheit" />
+        <talent:Eigenschaft Name="mut" />
+        <talent:Eigenschaft Name="intuition" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -23361,9 +23994,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Zweihandschwerter" Komplexität="B">
       <Probe>
-        <Stärke />
-        <Mut />
-        <Intuition />
+        <talent:Eigenschaft Name="stärke" />
+        <talent:Eigenschaft Name="mut" />
+        <talent:Eigenschaft Name="intuition" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -23385,9 +24018,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Zweihandhiebwaffen" Komplexität="B">
       <Probe>
-        <Stärke />
-        <Mut />
-        <Intuition />
+        <talent:Eigenschaft Name="stärke" />
+        <talent:Eigenschaft Name="mut" />
+        <talent:Eigenschaft Name="intuition" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -23408,9 +24041,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Zweihandsäbel" Komplexität="B">
       <Probe>
-        <Stärke />
-        <Mut />
-        <Intuition />
+        <talent:Eigenschaft Name="stärke" />
+        <talent:Eigenschaft Name="mut" />
+        <talent:Eigenschaft Name="intuition" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -23432,9 +24065,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Tonfas" Komplexität="B">
       <Probe>
-        <Gewandtheit />
-        <Mut />
-        <Intuition />
+        <talent:Eigenschaft Name="gewandtheit" />
+        <talent:Eigenschaft Name="mut" />
+        <talent:Eigenschaft Name="intuition" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -23454,9 +24087,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Bögen" Komplexität="B">
       <Probe>
-        <Fokus />
-        <Feinmotorik />
-        <Intuition />
+        <talent:Eigenschaft Name="fokus" />
+        <talent:Eigenschaft Name="feinmotorik" />
+        <talent:Eigenschaft Name="intuition" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -23477,9 +24110,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Faustprojektielwaffen" Komplexität="B">
       <Probe>
-        <Feinmotorik />
-        <Fokus />
-        <Intuition />
+        <talent:Eigenschaft Name="feinmotorik" />
+        <talent:Eigenschaft Name="fokus" />
+        <talent:Eigenschaft Name="intuition" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -23500,9 +24133,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Zweihandprojektielwaffen" Komplexität="B">
       <Probe>
-        <Feinmotorik />
-        <Fokus />
-        <Intuition />
+        <talent:Eigenschaft Name="feinmotorik" />
+        <talent:Eigenschaft Name="fokus" />
+        <talent:Eigenschaft Name="intuition" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -23523,9 +24156,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Schilde" Komplexität="B">
       <Probe>
-        <Gewandtheit />
-        <Mut />
-        <Intuition />
+        <talent:Eigenschaft Name="gewandtheit" />
+        <talent:Eigenschaft Name="mut" />
+        <talent:Eigenschaft Name="intuition" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -23544,9 +24177,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Ausweichen" Komplexität="B">
       <Probe>
-        <Gewandtheit />
-        <Mut />
-        <Intuition />
+        <talent:Eigenschaft Name="gewandtheit" />
+        <talent:Eigenschaft Name="mut" />
+        <talent:Eigenschaft Name="intuition" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -23566,9 +24199,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Stangenwaffen" Komplexität="B">
       <Probe>
-        <Gewandtheit />
-        <Mut />
-        <Intuition />
+        <talent:Eigenschaft Name="gewandtheit" />
+        <talent:Eigenschaft Name="mut" />
+        <talent:Eigenschaft Name="intuition" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -23588,9 +24221,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Peitschen" Komplexität="B">
       <Probe>
-        <Feinmotorik />
-        <Mut />
-        <Intuition />
+        <talent:Eigenschaft Name="feinmotorik" />
+        <talent:Eigenschaft Name="mut" />
+        <talent:Eigenschaft Name="intuition" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -23609,9 +24242,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Dolche" Komplexität="B">
       <Probe>
-        <Gewandtheit />
-        <Mut />
-        <Intuition />
+        <talent:Eigenschaft Name="gewandtheit" />
+        <talent:Eigenschaft Name="mut" />
+        <talent:Eigenschaft Name="intuition" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -23632,9 +24265,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Flegel" Komplexität="B">
       <Probe>
-        <Gewandtheit />
-        <Mut />
-        <Intuition />
+        <talent:Eigenschaft Name="gewandtheit" />
+        <talent:Eigenschaft Name="mut" />
+        <talent:Eigenschaft Name="intuition" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -23654,9 +24287,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Waffenlos" Komplexität="B">
       <Probe>
-        <Gewandtheit />
-        <Mut />
-        <Intuition />
+        <talent:Eigenschaft Name="gewandtheit" />
+        <talent:Eigenschaft Name="mut" />
+        <talent:Eigenschaft Name="intuition" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -23677,9 +24310,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Chakrams" Komplexität="B">
       <Probe>
-        <Gewandtheit />
-        <Mut />
-        <Intuition />
+        <talent:Eigenschaft Name="gewandtheit" />
+        <talent:Eigenschaft Name="mut" />
+        <talent:Eigenschaft Name="intuition" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -23695,9 +24328,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Wurfspeere" Komplexität="B">
       <Probe>
-        <Feinmotorik />
-        <Stärke />
-        <Intuition />
+        <talent:Eigenschaft Name="feinmotorik" />
+        <talent:Eigenschaft Name="stärke" />
+        <talent:Eigenschaft Name="intuition" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -23718,9 +24351,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Wurfäxte" Komplexität="B">
       <Probe>
-        <Feinmotorik />
-        <Stärke />
-        <Intuition />
+        <talent:Eigenschaft Name="feinmotorik" />
+        <talent:Eigenschaft Name="stärke" />
+        <talent:Eigenschaft Name="intuition" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -23741,9 +24374,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Wurfmesser" Komplexität="B">
       <Probe>
-        <Feinmotorik />
-        <Stärke />
-        <Intuition />
+        <talent:Eigenschaft Name="feinmotorik" />
+        <talent:Eigenschaft Name="stärke" />
+        <talent:Eigenschaft Name="intuition" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -23764,9 +24397,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Katare" Komplexität="B">
       <Probe>
-        <Gewandtheit />
-        <Mut />
-        <Intuition />
+        <talent:Eigenschaft Name="gewandtheit" />
+        <talent:Eigenschaft Name="mut" />
+        <talent:Eigenschaft Name="intuition" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -23787,9 +24420,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Wurfwaffen" Komplexität="B">
       <Probe>
-        <Gewandtheit />
-        <Mut />
-        <Intuition />
+        <talent:Eigenschaft Name="gewandtheit" />
+        <talent:Eigenschaft Name="mut" />
+        <talent:Eigenschaft Name="intuition" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -23810,9 +24443,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Schleudern" Komplexität="B">
       <Probe>
-        <Feinmotorik />
-        <Fokus />
-        <Intuition />
+        <talent:Eigenschaft Name="feinmotorik" />
+        <talent:Eigenschaft Name="fokus" />
+        <talent:Eigenschaft Name="intuition" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -23832,9 +24465,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Speerschleudern" Komplexität="B">
       <Probe>
-        <Feinmotorik />
-        <Fokus />
-        <Intuition />
+        <talent:Eigenschaft Name="feinmotorik" />
+        <talent:Eigenschaft Name="fokus" />
+        <talent:Eigenschaft Name="intuition" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -23854,9 +24487,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Nunchakus" Komplexität="B">
       <Probe>
-        <Gewandtheit />
-        <Mut />
-        <Fokus />
+        <talent:Eigenschaft Name="gewandtheit" />
+        <talent:Eigenschaft Name="mut" />
+        <talent:Eigenschaft Name="fokus" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -23876,9 +24509,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Dreigliederstäbe" Komplexität="B">
       <Probe>
-        <Gewandtheit />
-        <Fokus />
-        <Intuition />
+        <talent:Eigenschaft Name="gewandtheit" />
+        <talent:Eigenschaft Name="fokus" />
+        <talent:Eigenschaft Name="intuition" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -23898,9 +24531,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Kettenwaffen" Komplexität="B">
       <Probe>
-        <Fokus />
-        <Mut />
-        <Intuition />
+        <talent:Eigenschaft Name="fokus" />
+        <talent:Eigenschaft Name="mut" />
+        <talent:Eigenschaft Name="intuition" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -23921,9 +24554,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Sensen" Komplexität="B">
       <Probe>
-        <Gewandtheit />
-        <Mut />
-        <Intuition />
+        <talent:Eigenschaft Name="gewandtheit" />
+        <talent:Eigenschaft Name="mut" />
+        <talent:Eigenschaft Name="intuition" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -23953,9 +24586,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     <!--Körper BEGINN-->
     <Talent Id="Springen" Komplexität="B">
       <Probe>
-        <Mut />
-        <Stärke />
-        <Gewandtheit />
+        <talent:Eigenschaft Name="mut" />
+        <talent:Eigenschaft Name="stärke" />
+        <talent:Eigenschaft Name="gewandtheit" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -23974,9 +24607,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Laufen" Komplexität="B">
       <Probe>
-        <Konstitution />
-        <Stärke />
-        <Gewandtheit />
+        <talent:Eigenschaft Name="konstitution" />
+        <talent:Eigenschaft Name="stärke" />
+        <talent:Eigenschaft Name="gewandtheit" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -23995,9 +24628,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Beschatten" Komplexität="B">
       <Probe>
-        <Mut />
-        <Intuition />
-        <Sympathie />
+        <talent:Eigenschaft Name="mut" />
+        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="sympathie" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -24019,9 +24652,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Gewichtstemmen" Komplexität="B">
       <Probe>
-        <Stärke />
-        <Stärke />
-        <Gewandtheit />
+        <talent:Eigenschaft Name="stärke" />
+        <talent:Eigenschaft Name="stärke" />
+        <talent:Eigenschaft Name="gewandtheit" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -24041,9 +24674,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Schwimmen" Komplexität="B">
       <Probe>
-        <Konstitution />
-        <Stärke />
-        <Gewandtheit />
+        <talent:Eigenschaft Name="konstitution" />
+        <talent:Eigenschaft Name="stärke" />
+        <talent:Eigenschaft Name="gewandtheit" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -24059,9 +24692,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Körperbeherschung" Komplexität="B">
       <Probe>
-        <Stärke />
-        <Gewandtheit />
-        <Intuition />
+        <talent:Eigenschaft Name="stärke" />
+        <talent:Eigenschaft Name="gewandtheit" />
+        <talent:Eigenschaft Name="intuition" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -24080,9 +24713,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Akrobatik" Komplexität="B">
       <Probe>
-        <Mut />
-        <Stärke />
-        <Intuition />
+        <talent:Eigenschaft Name="mut" />
+        <talent:Eigenschaft Name="stärke" />
+        <talent:Eigenschaft Name="intuition" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -24101,9 +24734,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Fingerübungen" Komplexität="B">
       <Probe>
-        <Feinmotorik />
-        <Feinmotorik />
-        <Intuition />
+        <talent:Eigenschaft Name="feinmotorik" />
+        <talent:Eigenschaft Name="feinmotorik" />
+        <talent:Eigenschaft Name="intuition" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -24119,9 +24752,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Klettern" Komplexität="B">
       <Probe>
-        <Mut />
-        <Klugheit />
-        <Mut />
+        <talent:Eigenschaft Name="mut" />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="mut" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -24142,9 +24775,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Schleichen" Komplexität="B">
       <Probe>
-        <Mut />
-        <Klugheit />
-        <Mut />
+        <talent:Eigenschaft Name="mut" />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="mut" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -24166,9 +24799,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Fliegen" Komplexität="B">
       <Probe>
-        <Mut />
-        <Intuition />
-        <Gewandtheit />
+        <talent:Eigenschaft Name="mut" />
+        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="gewandtheit" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -24189,9 +24822,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Gaukeleien" Komplexität="B">
       <Probe>
-        <Mut />
-        <Sympathie />
-        <Feinmotorik />
+        <talent:Eigenschaft Name="mut" />
+        <talent:Eigenschaft Name="sympathie" />
+        <talent:Eigenschaft Name="feinmotorik" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -24214,9 +24847,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Reiten" Komplexität="B">
       <Probe>
-        <Sympathie />
-        <Gewandtheit />
-        <Stärke />
+        <talent:Eigenschaft Name="sympathie" />
+        <talent:Eigenschaft Name="gewandtheit" />
+        <talent:Eigenschaft Name="stärke" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -24237,9 +24870,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Sich Verstecken" Komplexität="B">
       <Probe>
-        <Mut />
-        <Intuition />
-        <Gewandtheit />
+        <talent:Eigenschaft Name="mut" />
+        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="gewandtheit" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -24260,9 +24893,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Singen" Komplexität="B">
       <Probe>
-        <Intuition />
-        <Sympathie />
-        <Sympathie />
+        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="sympathie" />
+        <talent:Eigenschaft Name="sympathie" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -24283,9 +24916,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Skifahren" Komplexität="B">
       <Probe>
-        <Gewandtheit />
-        <Gewandtheit />
-        <Konstitution />
+        <talent:Eigenschaft Name="gewandtheit" />
+        <talent:Eigenschaft Name="gewandtheit" />
+        <talent:Eigenschaft Name="konstitution" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -24305,9 +24938,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Stimmen Imitieren" Komplexität="B">
       <Probe>
-        <Klugheit />
-        <Intuition />
-        <Sympathie />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="sympathie" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -24328,9 +24961,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Taschendiebstahl" Komplexität="B">
       <Probe>
-        <Mut />
-        <Intuition />
-        <Feinmotorik />
+        <talent:Eigenschaft Name="mut" />
+        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="feinmotorik" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -24351,9 +24984,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Zechen" Komplexität="B">
       <Probe>
-        <Intuition />
-        <Konstitution />
-        <Stärke />
+        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="konstitution" />
+        <talent:Eigenschaft Name="stärke" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -24369,9 +25002,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Entfesseln" Komplexität="B">
       <Probe>
-        <Feinmotorik />
-        <Gewandtheit />
-        <Stärke />
+        <talent:Eigenschaft Name="feinmotorik" />
+        <talent:Eigenschaft Name="gewandtheit" />
+        <talent:Eigenschaft Name="stärke" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -24401,9 +25034,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     <!--Geist BEGINN-->
     <Talent Id="Fährtensuche" Komplexität="B">
       <Probe>
-        <Klugheit />
-        <Intuition />
-        <talent:Fokus />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="fokus" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -24425,9 +25058,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Orientierung" Komplexität="B">
       <Probe>
-        <Klugheit />
-        <Intuition />
-        <Intuition />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="intuition" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -24444,9 +25077,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Selbstbeherchung" Komplexität="B">
       <Probe>
-        <Mut />
-        <Mut />
-        <Klugheit />
+        <talent:Eigenschaft Name="mut" />
+        <talent:Eigenschaft Name="mut" />
+        <talent:Eigenschaft Name="klugheit" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -24462,9 +25095,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Wahrnehmung" Komplexität="B">
       <Probe>
-        <Intuition />
-        <Intuition />
-        <Klugheit />
+        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="klugheit" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -24486,9 +25119,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Sehen" Komplexität="B">
       <Probe>
-        <Intuition />
-        <Intuition />
-        <Klugheit />
+        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="klugheit" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -24507,9 +25140,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Hören" Komplexität="B">
       <Probe>
-        <Intuition />
-        <Intuition />
-        <Klugheit />
+        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="klugheit" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -24528,9 +25161,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Riechen und Schmecken" Komplexität="B">
       <Probe>
-        <Intuition />
-        <Intuition />
-        <Klugheit />
+        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="klugheit" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -24549,9 +25182,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Fühlen" Komplexität="B">
       <Probe>
-        <Intuition />
-        <Feinmotorik />
-        <Klugheit />
+        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="feinmotorik" />
+        <talent:Eigenschaft Name="klugheit" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -24579,9 +25212,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     <!--Gesellschaft BEGINN-->
     <Talent Id="Menschenkentniss" Komplexität="B">
       <Probe>
-        <Intuition />
-        <Antipathie />
-        <Sympathie />
+        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="antipathie" />
+        <talent:Eigenschaft Name="sympathie" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -24602,9 +25235,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Verführen" Komplexität="B">
       <Probe>
-        <Mut />
-        <Intuition />
-        <Sympathie />
+        <talent:Eigenschaft Name="mut" />
+        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="sympathie" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -24625,9 +25258,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Lügen" Komplexität="B">
       <Probe>
-        <Mut />
-        <Klugheit />
-        <Sympathie />
+        <talent:Eigenschaft Name="mut" />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="sympathie" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -24647,9 +25280,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Überreden" Komplexität="B">
       <Probe>
-        <Intuition />
-        <Klugheit />
-        <Sympathie />
+        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="sympathie" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -24669,9 +25302,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Einschüchtern" Komplexität="B">
       <Probe>
-        <Mut />
-        <Intuition />
-        <Antipathie />
+        <talent:Eigenschaft Name="mut" />
+        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="antipathie" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -24692,9 +25325,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Lehren" Komplexität="B">
       <Probe>
-        <Klugheit />
-        <Intuition />
-        <Sympathie />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="sympathie" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -24715,9 +25348,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Schauspielerei" Komplexität="B">
       <Probe>
-        <Mut />
-        <Klugheit />
-        <Sympathie />
+        <talent:Eigenschaft Name="mut" />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="sympathie" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -24739,9 +25372,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Schriftlicher Ausdruck" Komplexität="B">
       <Probe>
-        <Klugheit />
-        <Intuition />
-        <Intuition />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="intuition" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -24762,9 +25395,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Etikette" Komplexität="B">
       <Probe>
-        <Klugheit />
-        <Intuition />
-        <Sympathie />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="sympathie" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -24780,9 +25413,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Seelsorge" Komplexität="B">
       <Probe>
-        <Intuition />
-        <Sympathie />
-        <Sympathie />
+        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="sympathie" />
+        <talent:Eigenschaft Name="sympathie" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -24814,9 +25447,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Sich Verkleiden" Komplexität="B">
       <Probe>
-        <Mut />
-        <Sympathie />
-        <Gewandtheit />
+        <talent:Eigenschaft Name="mut" />
+        <talent:Eigenschaft Name="sympathie" />
+        <talent:Eigenschaft Name="gewandtheit" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -24833,9 +25466,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Tanzen" Komplexität="B">
       <Probe>
-        <Intuition />
-        <Gewandtheit />
-        <Konstitution />
+        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="gewandtheit" />
+        <talent:Eigenschaft Name="konstitution" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -24864,9 +25497,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Gassenwissen" Komplexität="B">
       <Probe>
-        <Klugheit />
-        <Intuition />
-        <Sympathie />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="sympathie" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -24882,9 +25515,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Rechnen" Komplexität="B">
       <Probe>
-        <Klugheit />
-        <Klugheit />
-        <Intuition />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="intuition" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -24900,9 +25533,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Sagen" Komplexität="B">
       <Probe>
-        <Klugheit />
-        <Klugheit />
-        <Mut />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="mut" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -24918,9 +25551,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Astronomi" Komplexität="B">
       <Probe>
-        <Klugheit />
-        <Klugheit />
-        <Intuition />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="intuition" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -24942,9 +25575,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Geographie" Komplexität="B">
       <Probe>
-        <Klugheit />
-        <Klugheit />
-        <Intuition />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="intuition" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -24960,9 +25593,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Gesteinskunde" Komplexität="B">
       <Probe>
-        <Intuition />
-        <Klugheit />
-        <Feinmotorik />
+        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="feinmotorik" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -24978,9 +25611,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Recherche" Komplexität="B">
       <Probe>
-        <Klugheit />
-        <Klugheit />
-        <Intuition />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="intuition" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25001,9 +25634,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Buchführung" Komplexität="B">
       <Probe>
-        <Klugheit />
-        <Klugheit />
-        <Feinmotorik />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="feinmotorik" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25031,9 +25664,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Medizin" Komplexität="B">
       <Probe>
-        <Klugheit />
-        <Klugheit />
-        <Intuition />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="intuition" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25058,9 +25691,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Tierkunde" Komplexität="B">
       <Probe>
-        <Klugheit />
-        <Klugheit />
-        <Intuition />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="intuition" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25076,9 +25709,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Pflanzenkunde" Komplexität="B">
       <Probe>
-        <Klugheit />
-        <Klugheit />
-        <Intuition />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="intuition" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25097,9 +25730,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Kunst" Komplexität="B">
       <Probe>
-        <Intuition />
-        <Glück />
-        <Mut />
+        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="glück" />
+        <talent:Eigenschaft Name="mut" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25115,9 +25748,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Alchemischeswissen" Komplexität="B">
       <Probe>
-        <Intuition />
-        <Klugheit />
-        <Klugheit />
+        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="klugheit" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25139,9 +25772,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Wettervorhersage" Komplexität="B">
       <Probe>
-        <Klugheit />
-        <Intuition />
-        <Intuition />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="intuition" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25159,9 +25792,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Anatomie" Komplexität="B">
       <Probe>
-        <Mut />
-        <Klugheit />
-        <Feinmotorik />
+        <talent:Eigenschaft Name="mut" />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="feinmotorik" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25178,9 +25811,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Baukunst" Komplexität="B">
       <Probe>
-        <Klugheit />
-        <Klugheit />
-        <Feinmotorik />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="feinmotorik" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25207,9 +25840,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Geselchaftsspiele" Komplexität="B">
       <Probe>
-        <Klugheit />
-        <Klugheit />
-        <Intuition />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="intuition" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25229,9 +25862,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Geschichtswissen" Komplexität="B">
       <Probe>
-        <Klugheit />
-        <Klugheit />
-        <Intuition />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="intuition" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25252,9 +25885,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Mystik" Komplexität="B">
       <Probe>
-        <Klugheit />
-        <Klugheit />
-        <Intuition />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="intuition" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25273,9 +25906,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Religion" Komplexität="B">
       <Probe>
-        <Klugheit />
-        <Klugheit />
-        <Intuition />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="intuition" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25295,9 +25928,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Heraldik" Komplexität="B">
       <Probe>
-        <Klugheit />
-        <Klugheit />
-        <Feinmotorik />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="feinmotorik" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25317,9 +25950,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Hüttenkunde" Komplexität="B">
       <Probe>
-        <Klugheit />
-        <Intuition />
-        <Konstitution />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="konstitution" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25339,9 +25972,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Kriegskunst" Komplexität="B">
       <Probe>
-        <Mut />
-        <Klugheit />
-        <Sympathie />
+        <talent:Eigenschaft Name="mut" />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="sympathie" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25361,9 +25994,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Kryptographie" Komplexität="B">
       <Probe>
-        <Klugheit />
-        <Klugheit />
-        <Intuition />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="intuition" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25398,9 +26031,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Magiekunde" Komplexität="B">
       <Probe>
-        <Klugheit />
-        <Klugheit />
-        <Intuition />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="intuition" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25417,9 +26050,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Mechanik" Komplexität="B">
       <Probe>
-        <Klugheit />
-        <Klugheit />
-        <Feinmotorik />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="feinmotorik" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25456,9 +26089,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Philosophie" Komplexität="B">
       <Probe>
-        <Klugheit />
-        <Klugheit />
-        <Intuition />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="intuition" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25475,9 +26108,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Rechtskunde" Komplexität="B">
       <Probe>
-        <Klugheit />
-        <Klugheit />
-        <Intuition />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="intuition" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25494,9 +26127,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Schätzen" Komplexität="B">
       <Probe>
-        <Klugheit />
-        <Intuition />
-        <Intuition />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="intuition" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25513,9 +26146,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Sprachenkunde" Komplexität="B">
       <Probe>
-        <Klugheit />
-        <Klugheit />
-        <Intuition />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="intuition" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25532,9 +26165,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Staatskunst" Komplexität="B">
       <Probe>
-        <Klugheit />
-        <Intuition />
-        <Sympathie />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="sympathie" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25551,9 +26184,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Sternkunde" Komplexität="B">
       <Probe>
-        <Klugheit />
-        <Klugheit />
-        <Intuition />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="intuition" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25569,9 +26202,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Giftkunde" Komplexität="B">
       <Probe>
-        <Mut />
-        <Klugheit />
-        <Intuition />
+        <talent:Eigenschaft Name="mut" />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="intuition" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25591,9 +26224,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Krankheitskunde" Komplexität="B">
       <Probe>
-        <Mut />
-        <Klugheit />
-        <Sympathie />
+        <talent:Eigenschaft Name="mut" />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="sympathie" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25618,9 +26251,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     <!--Handwerk BEGINN-->
     <Talent Id="Alchemie" Komplexität="B">
       <Probe>
-        <Feinmotorik />
-        <Klugheit />
-        <Intuition />
+        <talent:Eigenschaft Name="feinmotorik" />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="intuition" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25646,9 +26279,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Backen" Komplexität="B">
       <Probe>
-        <Intuition />
-        <Klugheit />
-        <Feinmotorik />
+        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="feinmotorik" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25673,9 +26306,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Kochen" Komplexität="B">
       <Probe>
-        <Intuition />
-        <Feinmotorik />
-        <Klugheit />
+        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="feinmotorik" />
+        <talent:Eigenschaft Name="klugheit" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25701,9 +26334,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Abrichten" Komplexität="B">
       <Probe>
-        <Mut />
-        <Intuition />
-        <Sympathie />
+        <talent:Eigenschaft Name="mut" />
+        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="sympathie" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25729,9 +26362,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Ackerbau" Komplexität="B">
       <Probe>
-        <Intuition />
-        <Feinmotorik />
-        <Konstitution />
+        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="feinmotorik" />
+        <talent:Eigenschaft Name="konstitution" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25752,9 +26385,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Bergbau" Komplexität="B">
       <Probe>
-        <Intuition />
-        <Konstitution />
-        <Stärke />
+        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="konstitution" />
+        <talent:Eigenschaft Name="stärke" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25774,9 +26407,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Bogenbau" Komplexität="B">
       <Probe>
-        <Klugheit />
-        <Intuition />
-        <Feinmotorik />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="feinmotorik" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25798,9 +26431,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Pfeilmacher" Komplexität="B">
       <Probe>
-        <Klugheit />
-        <Intuition />
-        <Feinmotorik />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="feinmotorik" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25821,9 +26454,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Boote Fahren" Komplexität="B">
       <Probe>
-        <Gewandtheit />
-        <Konstitution />
-        <Stärke />
+        <talent:Eigenschaft Name="gewandtheit" />
+        <talent:Eigenschaft Name="konstitution" />
+        <talent:Eigenschaft Name="stärke" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25840,9 +26473,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Drucker" Komplexität="B">
       <Probe>
-        <Klugheit />
-        <Feinmotorik />
-        <Stärke />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="feinmotorik" />
+        <talent:Eigenschaft Name="stärke" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25859,9 +26492,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Fahrzeuge Lenken" Komplexität="B">
       <Probe>
-        <Intuition />
-        <Sympathie />
-        <Feinmotorik />
+        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="sympathie" />
+        <talent:Eigenschaft Name="feinmotorik" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25878,9 +26511,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Falschspiel" Komplexität="B">
       <Probe>
-        <Mut />
-        <Sympathie />
-        <Feinmotorik />
+        <talent:Eigenschaft Name="mut" />
+        <talent:Eigenschaft Name="sympathie" />
+        <talent:Eigenschaft Name="feinmotorik" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25897,9 +26530,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Feinmechanik" Komplexität="B">
       <Probe>
-        <Klugheit />
-        <Feinmotorik />
-        <Feinmotorik />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="feinmotorik" />
+        <talent:Eigenschaft Name="feinmotorik" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25916,9 +26549,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Feuersteinbearbeitung" Komplexität="B">
       <Probe>
-        <Klugheit />
-        <Feinmotorik />
-        <Feinmotorik />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="feinmotorik" />
+        <talent:Eigenschaft Name="feinmotorik" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25935,9 +26568,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Fleischer" Komplexität="B">
       <Probe>
-        <Klugheit />
-        <Feinmotorik />
-        <Stärke />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="feinmotorik" />
+        <talent:Eigenschaft Name="stärke" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25954,9 +26587,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Gerber" Komplexität="B">
       <Probe>
-        <Klugheit />
-        <Feinmotorik />
-        <Konstitution />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="feinmotorik" />
+        <talent:Eigenschaft Name="konstitution" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25976,9 +26609,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Kürschner" Komplexität="B">
       <Probe>
-        <Klugheit />
-        <Feinmotorik />
-        <Konstitution />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="feinmotorik" />
+        <talent:Eigenschaft Name="konstitution" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25998,9 +26631,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Glaskunst" Komplexität="B">
       <Probe>
-        <Feinmotorik />
-        <Feinmotorik />
-        <Konstitution />
+        <talent:Eigenschaft Name="feinmotorik" />
+        <talent:Eigenschaft Name="feinmotorik" />
+        <talent:Eigenschaft Name="konstitution" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26017,9 +26650,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Schmieden" Komplexität="B">
       <Probe>
-        <Feinmotorik />
-        <Konstitution />
-        <Stärke />
+        <talent:Eigenschaft Name="feinmotorik" />
+        <talent:Eigenschaft Name="konstitution" />
+        <talent:Eigenschaft Name="stärke" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26036,9 +26669,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Handel" Komplexität="B">
       <Probe>
-        <Klugheit />
-        <Intuition />
-        <Sympathie />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="sympathie" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26064,9 +26697,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Hauswirtschaft" Komplexität="B">
       <Probe>
-        <Intuition />
-        <Sympathie />
-        <Feinmotorik />
+        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="sympathie" />
+        <talent:Eigenschaft Name="feinmotorik" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26084,9 +26717,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Wundenversorgung" Komplexität="B">
       <Probe>
-        <Klugheit />
-        <Sympathie />
-        <Feinmotorik />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="sympathie" />
+        <talent:Eigenschaft Name="feinmotorik" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26106,9 +26739,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Holzbearbeitung" Komplexität="B">
       <Probe>
-        <Klugheit />
-        <Feinmotorik />
-        <Stärke />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="feinmotorik" />
+        <talent:Eigenschaft Name="stärke" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26125,9 +26758,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Instrumentenbauer" Komplexität="B">
       <Probe>
-        <Klugheit />
-        <Intuition />
-        <Feinmotorik />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="feinmotorik" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26144,9 +26777,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Kartographie" Komplexität="B">
       <Probe>
-        <Klugheit />
-        <Klugheit />
-        <Feinmotorik />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="feinmotorik" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26174,9 +26807,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Lederarbeiten" Komplexität="B">
       <Probe>
-        <Klugheit />
-        <Feinmotorik />
-        <Feinmotorik />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="feinmotorik" />
+        <talent:Eigenschaft Name="feinmotorik" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26193,9 +26826,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Zeichnen" Komplexität="B">
       <Probe>
-        <Klugheit />
-        <Intuition />
-        <Feinmotorik />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="feinmotorik" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26216,9 +26849,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Malen" Komplexität="B">
       <Probe>
-        <Intuition />
-        <Intuition />
-        <Feinmotorik />
+        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="feinmotorik" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26239,9 +26872,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Maurer" Komplexität="B">
       <Probe>
-        <Feinmotorik />
-        <Gewandtheit />
-        <Stärke />
+        <talent:Eigenschaft Name="feinmotorik" />
+        <talent:Eigenschaft Name="gewandtheit" />
+        <talent:Eigenschaft Name="stärke" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26258,9 +26891,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Metallguss" Komplexität="B">
       <Probe>
-        <Klugheit />
-        <Feinmotorik />
-        <Stärke />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="feinmotorik" />
+        <talent:Eigenschaft Name="stärke" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26277,9 +26910,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Musizieren" Komplexität="B">
       <Probe>
-        <Intuition />
-        <Sympathie />
-        <Feinmotorik />
+        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="sympathie" />
+        <talent:Eigenschaft Name="feinmotorik" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26296,9 +26929,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Schlösser Knacken" Komplexität="B">
       <Probe>
-        <Intuition />
-        <Feinmotorik />
-        <Feinmotorik />
+        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="feinmotorik" />
+        <talent:Eigenschaft Name="feinmotorik" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26318,9 +26951,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Schnaps brennen" Komplexität="B">
       <Probe>
-        <Klugheit />
-        <Intuition />
-        <Feinmotorik />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="feinmotorik" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26337,9 +26970,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Schneidern" Komplexität="B">
       <Probe>
-        <Klugheit />
-        <Feinmotorik />
-        <Feinmotorik />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="feinmotorik" />
+        <talent:Eigenschaft Name="feinmotorik" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26359,9 +26992,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Seefahrt" Komplexität="B">
       <Probe>
-        <Feinmotorik />
-        <Gewandtheit />
-        <Stärke />
+        <talent:Eigenschaft Name="feinmotorik" />
+        <talent:Eigenschaft Name="gewandtheit" />
+        <talent:Eigenschaft Name="stärke" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26382,9 +27015,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Seiler" Komplexität="B">
       <Probe>
-        <Feinmotorik />
-        <Feinmotorik />
-        <Stärke />
+        <talent:Eigenschaft Name="feinmotorik" />
+        <talent:Eigenschaft Name="feinmotorik" />
+        <talent:Eigenschaft Name="stärke" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26401,9 +27034,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Steinmetz" Komplexität="B">
       <Probe>
-        <Feinmotorik />
-        <Feinmotorik />
-        <Stärke />
+        <talent:Eigenschaft Name="feinmotorik" />
+        <talent:Eigenschaft Name="feinmotorik" />
+        <talent:Eigenschaft Name="stärke" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26420,9 +27053,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Juwelier" Komplexität="B">
       <Probe>
-        <Intuition />
-        <Feinmotorik />
-        <Feinmotorik />
+        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="feinmotorik" />
+        <talent:Eigenschaft Name="feinmotorik" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26439,9 +27072,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Stellmacher" Komplexität="B">
       <Probe>
-        <Klugheit />
-        <Feinmotorik />
-        <Stärke />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="feinmotorik" />
+        <talent:Eigenschaft Name="stärke" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26458,9 +27091,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Stoffe Färben" Komplexität="B">
       <Probe>
-        <Klugheit />
-        <Feinmotorik />
-        <Stärke />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="feinmotorik" />
+        <talent:Eigenschaft Name="stärke" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26477,9 +27110,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Tätowieren" Komplexität="B">
       <Probe>
-        <Intuition />
-        <Feinmotorik />
-        <Feinmotorik />
+        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="feinmotorik" />
+        <talent:Eigenschaft Name="feinmotorik" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26499,9 +27132,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Töpfern" Komplexität="B">
       <Probe>
-        <Klugheit />
-        <Feinmotorik />
-        <Feinmotorik />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="feinmotorik" />
+        <talent:Eigenschaft Name="feinmotorik" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26518,9 +27151,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Viehzucht" Komplexität="B">
       <Probe>
-        <Klugheit />
-        <Intuition />
-        <Stärke />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="stärke" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26540,9 +27173,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Webkunst" Komplexität="B">
       <Probe>
-        <Feinmotorik />
-        <Feinmotorik />
-        <Stärke />
+        <talent:Eigenschaft Name="feinmotorik" />
+        <talent:Eigenschaft Name="feinmotorik" />
+        <talent:Eigenschaft Name="stärke" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26559,9 +27192,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Winzer" Komplexität="B">
       <Probe>
-        <Klugheit />
-        <Feinmotorik />
-        <Stärke />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="feinmotorik" />
+        <talent:Eigenschaft Name="stärke" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26578,9 +27211,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Zimmermann" Komplexität="B">
       <Probe>
-        <Klugheit />
-        <Feinmotorik />
-        <Stärke />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="feinmotorik" />
+        <talent:Eigenschaft Name="stärke" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26599,9 +27232,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Fallenstellen" Komplexität="B">
       <Probe>
-        <Klugheit />
-        <Feinmotorik />
-        <Stärke />
+        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="feinmotorik" />
+        <talent:Eigenschaft Name="stärke" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26618,9 +27251,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Fesseln" Komplexität="B">
       <Probe>
-        <Feinmotorik />
-        <Gewandtheit />
-        <Stärke />
+        <talent:Eigenschaft Name="feinmotorik" />
+        <talent:Eigenschaft Name="gewandtheit" />
+        <talent:Eigenschaft Name="stärke" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26636,9 +27269,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Fischen" Komplexität="B">
       <Probe>
-        <Intuition />
-        <Feinmotorik />
-        <Stärke />
+        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="feinmotorik" />
+        <talent:Eigenschaft Name="stärke" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26654,9 +27287,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Wildnisleben" Komplexität="B">
       <Probe>
-        <Intuition />
-        <Gewandtheit />
-        <Konstitution />
+        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="gewandtheit" />
+        <talent:Eigenschaft Name="konstitution" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -27468,7 +28101,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
         <misc:Beschreibung>
           <misc:Lokalisirung Sprache="de">Dem Charakter staht wenig Geld zur verfügung.</misc:Lokalisirung>
         </misc:Beschreibung>
-        <misc:Kosten Id="GP" Wert="-2" />
+        <misc:Kosten Id="GP" Berechnung="-2" />
         <besonderheit:Voraussetzung>
           <besonderheit:Not>
             <besonderheit:Besonderheit Id="Wohlhabend" />
@@ -27482,7 +28115,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
         <misc:Beschreibung>
           <misc:Lokalisirung Sprache="de">Dem Charakter staht kein Geld zur verfügung.</misc:Lokalisirung>
         </misc:Beschreibung>
-        <misc:Kosten Id="GP" Wert="-4" />
+        <misc:Kosten Id="GP" Berechnung="-4" />
       </besonderheit:Stufe>
     </besonderheit:Besonderheit>
 
@@ -27506,7 +28139,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
             <![CDATA[Der Charakter bleibt niemanden lange im Gedächtniss solange er nicht ausgibig interagiert.]]>
           </misc:Lokalisirung>
         </misc:Beschreibung>
-        <misc:Kosten Id="GP" Wert="3" />
+        <misc:Kosten Id="GP" Berechnung="3" />
         <besonderheit:Voraussetzung>
           <besonderheit:Not>
             <besonderheit:Besonderheit Id="Auffällig" />
@@ -27526,7 +28159,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
             <![CDATA[Alle erschwernisse auf das talent Hören sind halbiet, auf das talent Wahrnehmung erleichtert um 2. Die Quarität jeder Probe ist um eins erhöt]]>
           </misc:Lokalisirung>
         </misc:Beschreibung>
-        <misc:Kosten Id="GP" Wert="5" />
+        <misc:Kosten Id="GP" Berechnung="5" />
       </besonderheit:Stufe>
     </besonderheit:Besonderheit>
     <besonderheit:Besonderheit Id="Meermensch" Gebunden="true">
@@ -27589,7 +28222,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
             <![CDATA[Der Charakter zieht auf natürliche weise die Blicke auf sich. Dies kann hilfreich sein sich bei diskusionen gehör zu schaffen. Dies macht es aber nicht leichter jemanden zu überzeugen.]]>
           </misc:Lokalisirung>
         </misc:Beschreibung>
-        <misc:Kosten Id="GP" Wert="3" />
+        <misc:Kosten Id="GP" Berechnung="3" />
         <besonderheit:Voraussetzung>
           <besonderheit:Not>
             <besonderheit:Besonderheit Id="Unauffällig" />
@@ -27624,13 +28257,13 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
         <misc:Beschreibung>
           <misc:Lokalisirung Sprache="de">Dem Charakter staht etwas Geld zur verfügung.</misc:Lokalisirung>
         </misc:Beschreibung>
-        <misc:Kosten Id="GP" Wert="2" />
+        <misc:Kosten Id="GP" Berechnung="2" />
       </besonderheit:Stufe>
       <besonderheit:Stufe>
         <misc:Beschreibung>
           <misc:Lokalisirung Sprache="de">Dem Charakter staht einiges Geld zur verfügung.</misc:Lokalisirung>
         </misc:Beschreibung>
-        <misc:Kosten Id="GP" Wert="2" />
+        <misc:Kosten Id="GP" Berechnung="2" />
       </besonderheit:Stufe>
       <besonderheit:Stufe>
         <misc:Name>
@@ -27639,13 +28272,13 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
         <misc:Beschreibung>
           <misc:Lokalisirung Sprache="de">Dem Charakter staht eine beträchtige summe Geld zur verfügung.</misc:Lokalisirung>
         </misc:Beschreibung>
-        <misc:Kosten Id="GP" Wert="4" />
+        <misc:Kosten Id="GP" Berechnung="4" />
       </besonderheit:Stufe>
       <besonderheit:Stufe>
         <misc:Beschreibung>
           <misc:Lokalisirung Sprache="de">Der Charakter hat keine Geldsorgen.</misc:Lokalisirung>
         </misc:Beschreibung>
-        <misc:Kosten Id="GP" Wert="5" />
+        <misc:Kosten Id="GP" Berechnung="5" />
       </besonderheit:Stufe>
     </besonderheit:Besonderheit>
 
@@ -27663,7 +28296,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
             <![CDATA[Falls keine Taktik mit wert größer 1 gespielt wurde, können Taktiken im gesammtwert von 3 gespielt werden.]]>
           </misc:Lokalisirung>
         </misc:Beschreibung>
-        <misc:Kosten Id="GP" Wert="3" />
+        <misc:Kosten Id="GP" Berechnung="3" />
       </besonderheit:Stufe>
     </Besonderheit>
   </Besonderheiten>
