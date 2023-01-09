@@ -120,6 +120,44 @@
   </GenerierungsDaten>
   <Organismen xmlns="http://nota.org/schema/lebewesen.xsd">
 
+    <lebewesen:EigenschaftenGruppen>
+      <lebewesen:Gruppe id="primär">
+        <misc:Name>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Primäreigenschaften]]>
+          </misc:Lokalisirung>
+        </misc:Name>
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Die Primären Eigenschaften]]>
+          </misc:Lokalisirung>
+        </misc:Beschreibung>
+      </lebewesen:Gruppe>
+      <lebewesen:Gruppe id="sekundär">
+        <misc:Name>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Sekundäreigenschaften]]>
+          </misc:Lokalisirung>
+        </misc:Name>
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Die Sekundären Eigenschaften]]>
+          </misc:Lokalisirung>
+        </misc:Beschreibung>
+      </lebewesen:Gruppe>
+      <lebewesen:Gruppe id="abgeleitet">
+        <misc:Name>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Abgeleitete Eigenschaften]]>
+          </misc:Lokalisirung>
+        </misc:Name>
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Die Abgeleitetetn Eigenschaften]]>
+          </misc:Lokalisirung>
+        </misc:Beschreibung>
+      </lebewesen:Gruppe>
+    </lebewesen:EigenschaftenGruppen>
     <lebewesen:Entwiklung>
       <lebewesen:Berechnung id="bmi" Reihenfolge="99999" einheit="kg">
         <misc:Name>
@@ -158,7 +196,7 @@
         <lebewesen:Formel>21 - GL</lebewesen:Formel>
       </lebewesen:Berechnung>
 
-      <lebewesen:Reihe id="mut" startAlter="0" step="1" Reihenfolge="-12">
+      <lebewesen:Bereich minInklusiv="7" maxInklusiv="13" id="mut" gruppe="primär" >
         <misc:Name>
           <misc:Lokalisirung Sprache="de">
             <![CDATA[Mut]]>
@@ -174,43 +212,16 @@
             <![CDATA[MU]]>
           </misc:Lokalisirung>
         </misc:Abkürzung>
+        <misc:Kosten Id="GP" Berechnung="13-value" />
+        <misc:Kosten Id="Eigenschaften" Berechnung="13-value" />
         <lebewesen:Verteilung>
           <lebewesen:Wert Quantil="0">7</lebewesen:Wert>
           <lebewesen:Wert Quantil="50">10</lebewesen:Wert>
           <lebewesen:Wert Quantil="100">13</lebewesen:Wert>
         </lebewesen:Verteilung>
-        <lebewesen:Schwelle>
-          <misc:Kosten Id="GP" Berechnung="6" />
-          <misc:Kosten Id="Eigenschaften" Berechnung="6" />
-          <lebewesen:Wert>7</lebewesen:Wert>
-        </lebewesen:Schwelle>
-        <lebewesen:Schwelle>
-          <misc:Kosten Id="GP" Berechnung="5" />
-          <misc:Kosten Id="Eigenschaften" Berechnung="5" />
-          <lebewesen:Wert>8</lebewesen:Wert>
-        </lebewesen:Schwelle>
-        <lebewesen:Schwelle>
-          <misc:Kosten Id="GP" Berechnung="4" />
-          <misc:Kosten Id="Eigenschaften" Berechnung="4" />
-          <lebewesen:Wert>9</lebewesen:Wert>
-        </lebewesen:Schwelle>
-        <lebewesen:Schwelle>
-          <misc:Kosten Id="GP" Berechnung="3" />
-          <misc:Kosten Id="Eigenschaften" Berechnung="3" />
-          <lebewesen:Wert>10</lebewesen:Wert>
-        </lebewesen:Schwelle>
-        <lebewesen:Schwelle>
-          <misc:Kosten Id="GP" Berechnung="2" />
-          <misc:Kosten Id="Eigenschaften" Berechnung="2" />
-          <lebewesen:Wert>11</lebewesen:Wert>
-        </lebewesen:Schwelle>
-        <lebewesen:Schwelle>
-          <misc:Kosten Id="GP" Berechnung="1" />
-          <misc:Kosten Id="Eigenschaften" Berechnung="1" />
-          <lebewesen:Wert>12</lebewesen:Wert>
-        </lebewesen:Schwelle>
-      </lebewesen:Reihe>
-      <lebewesen:Reihe id="glück" startAlter="0" step="1" Reihenfolge="-12">
+      </lebewesen:Bereich>
+
+      <lebewesen:Bereich minInklusiv="7" maxInklusiv="13"  id="glück" Reihenfolge="-12"  gruppe="primär">
         <misc:Name>
           <misc:Lokalisirung Sprache="de">
             <![CDATA[Glück]]>
@@ -226,44 +237,16 @@
             <![CDATA[GL]]>
           </misc:Lokalisirung>
         </misc:Abkürzung>
-
+        <misc:Kosten Id="GP" Berechnung="13-value" />
+        <misc:Kosten Id="Eigenschaften" Berechnung="13-value" />
         <lebewesen:Verteilung>
           <lebewesen:Wert Quantil="0">7</lebewesen:Wert>
           <lebewesen:Wert Quantil="50">10</lebewesen:Wert>
           <lebewesen:Wert Quantil="100">13</lebewesen:Wert>
         </lebewesen:Verteilung>
-        <lebewesen:Schwelle>
-          <misc:Kosten Id="GP" Berechnung="6" />
-          <misc:Kosten Id="Eigenschaften" Berechnung="6" />
-          <lebewesen:Wert>7</lebewesen:Wert>
-        </lebewesen:Schwelle>
-        <lebewesen:Schwelle>
-          <misc:Kosten Id="GP" Berechnung="5" />
-          <misc:Kosten Id="Eigenschaften" Berechnung="5" />
-          <lebewesen:Wert>8</lebewesen:Wert>
-        </lebewesen:Schwelle>
-        <lebewesen:Schwelle>
-          <misc:Kosten Id="GP" Berechnung="4" />
-          <misc:Kosten Id="Eigenschaften" Berechnung="4" />
-          <lebewesen:Wert>9</lebewesen:Wert>
-        </lebewesen:Schwelle>
-        <lebewesen:Schwelle>
-          <misc:Kosten Id="GP" Berechnung="3" />
-          <misc:Kosten Id="Eigenschaften" Berechnung="3" />
-          <lebewesen:Wert>10</lebewesen:Wert>
-        </lebewesen:Schwelle>
-        <lebewesen:Schwelle>
-          <misc:Kosten Id="GP" Berechnung="2" />
-          <misc:Kosten Id="Eigenschaften" Berechnung="2" />
-          <lebewesen:Wert>11</lebewesen:Wert>
-        </lebewesen:Schwelle>
-        <lebewesen:Schwelle>
-          <misc:Kosten Id="GP" Berechnung="1" />
-          <misc:Kosten Id="Eigenschaften" Berechnung="1" />
-          <lebewesen:Wert>12</lebewesen:Wert>
-        </lebewesen:Schwelle>
-      </lebewesen:Reihe>
-      <lebewesen:Reihe id="klugheit" startAlter="0" step="1" Reihenfolge="-12">
+
+      </lebewesen:Bereich>
+      <lebewesen:Bereich minInklusiv="7" maxInklusiv="13" id="klugheit" Reihenfolge="-12" gruppe="primär">
         <misc:Name>
           <misc:Lokalisirung Sprache="de">
             <![CDATA[Klugheit]]>
@@ -279,44 +262,16 @@
             <![CDATA[KL]]>
           </misc:Lokalisirung>
         </misc:Abkürzung>
-
+        <misc:Kosten Id="GP" Berechnung="13-value" />
+        <misc:Kosten Id="Eigenschaften" Berechnung="13-value" />
         <lebewesen:Verteilung>
           <lebewesen:Wert Quantil="0">7</lebewesen:Wert>
           <lebewesen:Wert Quantil="50">10</lebewesen:Wert>
           <lebewesen:Wert Quantil="100">13</lebewesen:Wert>
         </lebewesen:Verteilung>
-        <lebewesen:Schwelle>
-          <misc:Kosten Id="GP" Berechnung="6" />
-          <misc:Kosten Id="Eigenschaften" Berechnung="6" />
-          <lebewesen:Wert>7</lebewesen:Wert>
-        </lebewesen:Schwelle>
-        <lebewesen:Schwelle>
-          <misc:Kosten Id="GP" Berechnung="5" />
-          <misc:Kosten Id="Eigenschaften" Berechnung="5" />
-          <lebewesen:Wert>8</lebewesen:Wert>
-        </lebewesen:Schwelle>
-        <lebewesen:Schwelle>
-          <misc:Kosten Id="GP" Berechnung="4" />
-          <misc:Kosten Id="Eigenschaften" Berechnung="4" />
-          <lebewesen:Wert>9</lebewesen:Wert>
-        </lebewesen:Schwelle>
-        <lebewesen:Schwelle>
-          <misc:Kosten Id="GP" Berechnung="3" />
-          <misc:Kosten Id="Eigenschaften" Berechnung="3" />
-          <lebewesen:Wert>10</lebewesen:Wert>
-        </lebewesen:Schwelle>
-        <lebewesen:Schwelle>
-          <misc:Kosten Id="GP" Berechnung="2" />
-          <misc:Kosten Id="Eigenschaften" Berechnung="2" />
-          <lebewesen:Wert>11</lebewesen:Wert>
-        </lebewesen:Schwelle>
-        <lebewesen:Schwelle>
-          <misc:Kosten Id="GP" Berechnung="1" />
-          <misc:Kosten Id="Eigenschaften" Berechnung="1" />
-          <lebewesen:Wert>12</lebewesen:Wert>
-        </lebewesen:Schwelle>
-      </lebewesen:Reihe>
-      <lebewesen:Reihe id="intuition" startAlter="0" step="1" Reihenfolge="-12">
+
+      </lebewesen:Bereich>
+      <lebewesen:Bereich minInklusiv="7" maxInklusiv="13" id="intuition" Reihenfolge="-12" gruppe="primär">
         <misc:Name>
           <misc:Lokalisirung Sprache="de">
             <![CDATA[Intuition]]>
@@ -332,45 +287,17 @@
             <![CDATA[IN]]>
           </misc:Lokalisirung>
         </misc:Abkürzung>
-
+        <misc:Kosten Id="GP" Berechnung="13-value" />
+        <misc:Kosten Id="Eigenschaften" Berechnung="13-value" />
         <lebewesen:Verteilung>
           <lebewesen:Wert Quantil="0">7</lebewesen:Wert>
           <lebewesen:Wert Quantil="50">10</lebewesen:Wert>
           <lebewesen:Wert Quantil="100">13</lebewesen:Wert>
         </lebewesen:Verteilung>
-        <lebewesen:Schwelle>
-          <misc:Kosten Id="GP" Berechnung="6" />
-          <misc:Kosten Id="Eigenschaften" Berechnung="6" />
-          <lebewesen:Wert>7</lebewesen:Wert>
-        </lebewesen:Schwelle>
-        <lebewesen:Schwelle>
-          <misc:Kosten Id="GP" Berechnung="5" />
-          <misc:Kosten Id="Eigenschaften" Berechnung="5" />
-          <lebewesen:Wert>8</lebewesen:Wert>
-        </lebewesen:Schwelle>
-        <lebewesen:Schwelle>
-          <misc:Kosten Id="GP" Berechnung="4" />
-          <misc:Kosten Id="Eigenschaften" Berechnung="4" />
-          <lebewesen:Wert>9</lebewesen:Wert>
-        </lebewesen:Schwelle>
-        <lebewesen:Schwelle>
-          <misc:Kosten Id="GP" Berechnung="3" />
-          <misc:Kosten Id="Eigenschaften" Berechnung="3" />
-          <lebewesen:Wert>10</lebewesen:Wert>
-        </lebewesen:Schwelle>
-        <lebewesen:Schwelle>
-          <misc:Kosten Id="GP" Berechnung="2" />
-          <misc:Kosten Id="Eigenschaften" Berechnung="2" />
-          <lebewesen:Wert>11</lebewesen:Wert>
-        </lebewesen:Schwelle>
-        <lebewesen:Schwelle>
-          <misc:Kosten Id="GP" Berechnung="1" />
-          <misc:Kosten Id="Eigenschaften" Berechnung="1" />
-          <lebewesen:Wert>12</lebewesen:Wert>
-        </lebewesen:Schwelle>
-      </lebewesen:Reihe>
 
-      <lebewesen:Reihe id="gewandtheit" startAlter="0" step="1" Reihenfolge="-12">
+      </lebewesen:Bereich>
+
+      <lebewesen:Bereich minInklusiv="7" maxInklusiv="13"  id="gewandtheit" Reihenfolge="-12" gruppe="primär">
         <misc:Name>
           <misc:Lokalisirung Sprache="de">
             <![CDATA[Gewandtheit]]>
@@ -386,45 +313,17 @@
             <![CDATA[GE]]>
           </misc:Lokalisirung>
         </misc:Abkürzung>
-
+        <misc:Kosten Id="GP" Berechnung="13-value" />
+        <misc:Kosten Id="Eigenschaften" Berechnung="13-value" />
         <lebewesen:Verteilung>
           <lebewesen:Wert Quantil="0">7</lebewesen:Wert>
           <lebewesen:Wert Quantil="50">10</lebewesen:Wert>
           <lebewesen:Wert Quantil="100">13</lebewesen:Wert>
         </lebewesen:Verteilung>
-        <lebewesen:Schwelle>
-          <misc:Kosten Id="GP" Berechnung="6" />
-          <misc:Kosten Id="Eigenschaften" Berechnung="6" />
-          <lebewesen:Wert>7</lebewesen:Wert>
-        </lebewesen:Schwelle>
-        <lebewesen:Schwelle>
-          <misc:Kosten Id="GP" Berechnung="5" />
-          <misc:Kosten Id="Eigenschaften" Berechnung="5" />
-          <lebewesen:Wert>8</lebewesen:Wert>
-        </lebewesen:Schwelle>
-        <lebewesen:Schwelle>
-          <misc:Kosten Id="GP" Berechnung="4" />
-          <misc:Kosten Id="Eigenschaften" Berechnung="4" />
-          <lebewesen:Wert>9</lebewesen:Wert>
-        </lebewesen:Schwelle>
-        <lebewesen:Schwelle>
-          <misc:Kosten Id="GP" Berechnung="3" />
-          <misc:Kosten Id="Eigenschaften" Berechnung="3" />
-          <lebewesen:Wert>10</lebewesen:Wert>
-        </lebewesen:Schwelle>
-        <lebewesen:Schwelle>
-          <misc:Kosten Id="GP" Berechnung="2" />
-          <misc:Kosten Id="Eigenschaften" Berechnung="2" />
-          <lebewesen:Wert>11</lebewesen:Wert>
-        </lebewesen:Schwelle>
-        <lebewesen:Schwelle>
-          <misc:Kosten Id="GP" Berechnung="1" />
-          <misc:Kosten Id="Eigenschaften" Berechnung="1" />
-          <lebewesen:Wert>12</lebewesen:Wert>
-        </lebewesen:Schwelle>
-      </lebewesen:Reihe>
 
-      <lebewesen:Reihe id="feinmotorik" startAlter="0" step="1" Reihenfolge="-12">
+      </lebewesen:Bereich>
+
+      <lebewesen:Bereich minInklusiv="7" maxInklusiv="13"  id="feinmotorik" Reihenfolge="-12" gruppe="primär">
         <misc:Name>
           <misc:Lokalisirung Sprache="de">
             <![CDATA[Feinmotorik]]>
@@ -440,45 +339,17 @@
             <![CDATA[FM]]>
           </misc:Lokalisirung>
         </misc:Abkürzung>
-
+        <misc:Kosten Id="GP" Berechnung="13-value" />
+        <misc:Kosten Id="Eigenschaften" Berechnung="13-value" />
         <lebewesen:Verteilung>
           <lebewesen:Wert Quantil="0">7</lebewesen:Wert>
           <lebewesen:Wert Quantil="50">10</lebewesen:Wert>
           <lebewesen:Wert Quantil="100">13</lebewesen:Wert>
         </lebewesen:Verteilung>
-        <lebewesen:Schwelle>
-          <misc:Kosten Id="GP" Berechnung="6" />
-          <misc:Kosten Id="Eigenschaften" Berechnung="6" />
-          <lebewesen:Wert>7</lebewesen:Wert>
-        </lebewesen:Schwelle>
-        <lebewesen:Schwelle>
-          <misc:Kosten Id="GP" Berechnung="5" />
-          <misc:Kosten Id="Eigenschaften" Berechnung="5" />
-          <lebewesen:Wert>8</lebewesen:Wert>
-        </lebewesen:Schwelle>
-        <lebewesen:Schwelle>
-          <misc:Kosten Id="GP" Berechnung="4" />
-          <misc:Kosten Id="Eigenschaften" Berechnung="4" />
-          <lebewesen:Wert>9</lebewesen:Wert>
-        </lebewesen:Schwelle>
-        <lebewesen:Schwelle>
-          <misc:Kosten Id="GP" Berechnung="3" />
-          <misc:Kosten Id="Eigenschaften" Berechnung="3" />
-          <lebewesen:Wert>10</lebewesen:Wert>
-        </lebewesen:Schwelle>
-        <lebewesen:Schwelle>
-          <misc:Kosten Id="GP" Berechnung="2" />
-          <misc:Kosten Id="Eigenschaften" Berechnung="2" />
-          <lebewesen:Wert>11</lebewesen:Wert>
-        </lebewesen:Schwelle>
-        <lebewesen:Schwelle>
-          <misc:Kosten Id="GP" Berechnung="1" />
-          <misc:Kosten Id="Eigenschaften" Berechnung="1" />
-          <lebewesen:Wert>12</lebewesen:Wert>
-        </lebewesen:Schwelle>
-      </lebewesen:Reihe>
 
-      <lebewesen:Reihe id="sympathie" startAlter="0" step="1" Reihenfolge="-12">
+      </lebewesen:Bereich>
+
+      <lebewesen:Bereich minInklusiv="7" maxInklusiv="13"  id="sympathie" Reihenfolge="-12" gruppe="primär">
         <misc:Name>
           <misc:Lokalisirung Sprache="de">
             <![CDATA[Sympathie]]>
@@ -494,45 +365,17 @@
             <![CDATA[SY]]>
           </misc:Lokalisirung>
         </misc:Abkürzung>
-
+        <misc:Kosten Id="GP" Berechnung="13-value" />
+        <misc:Kosten Id="Eigenschaften" Berechnung="13-value" />
         <lebewesen:Verteilung>
           <lebewesen:Wert Quantil="0">7</lebewesen:Wert>
           <lebewesen:Wert Quantil="50">10</lebewesen:Wert>
           <lebewesen:Wert Quantil="100">13</lebewesen:Wert>
         </lebewesen:Verteilung>
-        <lebewesen:Schwelle>
-          <misc:Kosten Id="GP" Berechnung="6" />
-          <misc:Kosten Id="Eigenschaften" Berechnung="6" />
-          <lebewesen:Wert>7</lebewesen:Wert>
-        </lebewesen:Schwelle>
-        <lebewesen:Schwelle>
-          <misc:Kosten Id="GP" Berechnung="5" />
-          <misc:Kosten Id="Eigenschaften" Berechnung="5" />
-          <lebewesen:Wert>8</lebewesen:Wert>
-        </lebewesen:Schwelle>
-        <lebewesen:Schwelle>
-          <misc:Kosten Id="GP" Berechnung="4" />
-          <misc:Kosten Id="Eigenschaften" Berechnung="4" />
-          <lebewesen:Wert>9</lebewesen:Wert>
-        </lebewesen:Schwelle>
-        <lebewesen:Schwelle>
-          <misc:Kosten Id="GP" Berechnung="3" />
-          <misc:Kosten Id="Eigenschaften" Berechnung="3" />
-          <lebewesen:Wert>10</lebewesen:Wert>
-        </lebewesen:Schwelle>
-        <lebewesen:Schwelle>
-          <misc:Kosten Id="GP" Berechnung="2" />
-          <misc:Kosten Id="Eigenschaften" Berechnung="2" />
-          <lebewesen:Wert>11</lebewesen:Wert>
-        </lebewesen:Schwelle>
-        <lebewesen:Schwelle>
-          <misc:Kosten Id="GP" Berechnung="1" />
-          <misc:Kosten Id="Eigenschaften" Berechnung="1" />
-          <lebewesen:Wert>12</lebewesen:Wert>
-        </lebewesen:Schwelle>
-      </lebewesen:Reihe>
 
-      <lebewesen:Reihe id="Antipathie" startAlter="0" step="1" Reihenfolge="-12">
+      </lebewesen:Bereich>
+
+      <lebewesen:Bereich minInklusiv="7" maxInklusiv="13"  id="Antipathie" Reihenfolge="-12" gruppe="primär">
         <misc:Name>
           <misc:Lokalisirung Sprache="de">
             <![CDATA[antipathie]]>
@@ -549,44 +392,17 @@
           </misc:Lokalisirung>
         </misc:Abkürzung>
 
+        <misc:Kosten Id="GP" Berechnung="13-value" />
+        <misc:Kosten Id="Eigenschaften" Berechnung="13-value" />
         <lebewesen:Verteilung>
           <lebewesen:Wert Quantil="0">7</lebewesen:Wert>
           <lebewesen:Wert Quantil="50">10</lebewesen:Wert>
           <lebewesen:Wert Quantil="100">13</lebewesen:Wert>
         </lebewesen:Verteilung>
-        <lebewesen:Schwelle>
-          <misc:Kosten Id="GP" Berechnung="6" />
-          <misc:Kosten Id="Eigenschaften" Berechnung="6" />
-          <lebewesen:Wert>7</lebewesen:Wert>
-        </lebewesen:Schwelle>
-        <lebewesen:Schwelle>
-          <misc:Kosten Id="GP" Berechnung="5" />
-          <misc:Kosten Id="Eigenschaften" Berechnung="5" />
-          <lebewesen:Wert>8</lebewesen:Wert>
-        </lebewesen:Schwelle>
-        <lebewesen:Schwelle>
-          <misc:Kosten Id="GP" Berechnung="4" />
-          <misc:Kosten Id="Eigenschaften" Berechnung="4" />
-          <lebewesen:Wert>9</lebewesen:Wert>
-        </lebewesen:Schwelle>
-        <lebewesen:Schwelle>
-          <misc:Kosten Id="GP" Berechnung="3" />
-          <misc:Kosten Id="Eigenschaften" Berechnung="3" />
-          <lebewesen:Wert>10</lebewesen:Wert>
-        </lebewesen:Schwelle>
-        <lebewesen:Schwelle>
-          <misc:Kosten Id="GP" Berechnung="2" />
-          <misc:Kosten Id="Eigenschaften" Berechnung="2" />
-          <lebewesen:Wert>11</lebewesen:Wert>
-        </lebewesen:Schwelle>
-        <lebewesen:Schwelle>
-          <misc:Kosten Id="GP" Berechnung="1" />
-          <misc:Kosten Id="Eigenschaften" Berechnung="1" />
-          <lebewesen:Wert>12</lebewesen:Wert>
-        </lebewesen:Schwelle>
-      </lebewesen:Reihe>
 
-      <lebewesen:Reihe id="stärke" startAlter="0" step="1" Reihenfolge="-12">
+      </lebewesen:Bereich>
+
+      <lebewesen:Bereich minInklusiv="7" maxInklusiv="13"  id="stärke" Reihenfolge="-12" gruppe="primär">
         <misc:Name>
           <misc:Lokalisirung Sprache="de">
             <![CDATA[Stärke]]>
@@ -602,46 +418,18 @@
             <![CDATA[ST]]>
           </misc:Lokalisirung>
         </misc:Abkürzung>
-
+        <misc:Kosten Id="GP" Berechnung="13-value" />
+        <misc:Kosten Id="Eigenschaften" Berechnung="13-value" />
         <lebewesen:Verteilung>
           <lebewesen:Wert Quantil="0">7</lebewesen:Wert>
           <lebewesen:Wert Quantil="50">10</lebewesen:Wert>
           <lebewesen:Wert Quantil="100">13</lebewesen:Wert>
         </lebewesen:Verteilung>
-        <lebewesen:Schwelle>
-          <misc:Kosten Id="GP" Berechnung="6" />
-          <misc:Kosten Id="Eigenschaften" Berechnung="6" />
-          <lebewesen:Wert>7</lebewesen:Wert>
-        </lebewesen:Schwelle>
-        <lebewesen:Schwelle>
-          <misc:Kosten Id="GP" Berechnung="5" />
-          <misc:Kosten Id="Eigenschaften" Berechnung="5" />
-          <lebewesen:Wert>8</lebewesen:Wert>
-        </lebewesen:Schwelle>
-        <lebewesen:Schwelle>
-          <misc:Kosten Id="GP" Berechnung="4" />
-          <misc:Kosten Id="Eigenschaften" Berechnung="4" />
-          <lebewesen:Wert>9</lebewesen:Wert>
-        </lebewesen:Schwelle>
-        <lebewesen:Schwelle>
-          <misc:Kosten Id="GP" Berechnung="3" />
-          <misc:Kosten Id="Eigenschaften" Berechnung="3" />
-          <lebewesen:Wert>10</lebewesen:Wert>
-        </lebewesen:Schwelle>
-        <lebewesen:Schwelle>
-          <misc:Kosten Id="GP" Berechnung="2" />
-          <misc:Kosten Id="Eigenschaften" Berechnung="2" />
-          <lebewesen:Wert>11</lebewesen:Wert>
-        </lebewesen:Schwelle>
-        <lebewesen:Schwelle>
-          <misc:Kosten Id="GP" Berechnung="1" />
-          <misc:Kosten Id="Eigenschaften" Berechnung="1" />
-          <lebewesen:Wert>12</lebewesen:Wert>
-        </lebewesen:Schwelle>
-      </lebewesen:Reihe>
+
+      </lebewesen:Bereich>
 
 
-      <lebewesen:Reihe id="konstitution" startAlter="0" step="1" Reihenfolge="-12">
+      <lebewesen:Bereich minInklusiv="7" maxInklusiv="13"  id="konstitution" Reihenfolge="-12" gruppe="primär">
         <misc:Name>
           <misc:Lokalisirung Sprache="de">
             <![CDATA[Kontitution]]>
@@ -658,45 +446,18 @@
           </misc:Lokalisirung>
         </misc:Abkürzung>
 
+        <misc:Kosten Id="GP" Berechnung="13-value" />
+        <misc:Kosten Id="Eigenschaften" Berechnung="13-value" />
         <lebewesen:Verteilung>
           <lebewesen:Wert Quantil="0">7</lebewesen:Wert>
           <lebewesen:Wert Quantil="50">10</lebewesen:Wert>
           <lebewesen:Wert Quantil="100">13</lebewesen:Wert>
         </lebewesen:Verteilung>
-        <lebewesen:Schwelle>
-          <misc:Kosten Id="GP" Berechnung="6" />
-          <misc:Kosten Id="Eigenschaften" Berechnung="6" />
-          <lebewesen:Wert>7</lebewesen:Wert>
-        </lebewesen:Schwelle>
-        <lebewesen:Schwelle>
-          <misc:Kosten Id="GP" Berechnung="5" />
-          <misc:Kosten Id="Eigenschaften" Berechnung="5" />
-          <lebewesen:Wert>8</lebewesen:Wert>
-        </lebewesen:Schwelle>
-        <lebewesen:Schwelle>
-          <misc:Kosten Id="GP" Berechnung="4" />
-          <misc:Kosten Id="Eigenschaften" Berechnung="4" />
-          <lebewesen:Wert>9</lebewesen:Wert>
-        </lebewesen:Schwelle>
-        <lebewesen:Schwelle>
-          <misc:Kosten Id="GP" Berechnung="3" />
-          <misc:Kosten Id="Eigenschaften" Berechnung="3" />
-          <lebewesen:Wert>10</lebewesen:Wert>
-        </lebewesen:Schwelle>
-        <lebewesen:Schwelle>
-          <misc:Kosten Id="GP" Berechnung="2" />
-          <misc:Kosten Id="Eigenschaften" Berechnung="2" />
-          <lebewesen:Wert>11</lebewesen:Wert>
-        </lebewesen:Schwelle>
-        <lebewesen:Schwelle>
-          <misc:Kosten Id="GP" Berechnung="1" />
-          <misc:Kosten Id="Eigenschaften" Berechnung="1" />
-          <lebewesen:Wert>12</lebewesen:Wert>
-        </lebewesen:Schwelle>
-      </lebewesen:Reihe>
+
+      </lebewesen:Bereich>
 
 
-      <lebewesen:Reihe id="fokus" startAlter="0" step="1" Reihenfolge="-12">
+      <lebewesen:Bereich minInklusiv="7" maxInklusiv="13"  id="fokus" Reihenfolge="-12" gruppe="primär">
         <misc:Name>
           <misc:Lokalisirung Sprache="de">
             <![CDATA[Fokus]]>
@@ -712,45 +473,17 @@
             <![CDATA[FO]]>
           </misc:Lokalisirung>
         </misc:Abkürzung>
-
+        <misc:Kosten Id="GP" Berechnung="13-value" />
+        <misc:Kosten Id="Eigenschaften" Berechnung="13-value" />
         <lebewesen:Verteilung>
           <lebewesen:Wert Quantil="0">7</lebewesen:Wert>
           <lebewesen:Wert Quantil="50">10</lebewesen:Wert>
           <lebewesen:Wert Quantil="100">13</lebewesen:Wert>
         </lebewesen:Verteilung>
-        <lebewesen:Schwelle>
-          <misc:Kosten Id="GP" Berechnung="6" />
-          <misc:Kosten Id="Eigenschaften" Berechnung="6" />
-          <lebewesen:Wert>7</lebewesen:Wert>
-        </lebewesen:Schwelle>
-        <lebewesen:Schwelle>
-          <misc:Kosten Id="GP" Berechnung="5" />
-          <misc:Kosten Id="Eigenschaften" Berechnung="5" />
-          <lebewesen:Wert>8</lebewesen:Wert>
-        </lebewesen:Schwelle>
-        <lebewesen:Schwelle>
-          <misc:Kosten Id="GP" Berechnung="4" />
-          <misc:Kosten Id="Eigenschaften" Berechnung="4" />
-          <lebewesen:Wert>9</lebewesen:Wert>
-        </lebewesen:Schwelle>
-        <lebewesen:Schwelle>
-          <misc:Kosten Id="GP" Berechnung="3" />
-          <misc:Kosten Id="Eigenschaften" Berechnung="3" />
-          <lebewesen:Wert>10</lebewesen:Wert>
-        </lebewesen:Schwelle>
-        <lebewesen:Schwelle>
-          <misc:Kosten Id="GP" Berechnung="2" />
-          <misc:Kosten Id="Eigenschaften" Berechnung="2" />
-          <lebewesen:Wert>11</lebewesen:Wert>
-        </lebewesen:Schwelle>
-        <lebewesen:Schwelle>
-          <misc:Kosten Id="GP" Berechnung="1" />
-          <misc:Kosten Id="Eigenschaften" Berechnung="1" />
-          <lebewesen:Wert>12</lebewesen:Wert>
-        </lebewesen:Schwelle>
-      </lebewesen:Reihe>
 
-      <lebewesen:Reihe id="einfluss" startAlter="0" step="1" Reihenfolge="-12">
+      </lebewesen:Bereich>
+
+      <lebewesen:Bereich minInklusiv="7" maxInklusiv="13"  id="einfluss" Reihenfolge="-12" gruppe="primär">
         <misc:Name>
           <misc:Lokalisirung Sprache="de">
             <![CDATA[Einfluss]]>
@@ -767,42 +500,15 @@
           </misc:Lokalisirung>
         </misc:Abkürzung>
 
+        <misc:Kosten Id="GP" Berechnung="13-value" />
+        <misc:Kosten Id="Eigenschaften" Berechnung="13-value" />
         <lebewesen:Verteilung>
           <lebewesen:Wert Quantil="0">7</lebewesen:Wert>
           <lebewesen:Wert Quantil="50">10</lebewesen:Wert>
           <lebewesen:Wert Quantil="100">13</lebewesen:Wert>
         </lebewesen:Verteilung>
-        <lebewesen:Schwelle>
-          <misc:Kosten Id="GP" Berechnung="6" />
-          <misc:Kosten Id="Eigenschaften" Berechnung="6" />
-          <lebewesen:Wert>7</lebewesen:Wert>
-        </lebewesen:Schwelle>
-        <lebewesen:Schwelle>
-          <misc:Kosten Id="GP" Berechnung="5" />
-          <misc:Kosten Id="Eigenschaften" Berechnung="5" />
-          <lebewesen:Wert>8</lebewesen:Wert>
-        </lebewesen:Schwelle>
-        <lebewesen:Schwelle>
-          <misc:Kosten Id="GP" Berechnung="4" />
-          <misc:Kosten Id="Eigenschaften" Berechnung="4" />
-          <lebewesen:Wert>9</lebewesen:Wert>
-        </lebewesen:Schwelle>
-        <lebewesen:Schwelle>
-          <misc:Kosten Id="GP" Berechnung="3" />
-          <misc:Kosten Id="Eigenschaften" Berechnung="3" />
-          <lebewesen:Wert>10</lebewesen:Wert>
-        </lebewesen:Schwelle>
-        <lebewesen:Schwelle>
-          <misc:Kosten Id="GP" Berechnung="2" />
-          <misc:Kosten Id="Eigenschaften" Berechnung="2" />
-          <lebewesen:Wert>11</lebewesen:Wert>
-        </lebewesen:Schwelle>
-        <lebewesen:Schwelle>
-          <misc:Kosten Id="GP" Berechnung="1" />
-          <misc:Kosten Id="Eigenschaften" Berechnung="1" />
-          <lebewesen:Wert>12</lebewesen:Wert>
-        </lebewesen:Schwelle>
-      </lebewesen:Reihe>
+
+      </lebewesen:Bereich>
 
 
     </lebewesen:Entwiklung>
