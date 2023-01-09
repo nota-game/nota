@@ -1,7 +1,33 @@
 <?xml version='1.0'?>
 <!-- This file represents a fragment of a book store inventory database -->
-<Daten Version='1' xmlns='http://nota.org/schema/nota.xsd' xmlns:nota='http://nota.org/schema/nota.xsd' xmlns:misc='http://nota.org/schema/misc.xsd' xmlns:lebewesen="http://nota.org/schema/lebewesen.xsd" xmlns:pfad="http://nota.org/schema/pfad.xsd" xmlns:talent="http://nota.org/schema/talent.xsd" xmlns:fertigkeit="http://nota.org/schema/fertigkeit.xsd" xmlns:besonderheit="http://nota.org/schema/besonderheit.xsd" xmlns:Belastung="http://nota.org/schema/kampf/aktionen.xsd" xmlns:ausstattung="http://nota.org/schema/kampf/ausstattung.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://nota.org/schema/nota.xsd ../../nota-schema/nota.xsd http://nota.org/schema/lebewesen.xsd ../../nota-schema/Lebewesen.xsd http://nota.org/schema/pfad.xsd ../../nota-schema/pfad.xsd http://nota.org/schema/talent.xsd ../../nota-schema/talent.xsd http://nota.org/schema/fertigkeit.xsd ../../nota-schema/fertigkeit.xsd http://nota.org/schema/besonderheit.xsd ../../nota-schema/besonderheit.xsd http://nota.org/schema/kampf/aktionen.xsd ../../nota-schema/kampf/aktionen.xsd http://nota.org/schema/kampf/ausstattung.xsd ../../nota-schema/kampf/ausstattung.xsd http://nota.org/schema/misc.xsd ../../nota-schema/misc.xsd">
-  <!-- xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://nota.org/schema/nota.xsd http://nota.org/schema/nota.xsd http://nota.org/schema/misc.xsd http://nota.org/schema/misc.xsd http://nota.org/schema/wesen.xsd http://nota.org/schema/wesen.xsd http://nota.org/schema/pfad.xsd http://nota.org/schema/pfad.xsd http://nota.org/schema/profession.xsd http://nota.org/schema/profession.xsd http://nota.org/schema/talent.xsd http://nota.org/schema/talent.xsd http://nota.org/schema/fertigkeit.xsd http://nota.org/schema/fertigkeit.xsd http://nota.org/schema/besonderheit.xsd http://nota.org/schema/besonderheit.xsd http://nota.org/schema/kampf/aktionen.xsd http://nota.org/schema/kampf/aktionen.xsd http://nota.org/schema/kampf/ausstattung.xsd http://nota.org/schema/kampf/ausstattung.xsd" -->
+<Daten Version='1' xmlns='http://nota.org/schema/nota.xsd'
+  xmlns:nota='http://nota.org/schema/nota.xsd' xmlns:misc='http://nota.org/schema/misc.xsd'
+  xmlns:lebewesen="http://nota.org/schema/lebewesen.xsd"
+  xmlns:pfad="http://nota.org/schema/pfad.xsd" xmlns:talent="http://nota.org/schema/talent.xsd"
+  xmlns:fertigkeit="http://nota.org/schema/fertigkeit.xsd"
+  xmlns:besonderheit="http://nota.org/schema/besonderheit.xsd"
+  xmlns:Belastung="http://nota.org/schema/kampf/aktionen.xsd"
+  xmlns:ausstattung="http://nota.org/schema/kampf/ausstattung.xsd"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://nota.org/schema/nota.xsd ../../nota-schema/nota.xsd
+                      http://nota.org/schema/lebewesen.xsd ../../nota-schema/Lebewesen.xsd
+                      http://nota.org/schema/pfad.xsd ../../nota-schema/pfad.xsd
+                      http://nota.org/schema/talent.xsd ../../nota-schema/talent.xsd
+                      http://nota.org/schema/fertigkeit.xsd ../../nota-schema/fertigkeit.xsd
+                      http://nota.org/schema/besonderheit.xsd ../../nota-schema/besonderheit.xsd
+                      http://nota.org/schema/kampf/aktionen.xsd ../../nota-schema/kampf/aktionen.xsd
+                      http://nota.org/schema/kampf/ausstattung.xsd ../../nota-schema/kampf/ausstattung.xsd
+                      http://nota.org/schema/misc.xsd ../../nota-schema/misc.xsd">
+  <!-- xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://nota.org/schema/nota.xsd http://nota.org/schema/nota.xsd
+  http://nota.org/schema/misc.xsd http://nota.org/schema/misc.xsd http://nota.org/schema/wesen.xsd
+  http://nota.org/schema/wesen.xsd http://nota.org/schema/pfad.xsd http://nota.org/schema/pfad.xsd
+  http://nota.org/schema/profession.xsd http://nota.org/schema/profession.xsd
+  http://nota.org/schema/talent.xsd http://nota.org/schema/talent.xsd
+  http://nota.org/schema/fertigkeit.xsd http://nota.org/schema/fertigkeit.xsd
+  http://nota.org/schema/besonderheit.xsd http://nota.org/schema/besonderheit.xsd
+  http://nota.org/schema/kampf/aktionen.xsd http://nota.org/schema/kampf/aktionen.xsd
+  http://nota.org/schema/kampf/ausstattung.xsd http://nota.org/schema/kampf/ausstattung.xsd" -->
 
   <KostenDefinitionen xmlns="http://nota.org/schema/misc.xsd">
     <KostenDefinition Id="GP">
@@ -196,7 +222,7 @@
         <lebewesen:Formel>21 - GL</lebewesen:Formel>
       </lebewesen:Berechnung>
 
-      <lebewesen:Bereich minInklusiv="7" maxInklusiv="13" id="mut" gruppe="primär" >
+      <lebewesen:Bereich minInklusiv="7" maxInklusiv="13" id="mut" gruppe="primär" default="13">
         <misc:Name>
           <misc:Lokalisirung Sprache="de">
             <![CDATA[Mut]]>
@@ -221,7 +247,8 @@
         </lebewesen:Verteilung>
       </lebewesen:Bereich>
 
-      <lebewesen:Bereich minInklusiv="7" maxInklusiv="13"  id="glück" Reihenfolge="-12"  gruppe="primär">
+      <lebewesen:Bereich minInklusiv="7" maxInklusiv="13" id="glück" Reihenfolge="-12"
+        gruppe="primär" default="13">
         <misc:Name>
           <misc:Lokalisirung Sprache="de">
             <![CDATA[Glück]]>
@@ -246,7 +273,8 @@
         </lebewesen:Verteilung>
 
       </lebewesen:Bereich>
-      <lebewesen:Bereich minInklusiv="7" maxInklusiv="13" id="klugheit" Reihenfolge="-12" gruppe="primär">
+      <lebewesen:Bereich minInklusiv="7" maxInklusiv="13" id="klugheit" Reihenfolge="-12"
+        gruppe="primär" default="13">
         <misc:Name>
           <misc:Lokalisirung Sprache="de">
             <![CDATA[Klugheit]]>
@@ -271,7 +299,8 @@
         </lebewesen:Verteilung>
 
       </lebewesen:Bereich>
-      <lebewesen:Bereich minInklusiv="7" maxInklusiv="13" id="intuition" Reihenfolge="-12" gruppe="primär">
+      <lebewesen:Bereich minInklusiv="7" maxInklusiv="13" id="intuition" Reihenfolge="-12"
+        gruppe="primär" default="13">
         <misc:Name>
           <misc:Lokalisirung Sprache="de">
             <![CDATA[Intuition]]>
@@ -297,7 +326,8 @@
 
       </lebewesen:Bereich>
 
-      <lebewesen:Bereich minInklusiv="7" maxInklusiv="13"  id="gewandtheit" Reihenfolge="-12" gruppe="primär">
+      <lebewesen:Bereich minInklusiv="7" maxInklusiv="13" id="gewandtheit" Reihenfolge="-12"
+        gruppe="primär" default="13">
         <misc:Name>
           <misc:Lokalisirung Sprache="de">
             <![CDATA[Gewandtheit]]>
@@ -323,7 +353,8 @@
 
       </lebewesen:Bereich>
 
-      <lebewesen:Bereich minInklusiv="7" maxInklusiv="13"  id="feinmotorik" Reihenfolge="-12" gruppe="primär">
+      <lebewesen:Bereich minInklusiv="7" maxInklusiv="13" id="feinmotorik" Reihenfolge="-12"
+        gruppe="primär" default="13">
         <misc:Name>
           <misc:Lokalisirung Sprache="de">
             <![CDATA[Feinmotorik]]>
@@ -349,7 +380,8 @@
 
       </lebewesen:Bereich>
 
-      <lebewesen:Bereich minInklusiv="7" maxInklusiv="13"  id="sympathie" Reihenfolge="-12" gruppe="primär">
+      <lebewesen:Bereich minInklusiv="7" maxInklusiv="13" id="sympathie" Reihenfolge="-12"
+        gruppe="primär" default="13">
         <misc:Name>
           <misc:Lokalisirung Sprache="de">
             <![CDATA[Sympathie]]>
@@ -375,7 +407,8 @@
 
       </lebewesen:Bereich>
 
-      <lebewesen:Bereich minInklusiv="7" maxInklusiv="13"  id="Antipathie" Reihenfolge="-12" gruppe="primär">
+      <lebewesen:Bereich minInklusiv="7" maxInklusiv="13" id="Antipathie" Reihenfolge="-12"
+        gruppe="primär" default="13">
         <misc:Name>
           <misc:Lokalisirung Sprache="de">
             <![CDATA[antipathie]]>
@@ -402,7 +435,8 @@
 
       </lebewesen:Bereich>
 
-      <lebewesen:Bereich minInklusiv="7" maxInklusiv="13"  id="stärke" Reihenfolge="-12" gruppe="primär">
+      <lebewesen:Bereich minInklusiv="7" maxInklusiv="13" id="stärke" Reihenfolge="-12"
+        gruppe="primär" default="13">
         <misc:Name>
           <misc:Lokalisirung Sprache="de">
             <![CDATA[Stärke]]>
@@ -429,7 +463,8 @@
       </lebewesen:Bereich>
 
 
-      <lebewesen:Bereich minInklusiv="7" maxInklusiv="13"  id="konstitution" Reihenfolge="-12" gruppe="primär">
+      <lebewesen:Bereich minInklusiv="7" maxInklusiv="13" id="konstitution" Reihenfolge="-12"
+        gruppe="primär" default="13">
         <misc:Name>
           <misc:Lokalisirung Sprache="de">
             <![CDATA[Kontitution]]>
@@ -457,7 +492,8 @@
       </lebewesen:Bereich>
 
 
-      <lebewesen:Bereich minInklusiv="7" maxInklusiv="13"  id="fokus" Reihenfolge="-12" gruppe="primär">
+      <lebewesen:Bereich minInklusiv="7" maxInklusiv="13" id="fokus" Reihenfolge="-12"
+        gruppe="primär" default="13">
         <misc:Name>
           <misc:Lokalisirung Sprache="de">
             <![CDATA[Fokus]]>
@@ -483,7 +519,8 @@
 
       </lebewesen:Bereich>
 
-      <lebewesen:Bereich minInklusiv="7" maxInklusiv="13"  id="einfluss" Reihenfolge="-12" gruppe="primär">
+      <lebewesen:Bereich minInklusiv="7" maxInklusiv="13" id="einfluss" Reihenfolge="-12"
+        gruppe="primär" default="13">
         <misc:Name>
           <misc:Lokalisirung Sprache="de">
             <![CDATA[Einfluss]]>
@@ -815,8 +852,9 @@
       </Lebensabschnitte>
 
       <!-- Gewicht / Größe refernz
-  Jugend: https://www.rki.de/DE/Content/Gesundheitsmonitoring/Gesundheitsberichterstattung/GBEDownloadsB/KiGGS_Referenzperzentile.pdf?__blob=publicationFile
-  Erwachsene: https://buster.zibmt.uni-ulm.de/static/Dokumente/DPV/Referenzwerte-BMI-NVZ.pdf -->
+  Jugend:
+      https://www.rki.de/DE/Content/Gesundheitsmonitoring/Gesundheitsberichterstattung/GBEDownloadsB/KiGGS_Referenzperzentile.pdf?__blob=publicationFile
+      Erwachsene: https://buster.zibmt.uni-ulm.de/static/Dokumente/DPV/Referenzwerte-BMI-NVZ.pdf -->
       <Art Id="Aquatus">
         <misc:Name>
           <misc:Lokalisirung Sprache="de" Geschlecht="Männlich">
@@ -28336,9 +28374,15 @@ Ausserdem darf eine Waffe Plazieren Taktik die das selbe Ziel wie diese hat in d
     </Taktik>
 
     <!-- <Taktik Id="Steilshuss" Kosten="1" Belastung="2" Typ="Offensiv">
-      <Beschreibung>Der Charakter führt einen Balistischen Schuss durch. Dieses kann beispielsweise auch gegner hinter Dekung treffen. Durch die Balistische Flugbahn ist das geschoss jedoch lönger unterwegs.</Beschreibung>
-      <SofortigerEffekt>Der Angriff erfolgt diese Kampfrunde, trifft sein Ziel aber erst nächste. Dabei ist das Problem weniger den Anvisierten Punkt zu treffe, als vorherzusehen wo sich der gegner zu diesem Zeitpunkt befinden wird.</SofortigerEffekt>
-      <Mod ModifierType="Malus">
+      <Beschreibung>Der
+    Charakter führt einen Balistischen Schuss durch. Dieses kann beispielsweise auch gegner hinter
+    Dekung treffen. Durch die Balistische Flugbahn ist das geschoss jedoch lönger
+    unterwegs.</Beschreibung>
+      <SofortigerEffekt>Der Angriff erfolgt diese Kampfrunde, trifft
+    sein Ziel aber erst nächste. Dabei ist das Problem weniger den Anvisierten Punkt zu treffe, als
+    vorherzusehen wo sich der gegner zu diesem Zeitpunkt befinden wird.</SofortigerEffekt>
+      <Mod
+    ModifierType="Malus">
         <ConcreteModValueType Value="2" Type="Absolute"/>
       </Mod>
     </Taktik> -->
