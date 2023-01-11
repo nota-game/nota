@@ -195,7 +195,7 @@
         <misc:Name>
           <misc:Lokalisirung Sprache="de">Gewicht</misc:Lokalisirung>
         </misc:Name>
-        <lebewesen:Formel>bmi()*(größe()/100)*(größe()/100)</lebewesen:Formel>
+        <lebewesen:Formel>bmi*(größe/100)*(größe/100)</lebewesen:Formel>
       </lebewesen:Berechnung>
       <lebewesen:Berechnung id="ausdauer" Reihenfolge="10">
         <misc:Name>
@@ -213,7 +213,7 @@
         <misc:Name>
           <misc:Lokalisirung Sprache="de">Kraft</misc:Lokalisirung>
         </misc:Name>
-        <lebewesen:Formel>_over = max(0,gewicht()-kraftGewichtCap());_under = min(kraftGewichtCap(),gewicht());ceil((91/30 * (1/ ST )*(1/ ST )+1529/300*1/ST+3/50)*_under)</lebewesen:Formel>
+        <lebewesen:Formel>_over = max(0,gewicht-kraftGewichtCap);_under = min(kraftGewichtCap,gewicht);ceil((91/30 * (1/ ST )*(1/ ST )+1529/300*1/ST+3/50)*_under)</lebewesen:Formel>
       </lebewesen:Berechnung>
       <lebewesen:Berechnung id="GlP" Reihenfolge="10">
         <misc:Name>
@@ -222,7 +222,7 @@
         <lebewesen:Formel>21 - GL</lebewesen:Formel>
       </lebewesen:Berechnung>
 
-      <lebewesen:Bereich minInklusiv="7" maxInklusiv="13" id="mut" gruppe="primär" default="13">
+      <lebewesen:Bereich minInklusiv="7" maxInklusiv="13" id="MU" gruppe="primär" default="13">
         <misc:Name>
           <misc:Lokalisirung Sprache="de">
             <![CDATA[Mut]]>
@@ -247,7 +247,7 @@
         </lebewesen:Verteilung>
       </lebewesen:Bereich>
 
-      <lebewesen:Bereich minInklusiv="7" maxInklusiv="13" id="glück" Reihenfolge="-12"
+      <lebewesen:Bereich minInklusiv="7" maxInklusiv="13" id="GL" Reihenfolge="-12"
         gruppe="primär" default="13">
         <misc:Name>
           <misc:Lokalisirung Sprache="de">
@@ -273,7 +273,7 @@
         </lebewesen:Verteilung>
 
       </lebewesen:Bereich>
-      <lebewesen:Bereich minInklusiv="7" maxInklusiv="13" id="klugheit" Reihenfolge="-12"
+      <lebewesen:Bereich minInklusiv="7" maxInklusiv="13" id="KL" Reihenfolge="-12"
         gruppe="primär" default="13">
         <misc:Name>
           <misc:Lokalisirung Sprache="de">
@@ -299,7 +299,7 @@
         </lebewesen:Verteilung>
 
       </lebewesen:Bereich>
-      <lebewesen:Bereich minInklusiv="7" maxInklusiv="13" id="intuition" Reihenfolge="-12"
+      <lebewesen:Bereich minInklusiv="7" maxInklusiv="13" id="IN" Reihenfolge="-12"
         gruppe="primär" default="13">
         <misc:Name>
           <misc:Lokalisirung Sprache="de">
@@ -326,7 +326,7 @@
 
       </lebewesen:Bereich>
 
-      <lebewesen:Bereich minInklusiv="7" maxInklusiv="13" id="gewandtheit" Reihenfolge="-12"
+      <lebewesen:Bereich minInklusiv="7" maxInklusiv="13" id="GE" Reihenfolge="-12"
         gruppe="primär" default="13">
         <misc:Name>
           <misc:Lokalisirung Sprache="de">
@@ -353,7 +353,7 @@
 
       </lebewesen:Bereich>
 
-      <lebewesen:Bereich minInklusiv="7" maxInklusiv="13" id="feinmotorik" Reihenfolge="-12"
+      <lebewesen:Bereich minInklusiv="7" maxInklusiv="13" id="FM" Reihenfolge="-12"
         gruppe="primär" default="13">
         <misc:Name>
           <misc:Lokalisirung Sprache="de">
@@ -380,7 +380,7 @@
 
       </lebewesen:Bereich>
 
-      <lebewesen:Bereich minInklusiv="7" maxInklusiv="13" id="sympathie" Reihenfolge="-12"
+      <lebewesen:Bereich minInklusiv="7" maxInklusiv="13" id="SY" Reihenfolge="-12"
         gruppe="primär" default="13">
         <misc:Name>
           <misc:Lokalisirung Sprache="de">
@@ -407,7 +407,7 @@
 
       </lebewesen:Bereich>
 
-      <lebewesen:Bereich minInklusiv="7" maxInklusiv="13" id="Antipathie" Reihenfolge="-12"
+      <lebewesen:Bereich minInklusiv="7" maxInklusiv="13" id="AN" Reihenfolge="-12"
         gruppe="primär" default="13">
         <misc:Name>
           <misc:Lokalisirung Sprache="de">
@@ -435,7 +435,7 @@
 
       </lebewesen:Bereich>
 
-      <lebewesen:Bereich minInklusiv="7" maxInklusiv="13" id="stärke" Reihenfolge="-12"
+      <lebewesen:Bereich minInklusiv="7" maxInklusiv="13" id="ST" Reihenfolge="-12"
         gruppe="primär" default="13">
         <misc:Name>
           <misc:Lokalisirung Sprache="de">
@@ -463,7 +463,7 @@
       </lebewesen:Bereich>
 
 
-      <lebewesen:Bereich minInklusiv="7" maxInklusiv="13" id="konstitution" Reihenfolge="-12"
+      <lebewesen:Bereich minInklusiv="7" maxInklusiv="13" id="KO" Reihenfolge="-12" 
         gruppe="primär" default="13">
         <misc:Name>
           <misc:Lokalisirung Sprache="de">
@@ -492,7 +492,7 @@
       </lebewesen:Bereich>
 
 
-      <lebewesen:Bereich minInklusiv="7" maxInklusiv="13" id="fokus" Reihenfolge="-12"
+      <lebewesen:Bereich minInklusiv="7" maxInklusiv="13" id="FO" Reihenfolge="-12"
         gruppe="primär" default="13">
         <misc:Name>
           <misc:Lokalisirung Sprache="de">
@@ -519,7 +519,7 @@
 
       </lebewesen:Bereich>
 
-      <lebewesen:Bereich minInklusiv="7" maxInklusiv="13" id="einfluss" Reihenfolge="-12"
+      <lebewesen:Bereich minInklusiv="7" maxInklusiv="13" id="EI" Reihenfolge="-12"
         gruppe="primär" default="13">
         <misc:Name>
           <misc:Lokalisirung Sprache="de">
