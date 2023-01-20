@@ -225,12 +225,12 @@
       <lebewesen:Bereich minInklusiv="7" maxInklusiv="13" id="MU" gruppe="primär" default="13">
         <misc:Name>
           <misc:Lokalisirung Sprache="de">
-            <![CDATA[Mut]]>
+            <![CDATA[MU]]>
           </misc:Lokalisirung>
         </misc:Name>
         <misc:Beschreibung>
           <misc:Lokalisirung Sprache="de">
-            <![CDATA[Wie Mutig ein Charackter ist]]>
+            <![CDATA[Wie MUig ein Charackter ist]]>
           </misc:Lokalisirung>
         </misc:Beschreibung>
         <misc:Abkürzung>
@@ -277,7 +277,7 @@
         gruppe="primär" default="13">
         <misc:Name>
           <misc:Lokalisirung Sprache="de">
-            <![CDATA[Klugheit]]>
+            <![CDATA[KL]]>
           </misc:Lokalisirung>
         </misc:Name>
         <misc:Beschreibung>
@@ -303,7 +303,7 @@
         gruppe="primär" default="13">
         <misc:Name>
           <misc:Lokalisirung Sprache="de">
-            <![CDATA[Intuition]]>
+            <![CDATA[IN]]>
           </misc:Lokalisirung>
         </misc:Name>
         <misc:Beschreibung>
@@ -384,7 +384,7 @@
         gruppe="primär" default="13">
         <misc:Name>
           <misc:Lokalisirung Sprache="de">
-            <![CDATA[Sympathie]]>
+            <![CDATA[SY]]>
           </misc:Lokalisirung>
         </misc:Name>
         <misc:Beschreibung>
@@ -23526,9 +23526,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Kampfgespür" Komplexität="D">
       <Probe>
-        <talent:Eigenschaft Name="intuition" />
-        <talent:Eigenschaft Name="intuition" />
-        <talent:Eigenschaft Name="fokus" />
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="FO" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -23547,9 +23547,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Stumpfe Hiebwaffen" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="gewandtheit" />
-        <talent:Eigenschaft Name="stärke" />
-        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="GE" />
+        <talent:Eigenschaft Name="ST" />
+        <talent:Eigenschaft Name="IN" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -23571,9 +23571,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Einhandäxte" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="gewandtheit" />
-        <talent:Eigenschaft Name="stärke" />
-        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="GE" />
+        <talent:Eigenschaft Name="ST" />
+        <talent:Eigenschaft Name="IN" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -23595,9 +23595,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Zweihandäxte" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="stärke" />
-        <talent:Eigenschaft Name="mut" />
-        <talent:Eigenschaft Name="gewandtheit" />
+        <talent:Eigenschaft Name="ST" />
+        <talent:Eigenschaft Name="MU" />
+        <talent:Eigenschaft Name="GE" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -23620,9 +23620,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Stäbe" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="gewandtheit" />
-        <talent:Eigenschaft Name="mut" />
-        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="GE" />
+        <talent:Eigenschaft Name="MU" />
+        <talent:Eigenschaft Name="IN" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -23644,9 +23644,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Fechtwaffen" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="gewandtheit" />
-        <talent:Eigenschaft Name="mut" />
-        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="GE" />
+        <talent:Eigenschaft Name="MU" />
+        <talent:Eigenschaft Name="IN" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -23667,9 +23667,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Schwerter" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="gewandtheit" />
-        <talent:Eigenschaft Name="mut" />
-        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="GE" />
+        <talent:Eigenschaft Name="MU" />
+        <talent:Eigenschaft Name="IN" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -23690,9 +23690,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Säbel" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="gewandtheit" />
-        <talent:Eigenschaft Name="mut" />
-        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="GE" />
+        <talent:Eigenschaft Name="MU" />
+        <talent:Eigenschaft Name="IN" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -23713,9 +23713,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Anderthalbhänder" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="gewandtheit" />
-        <talent:Eigenschaft Name="mut" />
-        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="GE" />
+        <talent:Eigenschaft Name="MU" />
+        <talent:Eigenschaft Name="IN" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -23738,9 +23738,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Zweihandschwerter" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="stärke" />
-        <talent:Eigenschaft Name="mut" />
-        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="ST" />
+        <talent:Eigenschaft Name="MU" />
+        <talent:Eigenschaft Name="IN" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -23762,9 +23762,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Zweihandhiebwaffen" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="stärke" />
-        <talent:Eigenschaft Name="mut" />
-        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="ST" />
+        <talent:Eigenschaft Name="MU" />
+        <talent:Eigenschaft Name="IN" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -23785,9 +23785,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Zweihandsäbel" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="stärke" />
-        <talent:Eigenschaft Name="mut" />
-        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="ST" />
+        <talent:Eigenschaft Name="MU" />
+        <talent:Eigenschaft Name="IN" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -23809,9 +23809,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Tonfas" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="gewandtheit" />
-        <talent:Eigenschaft Name="mut" />
-        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="GE" />
+        <talent:Eigenschaft Name="MU" />
+        <talent:Eigenschaft Name="IN" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -23831,9 +23831,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Bögen" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="fokus" />
-        <talent:Eigenschaft Name="feinmotorik" />
-        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="FO" />
+        <talent:Eigenschaft Name="FM" />
+        <talent:Eigenschaft Name="IN" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -23854,9 +23854,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Faustprojektielwaffen" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="feinmotorik" />
-        <talent:Eigenschaft Name="fokus" />
-        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="FM" />
+        <talent:Eigenschaft Name="FO" />
+        <talent:Eigenschaft Name="IN" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -23877,9 +23877,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Zweihandprojektielwaffen" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="feinmotorik" />
-        <talent:Eigenschaft Name="fokus" />
-        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="FM" />
+        <talent:Eigenschaft Name="FO" />
+        <talent:Eigenschaft Name="IN" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -23900,9 +23900,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Schilde" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="gewandtheit" />
-        <talent:Eigenschaft Name="mut" />
-        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="GE" />
+        <talent:Eigenschaft Name="MU" />
+        <talent:Eigenschaft Name="IN" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -23921,9 +23921,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Ausweichen" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="gewandtheit" />
-        <talent:Eigenschaft Name="mut" />
-        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="GE" />
+        <talent:Eigenschaft Name="MU" />
+        <talent:Eigenschaft Name="IN" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -23943,9 +23943,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Stangenwaffen" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="gewandtheit" />
-        <talent:Eigenschaft Name="mut" />
-        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="GE" />
+        <talent:Eigenschaft Name="MU" />
+        <talent:Eigenschaft Name="IN" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -23965,9 +23965,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Peitschen" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="feinmotorik" />
-        <talent:Eigenschaft Name="mut" />
-        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="FM" />
+        <talent:Eigenschaft Name="MU" />
+        <talent:Eigenschaft Name="IN" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -23986,9 +23986,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Dolche" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="gewandtheit" />
-        <talent:Eigenschaft Name="mut" />
-        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="GE" />
+        <talent:Eigenschaft Name="MU" />
+        <talent:Eigenschaft Name="IN" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -24009,9 +24009,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Flegel" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="gewandtheit" />
-        <talent:Eigenschaft Name="mut" />
-        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="GE" />
+        <talent:Eigenschaft Name="MU" />
+        <talent:Eigenschaft Name="IN" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -24031,9 +24031,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Waffenlos" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="gewandtheit" />
-        <talent:Eigenschaft Name="mut" />
-        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="GE" />
+        <talent:Eigenschaft Name="MU" />
+        <talent:Eigenschaft Name="IN" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -24054,9 +24054,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Chakrams" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="gewandtheit" />
-        <talent:Eigenschaft Name="mut" />
-        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="GE" />
+        <talent:Eigenschaft Name="MU" />
+        <talent:Eigenschaft Name="IN" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -24072,9 +24072,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Wurfspeere" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="feinmotorik" />
-        <talent:Eigenschaft Name="stärke" />
-        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="FM" />
+        <talent:Eigenschaft Name="ST" />
+        <talent:Eigenschaft Name="IN" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -24095,9 +24095,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Wurfäxte" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="feinmotorik" />
-        <talent:Eigenschaft Name="stärke" />
-        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="FM" />
+        <talent:Eigenschaft Name="ST" />
+        <talent:Eigenschaft Name="IN" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -24118,9 +24118,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Wurfmesser" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="feinmotorik" />
-        <talent:Eigenschaft Name="stärke" />
-        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="FM" />
+        <talent:Eigenschaft Name="ST" />
+        <talent:Eigenschaft Name="IN" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -24141,9 +24141,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Katare" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="gewandtheit" />
-        <talent:Eigenschaft Name="mut" />
-        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="GE" />
+        <talent:Eigenschaft Name="MU" />
+        <talent:Eigenschaft Name="IN" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -24164,9 +24164,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Wurfwaffen" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="gewandtheit" />
-        <talent:Eigenschaft Name="mut" />
-        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="GE" />
+        <talent:Eigenschaft Name="MU" />
+        <talent:Eigenschaft Name="IN" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -24187,9 +24187,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Schleudern" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="feinmotorik" />
-        <talent:Eigenschaft Name="fokus" />
-        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="FM" />
+        <talent:Eigenschaft Name="FO" />
+        <talent:Eigenschaft Name="IN" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -24209,9 +24209,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Speerschleudern" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="feinmotorik" />
-        <talent:Eigenschaft Name="fokus" />
-        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="FM" />
+        <talent:Eigenschaft Name="FO" />
+        <talent:Eigenschaft Name="IN" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -24231,9 +24231,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Nunchakus" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="gewandtheit" />
-        <talent:Eigenschaft Name="mut" />
-        <talent:Eigenschaft Name="fokus" />
+        <talent:Eigenschaft Name="GE" />
+        <talent:Eigenschaft Name="MU" />
+        <talent:Eigenschaft Name="FO" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -24253,9 +24253,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Dreigliederstäbe" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="gewandtheit" />
-        <talent:Eigenschaft Name="fokus" />
-        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="GE" />
+        <talent:Eigenschaft Name="FO" />
+        <talent:Eigenschaft Name="IN" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -24275,9 +24275,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Kettenwaffen" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="fokus" />
-        <talent:Eigenschaft Name="mut" />
-        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="FO" />
+        <talent:Eigenschaft Name="MU" />
+        <talent:Eigenschaft Name="IN" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -24298,9 +24298,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Sensen" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="gewandtheit" />
-        <talent:Eigenschaft Name="mut" />
-        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="GE" />
+        <talent:Eigenschaft Name="MU" />
+        <talent:Eigenschaft Name="IN" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -24330,9 +24330,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     <!--Körper BEGINN-->
     <Talent Id="Springen" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="mut" />
-        <talent:Eigenschaft Name="stärke" />
-        <talent:Eigenschaft Name="gewandtheit" />
+        <talent:Eigenschaft Name="MU" />
+        <talent:Eigenschaft Name="ST" />
+        <talent:Eigenschaft Name="GE" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -24351,9 +24351,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Laufen" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="konstitution" />
-        <talent:Eigenschaft Name="stärke" />
-        <talent:Eigenschaft Name="gewandtheit" />
+        <talent:Eigenschaft Name="KO" />
+        <talent:Eigenschaft Name="ST" />
+        <talent:Eigenschaft Name="GE" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -24372,9 +24372,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Beschatten" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="mut" />
-        <talent:Eigenschaft Name="intuition" />
-        <talent:Eigenschaft Name="sympathie" />
+        <talent:Eigenschaft Name="MU" />
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="SY" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -24396,9 +24396,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Gewichtstemmen" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="stärke" />
-        <talent:Eigenschaft Name="stärke" />
-        <talent:Eigenschaft Name="gewandtheit" />
+        <talent:Eigenschaft Name="ST" />
+        <talent:Eigenschaft Name="ST" />
+        <talent:Eigenschaft Name="GE" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -24418,9 +24418,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Schwimmen" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="konstitution" />
-        <talent:Eigenschaft Name="stärke" />
-        <talent:Eigenschaft Name="gewandtheit" />
+        <talent:Eigenschaft Name="KO" />
+        <talent:Eigenschaft Name="ST" />
+        <talent:Eigenschaft Name="GE" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -24436,9 +24436,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Körperbeherschung" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="stärke" />
-        <talent:Eigenschaft Name="gewandtheit" />
-        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="ST" />
+        <talent:Eigenschaft Name="GE" />
+        <talent:Eigenschaft Name="IN" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -24457,9 +24457,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Akrobatik" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="mut" />
-        <talent:Eigenschaft Name="stärke" />
-        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="MU" />
+        <talent:Eigenschaft Name="ST" />
+        <talent:Eigenschaft Name="IN" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -24478,9 +24478,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Fingerübungen" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="feinmotorik" />
-        <talent:Eigenschaft Name="feinmotorik" />
-        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="FM" />
+        <talent:Eigenschaft Name="FM" />
+        <talent:Eigenschaft Name="IN" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -24496,9 +24496,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Klettern" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="mut" />
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="mut" />
+        <talent:Eigenschaft Name="MU" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="MU" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -24519,9 +24519,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Schleichen" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="mut" />
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="mut" />
+        <talent:Eigenschaft Name="MU" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="MU" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -24543,9 +24543,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Fliegen" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="mut" />
-        <talent:Eigenschaft Name="intuition" />
-        <talent:Eigenschaft Name="gewandtheit" />
+        <talent:Eigenschaft Name="MU" />
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="GE" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -24566,9 +24566,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Gaukeleien" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="mut" />
-        <talent:Eigenschaft Name="sympathie" />
-        <talent:Eigenschaft Name="feinmotorik" />
+        <talent:Eigenschaft Name="MU" />
+        <talent:Eigenschaft Name="SY" />
+        <talent:Eigenschaft Name="FM" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -24591,9 +24591,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Reiten" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="sympathie" />
-        <talent:Eigenschaft Name="gewandtheit" />
-        <talent:Eigenschaft Name="stärke" />
+        <talent:Eigenschaft Name="SY" />
+        <talent:Eigenschaft Name="GE" />
+        <talent:Eigenschaft Name="ST" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -24614,9 +24614,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Sich Verstecken" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="mut" />
-        <talent:Eigenschaft Name="intuition" />
-        <talent:Eigenschaft Name="gewandtheit" />
+        <talent:Eigenschaft Name="MU" />
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="GE" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -24637,9 +24637,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Singen" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="intuition" />
-        <talent:Eigenschaft Name="sympathie" />
-        <talent:Eigenschaft Name="sympathie" />
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="SY" />
+        <talent:Eigenschaft Name="SY" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -24660,9 +24660,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Skifahren" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="gewandtheit" />
-        <talent:Eigenschaft Name="gewandtheit" />
-        <talent:Eigenschaft Name="konstitution" />
+        <talent:Eigenschaft Name="GE" />
+        <talent:Eigenschaft Name="GE" />
+        <talent:Eigenschaft Name="KO" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -24682,9 +24682,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Stimmen Imitieren" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="intuition" />
-        <talent:Eigenschaft Name="sympathie" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="SY" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -24705,9 +24705,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Taschendiebstahl" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="mut" />
-        <talent:Eigenschaft Name="intuition" />
-        <talent:Eigenschaft Name="feinmotorik" />
+        <talent:Eigenschaft Name="MU" />
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="FM" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -24728,9 +24728,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Zechen" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="intuition" />
-        <talent:Eigenschaft Name="konstitution" />
-        <talent:Eigenschaft Name="stärke" />
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="KO" />
+        <talent:Eigenschaft Name="ST" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -24746,9 +24746,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Entfesseln" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="feinmotorik" />
-        <talent:Eigenschaft Name="gewandtheit" />
-        <talent:Eigenschaft Name="stärke" />
+        <talent:Eigenschaft Name="FM" />
+        <talent:Eigenschaft Name="GE" />
+        <talent:Eigenschaft Name="ST" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -24778,9 +24778,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     <!--Geist BEGINN-->
     <Talent Id="Fährtensuche" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="intuition" />
-        <talent:Eigenschaft Name="fokus" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="FO" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -24802,9 +24802,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Orientierung" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="intuition" />
-        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="IN" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -24821,9 +24821,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Selbstbeherchung" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="mut" />
-        <talent:Eigenschaft Name="mut" />
-        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="MU" />
+        <talent:Eigenschaft Name="MU" />
+        <talent:Eigenschaft Name="KL" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -24839,9 +24839,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Wahrnehmung" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="intuition" />
-        <talent:Eigenschaft Name="intuition" />
-        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="KL" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -24863,9 +24863,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Sehen" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="intuition" />
-        <talent:Eigenschaft Name="intuition" />
-        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="KL" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -24884,9 +24884,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Hören" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="intuition" />
-        <talent:Eigenschaft Name="intuition" />
-        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="KL" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -24905,9 +24905,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Riechen und Schmecken" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="intuition" />
-        <talent:Eigenschaft Name="intuition" />
-        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="KL" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -24926,9 +24926,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Fühlen" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="intuition" />
-        <talent:Eigenschaft Name="feinmotorik" />
-        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="FM" />
+        <talent:Eigenschaft Name="KL" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -24956,9 +24956,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     <!--Gesellschaft BEGINN-->
     <Talent Id="Menschenkentniss" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="intuition" />
-        <talent:Eigenschaft Name="antipathie" />
-        <talent:Eigenschaft Name="sympathie" />
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="AN" />
+        <talent:Eigenschaft Name="SY" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -24979,9 +24979,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Verführen" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="mut" />
-        <talent:Eigenschaft Name="intuition" />
-        <talent:Eigenschaft Name="sympathie" />
+        <talent:Eigenschaft Name="MU" />
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="SY" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25002,9 +25002,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Lügen" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="mut" />
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="sympathie" />
+        <talent:Eigenschaft Name="MU" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="SY" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25024,9 +25024,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Überreden" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="intuition" />
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="sympathie" />
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="SY" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25046,9 +25046,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Einschüchtern" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="mut" />
-        <talent:Eigenschaft Name="intuition" />
-        <talent:Eigenschaft Name="antipathie" />
+        <talent:Eigenschaft Name="MU" />
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="AN" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25069,9 +25069,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Lehren" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="intuition" />
-        <talent:Eigenschaft Name="sympathie" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="SY" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25092,9 +25092,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Schauspielerei" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="mut" />
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="sympathie" />
+        <talent:Eigenschaft Name="MU" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="SY" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25116,9 +25116,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Schriftlicher Ausdruck" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="intuition" />
-        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="IN" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25139,9 +25139,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Etikette" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="intuition" />
-        <talent:Eigenschaft Name="sympathie" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="SY" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25157,9 +25157,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Seelsorge" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="intuition" />
-        <talent:Eigenschaft Name="sympathie" />
-        <talent:Eigenschaft Name="sympathie" />
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="SY" />
+        <talent:Eigenschaft Name="SY" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25191,9 +25191,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Sich Verkleiden" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="mut" />
-        <talent:Eigenschaft Name="sympathie" />
-        <talent:Eigenschaft Name="gewandtheit" />
+        <talent:Eigenschaft Name="MU" />
+        <talent:Eigenschaft Name="SY" />
+        <talent:Eigenschaft Name="GE" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25210,9 +25210,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Tanzen" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="intuition" />
-        <talent:Eigenschaft Name="gewandtheit" />
-        <talent:Eigenschaft Name="konstitution" />
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="GE" />
+        <talent:Eigenschaft Name="KO" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25241,9 +25241,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Gassenwissen" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="intuition" />
-        <talent:Eigenschaft Name="sympathie" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="SY" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25259,9 +25259,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Rechnen" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="IN" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25277,9 +25277,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Sagen" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="mut" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="MU" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25295,9 +25295,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Astronomi" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="IN" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25319,9 +25319,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Geographie" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="IN" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25337,9 +25337,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Gesteinskunde" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="intuition" />
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="feinmotorik" />
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="FM" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25355,9 +25355,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Recherche" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="IN" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25378,9 +25378,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Buchführung" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="feinmotorik" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="FM" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25408,9 +25408,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Medizin" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="IN" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25435,9 +25435,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Tierkunde" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="IN" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25453,9 +25453,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Pflanzenkunde" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="IN" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25474,9 +25474,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Kunst" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="intuition" />
-        <talent:Eigenschaft Name="glück" />
-        <talent:Eigenschaft Name="mut" />
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="GL" />
+        <talent:Eigenschaft Name="MU" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25492,9 +25492,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Alchemischeswissen" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="intuition" />
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="KL" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25516,9 +25516,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Wettervorhersage" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="intuition" />
-        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="IN" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25536,9 +25536,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Anatomie" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="mut" />
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="feinmotorik" />
+        <talent:Eigenschaft Name="MU" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="FM" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25555,9 +25555,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Baukunst" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="feinmotorik" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="FM" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25584,9 +25584,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Geselchaftsspiele" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="IN" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25606,9 +25606,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Geschichtswissen" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="IN" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25629,9 +25629,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Mystik" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="IN" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25650,9 +25650,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Religion" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="IN" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25672,9 +25672,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Heraldik" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="feinmotorik" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="FM" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25694,9 +25694,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Hüttenkunde" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="intuition" />
-        <talent:Eigenschaft Name="konstitution" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="KO" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25716,9 +25716,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Kriegskunst" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="mut" />
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="sympathie" />
+        <talent:Eigenschaft Name="MU" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="SY" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25738,9 +25738,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Kryptographie" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="IN" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25775,9 +25775,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Magiekunde" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="IN" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25794,9 +25794,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Mechanik" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="feinmotorik" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="FM" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25833,9 +25833,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Philosophie" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="IN" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25852,9 +25852,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Rechtskunde" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="IN" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25871,9 +25871,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Schätzen" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="intuition" />
-        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="IN" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25890,9 +25890,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Sprachenkunde" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="IN" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25909,9 +25909,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Staatskunst" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="intuition" />
-        <talent:Eigenschaft Name="sympathie" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="SY" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25928,9 +25928,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Sternkunde" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="IN" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25946,9 +25946,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Giftkunde" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="mut" />
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="MU" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="IN" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25968,9 +25968,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Krankheitskunde" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="mut" />
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="sympathie" />
+        <talent:Eigenschaft Name="MU" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="SY" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -25995,9 +25995,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     <!--Handwerk BEGINN-->
     <Talent Id="Alchemie" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="feinmotorik" />
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="intuition" />
+        <talent:Eigenschaft Name="FM" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="IN" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26023,9 +26023,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Backen" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="intuition" />
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="feinmotorik" />
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="FM" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26050,9 +26050,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Kochen" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="intuition" />
-        <talent:Eigenschaft Name="feinmotorik" />
-        <talent:Eigenschaft Name="klugheit" />
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="FM" />
+        <talent:Eigenschaft Name="KL" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26078,9 +26078,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Abrichten" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="mut" />
-        <talent:Eigenschaft Name="intuition" />
-        <talent:Eigenschaft Name="sympathie" />
+        <talent:Eigenschaft Name="MU" />
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="SY" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26106,9 +26106,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Ackerbau" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="intuition" />
-        <talent:Eigenschaft Name="feinmotorik" />
-        <talent:Eigenschaft Name="konstitution" />
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="FM" />
+        <talent:Eigenschaft Name="KO" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26129,9 +26129,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Bergbau" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="intuition" />
-        <talent:Eigenschaft Name="konstitution" />
-        <talent:Eigenschaft Name="stärke" />
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="KO" />
+        <talent:Eigenschaft Name="ST" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26151,9 +26151,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Bogenbau" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="intuition" />
-        <talent:Eigenschaft Name="feinmotorik" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="FM" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26175,9 +26175,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Pfeilmacher" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="intuition" />
-        <talent:Eigenschaft Name="feinmotorik" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="FM" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26198,9 +26198,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Boote Fahren" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="gewandtheit" />
-        <talent:Eigenschaft Name="konstitution" />
-        <talent:Eigenschaft Name="stärke" />
+        <talent:Eigenschaft Name="GE" />
+        <talent:Eigenschaft Name="KO" />
+        <talent:Eigenschaft Name="ST" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26217,9 +26217,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Drucker" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="feinmotorik" />
-        <talent:Eigenschaft Name="stärke" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="FM" />
+        <talent:Eigenschaft Name="ST" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26236,9 +26236,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Fahrzeuge Lenken" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="intuition" />
-        <talent:Eigenschaft Name="sympathie" />
-        <talent:Eigenschaft Name="feinmotorik" />
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="SY" />
+        <talent:Eigenschaft Name="FM" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26255,9 +26255,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Falschspiel" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="mut" />
-        <talent:Eigenschaft Name="sympathie" />
-        <talent:Eigenschaft Name="feinmotorik" />
+        <talent:Eigenschaft Name="MU" />
+        <talent:Eigenschaft Name="SY" />
+        <talent:Eigenschaft Name="FM" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26274,9 +26274,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Feinmechanik" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="feinmotorik" />
-        <talent:Eigenschaft Name="feinmotorik" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="FM" />
+        <talent:Eigenschaft Name="FM" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26293,9 +26293,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Feuersteinbearbeitung" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="feinmotorik" />
-        <talent:Eigenschaft Name="feinmotorik" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="FM" />
+        <talent:Eigenschaft Name="FM" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26312,9 +26312,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Fleischer" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="feinmotorik" />
-        <talent:Eigenschaft Name="stärke" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="FM" />
+        <talent:Eigenschaft Name="ST" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26331,9 +26331,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Gerber" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="feinmotorik" />
-        <talent:Eigenschaft Name="konstitution" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="FM" />
+        <talent:Eigenschaft Name="KO" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26353,9 +26353,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Kürschner" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="feinmotorik" />
-        <talent:Eigenschaft Name="konstitution" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="FM" />
+        <talent:Eigenschaft Name="KO" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26375,9 +26375,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Glaskunst" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="feinmotorik" />
-        <talent:Eigenschaft Name="feinmotorik" />
-        <talent:Eigenschaft Name="konstitution" />
+        <talent:Eigenschaft Name="FM" />
+        <talent:Eigenschaft Name="FM" />
+        <talent:Eigenschaft Name="KO" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26394,9 +26394,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Schmieden" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="feinmotorik" />
-        <talent:Eigenschaft Name="konstitution" />
-        <talent:Eigenschaft Name="stärke" />
+        <talent:Eigenschaft Name="FM" />
+        <talent:Eigenschaft Name="KO" />
+        <talent:Eigenschaft Name="ST" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26413,9 +26413,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Handel" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="intuition" />
-        <talent:Eigenschaft Name="sympathie" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="SY" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26441,9 +26441,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Hauswirtschaft" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="intuition" />
-        <talent:Eigenschaft Name="sympathie" />
-        <talent:Eigenschaft Name="feinmotorik" />
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="SY" />
+        <talent:Eigenschaft Name="FM" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26461,9 +26461,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Wundenversorgung" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="sympathie" />
-        <talent:Eigenschaft Name="feinmotorik" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="SY" />
+        <talent:Eigenschaft Name="FM" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26483,9 +26483,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Holzbearbeitung" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="feinmotorik" />
-        <talent:Eigenschaft Name="stärke" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="FM" />
+        <talent:Eigenschaft Name="ST" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26502,9 +26502,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Instrumentenbauer" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="intuition" />
-        <talent:Eigenschaft Name="feinmotorik" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="FM" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26521,9 +26521,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Kartographie" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="feinmotorik" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="FM" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26551,9 +26551,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Lederarbeiten" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="feinmotorik" />
-        <talent:Eigenschaft Name="feinmotorik" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="FM" />
+        <talent:Eigenschaft Name="FM" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26570,9 +26570,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Zeichnen" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="intuition" />
-        <talent:Eigenschaft Name="feinmotorik" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="FM" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26593,9 +26593,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Malen" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="intuition" />
-        <talent:Eigenschaft Name="intuition" />
-        <talent:Eigenschaft Name="feinmotorik" />
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="FM" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26616,9 +26616,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Maurer" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="feinmotorik" />
-        <talent:Eigenschaft Name="gewandtheit" />
-        <talent:Eigenschaft Name="stärke" />
+        <talent:Eigenschaft Name="FM" />
+        <talent:Eigenschaft Name="GE" />
+        <talent:Eigenschaft Name="ST" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26635,9 +26635,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Metallguss" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="feinmotorik" />
-        <talent:Eigenschaft Name="stärke" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="FM" />
+        <talent:Eigenschaft Name="ST" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26654,9 +26654,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Musizieren" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="intuition" />
-        <talent:Eigenschaft Name="sympathie" />
-        <talent:Eigenschaft Name="feinmotorik" />
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="SY" />
+        <talent:Eigenschaft Name="FM" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26673,9 +26673,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Schlösser Knacken" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="intuition" />
-        <talent:Eigenschaft Name="feinmotorik" />
-        <talent:Eigenschaft Name="feinmotorik" />
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="FM" />
+        <talent:Eigenschaft Name="FM" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26695,9 +26695,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Schnaps brennen" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="intuition" />
-        <talent:Eigenschaft Name="feinmotorik" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="FM" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26714,9 +26714,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Schneidern" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="feinmotorik" />
-        <talent:Eigenschaft Name="feinmotorik" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="FM" />
+        <talent:Eigenschaft Name="FM" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26736,9 +26736,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Seefahrt" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="feinmotorik" />
-        <talent:Eigenschaft Name="gewandtheit" />
-        <talent:Eigenschaft Name="stärke" />
+        <talent:Eigenschaft Name="FM" />
+        <talent:Eigenschaft Name="GE" />
+        <talent:Eigenschaft Name="ST" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26759,9 +26759,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Seiler" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="feinmotorik" />
-        <talent:Eigenschaft Name="feinmotorik" />
-        <talent:Eigenschaft Name="stärke" />
+        <talent:Eigenschaft Name="FM" />
+        <talent:Eigenschaft Name="FM" />
+        <talent:Eigenschaft Name="ST" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26778,9 +26778,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Steinmetz" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="feinmotorik" />
-        <talent:Eigenschaft Name="feinmotorik" />
-        <talent:Eigenschaft Name="stärke" />
+        <talent:Eigenschaft Name="FM" />
+        <talent:Eigenschaft Name="FM" />
+        <talent:Eigenschaft Name="ST" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26797,9 +26797,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Juwelier" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="intuition" />
-        <talent:Eigenschaft Name="feinmotorik" />
-        <talent:Eigenschaft Name="feinmotorik" />
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="FM" />
+        <talent:Eigenschaft Name="FM" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26816,9 +26816,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Stellmacher" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="feinmotorik" />
-        <talent:Eigenschaft Name="stärke" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="FM" />
+        <talent:Eigenschaft Name="ST" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26835,9 +26835,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Stoffe Färben" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="feinmotorik" />
-        <talent:Eigenschaft Name="stärke" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="FM" />
+        <talent:Eigenschaft Name="ST" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26854,9 +26854,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Tätowieren" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="intuition" />
-        <talent:Eigenschaft Name="feinmotorik" />
-        <talent:Eigenschaft Name="feinmotorik" />
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="FM" />
+        <talent:Eigenschaft Name="FM" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26876,9 +26876,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Töpfern" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="feinmotorik" />
-        <talent:Eigenschaft Name="feinmotorik" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="FM" />
+        <talent:Eigenschaft Name="FM" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26895,9 +26895,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Viehzucht" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="intuition" />
-        <talent:Eigenschaft Name="stärke" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="ST" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26917,9 +26917,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Webkunst" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="feinmotorik" />
-        <talent:Eigenschaft Name="feinmotorik" />
-        <talent:Eigenschaft Name="stärke" />
+        <talent:Eigenschaft Name="FM" />
+        <talent:Eigenschaft Name="FM" />
+        <talent:Eigenschaft Name="ST" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26936,9 +26936,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Winzer" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="feinmotorik" />
-        <talent:Eigenschaft Name="stärke" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="FM" />
+        <talent:Eigenschaft Name="ST" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26955,9 +26955,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Zimmermann" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="feinmotorik" />
-        <talent:Eigenschaft Name="stärke" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="FM" />
+        <talent:Eigenschaft Name="ST" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26976,9 +26976,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Fallenstellen" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="klugheit" />
-        <talent:Eigenschaft Name="feinmotorik" />
-        <talent:Eigenschaft Name="stärke" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="FM" />
+        <talent:Eigenschaft Name="ST" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -26995,9 +26995,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
 
     <Talent Id="Fesseln" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="feinmotorik" />
-        <talent:Eigenschaft Name="gewandtheit" />
-        <talent:Eigenschaft Name="stärke" />
+        <talent:Eigenschaft Name="FM" />
+        <talent:Eigenschaft Name="GE" />
+        <talent:Eigenschaft Name="ST" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -27013,9 +27013,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Fischen" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="intuition" />
-        <talent:Eigenschaft Name="feinmotorik" />
-        <talent:Eigenschaft Name="stärke" />
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="FM" />
+        <talent:Eigenschaft Name="ST" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
@@ -27031,9 +27031,9 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
     </Talent>
     <Talent Id="Wildnisleben" Komplexität="B">
       <Probe>
-        <talent:Eigenschaft Name="intuition" />
-        <talent:Eigenschaft Name="gewandtheit" />
-        <talent:Eigenschaft Name="konstitution" />
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="GE" />
+        <talent:Eigenschaft Name="KO" />
       </Probe>
       <misc:Name>
         <misc:Lokalisirung Sprache="de">
