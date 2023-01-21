@@ -23250,11 +23250,11 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
         </misc:Level>
 
 
-        <misc:Level Id="Resturant" WiederhoteNutzung="1">
+        <misc:Level Id="Restaurant" WiederhoteNutzung="1">
           <misc:Kosten Id="Kultur" Berechnung="20" />
           <misc:Name>
-            <misc:Lokalisirung Sprache="de">Returant Koch</misc:Lokalisirung>
-            <misc:Lokalisirung Sprache="de" Geschlecht="Weiblich">Returant Köchin</misc:Lokalisirung>
+            <misc:Lokalisirung Sprache="de">Restaurant Koch</misc:Lokalisirung>
+            <misc:Lokalisirung Sprache="de" Geschlecht="Weiblich">Restaurant Köchin</misc:Lokalisirung>
           </misc:Name>
 
           <misc:Voraussetzung>
@@ -23279,7 +23279,7 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
           <misc:Voraussetzung>
             <misc:LevelVoraussetzung>
               <misc:And>
-                <misc:Level Id="Resturant" />
+                <misc:Level Id="Restaurant" />
               </misc:And>
             </misc:LevelVoraussetzung>
           </misc:Voraussetzung>
