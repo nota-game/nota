@@ -70,6 +70,7 @@ Kategorien verordnet werden:
 
  + **Fortschritt** 
    Jeder Punkt in diesem Bereich bringt einen auf dem Weg zum Ziel näher.
+
    +-------------+----+----+----+----+----+-----+-----+-----+
    | Punkte      | 0  | 1+ | 2+ | 4+ | 8+ | 16+ | 32+ | ... |
    +-------------+----+----+----+----+----+-----+-----+-----+ 
@@ -78,6 +79,7 @@ Kategorien verordnet werden:
 
  + **Qualität**
    Je mehr Punkte in diesen Bereich gesteckt werden desto höher die Qualität des Werkes.
+
    +-------------+----+----+----+----+----+-----+-----+-----+
    | Punkte      | 0  | 1+ | 2+ | 4+ | 8+ | 16+ | 32+ | ... |
    +-------------+----+----+----+----+----+-----+-----+-----+ 
