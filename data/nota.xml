@@ -27966,58 +27966,6 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
       </besonderheit:Stufe>
     </Besonderheit>
   </Besonderheiten>
-  <Besonderheiten xmlns="http://nota.org/schema/besonderheit.xsd" KategorieId="Nachteile">
-    <besonderheit:Kategorie>
-      <misc:Lokalisirung Sprache="de">
-        <![CDATA[Nachteile]]>
-      </misc:Lokalisirung>
-    </besonderheit:Kategorie>
-
-    <besonderheit:Besonderheit Id="Arm">
-      <misc:Name>
-        <misc:Lokalisirung Sprache="de">Arm</misc:Lokalisirung>
-      </misc:Name>
-      <besonderheit:Stufe>
-        <misc:Beschreibung>
-          <misc:Lokalisirung Sprache="de">Dem Charakter staht wenig Geld zur verfügung.</misc:Lokalisirung>
-        </misc:Beschreibung>
-        <misc:Kosten Id="GP" Berechnung="-2" />
-        <besonderheit:Voraussetzung>
-          <besonderheit:Not>
-            <besonderheit:Besonderheit Id="Wohlhabend" />
-          </besonderheit:Not>
-        </besonderheit:Voraussetzung>
-      </besonderheit:Stufe>
-      <besonderheit:Stufe>
-        <misc:Name>
-          <misc:Lokalisirung Sprache="de">Mittellos</misc:Lokalisirung>
-        </misc:Name>
-        <misc:Beschreibung>
-          <misc:Lokalisirung Sprache="de">Dem Charakter staht kein Geld zur verfügung.</misc:Lokalisirung>
-        </misc:Beschreibung>
-        <misc:Kosten Id="GP" Berechnung="-4" />
-      </besonderheit:Stufe>
-    </besonderheit:Besonderheit>
-
-    <besonderheit:Besonderheit Id="Kurzatmig">
-      <misc:Name>
-        <misc:Lokalisirung Sprache="de">Kurzatmig</misc:Lokalisirung>
-      </misc:Name>
-      <besonderheit:Stufe>
-        <misc:Beschreibung>
-          <misc:Lokalisirung Sprache="de"><![CDATA[Der Charakter wird schnell von Anstrengungen übermannt. Jedesmal Wenn der Charakter Ausdauer ausgibt wegen Anstrengungen, kostet Ihn dies eine Aussdauer mehr.]]></misc:Lokalisirung>
-        </misc:Beschreibung>
-        <misc:Kosten Id="GP" Berechnung="-2" />
-      </besonderheit:Stufe>
-      <besonderheit:Stufe>
-        <misc:Beschreibung>
-          <misc:Lokalisirung Sprache="de"><![CDATA[Der Charakter wird schnell von Anstrengungen übermannt. Jedesmal Wenn der Charakter Ausdauer ausgibt wegen Anstrengungen, kostet Ihn dies 2 Aussdauer mehr.]]></misc:Lokalisirung>
-        </misc:Beschreibung>
-        <misc:Kosten Id="GP" Berechnung="-4" />
-      </besonderheit:Stufe>
-    </besonderheit:Besonderheit>
-
-  </Besonderheiten>
   <Besonderheiten xmlns="http://nota.org/schema/besonderheit.xsd" KategorieId="Vorteile">
     <besonderheit:Kategorie>
       <misc:Lokalisirung Sprache="de">
@@ -28180,6 +28128,74 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
       </besonderheit:Stufe>
     </besonderheit:Besonderheit>
 
+    <besonderheit:Besonderheit Id="Begabung Talent">
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de"><![CDATA[Begabung]]></misc:Lokalisirung>
+      </misc:Name>
+      <besonderheit:Parameter>
+        <misc:Talent></misc:Talent>
+      </besonderheit:Parameter>
+      <besonderheit:Stufe>
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Der Charakter hat ein Händchen für das gewählte Talent. Die Qualität einer Probe ist um eins Höher.]]></misc:Lokalisirung>
+        </misc:Beschreibung>
+        <misc:Kosten Id="GP" Berechnung="5" />
+      </besonderheit:Stufe>
+      
+    </besonderheit:Besonderheit>
+
+    <besonderheit:Besonderheit Id="Effizienter Handwerker">
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de"><![CDATA[Effizienter Handwerker]]></misc:Lokalisirung>
+      </misc:Name>
+      <besonderheit:Stufe>
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Bei langfritigen Handwerksproben, gibt jede Probe einen Zusätzlichen Fortschritspunkt, sofern sie bestanden wurde.]]></misc:Lokalisirung>
+        </misc:Beschreibung>
+        <misc:Kosten Id="GP" Berechnung="3" />
+      </besonderheit:Stufe>
+    </besonderheit:Besonderheit>
+
+    <besonderheit:Besonderheit Id="Gewissenhafter Handwerker">
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de"><![CDATA[Gewissenhafter Handwerker]]></misc:Lokalisirung>
+      </misc:Name>
+      <besonderheit:Stufe>
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Jede Handwerksprobe, sofern bestanden, erhält einen zusätzlichen Qualitätspunkt.]]></misc:Lokalisirung>
+        </misc:Beschreibung>
+        <misc:Kosten Id="GP" Berechnung="5" />
+      </besonderheit:Stufe>
+    </besonderheit:Besonderheit>
+
+    <besonderheit:Besonderheit Id="Forscher">
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de"><![CDATA[Forscher]]></misc:Lokalisirung>
+      </misc:Name>
+      <besonderheit:Stufe>
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Jede Probe die der Erforschung oder Recherche dient erhält einen zusätzlichen Qualitätspunkt, sofern bestanden.]]></misc:Lokalisirung>
+        </misc:Beschreibung>
+        <misc:Kosten Id="GP" Berechnung="4" />
+      </besonderheit:Stufe>
+    </besonderheit:Besonderheit>
+
+    <besonderheit:Besonderheit Id="Effiziente Forscher">
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de"><![CDATA[Forscher]]></misc:Lokalisirung>
+      </misc:Name>
+      <besonderheit:Stufe>
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Jede Probe die der Erforschung oder Recherche dient erhält der Charakter einen zusätzlichen Fortschrittspunkt, sofern bestanden.]]></misc:Lokalisirung>
+        </misc:Beschreibung>
+        <misc:Kosten Id="GP" Berechnung="3" />
+      </besonderheit:Stufe>
+    </besonderheit:Besonderheit>
 
     <Besonderheit Id="Beidhändig">
       <misc:Name>
@@ -28197,7 +28213,81 @@ Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin 
         <misc:Kosten Id="GP" Berechnung="3" />
       </besonderheit:Stufe>
     </Besonderheit>
+  </Besonderheiten>  <Besonderheiten xmlns="http://nota.org/schema/besonderheit.xsd" KategorieId="Nachteile">
+    <besonderheit:Kategorie>
+      <misc:Lokalisirung Sprache="de">
+        <![CDATA[Nachteile]]>
+      </misc:Lokalisirung>
+    </besonderheit:Kategorie>
+
+    <besonderheit:Besonderheit Id="Arm">
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">Arm</misc:Lokalisirung>
+      </misc:Name>
+      <besonderheit:Stufe>
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">Dem Charakter staht wenig Geld zur verfügung.</misc:Lokalisirung>
+        </misc:Beschreibung>
+        <misc:Kosten Id="GP" Berechnung="-2" />
+        <besonderheit:Voraussetzung>
+          <besonderheit:Not>
+            <besonderheit:Besonderheit Id="Wohlhabend" />
+          </besonderheit:Not>
+        </besonderheit:Voraussetzung>
+      </besonderheit:Stufe>
+      <besonderheit:Stufe>
+        <misc:Name>
+          <misc:Lokalisirung Sprache="de">Mittellos</misc:Lokalisirung>
+        </misc:Name>
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">Dem Charakter staht kein Geld zur verfügung.</misc:Lokalisirung>
+        </misc:Beschreibung>
+        <misc:Kosten Id="GP" Berechnung="-4" />
+      </besonderheit:Stufe>
+    </besonderheit:Besonderheit>
+
+    <besonderheit:Besonderheit Id="Kurzatmig">
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">Kurzatmig</misc:Lokalisirung>
+      </misc:Name>
+      <besonderheit:Stufe>
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de"><![CDATA[Der Charakter wird schnell von Anstrengungen übermannt. Jedesmal Wenn der Charakter Ausdauer ausgibt wegen Anstrengungen, kostet Ihn dies eine Aussdauer mehr.]]></misc:Lokalisirung>
+        </misc:Beschreibung>
+        <misc:Kosten Id="GP" Berechnung="-2" />
+      </besonderheit:Stufe>
+      <besonderheit:Stufe>
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de"><![CDATA[Der Charakter wird schnell von Anstrengungen übermannt. Jedesmal Wenn der Charakter Ausdauer ausgibt wegen Anstrengungen, kostet Ihn dies 2 Aussdauer mehr.]]></misc:Lokalisirung>
+        </misc:Beschreibung>
+        <misc:Kosten Id="GP" Berechnung="-4" />
+      </besonderheit:Stufe>
+    </besonderheit:Besonderheit>
+
+    <besonderheit:Besonderheit Id="Lahm">
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de"><![CDATA[Lahm]]></misc:Lokalisirung>
+      </misc:Name>
+      <besonderheit:Stufe>
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Der Charakter Kann sich nicht so schnell fortbewegen. Die Qualität aller Proben die zur bestimmung der Geschwindigkeit dienen, werden halbiert.]]>
+          </misc:Lokalisirung>
+        </misc:Beschreibung>
+        <misc:Kosten Id="GP" Berechnung="-4" />
+      </besonderheit:Stufe>
+      <besonderheit:Stufe>
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Der Charakter hat Probleme mit anderenn mitzuhalten. Er bewegt sich nur halb so schnell wie andere, zusätzlich ist die Qualität aller Proben die zur bestimmung der Geschwindigkeit dienen, werden halbiert.]]>
+          </misc:Lokalisirung>
+        </misc:Beschreibung>
+        <misc:Kosten Id="GP" Berechnung="-7" />
+      </besonderheit:Stufe>
+    </besonderheit:Besonderheit>
+
   </Besonderheiten>
+
 
   <Taktiken xmlns="http://nota.org/schema/kampf/aktionen.xsd">
     <Taktik Id="Angriff" Kosten="2" Belastung="1" Typ="Offensiv">

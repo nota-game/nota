@@ -56,23 +56,46 @@ Punkten vorzugeben, welche überbehalten werden muss.
 Manche Aufgaben sind umfangreicher als andere. Eine einzelne Probe bezieht sich
 normalerweise auf eine kurze Aktion, wie das Überspringen eines Flusses oder das
 Singen eines Liedes bezieht, können langfristige Aufgaben, wie das Bauen eines
-Klaviers durchaus mehrere Proben beinhalten. Die Anzahl der benötigten Proben,
-erlaubt es herauszufinden, wie schnell die Aufgabe erledigt wurde. Um den Umfang
-einer Aufgabe festzulegen, gibt man einen Punktewert an, den es zu erreichen
-gilt. Jeder überbehaltene Punkt einer Probe kann einer der folgenden beiden
+Klaviers durchaus mehrere Proben beinhalten.
+
+Die Anzahl der benötigten Proben, erlaubt es herauszufinden, wie schnell die
+Aufgabe erledigt wurde. Um den Umfang einer Aufgabe festzulegen, gibt man einen
+Fortschritswert an, den es zu erreichen gilt, die Dauer die eine Probe benötigt,
+sowie eine Erschwernis der Proben. Es sollte dem Spieler auch grob vermittelt
+werden Welche Qualität er erreichen sollte wenn er eine Bestimmtes Resultat vor
+Augen hat.
+
+Jeder überbehaltene Punkt einer Probe kann einer der folgenden beiden
 Kategorien verordnet werden:
 
  + **Fortschritt** 
    Jeder Punkt in diesem Bereich bringt einen auf dem Weg zum Ziel näher.
+   +-------------+----+----+----+----+----+-----+-----+-----+
+   | Punkte      | 0  | 1+ | 2+ | 4+ | 8+ | 16+ | 32+ | ... |
+   +-------------+----+----+----+----+----+-----+-----+-----+ 
+   | Fortschritt | 0  | 1  | 2  |  3 |  4 |  5  |  6  | ... |
+   +-------------+----+----+----+----+----+-----+-----+-----+
+
  + **Qualität**
    Je mehr Punkte in diesen Bereich gesteckt werden desto höher die Qualität des Werkes.
+   +-------------+----+----+----+----+----+-----+-----+-----+
+   | Punkte      | 0  | 1+ | 2+ | 4+ | 8+ | 16+ | 32+ | ... |
+   +-------------+----+----+----+----+----+-----+-----+-----+ 
+   | Qualität    | 0  | 1  | 2  |  3 |  4 |  5  |  6  | ... |
+   +-------------+----+----+----+----+----+-----+-----+-----+
+
    
-Sobald der Punktewert der den Umfang der Aufgabe angibt, erreicht bzw.
-überschritten wurde, ist die Aufgabe beendet. Will man nun wissen, wie gut die
-Aufgabe erledigt wurde, teilt man die Punkte, welche in die Kategorie Qualität
-investiert wurden, durch die Anzahl der versuche. Natürlich können auch hier die
-einzelnen Proben modifiziert werden. Auch können die einzelnen Proben auf
-unterschiedliche Talente abgelegt werden.
+
+Sobald der vorgegebene Fortschrittswert erreicht bzw.
+überschritten wurde, ist die Aufgabe beendet. Die Qualität entspricht der
+niedrigsten erreichten Qualität. 
+
+Je nach Vorhaben, können verschiedene Personen parallel Proben durchführen, auch
+können die einzelnen Proben auf unterschiedliche Talente abgelegt werden.
+
+Eine fehlgeschlagene Probe Ruiniert normalerweise nicht das gesamte Projekt
+sondern verhindert lediglich das man weiter kommt. Ein Patzer kann aber durchaus
+einige Fortschrittspunkte kosten.
 
 ## Vergleichende Proben
 Bei einer vergleichenden Probe legen beide Charaktere eine Probe ab. Welcher
