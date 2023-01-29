@@ -1,0 +1,67 @@
+<Fertigkeiten xmlns="http://nota.org/schema/fertigkeit.xsd" KategorieId="Kampf"
+xmlns:nota='http://nota.org/schema/nota.xsd' xmlns:misc='http://nota.org/schema/misc.xsd'
+xmlns:lebewesen="http://nota.org/schema/lebewesen.xsd"
+xmlns:pfad="http://nota.org/schema/pfad.xsd" xmlns:talent="http://nota.org/schema/talent.xsd"
+xmlns:fertigkeit="http://nota.org/schema/fertigkeit.xsd"
+xmlns:besonderheit="http://nota.org/schema/besonderheit.xsd"
+xmlns:Belastung="http://nota.org/schema/kampf/aktionen.xsd"
+xmlns:ausstattung="http://nota.org/schema/kampf/ausstattung.xsd"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+>
+    <fertigkeit:Kategorie>
+      <misc:Lokalisirung Sprache="de">
+        <![CDATA[Handwerk]]>
+      </misc:Lokalisirung>
+    </fertigkeit:Kategorie>
+
+    <fertigkeit:Fertigkeit Id="Leibwächter">
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Leibwächter]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <fertigkeit:Stufe Kosten="100">
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Kann die Taktik Schützen zu halbiertenKosten nutzen]]>
+          </misc:Lokalisirung>
+        </misc:Beschreibung>
+        <fertigkeit:Verbreitung Wert="5"></fertigkeit:Verbreitung>
+      </fertigkeit:Stufe>
+    </fertigkeit:Fertigkeit>
+
+    <fertigkeit:Fertigkeit Id="Kampfkontrolle">
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Kampfkontrolle]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <fertigkeit:Stufe Kosten="100">
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Bei der bestimmung der Trefferzonen wird eine mehr bestimmt. Der Charakter kann eine ablegen die der Gegner nicht bestimmen kann.]]>
+          </misc:Lokalisirung>
+        </misc:Beschreibung>
+        <fertigkeit:Verbreitung Wert="4"></fertigkeit:Verbreitung>
+        <fertigkeit:Voraussetzung>
+          <talent:Talent Id="Kampfgespür" Level="10" />
+        </fertigkeit:Voraussetzung>
+      </fertigkeit:Stufe>
+    </fertigkeit:Fertigkeit>
+
+    <fertigkeit:Fertigkeit Id="Schildkampf">
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">Schildkampf</misc:Lokalisirung>
+      </misc:Name>
+      <fertigkeit:Stufe Kosten="30">
+
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Die kunst Schildkampf]]>
+          </misc:Lokalisirung>
+        </misc:Beschreibung>
+        <fertigkeit:Verbreitung Wert="4"></fertigkeit:Verbreitung>
+      </fertigkeit:Stufe>
+    </fertigkeit:Fertigkeit>
+  </Fertigkeiten>

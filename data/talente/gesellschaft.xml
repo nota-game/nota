@@ -1,0 +1,296 @@
+
+  <Talente xmlns="http://nota.org/schema/talent.xsd" KategorieId="Gesellschaft"
+  xmlns:nota='http://nota.org/schema/nota.xsd' xmlns:misc='http://nota.org/schema/misc.xsd'
+  xmlns:lebewesen="http://nota.org/schema/lebewesen.xsd"
+  xmlns:pfad="http://nota.org/schema/pfad.xsd" xmlns:talent="http://nota.org/schema/talent.xsd"
+  xmlns:fertigkeit="http://nota.org/schema/fertigkeit.xsd"
+  xmlns:besonderheit="http://nota.org/schema/besonderheit.xsd"
+  xmlns:Belastung="http://nota.org/schema/kampf/aktionen.xsd"
+  xmlns:ausstattung="http://nota.org/schema/kampf/ausstattung.xsd"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+>
+    <talent:Kategorie>
+      <misc:Lokalisirung Sprache="de">
+        <![CDATA[Gesellschft]]>
+      </misc:Lokalisirung>
+    </talent:Kategorie>
+
+    <!--Gesellschaft BEGINN-->
+    <Talent Id="Menschenkentniss" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="AN" />
+        <talent:Eigenschaft Name="SY" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Menschenkentniss]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Wahrnehmung" Anzahl="5" />
+        <talent:Ableitung Id="Seelsorge" Anzahl="3" />
+      </talent:Ableitungen>
+
+    </Talent>
+    <Talent Id="Verführen" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="MU" />
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="SY" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Verführen]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Wahrnehmung" Anzahl="5" />
+        <talent:Ableitung Id="Menschenkentniss" Anzahl="3" />
+      </talent:Ableitungen>
+
+    </Talent>
+    <Talent Id="Lügen" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="MU" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="SY" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Lügen]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Menschenkentniss" Anzahl="3" />
+        <talent:Ableitung Id="Überreden" Anzahl="5" />
+      </talent:Ableitungen>
+    </Talent>
+    <Talent Id="Überreden" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="SY" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Überreden]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Menschenkentniss" Anzahl="3" />
+        <talent:Ableitung Id="Lügen" Anzahl="3" />
+      </talent:Ableitungen>
+    </Talent>
+    <Talent Id="Einschüchtern" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="MU" />
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="AN" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Einschüchtern]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Menschenkentniss" Anzahl="5" />
+        <talent:Ableitung Id="Überreden" Anzahl="4" />
+      </talent:Ableitungen>
+    </Talent>
+
+    <Talent Id="Lehren" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="SY" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Lehren]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Menschenkentniss" Anzahl="4" />
+        <talent:Ableitung Id="Überreden" Anzahl="6" />
+      </talent:Ableitungen>
+    </Talent>
+
+    <Talent Id="Schauspielerei" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="MU" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="SY" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Schauspielerei]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Menschenkentniss" Anzahl="4" />
+        <talent:Ableitung Id="Überreden" Anzahl="7" />
+        <talent:Ableitung Id="Lügen" Anzahl="7" />
+      </talent:Ableitungen>
+    </Talent>
+
+    <Talent Id="Schriftlicher Ausdruck" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="IN" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Schriftlicher Ausdruck]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+      <talent:Level Wert="1">
+        <talent:Voraussetzung>
+          <misc:Tag Id="Lesen und Schreiben" />
+        </talent:Voraussetzung>
+      </talent:Level>
+    </Talent>
+    <Talent Id="Etikette" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="SY" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Etikette]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+    </Talent>
+    <Talent Id="Seelsorge" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="SY" />
+        <talent:Eigenschaft Name="SY" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Seelsorge]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+      <talent:Level Wert="4">
+        <talent:Voraussetzung>
+          <talent:Talent Id="Menschenkentniss" Level="5" />
+        </talent:Voraussetzung>
+      </talent:Level>
+      <talent:Level Wert="8">
+        <talent:Voraussetzung>
+          <talent:Talent Id="Menschenkentniss" Level="10" />
+        </talent:Voraussetzung>
+      </talent:Level>
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Menschenkentniss" Anzahl="4" />
+        <talent:Ableitung Id="Überreden" Anzahl="7" />
+      </talent:Ableitungen>
+    </Talent>
+
+
+    <Talent Id="Sich Verkleiden" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="MU" />
+        <talent:Eigenschaft Name="SY" />
+        <talent:Eigenschaft Name="GE" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Sich Verkleiden]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+    </Talent>
+
+    <Talent Id="Tanzen" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="GE" />
+        <talent:Eigenschaft Name="KO" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Tanzen]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Körperbeherschung" Anzahl="3" />
+      </talent:Ableitungen>
+
+    </Talent>
+    <!--Wissen BEGINN-->
+  </Talente>

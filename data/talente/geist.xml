@@ -1,0 +1,189 @@
+
+  <Talente xmlns="http://nota.org/schema/talent.xsd" KategorieId="Geist"
+  xmlns:nota='http://nota.org/schema/nota.xsd' xmlns:misc='http://nota.org/schema/misc.xsd'
+  xmlns:lebewesen="http://nota.org/schema/lebewesen.xsd"
+  xmlns:pfad="http://nota.org/schema/pfad.xsd" xmlns:talent="http://nota.org/schema/talent.xsd"
+  xmlns:fertigkeit="http://nota.org/schema/fertigkeit.xsd"
+  xmlns:besonderheit="http://nota.org/schema/besonderheit.xsd"
+  xmlns:Belastung="http://nota.org/schema/kampf/aktionen.xsd"
+  xmlns:ausstattung="http://nota.org/schema/kampf/ausstattung.xsd"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+  >
+    <talent:Kategorie>
+      <misc:Lokalisirung Sprache="de">
+        <![CDATA[Geistig]]>
+      </misc:Lokalisirung>
+    </talent:Kategorie>
+
+    <!--Geist BEGINN-->
+    <Talent Id="Fährtensuche" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="FO" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Fährtensuche]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Wahrnehmung" Anzahl="5" />
+        <talent:Ableitung Id="Sehen" Anzahl="3" />
+      </talent:Ableitungen>
+
+    </Talent>
+
+    <Talent Id="Orientierung" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="IN" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Orientierung]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+    </Talent>
+
+    <Talent Id="Selbstbeherchung" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="MU" />
+        <talent:Eigenschaft Name="MU" />
+        <talent:Eigenschaft Name="KL" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Selbstbeherchung]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+    </Talent>
+    <Talent Id="Wahrnehmung" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="KL" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Wahrnehmung]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+      <Ableitungen>
+        <Ableitung Id="Sehen" Anzahl="3" />
+        <Ableitung Id="Hören" Anzahl="3" />
+        <Ableitung Id="Fühlen" Anzahl="4" />
+        <Ableitung Id="Riechen und Schmecken" Anzahl="5" />
+      </Ableitungen>
+    </Talent>
+    <Talent Id="Sehen" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="KL" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Sehen]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+      <Ableitungen>
+        <Ableitung Id="Wahrnehmung" Anzahl="4" />
+      </Ableitungen>
+    </Talent>
+    <Talent Id="Hören" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="KL" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Hören]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+      <Ableitungen>
+        <Ableitung Id="Wahrnehmung" Anzahl="4" />
+      </Ableitungen>
+    </Talent>
+    <Talent Id="Riechen und Schmecken" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="KL" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Riechen und Schmecken]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+      <Ableitungen>
+        <Ableitung Id="Wahrnehmung" Anzahl="6" />
+      </Ableitungen>
+    </Talent>
+    <Talent Id="Fühlen" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="FM" />
+        <talent:Eigenschaft Name="KL" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Fühlen]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+      <Ableitungen>
+        <Ableitung Id="Wahrnehmung" Anzahl="5" />
+      </Ableitungen>
+    </Talent>
+  </Talente>

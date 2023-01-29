@@ -1,0 +1,257 @@
+<Besonderheiten xmlns="http://nota.org/schema/besonderheit.xsd"
+    xmlns:nota='http://nota.org/schema/nota.xsd' xmlns:misc='http://nota.org/schema/misc.xsd'
+    xmlns:lebewesen="http://nota.org/schema/lebewesen.xsd"
+    xmlns:pfad="http://nota.org/schema/pfad.xsd" xmlns:talent="http://nota.org/schema/talent.xsd"
+    xmlns:fertigkeit="http://nota.org/schema/fertigkeit.xsd"
+    xmlns:besonderheit="http://nota.org/schema/besonderheit.xsd"
+    xmlns:Belastung="http://nota.org/schema/kampf/aktionen.xsd"
+    xmlns:ausstattung="http://nota.org/schema/kampf/ausstattung.xsd"
+    KategorieId="Vorteile">
+    <besonderheit:Kategorie>
+        <misc:Lokalisirung Sprache="de">
+            <![CDATA[Vorteil]]>
+          </misc:Lokalisirung>
+    </besonderheit:Kategorie>
+
+    <besonderheit:Besonderheit Id="Unauffällig">
+        <misc:Name>
+            <misc:Lokalisirung Sprache="de">
+              <![CDATA[Unauffällig]]>
+            </misc:Lokalisirung>
+        </misc:Name>
+        <besonderheit:Stufe>
+            <misc:Beschreibung>
+                <misc:Lokalisirung Sprache="de">
+                <![CDATA[Der Charakter bleibt niemanden lange im Gedächtniss solange er nicht ausgibig interagiert.]]>
+              </misc:Lokalisirung>
+            </misc:Beschreibung>
+            <misc:Kosten Id="GP" Berechnung="3" />
+            <besonderheit:Voraussetzung>
+                <besonderheit:Not>
+                    <besonderheit:Besonderheit Id="Auffällig" />
+                </besonderheit:Not>
+            </besonderheit:Voraussetzung>
+        </besonderheit:Stufe>
+    </besonderheit:Besonderheit>
+    <besonderheit:Besonderheit Id="Gutes Gehör">
+        <misc:Name>
+            <misc:Lokalisirung Sprache="de">
+              <![CDATA[Gutes Gehör]]>
+            </misc:Lokalisirung>
+        </misc:Name>
+        <besonderheit:Stufe>
+            <misc:Beschreibung>
+                <misc:Lokalisirung Sprache="de">
+                <![CDATA[Alle erschwernisse auf das talent Hören sind halbiet, auf das talent Wahrnehmung erleichtert um 2. Die Quarität jeder Probe ist um eins erhöt]]>
+              </misc:Lokalisirung>
+            </misc:Beschreibung>
+            <misc:Kosten Id="GP" Berechnung="5" />
+        </besonderheit:Stufe>
+    </besonderheit:Besonderheit>
+    <besonderheit:Besonderheit Id="Meermensch" Gebunden="true">
+        <misc:Name>
+            <misc:Lokalisirung Sprache="de">
+              <![CDATA[Meermensch]]>
+            </misc:Lokalisirung>
+        </misc:Name>
+        <besonderheit:Stufe>
+            <misc:Beschreibung>
+                <misc:Lokalisirung Sprache="de">
+                <![CDATA[Die fähigkeit der Meermenschn unter Wasser Kimen und eine Schwanzflosse zu bilden.]]>
+              </misc:Lokalisirung>
+            </misc:Beschreibung>
+        </besonderheit:Stufe>
+    </besonderheit:Besonderheit>
+    <besonderheit:Besonderheit Id="Glückspilz">
+        <misc:Name>
+            <misc:Lokalisirung Sprache="de">
+              <![CDATA[Glückspilz]]>
+            </misc:Lokalisirung>
+        </misc:Name>
+        <besonderheit:Stufe>
+            <misc:Beschreibung>
+                <misc:Lokalisirung Sprache="de">
+                <![CDATA[Erhalte +3GlP]]>
+              </misc:Lokalisirung>
+            </misc:Beschreibung>
+            <besonderheit:Mods>
+                <misc:Eigenschaften>
+                    <lebewesen:Mod Eigenschaft="GlP" Mod="3" />
+
+                </misc:Eigenschaften>
+            </besonderheit:Mods>
+        </besonderheit:Stufe>
+    </besonderheit:Besonderheit>
+    <besonderheit:Besonderheit Id="Glücksritter">
+        <misc:Name>
+            <misc:Lokalisirung Sprache="de">
+              <![CDATA[Glücksritter]]>
+            </misc:Lokalisirung>
+        </misc:Name>
+        <besonderheit:Stufe>
+            <misc:Beschreibung>
+                <misc:Lokalisirung Sprache="de">
+                <![CDATA[Substituire 1 Eigenschaft mit GL]]>
+              </misc:Lokalisirung>
+            </misc:Beschreibung>
+        </besonderheit:Stufe>
+    </besonderheit:Besonderheit>
+    <besonderheit:Besonderheit Id="Auffällig">
+        <misc:Name>
+            <misc:Lokalisirung Sprache="de">
+              <![CDATA[Auffällig]]>
+            </misc:Lokalisirung>
+        </misc:Name>
+        <besonderheit:Stufe>
+            <misc:Beschreibung>
+                <misc:Lokalisirung Sprache="de">
+                <![CDATA[Der Charakter zieht auf natürliche weise die Blicke auf sich. Dies kann hilfreich sein sich bei diskusionen gehör zu schaffen. Dies macht es aber nicht leichter jemanden zu überzeugen.]]>
+              </misc:Lokalisirung>
+            </misc:Beschreibung>
+            <misc:Kosten Id="GP" Berechnung="3" />
+            <besonderheit:Voraussetzung>
+                <besonderheit:Not>
+                    <besonderheit:Besonderheit Id="Unauffällig" />
+                </besonderheit:Not>
+            </besonderheit:Voraussetzung>
+        </besonderheit:Stufe>
+    </besonderheit:Besonderheit>
+
+    <Besonderheit Id="Krankheitsresistenz">
+        <misc:Name>
+            <misc:Lokalisirung Sprache="de">
+              <![CDATA[Krankheitsresistenz]]>
+            </misc:Lokalisirung>
+        </misc:Name>
+        <besonderheit:Stufe>
+
+            <misc:Beschreibung>
+                <misc:Lokalisirung Sprache="de">
+                <![CDATA[Der Charakter wird troz wiedriger Umstände nicht so leicht Krank.]]>
+              </misc:Lokalisirung>
+            </misc:Beschreibung>
+            <Voraussetzung>
+                <Besonderheit Id="Auserwählter" />
+            </Voraussetzung>
+        </besonderheit:Stufe>
+    </Besonderheit>
+    <besonderheit:Besonderheit Id="Wohlhabend">
+        <misc:Name>
+            <misc:Lokalisirung Sprache="de">Wohlhabend</misc:Lokalisirung>
+        </misc:Name>
+        <besonderheit:Stufe>
+            <misc:Beschreibung>
+                <misc:Lokalisirung Sprache="de">Dem Charakter staht etwas Geld zur verfügung.</misc:Lokalisirung>
+            </misc:Beschreibung>
+            <misc:Kosten Id="GP" Berechnung="2" />
+        </besonderheit:Stufe>
+        <besonderheit:Stufe>
+            <misc:Beschreibung>
+                <misc:Lokalisirung Sprache="de">Dem Charakter staht einiges Geld zur verfügung.</misc:Lokalisirung>
+            </misc:Beschreibung>
+            <misc:Kosten Id="GP" Berechnung="2" />
+        </besonderheit:Stufe>
+        <besonderheit:Stufe>
+            <misc:Name>
+                <misc:Lokalisirung Sprache="de">Reich</misc:Lokalisirung>
+            </misc:Name>
+            <misc:Beschreibung>
+                <misc:Lokalisirung Sprache="de">Dem Charakter staht eine beträchtige summe Geld zur
+                    verfügung.</misc:Lokalisirung>
+            </misc:Beschreibung>
+            <misc:Kosten Id="GP" Berechnung="4" />
+        </besonderheit:Stufe>
+        <besonderheit:Stufe>
+            <misc:Beschreibung>
+                <misc:Lokalisirung Sprache="de">Der Charakter hat keine Geldsorgen.</misc:Lokalisirung>
+            </misc:Beschreibung>
+            <misc:Kosten Id="GP" Berechnung="5" />
+        </besonderheit:Stufe>
+    </besonderheit:Besonderheit>
+
+    <besonderheit:Besonderheit Id="Begabung Talent">
+        <misc:Name>
+            <misc:Lokalisirung Sprache="de"><![CDATA[Begabung]]></misc:Lokalisirung>
+        </misc:Name>
+        <besonderheit:Parameter>
+            <misc:Talent></misc:Talent>
+        </besonderheit:Parameter>
+        <besonderheit:Stufe>
+            <misc:Beschreibung>
+                <misc:Lokalisirung Sprache="de">
+                <![CDATA[Der Charakter hat ein Händchen für das gewählte Talent. Die Qualität einer Probe ist um eins Höher.]]></misc:Lokalisirung>
+            </misc:Beschreibung>
+            <misc:Kosten Id="GP" Berechnung="5" />
+        </besonderheit:Stufe>
+
+    </besonderheit:Besonderheit>
+
+    <besonderheit:Besonderheit Id="Effizienter Handwerker">
+        <misc:Name>
+            <misc:Lokalisirung Sprache="de"><![CDATA[Effizienter Handwerker]]></misc:Lokalisirung>
+        </misc:Name>
+        <besonderheit:Stufe>
+            <misc:Beschreibung>
+                <misc:Lokalisirung Sprache="de">
+                <![CDATA[Bei langfritigen Handwerksproben, gibt jede Probe einen Zusätzlichen Fortschritspunkt, sofern sie bestanden wurde.]]></misc:Lokalisirung>
+            </misc:Beschreibung>
+            <misc:Kosten Id="GP" Berechnung="3" />
+        </besonderheit:Stufe>
+    </besonderheit:Besonderheit>
+
+    <besonderheit:Besonderheit Id="Gewissenhafter Handwerker">
+        <misc:Name>
+            <misc:Lokalisirung Sprache="de"><![CDATA[Gewissenhafter Handwerker]]></misc:Lokalisirung>
+        </misc:Name>
+        <besonderheit:Stufe>
+            <misc:Beschreibung>
+                <misc:Lokalisirung Sprache="de">
+                <![CDATA[Jede Handwerksprobe, sofern bestanden, erhält einen zusätzlichen Qualitätspunkt.]]></misc:Lokalisirung>
+            </misc:Beschreibung>
+            <misc:Kosten Id="GP" Berechnung="5" />
+        </besonderheit:Stufe>
+    </besonderheit:Besonderheit>
+
+    <besonderheit:Besonderheit Id="Forscher">
+        <misc:Name>
+            <misc:Lokalisirung Sprache="de"><![CDATA[Forscher]]></misc:Lokalisirung>
+        </misc:Name>
+        <besonderheit:Stufe>
+            <misc:Beschreibung>
+                <misc:Lokalisirung Sprache="de">
+                <![CDATA[Jede Probe die der Erforschung oder Recherche dient erhält einen zusätzlichen Qualitätspunkt, sofern bestanden.]]></misc:Lokalisirung>
+            </misc:Beschreibung>
+            <misc:Kosten Id="GP" Berechnung="4" />
+        </besonderheit:Stufe>
+    </besonderheit:Besonderheit>
+
+    <besonderheit:Besonderheit Id="Effiziente Forscher">
+        <misc:Name>
+            <misc:Lokalisirung Sprache="de"><![CDATA[Forscher]]></misc:Lokalisirung>
+        </misc:Name>
+        <besonderheit:Stufe>
+            <misc:Beschreibung>
+                <misc:Lokalisirung Sprache="de">
+                <![CDATA[Jede Probe die der Erforschung oder Recherche dient erhält der Charakter einen zusätzlichen Fortschrittspunkt, sofern bestanden.]]></misc:Lokalisirung>
+            </misc:Beschreibung>
+            <misc:Kosten Id="GP" Berechnung="3" />
+        </besonderheit:Stufe>
+    </besonderheit:Besonderheit>
+
+    <Besonderheit Id="Beidhändig">
+        <misc:Name>
+            <misc:Lokalisirung Sprache="de">
+              <![CDATA[Beidhändig]]>
+            </misc:Lokalisirung>
+        </misc:Name>
+        <besonderheit:SubKategorie>Kampf</besonderheit:SubKategorie>
+        <besonderheit:Stufe>
+            <misc:Beschreibung>
+                <misc:Lokalisirung Sprache="de">
+                <![CDATA[Falls keine Taktik mit wert größer 1 gespielt wurde, können Taktiken im gesammtwert von 3 gespielt werden.]]>
+              </misc:Lokalisirung>
+            </misc:Beschreibung>
+            <misc:Kosten Id="GP" Berechnung="3" />
+        </besonderheit:Stufe>
+    </Besonderheit>
+</Besonderheiten>  

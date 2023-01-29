@@ -1,0 +1,764 @@
+
+  <Talente xmlns="http://nota.org/schema/talent.xsd" KategorieId="Wissen"
+  xmlns:nota='http://nota.org/schema/nota.xsd' xmlns:misc='http://nota.org/schema/misc.xsd'
+  xmlns:lebewesen="http://nota.org/schema/lebewesen.xsd"
+  xmlns:pfad="http://nota.org/schema/pfad.xsd" xmlns:talent="http://nota.org/schema/talent.xsd"
+  xmlns:fertigkeit="http://nota.org/schema/fertigkeit.xsd"
+  xmlns:besonderheit="http://nota.org/schema/besonderheit.xsd"
+  xmlns:Belastung="http://nota.org/schema/kampf/aktionen.xsd"
+  xmlns:ausstattung="http://nota.org/schema/kampf/ausstattung.xsd"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+  >
+    <talent:Kategorie>
+      <misc:Lokalisirung Sprache="de">
+        <![CDATA[Wissen]]>
+      </misc:Lokalisirung>
+    </talent:Kategorie>
+
+    <Talent Id="Gassenwissen" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="SY" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Gassenwissen]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+    </Talent>
+    <Talent Id="Rechnen" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="IN" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Rechnen]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+    </Talent>
+    <Talent Id="Sagen" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="MU" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Sagen]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+    </Talent>
+    <Talent Id="Astronomi" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="IN" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Astronomi]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Sagen" Anzahl="7" />
+
+      </talent:Ableitungen>
+
+
+    </Talent>
+    <Talent Id="Geographie" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="IN" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Geographie]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+    </Talent>
+    <Talent Id="Gesteinskunde" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="FM" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Gesteinskunde]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+    </Talent>
+    <Talent Id="Recherche" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="IN" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Recherche]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Das finden von informationen in Büchern und Bibliotheken.]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+      <talent:Level Wert="1">
+        <talent:Voraussetzung>
+          <misc:Tag Id="Lesen und Schreiben" />
+        </talent:Voraussetzung>
+      </talent:Level>
+    </Talent>
+    <Talent Id="Buchführung" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="FM" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Buchführung]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+      <talent:Level Wert="1">
+        <talent:Voraussetzung>
+          <misc:And>
+            <misc:Tag Id='Lesen und Schreiben'></misc:Tag>
+            <talent:Talent Id="Rechnen" Level="4" />
+          </misc:And>
+        </talent:Voraussetzung>
+      </talent:Level>
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Recherche" Anzahl="8" />
+        <talent:Ableitung Id="Rechnen" Anzahl="5" />
+      </talent:Ableitungen>
+    </Talent>
+    <Talent Id="Medizin" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="IN" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Medizin]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+      <talent:Level Wert="8">
+        <talent:Voraussetzung>
+          <talent:Talent Id="Anatomie" Level="1" />
+        </talent:Voraussetzung>
+      </talent:Level>
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Anatomie" Anzahl="5" />
+        <talent:Ableitung Id="Pflanzenkunde" Anzahl="8" />
+      </talent:Ableitungen>
+    </Talent>
+    <Talent Id="Tierkunde" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="IN" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Tierkunde]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+    </Talent>
+    <Talent Id="Pflanzenkunde" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="IN" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Pflanzenkunde]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Medizin" Anzahl="5" />
+      </talent:Ableitungen>
+    </Talent>
+    <Talent Id="Kunst" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="GL" />
+        <talent:Eigenschaft Name="MU" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Kunst]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+    </Talent>
+    <Talent Id="Alchemischeswissen" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="KL" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Alchemischeswissen]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Pflanzenkunde" Anzahl="4" />
+        <talent:Ableitung Id="Gesteinskunde" Anzahl="4" />
+        <talent:Ableitung Id="Hüttenkunde" Anzahl="8" />
+        <talent:Ableitung Id="Magiekunde" Anzahl="7" />
+      </talent:Ableitungen>
+    </Talent>
+    <Talent Id="Wettervorhersage" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="IN" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Wettervorhersage]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+    </Talent>
+
+
+    <Talent Id="Anatomie" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="MU" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="FM" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Anatomie]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+    </Talent>
+
+    <Talent Id="Baukunst" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="FM" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Baukunst]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+      <talent:Level Wert="5">
+        <talent:Voraussetzung>
+          <talent:Talent Id="Rechnen" Level="4" />
+        </talent:Voraussetzung>
+      </talent:Level>
+      <talent:Level Wert="8">
+        <talent:Voraussetzung>
+          <fertigkeit:Fertigkeit Id="Geometrie" />
+        </talent:Voraussetzung>
+      </talent:Level>
+    </Talent>
+
+    <Talent Id="Geselchaftsspiele" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="IN" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Geselchaftsspiele]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Kriegskunst" Anzahl="7" />
+      </talent:Ableitungen>
+    </Talent>
+
+    <Talent Id="Geschichtswissen" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="IN" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Geschichtswissen]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Religion" Anzahl="5" />
+        <talent:Ableitung Id="Mystik" Anzahl="5" />
+      </talent:Ableitungen>
+    </Talent>
+
+    <Talent Id="Mystik" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="IN" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Mystik]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Religion" Anzahl="3" />
+      </talent:Ableitungen>
+    </Talent>
+    <Talent Id="Religion" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="IN" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Religion]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Mystik" Anzahl="3" />
+      </talent:Ableitungen>
+    </Talent>
+
+    <Talent Id="Heraldik" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="FM" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Heraldik]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Staatskunst" Anzahl="5" />
+      </talent:Ableitungen>
+    </Talent>
+
+    <Talent Id="Hüttenkunde" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="KO" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Hüttenkunde]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Gesteinskunde" Anzahl="4" />
+      </talent:Ableitungen>
+    </Talent>
+
+    <Talent Id="Kriegskunst" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="MU" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="SY" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Krigskunst]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Geselchaftsspiele" Anzahl="7" />
+      </talent:Ableitungen>
+    </Talent>
+
+    <Talent Id="Kryptographie" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="IN" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Kryptographie]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+      <talent:Level Wert="1">
+        <talent:Voraussetzung>
+          <misc:And>
+            <fertigkeit:Fertigkeit Id="Höhere Mathematik" />
+            <misc:Tag Id="Lesen und Schreiben" />
+          </misc:And>
+        </talent:Voraussetzung>
+      </talent:Level>
+      <talent:Level Wert="11">
+        <talent:Voraussetzung>
+          <fertigkeit:Fertigkeit Id="Höhere Mathematik" Stufe="2" />
+        </talent:Voraussetzung>
+      </talent:Level>
+      <talent:Level Wert="15">
+        <talent:Voraussetzung>
+          <fertigkeit:Fertigkeit Id="Geometrie" Stufe="2" />
+        </talent:Voraussetzung>
+      </talent:Level>
+    </Talent>
+
+    <Talent Id="Magiekunde" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="IN" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Magiekunde]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+    </Talent>
+
+    <Talent Id="Mechanik" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="FM" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Mechanik]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+      <talent:Level Wert="5">
+        <talent:Voraussetzung>
+          <talent:Talent Id="Rechnen" Level="5" />
+        </talent:Voraussetzung>
+      </talent:Level>
+      <talent:Level Wert="8">
+        <talent:Voraussetzung>
+          <fertigkeit:Fertigkeit Id="Geometrie" />
+        </talent:Voraussetzung>
+      </talent:Level>
+      <talent:Level Wert="10">
+        <talent:Voraussetzung>
+          <fertigkeit:Fertigkeit Id="Höhere Mathematik" />
+        </talent:Voraussetzung>
+      </talent:Level>
+      <talent:Level Wert="15">
+        <talent:Voraussetzung>
+          <fertigkeit:Fertigkeit Id="Höhere Mathematik" Stufe="2" />
+        </talent:Voraussetzung>
+      </talent:Level>
+    </Talent>
+
+    <Talent Id="Philosophie" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="IN" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Philosophie]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+    </Talent>
+
+    <Talent Id="Rechtskunde" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="IN" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Rechtskunde]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+    </Talent>
+
+    <Talent Id="Schätzen" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="IN" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Schätzen]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+    </Talent>
+
+    <Talent Id="Sprachenkunde" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="IN" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Sprachenkunde]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+    </Talent>
+
+    <Talent Id="Staatskunst" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="SY" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Staatskunst]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+    </Talent>
+
+    <Talent Id="Sternkunde" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="IN" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Sternenkunde]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+    </Talent>
+    <Talent Id="Giftkunde" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="MU" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="IN" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Giftkunde]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Pflanzenkunde" Anzahl="5" />
+        <talent:Ableitung Id="Alchemie" Anzahl="5" />
+      </talent:Ableitungen>
+    </Talent>
+    <Talent Id="Krankheitskunde" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="MU" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="SY" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Krankheitskunde]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+    </Talent>
+  </Talente>

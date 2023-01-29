@@ -1,0 +1,814 @@
+
+  <Talente xmlns="http://nota.org/schema/talent.xsd" KategorieId="Kampf"
+  xmlns:nota='http://nota.org/schema/nota.xsd' xmlns:misc='http://nota.org/schema/misc.xsd'
+  xmlns:lebewesen="http://nota.org/schema/lebewesen.xsd"
+  xmlns:pfad="http://nota.org/schema/pfad.xsd" xmlns:talent="http://nota.org/schema/talent.xsd"
+  xmlns:fertigkeit="http://nota.org/schema/fertigkeit.xsd"
+  xmlns:besonderheit="http://nota.org/schema/besonderheit.xsd"
+  xmlns:Belastung="http://nota.org/schema/kampf/aktionen.xsd"
+  xmlns:ausstattung="http://nota.org/schema/kampf/ausstattung.xsd"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+  >
+    <talent:Kategorie>
+      <misc:Lokalisirung Sprache="de">
+        <![CDATA[Kampf]]>
+      </misc:Lokalisirung>
+    </talent:Kategorie>
+
+    <Talent Id="Kampfgespür" Komplexität="D">
+      <Probe>
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="FO" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Kampfgespür]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Die fähigkeit im Kampf immer den überblick zu halten.]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Ausweichen" Anzahl="5" />
+      </talent:Ableitungen>
+    </Talent>
+    <Talent Id="Stumpfe Hiebwaffen" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="GE" />
+        <talent:Eigenschaft Name="ST" />
+        <talent:Eigenschaft Name="IN" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Stumpfe Hiebwaffen]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Eine brachiale Waffe die ihre effiktivität aus der Kraft des nutzers zieht.]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+      <Ableitungen>
+        <Ableitung Id="Kampfgespür" Anzahl="5" />
+        <Ableitung Id="Einhandäxte" Anzahl="2" />
+        <Ableitung Id="Zweihandhiebwaffen" Anzahl="4" />
+        <Ableitung Id="Zweihandäxte" Anzahl="5" />
+      </Ableitungen>
+    </Talent>
+    <Talent Id="Einhandäxte" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="GE" />
+        <talent:Eigenschaft Name="ST" />
+        <talent:Eigenschaft Name="IN" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Einhandäxte]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+      <Ableitungen>
+        <Ableitung Id="Kampfgespür" Anzahl="5" />
+        <Ableitung Id="Stumpfe Hiebwaffen" Anzahl="2" />
+        <Ableitung Id="Zweihandhiebwaffen" Anzahl="4" />
+        <Ableitung Id="Zweihandäxte" Anzahl="5" />
+      </Ableitungen>
+    </Talent>
+    <Talent Id="Zweihandäxte" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="ST" />
+        <talent:Eigenschaft Name="MU" />
+        <talent:Eigenschaft Name="GE" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Zweihandäxte]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+      <Ableitungen>
+        <Ableitung Id="Kampfgespür" Anzahl="5" />
+        <Ableitung Id="Zweihandhiebwaffen" Anzahl="2" />
+        <Ableitung Id="Stumpfe Hiebwaffen" Anzahl="5" />
+        <Ableitung Id="Einhandäxte" Anzahl="4" />
+
+      </Ableitungen>
+    </Talent>
+    <Talent Id="Stäbe" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="GE" />
+        <talent:Eigenschaft Name="MU" />
+        <talent:Eigenschaft Name="IN" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Stäbe]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+      <Ableitungen>
+        <Ableitung Id="Kampfgespür" Anzahl="5" />
+        <Ableitung Id="Stangenwaffen" Anzahl="3" />
+      </Ableitungen>
+    </Talent>
+
+
+    <Talent Id="Fechtwaffen" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="GE" />
+        <talent:Eigenschaft Name="MU" />
+        <talent:Eigenschaft Name="IN" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Fechtwaffen]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Eine leichte und schnelle Waffe die vorallem auf Feinmotorik statt kraft setzt.]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+      <Ableitungen>
+        <Ableitung Id="Kampfgespür" Anzahl="5" />
+        <Ableitung Id="Schwerter" Anzahl="3" />
+        <Ableitung Id="Säbel" Anzahl="3" />
+      </Ableitungen>
+    </Talent>
+    <Talent Id="Schwerter" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="GE" />
+        <talent:Eigenschaft Name="MU" />
+        <talent:Eigenschaft Name="IN" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Schwerter]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Das Schwert ist eine einhändig geführte Hieb- und Stichwaffe mit gerader zweischneidiger Klinge. Im vergleich zum Säbel kann es einfacher Rüstungen durschlagen.]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+      <Ableitungen>
+        <Ableitung Id="Kampfgespür" Anzahl="5" />
+        <Ableitung Id="Säbel" Anzahl="2" />
+        <Ableitung Id="Anderthalbhänder" Anzahl="3" />
+      </Ableitungen>
+    </Talent>
+    <Talent Id="Säbel" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="GE" />
+        <talent:Eigenschaft Name="MU" />
+        <talent:Eigenschaft Name="IN" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Säbel]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Der Säbel ist eine leichte Hieb- und Stichwaffe. Der klassische Säbel war gekrümmt und nur einseitig geschliffen. Meist, mit Ausnahme der Spitze, nur einseitig Gekrümmt. Stark gekrümmte Säbel können aber auch unter Hiebwaffen fallen. Sie veursachen nomalerweise deutlich größere Wunden als Schwerter]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+      <Ableitungen>
+        <Ableitung Id="Kampfgespür" Anzahl="5" />
+        <Ableitung Id="Schwerter" Anzahl="2" />
+        <Ableitung Id="Anderthalbhänder" Anzahl="3" />
+      </Ableitungen>
+    </Talent>
+    <Talent Id="Anderthalbhänder" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="GE" />
+        <talent:Eigenschaft Name="MU" />
+        <talent:Eigenschaft Name="IN" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Anderthalbhänder]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Der Anderthalbhänder bezeichnet eine Zwischenstufe zwischen dem einhändigen und dem zweihändigen Schwert.]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+      <Ableitungen>
+        <Ableitung Id="Kampfgespür" Anzahl="5" />
+        <Ableitung Id="Säbel" Anzahl="2" />
+        <Ableitung Id="Schwerter" Anzahl="3" />
+        <Ableitung Id="Zweihandschwerter" Anzahl="3" />
+      </Ableitungen>
+    </Talent>
+
+    <Talent Id="Zweihandschwerter" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="ST" />
+        <talent:Eigenschaft Name="MU" />
+        <talent:Eigenschaft Name="IN" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Zweihandschwerter]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+      <Ableitungen>
+        <Ableitung Id="Kampfgespür" Anzahl="5" />
+        <Ableitung Id="Anderthalbhänder" Anzahl="3" />
+        <Ableitung Id="Zweihandhiebwaffen" Anzahl="2" />
+        <Ableitung Id="Zweihandsäbel" Anzahl="2" />
+      </Ableitungen>
+    </Talent>
+    <Talent Id="Zweihandhiebwaffen" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="ST" />
+        <talent:Eigenschaft Name="MU" />
+        <talent:Eigenschaft Name="IN" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Zweihandhiebwaffen]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+      <Ableitungen>
+        <Ableitung Id="Kampfgespür" Anzahl="5" />
+        <Ableitung Id="Zweihandschwerter" Anzahl="2" />
+        <Ableitung Id="Zweihandsäbel" Anzahl="2" />
+      </Ableitungen>
+    </Talent>
+    <Talent Id="Zweihandsäbel" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="ST" />
+        <talent:Eigenschaft Name="MU" />
+        <talent:Eigenschaft Name="IN" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Zweihandsäbel]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+      <Ableitungen>
+        <Ableitung Id="Kampfgespür" Anzahl="5" />
+        <Ableitung Id="Zweihandschwerter" Anzahl="2" />
+        <Ableitung Id="Zweihandhiebwaffen" Anzahl="2" />
+      </Ableitungen>
+    </Talent>
+
+    <Talent Id="Tonfas" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="GE" />
+        <talent:Eigenschaft Name="MU" />
+        <talent:Eigenschaft Name="IN" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Tonfas]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+      <Ableitungen>
+        <Ableitung Id="Kampfgespür" Anzahl="5" />
+        <Ableitung Id="Waffenlos" Anzahl="3" />
+      </Ableitungen>
+    </Talent>
+    <Talent Id="Bögen" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="FO" />
+        <talent:Eigenschaft Name="FM" />
+        <talent:Eigenschaft Name="IN" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Bögen]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+      <Ableitungen>
+        <Ableitung Id="Kampfgespür" Anzahl="7" />
+        <Ableitung Id="Faustprojektielwaffen" Anzahl="7" />
+        <Ableitung Id="Zweihandprojektielwaffen" Anzahl="7" />
+      </Ableitungen>
+    </Talent>
+    <Talent Id="Faustprojektielwaffen" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="FM" />
+        <talent:Eigenschaft Name="FO" />
+        <talent:Eigenschaft Name="IN" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Faustprojektielwaffen]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Gewehre, Armbrüste]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+      <Ableitungen>
+        <Ableitung Id="Bögen" Anzahl="3" />
+        <Ableitung Id="Kampfgespür" Anzahl="7" />
+        <Ableitung Id="Zweihandprojektielwaffen" Anzahl="3" />
+      </Ableitungen>
+    </Talent>
+    <Talent Id="Zweihandprojektielwaffen" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="FM" />
+        <talent:Eigenschaft Name="FO" />
+        <talent:Eigenschaft Name="IN" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Zweihandprojektielwaffen]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Gewehre, Armbrüste]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+      <Ableitungen>
+        <Ableitung Id="Bögen" Anzahl="3" />
+        <Ableitung Id="Kampfgespür" Anzahl="7" />
+        <Ableitung Id="Faustprojektielwaffen" Anzahl="2" />
+      </Ableitungen>
+    </Talent>
+    <Talent Id="Schilde" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="GE" />
+        <talent:Eigenschaft Name="MU" />
+        <talent:Eigenschaft Name="IN" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Schilde]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+      <Ableitungen>
+        <Ableitung Id="Kampfgespür" Anzahl="4" />
+      </Ableitungen>
+    </Talent>
+    <Talent Id="Ausweichen" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="GE" />
+        <talent:Eigenschaft Name="MU" />
+        <talent:Eigenschaft Name="IN" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Ausweichen]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+      <Ableitungen>
+        <Ableitung Id="Kampfgespür" Anzahl="3" />
+        <Ableitung Id="Tanzen" Anzahl="8" />
+      </Ableitungen>
+    </Talent>
+    <Talent Id="Stangenwaffen" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="GE" />
+        <talent:Eigenschaft Name="MU" />
+        <talent:Eigenschaft Name="IN" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Stangenwaffen]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+      <Ableitungen>
+        <Ableitung Id="Kampfgespür" Anzahl="5" />
+        <Ableitung Id="Stäbe" Anzahl="2" />
+      </Ableitungen>
+    </Talent>
+    <Talent Id="Peitschen" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="FM" />
+        <talent:Eigenschaft Name="MU" />
+        <talent:Eigenschaft Name="IN" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Peitschen]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+      <Ableitungen>
+        <Ableitung Id="Kampfgespür" Anzahl="5" />
+      </Ableitungen>
+    </Talent>
+    <Talent Id="Dolche" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="GE" />
+        <talent:Eigenschaft Name="MU" />
+        <talent:Eigenschaft Name="IN" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Dolche]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+      <Ableitungen>
+        <Ableitung Id="Kampfgespür" Anzahl="5" />
+        <Ableitung Id="Waffenlos" Anzahl="2" />
+        <Ableitung Id="Katare" Anzahl="2" />
+      </Ableitungen>
+    </Talent>
+    <Talent Id="Flegel" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="GE" />
+        <talent:Eigenschaft Name="MU" />
+        <talent:Eigenschaft Name="IN" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Flegel]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+      <Ableitungen>
+        <Ableitung Id="Kampfgespür" Anzahl="5" />
+        <Ableitung Id="Stangenwaffen" Anzahl="3" />
+      </Ableitungen>
+    </Talent>
+    <Talent Id="Waffenlos" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="GE" />
+        <talent:Eigenschaft Name="MU" />
+        <talent:Eigenschaft Name="IN" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Waffenlos]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+      <Ableitungen>
+        <Ableitung Id="Dolche" Anzahl="3" />
+        <Ableitung Id="Katare" Anzahl="3" />
+        <Ableitung Id="Kampfgespür" Anzahl="5" />
+      </Ableitungen>
+    </Talent>
+    <Talent Id="Chakrams" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="GE" />
+        <talent:Eigenschaft Name="MU" />
+        <talent:Eigenschaft Name="IN" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Chakrams]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Das Chakram (von Sanskrit: चक्र, cakra n., Nom. Sg. cakram, dt.: „Kreis“ oder „Rad“) ist eine Wurfwaffe, die in Indien benutzt wurde. Sie besteht aus einem flachen Metallring mit einem scharfen äußeren Rand von 12 bis 30 cm Durchmesser.]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+    </Talent>
+    <Talent Id="Wurfspeere" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="FM" />
+        <talent:Eigenschaft Name="ST" />
+        <talent:Eigenschaft Name="IN" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Wurfspeere]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+      <Ableitungen>
+        <Ableitung Id="Kampfgespür" Anzahl="7" />
+        <Ableitung Id="Bögen" Anzahl="3" />
+        <Ableitung Id="Speerschleudern" Anzahl="2" />
+      </Ableitungen>
+    </Talent>
+    <Talent Id="Wurfäxte" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="FM" />
+        <talent:Eigenschaft Name="ST" />
+        <talent:Eigenschaft Name="IN" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Wurfäxte]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+      <Ableitungen>
+        <Ableitung Id="Kampfgespür" Anzahl="7" />
+        <Ableitung Id="Wurfspeere" Anzahl="4" />
+        <Ableitung Id="Wurfmesser" Anzahl="4" />
+      </Ableitungen>
+    </Talent>
+    <Talent Id="Wurfmesser" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="FM" />
+        <talent:Eigenschaft Name="ST" />
+        <talent:Eigenschaft Name="IN" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Wurfmesser]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+      <Ableitungen>
+        <Ableitung Id="Kampfgespür" Anzahl="7" />
+        <Ableitung Id="Wurfspeere" Anzahl="4" />
+        <Ableitung Id="Wurfäxte" Anzahl="4" />
+      </Ableitungen>
+    </Talent>
+    <Talent Id="Katare" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="GE" />
+        <talent:Eigenschaft Name="MU" />
+        <talent:Eigenschaft Name="IN" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Katare]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Das Katar, auch Coutar, Katah, Koutah, Kutah, Kutar, Bundi Dolch oder Jemdhar genannt, ist ein indischer Faustdolch. Der Ursprung liegt bei den Rajputen, aber die Waffe ist im indischen Raum weit verbreitet]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+      <Ableitungen>
+        <Ableitung Id="Kampfgespür" Anzahl="5" />
+        <Ableitung Id="Dolche" Anzahl="2" />
+        <Ableitung Id="Waffenlos" Anzahl="2" />
+      </Ableitungen>
+    </Talent>
+    <Talent Id="Wurfwaffen" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="GE" />
+        <talent:Eigenschaft Name="MU" />
+        <talent:Eigenschaft Name="IN" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Wurfwaffen]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[z.B. Stein]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+      <Ableitungen>
+        <Ableitung Id="Kampfgespür" Anzahl="5" />
+        <Ableitung Id="Wurfmesser" Anzahl="3" />
+        <Ableitung Id="Wurfäxte" Anzahl="3" />
+      </Ableitungen>
+    </Talent>
+    <Talent Id="Schleudern" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="FM" />
+        <talent:Eigenschaft Name="FO" />
+        <talent:Eigenschaft Name="IN" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Schleudern]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+      <Ableitungen>
+        <Ableitung Id="Kampfgespür" Anzahl="5" />
+        <Ableitung Id="Wurfwaffen" Anzahl="4" />
+      </Ableitungen>
+    </Talent>
+    <Talent Id="Speerschleudern" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="FM" />
+        <talent:Eigenschaft Name="FO" />
+        <talent:Eigenschaft Name="IN" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Speerschleudern]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+      <Ableitungen>
+        <Ableitung Id="Kampfgespür" Anzahl="5" />
+        <Ableitung Id="Wurfspeere" Anzahl="2" />
+      </Ableitungen>
+    </Talent>
+    <Talent Id="Nunchakus" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="GE" />
+        <talent:Eigenschaft Name="MU" />
+        <talent:Eigenschaft Name="FO" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Nunchakus]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+      <Ableitungen>
+        <Ableitung Id="Kampfgespür" Anzahl="5" />
+        <Ableitung Id="Dreigliederstäbe" Anzahl="4" />
+      </Ableitungen>
+    </Talent>
+    <Talent Id="Dreigliederstäbe" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="GE" />
+        <talent:Eigenschaft Name="FO" />
+        <talent:Eigenschaft Name="IN" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Dreigliederstäbe]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+      <Ableitungen>
+        <Ableitung Id="Nunchakus" Anzahl="3" />
+        <Ableitung Id="Kampfgespür" Anzahl="5" />
+      </Ableitungen>
+    </Talent>
+    <Talent Id="Kettenwaffen" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="FO" />
+        <talent:Eigenschaft Name="MU" />
+        <talent:Eigenschaft Name="IN" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Kettenwaffen]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[z.B. Suruchin, Manriki Gusari]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+      <Ableitungen>
+        <Ableitung Id="Kampfgespür" Anzahl="5" />
+        <Ableitung Id="Flegel" Anzahl="3" />
+        <Ableitung Id="Nunchakus" Anzahl="4" />
+      </Ableitungen>
+    </Talent>
+    <Talent Id="Sensen" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="GE" />
+        <talent:Eigenschaft Name="MU" />
+        <talent:Eigenschaft Name="IN" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Sensen]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+      <Ableitungen>
+        <Ableitung Id="Kampfgespür" Anzahl="5" />
+        <Ableitung Id="Zweihandhiebwaffen" Anzahl="4" />
+        <Ableitung Id="Stäbe" Anzahl="3" />
+      </Ableitungen>
+    </Talent>
+  </Talente>

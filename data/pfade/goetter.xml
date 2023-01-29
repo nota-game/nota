@@ -1,0 +1,168 @@
+
+  <Pfade Id="Götter" xmlns="http://nota.org/schema/pfad.xsd"
+  
+  xmlns:nota='http://nota.org/schema/nota.xsd' xmlns:misc='http://nota.org/schema/misc.xsd'
+  xmlns:lebewesen="http://nota.org/schema/lebewesen.xsd"
+  xmlns:pfad="http://nota.org/schema/pfad.xsd" xmlns:talent="http://nota.org/schema/talent.xsd"
+  xmlns:fertigkeit="http://nota.org/schema/fertigkeit.xsd"
+  xmlns:besonderheit="http://nota.org/schema/besonderheit.xsd"
+  xmlns:Belastung="http://nota.org/schema/kampf/aktionen.xsd"
+  xmlns:ausstattung="http://nota.org/schema/kampf/ausstattung.xsd"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+  >
+    <misc:Name>
+      <misc:Lokalisirung Sprache="de">
+        <![CDATA[Götter]]>
+      </misc:Lokalisirung>
+    </misc:Name>
+    <misc:Beschreibung>
+      <misc:Lokalisirung Sprache="de">
+        <![CDATA[Wähle den Gott des Charakters]]>
+      </misc:Lokalisirung>
+    </misc:Beschreibung>
+    <Pfad Id="Alsas">
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Alsa]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Der Gott des Wissens und Wissenschaft.]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <misc:Levels>
+        <misc:Level Id="T">
+          <misc:Kosten Id="Göttlicher Einfluss" Berechnung="-1" />
+          <besonderheit:Besonderheit Id="Auserwählter Alsas" />
+        </misc:Level>
+      </misc:Levels>
+    </Pfad>
+    <Pfad Id="Yoguu">
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Yoguu]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Der Gott der Magie und Mysterien.]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <misc:Levels>
+        <misc:Level Id="T">
+          <misc:Kosten Id="Göttlicher Einfluss" Berechnung="-1" />
+          <besonderheit:Besonderheit Id="Auserwählter Yoguu" />
+        </misc:Level>
+      </misc:Levels>
+    </Pfad>
+    <Pfad Id="Bartimus">
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Bartimus]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Der Gott der es Kampfes.]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <misc:Levels>
+        <misc:Level Id="T">
+          <misc:Kosten Id="Göttlicher Einfluss" Berechnung="-1" />
+          <besonderheit:Besonderheit Id="Auserwählter Bartimus" />
+        </misc:Level>
+      </misc:Levels>
+    </Pfad>
+    <Pfad Id="Heros">
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Heros]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Der Gott des Handwerkes und Arbeit.]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <misc:Levels>
+        <misc:Level Id="T">
+          <misc:Kosten Id="Göttlicher Einfluss" Berechnung="-1" />
+          <besonderheit:Besonderheit Id="Auserwählter Heros" />
+        </misc:Level>
+      </misc:Levels>
+    </Pfad>
+    <Pfad Id="Karins">
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Karins]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Der Gott der Liebe, leidenschaft und Bindung.]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <misc:Levels>
+        <misc:Level Id="T">
+          <misc:Kosten Id="Göttlicher Einfluss" Berechnung="-1" />
+          <besonderheit:Besonderheit Id="Auserwählter Karins" />
+        </misc:Level>
+      </misc:Levels>
+    </Pfad>
+    <Pfad Id="Iru">
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Iru]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Der Gott der Jugend und des Glücks. Schutzpatron der Kinder.]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <misc:Levels>
+        <misc:Level Id="T">
+          <misc:Kosten Id="Göttlicher Einfluss" Berechnung="-1" />
+          <besonderheit:Besonderheit Id="Auserwählter Iru" />
+        </misc:Level>
+      </misc:Levels>
+    </Pfad>
+    <Pfad Id="Kalim">
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Kalim]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Der Gott der Wanderer und Seefahrt.]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <misc:Levels>
+        <misc:Level Id="T">
+          <misc:Kosten Id="Göttlicher Einfluss" Berechnung="-1" />
+          <besonderheit:Besonderheit Id="Auserwählter Kalim" />
+        </misc:Level>
+      </misc:Levels>
+    </Pfad>
+    <Pfad Id="Nalum">
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Nalum]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Der Gott der Natur, Wildniss und Jagd.]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <misc:Levels>
+        <misc:Level Id="T">
+          <misc:Kosten Id="Göttlicher Einfluss" Berechnung="-1" />
+          <besonderheit:Besonderheit Id="Auserwählter Nalum" />
+        </misc:Level>
+      </misc:Levels>
+    </Pfad>
+  </Pfade>

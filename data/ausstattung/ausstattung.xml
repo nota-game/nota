@@ -1,0 +1,451 @@
+  <Ausstattung xmlns="http://nota.org/schema/kampf/ausstattung.xsd" 
+  xmlns:nota='http://nota.org/schema/nota.xsd' xmlns:misc='http://nota.org/schema/misc.xsd'
+  xmlns:lebewesen="http://nota.org/schema/lebewesen.xsd"
+  xmlns:pfad="http://nota.org/schema/pfad.xsd" xmlns:talent="http://nota.org/schema/talent.xsd"
+  xmlns:fertigkeit="http://nota.org/schema/fertigkeit.xsd"
+  xmlns:besonderheit="http://nota.org/schema/besonderheit.xsd"
+  xmlns:Belastung="http://nota.org/schema/kampf/aktionen.xsd"
+  xmlns:ausstattung="http://nota.org/schema/kampf/ausstattung.xsd"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+  >
+    <Waffen>
+      <Nahkampfwaffe Id="Floret" Distanzklasse="2">
+        <misc:Name>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Floret]]>
+          </misc:Lokalisirung>
+        </misc:Name>
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[]]>
+          </misc:Lokalisirung>
+        </misc:Beschreibung>
+        <Schaden>
+          <Schnitt Schaden="2" />
+        </Schaden>
+        <Eigenschaften>
+          <Eigenschaft Id="Präzise" />
+        </Eigenschaften>
+        <Talente>
+          <ausstattung:Talent Id="Fechtwaffen" />
+        </Talente>
+      </Nahkampfwaffe>
+      <Nahkampfwaffe Id="Rapier" Distanzklasse="2">
+        <misc:Name>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Rapier]]>
+          </misc:Lokalisirung>
+        </misc:Name>
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[]]>
+          </misc:Lokalisirung>
+        </misc:Beschreibung>
+        <Schaden>
+          <Wucht Schaden="1" />
+          <Schnitt Schaden="3" />
+        </Schaden>
+        <Eigenschaften>
+          <Eigenschaft Id="Präzise" />
+        </Eigenschaften>
+        <Talente>
+          <ausstattung:Talent Id="Fechtwaffen" />
+        </Talente>
+      </Nahkampfwaffe>
+      <Nahkampfwaffe Id="Schwert" Distanzklasse="2">
+        <misc:Name>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Schwert]]>
+          </misc:Lokalisirung>
+        </misc:Name>
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[]]>
+          </misc:Lokalisirung>
+        </misc:Beschreibung>
+        <Schaden>
+          <Wucht Schaden="3" />
+          <Schnitt Schaden="3" />
+        </Schaden>
+        <Talente>
+          <ausstattung:Talent Id="Schwerter" />
+        </Talente>
+      </Nahkampfwaffe>
+      <Nahkampfwaffe Id="Axt" Distanzklasse="2">
+        <misc:Name>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Axt]]>
+          </misc:Lokalisirung>
+        </misc:Name>
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[]]>
+          </misc:Lokalisirung>
+        </misc:Beschreibung>
+        <Schaden>
+          <Wucht Schaden="5" />
+          <Schnitt Schaden="4" />
+        </Schaden>
+        <Talente>
+          <ausstattung:Talent Id="Einhandäxte" />
+        </Talente>
+      </Nahkampfwaffe>
+      <Nahkampfwaffe Id="Dolch" Distanzklasse="1">
+        <misc:Name>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Dolch]]>
+          </misc:Lokalisirung>
+        </misc:Name>
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[]]>
+          </misc:Lokalisirung>
+        </misc:Beschreibung>
+        <Schaden>
+          <Schnitt Schaden="2" />
+        </Schaden>
+        <Talente>
+          <ausstattung:Talent Id="Dolche" />
+        </Talente>
+      </Nahkampfwaffe>
+
+      <Nahkampfwaffe Id="Speer" Distanzklasse="3">
+        <misc:Name>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Speer]]>
+          </misc:Lokalisirung>
+        </misc:Name>
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[]]>
+          </misc:Lokalisirung>
+        </misc:Beschreibung>
+        <Schaden>
+          <Wucht Schaden="1" />
+          <Schnitt Schaden="2" />
+        </Schaden>
+        <Talente>
+          <ausstattung:Talent Id="Stangenwaffen" />
+        </Talente>
+      </Nahkampfwaffe>
+
+      <Nahkampfwaffe Id="Harpune" Distanzklasse="3">
+        <misc:Name>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Harpune]]>
+          </misc:Lokalisirung>
+        </misc:Name>
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[]]>
+          </misc:Lokalisirung>
+        </misc:Beschreibung>
+        <Schaden>
+          <Wucht Schaden="1" />
+          <Schnitt Schaden="2" />
+        </Schaden>
+        <Eigenschaften>
+          <Eigenschaft Id="Wiederharken" />
+        </Eigenschaften>
+        <Talente>
+          <ausstattung:Talent Id="Stangenwaffen" />
+        </Talente>
+      </Nahkampfwaffe>
+
+      <Nahkampfwaffe Id="Gleve" Distanzklasse="3">
+        <misc:Name>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Gleve]]>
+          </misc:Lokalisirung>
+        </misc:Name>
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[]]>
+          </misc:Lokalisirung>
+        </misc:Beschreibung>
+        <Schaden>
+          <Wucht Schaden="2" />
+          <Schnitt Schaden="2" />
+        </Schaden>
+        <Talente>
+          <ausstattung:Talent Id="Stangenwaffen" />
+        </Talente>
+      </Nahkampfwaffe>
+
+
+      <Nahkampfwaffe Id="Keule" Distanzklasse="2">
+        <misc:Name>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Keule]]>
+          </misc:Lokalisirung>
+        </misc:Name>
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[]]>
+          </misc:Lokalisirung>
+        </misc:Beschreibung>
+        <Schaden>
+          <Wucht Schaden="3" />
+        </Schaden>
+        <Talente>
+          <ausstattung:Talent Id="Stumpfe Hiebwaffen" />
+        </Talente>
+      </Nahkampfwaffe>
+
+      <Nahkampfwaffe Id="Hammer" Distanzklasse="2">
+        <misc:Name>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Hammer]]>
+          </misc:Lokalisirung>
+        </misc:Name>
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[]]>
+          </misc:Lokalisirung>
+        </misc:Beschreibung>
+        <Schaden>
+          <Wucht Schaden="6" />
+        </Schaden>
+        <Eigenschaften>
+          <Eigenschaft Id="Wuchtig" />
+        </Eigenschaften>
+        <Talente>
+          <ausstattung:Talent Id="Stumpfe Hiebwaffen" />
+        </Talente>
+      </Nahkampfwaffe>
+
+      <Nahkampfwaffe Id="Anderthalbhänder" Distanzklasse="3">
+        <misc:Name>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Anderthalbhänder]]>
+          </misc:Lokalisirung>
+        </misc:Name>
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[]]>
+          </misc:Lokalisirung>
+        </misc:Beschreibung>
+        <Schaden>
+          <Wucht Schaden="4" />
+          <Schnitt Schaden="3" />
+        </Schaden>
+        <Talente>
+          <ausstattung:Talent Id="Anderthalbhänder" />
+        </Talente>
+      </Nahkampfwaffe>
+
+      <Fernkampfwaffe Id="Kompositbogen">
+        <misc:Name>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Kompositbogen]]>
+          </misc:Lokalisirung>
+        </misc:Name>
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[]]>
+          </misc:Lokalisirung>
+        </misc:Beschreibung>
+        <Schaden>
+          <Wucht Schaden="2" />
+          <Schnitt Schaden="2" />
+        </Schaden>
+        <Schusseigenschaften Magazingröße="1" Schussfrequenz="5" />
+        <Reichweiten>
+          <Reichweite Distanz="Nahkampf" Schadensreduktion="2" Modifikator="-10" />
+          <Reichweite Distanz="10" Modifikator="0" />
+          <Reichweite Distanz="20" Modifikator="-2" />
+          <Reichweite Distanz="40" Modifikator="-4" />
+          <Reichweite Distanz="80" Modifikator="-6" />
+          <Reichweite Distanz="120" Modifikator="-8" />
+          <Reichweite Distanz="160" Modifikator="-10" />
+          <Reichweite Distanz="200" Modifikator="-14" />
+          <Reichweite Distanz="400" Modifikator="-20" />
+          <Reichweite Distanz="500" Modifikator="-25" />
+        </Reichweiten>
+        <Nachladezeit Wert="1" Einheit="S" />
+        <Eigenschaften>
+          <Eigenschaft Id="Rüstungsbrechend" />
+          <Eigenschaft Id="Tödlich" />
+        </Eigenschaften>
+      </Fernkampfwaffe>
+
+    </Waffen>
+    <Rüstungen>
+      <Rüstung Id="Lederharnisch" Erschwernis="1">
+        <misc:Name>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Lederharnisch]]>
+          </misc:Lokalisirung>
+        </misc:Name>
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[]]>
+          </misc:Lokalisirung>
+        </misc:Beschreibung>
+        <Schutz>
+          <Flexibilität Wert="3" />
+          <Härte Wert="3" />
+        </Schutz>
+        <Trefferzonen>
+          <Brust>
+            <Schutz Von="2" Bis="10" />
+          </Brust>
+          <Hüfte>
+            <Schutz Von="1" Bis="9" />
+          </Hüfte>
+        </Trefferzonen>
+      </Rüstung>
+
+      <Rüstung Id="MetallHarnich" Erschwernis="1">
+        <misc:Name>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[MetallHarnich]]>
+          </misc:Lokalisirung>
+        </misc:Name>
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[]]>
+          </misc:Lokalisirung>
+        </misc:Beschreibung>
+        <Schutz>
+          <Flexibilität Wert="1" />
+          <Härte Wert="6" />
+        </Schutz>
+        <Trefferzonen>
+          <Brust>
+            <Schutz Von="2" Bis="10" />
+          </Brust>
+          <Hüfte>
+            <Schutz Von="1" Bis="9" />
+          </Hüfte>
+        </Trefferzonen>
+      </Rüstung>
+
+      <Rüstung Id="Kettenhemd" Erschwernis="1">
+        <misc:Name>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Kettenhemd]]>
+          </misc:Lokalisirung>
+        </misc:Name>
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[]]>
+          </misc:Lokalisirung>
+        </misc:Beschreibung>
+        <Schutz>
+          <Flexibilität Wert="2" />
+          <Härte Wert="6" />
+        </Schutz>
+        <Trefferzonen>
+          <Brust>
+            <Schutz Von="2" Bis="10" />
+          </Brust>
+          <Hüfte>
+            <Schutz Von="1" Bis="9" />
+          </Hüfte>
+        </Trefferzonen>
+      </Rüstung>
+
+      <Rüstung Id="Gambesong" Erschwernis="1">
+        <misc:Name>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Gambesong]]>
+          </misc:Lokalisirung>
+        </misc:Name>
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[]]>
+          </misc:Lokalisirung>
+        </misc:Beschreibung>
+        <Schutz>
+          <Flexibilität Wert="4" />
+          <Dämpfung Wert="4" />
+        </Schutz>
+        <Trefferzonen>
+          <Brust>
+            <Schutz Von="2" Bis="10" />
+          </Brust>
+          <Hüfte>
+            <Schutz Von="1" Bis="9" />
+          </Hüfte>
+        </Trefferzonen>
+      </Rüstung>
+
+
+    </Rüstungen>
+    <Eigenschaften>
+      <Eigenschaft Id="Präzise">
+        <misc:Name>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Präzise]]>
+          </misc:Lokalisirung>
+        </misc:Name>
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Eine Waffe mit der Eigenschaft Präzise ist in der Lage die Rüstung des Gegners zu umgehen. Für alle Präzisen Manöver sind die Erschwernisse halbiert.]]>
+          </misc:Lokalisirung>
+        </misc:Beschreibung>
+      </Eigenschaft>
+      <Eigenschaft Id="Wuchtig">
+        <misc:Name>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Wuchtig]]>
+          </misc:Lokalisirung>
+        </misc:Name>
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Wuchtige waffen erleichtern es sie mit brachialer gewallt einzusetzen. Für alle Aktionen mit der Eigenschaft Wuchtig ist die Erschwerniss halbiert.]]>
+          </misc:Lokalisirung>
+        </misc:Beschreibung>
+      </Eigenschaft>
+      <Eigenschaft Id="Durchschalgend">
+        <misc:Name>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Durchschalgend]]>
+          </misc:Lokalisirung>
+        </misc:Name>
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Der Wuchtschaden wird für die berechnungs des Schnittschadens verdoppelt.]]>
+          </misc:Lokalisirung>
+        </misc:Beschreibung>
+      </Eigenschaft>
+      <Eigenschaft Id="Rüstungsbrechend">
+        <misc:Name>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Rüstungsbrechend]]>
+          </misc:Lokalisirung>
+        </misc:Name>
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Der Wuchtschaden wird für die berechnungs des Schnittschadens Verdreifacht.]]>
+          </misc:Lokalisirung>
+        </misc:Beschreibung>
+      </Eigenschaft>
+      <Eigenschaft Id="Tödlich">
+        <misc:Name>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Tödlich]]>
+          </misc:Lokalisirung>
+        </misc:Name>
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Schnittschaden der im bereich Kopf, Brust Hüfte verursacht wird, wird verdoppelt.]]>
+          </misc:Lokalisirung>
+        </misc:Beschreibung>
+      </Eigenschaft>
+      <Eigenschaft Id="Wiederharken">
+        <misc:Name>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Wiederharken]]>
+          </misc:Lokalisirung>
+        </misc:Name>
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Waffe kann sich im Opfer verfangen, und fügt beim entfernen 1 Blutungsschaden zu.]]>
+          </misc:Lokalisirung>
+        </misc:Beschreibung>
+      </Eigenschaft>
+    </Eigenschaften>
+  </Ausstattung>

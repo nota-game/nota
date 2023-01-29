@@ -1,0 +1,242 @@
+<Besonderheiten xmlns="http://nota.org/schema/besonderheit.xsd"
+    xmlns:nota='http://nota.org/schema/nota.xsd' xmlns:misc='http://nota.org/schema/misc.xsd'
+    xmlns:lebewesen="http://nota.org/schema/lebewesen.xsd"
+    xmlns:pfad="http://nota.org/schema/pfad.xsd" xmlns:talent="http://nota.org/schema/talent.xsd"
+    xmlns:fertigkeit="http://nota.org/schema/fertigkeit.xsd"
+    xmlns:besonderheit="http://nota.org/schema/besonderheit.xsd"
+    xmlns:Belastung="http://nota.org/schema/kampf/aktionen.xsd"
+    xmlns:ausstattung="http://nota.org/schema/kampf/ausstattung.xsd"
+    KategorieId="Gaben">
+    <besonderheit:Kategorie>
+        <misc:Lokalisirung Sprache="de">
+        <![CDATA[Gaben]]>
+      </misc:Lokalisirung>
+    </besonderheit:Kategorie>
+
+    <Besonderheit Id="Segen Irus" Gebunden="true">
+        <misc:Name>
+            <misc:Lokalisirung Sprache="de">
+          <![CDATA[Segen Irus]]>
+        </misc:Lokalisirung>
+        </misc:Name>
+        <besonderheit:Stufe>
+            <misc:Beschreibung>
+                <misc:Lokalisirung Sprache="de">
+            <![CDATA[Irus schenkt den Kindern seinen Segen. Der Spieler kann 2 GlP ausgeben um nach einer Probe einen zusätslichen Eigenschaftswurf auf GL zu machen. Dieser Würfel kann einen Belibigen Eigenschaftswurf der Probe ersetzen.]]>
+          </misc:Lokalisirung>
+            </misc:Beschreibung>
+        </besonderheit:Stufe>
+    </Besonderheit>
+    <Besonderheit Id="Auserwählter" Gebunden="true">
+        <misc:Name>
+            <misc:Lokalisirung Sprache="de">
+          <![CDATA[Auserwählter]]>
+        </misc:Lokalisirung>
+        </misc:Name>
+        <besonderheit:Stufe>
+            <misc:Beschreibung>
+                <misc:Lokalisirung Sprache="de">
+            <![CDATA[Der Charakter wurde von einem der Götter auserwählt]]>
+          </misc:Lokalisirung>
+            </misc:Beschreibung>
+        </besonderheit:Stufe>
+    </Besonderheit>
+
+    <Besonderheit Id="Auserwählter Alsas" Gebunden="true">
+        <misc:Name>
+            <misc:Lokalisirung Sprache="de">
+          <![CDATA[Auserwählter Alsas]]>
+        </misc:Lokalisirung>
+        </misc:Name>
+        <besonderheit:Stufe>
+            <misc:Beschreibung>
+                <misc:Lokalisirung Sprache="de">
+            <![CDATA[Der Charakter wurde von einem der Götter auserwählt]]>
+          </misc:Lokalisirung>
+            </misc:Beschreibung>
+            <besonderheit:Mods>
+                <misc:Besonderheiten>
+                    <besonderheit:Besonderheit Id="Auserwählter" />
+                </misc:Besonderheiten>
+            </besonderheit:Mods>
+        </besonderheit:Stufe>
+    </Besonderheit>
+
+    <Besonderheit Id="Auserwählter Yoguu" Gebunden="true">
+        <misc:Name>
+            <misc:Lokalisirung Sprache="de">
+          <![CDATA[Auserwählter Yoguu]]>
+        </misc:Lokalisirung>
+        </misc:Name>
+        <besonderheit:Stufe>
+            <misc:Beschreibung>
+                <misc:Lokalisirung Sprache="de">
+            <![CDATA[Der Charakter wurde von einem der Götter auserwählt]]>
+          </misc:Lokalisirung>
+            </misc:Beschreibung>
+            <besonderheit:Mods>
+                <misc:Besonderheiten>
+                    <besonderheit:Besonderheit Id="Auserwählter" />
+                </misc:Besonderheiten>
+            </besonderheit:Mods>
+        </besonderheit:Stufe>
+    </Besonderheit>
+
+    <Besonderheit Id="Auserwählter Bartimus" Gebunden="true">
+        <misc:Name>
+            <misc:Lokalisirung Sprache="de">
+          <![CDATA[Auserwählter Bartimus]]>
+        </misc:Lokalisirung>
+        </misc:Name>
+        <besonderheit:Stufe>
+            <misc:Beschreibung>
+                <misc:Lokalisirung Sprache="de">
+            <![CDATA[Der Charakter wurde von einem der Götter auserwählt]]>
+          </misc:Lokalisirung>
+            </misc:Beschreibung>
+            <besonderheit:Mods>
+                <misc:Besonderheiten>
+                    <besonderheit:Besonderheit Id="Auserwählter" />
+                </misc:Besonderheiten>
+            </besonderheit:Mods>
+        </besonderheit:Stufe>
+    </Besonderheit>
+
+    <Besonderheit Id="Auserwählter Heros" Gebunden="true">
+        <misc:Name>
+            <misc:Lokalisirung Sprache="de">
+          <![CDATA[Auserwählter Heros]]>
+        </misc:Lokalisirung>
+        </misc:Name>
+        <besonderheit:Stufe>
+            <misc:Beschreibung>
+                <misc:Lokalisirung Sprache="de">
+            <![CDATA[Der Charakter wurde von einem der Götter auserwählt]]>
+          </misc:Lokalisirung>
+            </misc:Beschreibung>
+            <besonderheit:Mods>
+                <misc:Besonderheiten>
+                    <besonderheit:Besonderheit Id="Auserwählter" />
+                </misc:Besonderheiten>
+            </besonderheit:Mods>
+        </besonderheit:Stufe>
+    </Besonderheit>
+
+    <Besonderheit Id="Auserwählter Karins" Gebunden="true">
+        <misc:Name>
+            <misc:Lokalisirung Sprache="de">
+          <![CDATA[Auserwählter Karins]]>
+        </misc:Lokalisirung>
+        </misc:Name>
+        <besonderheit:Stufe>
+            <misc:Beschreibung>
+                <misc:Lokalisirung Sprache="de">
+            <![CDATA[Der Charakter wurde von einem der Götter auserwählt]]>
+          </misc:Lokalisirung>
+            </misc:Beschreibung>
+            <besonderheit:Mods>
+                <misc:Besonderheiten>
+                    <besonderheit:Besonderheit Id="Auserwählter" />
+                </misc:Besonderheiten>
+            </besonderheit:Mods>
+        </besonderheit:Stufe>
+    </Besonderheit>
+
+    <Besonderheit Id="Auserwählter Iru" Gebunden="true">
+        <misc:Name>
+            <misc:Lokalisirung Sprache="de">
+          <![CDATA[Auserwählter Iru]]>
+        </misc:Lokalisirung>
+        </misc:Name>
+        <besonderheit:Stufe>
+            <misc:Beschreibung>
+                <misc:Lokalisirung Sprache="de">
+            <![CDATA[Der Charakter wurde von einem der Götter auserwählt]]>
+          </misc:Lokalisirung>
+            </misc:Beschreibung>
+            <besonderheit:Mods>
+                <misc:Besonderheiten>
+                    <besonderheit:Besonderheit Id="Auserwählter" />
+                </misc:Besonderheiten>
+            </besonderheit:Mods>
+        </besonderheit:Stufe>
+    </Besonderheit>
+
+    <Besonderheit Id="Auserwählter Kalim" Gebunden="true">
+        <misc:Name>
+            <misc:Lokalisirung Sprache="de">
+          <![CDATA[Auserwählter Kalim]]>
+        </misc:Lokalisirung>
+        </misc:Name>
+        <besonderheit:Stufe>
+            <misc:Beschreibung>
+                <misc:Lokalisirung Sprache="de">
+            <![CDATA[Der Charakter wurde von einem der Götter auserwählt]]>
+          </misc:Lokalisirung>
+            </misc:Beschreibung>
+            <besonderheit:Mods>
+                <misc:Besonderheiten>
+                    <besonderheit:Besonderheit Id="Auserwählter" />
+                </misc:Besonderheiten>
+            </besonderheit:Mods>
+        </besonderheit:Stufe>
+    </Besonderheit>
+
+    <Besonderheit Id="Auserwählter Nalum" Gebunden="true">
+        <misc:Name>
+            <misc:Lokalisirung Sprache="de">
+          <![CDATA[Auserwählter Nalum]]>
+        </misc:Lokalisirung>
+        </misc:Name>
+        <besonderheit:Stufe>
+            <misc:Beschreibung>
+                <misc:Lokalisirung Sprache="de">
+            <![CDATA[Der Charakter wurde von einem der Götter auserwählt]]>
+          </misc:Lokalisirung>
+            </misc:Beschreibung>
+            <besonderheit:Mods>
+                <misc:Besonderheiten>
+                    <besonderheit:Besonderheit Id="Auserwählter" />
+                </misc:Besonderheiten>
+            </besonderheit:Mods>
+        </besonderheit:Stufe>
+    </Besonderheit>
+
+
+    <Besonderheit Id="Miasma Resistenz">
+        <misc:Name>
+            <misc:Lokalisirung Sprache="de">
+          <![CDATA[Miasma Resistenz]]>
+        </misc:Lokalisirung>
+        </misc:Name>
+        <besonderheit:Stufe>
+
+            <misc:Beschreibung>
+                <misc:Lokalisirung Sprache="de">
+            <![CDATA[Der Charakter hat eine erhöte Resistenz gegen das dämonische Miasma]]>
+          </misc:Lokalisirung>
+            </misc:Beschreibung>
+            <Voraussetzung>
+                <Besonderheit Id="Auserwählter" />
+            </Voraussetzung>
+        </besonderheit:Stufe>
+    </Besonderheit>
+
+    <Besonderheit Id="Verbesserte Wundheilung">
+        <misc:Name>
+            <misc:Lokalisirung Sprache="de">
+          <![CDATA[Verbesserte Wundheilung]]>
+        </misc:Lokalisirung>
+        </misc:Name>
+        <besonderheit:Stufe>
+            <misc:Beschreibung>
+                <misc:Lokalisirung Sprache="de">
+            <![CDATA[Die Wunden des Charakters heilen Schneller.]]>
+          </misc:Lokalisirung>
+            </misc:Beschreibung>
+            <Voraussetzung>
+                <Besonderheit Id="Auserwählter" />
+            </Voraussetzung>
+        </besonderheit:Stufe>
+    </Besonderheit>
+</Besonderheiten>

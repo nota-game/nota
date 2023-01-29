@@ -1,0 +1,161 @@
+<Pfade Id="Kultur" xmlns="http://nota.org/schema/pfad.xsd"
+xmlns:nota='http://nota.org/schema/nota.xsd' xmlns:misc='http://nota.org/schema/misc.xsd'
+xmlns:lebewesen="http://nota.org/schema/lebewesen.xsd"
+xmlns:pfad="http://nota.org/schema/pfad.xsd" xmlns:talent="http://nota.org/schema/talent.xsd"
+xmlns:fertigkeit="http://nota.org/schema/fertigkeit.xsd"
+xmlns:besonderheit="http://nota.org/schema/besonderheit.xsd"
+xmlns:Belastung="http://nota.org/schema/kampf/aktionen.xsd"
+xmlns:ausstattung="http://nota.org/schema/kampf/ausstattung.xsd"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+>
+    <misc:Name>
+      <misc:Lokalisirung Sprache="de">
+        <![CDATA[Kultur]]>
+      </misc:Lokalisirung>
+    </misc:Name>
+    <misc:Beschreibung>
+      <misc:Lokalisirung Sprache="de">
+        <![CDATA[Wähle die Kultur des Charakters]]>
+      </misc:Lokalisirung>
+    </misc:Beschreibung>
+
+    <Pfad Id="Gariches Reich">
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Gariches Reich]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+
+      <misc:Levels>
+        <misc:Level Id="Einheimicher">
+          <misc:Kosten Id="Kultur" Berechnung="30" />
+          <misc:Name>
+            <misc:Lokalisirung Sprache="de">
+              <![CDATA[Einheimicher]]>
+            </misc:Lokalisirung>
+          </misc:Name>
+          <fertigkeit:Fertigkeit Id="Kurturkunde Gariches Reich" Stufe="3" />
+          <fertigkeit:Fertigkeit Id="Kurturkunde Uranien" Stufe="3" />
+          <fertigkeit:Fertigkeit Id="Uranisch" Stufe="2" />
+          <fertigkeit:Fertigkeit Id="Garich" Stufe="2" />
+        </misc:Level>
+        <misc:Level Id="Imegrant">
+          <misc:Kosten Id="Kultur" Berechnung="10" />
+          <misc:Kosten Id="Proffession" Berechnung="-10" />
+          <misc:Name>
+            <misc:Lokalisirung Sprache="de">
+              <![CDATA[Zuzügler]]>
+            </misc:Lokalisirung>
+          </misc:Name>
+          <misc:Voraussetzung>
+            <misc:LevelVoraussetzung>
+              <misc:Not>
+                <misc:Level Id="Einheimicher" />
+              </misc:Not>
+            </misc:LevelVoraussetzung>
+          </misc:Voraussetzung>
+          <fertigkeit:Fertigkeit Id="Uranisch" Stufe="1" />
+          <fertigkeit:Fertigkeit Id="Garich" Stufe="1" />
+
+        </misc:Level>
+        <misc:Level Id="Land" WiederhoteNutzung="5">
+          <misc:Kosten Id="Kultur" Berechnung="10" />
+          <misc:Kosten Id="Proffession" Berechnung="-10" />
+          <misc:Kosten Id="EP" Berechnung="-5" />
+          <misc:Name>
+            <misc:Lokalisirung Sprache="de">
+              <![CDATA[Landbevölkerung]]>
+            </misc:Lokalisirung>
+          </misc:Name>
+          <misc:Voraussetzung>
+            <misc:LevelVoraussetzung>
+              <misc:Or>
+                <misc:Level Id="Einheimicher" />
+                <misc:Level Id="Imegrant" />
+              </misc:Or>
+            </misc:LevelVoraussetzung>
+          </misc:Voraussetzung>
+          <misc:Talent EP="2" Id="Ackerbau" />
+          <misc:Talent EP="3" Id="Wettervorhersage" />
+          <misc:Talent EP="3" Id="Pflanzenkunde" />
+          <misc:Talent EP="1" Id="Reiten" />
+          <misc:Talent EP="3" Id="Tierkunde" />
+        </misc:Level>
+        <misc:Level Id="Stadt" WiederhoteNutzung="5">
+          <misc:Kosten Id="Kultur" Berechnung="10" />
+          <misc:Kosten Id="Proffession" Berechnung="-10" />
+          <misc:Kosten Id="EP" Berechnung="-5" />
+          <misc:Name>
+            <misc:Lokalisirung Sprache="de">
+              <![CDATA[Stadtbevölkerung]]>
+            </misc:Lokalisirung>
+          </misc:Name>
+          <misc:Voraussetzung>
+            <misc:LevelVoraussetzung>
+              <misc:Or>
+                <misc:Level Id="Einheimicher" />
+                <misc:Level Id="Imegrant" />
+              </misc:Or>
+            </misc:LevelVoraussetzung>
+          </misc:Voraussetzung>
+          <misc:Talent EP="3" Id="Gassenwissen" />
+          <misc:Talent EP="3" Id="Menschenkentniss" />
+          <misc:Talent EP="3" Id="Orientierung" />
+          <misc:Talent EP="1" Id="Rechtskunde" />
+          <misc:Talent EP="2" Id="Handel" />
+        </misc:Level>
+        <misc:Level Id="Sonstiges" WiederhoteNutzung="99">
+          <misc:Kosten Id="Kultur" Berechnung="10" />
+          <misc:Kosten Id="Proffession" Berechnung="-10" />
+          <misc:Kosten Id="EP" Berechnung="-10" />
+          <misc:Voraussetzung>
+            <misc:LevelVoraussetzung>
+              <misc:Or>
+                <misc:Level Id="Land" mindestVorkommen="5" />
+                <misc:Level Id="Stadt" mindestVorkommen="5" />
+              </misc:Or>
+            </misc:LevelVoraussetzung>
+          </misc:Voraussetzung>
+
+        </misc:Level>
+      </misc:Levels>
+    </Pfad>
+
+    <Pfad Id="Alan">
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Alan]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+
+      <misc:Levels>
+        <misc:Level Id="T"></misc:Level>
+      </misc:Levels>
+    </Pfad>
+
+    <Pfad Id="Kirin">
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Kirin]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <misc:Levels>
+        <misc:Level Id="T"></misc:Level>
+      </misc:Levels>
+    </Pfad>
+  </Pfade>

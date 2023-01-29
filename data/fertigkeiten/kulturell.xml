@@ -1,0 +1,213 @@
+<Fertigkeiten xmlns="http://nota.org/schema/fertigkeit.xsd" KategorieId="Kulturele"
+xmlns:nota='http://nota.org/schema/nota.xsd' xmlns:misc='http://nota.org/schema/misc.xsd'
+xmlns:lebewesen="http://nota.org/schema/lebewesen.xsd"
+xmlns:pfad="http://nota.org/schema/pfad.xsd" xmlns:talent="http://nota.org/schema/talent.xsd"
+xmlns:fertigkeit="http://nota.org/schema/fertigkeit.xsd"
+xmlns:besonderheit="http://nota.org/schema/besonderheit.xsd"
+xmlns:Belastung="http://nota.org/schema/kampf/aktionen.xsd"
+xmlns:ausstattung="http://nota.org/schema/kampf/ausstattung.xsd"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+>
+    <fertigkeit:Kategorie>
+      <misc:Lokalisirung Sprache="de">
+        <![CDATA[Kulturelle]]>
+      </misc:Lokalisirung>
+    </fertigkeit:Kategorie>
+
+    <Fertigkeit Id="Kurturkunde Uranien">
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Kurturkunde Uranien]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+
+      <fertigkeit:Stufe Kosten="10">
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Die Weit verbreitesten informationen. Viele Vorurteile Positv wie negativ]]>
+          </misc:Lokalisirung>
+        </misc:Beschreibung>
+        <Verbreitung Wert="6">
+          <misc:Pfad Id="Alan" Verbreitung="7" />
+        </Verbreitung>
+      </fertigkeit:Stufe>
+
+      <fertigkeit:Stufe Kosten="35">
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Tiefgehenderes wissen der Kultur. Das verhalten kann aber immernoch als aussenseiter wahrgenommen werden]]>
+          </misc:Lokalisirung>
+        </misc:Beschreibung>
+        <Verbreitung Wert="5">
+          <misc:Pfad Id="Alan" Verbreitung="7" />
+        </Verbreitung>
+      </fertigkeit:Stufe>
+
+      <fertigkeit:Stufe Kosten="55">
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Ein Wissen der Kultlur und verhaltensregln der in diese Kultur geborenen.]]>
+          </misc:Lokalisirung>
+        </misc:Beschreibung>
+        <Verbreitung Wert="4">
+          <misc:Pfad Id="Alan" Verbreitung="7" />
+        </Verbreitung>
+      </fertigkeit:Stufe>
+
+      <fertigkeit:Stufe Kosten="60">
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Grundlagen und Hintergründe der Kultur, alte bräuche etc. Dinge die auch nicht jeder der Kultur angehörige kennt.]]>
+          </misc:Lokalisirung>
+        </misc:Beschreibung>
+        <Verbreitung Wert="2">
+          <misc:Pfad Id="Alan" Verbreitung="4" />
+        </Verbreitung>
+      </fertigkeit:Stufe>
+
+      <fertigkeit:Stufe Kosten="90">
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Geheimes wissen welches nur wenige auserlesene kennen]]>
+          </misc:Lokalisirung>
+        </misc:Beschreibung>
+        <Verbreitung Wert="1">
+          <misc:Pfad Id="Alan" Verbreitung="2" />
+        </Verbreitung>
+      </fertigkeit:Stufe>
+    </Fertigkeit>
+
+    <Fertigkeit Id="Kurturkunde Gariches Reich">
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Kurturkunde Gariches Reich]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+
+      <fertigkeit:Stufe Kosten="10">
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Die Weit verbreitesten informationen. Viele Vorurteile Positv wie negativ]]>
+          </misc:Lokalisirung>
+        </misc:Beschreibung>
+        <Verbreitung Wert="6">
+          <misc:Pfad Id="Alan" Verbreitung="7" />
+        </Verbreitung>
+      </fertigkeit:Stufe>
+
+      <fertigkeit:Stufe Kosten="35">
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Tiefgehenderes wissen der Kultur. Das verhalten kann aber immernoch als aussenseiter wahrgenommen werden]]>
+          </misc:Lokalisirung>
+        </misc:Beschreibung>
+        <Verbreitung Wert="5">
+          <misc:Pfad Id="Alan" Verbreitung="7" />
+        </Verbreitung>
+        <fertigkeit:Voraussetzung>
+          <fertigkeit:Fertigkeit Id="Kurturkunde Uranien" Stufe="1" />
+        </fertigkeit:Voraussetzung>
+      </fertigkeit:Stufe>
+
+      <fertigkeit:Stufe Kosten="55">
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Ein Wissen der Kultlur und verhaltensregln der in diese Kultur geborenen.]]>
+          </misc:Lokalisirung>
+        </misc:Beschreibung>
+        <Verbreitung Wert="4">
+          <misc:Pfad Id="Alan" Verbreitung="7" />
+        </Verbreitung>
+        <fertigkeit:Voraussetzung>
+          <fertigkeit:Fertigkeit Id="Kurturkunde Uranien" Stufe="2" />
+        </fertigkeit:Voraussetzung>
+
+      </fertigkeit:Stufe>
+
+      <fertigkeit:Stufe Kosten="60">
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Grundlagen und Hintergründe der Kultur, alte bräuche etc. Dinge die auch nicht jeder der Kultur angehörige kennt.]]>
+          </misc:Lokalisirung>
+        </misc:Beschreibung>
+        <Verbreitung Wert="2">
+          <misc:Pfad Id="Alan" Verbreitung="4" />
+        </Verbreitung>
+      </fertigkeit:Stufe>
+
+      <fertigkeit:Stufe Kosten="90">
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Geheimes wissen welches nur wenige auserlesene kennen]]>
+          </misc:Lokalisirung>
+        </misc:Beschreibung>
+        <Verbreitung Wert="1">
+          <misc:Pfad Id="Alan" Verbreitung="2" />
+        </Verbreitung>
+      </fertigkeit:Stufe>
+    </Fertigkeit>
+
+    <Fertigkeit Id="Kulturkunde Alan">
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Kulturkunde Alan]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+
+      <fertigkeit:Stufe Kosten="10">
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Die Weit verbreitesten informationen. Viele Vorurteile Positv wie negativ]]>
+          </misc:Lokalisirung>
+        </misc:Beschreibung>
+        <Verbreitung Wert="6">
+          <misc:Pfad Id="Alan" Verbreitung="7" />
+        </Verbreitung>
+      </fertigkeit:Stufe>
+
+      <fertigkeit:Stufe Kosten="35">
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Tiefgehenderes wissen der Kultur. Das verhalten kann aber immernoch als aussenseiter wahrgenommen werden]]>
+          </misc:Lokalisirung>
+        </misc:Beschreibung>
+        <Verbreitung Wert="5">
+          <misc:Pfad Id="Alan" Verbreitung="7" />
+        </Verbreitung>
+      </fertigkeit:Stufe>
+
+      <fertigkeit:Stufe Kosten="55">
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Ein Wissen der Kultlur und verhaltensregln der in diese Kultur geborenen.]]>
+          </misc:Lokalisirung>
+        </misc:Beschreibung>
+        <Verbreitung Wert="4">
+          <misc:Pfad Id="Alan" Verbreitung="7" />
+        </Verbreitung>
+      </fertigkeit:Stufe>
+
+      <fertigkeit:Stufe Kosten="60">
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Grundlagen und Hintergründe der Kultur, alte bräuche etc. Dinge die auch nicht jeder der Kultur angehörige kennt.]]>
+          </misc:Lokalisirung>
+        </misc:Beschreibung>
+        <Verbreitung Wert="2">
+          <misc:Pfad Id="Alan" Verbreitung="4" />
+        </Verbreitung>
+      </fertigkeit:Stufe>
+
+      <fertigkeit:Stufe Kosten="90">
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Geheimes wissen welches nur wenige auserlesene kennen]]>
+          </misc:Lokalisirung>
+        </misc:Beschreibung>
+        <Verbreitung Wert="1">
+          <misc:Pfad Id="Alan" Verbreitung="2" />
+        </Verbreitung>
+      </fertigkeit:Stufe>
+    </Fertigkeit>
+  </Fertigkeiten>

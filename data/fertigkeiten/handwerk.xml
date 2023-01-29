@@ -1,0 +1,34 @@
+
+  <Fertigkeiten xmlns="http://nota.org/schema/fertigkeit.xsd" KategorieId="Handwerk"
+  
+  xmlns:nota='http://nota.org/schema/nota.xsd' xmlns:misc='http://nota.org/schema/misc.xsd'
+  xmlns:lebewesen="http://nota.org/schema/lebewesen.xsd"
+  xmlns:pfad="http://nota.org/schema/pfad.xsd" xmlns:talent="http://nota.org/schema/talent.xsd"
+  xmlns:fertigkeit="http://nota.org/schema/fertigkeit.xsd"
+  xmlns:besonderheit="http://nota.org/schema/besonderheit.xsd"
+  xmlns:Belastung="http://nota.org/schema/kampf/aktionen.xsd"
+  xmlns:ausstattung="http://nota.org/schema/kampf/ausstattung.xsd"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+  >
+    <fertigkeit:Kategorie>
+      <misc:Lokalisirung Sprache="de">
+        <![CDATA[Handwerk]]>
+      </misc:Lokalisirung>
+    </fertigkeit:Kategorie>
+
+    <fertigkeit:Fertigkeit Id="Konditor">
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">Konditor</misc:Lokalisirung>
+      </misc:Name>
+      <fertigkeit:Stufe Kosten="30">
+
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Die kunst Süßes zu erstellen]]>
+          </misc:Lokalisirung>
+        </misc:Beschreibung>
+        <fertigkeit:Verbreitung Wert="4"></fertigkeit:Verbreitung>
+      </fertigkeit:Stufe>
+    </fertigkeit:Fertigkeit>
+  </Fertigkeiten>

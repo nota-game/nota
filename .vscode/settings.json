@@ -41,5 +41,6 @@
         "**/*.*.meta",
         "**/*.*.xmp"
     ],
-    "xml.symbols.maxItemsComputed": 50000
+    "xml.symbols.maxItemsComputed": 50000,
+    "xml.validation.resolveExternalEntities": true
 }

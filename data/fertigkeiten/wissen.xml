@@ -1,0 +1,77 @@
+  <Fertigkeiten xmlns="http://nota.org/schema/fertigkeit.xsd" KategorieId="Wissen"
+  
+  xmlns:nota='http://nota.org/schema/nota.xsd' xmlns:misc='http://nota.org/schema/misc.xsd'
+  xmlns:lebewesen="http://nota.org/schema/lebewesen.xsd"
+  xmlns:pfad="http://nota.org/schema/pfad.xsd" xmlns:talent="http://nota.org/schema/talent.xsd"
+  xmlns:fertigkeit="http://nota.org/schema/fertigkeit.xsd"
+  xmlns:besonderheit="http://nota.org/schema/besonderheit.xsd"
+  xmlns:Belastung="http://nota.org/schema/kampf/aktionen.xsd"
+  xmlns:ausstattung="http://nota.org/schema/kampf/ausstattung.xsd"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+  >
+    <fertigkeit:Kategorie>
+      <misc:Lokalisirung Sprache="de">
+        <![CDATA[Wissen]]>
+      </misc:Lokalisirung>
+    </fertigkeit:Kategorie>
+
+    <fertigkeit:Fertigkeit Id="Höhere Mathematik">
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">Höhere Mathematik</misc:Lokalisirung>
+      </misc:Name>
+      <fertigkeit:Stufe Kosten="30">
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Mathemati die über die Grundrechenarten hinausgeht Sowie die vewendung und umstellung einfacher Formeln]]>
+          </misc:Lokalisirung>
+        </misc:Beschreibung>
+        <fertigkeit:Verbreitung Wert="4"></fertigkeit:Verbreitung>
+        <fertigkeit:Voraussetzung>
+          <talent:Talent Id="Rechnen" Level="6" />
+        </fertigkeit:Voraussetzung>
+      </fertigkeit:Stufe>
+      <fertigkeit:Stufe Kosten="30">
+
+        <misc:Name>
+          <misc:Lokalisirung Sprache="de">Abstrakte Mathematik</misc:Lokalisirung>
+        </misc:Name>
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Beschäftigung mit unendlichkeit Differentialgleichungen]]>
+          </misc:Lokalisirung>
+        </misc:Beschreibung>
+        <fertigkeit:Verbreitung Wert="4"></fertigkeit:Verbreitung>
+        <fertigkeit:Voraussetzung>
+          <talent:Talent Id="Rechnen" Level="12" />
+        </fertigkeit:Voraussetzung>
+      </fertigkeit:Stufe>
+    </fertigkeit:Fertigkeit>
+    <fertigkeit:Fertigkeit Id="Geometrie">
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">Geometrie</misc:Lokalisirung>
+      </misc:Name>
+      <fertigkeit:Stufe Kosten="30">
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Beschäftigt sich mit Prakticher Geometrie]]>
+          </misc:Lokalisirung>
+        </misc:Beschreibung>
+        <fertigkeit:Verbreitung Wert="4"></fertigkeit:Verbreitung>
+        <fertigkeit:Voraussetzung>
+          <talent:Talent Id="Rechnen" Level="8" />
+        </fertigkeit:Voraussetzung>
+      </fertigkeit:Stufe>
+      <fertigkeit:Stufe Kosten="30">
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Nicht euklidiche Geometrie und Multidimensionale Räme.]]>
+          </misc:Lokalisirung>
+        </misc:Beschreibung>
+        <fertigkeit:Verbreitung Wert="4"></fertigkeit:Verbreitung>
+        <fertigkeit:Voraussetzung>
+          <talent:Talent Id="Rechnen" Level="12" />
+        </fertigkeit:Voraussetzung>
+      </fertigkeit:Stufe>
+    </fertigkeit:Fertigkeit>
+  </Fertigkeiten>

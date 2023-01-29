@@ -1,0 +1,459 @@
+
+  <Talente xmlns="http://nota.org/schema/talent.xsd" KategorieId="Körper"
+  xmlns:nota='http://nota.org/schema/nota.xsd' xmlns:misc='http://nota.org/schema/misc.xsd'
+  xmlns:lebewesen="http://nota.org/schema/lebewesen.xsd"
+  xmlns:pfad="http://nota.org/schema/pfad.xsd" xmlns:talent="http://nota.org/schema/talent.xsd"
+  xmlns:fertigkeit="http://nota.org/schema/fertigkeit.xsd"
+  xmlns:besonderheit="http://nota.org/schema/besonderheit.xsd"
+  xmlns:Belastung="http://nota.org/schema/kampf/aktionen.xsd"
+  xmlns:ausstattung="http://nota.org/schema/kampf/ausstattung.xsd"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+  >
+    <talent:Kategorie>
+      <misc:Lokalisirung Sprache="de">
+        <![CDATA[Körper]]>
+      </misc:Lokalisirung>
+    </talent:Kategorie>
+
+    <!--Körper BEGINN-->
+    <Talent Id="Springen" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="MU" />
+        <talent:Eigenschaft Name="ST" />
+        <talent:Eigenschaft Name="GE" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Springen]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Laufen" Anzahl="4" />
+      </talent:Ableitungen>
+    </Talent>
+    <Talent Id="Laufen" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="KO" />
+        <talent:Eigenschaft Name="ST" />
+        <talent:Eigenschaft Name="GE" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Laufen]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Springen" Anzahl="8" />
+      </talent:Ableitungen>
+    </Talent>
+    <Talent Id="Beschatten" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="MU" />
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="SY" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Beschatten]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Wahrnehmung" Anzahl="4" />
+        <talent:Ableitung Id="Hören" Anzahl="3" />
+        <talent:Ableitung Id="Sehen" Anzahl="3" />
+        <talent:Ableitung Id="Schleichen" Anzahl="4" />
+      </talent:Ableitungen>
+    </Talent>
+    <Talent Id="Gewichtstemmen" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="ST" />
+        <talent:Eigenschaft Name="ST" />
+        <talent:Eigenschaft Name="GE" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Gewichtstemmen]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Körperbeherschung" Anzahl="5" />
+      </talent:Ableitungen>
+
+    </Talent>
+    <Talent Id="Schwimmen" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="KO" />
+        <talent:Eigenschaft Name="ST" />
+        <talent:Eigenschaft Name="GE" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Schwimmen]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+    </Talent>
+    <Talent Id="Körperbeherschung" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="ST" />
+        <talent:Eigenschaft Name="GE" />
+        <talent:Eigenschaft Name="IN" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Körperbeherschung]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Akrobatik" Anzahl="3" />
+      </talent:Ableitungen>
+    </Talent>
+    <Talent Id="Akrobatik" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="MU" />
+        <talent:Eigenschaft Name="ST" />
+        <talent:Eigenschaft Name="IN" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Akrobatik]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Körperbeherschung" Anzahl="4" />
+      </talent:Ableitungen>
+    </Talent>
+    <Talent Id="Fingerübungen" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="FM" />
+        <talent:Eigenschaft Name="FM" />
+        <talent:Eigenschaft Name="IN" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Fingerübungen]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Manschmal muss ein Charakter sehr prezise arbeit mit seinen Fingern durchführen. Seien es Taschenspieler Triks, wie das Hervorziehen einer Münze, oder den Bolzen möglichst zügig aus einer Felsspalte zu ziehen. In solchen Fällen steht das Tallent Fingerübungen zur verfügung.]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+    </Talent>
+    <Talent Id="Klettern" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="MU" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="MU" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Klettern]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Fingerübungen" Anzahl="5" />
+        <talent:Ableitung Id="Akrobatik" Anzahl="3" />
+        <talent:Ableitung Id="Körperbeherschung" Anzahl="3" />
+      </talent:Ableitungen>
+    </Talent>
+    <Talent Id="Schleichen" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="MU" />
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="MU" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Schleichen]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Körperbeherschung" Anzahl="3" />
+        <talent:Ableitung Id="Wahrnehmung" Anzahl="4" />
+        <talent:Ableitung Id="Sehen" Anzahl="5" />
+        <talent:Ableitung Id="Hören" Anzahl="5" />
+      </talent:Ableitungen>
+    </Talent>
+    <Talent Id="Fliegen" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="MU" />
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="GE" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Fliegen]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Körperbeherschung" Anzahl="3" />
+        <talent:Ableitung Id="Wahrnehmung" Anzahl="4" />
+      </talent:Ableitungen>
+    </Talent>
+
+    <Talent Id="Gaukeleien" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="MU" />
+        <talent:Eigenschaft Name="SY" />
+        <talent:Eigenschaft Name="FM" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Gaukelein]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Körperbeherschung" Anzahl="4" />
+        <talent:Ableitung Id="Fingerübungen" Anzahl="3" />
+        <talent:Ableitung Id="Wahrnehmung" Anzahl="4" />
+      </talent:Ableitungen>
+
+    </Talent>
+
+    <Talent Id="Reiten" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="SY" />
+        <talent:Eigenschaft Name="GE" />
+        <talent:Eigenschaft Name="ST" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Reiten]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Körperbeherschung" Anzahl="3" />
+        <talent:Ableitung Id="Tierkunde" Anzahl="5" />
+      </talent:Ableitungen>
+    </Talent>
+
+    <Talent Id="Sich Verstecken" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="MU" />
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="GE" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Sich Verstecken]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Körperbeherschung" Anzahl="4" />
+        <talent:Ableitung Id="Sehen" Anzahl="5" />
+      </talent:Ableitungen>
+    </Talent>
+
+    <Talent Id="Singen" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="SY" />
+        <talent:Eigenschaft Name="SY" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Singen]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Körperbeherschung" Anzahl="7" />
+        <talent:Ableitung Id="Stimmen Imitieren" Anzahl="7" />
+      </talent:Ableitungen>
+    </Talent>
+
+    <Talent Id="Skifahren" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="GE" />
+        <talent:Eigenschaft Name="GE" />
+        <talent:Eigenschaft Name="KO" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Skifahren]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Körperbeherschung" Anzahl="7" />
+      </talent:Ableitungen>
+    </Talent>
+
+    <Talent Id="Stimmen Imitieren" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="KL" />
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="SY" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Stimmen Imitieren]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Körperbeherschung" Anzahl="7" />
+        <talent:Ableitung Id="Singen" Anzahl="7" />
+      </talent:Ableitungen>
+    </Talent>
+
+    <Talent Id="Taschendiebstahl" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="MU" />
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="FM" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Taschendiebstahl]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Fingerübungen" Anzahl="3" />
+        <talent:Ableitung Id="Gaukeleien" Anzahl="5" />
+      </talent:Ableitungen>
+    </Talent>
+
+    <Talent Id="Zechen" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="IN" />
+        <talent:Eigenschaft Name="KO" />
+        <talent:Eigenschaft Name="ST" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Zechen]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+    </Talent>
+    <Talent Id="Entfesseln" Komplexität="B">
+      <Probe>
+        <talent:Eigenschaft Name="FM" />
+        <talent:Eigenschaft Name="GE" />
+        <talent:Eigenschaft Name="ST" />
+      </Probe>
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Entfesseln]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+      <Verbreitung Wert="7" />
+      <talent:Ableitungen>
+        <talent:Ableitung Id="Körperbeherschung" Anzahl="3" />
+        <talent:Ableitung Id="Fesseln" Anzahl="5" />
+      </talent:Ableitungen>
+
+    </Talent>
+  </Talente>

@@ -1,0 +1,218 @@
+
+  <pfad:Pfade Id="Proffession"
+  xmlns:nota='http://nota.org/schema/nota.xsd' xmlns:misc='http://nota.org/schema/misc.xsd'
+  xmlns:lebewesen="http://nota.org/schema/lebewesen.xsd"
+  xmlns:pfad="http://nota.org/schema/pfad.xsd" xmlns:talent="http://nota.org/schema/talent.xsd"
+  xmlns:fertigkeit="http://nota.org/schema/fertigkeit.xsd"
+  xmlns:besonderheit="http://nota.org/schema/besonderheit.xsd"
+  xmlns:Belastung="http://nota.org/schema/kampf/aktionen.xsd"
+  xmlns:ausstattung="http://nota.org/schema/kampf/ausstattung.xsd"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+  >
+    <misc:Name>
+      <misc:Lokalisirung Sprache="de">
+        <![CDATA[Proffession]]>
+      </misc:Lokalisirung>
+    </misc:Name>
+    <misc:Beschreibung>
+      <misc:Lokalisirung Sprache="de">
+        <![CDATA[Wähle die Proffession]]>
+      </misc:Lokalisirung>
+    </misc:Beschreibung>
+    <pfad:Pfad Id="Koch">
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Koch]]>
+        </misc:Lokalisirung>
+        <misc:Lokalisirung Sprache="de" Geschlecht="Weiblich">
+          <![CDATA[Köchin]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+
+      <misc:Levels>
+        <misc:Level Id="Grundlagen">
+          <misc:Kosten Id="Proffession" Berechnung="10" />
+          <misc:Name>
+            <misc:Lokalisirung Sprache="de">Grundlage</misc:Lokalisirung>
+          </misc:Name>
+
+          <misc:Talent Id="Backen" EP="2" />
+          <misc:Talent Id="Hauswirtschaft" EP="6" />
+          <misc:Talent Id="Kochen" EP="13" />
+          <misc:Talent Id="Riechen und Schmecken" EP="2" />
+
+        </misc:Level>
+        <misc:Level Id="Vertiefung" WiederhoteNutzung="2">
+          <misc:Kosten Id="Proffession" Berechnung="20" />
+          <misc:Name>
+            <misc:Lokalisirung Sprache="de">Vertiefung</misc:Lokalisirung>
+          </misc:Name>
+
+          <misc:Voraussetzung>
+            <misc:LevelVoraussetzung>
+              <misc:Level Id="Grundlagen" />
+            </misc:LevelVoraussetzung>
+          </misc:Voraussetzung>
+
+          <misc:Talent Id="Backen" EP="4" />
+          <misc:Talent Id="Fingerübungen" EP="3" />
+          <misc:Talent Id="Fleischer" EP="13" />
+          <misc:Talent Id="Fühlen" EP="3" />
+          <misc:Talent Id="Handel" EP="6" />
+          <misc:Talent Id="Kochen" EP="25" />
+          <misc:Talent Id="Lehren" EP="2" />
+          <misc:Talent Id="Pflanzenkunde" EP="5" />
+          <misc:Talent Id="Riechen und Schmecken" EP="11" />
+          <misc:Talent Id="Sehen" EP="3" />
+          <misc:Talent Id="Tierkunde" EP="3" />
+          <misc:Talent Id="Zechen" EP="3" />
+        </misc:Level>
+
+        <misc:Level Id="Geselle" WiederhoteNutzung="1">
+          <misc:Kosten Id="Proffession" Berechnung="20" />
+          <misc:Name>
+            <misc:Lokalisirung Sprache="de">Geselle</misc:Lokalisirung>
+            <misc:Lokalisirung Sprache="de" Geschlecht="Weiblich">
+              <![CDATA[Gesellin]]>
+            </misc:Lokalisirung>
+          </misc:Name>
+
+
+          <misc:Voraussetzung>
+            <misc:LevelVoraussetzung>
+              <misc:And>
+                <misc:Level Id="Vertiefung" mindestVorkommen="2" />
+              </misc:And>
+            </misc:LevelVoraussetzung>
+          </misc:Voraussetzung>
+
+          <misc:Talent Id="Backen" EP="3" />
+          <misc:Talent Id="Fingerübungen" EP="7" />
+          <misc:Talent Id="Fleischer" EP="20" />
+          <misc:Talent Id="Fühlen" EP="7" />
+          <misc:Talent Id="Handel" EP="2" />
+          <misc:Talent Id="Hauswirtschaft" EP="7" />
+          <misc:Talent Id="Kochen" EP="38" />
+          <misc:Talent Id="Lehren" EP="9" />
+          <misc:Talent Id="Pflanzenkunde" EP="12" />
+          <misc:Talent Id="Riechen und Schmecken" EP="38" />
+          <misc:Talent Id="Sehen" EP="7" />
+          <misc:Talent Id="Tierkunde" EP="7" />
+          <misc:Talent Id="Zechen" EP="7" />
+        </misc:Level>
+
+
+        <misc:Level Id="Restaurant" WiederhoteNutzung="1">
+          <misc:Kosten Id="Kultur" Berechnung="20" />
+          <misc:Name>
+            <misc:Lokalisirung Sprache="de">Restaurant Koch</misc:Lokalisirung>
+            <misc:Lokalisirung Sprache="de" Geschlecht="Weiblich">Restaurant Köchin</misc:Lokalisirung>
+          </misc:Name>
+
+          <misc:Voraussetzung>
+            <misc:LevelVoraussetzung>
+              <misc:And>
+                <misc:Level Id="Geselle" />
+              </misc:And>
+            </misc:LevelVoraussetzung>
+          </misc:Voraussetzung>
+          <misc:Talent Id="Kochen" EP="62" />
+          <misc:Talent Id="Pflanzenkunde" EP="16" />
+          <misc:Talent Id="Fleischer" EP="16" />
+        </misc:Level>
+
+        <misc:Level Id="Chefkoch" WiederhoteNutzung="1">
+          <misc:Kosten Id="Kultur" Berechnung="20" />
+          <misc:Name>
+            <misc:Lokalisirung Sprache="de">Chefkoch</misc:Lokalisirung>
+            <misc:Lokalisirung Sprache="de" Geschlecht="Weiblich">Chefköchin</misc:Lokalisirung>
+          </misc:Name>
+
+          <misc:Voraussetzung>
+            <misc:LevelVoraussetzung>
+              <misc:And>
+                <misc:Level Id="Restaurant" />
+              </misc:And>
+            </misc:LevelVoraussetzung>
+          </misc:Voraussetzung>
+          <misc:Talent Id="Handel" EP="22" />
+          <misc:Talent Id="Hauswirtschaft" EP="49" />
+          <misc:Talent Id="Kochen" EP="50" />
+          <misc:Talent Id="Lehren" EP="9" />
+          <misc:Talent Id="Buchführung" EP="33" />
+          <misc:Talent Id="Etikette" EP="22" />
+        </misc:Level>
+
+
+        <misc:Level Id="Straßenverkauf" WiederhoteNutzung="2">
+          <misc:Kosten Id="Kultur" Berechnung="20" />
+          <misc:Name>
+            <misc:Lokalisirung Sprache="de">Straßenverkäufer</misc:Lokalisirung>
+            <misc:Lokalisirung Sprache="de" Geschlecht="Weiblich">Straßenverkäuferin</misc:Lokalisirung>
+          </misc:Name>
+
+          <misc:Voraussetzung>
+            <misc:LevelVoraussetzung>
+              <misc:And>
+                <misc:Level Id="Geselle" />
+              </misc:And>
+            </misc:LevelVoraussetzung>
+          </misc:Voraussetzung>
+          <misc:Talent Id="Handel" EP="17" />
+          <misc:Talent Id="Kochen" EP="56" />
+          <misc:Talent Id="Zechen" EP="20" />
+          <misc:Talent Id="Gassenwissen" EP="31" />
+          <misc:Talent Id="Wettervorhersage" EP="7" />
+          <misc:Talent Id="Menschenkentniss" EP="33" />
+          <misc:Talent Id="Überreden" EP="22" />
+        </misc:Level>
+
+
+        <misc:Level Id="Meister" WiederhoteNutzung="1">
+          <misc:Kosten Id="Kultur" Berechnung="20" />
+          <misc:Name>
+            <misc:Lokalisirung Sprache="de">Meister</misc:Lokalisirung>
+          </misc:Name>
+
+          <misc:Voraussetzung>
+            <misc:LevelVoraussetzung>
+              <misc:Or>
+                <misc:Level Id="Chefkoch" />
+                <misc:Level Id="Straßenverkauf" mindestVorkommen="2" />
+              </misc:Or>
+            </misc:LevelVoraussetzung>
+          </misc:Voraussetzung>
+          <misc:Talent Id="Kochen" EP="72" />
+          <misc:Talent Id="Backen" EP="33" />
+          <misc:Talent Id="Lehren" EP="60" />
+        </misc:Level>
+
+
+      </misc:Levels>
+    </pfad:Pfad>
+    <pfad:Pfad Id="Soldat">
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Soldat]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[]]>
+        </misc:Lokalisirung>
+      </misc:Beschreibung>
+
+      <misc:Levels>
+        <misc:Level Id="T" WiederhoteNutzung="2">
+          <misc:Kosten Id="GP" Berechnung="1" />
+          <misc:Talent Id="Schwerter" EP="30" />
+        </misc:Level>
+      </misc:Levels>
+    </pfad:Pfad>
+  </pfad:Pfade>

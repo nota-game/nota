@@ -1,0 +1,38 @@
+  <Fertigkeiten xmlns="http://nota.org/schema/fertigkeit.xsd" KategorieId="Kampfstiele"
+  xmlns:nota='http://nota.org/schema/nota.xsd' xmlns:misc='http://nota.org/schema/misc.xsd'
+  xmlns:lebewesen="http://nota.org/schema/lebewesen.xsd"
+  xmlns:pfad="http://nota.org/schema/pfad.xsd" xmlns:talent="http://nota.org/schema/talent.xsd"
+  xmlns:fertigkeit="http://nota.org/schema/fertigkeit.xsd"
+  xmlns:besonderheit="http://nota.org/schema/besonderheit.xsd"
+  xmlns:Belastung="http://nota.org/schema/kampf/aktionen.xsd"
+  xmlns:ausstattung="http://nota.org/schema/kampf/ausstattung.xsd"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+  >
+    <fertigkeit:Kategorie>
+      <misc:Lokalisirung Sprache="de">
+        <![CDATA[Kampfstiele]]>
+      </misc:Lokalisirung>
+    </fertigkeit:Kategorie>
+    <fertigkeit:Fertigkeit Id="Si am">
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+          <![CDATA[Si‘am]]>
+        </misc:Lokalisirung>
+      </misc:Name>
+      <fertigkeit:Stufe Kosten="100">
+        <misc:Beschreibung>
+          <misc:Lokalisirung Sprache="de">
+            <![CDATA[Dieser Kampfstiel legt den Fokus auf die Abwehr mit einem Stark gepanzerten Arm, Der Schwertarm ist normalerweise hingegen ungeschützt. Diesern Kampfstiel verwendt eine alternative Trefferzonen verteilung.]]>
+          </misc:Lokalisirung>
+        </misc:Beschreibung>
+        <fertigkeit:Verbreitung Wert="4" />
+        <fertigkeit:Voraussetzung>
+          <misc:And>
+            <talent:Talent Id="Schwerter" Level="12"></talent:Talent>
+            <talent:Talent Id="Schilde" Level="8"></talent:Talent>
+          </misc:And>
+        </fertigkeit:Voraussetzung>
+      </fertigkeit:Stufe>
+    </fertigkeit:Fertigkeit>
+  </Fertigkeiten>

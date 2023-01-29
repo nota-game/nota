@@ -1,0 +1,82 @@
+<Besonderheiten xmlns="http://nota.org/schema/besonderheit.xsd"
+    xmlns:nota='http://nota.org/schema/nota.xsd' xmlns:misc='http://nota.org/schema/misc.xsd'
+    xmlns:lebewesen="http://nota.org/schema/lebewesen.xsd"
+    xmlns:pfad="http://nota.org/schema/pfad.xsd" xmlns:talent="http://nota.org/schema/talent.xsd"
+    xmlns:fertigkeit="http://nota.org/schema/fertigkeit.xsd"
+    xmlns:besonderheit="http://nota.org/schema/besonderheit.xsd"
+    xmlns:Belastung="http://nota.org/schema/kampf/aktionen.xsd"
+    xmlns:ausstattung="http://nota.org/schema/kampf/ausstattung.xsd"
+    KategorieId="Nachteile">
+    <besonderheit:Kategorie>
+        <misc:Lokalisirung Sprache="de">
+            <![CDATA[Nachteile]]>
+          </misc:Lokalisirung>
+    </besonderheit:Kategorie>
+
+    <besonderheit:Besonderheit Id="Arm">
+        <misc:Name>
+            <misc:Lokalisirung Sprache="de">Arm</misc:Lokalisirung>
+        </misc:Name>
+        <besonderheit:Stufe>
+            <misc:Beschreibung>
+                <misc:Lokalisirung Sprache="de">Dem Charakter staht wenig Geld zur verfügung.</misc:Lokalisirung>
+            </misc:Beschreibung>
+            <misc:Kosten Id="GP" Berechnung="-2" />
+            <besonderheit:Voraussetzung>
+                <besonderheit:Not>
+                    <besonderheit:Besonderheit Id="Wohlhabend" />
+                </besonderheit:Not>
+            </besonderheit:Voraussetzung>
+        </besonderheit:Stufe>
+        <besonderheit:Stufe>
+            <misc:Name>
+                <misc:Lokalisirung Sprache="de">Mittellos</misc:Lokalisirung>
+            </misc:Name>
+            <misc:Beschreibung>
+                <misc:Lokalisirung Sprache="de">Dem Charakter staht kein Geld zur verfügung.</misc:Lokalisirung>
+            </misc:Beschreibung>
+            <misc:Kosten Id="GP" Berechnung="-4" />
+        </besonderheit:Stufe>
+    </besonderheit:Besonderheit>
+
+    <besonderheit:Besonderheit Id="Kurzatmig">
+        <misc:Name>
+            <misc:Lokalisirung Sprache="de">Kurzatmig</misc:Lokalisirung>
+        </misc:Name>
+        <besonderheit:Stufe>
+            <misc:Beschreibung>
+                <misc:Lokalisirung Sprache="de"><![CDATA[Der Charakter wird schnell von Anstrengungen übermannt. Jedesmal Wenn der Charakter Ausdauer ausgibt wegen Anstrengungen, kostet Ihn dies eine Aussdauer mehr.]]></misc:Lokalisirung>
+            </misc:Beschreibung>
+            <misc:Kosten Id="GP" Berechnung="-2" />
+        </besonderheit:Stufe>
+        <besonderheit:Stufe>
+            <misc:Beschreibung>
+                <misc:Lokalisirung Sprache="de"><![CDATA[Der Charakter wird schnell von Anstrengungen übermannt. Jedesmal Wenn der Charakter Ausdauer ausgibt wegen Anstrengungen, kostet Ihn dies 2 Aussdauer mehr.]]></misc:Lokalisirung>
+            </misc:Beschreibung>
+            <misc:Kosten Id="GP" Berechnung="-4" />
+        </besonderheit:Stufe>
+    </besonderheit:Besonderheit>
+
+    <besonderheit:Besonderheit Id="Lahm">
+        <misc:Name>
+            <misc:Lokalisirung Sprache="de"><![CDATA[Lahm]]></misc:Lokalisirung>
+        </misc:Name>
+        <besonderheit:Stufe>
+            <misc:Beschreibung>
+                <misc:Lokalisirung Sprache="de">
+                <![CDATA[Der Charakter Kann sich nicht so schnell fortbewegen. Die Qualität aller Proben die zur bestimmung der Geschwindigkeit dienen, werden halbiert.]]>
+              </misc:Lokalisirung>
+            </misc:Beschreibung>
+            <misc:Kosten Id="GP" Berechnung="-4" />
+        </besonderheit:Stufe>
+        <besonderheit:Stufe>
+            <misc:Beschreibung>
+                <misc:Lokalisirung Sprache="de">
+                <![CDATA[Der Charakter hat Probleme mit anderenn mitzuhalten. Er bewegt sich nur halb so schnell wie andere, zusätzlich ist die Qualität aller Proben die zur bestimmung der Geschwindigkeit dienen, werden halbiert.]]>
+              </misc:Lokalisirung>
+            </misc:Beschreibung>
+            <misc:Kosten Id="GP" Berechnung="-7" />
+        </besonderheit:Stufe>
+    </besonderheit:Besonderheit>
+
+</Besonderheiten>
