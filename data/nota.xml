@@ -178,7 +178,7 @@
   &kultur; &proffession; &goetter; &kampf; &koerper; &geist; &gesellschaft; &wissen; &handwerk; <!-- Ⅰ Ⅱ Ⅲ Ⅳ Ⅴ Ⅵ Ⅶ Ⅷ Ⅸ Ⅹ Ⅺ Ⅻ -->
   &kulturellSondelfertigkeiten; &schriftenSondelfertigkeiten; &sprachenSondelfertigkeiten;
   &handwerkSondelfertigkeiten; &wissenSondelfertigkeiten; &kampfstileSondelfertigkeiten;
-  &kampfSondelfertigkeiten; &gaben; &vorteile;; &nachteile; &taktiken; &ausstattung; <Tags
+  &kampfSondelfertigkeiten; &gaben; &vorteile; &nachteile; &taktiken; &ausstattung; <Tags
     xmlns="http://nota.org/schema/misc.xsd">
     <Tag Id="Lesen und Schreiben">
       <misc:Name>
