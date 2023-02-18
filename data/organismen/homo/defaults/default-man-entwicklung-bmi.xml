@@ -1,0 +1,2218 @@
+<lebewesen:Reihe
+    xmlns="http://nota.org/schema/lebewesen.xsd"
+    xmlns:nota='http://nota.org/schema/nota.xsd' xmlns:misc='http://nota.org/schema/misc.xsd'
+    xmlns:lebewesen="http://nota.org/schema/lebewesen.xsd"
+    xmlns:pfad="http://nota.org/schema/pfad.xsd" xmlns:talent="http://nota.org/schema/talent.xsd"
+    xmlns:fertigkeit="http://nota.org/schema/fertigkeit.xsd"
+    xmlns:besonderheit="http://nota.org/schema/besonderheit.xsd"
+    xmlns:Belastung="http://nota.org/schema/kampf/aktionen.xsd"
+    xmlns:ausstattung="http://nota.org/schema/kampf/ausstattung.xsd"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xi="http://www.w3.org/2001/XInclude"
+    id="bmi" einheit="kg/m²" startAlter="0.5" step="0.5"
+    gruppe="sekundär">
+    <misc:Name>
+        <misc:Lokalisirung Sprache="de">
+<![CDATA[BMI]]>
+</misc:Lokalisirung>
+    </misc:Name>
+
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">11.42</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">14.27</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">15.08</lebewesen:Wert>
+        <lebewesen:Wert Quantil="25">15.95</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">16.97</lebewesen:Wert>
+        <lebewesen:Wert Quantil="75">18.06</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">19.10</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">20.19</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">24.23</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">11.63</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">14.54</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">15.30</lebewesen:Wert>
+        <lebewesen:Wert Quantil="25">16.12</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">17.09</lebewesen:Wert>
+        <lebewesen:Wert Quantil="75">18.14</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">19.16</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">20.23</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">24.28</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">11.44</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">14.30</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">14.99</lebewesen:Wert>
+        <lebewesen:Wert Quantil="25">15.75</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">16.65</lebewesen:Wert>
+        <lebewesen:Wert Quantil="75">17.64</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">18.60</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">19.63</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">23.56</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">11.32</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">14.15</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">14.79</lebewesen:Wert>
+        <lebewesen:Wert Quantil="25">15.49</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">16.34</lebewesen:Wert>
+        <lebewesen:Wert Quantil="75">17.27</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">18.20</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">19.20</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">23.04</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">11.25</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">14.06</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">14.65</lebewesen:Wert>
+        <lebewesen:Wert Quantil="25">15.32</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">16.12</lebewesen:Wert>
+        <lebewesen:Wert Quantil="75">17.03</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">17.93</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">18.92</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">22.70</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">11.18</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">13.97</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">14.53</lebewesen:Wert>
+        <lebewesen:Wert Quantil="25">15.16</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">15.94</lebewesen:Wert>
+        <lebewesen:Wert Quantil="75">16.82</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">17.72</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">18.72</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">22.46</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">11.10</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">13.88</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">14.42</lebewesen:Wert>
+        <lebewesen:Wert Quantil="25">15.03</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">15.79</lebewesen:Wert>
+        <lebewesen:Wert Quantil="75">16.66</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">17.56</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">18.58</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">22.30</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">11.02</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">13.77</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">14.29</lebewesen:Wert>
+        <lebewesen:Wert Quantil="25">14.89</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">15.64</lebewesen:Wert>
+        <lebewesen:Wert Quantil="75">16.52</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">17.44</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">18.51</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">22.21</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">10.91</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">13.64</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">14.16</lebewesen:Wert>
+        <lebewesen:Wert Quantil="25">14.75</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">15.52</lebewesen:Wert>
+        <lebewesen:Wert Quantil="75">16.41</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">17.37</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">18.52</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">22.22</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">10.82</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">13.53</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">14.06</lebewesen:Wert>
+        <lebewesen:Wert Quantil="25">14.66</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">15.44</lebewesen:Wert>
+        <lebewesen:Wert Quantil="75">16.38</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">17.41</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">18.67</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">22.40</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">10.78</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">13.47</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">14.01</lebewesen:Wert>
+        <lebewesen:Wert Quantil="25">14.63</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">15.45</lebewesen:Wert>
+        <lebewesen:Wert Quantil="75">16.46</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">17.58</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">18.99</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">22.79</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">10.76</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">13.45</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">14.01</lebewesen:Wert>
+        <lebewesen:Wert Quantil="25">14.66</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">15.53</lebewesen:Wert>
+        <lebewesen:Wert Quantil="75">16.61</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">17.85</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">19.47</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">23.36</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">10.77</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">13.46</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">14.04</lebewesen:Wert>
+        <lebewesen:Wert Quantil="25">14.73</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">15.65</lebewesen:Wert>
+        <lebewesen:Wert Quantil="75">16.83</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">18.21</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">20.08</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">24.10</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">10.78</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">13.48</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">14.09</lebewesen:Wert>
+        <lebewesen:Wert Quantil="25">14.82</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">15.81</lebewesen:Wert>
+        <lebewesen:Wert Quantil="75">17.10</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">18.64</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">20.80</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">24.96</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">10.82</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">13.52</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">14.16</lebewesen:Wert>
+        <lebewesen:Wert Quantil="25">14.93</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">16.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="75">17.39</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">19.11</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">21.57</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">25.88</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">10.86</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">13.57</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">14.25</lebewesen:Wert>
+        <lebewesen:Wert Quantil="25">15.07</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">16.21</lebewesen:Wert>
+        <lebewesen:Wert Quantil="75">17.72</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">19.60</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">22.37</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">26.84</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">10.93</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">13.66</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">14.37</lebewesen:Wert>
+        <lebewesen:Wert Quantil="25">15.24</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">16.46</lebewesen:Wert>
+        <lebewesen:Wert Quantil="75">18.08</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">20.12</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">23.18</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">27.82</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">11.02</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">13.77</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">14.52</lebewesen:Wert>
+        <lebewesen:Wert Quantil="25">15.45</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">16.74</lebewesen:Wert>
+        <lebewesen:Wert Quantil="75">18.47</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">20.66</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">23.97</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">28.76</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">11.12</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">13.90</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">14.70</lebewesen:Wert>
+        <lebewesen:Wert Quantil="25">15.67</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">17.04</lebewesen:Wert>
+        <lebewesen:Wert Quantil="75">18.88</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">21.21</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">24.73</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">29.68</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">11.23</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">14.04</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">14.88</lebewesen:Wert>
+        <lebewesen:Wert Quantil="25">15.91</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">17.36</lebewesen:Wert>
+        <lebewesen:Wert Quantil="75">19.29</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">21.75</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">25.45</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">30.54</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">11.36</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">14.20</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">15.08</lebewesen:Wert>
+        <lebewesen:Wert Quantil="25">16.16</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">17.68</lebewesen:Wert>
+        <lebewesen:Wert Quantil="75">19.71</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">22.28</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">26.12</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">31.34</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">11.49</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">14.36</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">15.28</lebewesen:Wert>
+        <lebewesen:Wert Quantil="25">16.41</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">17.99</lebewesen:Wert>
+        <lebewesen:Wert Quantil="75">20.11</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">22.78</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">26.75</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">32.10</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">11.62</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">14.52</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">15.48</lebewesen:Wert>
+        <lebewesen:Wert Quantil="25">16.65</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">18.30</lebewesen:Wert>
+        <lebewesen:Wert Quantil="75">20.50</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">23.26</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">27.32</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">32.78</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">11.76</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">14.70</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">15.69</lebewesen:Wert>
+        <lebewesen:Wert Quantil="25">16.90</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">18.60</lebewesen:Wert>
+        <lebewesen:Wert Quantil="75">20.87</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">23.71</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">27.86</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">33.43</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">11.91</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">14.89</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">15.91</lebewesen:Wert>
+        <lebewesen:Wert Quantil="25">17.16</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">18.90</lebewesen:Wert>
+        <lebewesen:Wert Quantil="75">21.23</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">24.13</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">28.36</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">34.03</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">12.09</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">15.11</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">16.15</lebewesen:Wert>
+        <lebewesen:Wert Quantil="25">17.43</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">19.21</lebewesen:Wert>
+        <lebewesen:Wert Quantil="75">21.59</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">24.54</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">28.83</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">34.60</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">12.27</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">15.34</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">16.40</lebewesen:Wert>
+        <lebewesen:Wert Quantil="25">17.70</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">19.52</lebewesen:Wert>
+        <lebewesen:Wert Quantil="75">21.93</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">24.93</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">29.26</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">35.11</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">12.47</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">15.59</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">16.67</lebewesen:Wert>
+        <lebewesen:Wert Quantil="25">17.99</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">19.83</lebewesen:Wert>
+        <lebewesen:Wert Quantil="75">22.28</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">25.30</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">29.65</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">35.58</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">12.69</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">15.86</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">16.95</lebewesen:Wert>
+        <lebewesen:Wert Quantil="25">18.29</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">20.15</lebewesen:Wert>
+        <lebewesen:Wert Quantil="75">22.61</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">25.65</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">29.99</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">35.99</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">12.91</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">16.14</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">17.24</lebewesen:Wert>
+        <lebewesen:Wert Quantil="25">18.59</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">20.47</lebewesen:Wert>
+        <lebewesen:Wert Quantil="75">22.94</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">25.98</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">30.30</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">36.36</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">13.14</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">16.43</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">17.54</lebewesen:Wert>
+        <lebewesen:Wert Quantil="25">18.90</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">20.79</lebewesen:Wert>
+        <lebewesen:Wert Quantil="75">23.26</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">26.29</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">30.58</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">36.70</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">13.38</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">16.72</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">17.84</lebewesen:Wert>
+        <lebewesen:Wert Quantil="25">19.21</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">21.10</lebewesen:Wert>
+        <lebewesen:Wert Quantil="75">23.58</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">26.60</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">30.83</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">37.00</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">13.61</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">17.01</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">18.15</lebewesen:Wert>
+        <lebewesen:Wert Quantil="25">19.52</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">21.42</lebewesen:Wert>
+        <lebewesen:Wert Quantil="75">23.89</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">26.89</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">31.07</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">37.28</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">13.84</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">17.30</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">18.44</lebewesen:Wert>
+        <lebewesen:Wert Quantil="25">19.82</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">21.72</lebewesen:Wert>
+        <lebewesen:Wert Quantil="75">24.19</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">27.17</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">31.29</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">37.55</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">14.07</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">17.59</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">18.74</lebewesen:Wert>
+        <lebewesen:Wert Quantil="25">20.12</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">22.03</lebewesen:Wert>
+        <lebewesen:Wert Quantil="75">24.49</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">27.45</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">31.52</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">37.82</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">14.26</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">17.83</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">19.02</lebewesen:Wert>
+        <lebewesen:Wert Quantil="25">20.41</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">22.42</lebewesen:Wert>
+        <lebewesen:Wert Quantil="75">24.77</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">28.02</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">32.19</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">38.63</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">14.30</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">17.88</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">19.12</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">22.66</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">28.44</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">32.71</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">39.25</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">14.38</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">17.97</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">19.22</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">22.78</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">28.55</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">32.76</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">39.31</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">14.44</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">18.06</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">19.32</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">22.90</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">28.66</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">32.82</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">39.38</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">14.51</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">18.14</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">19.41</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">23.01</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">28.76</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">32.88</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">39.46</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">14.58</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">18.22</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">19.51</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">23.13</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">28.87</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">32.94</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">39.53</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">14.64</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">18.30</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">19.60</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">23.24</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">28.97</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">33.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">39.60</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">14.70</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">18.38</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">19.69</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">23.35</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">29.08</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">33.07</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">39.68</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">14.77</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">18.46</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">19.78</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">23.46</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">29.18</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">33.13</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">39.76</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">14.83</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">18.54</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">19.87</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">23.57</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">29.28</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">33.20</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">39.83</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">14.90</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">18.62</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">19.95</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">23.67</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">29.37</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">33.26</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">39.91</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">14.93</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">18.66</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">20.04</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">23.77</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">29.47</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">33.32</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">39.98</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">14.96</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">18.70</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">20.12</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">23.87</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">29.56</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">33.38</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">40.06</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">18.80</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">20.20</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">23.97</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">29.65</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">33.45</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">40.13</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">18.90</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">20.28</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">24.07</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">29.74</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">33.51</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">40.21</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">18.97</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">20.36</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">24.16</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">29.83</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">33.58</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">40.29</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">19.04</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">20.43</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">24.25</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">29.91</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">33.64</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">40.37</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">19.11</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">20.51</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">24.34</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">30.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">33.70</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">40.44</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">19.17</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">20.58</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">24.43</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">30.09</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">33.76</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">40.51</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">19.23</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">20.65</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">24.52</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">30.17</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">33.83</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">40.59</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">19.29</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">20.72</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">24.60</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">30.25</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">33.89</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">40.67</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">19.36</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">20.79</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">24.68</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">30.33</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">33.95</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">40.74</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">19.42</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">20.85</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">24.76</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">30.40</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">34.01</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">40.81</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">19.48</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">20.92</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">24.84</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">30.48</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">34.07</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">40.88</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">19.53</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">20.98</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">24.91</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">30.55</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">34.13</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">40.96</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">19.59</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">21.05</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">24.99</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">30.63</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">34.19</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">41.03</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">19.65</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">21.11</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">25.06</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">30.70</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">34.25</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">41.10</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">19.71</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">21.18</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">25.14</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">30.77</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">34.31</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">41.17</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">19.76</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">21.24</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">25.21</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">30.84</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">34.37</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">41.24</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">19.82</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">21.30</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">25.28</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">30.91</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">34.43</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">41.32</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">19.87</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">21.35</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">25.34</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">30.98</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">34.49</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">41.39</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">19.92</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">21.41</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">25.41</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">31.05</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">34.55</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">41.46</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">19.97</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">21.47</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">25.48</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">31.11</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">34.61</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">41.53</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">20.02</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">21.53</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">25.54</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">31.18</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">34.67</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">41.60</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">20.07</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">21.58</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">25.60</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">31.24</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">34.72</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">41.66</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">20.12</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">21.63</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">25.66</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">31.31</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">34.78</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">41.73</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">20.17</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">21.68</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">25.72</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">31.37</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">34.83</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">41.80</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">20.21</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">21.73</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">25.78</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">31.43</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">34.89</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">41.87</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">20.25</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">21.78</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">25.84</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">31.49</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">34.95</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">41.94</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">20.30</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">21.83</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">25.90</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">31.55</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">35.01</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">42.01</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">20.34</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">21.87</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">25.95</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">31.61</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">35.06</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">42.07</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">20.38</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">21.92</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">26.01</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">31.67</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">35.12</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">42.14</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">20.42</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">21.96</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">26.06</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">31.72</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">35.18</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">42.22</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">20.46</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">22.01</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">26.11</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">31.78</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">35.24</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">42.28</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">20.50</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">22.05</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">26.16</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">31.84</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">35.29</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">42.35</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">20.54</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">22.09</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">26.21</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">31.90</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">35.35</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">42.42</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">20.57</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">22.13</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">26.26</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">31.95</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">35.41</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">42.49</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">20.61</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">22.17</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">26.31</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">32.01</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">35.47</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">42.56</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">20.64</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">22.21</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">26.36</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">32.07</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">35.53</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">42.64</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">20.68</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">22.25</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">26.41</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">32.13</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">35.59</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">42.70</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">20.71</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">22.29</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">26.45</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">32.18</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">35.64</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">42.77</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">20.75</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">22.33</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">26.50</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">32.24</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">35.70</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">42.84</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">20.78</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">22.36</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">26.54</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">32.29</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">35.76</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">42.91</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">20.82</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">22.40</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">26.59</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">32.35</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">35.82</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">42.98</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">20.85</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">22.44</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">26.64</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">32.40</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">35.88</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">43.06</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">20.88</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">22.48</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">26.68</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">32.46</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">35.94</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">43.13</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">20.91</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">22.51</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">26.72</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">32.51</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">36.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">43.20</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">20.95</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">22.55</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">26.77</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">32.57</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">36.06</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">43.27</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">20.98</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">22.58</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">26.81</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">32.62</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">36.12</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">43.34</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">21.01</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">22.62</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">26.86</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">32.67</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">36.18</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">43.41</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">21.04</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">22.65</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">26.90</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">32.72</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">36.23</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">43.48</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">21.07</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">22.69</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">26.94</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">32.77</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">36.28</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">43.54</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">21.10</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">22.72</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">26.98</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">32.82</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">36.33</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">43.60</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">21.13</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">22.75</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">27.02</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">32.87</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">36.38</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">43.66</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">21.16</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">22.78</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">27.06</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">32.91</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">36.43</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">43.72</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">21.19</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">22.82</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">27.10</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">32.96</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">36.47</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">43.76</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">21.22</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">22.85</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">27.14</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">33.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">36.51</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">43.81</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">21.26</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">22.89</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">27.18</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">33.04</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">36.55</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">43.86</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">21.29</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">22.92</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">27.21</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">33.07</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">36.59</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">43.91</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">21.32</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">22.95</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">27.25</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">33.11</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">36.63</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">43.95</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">21.35</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">22.98</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">27.28</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">33.15</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">36.66</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">43.99</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">21.38</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">23.02</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">27.32</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">33.18</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">36.69</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">44.03</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">21.41</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">23.05</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">27.35</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">33.21</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">36.72</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">44.06</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">21.44</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">23.08</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">27.39</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">33.24</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">36.75</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">44.09</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">21.47</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">23.11</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">27.42</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">33.27</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">36.77</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">44.12</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">21.50</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">23.14</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">27.45</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">33.30</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">36.79</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">44.15</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">21.53</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">23.17</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">27.48</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">33.33</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">36.81</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">44.17</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">21.56</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">23.20</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">27.51</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">33.35</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">36.83</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">44.20</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">21.58</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">23.23</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">27.54</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">33.37</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">36.85</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">44.22</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">21.61</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">23.26</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">27.57</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">33.39</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">36.86</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">44.23</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">21.63</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">23.28</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">27.59</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">33.41</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">36.87</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">44.24</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">21.66</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">23.31</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">27.62</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">33.43</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">36.88</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">44.25</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">21.69</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">23.33</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">27.64</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">33.44</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">36.88</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">44.26</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">21.71</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">23.36</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">27.66</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">33.45</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">36.88</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">44.26</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">21.73</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">23.38</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">27.68</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">33.46</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">36.88</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">44.26</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">21.76</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">23.41</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">27.70</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">33.47</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">36.88</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">44.26</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">21.78</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">23.43</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">27.72</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">33.48</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">36.88</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">44.26</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">21.80</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">23.45</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">27.74</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">33.49</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">36.88</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">44.25</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">21.82</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">23.47</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">27.76</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">33.49</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">36.87</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">44.24</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">21.84</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">23.49</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">27.78</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">33.50</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">36.86</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">44.23</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">21.86</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">23.51</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">27.79</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">33.50</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">36.85</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">44.22</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">21.88</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">23.53</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">27.81</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">33.50</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">36.84</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">44.21</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">21.90</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">23.54</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">27.82</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">33.50</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">36.83</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">44.20</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">21.92</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">23.56</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">27.83</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">33.50</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">36.82</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">44.18</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">21.93</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">23.58</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">27.84</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">33.50</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">36.80</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">44.16</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">21.95</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">23.60</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">27.85</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">33.50</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">36.79</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">44.14</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">21.97</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">23.61</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">27.86</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">33.49</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">36.77</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">44.12</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">21.99</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">23.63</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">27.88</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">33.49</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">36.76</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">44.11</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">22.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">23.64</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">27.89</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">33.48</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">36.74</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">44.09</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">22.02</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">23.66</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">27.90</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">33.48</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">36.73</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">44.07</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">22.03</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">23.67</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">27.91</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">33.47</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">36.71</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">44.05</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">22.05</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">23.69</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">27.92</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">33.47</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">36.69</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">44.03</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">22.07</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">23.70</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">27.93</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">33.47</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">36.67</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">44.00</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">22.09</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">23.72</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">27.94</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">33.47</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">36.66</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">43.99</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">22.10</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">23.74</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">27.95</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">33.46</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">36.64</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">43.97</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">22.12</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">23.76</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">27.96</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">33.46</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">36.63</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">43.95</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">22.13</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">23.77</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">27.97</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">33.45</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">36.61</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">43.93</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">22.15</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">23.79</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">27.98</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">33.45</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">36.59</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">43.91</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">22.16</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">23.80</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">27.99</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">33.44</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">36.57</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">43.88</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">22.18</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">23.82</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">28.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">33.44</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">36.56</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">43.87</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">22.20</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">23.83</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">28.01</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">33.43</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">36.54</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">43.85</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">22.22</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">23.85</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">28.02</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">33.43</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">36.53</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">43.83</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">22.23</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">23.86</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">28.03</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">33.43</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">36.51</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">43.81</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">22.25</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">23.88</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">28.04</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">33.43</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">36.50</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">43.79</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">22.26</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">23.89</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">28.05</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">33.42</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">36.48</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">43.78</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">22.28</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">23.91</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">28.06</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">33.42</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">36.47</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">43.76</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">22.30</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">23.93</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">28.07</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">33.41</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">36.45</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">43.74</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">22.32</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">23.95</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">28.08</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">33.41</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">36.44</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">43.72</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">22.33</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">23.96</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">28.09</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">33.40</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">36.42</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">43.70</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">22.35</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">23.98</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">28.10</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">33.40</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">36.41</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">43.69</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">22.36</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">23.99</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">28.11</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">33.40</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">36.39</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">43.67</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">22.38</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">24.01</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">28.12</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">33.40</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">36.38</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">43.65</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">22.40</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">24.02</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">28.13</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">33.39</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">36.36</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">43.63</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">22.40</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">24.02</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">28.13</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">33.39</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">36.36</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">43.63</lebewesen:Wert>
+    </lebewesen:Verteilung>
+    <lebewesen:Verteilung>
+        <lebewesen:Wert Quantil="0">15.00</lebewesen:Wert>
+        <lebewesen:Wert Quantil="3">22.40</lebewesen:Wert>
+        <lebewesen:Wert Quantil="10">24.02</lebewesen:Wert>
+        <lebewesen:Wert Quantil="50">28.13</lebewesen:Wert>
+        <lebewesen:Wert Quantil="90">33.39</lebewesen:Wert>
+        <lebewesen:Wert Quantil="97">36.36</lebewesen:Wert>
+        <lebewesen:Wert Quantil="100">43.63</lebewesen:Wert>
+    </lebewesen:Verteilung>
+
+
+    <lebewesen:Schwelle>
+        <misc:Name>
+            <misc:Lokalisirung Sprache="de">
+<![CDATA[Untergewicht]]>
+</misc:Lokalisirung>
+        </misc:Name>
+        <misc:Kosten Id="GP" Berechnung="-5" />
+
+        <lebewesen:Wert>11.42</lebewesen:Wert>
+        <lebewesen:Wert>11.63</lebewesen:Wert>
+        <lebewesen:Wert>11.44</lebewesen:Wert>
+        <lebewesen:Wert>11.32</lebewesen:Wert>
+        <lebewesen:Wert>11.25</lebewesen:Wert>
+        <lebewesen:Wert>11.18</lebewesen:Wert>
+        <lebewesen:Wert>11.10</lebewesen:Wert>
+        <lebewesen:Wert>11.02</lebewesen:Wert>
+        <lebewesen:Wert>10.91</lebewesen:Wert>
+        <lebewesen:Wert>10.82</lebewesen:Wert>
+        <lebewesen:Wert>10.78</lebewesen:Wert>
+        <lebewesen:Wert>10.76</lebewesen:Wert>
+        <lebewesen:Wert>10.77</lebewesen:Wert>
+        <lebewesen:Wert>10.78</lebewesen:Wert>
+        <lebewesen:Wert>10.82</lebewesen:Wert>
+        <lebewesen:Wert>10.86</lebewesen:Wert>
+        <lebewesen:Wert>10.93</lebewesen:Wert>
+        <lebewesen:Wert>11.02</lebewesen:Wert>
+        <lebewesen:Wert>11.12</lebewesen:Wert>
+        <lebewesen:Wert>11.23</lebewesen:Wert>
+        <lebewesen:Wert>11.36</lebewesen:Wert>
+        <lebewesen:Wert>11.49</lebewesen:Wert>
+        <lebewesen:Wert>11.62</lebewesen:Wert>
+        <lebewesen:Wert>11.76</lebewesen:Wert>
+        <lebewesen:Wert>11.91</lebewesen:Wert>
+        <lebewesen:Wert>12.09</lebewesen:Wert>
+        <lebewesen:Wert>12.27</lebewesen:Wert>
+        <lebewesen:Wert>12.47</lebewesen:Wert>
+        <lebewesen:Wert>12.69</lebewesen:Wert>
+        <lebewesen:Wert>12.91</lebewesen:Wert>
+        <lebewesen:Wert>13.14</lebewesen:Wert>
+        <lebewesen:Wert>13.38</lebewesen:Wert>
+        <lebewesen:Wert>13.61</lebewesen:Wert>
+        <lebewesen:Wert>13.84</lebewesen:Wert>
+        <lebewesen:Wert>14.07</lebewesen:Wert>
+        <lebewesen:Wert>14.26</lebewesen:Wert>
+        <lebewesen:Wert>14.30</lebewesen:Wert>
+        <lebewesen:Wert>14.38</lebewesen:Wert>
+        <lebewesen:Wert>14.44</lebewesen:Wert>
+        <lebewesen:Wert>14.51</lebewesen:Wert>
+        <lebewesen:Wert>14.58</lebewesen:Wert>
+        <lebewesen:Wert>14.64</lebewesen:Wert>
+        <lebewesen:Wert>14.70</lebewesen:Wert>
+        <lebewesen:Wert>14.77</lebewesen:Wert>
+        <lebewesen:Wert>14.83</lebewesen:Wert>
+        <lebewesen:Wert>14.90</lebewesen:Wert>
+        <lebewesen:Wert>14.93</lebewesen:Wert>
+        <lebewesen:Wert>14.96</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+        <lebewesen:Wert>15.00</lebewesen:Wert>
+    </lebewesen:Schwelle>
+
+
+    <lebewesen:Schwelle>
+        <lebewesen:Wert>14.27</lebewesen:Wert>
+        <lebewesen:Wert>14.54</lebewesen:Wert>
+        <lebewesen:Wert>14.30</lebewesen:Wert>
+        <lebewesen:Wert>14.15</lebewesen:Wert>
+        <lebewesen:Wert>14.06</lebewesen:Wert>
+        <lebewesen:Wert>13.97</lebewesen:Wert>
+        <lebewesen:Wert>13.88</lebewesen:Wert>
+        <lebewesen:Wert>13.77</lebewesen:Wert>
+        <lebewesen:Wert>13.64</lebewesen:Wert>
+        <lebewesen:Wert>13.53</lebewesen:Wert>
+        <lebewesen:Wert>13.47</lebewesen:Wert>
+        <lebewesen:Wert>13.45</lebewesen:Wert>
+        <lebewesen:Wert>13.46</lebewesen:Wert>
+        <lebewesen:Wert>13.48</lebewesen:Wert>
+        <lebewesen:Wert>13.52</lebewesen:Wert>
+        <lebewesen:Wert>13.57</lebewesen:Wert>
+        <lebewesen:Wert>13.66</lebewesen:Wert>
+        <lebewesen:Wert>13.77</lebewesen:Wert>
+        <lebewesen:Wert>13.90</lebewesen:Wert>
+        <lebewesen:Wert>14.04</lebewesen:Wert>
+        <lebewesen:Wert>14.20</lebewesen:Wert>
+        <lebewesen:Wert>14.36</lebewesen:Wert>
+        <lebewesen:Wert>14.52</lebewesen:Wert>
+        <lebewesen:Wert>14.70</lebewesen:Wert>
+        <lebewesen:Wert>14.89</lebewesen:Wert>
+        <lebewesen:Wert>15.11</lebewesen:Wert>
+        <lebewesen:Wert>15.34</lebewesen:Wert>
+        <lebewesen:Wert>15.59</lebewesen:Wert>
+        <lebewesen:Wert>15.86</lebewesen:Wert>
+        <lebewesen:Wert>16.14</lebewesen:Wert>
+        <lebewesen:Wert>16.43</lebewesen:Wert>
+        <lebewesen:Wert>16.72</lebewesen:Wert>
+        <lebewesen:Wert>17.01</lebewesen:Wert>
+        <lebewesen:Wert>17.30</lebewesen:Wert>
+        <lebewesen:Wert>17.59</lebewesen:Wert>
+        <lebewesen:Wert>17.83</lebewesen:Wert>
+        <lebewesen:Wert>17.88</lebewesen:Wert>
+        <lebewesen:Wert>17.97</lebewesen:Wert>
+        <lebewesen:Wert>18.06</lebewesen:Wert>
+        <lebewesen:Wert>18.14</lebewesen:Wert>
+        <lebewesen:Wert>18.22</lebewesen:Wert>
+        <lebewesen:Wert>18.30</lebewesen:Wert>
+        <lebewesen:Wert>18.38</lebewesen:Wert>
+        <lebewesen:Wert>18.46</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+        <lebewesen:Wert>18.50</lebewesen:Wert>
+    </lebewesen:Schwelle>
+
+
+    <lebewesen:Schwelle>
+        <misc:Name>
+            <misc:Lokalisirung Sprache="de">
+<![CDATA[Übergewichtig]]>
+</misc:Lokalisirung>
+        </misc:Name>
+        <misc:Kosten Id="GP" Berechnung="-5" />
+        <lebewesen:Mods>
+            <misc:Besonderheiten>
+                <besonderheit:Besonderheit Id="Kurzatmig" Stufe="1" />
+            </misc:Besonderheiten>
+        </lebewesen:Mods>
+        <lebewesen:Wert>18.80</lebewesen:Wert>
+        <lebewesen:Wert>18.80</lebewesen:Wert>
+        <lebewesen:Wert>18.40</lebewesen:Wert>
+        <lebewesen:Wert>18.00</lebewesen:Wert>
+        <lebewesen:Wert>17.80</lebewesen:Wert>
+        <lebewesen:Wert>17.60</lebewesen:Wert>
+        <lebewesen:Wert>17.60</lebewesen:Wert>
+        <lebewesen:Wert>17.60</lebewesen:Wert>
+        <lebewesen:Wert>17.60</lebewesen:Wert>
+        <lebewesen:Wert>17.60</lebewesen:Wert>
+        <lebewesen:Wert>17.70</lebewesen:Wert>
+        <lebewesen:Wert>17.80</lebewesen:Wert>
+        <lebewesen:Wert>18.10</lebewesen:Wert>
+        <lebewesen:Wert>18.35</lebewesen:Wert>
+        <lebewesen:Wert>18.60</lebewesen:Wert>
+        <lebewesen:Wert>19.00</lebewesen:Wert>
+        <lebewesen:Wert>19.40</lebewesen:Wert>
+        <lebewesen:Wert>19.80</lebewesen:Wert>
+        <lebewesen:Wert>20.20</lebewesen:Wert>
+        <lebewesen:Wert>20.60</lebewesen:Wert>
+        <lebewesen:Wert>21.00</lebewesen:Wert>
+        <lebewesen:Wert>21.40</lebewesen:Wert>
+        <lebewesen:Wert>21.80</lebewesen:Wert>
+        <lebewesen:Wert>22.20</lebewesen:Wert>
+        <lebewesen:Wert>22.60</lebewesen:Wert>
+        <lebewesen:Wert>23.00</lebewesen:Wert>
+        <lebewesen:Wert>23.40</lebewesen:Wert>
+        <lebewesen:Wert>23.70</lebewesen:Wert>
+        <lebewesen:Wert>24.00</lebewesen:Wert>
+        <lebewesen:Wert>24.40</lebewesen:Wert>
+        <lebewesen:Wert>24.60</lebewesen:Wert>
+        <lebewesen:Wert>24.90</lebewesen:Wert>
+        <lebewesen:Wert>25.20</lebewesen:Wert>
+        <lebewesen:Wert>25.40</lebewesen:Wert>
+        <lebewesen:Wert>25.65</lebewesen:Wert>
+        <lebewesen:Wert>25.90</lebewesen:Wert>
+        <lebewesen:Wert>25.91</lebewesen:Wert>
+        <lebewesen:Wert>25.91</lebewesen:Wert>
+        <lebewesen:Wert>25.92</lebewesen:Wert>
+        <lebewesen:Wert>25.93</lebewesen:Wert>
+        <lebewesen:Wert>25.94</lebewesen:Wert>
+        <lebewesen:Wert>25.94</lebewesen:Wert>
+        <lebewesen:Wert>25.95</lebewesen:Wert>
+        <lebewesen:Wert>25.96</lebewesen:Wert>
+        <lebewesen:Wert>25.96</lebewesen:Wert>
+        <lebewesen:Wert>25.97</lebewesen:Wert>
+        <lebewesen:Wert>25.98</lebewesen:Wert>
+        <lebewesen:Wert>25.99</lebewesen:Wert>
+        <lebewesen:Wert>25.99</lebewesen:Wert>
+        <lebewesen:Wert>26.00</lebewesen:Wert>
+        <lebewesen:Wert>26.05</lebewesen:Wert>
+        <lebewesen:Wert>26.10</lebewesen:Wert>
+        <lebewesen:Wert>26.15</lebewesen:Wert>
+        <lebewesen:Wert>26.20</lebewesen:Wert>
+        <lebewesen:Wert>26.25</lebewesen:Wert>
+        <lebewesen:Wert>26.30</lebewesen:Wert>
+        <lebewesen:Wert>26.35</lebewesen:Wert>
+        <lebewesen:Wert>26.40</lebewesen:Wert>
+        <lebewesen:Wert>26.45</lebewesen:Wert>
+        <lebewesen:Wert>26.50</lebewesen:Wert>
+        <lebewesen:Wert>26.55</lebewesen:Wert>
+        <lebewesen:Wert>26.60</lebewesen:Wert>
+        <lebewesen:Wert>26.65</lebewesen:Wert>
+        <lebewesen:Wert>26.70</lebewesen:Wert>
+        <lebewesen:Wert>26.75</lebewesen:Wert>
+        <lebewesen:Wert>26.80</lebewesen:Wert>
+        <lebewesen:Wert>26.85</lebewesen:Wert>
+        <lebewesen:Wert>26.90</lebewesen:Wert>
+        <lebewesen:Wert>26.95</lebewesen:Wert>
+        <lebewesen:Wert>27.00</lebewesen:Wert>
+        <lebewesen:Wert>27.05</lebewesen:Wert>
+        <lebewesen:Wert>27.10</lebewesen:Wert>
+        <lebewesen:Wert>27.15</lebewesen:Wert>
+        <lebewesen:Wert>27.20</lebewesen:Wert>
+        <lebewesen:Wert>27.25</lebewesen:Wert>
+        <lebewesen:Wert>27.30</lebewesen:Wert>
+        <lebewesen:Wert>27.35</lebewesen:Wert>
+        <lebewesen:Wert>27.40</lebewesen:Wert>
+        <lebewesen:Wert>27.45</lebewesen:Wert>
+        <lebewesen:Wert>27.50</lebewesen:Wert>
+        <lebewesen:Wert>27.55</lebewesen:Wert>
+        <lebewesen:Wert>27.60</lebewesen:Wert>
+        <lebewesen:Wert>27.65</lebewesen:Wert>
+        <lebewesen:Wert>27.70</lebewesen:Wert>
+        <lebewesen:Wert>27.75</lebewesen:Wert>
+        <lebewesen:Wert>27.80</lebewesen:Wert>
+        <lebewesen:Wert>27.85</lebewesen:Wert>
+        <lebewesen:Wert>27.90</lebewesen:Wert>
+        <lebewesen:Wert>27.95</lebewesen:Wert>
+        <lebewesen:Wert>28.00</lebewesen:Wert>
+        <lebewesen:Wert>28.05</lebewesen:Wert>
+        <lebewesen:Wert>28.10</lebewesen:Wert>
+        <lebewesen:Wert>28.15</lebewesen:Wert>
+        <lebewesen:Wert>28.20</lebewesen:Wert>
+        <lebewesen:Wert>28.25</lebewesen:Wert>
+        <lebewesen:Wert>28.30</lebewesen:Wert>
+        <lebewesen:Wert>28.35</lebewesen:Wert>
+        <lebewesen:Wert>28.40</lebewesen:Wert>
+        <lebewesen:Wert>28.45</lebewesen:Wert>
+        <lebewesen:Wert>28.50</lebewesen:Wert>
+        <lebewesen:Wert>28.55</lebewesen:Wert>
+        <lebewesen:Wert>28.60</lebewesen:Wert>
+        <lebewesen:Wert>28.65</lebewesen:Wert>
+        <lebewesen:Wert>28.70</lebewesen:Wert>
+        <lebewesen:Wert>28.75</lebewesen:Wert>
+        <lebewesen:Wert>28.80</lebewesen:Wert>
+        <lebewesen:Wert>28.85</lebewesen:Wert>
+        <lebewesen:Wert>28.90</lebewesen:Wert>
+        <lebewesen:Wert>28.95</lebewesen:Wert>
+        <lebewesen:Wert>29.00</lebewesen:Wert>
+        <lebewesen:Wert>29.05</lebewesen:Wert>
+        <lebewesen:Wert>29.10</lebewesen:Wert>
+        <lebewesen:Wert>29.15</lebewesen:Wert>
+        <lebewesen:Wert>29.20</lebewesen:Wert>
+        <lebewesen:Wert>29.25</lebewesen:Wert>
+        <lebewesen:Wert>29.30</lebewesen:Wert>
+        <lebewesen:Wert>29.35</lebewesen:Wert>
+        <lebewesen:Wert>29.40</lebewesen:Wert>
+        <lebewesen:Wert>29.45</lebewesen:Wert>
+        <lebewesen:Wert>29.50</lebewesen:Wert>
+        <lebewesen:Wert>29.55</lebewesen:Wert>
+        <lebewesen:Wert>29.60</lebewesen:Wert>
+        <lebewesen:Wert>29.65</lebewesen:Wert>
+        <lebewesen:Wert>29.70</lebewesen:Wert>
+        <lebewesen:Wert>29.75</lebewesen:Wert>
+        <lebewesen:Wert>29.80</lebewesen:Wert>
+        <lebewesen:Wert>29.85</lebewesen:Wert>
+        <lebewesen:Wert>29.90</lebewesen:Wert>
+        <lebewesen:Wert>29.95</lebewesen:Wert>
+        <lebewesen:Wert>30.00</lebewesen:Wert>
+        <lebewesen:Wert>30.00</lebewesen:Wert>
+        <lebewesen:Wert>30.00</lebewesen:Wert>
+        <lebewesen:Wert>30.00</lebewesen:Wert>
+        <lebewesen:Wert>30.00</lebewesen:Wert>
+        <lebewesen:Wert>30.00</lebewesen:Wert>
+        <lebewesen:Wert>30.00</lebewesen:Wert>
+        <lebewesen:Wert>30.00</lebewesen:Wert>
+        <lebewesen:Wert>30.00</lebewesen:Wert>
+        <lebewesen:Wert>30.00</lebewesen:Wert>
+        <lebewesen:Wert>30.00</lebewesen:Wert>
+        <lebewesen:Wert>30.00</lebewesen:Wert>
+        <lebewesen:Wert>30.00</lebewesen:Wert>
+        <lebewesen:Wert>30.00</lebewesen:Wert>
+        <lebewesen:Wert>30.00</lebewesen:Wert>
+        <lebewesen:Wert>30.00</lebewesen:Wert>
+        <lebewesen:Wert>30.00</lebewesen:Wert>
+        <lebewesen:Wert>30.00</lebewesen:Wert>
+        <lebewesen:Wert>30.00</lebewesen:Wert>
+        <lebewesen:Wert>30.00</lebewesen:Wert>
+        <lebewesen:Wert>30.00</lebewesen:Wert>
+        <lebewesen:Wert>30.00</lebewesen:Wert>
+        <lebewesen:Wert>30.00</lebewesen:Wert>
+        <lebewesen:Wert>30.00</lebewesen:Wert>
+        <lebewesen:Wert>30.00</lebewesen:Wert>
+        <lebewesen:Wert>30.00</lebewesen:Wert>
+        <lebewesen:Wert>30.00</lebewesen:Wert>
+        <lebewesen:Wert>30.00</lebewesen:Wert>
+        <lebewesen:Wert>30.00</lebewesen:Wert>
+        <lebewesen:Wert>30.00</lebewesen:Wert>
+        <lebewesen:Wert>30.00</lebewesen:Wert>
+    </lebewesen:Schwelle>
+
+
+    <lebewesen:Schwelle>
+        <misc:Name>
+            <misc:Lokalisirung Sprache="de">
+<![CDATA[Adipös  ]]>
+</misc:Lokalisirung>
+        </misc:Name>
+        <misc:Kosten Id="GP" Berechnung="-10" />
+        <lebewesen:Mods>
+            <misc:Besonderheiten>
+                <besonderheit:Besonderheit Id="Kurzatmig" Stufe="2" />
+            </misc:Besonderheiten>
+        </lebewesen:Mods>
+        <lebewesen:Wert>19.80</lebewesen:Wert>
+        <lebewesen:Wert>19.80</lebewesen:Wert>
+        <lebewesen:Wert>19.45</lebewesen:Wert>
+        <lebewesen:Wert>19.10</lebewesen:Wert>
+        <lebewesen:Wert>19.00</lebewesen:Wert>
+        <lebewesen:Wert>18.80</lebewesen:Wert>
+        <lebewesen:Wert>18.80</lebewesen:Wert>
+        <lebewesen:Wert>18.85</lebewesen:Wert>
+        <lebewesen:Wert>18.90</lebewesen:Wert>
+        <lebewesen:Wert>19.00</lebewesen:Wert>
+        <lebewesen:Wert>19.20</lebewesen:Wert>
+        <lebewesen:Wert>19.40</lebewesen:Wert>
+        <lebewesen:Wert>19.80</lebewesen:Wert>
+        <lebewesen:Wert>20.20</lebewesen:Wert>
+        <lebewesen:Wert>20.60</lebewesen:Wert>
+        <lebewesen:Wert>21.10</lebewesen:Wert>
+        <lebewesen:Wert>21.60</lebewesen:Wert>
+        <lebewesen:Wert>22.20</lebewesen:Wert>
+        <lebewesen:Wert>22.80</lebewesen:Wert>
+        <lebewesen:Wert>23.40</lebewesen:Wert>
+        <lebewesen:Wert>23.90</lebewesen:Wert>
+        <lebewesen:Wert>24.40</lebewesen:Wert>
+        <lebewesen:Wert>25.00</lebewesen:Wert>
+        <lebewesen:Wert>25.40</lebewesen:Wert>
+        <lebewesen:Wert>25.90</lebewesen:Wert>
+        <lebewesen:Wert>26.25</lebewesen:Wert>
+        <lebewesen:Wert>26.60</lebewesen:Wert>
+        <lebewesen:Wert>27.00</lebewesen:Wert>
+        <lebewesen:Wert>27.20</lebewesen:Wert>
+        <lebewesen:Wert>27.55</lebewesen:Wert>
+        <lebewesen:Wert>27.80</lebewesen:Wert>
+        <lebewesen:Wert>28.00</lebewesen:Wert>
+        <lebewesen:Wert>28.20</lebewesen:Wert>
+        <lebewesen:Wert>28.40</lebewesen:Wert>
+        <lebewesen:Wert>28.60</lebewesen:Wert>
+        <lebewesen:Wert>28.80</lebewesen:Wert>
+        <lebewesen:Wert>28.81</lebewesen:Wert>
+        <lebewesen:Wert>28.83</lebewesen:Wert>
+        <lebewesen:Wert>28.84</lebewesen:Wert>
+        <lebewesen:Wert>28.86</lebewesen:Wert>
+        <lebewesen:Wert>28.87</lebewesen:Wert>
+        <lebewesen:Wert>28.89</lebewesen:Wert>
+        <lebewesen:Wert>28.90</lebewesen:Wert>
+        <lebewesen:Wert>28.91</lebewesen:Wert>
+        <lebewesen:Wert>28.93</lebewesen:Wert>
+        <lebewesen:Wert>28.94</lebewesen:Wert>
+        <lebewesen:Wert>28.96</lebewesen:Wert>
+        <lebewesen:Wert>28.97</lebewesen:Wert>
+        <lebewesen:Wert>28.99</lebewesen:Wert>
+        <lebewesen:Wert>29.00</lebewesen:Wert>
+        <lebewesen:Wert>29.05</lebewesen:Wert>
+        <lebewesen:Wert>29.10</lebewesen:Wert>
+        <lebewesen:Wert>29.15</lebewesen:Wert>
+        <lebewesen:Wert>29.20</lebewesen:Wert>
+        <lebewesen:Wert>29.25</lebewesen:Wert>
+        <lebewesen:Wert>29.30</lebewesen:Wert>
+        <lebewesen:Wert>29.35</lebewesen:Wert>
+        <lebewesen:Wert>29.40</lebewesen:Wert>
+        <lebewesen:Wert>29.45</lebewesen:Wert>
+        <lebewesen:Wert>29.50</lebewesen:Wert>
+        <lebewesen:Wert>29.55</lebewesen:Wert>
+        <lebewesen:Wert>29.60</lebewesen:Wert>
+        <lebewesen:Wert>29.65</lebewesen:Wert>
+        <lebewesen:Wert>29.70</lebewesen:Wert>
+        <lebewesen:Wert>29.75</lebewesen:Wert>
+        <lebewesen:Wert>29.80</lebewesen:Wert>
+        <lebewesen:Wert>29.85</lebewesen:Wert>
+        <lebewesen:Wert>29.90</lebewesen:Wert>
+        <lebewesen:Wert>29.95</lebewesen:Wert>
+        <lebewesen:Wert>30.00</lebewesen:Wert>
+        <lebewesen:Wert>30.05</lebewesen:Wert>
+        <lebewesen:Wert>30.10</lebewesen:Wert>
+        <lebewesen:Wert>30.15</lebewesen:Wert>
+        <lebewesen:Wert>30.20</lebewesen:Wert>
+        <lebewesen:Wert>30.25</lebewesen:Wert>
+        <lebewesen:Wert>30.30</lebewesen:Wert>
+        <lebewesen:Wert>30.35</lebewesen:Wert>
+        <lebewesen:Wert>30.40</lebewesen:Wert>
+        <lebewesen:Wert>30.45</lebewesen:Wert>
+        <lebewesen:Wert>30.50</lebewesen:Wert>
+        <lebewesen:Wert>30.55</lebewesen:Wert>
+        <lebewesen:Wert>30.60</lebewesen:Wert>
+        <lebewesen:Wert>30.65</lebewesen:Wert>
+        <lebewesen:Wert>30.70</lebewesen:Wert>
+        <lebewesen:Wert>30.75</lebewesen:Wert>
+        <lebewesen:Wert>30.80</lebewesen:Wert>
+        <lebewesen:Wert>30.85</lebewesen:Wert>
+        <lebewesen:Wert>30.90</lebewesen:Wert>
+        <lebewesen:Wert>30.95</lebewesen:Wert>
+        <lebewesen:Wert>31.00</lebewesen:Wert>
+        <lebewesen:Wert>31.05</lebewesen:Wert>
+        <lebewesen:Wert>31.10</lebewesen:Wert>
+        <lebewesen:Wert>31.15</lebewesen:Wert>
+        <lebewesen:Wert>31.20</lebewesen:Wert>
+        <lebewesen:Wert>31.25</lebewesen:Wert>
+        <lebewesen:Wert>31.30</lebewesen:Wert>
+        <lebewesen:Wert>31.35</lebewesen:Wert>
+        <lebewesen:Wert>31.40</lebewesen:Wert>
+        <lebewesen:Wert>31.45</lebewesen:Wert>
+        <lebewesen:Wert>31.50</lebewesen:Wert>
+        <lebewesen:Wert>31.55</lebewesen:Wert>
+        <lebewesen:Wert>31.60</lebewesen:Wert>
+        <lebewesen:Wert>31.65</lebewesen:Wert>
+        <lebewesen:Wert>31.70</lebewesen:Wert>
+        <lebewesen:Wert>31.75</lebewesen:Wert>
+        <lebewesen:Wert>31.80</lebewesen:Wert>
+        <lebewesen:Wert>31.85</lebewesen:Wert>
+        <lebewesen:Wert>31.90</lebewesen:Wert>
+        <lebewesen:Wert>31.95</lebewesen:Wert>
+        <lebewesen:Wert>32.00</lebewesen:Wert>
+        <lebewesen:Wert>32.05</lebewesen:Wert>
+        <lebewesen:Wert>32.10</lebewesen:Wert>
+        <lebewesen:Wert>32.15</lebewesen:Wert>
+        <lebewesen:Wert>32.20</lebewesen:Wert>
+        <lebewesen:Wert>32.25</lebewesen:Wert>
+        <lebewesen:Wert>32.30</lebewesen:Wert>
+        <lebewesen:Wert>32.35</lebewesen:Wert>
+        <lebewesen:Wert>32.40</lebewesen:Wert>
+        <lebewesen:Wert>32.45</lebewesen:Wert>
+        <lebewesen:Wert>32.50</lebewesen:Wert>
+        <lebewesen:Wert>32.55</lebewesen:Wert>
+        <lebewesen:Wert>32.60</lebewesen:Wert>
+        <lebewesen:Wert>32.65</lebewesen:Wert>
+        <lebewesen:Wert>32.70</lebewesen:Wert>
+        <lebewesen:Wert>32.75</lebewesen:Wert>
+        <lebewesen:Wert>32.80</lebewesen:Wert>
+        <lebewesen:Wert>32.85</lebewesen:Wert>
+        <lebewesen:Wert>32.90</lebewesen:Wert>
+        <lebewesen:Wert>32.95</lebewesen:Wert>
+        <lebewesen:Wert>33.00</lebewesen:Wert>
+        <lebewesen:Wert>33.00</lebewesen:Wert>
+        <lebewesen:Wert>33.00</lebewesen:Wert>
+        <lebewesen:Wert>33.00</lebewesen:Wert>
+        <lebewesen:Wert>33.00</lebewesen:Wert>
+        <lebewesen:Wert>33.00</lebewesen:Wert>
+        <lebewesen:Wert>33.00</lebewesen:Wert>
+        <lebewesen:Wert>33.00</lebewesen:Wert>
+        <lebewesen:Wert>33.00</lebewesen:Wert>
+        <lebewesen:Wert>33.00</lebewesen:Wert>
+        <lebewesen:Wert>33.00</lebewesen:Wert>
+        <lebewesen:Wert>33.00</lebewesen:Wert>
+        <lebewesen:Wert>33.00</lebewesen:Wert>
+        <lebewesen:Wert>33.00</lebewesen:Wert>
+        <lebewesen:Wert>33.00</lebewesen:Wert>
+        <lebewesen:Wert>33.00</lebewesen:Wert>
+        <lebewesen:Wert>33.00</lebewesen:Wert>
+        <lebewesen:Wert>33.00</lebewesen:Wert>
+        <lebewesen:Wert>33.00</lebewesen:Wert>
+        <lebewesen:Wert>33.00</lebewesen:Wert>
+        <lebewesen:Wert>33.00</lebewesen:Wert>
+        <lebewesen:Wert>33.00</lebewesen:Wert>
+        <lebewesen:Wert>33.00</lebewesen:Wert>
+        <lebewesen:Wert>33.00</lebewesen:Wert>
+        <lebewesen:Wert>33.00</lebewesen:Wert>
+        <lebewesen:Wert>33.00</lebewesen:Wert>
+        <lebewesen:Wert>33.00</lebewesen:Wert>
+        <lebewesen:Wert>33.00</lebewesen:Wert>
+        <lebewesen:Wert>33.00</lebewesen:Wert>
+        <lebewesen:Wert>33.00</lebewesen:Wert>
+        <lebewesen:Wert>33.00</lebewesen:Wert>
+    </lebewesen:Schwelle>
+
+</lebewesen:Reihe>

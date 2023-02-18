@@ -1,0 +1,31 @@
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+
+
+  <uri
+    name="http://nota.org/schema/nota.xsd"
+    uri=" ../../../../nota-schema/nota.xsd" />
+  <uri
+    name="http://nota.org/schema/lebewesen.xsd"
+    uri=" ../../../../nota-schema/Lebewesen.xsd" />
+  <uri
+    name="http://nota.org/schema/pfad.xsd"
+    uri=" ../../../../nota-schema/pfad.xsd" />
+  <uri
+    name="http://nota.org/schema/talent.xsd"
+    uri=" ../../../../nota-schema/talent.xsd" />
+  <uri
+    name="http://nota.org/schema/fertigkeit.xsd"
+    uri=" ../../../../nota-schema/fertigkeit.xsd" />
+  <uri
+    name="http://nota.org/schema/besonderheit.xsd"
+    uri=" ../../../../nota-schema/besonderheit.xsd" />
+  <uri
+    name="http://nota.org/schema/kampf/aktionen.xsd"
+    uri=" ../../../../nota-schema/kampf/aktionen.xsd" />
+  <uri
+    name="http://nota.org/schema/kampf/ausstattung.xsd"
+    uri=" ../../../../nota-schema/kampf/ausstattung.xsd" />
+  <uri
+    name="http://nota.org/schema/misc.xsd"
+    uri=" ../../../../nota-schema/misc.xsd" />
+</catalog>

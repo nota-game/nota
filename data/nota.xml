@@ -1,33 +1,4 @@
 <?xml version='1.0'?>
-<!DOCTYPE doc [
-  <!ENTITY gaben SYSTEM "besonderheiten/gaben.xml">
-  <!ENTITY vorteile SYSTEM "besonderheiten/vorteile.xml">
-  <!ENTITY nachteile SYSTEM "besonderheiten/nachteile.xml">
-  <!ENTITY organismen SYSTEM "organismen/organismen.xml">
-  <!ENTITY kultur SYSTEM "pfade/kultur.xml">
-  <!ENTITY proffession SYSTEM "pfade/proffession.xml">
-  <!ENTITY goetter SYSTEM "pfade/goetter.xml">
-
-  <!ENTITY kampf SYSTEM "talente/kampf.xml">
-  <!ENTITY koerper SYSTEM "talente/koerper.xml">
-  <!ENTITY geist SYSTEM "talente/geist.xml">
-  <!ENTITY gesellschaft SYSTEM "talente/gesellschaft.xml">
-  <!ENTITY wissen SYSTEM "talente/wissen.xml">
-  <!ENTITY handwerk SYSTEM "talente/handwerk.xml">
-
-  <!ENTITY kulturellSondelfertigkeiten SYSTEM "fertigkeiten/kulturell.xml">
-  <!ENTITY schriftenSondelfertigkeiten SYSTEM "fertigkeiten/schriften.xml">
-  <!ENTITY sprachenSondelfertigkeiten SYSTEM "fertigkeiten/sprachen.xml">
-  <!ENTITY handwerkSondelfertigkeiten SYSTEM "fertigkeiten/handwerk.xml">
-  <!ENTITY wissenSondelfertigkeiten SYSTEM "fertigkeiten/wissen.xml">
-  <!ENTITY kampfstileSondelfertigkeiten SYSTEM "fertigkeiten/kampfstile.xml">
-  <!ENTITY kampfSondelfertigkeiten SYSTEM "fertigkeiten/kampf.xml">
-
-  <!ENTITY taktiken SYSTEM "taktiken/taktiken.xml">
-
-  <!ENTITY ausstattung SYSTEM "ausstattung/ausstattung.xml">
-]>
-
 <Daten Version='1' xmlns='http://nota.org/schema/nota.xsd'
   xmlns:nota='http://nota.org/schema/nota.xsd' xmlns:misc='http://nota.org/schema/misc.xsd'
   xmlns:lebewesen="http://nota.org/schema/lebewesen.xsd"
@@ -37,6 +8,7 @@
   xmlns:Belastung="http://nota.org/schema/kampf/aktionen.xsd"
   xmlns:ausstattung="http://nota.org/schema/kampf/ausstattung.xsd"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xi="http://www.w3.org/2001/XInclude"
   xsi:schemaLocation="http://nota.org/schema/nota.xsd ../../nota-schema/nota.xsd
                       http://nota.org/schema/lebewesen.xsd ../../nota-schema/Lebewesen.xsd
                       http://nota.org/schema/pfad.xsd ../../nota-schema/pfad.xsd
@@ -46,18 +18,6 @@
                       http://nota.org/schema/kampf/aktionen.xsd ../../nota-schema/kampf/aktionen.xsd
                       http://nota.org/schema/kampf/ausstattung.xsd ../../nota-schema/kampf/ausstattung.xsd
                       http://nota.org/schema/misc.xsd ../../nota-schema/misc.xsd">
-
-  <!-- xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://nota.org/schema/nota.xsd http://nota.org/schema/nota.xsd
-  http://nota.org/schema/misc.xsd http://nota.org/schema/misc.xsd http://nota.org/schema/wesen.xsd
-  http://nota.org/schema/wesen.xsd http://nota.org/schema/pfad.xsd http://nota.org/schema/pfad.xsd
-  http://nota.org/schema/profession.xsd http://nota.org/schema/profession.xsd
-  http://nota.org/schema/talent.xsd http://nota.org/schema/talent.xsd
-  http://nota.org/schema/fertigkeit.xsd http://nota.org/schema/fertigkeit.xsd
-  http://nota.org/schema/besonderheit.xsd http://nota.org/schema/besonderheit.xsd
-  http://nota.org/schema/kampf/aktionen.xsd http://nota.org/schema/kampf/aktionen.xsd
-  http://nota.org/schema/kampf/ausstattung.xsd http://nota.org/schema/kampf/ausstattung.xsd" -->
-
   <KostenDefinitionen
     xmlns="http://nota.org/schema/misc.xsd">
     <KostenDefinition Id="GP">
@@ -174,11 +134,37 @@
     <misc:Kosten Id="GP" Berechnung="74" />
     <misc:Kosten Id="Eigenschaften" Berechnung="54" />
     <misc:Kosten Id="Göttlicher Einfluss" Berechnung="-1" />
-  </GenerierungsDaten> &organismen;
-  &kultur; &proffession; &goetter; &kampf; &koerper; &geist; &gesellschaft; &wissen; &handwerk; <!-- Ⅰ Ⅱ Ⅲ Ⅳ Ⅴ Ⅵ Ⅶ Ⅷ Ⅸ Ⅹ Ⅺ Ⅻ -->
-  &kulturellSondelfertigkeiten; &schriftenSondelfertigkeiten; &sprachenSondelfertigkeiten;
-  &handwerkSondelfertigkeiten; &wissenSondelfertigkeiten; &kampfstileSondelfertigkeiten;
-  &kampfSondelfertigkeiten; &gaben; &vorteile;; &nachteile; &taktiken; &ausstattung; <Tags
+  </GenerierungsDaten>
+  <xi:include href="organismen/organismen.xml" />
+  <xi:include href="pfade/kultur.xml" />
+  <xi:include href="pfade/proffession.xml" />
+  <xi:include href="pfade/goetter.xml" />
+  <xi:include href="talente/kampf.xml" />
+  <xi:include href="talente/koerper.xml" />
+  <xi:include href="talente/geist.xml" />
+  <xi:include href="talente/gesellschaft.xml" />
+  <xi:include href="talente/wissen.xml" />
+  <xi:include href="talente/handwerk.xml" />
+
+  <!--
+Ⅰ Ⅱ Ⅲ Ⅳ Ⅴ Ⅵ Ⅶ Ⅷ Ⅸ Ⅹ Ⅺ Ⅻ -->
+  <xi:include href="fertigkeiten/kulturell.xml" />
+  <xi:include href="fertigkeiten/schriften.xml" />
+  <xi:include href="fertigkeiten/sprachen.xml" />
+  <xi:include href="fertigkeiten/handwerk.xml" />
+  <xi:include href="fertigkeiten/wissen.xml" />
+  <xi:include href="fertigkeiten/kampfstile.xml" />
+  <xi:include href="fertigkeiten/kampf.xml" />
+
+  <xi:include href="besonderheiten/gaben.xml" />
+  <xi:include href="besonderheiten/vorteile.xml" />
+  <xi:include href="besonderheiten/nachteile.xml" />
+
+
+  <xi:include href="taktiken/taktiken.xml" />
+
+  <xi:include href="ausstattung/ausstattung.xml" />
+  <Tags
     xmlns="http://nota.org/schema/misc.xsd">
     <Tag Id="Lesen und Schreiben">
       <misc:Name>

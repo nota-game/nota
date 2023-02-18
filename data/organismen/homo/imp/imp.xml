@@ -1,0 +1,95 @@
+<?xml version='1.0'?>
+<Art Id="Imp" xmlns="http://nota.org/schema/lebewesen.xsd"
+    xmlns:nota='http://nota.org/schema/nota.xsd' xmlns:misc='http://nota.org/schema/misc.xsd'
+    xmlns:lebewesen="http://nota.org/schema/lebewesen.xsd"
+    xmlns:pfad="http://nota.org/schema/pfad.xsd" xmlns:talent="http://nota.org/schema/talent.xsd"
+    xmlns:fertigkeit="http://nota.org/schema/fertigkeit.xsd"
+    xmlns:besonderheit="http://nota.org/schema/besonderheit.xsd"
+    xmlns:Belastung="http://nota.org/schema/kampf/aktionen.xsd"
+    xmlns:ausstattung="http://nota.org/schema/kampf/ausstattung.xsd"
+    xmlns:xi="http://www.w3.org/2001/XInclude"
+>
+    <misc:Name>
+        <misc:Lokalisirung Sprache="de" Geschlecht="Männlich">
+    <![CDATA[Imp]]>
+  </misc:Lokalisirung>
+        <misc:Lokalisirung Sprache="de" Geschlecht="Weiblich">
+    <![CDATA[Impa]]>
+  </misc:Lokalisirung>
+    </misc:Name>
+    <Art>
+        <misc:Lokalisirung Sprache="de" Geschlecht="Männlich">
+    <![CDATA[Primus]]>
+  </misc:Lokalisirung>
+    </Art>
+    <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
+    <![CDATA[Imps gehören zu den kleineren Arten der Gattung Mensch. Trotz ihrer geingen Größe übersteigt ihre Stärke oft die der andenen Arten.
+
+Ihre Hautfarbe reicht von blass rosa bis über ockerfarben und Ash grau bis hin zu Antrhazit, wenn sie starker Sonnenstrahlung ausgestzt sind. Sie besitzen zwei Hörner oberhalb der Schläfen etwas höher als der Haaransatz. Die Hörer stehen etwas seitlich ab und erreichen beim erwachsenem ca. 5 bis 6 cm.]]>
+  </misc:Lokalisirung>
+    </misc:Beschreibung>
+    <lebewesen:Mods>
+        <misc:Eigenschaften>
+            <lebewesen:Mod Eigenschaft="kraft" Mod="2" Type="multiplikativ" />
+
+
+        </misc:Eigenschaften>
+    </lebewesen:Mods>
+    <Morphe>
+        <Morph Id="ImpMann" Geschlecht="Männlich">
+            <misc:Name>
+                <misc:Lokalisirung Sprache="de">
+        <![CDATA[Mann]]>
+      </misc:Lokalisirung>
+            </misc:Name>
+            <misc:Beschreibung>
+                <misc:Lokalisirung Sprache="de">
+        <![CDATA[]]>
+      </misc:Lokalisirung>
+            </misc:Beschreibung>
+            <StandardPfade>
+                <pfad:Pfad Id="Alan" />
+            </StandardPfade>
+            <lebewesen:Entwiklung>
+                <xi:include href="imp-man-entwicklung-cap.xml" />
+                <xi:include href="imp-man-entwicklung-bmi.xml" />
+                <xi:include href="imp-man-entwicklung-groesze.xml" />
+                <xi:include href="imp-man-entwicklung-horn.xml" />
+
+            </lebewesen:Entwiklung>
+            <Lebensabschnitte>
+                <Lebensabschnitt startAlter="12" endAlter="80" />
+            </Lebensabschnitte>
+
+        </Morph>
+        <Morph Id="ImpFrau" Geschlecht="Weiblich">
+            <misc:Name>
+                <misc:Lokalisirung Sprache="de">
+        <![CDATA[Frau]]>
+      </misc:Lokalisirung>
+            </misc:Name>
+            <misc:Beschreibung>
+                <misc:Lokalisirung Sprache="de">
+        <![CDATA[]]>
+      </misc:Lokalisirung>
+            </misc:Beschreibung>
+            <StandardPfade>
+                <pfad:Pfad Id="Kirin" />
+            </StandardPfade>
+            <lebewesen:Entwiklung>
+
+
+                <xi:include href="imp-frau-entwicklung-cap.xml" />
+                <xi:include href="imp-frau-entwicklung-bmi.xml" />
+                <xi:include href="imp-frau-entwicklung-groesze.xml" />
+                <xi:include href="imp-frau-entwicklung-horn.xml" />
+
+            </lebewesen:Entwiklung>
+            <Lebensabschnitte>
+                <Lebensabschnitt startAlter="12" endAlter="80" />
+            </Lebensabschnitte>
+
+        </Morph>
+    </Morphe>
+</Art>

@@ -42,5 +42,8 @@
         "**/*.*.xmp"
     ],
     "xml.symbols.maxItemsComputed": 50000,
-    "xml.validation.resolveExternalEntities": true
+    "xml.validation.xInclude.enabled": true,
+    "xml.catalogs": [
+        "data/catalog.xml"
+    ]
 }
