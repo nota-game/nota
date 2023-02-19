@@ -171,7 +171,7 @@
 
     <besonderheit:Besonderheit Id="Begabung Talent">
         <misc:Name>
-            <misc:Lokalisirung Sprache="de"><![CDATA[Begabung]]></misc:Lokalisirung>
+            <misc:Lokalisirung Sprache="de"><![CDATA[Begabung für {talent}]]></misc:Lokalisirung>
         </misc:Name>
         <besonderheit:Parameter>
             <misc:Talent identifier="talent" />
