@@ -174,7 +174,7 @@
             <misc:Lokalisirung Sprache="de"><![CDATA[Begabung]]></misc:Lokalisirung>
         </misc:Name>
         <besonderheit:Parameter>
-            <misc:Talent></misc:Talent>
+            <misc:Talent identifier="talent" />
         </besonderheit:Parameter>
         <besonderheit:Stufe>
             <misc:Beschreibung>
