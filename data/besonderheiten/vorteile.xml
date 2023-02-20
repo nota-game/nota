@@ -179,9 +179,17 @@
         <besonderheit:Stufe>
             <misc:Beschreibung>
                 <misc:Lokalisirung Sprache="de">
-                <![CDATA[Der Charakter hat ein Händchen für das gewählte Talent. Die Qualität einer Probe ist um eins Höher.]]></misc:Lokalisirung>
+                <![CDATA[Der Charakter hat ein Händchen für das gewählte Talent. Er würft bei jeder Probe auf {talent} einen Würfel extra. Dieser Würfel kenn einen belibigen anderen ersetzen.]]></misc:Lokalisirung>
             </misc:Beschreibung>
-            <misc:Kosten Id="GP" Berechnung="5" />
+            <misc:Kosten Id="GP" Berechnung="talent * talent" />
+        </besonderheit:Stufe>
+        <besonderheit:Stufe>
+            <misc:Beschreibung>
+                <misc:Lokalisirung Sprache="de">
+                <![CDATA[Der Charakter hat ein Händchen für das gewählte Talent. Er würft bei jeder Probe auf {talent} einen Würfel extra. Dieser Würfel kenn einen belibigen anderen ersetzen.
+Zusätzlich gilt dies auch für alle talente die eine Ableitung auf {talent} besitzen.]]></misc:Lokalisirung>
+            </misc:Beschreibung>
+            <misc:Kosten Id="GP" Berechnung="talent * talent * talent" />
         </besonderheit:Stufe>
 
     </besonderheit:Besonderheit>
