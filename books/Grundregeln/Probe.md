@@ -148,13 +148,11 @@ Verfügung, nachdem wie viele GlP der Charakter ausgibt.
 +:------:+:---------------------------------------------------------+
 | Kosten | Effekt                                                   |
 +:======:+:=========================================================+
-| 2      | Reduziere das Ergebnis eines Würfels um 1                |
+| 2      | Verbessere das Ergebnis der Probe um 1 bis zum maximum   |
 +--------+----------------------------------------------------------+
 | 3      | Wiederhole eine Probe                                    |
 +--------+----------------------------------------------------------+
 | 3      | Tausche das Ergebnis zweier Würfel einer Probe           |
-+--------+----------------------------------------------------------+
-| 4      | Erhöhe das Ergebnis eines Würfels um 1 wenn es min. 2 ist|
 +--------+----------------------------------------------------------+
 | 5      | Wiederhole einen Würfel einer Probe                      |
 +--------+----------------------------------------------------------+

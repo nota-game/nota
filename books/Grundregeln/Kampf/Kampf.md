@@ -273,12 +273,15 @@ Verbraucht er Ausdauer erhält er dafür Erschöpfungspunkte. Zudem kann er durc
 gegnerische Taktiken Erschöpfung erhalten.
 
 Erschöpfung kann er wieder mittels der Taktik Erholen Abbauen. Dabei sammelt
-sich jedoch Verausgabung an. Der Abbau jeweils 6 Punkte Erschöpfung erzeugt
-einen Punkt Verausgabung. Verausgabung kann nur über rasten abgebaut werden.
-Eine Halbe stunde Rast entfernt eine Verausgabung. Ein Charakter kann maximal 6
-Punkte Verausgabung besitzen. Sollte er Verausgabung darüber hinaus erhalten,
-erhält er statt dessen entsprechend viele Punkte Strapazierung. Ein Punkt
-Strapazierung abzubauen dauert zwei Stunden.
+sich jedoch Verausgabung an. Der Abbau von Erschöpfung erzeugt jedoch
+Verausgabung. Für jeweils 6 Punkte Erschöpfung die der Charakter vor dem Abbauen
+hatte, erhält er einen Punkt Verausgabung. Verausgabung kann nur über rasten
+abgebaut werden. Eine Halbe stunde Rast entfernt eine Verausgabung. Ein
+Charakter kann maximal 6 Punkte Verausgabung besitzen. Sollte er Verausgabung
+darüber hinaus erhalten, erhält er statt dessen entsprechend viele Punkte
+Strapazierung. Ein Punkt Strapazierung abzubauen dauert zwei Stunden. Erholsamer
+Schlaf baut doppelt so viele Punkte ab. Zuerst wird Verausgabung abgebaut bevor
+Strapazierung abgebaut wird.
 
 Abgesehen von der Art wie sie abgebaut werden gelten Strapazierung und
 Verausgabung in allen belangen als Erschöpfungspunkte.
@@ -563,6 +566,14 @@ Der Schutzwert wird verwendet wenn eine Waffe ist die Rüstung zu umgehen. Hierz
 wird zusätzlich ein W10 geworfen. Sollte dieser eine Zone bestimmen, deren Wert
 als Schutzgrad aufgeführt ist, wird der Schaden um die entsprechenden werte der
 Rüstung reduziert.
+
+Manche Rüstungen sind Unzuverlässig, dies bedeutet das sie so wenig Flasche
+bedecken, das sie bei einem Normalen Treffer keinen Schutz bieten. Sie kommen
+nur zum Tragen denn eine Detailtrefferzone bestimmt wird.
+
+Werden mehrere Rüstungen kombiniert, werden werden in jeder Schadensart die
+besten Werte genutzt.
+
 
 Eine Rüstung besitzt zusätzlich noch eine Erschwernis für Proben.
 
