@@ -86,7 +86,7 @@
             <misc:Name>
                 <misc:Lokalisirung Sprache="de">Wiederstandsbonus</misc:Lokalisirung>
             </misc:Name>
-            <lebewesen:Formel>ceil((21-KO)/3)</lebewesen:Formel>
+            <lebewesen:Formel>floor((21-KO)/3)</lebewesen:Formel>
         </lebewesen:Berechnung>
         
         <lebewesen:Berechnung id="wiederstandsKopf" Reihenfolge="10" >
