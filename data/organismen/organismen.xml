@@ -82,7 +82,7 @@
                 min(kraftGewichtCap,gewicht);ceil((91/30 * (1/ ST )*(1/ ST
                 )+1529/300*1/ST+3/50)*_under)</lebewesen:Formel>
         </lebewesen:Berechnung>
-        <lebewesen:Berechnung id="wiederstandsBonus" Reihenfolge="10" gruppe="abgeleitet">
+        <lebewesen:Berechnung id="wiederstandsbonus" Reihenfolge="10" gruppe="abgeleitet">
             <misc:Name>
                 <misc:Lokalisirung Sprache="de">Wiederstandsbonus</misc:Lokalisirung>
             </misc:Name>
@@ -93,7 +93,7 @@
             <misc:Name>
                 <misc:Lokalisirung Sprache="de">Wiederstand Kopf</misc:Lokalisirung>
             </misc:Name>
-            <lebewesen:Formel>Wiederstandsbonus + 1</lebewesen:Formel>
+            <lebewesen:Formel>wiederstandsbonus + 1</lebewesen:Formel>
         </lebewesen:Berechnung>
         <lebewesen:Berechnung id="wiederstandsKopfLeicht" Reihenfolge="10" >
             <misc:Name>
@@ -124,7 +124,7 @@
             <misc:Name>
                 <misc:Lokalisirung Sprache="de">Wiederstand Brust</misc:Lokalisirung>
             </misc:Name>
-            <lebewesen:Formel>Wiederstandsbonus + 3</lebewesen:Formel>
+            <lebewesen:Formel>wiederstandsbonus + 3</lebewesen:Formel>
         </lebewesen:Berechnung>
         <lebewesen:Berechnung id="wiederstandsBrustLeicht" Reihenfolge="10" >
             <misc:Name>
@@ -155,7 +155,7 @@
             <misc:Name>
                 <misc:Lokalisirung Sprache="de">Wiederstand LinkerArm</misc:Lokalisirung>
             </misc:Name>
-            <lebewesen:Formel>Wiederstandsbonus + 3</lebewesen:Formel>
+            <lebewesen:Formel>wiederstandsbonus + 3</lebewesen:Formel>
         </lebewesen:Berechnung>
         <lebewesen:Berechnung id="wiederstandsLinkerArmLeicht" Reihenfolge="10" >
             <misc:Name>
@@ -186,7 +186,7 @@
             <misc:Name>
                 <misc:Lokalisirung Sprache="de">Wiederstand RechterArm</misc:Lokalisirung>
             </misc:Name>
-            <lebewesen:Formel>Wiederstandsbonus + 3</lebewesen:Formel>
+            <lebewesen:Formel>wiederstandsbonus + 3</lebewesen:Formel>
         </lebewesen:Berechnung>
         <lebewesen:Berechnung id="wiederstandsRechterArmLeicht" Reihenfolge="10" >
             <misc:Name>
@@ -217,7 +217,7 @@
             <misc:Name>
                 <misc:Lokalisirung Sprache="de">Wiederstand LinkesBein</misc:Lokalisirung>
             </misc:Name>
-            <lebewesen:Formel>Wiederstandsbonus + 3</lebewesen:Formel>
+            <lebewesen:Formel>wiederstandsbonus + 3</lebewesen:Formel>
         </lebewesen:Berechnung>
         <lebewesen:Berechnung id="wiederstandsLinkesBeinLeicht" Reihenfolge="10" >
             <misc:Name>
@@ -248,7 +248,7 @@
             <misc:Name>
                 <misc:Lokalisirung Sprache="de">Wiederstand RechtesBein</misc:Lokalisirung>
             </misc:Name>
-            <lebewesen:Formel>Wiederstandsbonus + 3</lebewesen:Formel>
+            <lebewesen:Formel>wiederstandsbonus + 3</lebewesen:Formel>
         </lebewesen:Berechnung>
         <lebewesen:Berechnung id="wiederstandsRechtesBeinLeicht" Reihenfolge="10" >
             <misc:Name>
@@ -279,7 +279,7 @@
             <misc:Name>
                 <misc:Lokalisirung Sprache="de">Wiederstand Hüfte</misc:Lokalisirung>
             </misc:Name>
-            <lebewesen:Formel>Wiederstandsbonus + 3</lebewesen:Formel>
+            <lebewesen:Formel>wiederstandsbonus + 3</lebewesen:Formel>
         </lebewesen:Berechnung>
         <lebewesen:Berechnung id="wiederstandsHüfteLeicht" Reihenfolge="10" >
             <misc:Name>
