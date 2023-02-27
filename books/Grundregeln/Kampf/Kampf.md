@@ -549,6 +549,21 @@ Abgemindert.
 Wie viel der beiden Schadensarten Wucht und Schnitt tatsächlich Schaden
 verursachen wird wie folgt berechnet:
 
+Von der Wucht wird die Dämpfung abgezogen. Von dem Rest der Verbleibt wird für
+je Flexibilität viel Schaden 1 Weiter Punkt abgezogen. 
+
+| Sample
+|-------------------------------------------------------------------------------
+| Bsp. Ein Angriff mit
+| Wucht 14 Trift auf Dämpfung 1 und Flexibilität 4. Dann wird von den 14 erst
+| einmal 1 abgezogen für die Dämpfung. Dadurch bleiben noch 13 Schaden.
+|  Durch die
+| Flexibilität kommen 4 Schaden durch und einer wird abgehalten, verbleiben noch
+| 8, dies wird wiederholt, sodass 11 Schaden versucht werden und 3 verhindert
+| werden 1 durch Dämpfung und 2 durch die Flexibilität der Rüstung.
+
+Der Schnitt schaden wird durch die Härte reduziert, jedoch wird die Härte vorher für je 2 Punkte Wucht um eines reduziert.
+
 +-----------+--------------------------------------------------------------------------------+
 | **Wucht** | $\(Wucht - \lfloor \frac{Wucht-Dämpfung}{Flexibilität+1} \rfloor - Dämpfung\)$ |
 +-----------+--------------------------------------------------------------------------------+
