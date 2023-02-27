@@ -82,6 +82,230 @@
                 min(kraftGewichtCap,gewicht);ceil((91/30 * (1/ ST )*(1/ ST
                 )+1529/300*1/ST+3/50)*_under)</lebewesen:Formel>
         </lebewesen:Berechnung>
+        <lebewesen:Berechnung id="wiederstandsBonus" Reihenfolge="10" gruppe="abgeleitet">
+            <misc:Name>
+                <misc:Lokalisirung Sprache="de">Wiederstandsbonus</misc:Lokalisirung>
+            </misc:Name>
+            <lebewesen:Formel>ceil((21-KO)/3)</lebewesen:Formel>
+        </lebewesen:Berechnung>
+        
+        <lebewesen:Berechnung id="wiederstandsKopf" Reihenfolge="10" >
+            <misc:Name>
+                <misc:Lokalisirung Sprache="de">Wiederstand Kopf</misc:Lokalisirung>
+            </misc:Name>
+            <lebewesen:Formel>Wiederstandsbonus + 1</lebewesen:Formel>
+        </lebewesen:Berechnung>
+        <lebewesen:Berechnung id="wiederstandsKopfLeicht" Reihenfolge="10" >
+            <misc:Name>
+                <misc:Lokalisirung Sprache="de">Wiederstand Kopf Leichte Wunde</misc:Lokalisirung>
+            </misc:Name>
+            <lebewesen:Formel>wiederstandsKopf</lebewesen:Formel>
+        </lebewesen:Berechnung>
+        <lebewesen:Berechnung id="wiederstandsKopfMittel" Reihenfolge="10" >
+            <misc:Name>
+                <misc:Lokalisirung Sprache="de">Wiederstand Kopf Mittlere Wunde</misc:Lokalisirung>
+            </misc:Name>
+            <lebewesen:Formel>wiederstandsKopf + 2</lebewesen:Formel>
+        </lebewesen:Berechnung>
+        <lebewesen:Berechnung id="wiederstandsKopfSchwer" Reihenfolge="10" >
+            <misc:Name>
+                <misc:Lokalisirung Sprache="de">Wiederstand Kopf Schwere Wunde</misc:Lokalisirung>
+            </misc:Name>
+            <lebewesen:Formel>wiederstandsKopf + 4</lebewesen:Formel>
+        </lebewesen:Berechnung>
+        <lebewesen:Berechnung id="wiederstandsKopfAmputation" Reihenfolge="10" >
+            <misc:Name>
+                <misc:Lokalisirung Sprache="de">Wiederstand Kopf Amputation</misc:Lokalisirung>
+            </misc:Name>
+            <lebewesen:Formel>wiederstandsKopf + 6</lebewesen:Formel>
+        </lebewesen:Berechnung>
+        
+        <lebewesen:Berechnung id="wiederstandsBrust" Reihenfolge="10" >
+            <misc:Name>
+                <misc:Lokalisirung Sprache="de">Wiederstand Brust</misc:Lokalisirung>
+            </misc:Name>
+            <lebewesen:Formel>Wiederstandsbonus + 3</lebewesen:Formel>
+        </lebewesen:Berechnung>
+        <lebewesen:Berechnung id="wiederstandsBrustLeicht" Reihenfolge="10" >
+            <misc:Name>
+                <misc:Lokalisirung Sprache="de">Wiederstand Brust Leichte Wunde</misc:Lokalisirung>
+            </misc:Name>
+            <lebewesen:Formel>wiederstandsBrust</lebewesen:Formel>
+        </lebewesen:Berechnung>
+        <lebewesen:Berechnung id="wiederstandsBrustMittel" Reihenfolge="10" >
+            <misc:Name>
+                <misc:Lokalisirung Sprache="de">Wiederstand Brust Mittlere Wunde</misc:Lokalisirung>
+            </misc:Name>
+            <lebewesen:Formel>wiederstandsBrust + 3</lebewesen:Formel>
+        </lebewesen:Berechnung>
+        <lebewesen:Berechnung id="wiederstandsBrustSchwer" Reihenfolge="10" >
+            <misc:Name>
+                <misc:Lokalisirung Sprache="de">Wiederstand Brust Schwere Wunde</misc:Lokalisirung>
+            </misc:Name>
+            <lebewesen:Formel>wiederstandsBrust + 6</lebewesen:Formel>
+        </lebewesen:Berechnung>
+        <lebewesen:Berechnung id="wiederstandsBrustAmputation" Reihenfolge="10" >
+            <misc:Name>
+                <misc:Lokalisirung Sprache="de">Wiederstand Brust Amputation</misc:Lokalisirung>
+            </misc:Name>
+            <lebewesen:Formel>wiederstandsBrust + 9</lebewesen:Formel>
+        </lebewesen:Berechnung>
+        
+        <lebewesen:Berechnung id="wiederstandsLinkerArm" Reihenfolge="10" >
+            <misc:Name>
+                <misc:Lokalisirung Sprache="de">Wiederstand LinkerArm</misc:Lokalisirung>
+            </misc:Name>
+            <lebewesen:Formel>Wiederstandsbonus + 3</lebewesen:Formel>
+        </lebewesen:Berechnung>
+        <lebewesen:Berechnung id="wiederstandsLinkerArmLeicht" Reihenfolge="10" >
+            <misc:Name>
+                <misc:Lokalisirung Sprache="de">Wiederstand LinkerArm Leichte Wunde</misc:Lokalisirung>
+            </misc:Name>
+            <lebewesen:Formel>wiederstandsLinkerArm</lebewesen:Formel>
+        </lebewesen:Berechnung>
+        <lebewesen:Berechnung id="wiederstandsLinkerArmMittel" Reihenfolge="10" >
+            <misc:Name>
+                <misc:Lokalisirung Sprache="de">Wiederstand LinkerArm Mittlere Wunde</misc:Lokalisirung>
+            </misc:Name>
+            <lebewesen:Formel>wiederstandsLinkerArm + 2</lebewesen:Formel>
+        </lebewesen:Berechnung>
+        <lebewesen:Berechnung id="wiederstandsLinkerArmSchwer" Reihenfolge="10" >
+            <misc:Name>
+                <misc:Lokalisirung Sprache="de">Wiederstand LinkerArm Schwere Wunde</misc:Lokalisirung>
+            </misc:Name>
+            <lebewesen:Formel>wiederstandsLinkerArm + 5</lebewesen:Formel>
+        </lebewesen:Berechnung>
+        <lebewesen:Berechnung id="wiederstandsLinkerArmAmputation" Reihenfolge="10" >
+            <misc:Name>
+                <misc:Lokalisirung Sprache="de">Wiederstand LinkerArm Amputation</misc:Lokalisirung>
+            </misc:Name>
+            <lebewesen:Formel>wiederstandsLinkerArm + 8</lebewesen:Formel>
+        </lebewesen:Berechnung>
+        
+        <lebewesen:Berechnung id="wiederstandsRechterArm" Reihenfolge="10" >
+            <misc:Name>
+                <misc:Lokalisirung Sprache="de">Wiederstand RechterArm</misc:Lokalisirung>
+            </misc:Name>
+            <lebewesen:Formel>Wiederstandsbonus + 3</lebewesen:Formel>
+        </lebewesen:Berechnung>
+        <lebewesen:Berechnung id="wiederstandsRechterArmLeicht" Reihenfolge="10" >
+            <misc:Name>
+                <misc:Lokalisirung Sprache="de">Wiederstand RechterArm Leichte Wunde</misc:Lokalisirung>
+            </misc:Name>
+            <lebewesen:Formel>wiederstandsRechterArm</lebewesen:Formel>
+        </lebewesen:Berechnung>
+        <lebewesen:Berechnung id="wiederstandsRechterArmMittel" Reihenfolge="10" >
+            <misc:Name>
+                <misc:Lokalisirung Sprache="de">Wiederstand RechterArm Mittlere Wunde</misc:Lokalisirung>
+            </misc:Name>
+            <lebewesen:Formel>wiederstandsRechterArm + 2</lebewesen:Formel>
+        </lebewesen:Berechnung>
+        <lebewesen:Berechnung id="wiederstandsRechterArmSchwer" Reihenfolge="10" >
+            <misc:Name>
+                <misc:Lokalisirung Sprache="de">Wiederstand RechterArm Schwere Wunde</misc:Lokalisirung>
+            </misc:Name>
+            <lebewesen:Formel>wiederstandsRechterArm + 5</lebewesen:Formel>
+        </lebewesen:Berechnung>
+        <lebewesen:Berechnung id="wiederstandsRechterArmAmputation" Reihenfolge="10" >
+            <misc:Name>
+                <misc:Lokalisirung Sprache="de">Wiederstand RechterArm Amputation</misc:Lokalisirung>
+            </misc:Name>
+            <lebewesen:Formel>wiederstandsRechterArm + 8</lebewesen:Formel>
+        </lebewesen:Berechnung>
+        
+        <lebewesen:Berechnung id="wiederstandsLinkesBein" Reihenfolge="10" >
+            <misc:Name>
+                <misc:Lokalisirung Sprache="de">Wiederstand LinkesBein</misc:Lokalisirung>
+            </misc:Name>
+            <lebewesen:Formel>Wiederstandsbonus + 3</lebewesen:Formel>
+        </lebewesen:Berechnung>
+        <lebewesen:Berechnung id="wiederstandsLinkesBeinLeicht" Reihenfolge="10" >
+            <misc:Name>
+                <misc:Lokalisirung Sprache="de">Wiederstand LinkesBein Leichte Wunde</misc:Lokalisirung>
+            </misc:Name>
+            <lebewesen:Formel>wiederstandsLinkesBein</lebewesen:Formel>
+        </lebewesen:Berechnung>
+        <lebewesen:Berechnung id="wiederstandsLinkesBeinMittel" Reihenfolge="10" >
+            <misc:Name>
+                <misc:Lokalisirung Sprache="de">Wiederstand LinkesBein Mittlere Wunde</misc:Lokalisirung>
+            </misc:Name>
+            <lebewesen:Formel>wiederstandsLinkesBein + 2</lebewesen:Formel>
+        </lebewesen:Berechnung>
+        <lebewesen:Berechnung id="wiederstandsLinkesBeinSchwer" Reihenfolge="10" >
+            <misc:Name>
+                <misc:Lokalisirung Sprache="de">Wiederstand LinkesBein Schwere Wunde</misc:Lokalisirung>
+            </misc:Name>
+            <lebewesen:Formel>wiederstandsLinkesBein + 5</lebewesen:Formel>
+        </lebewesen:Berechnung>
+        <lebewesen:Berechnung id="wiederstandsLinkesBeinAmputation" Reihenfolge="10" >
+            <misc:Name>
+                <misc:Lokalisirung Sprache="de">Wiederstand LinkesBein Amputation</misc:Lokalisirung>
+            </misc:Name>
+            <lebewesen:Formel>wiederstandsLinkesBein + 8</lebewesen:Formel>
+        </lebewesen:Berechnung>
+        
+        <lebewesen:Berechnung id="wiederstandsRechtesBein" Reihenfolge="10" >
+            <misc:Name>
+                <misc:Lokalisirung Sprache="de">Wiederstand RechtesBein</misc:Lokalisirung>
+            </misc:Name>
+            <lebewesen:Formel>Wiederstandsbonus + 3</lebewesen:Formel>
+        </lebewesen:Berechnung>
+        <lebewesen:Berechnung id="wiederstandsRechtesBeinLeicht" Reihenfolge="10" >
+            <misc:Name>
+                <misc:Lokalisirung Sprache="de">Wiederstand RechtesBein Leichte Wunde</misc:Lokalisirung>
+            </misc:Name>
+            <lebewesen:Formel>wiederstandsRechtesBein</lebewesen:Formel>
+        </lebewesen:Berechnung>
+        <lebewesen:Berechnung id="wiederstandsRechtesBeinMittel" Reihenfolge="10" >
+            <misc:Name>
+                <misc:Lokalisirung Sprache="de">Wiederstand RechtesBein Mittlere Wunde</misc:Lokalisirung>
+            </misc:Name>
+            <lebewesen:Formel>wiederstandsRechtesBein + 2</lebewesen:Formel>
+        </lebewesen:Berechnung>
+        <lebewesen:Berechnung id="wiederstandsRechtesBeinSchwer" Reihenfolge="10" >
+            <misc:Name>
+                <misc:Lokalisirung Sprache="de">Wiederstand RechtesBein Schwere Wunde</misc:Lokalisirung>
+            </misc:Name>
+            <lebewesen:Formel>wiederstandsRechtesBein + 5</lebewesen:Formel>
+        </lebewesen:Berechnung>
+        <lebewesen:Berechnung id="wiederstandsRechtesBeinAmputation" Reihenfolge="10" >
+            <misc:Name>
+                <misc:Lokalisirung Sprache="de">Wiederstand RechtesBein Amputation</misc:Lokalisirung>
+            </misc:Name>
+            <lebewesen:Formel>wiederstandsRechtesBein + 8</lebewesen:Formel>
+        </lebewesen:Berechnung>
+        
+        <lebewesen:Berechnung id="wiederstandsHüfte" Reihenfolge="10" >
+            <misc:Name>
+                <misc:Lokalisirung Sprache="de">Wiederstand Hüfte</misc:Lokalisirung>
+            </misc:Name>
+            <lebewesen:Formel>Wiederstandsbonus + 3</lebewesen:Formel>
+        </lebewesen:Berechnung>
+        <lebewesen:Berechnung id="wiederstandsHüfteLeicht" Reihenfolge="10" >
+            <misc:Name>
+                <misc:Lokalisirung Sprache="de">Wiederstand Hüfte Leichte Wunde</misc:Lokalisirung>
+            </misc:Name>
+            <lebewesen:Formel>wiederstandsHüfte</lebewesen:Formel>
+        </lebewesen:Berechnung>
+        <lebewesen:Berechnung id="wiederstandsHüfteMittel" Reihenfolge="10" >
+            <misc:Name>
+                <misc:Lokalisirung Sprache="de">Wiederstand Hüfte Mittlere Wunde</misc:Lokalisirung>
+            </misc:Name>
+            <lebewesen:Formel>wiederstandsHüfte + 3</lebewesen:Formel>
+        </lebewesen:Berechnung>
+        <lebewesen:Berechnung id="wiederstandsHüfteSchwer" Reihenfolge="10" >
+            <misc:Name>
+                <misc:Lokalisirung Sprache="de">Wiederstand Hüfte Schwere Wunde</misc:Lokalisirung>
+            </misc:Name>
+            <lebewesen:Formel>wiederstandsHüfte + 6</lebewesen:Formel>
+        </lebewesen:Berechnung>
+        <lebewesen:Berechnung id="wiederstandsHüfteAmputation" Reihenfolge="10" >
+            <misc:Name>
+                <misc:Lokalisirung Sprache="de">Wiederstand Hüfte Amputation</misc:Lokalisirung>
+            </misc:Name>
+            <lebewesen:Formel>wiederstandsHüfte + 9</lebewesen:Formel>
+        </lebewesen:Berechnung>
+
         <lebewesen:Berechnung id="GlP" Reihenfolge="10" gruppe="abgeleitet">
             <misc:Name>
                 <misc:Lokalisirung Sprache="de">Glücks Punkte</misc:Lokalisirung>
