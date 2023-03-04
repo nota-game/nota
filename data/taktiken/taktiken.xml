@@ -1,5 +1,4 @@
-
-  <Taktiken xmlns="http://nota.org/schema/kampf/aktionen.xsd"
+<Taktiken xmlns="http://nota.org/schema/kampf/aktionen.xsd"
   xmlns:nota='http://nota.org/schema/nota.xsd' xmlns:misc='http://nota.org/schema/misc.xsd'
   xmlns:lebewesen="http://nota.org/schema/lebewesen.xsd"
   xmlns:pfad="http://nota.org/schema/pfad.xsd" xmlns:talent="http://nota.org/schema/talent.xsd"
@@ -8,340 +7,497 @@
   xmlns:Belastung="http://nota.org/schema/kampf/aktionen.xsd"
   xmlns:ausstattung="http://nota.org/schema/kampf/ausstattung.xsd"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-
-  >
-    <Taktik Id="Angriff" Kosten="2" Belastung="1" Typ="Offensiv">
-      <Beschreibung>
+>
+  <Taktik Id="Angriff" Kosten="2" Belastung="1" Typ="Offensiv">
+    <misc:Name>
+      <misc:Lokalisirung Sprache="de"><![CDATA[Angriff]]></misc:Lokalisirung>
+    </misc:Name>
+    <misc:Beschreibung>
+      <misc:Lokalisirung Sprache="de">
         <![CDATA[Ein standard angriff.]]>
-      </Beschreibung>
-    </Taktik>
+      </misc:Lokalisirung>
+    </misc:Beschreibung>
+  </Taktik>
 
-    <Taktik Id="Leichter Angriff" Kosten="1" Belastung="0.5" Typ="Offensiv">
-      <Beschreibung>
+  <Taktik Id="Leichter Angriff" Kosten="1" Belastung="0.5" Typ="Offensiv">
+    <misc:Name>
+      <misc:Lokalisirung Sprache="de">
+        <![CDATA[Leichter Angriff]]>
+      </misc:Lokalisirung>
+    </misc:Name>
+    <misc:Beschreibung>
+      <misc:Lokalisirung Sprache="de">
         <![CDATA[Ein leichter Angriff.]]>
-      </Beschreibung>
-      <Erfolg>
+      </misc:Lokalisirung>
+    </misc:Beschreibung>
+    <Erfolg>
         <![CDATA[Wenn eine andere Offensive Taktik dieses Charakters mehr oder gleich viel Schaden am selben Ziel verursacht, wird der Schaden negiert.]]>
       </Erfolg>
-      <Mod ModifierType="Malus">
-        <ConcreteModValueType Type="Absolute" Value="5" />
-      </Mod>
-    </Taktik>
+    <Mod ModifierType="Malus">
+      <ConcreteModValueType Type="Absolute" Value="5" />
+    </Mod>
+  </Taktik>
 
-    <Taktik Id="Offensiver Angriff" Kosten="2" Belastung="1.5" Typ="Offensiv">
-      <Beschreibung>
+  <Taktik Id="Offensiver Angriff" Kosten="2" Belastung="1.5" Typ="Offensiv">
+    <misc:Name>
+      <misc:Lokalisirung Sprache="de">
+        <![CDATA[Offensiver Angriff]]>
+      </misc:Lokalisirung>
+    </misc:Name>
+    <misc:Beschreibung>
+      <misc:Lokalisirung Sprache="de">
         <![CDATA[Ein Angriff der wenig raum für Verteidigung läßt.]]>
-      </Beschreibung>
-      <Mod ModifierType="Bonus">
-        <ConcreteModValueType Type="Absolute" Value="5" />
-      </Mod>
-    </Taktik>
+      </misc:Lokalisirung>
+    </misc:Beschreibung>
+    <Mod ModifierType="Bonus">
+      <ConcreteModValueType Type="Absolute" Value="5" />
+    </Mod>
+  </Taktik>
 
-    <Taktik Id="Agressiver Angriff" Kosten="4" Belastung="2" Typ="Offensiv">
-      <Beschreibung>
+  <Taktik Id="Agressiver Angriff" Kosten="4" Belastung="2" Typ="Offensiv">
+    <misc:Name>
+      <misc:Lokalisirung Sprache="de">
+        <![CDATA[Agressiver Angriff]]>
+      </misc:Lokalisirung>
+    </misc:Name>
+    <misc:Beschreibung>
+      <misc:Lokalisirung Sprache="de">
         <![CDATA[Ein Angriff der die Verteidigung ignoriert.]]>
-      </Beschreibung>
-      <Bedingung>
+      </misc:Lokalisirung>
+    </misc:Beschreibung>
+    <Bedingung>
         <![CDATA[Keine Defensiven Taktiken.]]>
       </Bedingung>
-      <Mod ModifierType="Bonus">
-        <ConcreteModValueType Type="Percent" Value="100" />
-      </Mod>
-    </Taktik>
+    <Mod ModifierType="Bonus">
+      <ConcreteModValueType Type="Percent" Value="100" />
+    </Mod>
+  </Taktik>
 
-    <Taktik Id="Leichte Verteidigung" Kosten="1" Belastung="0.5" Typ="Defensiv">
-      <Beschreibung>
+  <Taktik Id="Leichte Verteidigung" Kosten="1" Belastung="0.5" Typ="Defensiv">
+    <misc:Name>
+      <misc:Lokalisirung Sprache="de">
+        <![CDATA[Leichte Verteidigung]]>
+      </misc:Lokalisirung>
+    </misc:Name>
+    <misc:Beschreibung>
+      <misc:Lokalisirung Sprache="de">
         <![CDATA[Eine leichte Verteidigung.]]>
-      </Beschreibung>
-      <Mod ModifierType="Malus">
-        <ConcreteModValueType Type="Absolute" Value="5" />
-      </Mod>
-    </Taktik>
+      </misc:Lokalisirung>
+    </misc:Beschreibung>
+    <Mod ModifierType="Malus">
+      <ConcreteModValueType Type="Absolute" Value="5" />
+    </Mod>
+  </Taktik>
 
-    <Taktik Id="Verteidigung" Kosten="2" Belastung="1" Typ="Defensiv">
-      <Beschreibung>
+  <Taktik Id="Verteidigung" Kosten="2" Belastung="1" Typ="Defensiv">
+    <misc:Name>
+      <misc:Lokalisirung Sprache="de">
+        <![CDATA[Verteidigung]]>
+      </misc:Lokalisirung>
+    </misc:Name>
+    <misc:Beschreibung>
+      <misc:Lokalisirung Sprache="de">
         <![CDATA[Eine Standard Verteidigung.]]>
-      </Beschreibung>
-    </Taktik>
+      </misc:Lokalisirung>
+    </misc:Beschreibung>
+  </Taktik>
 
-    <Taktik Id="Starke Verteidigung" Kosten="3" Belastung="1.5" Typ="Defensiv">
-      <Beschreibung>
+  <Taktik Id="Starke Verteidigung" Kosten="3" Belastung="1.5" Typ="Defensiv">
+    <misc:Name>
+      <misc:Lokalisirung Sprache="de">
+        <![CDATA[Starke Verteidigung]]>
+      </misc:Lokalisirung>
+    </misc:Name>
+    <misc:Beschreibung>
+      <misc:Lokalisirung Sprache="de">
         <![CDATA[Eine Schwer durchdringbare verteidigung.]]>
-      </Beschreibung>
-      <Mod ModifierType="Bonus">
-        <ConcreteModValueType Type="Absolute" Value="5" />
-      </Mod>
-    </Taktik>
+      </misc:Lokalisirung>
+    </misc:Beschreibung>
+    <Mod ModifierType="Bonus">
+      <ConcreteModValueType Type="Absolute" Value="5" />
+    </Mod>
+  </Taktik>
 
-    <Taktik Id="Verteidigungshaltung" Kosten="3" Belastung="2" Typ="Defensiv">
-      <Beschreibung>
+  <Taktik Id="Verteidigungshaltung" Kosten="3" Belastung="2" Typ="Defensiv">
+    <misc:Name>
+      <misc:Lokalisirung Sprache="de">
+        <![CDATA[Verteidigungshaltung]]>
+      </misc:Lokalisirung>
+    </misc:Name>
+    <misc:Beschreibung>
+      <misc:Lokalisirung Sprache="de">
         <![CDATA[Der Charakter konzentriert sich auf seine Verteidigung, auf kosten seiner Angriffe.]]>
-      </Beschreibung>
-      <Bedingung>
+      </misc:Lokalisirung>
+    </misc:Beschreibung>
+    <Bedingung>
         <![CDATA[Keine offensiven Taktiken.]]>
       </Bedingung>
-      <Mod ModifierType="Bonus">
-        <ConcreteModValueType Type="Percent" Value="50" />
-      </Mod>
-    </Taktik>
+    <Mod ModifierType="Bonus">
+      <ConcreteModValueType Type="Percent" Value="50" />
+    </Mod>
+  </Taktik>
 
-    <Taktik Id="Rückzug" Kosten="2" Belastung="2" Typ="Defensiv">
-      <Beschreibung>
+  <Taktik Id="Rückzug" Kosten="2" Belastung="2" Typ="Defensiv">
+    <misc:Name>
+      <misc:Lokalisirung Sprache="de">
+        <![CDATA[Rückzug]]>
+      </misc:Lokalisirung>
+    </misc:Name>
+    <misc:Beschreibung>
+      <misc:Lokalisirung Sprache="de">
         <![CDATA[Ein gezielter Rückzug bei dem sich der Charakter aus dem Nahkampf lößt, ohne sich Preis zu geben]]>
-      </Beschreibung>
-      <Erfolg>
+      </misc:Lokalisirung>
+    </misc:Beschreibung>
+    <Erfolg>
         <![CDATA[Der Charakter lößt sich aus dem Nahkampf.]]>
       </Erfolg>
-    </Taktik>
+  </Taktik>
 
-    <Taktik Id="Flucht" Kosten="3" Belastung="1" Typ="Neutral">
-      <Beschreibung>
+  <Taktik Id="Flucht" Kosten="3" Belastung="1" Typ="Neutral">
+    <misc:Name>
+      <misc:Lokalisirung Sprache="de">
+        <![CDATA[Flucht]]>
+      </misc:Lokalisirung>
+    </misc:Name>
+    <misc:Beschreibung>
+      <misc:Lokalisirung Sprache="de">
         <![CDATA[Der Charakter entfernt sich aus dem Nahkampf ohne sich um seine Deckung zu kümmern.]]>
-      </Beschreibung>
-      <GarantierterEffekt>
+      </misc:Lokalisirung>
+    </misc:Beschreibung>
+    <GarantierterEffekt>
         <![CDATA[Der Charakter lößt sich aus dem Nahkampf.]]>
       </GarantierterEffekt>
-    </Taktik>
+  </Taktik>
 
-    <Taktik Id="Finte" Kosten="1" Belastung="1" Typ="Offensiv">
-      <Beschreibung>
+  <Taktik Id="Finte" Kosten="1" Belastung="1" Typ="Offensiv">
+    <misc:Name>
+      <misc:Lokalisirung Sprache="de">
+        <![CDATA[Finte]]>
+      </misc:Lokalisirung>
+    </misc:Name>
+    <misc:Beschreibung>
+      <misc:Lokalisirung Sprache="de">
         <![CDATA[Der Charakter versucht mit dem Angriff den gegner eine Falle zu stellen und so stärker zu bedrängen.]]>
-      </Beschreibung>
-      <SofortigerEffekt>
+      </misc:Lokalisirung>
+    </misc:Beschreibung>
+    <SofortigerEffekt>
         <![CDATA[$x entspricht dem Bedränungsmalus des Ziels]]>
       </SofortigerEffekt>
-      <Erfolg>
+    <Erfolg>
         <![CDATA[Das Ziel wird writer bedrängt anstelle das Schaden verursact wird.]]>
       </Erfolg>
-      <Mod ModifierType="Malus">
-        <VariableModValueType Value="X" />
-      </Mod>
-      <Eigenschaften>
-        <Eigenschaft Id="Präzise" />
-      </Eigenschaften>
+    <Mod ModifierType="Malus">
+      <VariableModValueType Value="X" />
+    </Mod>
+    <Eigenschaften>
+      <Eigenschaft Id="Präzise" />
+    </Eigenschaften>
 
-    </Taktik>
+  </Taktik>
 
-    <Taktik Id="Wuchtiger Angriff" Kosten="3" Belastung="1" Typ="Offensiv">
-      <Beschreibung>
+  <Taktik Id="Wuchtiger Angriff" Kosten="3" Belastung="1" Typ="Offensiv">
+    <misc:Name>
+      <misc:Lokalisirung Sprache="de">
+        <![CDATA[Wuchtiger Angriff]]>
+      </misc:Lokalisirung>
+    </misc:Name>
+    <misc:Beschreibung>
+      <misc:Lokalisirung Sprache="de">
         <![CDATA[Setzt mehr Wucht in einen auszuführenden Angriff.]]>
-      </Beschreibung>
-      <SofortigerEffekt>
+      </misc:Lokalisirung>
+    </misc:Beschreibung>
+    <SofortigerEffekt>
         <![CDATA[$x ist  belibiger Wert bis zum doppelten Basiswuchtschaden der Waffe.]]>
       </SofortigerEffekt>
-      <Erfolg>
+    <Erfolg>
         <![CDATA[Die Waffe Trift. Erhöht den Wuchtschaden der Waffe um $x.]]>
       </Erfolg>
-      <Misserfolg>
+    <Misserfolg>
         <![CDATA[Erhalte Positions Mali in höhe von $x.]]>
       </Misserfolg>
-      <Mod ModifierType="Malus">
-        <MultiplyModValueType>
-          <ConcreteModValueType Value="2" Type="Absolute" />
-          <VariableModValueType Value="X" />
-        </MultiplyModValueType>
-      </Mod>
-      <Eigenschaften>
-        <Eigenschaft Id="Wuchtig" />
-      </Eigenschaften>
-    </Taktik>
+    <Mod ModifierType="Malus">
+      <MultiplyModValueType>
+        <ConcreteModValueType Value="2" Type="Absolute" />
+        <VariableModValueType Value="X" />
+      </MultiplyModValueType>
+    </Mod>
+    <Eigenschaften>
+      <Eigenschaft Id="Wuchtig" />
+    </Eigenschaften>
+  </Taktik>
 
-    <Taktik Id="Todesstoß" Kosten="5" Belastung="2" Typ="Offensiv">
-      <Beschreibung>
+  <Taktik Id="Todesstoß" Kosten="5" Belastung="2" Typ="Offensiv">
+    <misc:Name>
+      <misc:Lokalisirung Sprache="de">
+        <![CDATA[Todesstoß]]>
+      </misc:Lokalisirung>
+    </misc:Name>
+    <misc:Beschreibung>
+      <misc:Lokalisirung Sprache="de">
         <![CDATA[Der Charakter leitet einen Riskanten Angriff ein um den gegner einen Gefährlichen Treffer zu versetzen.]]>
-      </Beschreibung>
-      <SofortigerEffekt>
+      </misc:Lokalisirung>
+    </misc:Beschreibung>
+    <SofortigerEffekt>
         <![CDATA[$x ist ein belibiger Wert.]]>
       </SofortigerEffekt>
-      <GarantierterEffekt>
+    <GarantierterEffekt>
         <![CDATA[Die Defenskiv Taktik des Ziels wird um $x reduziert.]]>
       </GarantierterEffekt>
-      <Erfolg>
+    <Erfolg>
         <![CDATA[Wenn der Defensivtaktikwert des Ziels unter 0 sinkt, verursacht die Waffe Schaden.]]>
       </Erfolg>
-      <Misserfolg>
+    <Misserfolg>
         <![CDATA[Erhalte Positions Mali in höhe von 3$x.]]>
       </Misserfolg>
-      <Mod ModifierType="Malus">
-        <MultiplyModValueType>
-          <ConcreteModValueType Value="3" Type="Absolute" />
-          <VariableModValueType Value="X" />
-        </MultiplyModValueType>
-      </Mod>
-    </Taktik>
+    <Mod ModifierType="Malus">
+      <MultiplyModValueType>
+        <ConcreteModValueType Value="3" Type="Absolute" />
+        <VariableModValueType Value="X" />
+      </MultiplyModValueType>
+    </Mod>
+  </Taktik>
 
-    <Taktik Id="Waffe Platzieren" Kosten="2" Belastung="2" Typ="Offensiv">
-      <Beschreibung>
+  <Taktik Id="Waffe Platzieren" Kosten="2" Belastung="2" Typ="Offensiv">
+    <misc:Name>
+      <misc:Lokalisirung Sprache="de">
+        <![CDATA[Waffe Platzieren]]>
+      </misc:Lokalisirung>
+    </misc:Name>
+    <misc:Beschreibung>
+      <misc:Lokalisirung Sprache="de">
         <![CDATA[Eine Taktik an deren ende die Waffe an eine empfindliche stelle, wie beispielsweise Kehle, Plaziert wurde.]]>
-      </Beschreibung>
-      <Bedingung>
+      </misc:Lokalisirung>
+    </misc:Beschreibung>
+    <Bedingung>
         <![CDATA[Pro Waffe kann nur eine Aktion Waffe Platzieren gewählt werden.]]>
       </Bedingung>
-      <SofortigerEffekt>
+    <SofortigerEffekt>
         <![CDATA[$x ist ein belibiger Wert.]]>
       </SofortigerEffekt>
-      <Erfolg>
+    <Erfolg>
         <![CDATA[Führt das Ziel nächste Runde eine Offensive Taktik aus erhält es den Schnittschaden der Waffe. Sollte die Taktik nur eine Defensive sein, so wird der Schaden nur erlitten falls diese ein Misserfolg ist.
 
 Zusätzlich erhällt das Ziel nächste runde einen zusätzlichen Malus von $x auf alle Offensiven Taktiken und der Charakter einen Bonus von $x auf alle Defensiven Taktiken.
 
 Ausserdem darf eine Waffe Plazieren Taktik die das selbe Ziel wie diese hat in der Nächsten runde durch eine andere Taktik ausgetauscht werden, nachdem alle Aktionen bekannt gegeben wurden. Als Trefferzone kann die selebe Zone gewählt werden die diese Aktion getroffen hat. In diesem Fall kann eine belibige Unterzone gewählt werden.]]>
       </Erfolg>
-      <Mod ModifierType="Malus">
-        <AddModValueType>
-          <VariableModValueType Value="X" />
-          <ConcreteModValueType Type="Absolute" Value="5" />
-        </AddModValueType>
-      </Mod>
-    </Taktik>
+    <Mod ModifierType="Malus">
+      <AddModValueType>
+        <VariableModValueType Value="X" />
+        <ConcreteModValueType Type="Absolute" Value="5" />
+      </AddModValueType>
+    </Mod>
+  </Taktik>
 
-    <Taktik Id="Schutz" Kosten="3" Belastung="1" Typ="Defensiv">
-      <Beschreibung>
+  <Taktik Id="Schutz" Kosten="3" Belastung="1" Typ="Defensiv">
+    <misc:Name>
+      <misc:Lokalisirung Sprache="de">
+        <![CDATA[Schutz]]>
+      </misc:Lokalisirung>
+    </misc:Name>
+    <misc:Beschreibung>
+      <misc:Lokalisirung Sprache="de">
         <![CDATA[Der Charakter übernimmt den Schutz eines anderen.]]>
-      </Beschreibung>
-      <Bedingung>
+      </misc:Lokalisirung>
+    </misc:Beschreibung>
+    <Bedingung>
         <![CDATA[Das Ziel darf keine Offensive Taktik nutzen.]]>
       </Bedingung>
-      <SofortigerEffekt>
+    <SofortigerEffekt>
         <![CDATA[Diese Taktik gillt als Defensive Aktion des zu schützenden Ziels und nicht für den ausführenden Charakter.]]>
       </SofortigerEffekt>
-    </Taktik>
+  </Taktik>
 
-    <Taktik Id="Position" Kosten="2" Belastung="1" Typ="Defensiv">
-      <Beschreibung>
+  <Taktik Id="Position" Kosten="2" Belastung="1" Typ="Defensiv">
+    <misc:Name>
+      <misc:Lokalisirung Sprache="de">
+        <![CDATA[Position]]>
+      </misc:Lokalisirung>
+    </misc:Name>
+    <misc:Beschreibung>
+      <misc:Lokalisirung Sprache="de">
         <![CDATA[Der Charakter versucht seine Position zu verbessern.]]>
-      </Beschreibung>
-      <SofortigerEffekt>
+      </misc:Lokalisirung>
+    </misc:Beschreibung>
+    <SofortigerEffekt>
         <![CDATA[Diese Defensive Taktik führt nicht zum Misserfolg einer gengerichen Offensiven Taktik und verhindert keinen Schaden.]]>
       </SofortigerEffekt>
-      <Erfolg>
+    <Erfolg>
         <![CDATA[Der Charakter baut die hälfte seiner Stellenmali ab (aufgerundet).]]>
       </Erfolg>
-      <Misserfolg>
+    <Misserfolg>
         <![CDATA[Der Charakter baut ein virtel seiner Stellenmali ab (aufgerundet). Würde der Charakter diese runde Stellen Mali bekommen, entfellt der Effekt dafür wird der erhaltene Mali um die hälfte Reduziert.]]>
       </Misserfolg>
-    </Taktik>
+  </Taktik>
 
-    <Taktik Id="Reden" Kosten="1" Belastung="0" Typ="Neutral">
-      <Beschreibung>
+  <Taktik Id="Reden" Kosten="1" Belastung="0" Typ="Neutral">
+    <misc:Name>
+      <misc:Lokalisirung Sprache="de">
+        <![CDATA[Reden]]>
+      </misc:Lokalisirung>
+    </misc:Name>
+    <misc:Beschreibung>
+      <misc:Lokalisirung Sprache="de">
         <![CDATA[Der Charakter kann am ende der Kampfrunde mehr sagen als er eigentlich dürfte. Er kann einen ungefähr 5 sekunden lange nachricht von sich geben.]]>
-      </Beschreibung>
-      <SofortigerEffekt>
+      </misc:Lokalisirung>
+    </misc:Beschreibung>
+    <SofortigerEffekt>
         <![CDATA[Der Charakter erhält einen Malus von 1 auf alle Aktionen. Wenn dies die einzige Aktion ist, werden die Kosten auf 0 reduziert.]]>
       </SofortigerEffekt>
-    </Taktik>
+  </Taktik>
 
-    <Taktik Id="Zustechen" Kosten="2" Belastung="0.5" Typ="Unterstützend">
-      <Beschreibung>
+  <Taktik Id="Zustechen" Kosten="2" Belastung="0.5" Typ="Unterstützend">
+    <misc:Name>
+      <misc:Lokalisirung Sprache="de">
+        <![CDATA[Zustechen]]>
+      </misc:Lokalisirung>
+    </misc:Name>
+    <misc:Beschreibung>
+      <misc:Lokalisirung Sprache="de">
         <![CDATA[Bei diesem Angriff nutzt der Charakter die Schneide seiner Waffe an einer äußerst empfindlichen stelle, wie beispielsweise dem Hals. Oder Durschtößt mit der Klinge den Körper des Gegners. Ein bevorzugter Angriff von meuchlern.]]>
-      </Beschreibung>
-      <Erfolg>
+      </misc:Lokalisirung>
+    </misc:Beschreibung>
+    <Erfolg>
         <![CDATA[Der Wuchtschaden der Waffe wird auf 0 gesetzt (Wuchtschläge funktionieren). Der Angriff erhält die Eigenschaft Tödlich.]]>
       </Erfolg>
-      <Mod ModifierType="Malus">
-        <ConcreteModValueType Type="Percent" Value="50" />
-      </Mod>
+    <Mod ModifierType="Malus">
+      <ConcreteModValueType Type="Percent" Value="50" />
+    </Mod>
 
-    </Taktik>
+  </Taktik>
 
-    <Taktik Id="Gezielter Angriff" Kosten="1" Belastung="0" Typ="Unterstützend">
-      <Beschreibung>
+  <Taktik Id="Gezielter Angriff" Kosten="1" Belastung="0" Typ="Unterstützend">
+    <misc:Name>
+      <misc:Lokalisirung Sprache="de">
+        <![CDATA[Gezielter Angriff]]>
+      </misc:Lokalisirung>
+    </misc:Name>
+    <misc:Beschreibung>
+      <misc:Lokalisirung Sprache="de">
         <![CDATA[Der Kämpfer versucht ein bestimmtes Körperteil gezielt zu treffen.]]>
-      </Beschreibung>
-      <SofortigerEffekt>
+      </misc:Lokalisirung>
+    </misc:Beschreibung>
+    <SofortigerEffekt>
         <![CDATA[$x ist ien belibiger Wert.]]>
       </SofortigerEffekt>
-      <Erfolg>
+    <Erfolg>
         <![CDATA[Es werden $x mehr Trefferzonen bestimmt. Wähle eine dieser.]]>
       </Erfolg>
-      <Mod ModifierType="Malus">
-        <MultiplyModValueType>
-          <VariableModValueType Value="X" />
-          <VariableModValueType Value="X" />
-        </MultiplyModValueType>
-      </Mod>
-      <Eigenschaften>
-        <Eigenschaft Id="Präzise" />
-      </Eigenschaften>
-    </Taktik>
+    <Mod ModifierType="Malus">
+      <MultiplyModValueType>
+        <VariableModValueType Value="X" />
+        <VariableModValueType Value="X" />
+      </MultiplyModValueType>
+    </Mod>
+    <Eigenschaften>
+      <Eigenschaft Id="Präzise" />
+    </Eigenschaften>
+  </Taktik>
 
-    <Taktik Id="Präziser Angriff" Kosten="1" Belastung="0" Typ="Unterstützend">
-      <Beschreibung>
+  <Taktik Id="Präziser Angriff" Kosten="1" Belastung="0" Typ="Unterstützend">
+    <misc:Name>
+      <misc:Lokalisirung Sprache="de">
+        <![CDATA[Präzieser Angriff]]>
+      </misc:Lokalisirung>
+    </misc:Name>
+    <misc:Beschreibung>
+      <misc:Lokalisirung Sprache="de">
         <![CDATA[Erlaubt dem Angreifer an der Rüstung des Gegners Vorbei zu stechen..]]>
-      </Beschreibung>
-      <Bedingung>
+      </misc:Lokalisirung>
+    </misc:Beschreibung>
+    <Bedingung>
         <![CDATA[Nur mit Präzisen Waffen möglich.]]>
       </Bedingung>
-      <SofortigerEffekt>
+    <SofortigerEffekt>
         <![CDATA[$x ist ien belibiger Wert.]]>
       </SofortigerEffekt>
-      <Erfolg>
+    <Erfolg>
         <![CDATA[Bei genauer bestimmung der Trefferzone (W10) kann $x zum Ergebniss Addiert oder Subtrahiert werden.]]>
       </Erfolg>
-      <Mod ModifierType="Malus">
-        <MultiplyModValueType>
-          <ConcreteModValueType Type="Absolute" Value="2" />
-          <VariableModValueType Value="X" />
-        </MultiplyModValueType>
-      </Mod>
-      <Eigenschaften>
-        <Eigenschaft Id="Präzise" />
-      </Eigenschaften>
-    </Taktik>
+    <Mod ModifierType="Malus">
+      <MultiplyModValueType>
+        <ConcreteModValueType Type="Absolute" Value="2" />
+        <VariableModValueType Value="X" />
+      </MultiplyModValueType>
+    </Mod>
+    <Eigenschaften>
+      <Eigenschaft Id="Präzise" />
+    </Eigenschaften>
+  </Taktik>
 
-    <Taktik Id="Erholen / Abwarten" Kosten="0" Belastung="1" Typ="Neutral">
-      <Beschreibung>
-        <![CDATA[Der Charakter erholt sich]]>
-      </Beschreibung>
-      <GarantierterEffekt>
+  <Taktik Id="Erholen / Abwarten" Kosten="0" Belastung="1" Typ="Neutral">
+    <misc:Name>
+      <misc:Lokalisirung Sprache="de">
+        <![CDATA[Erholen / Abwarten]]>
+      </misc:Lokalisirung>
+    </misc:Name><misc:Beschreibung>
+      <misc:Lokalisirung Sprache="de">
+        <![CDATA[Der Charakter erholt sich. Zusätzlich kann er sich ein besseren Überblick in Komplexen kampfgeschehen verschaffen.]]>
+      </misc:Lokalisirung>
+    </misc:Beschreibung>
+    <GarantierterEffekt>
         <![CDATA[Der Charakter regeneriert alle Erschöpfung, wenn dies seien einzigste Aktion ist. Andernfalls die Hälfte.]]>
       </GarantierterEffekt>
-    </Taktik>
+  </Taktik>
 
-    <Taktik Id="Zielen" Kosten="1" Belastung="2" Typ="Neutral">
-      <Beschreibung>
+  <Taktik Id="Zielen" Kosten="1" Belastung="2" Typ="Neutral">
+    <misc:Name>
+      <misc:Lokalisirung Sprache="de">
+        <![CDATA[Zielen]]>
+      </misc:Lokalisirung>
+    </misc:Name>
+    <misc:Beschreibung>
+      <misc:Lokalisirung Sprache="de">
         <![CDATA[Der Charakter bereitet einen gezielten Schuss vor.]]>
-      </Beschreibung>
-      <Bedingung>
+      </misc:Lokalisirung>
+    </misc:Beschreibung>
+    <Bedingung>
         <![CDATA[Nur mit Fernkampfwaffe]]>
       </Bedingung>
-      <SofortigerEffekt>
+    <SofortigerEffekt>
         <![CDATA[$x entspricht der Fernkampfmodifikation. (Siehe Tabelle)]]>
       </SofortigerEffekt>
-      <Erfolg>
+    <Erfolg>
         <![CDATA[Der Charakter erhält einen Bonus in Höhe der halben Punkte auf seine nächste Taktik falls diese das selbe Ziel hat und mit der selben Waffe erfolt.]]>
       </Erfolg>
-      <Mod ModifierType="Malus">
-        <MultiplyModValueType>
-          <VariableModValueType Value="X" />
-          <ConcreteModValueType Type="Percent" Value="50" />
-        </MultiplyModValueType>
-      </Mod>
-    </Taktik>
+    <Mod ModifierType="Malus">
+      <MultiplyModValueType>
+        <VariableModValueType Value="X" />
+        <ConcreteModValueType Type="Percent" Value="50" />
+      </MultiplyModValueType>
+    </Mod>
+  </Taktik>
 
-    <Taktik Id="Gezielter Schuss" Kosten="1" Belastung="2" Typ="Offensiv">
-      <Beschreibung>
+  <Taktik Id="Gezielter Schuss" Kosten="1" Belastung="2" Typ="Offensiv">
+    <misc:Name>
+      <misc:Lokalisirung Sprache="de">
+        <![CDATA[Gezielter Schuss]]>
+      </misc:Lokalisirung>
+    </misc:Name>
+    <misc:Beschreibung>
+      <misc:Lokalisirung Sprache="de">
         <![CDATA[Der Charakter führt einen gezielten Schuss durch.]]>
-      </Beschreibung>
-      <SofortigerEffekt>
+      </misc:Lokalisirung>
+    </misc:Beschreibung>
+    <SofortigerEffekt>
         <![CDATA[$x entspricht der Fernkampf modifikation.]]>
       </SofortigerEffekt>
-      <Erfolg>
+    <Erfolg>
         <![CDATA[Der Charakter Trifft das Ziel einmal.]]>
       </Erfolg>
-      <Mod ModifierType="Malus">
-        <SubstractModValueType>
-          <VariableModValueType Value="X" />
-          <ConcreteModValueType Value="3" Type="Absolute" />
-        </SubstractModValueType>
-      </Mod>
-    </Taktik>
+    <Mod ModifierType="Malus">
+      <SubstractModValueType>
+        <VariableModValueType Value="X" />
+        <ConcreteModValueType Value="3" Type="Absolute" />
+      </SubstractModValueType>
+    </Mod>
+  </Taktik>
 
-    <!-- <Taktik Id="Steilshuss" Kosten="1" Belastung="2" Typ="Offensiv">
-      <Beschreibung>Der
+  <!-- <Taktik Id="Steilshuss" Kosten="1" Belastung="2" Typ="Offensiv">
+      <misc:Beschreibung><misc:Lokalisirung Sprache="de">Der
     Charakter führt einen Balistischen Schuss durch. Dieses kann beispielsweise auch gegner hinter
     Dekung treffen. Durch die Balistische Flugbahn ist das geschoss jedoch lönger
-    unterwegs.</Beschreibung>
+    unterwegs.</misc:Lokalisirung></misc:Beschreibung>
       <SofortigerEffekt>Der Angriff erfolgt diese Kampfrunde, trifft
     sein Ziel aber erst nächste. Dabei ist das Problem weniger den Anvisierten Punkt zu treffe, als
     vorherzusehen wo sich der gegner zu diesem Zeitpunkt befinden wird.</SofortigerEffekt>
@@ -351,76 +507,104 @@ Ausserdem darf eine Waffe Plazieren Taktik die das selbe Ziel wie diese hat in d
       </Mod>
     </Taktik> -->
 
-    <Taktik Id="Mehrfachschuss" Kosten="2" Belastung="2" Typ="Offensiv">
-      <Beschreibung>
+  <Taktik Id="Mehrfachschuss" Kosten="2" Belastung="2" Typ="Offensiv">
+    <misc:Name>
+      <misc:Lokalisirung Sprache="de">
+        <![CDATA[Mehrfachscuss]]>
+      </misc:Lokalisirung>
+    </misc:Name>
+    <misc:Beschreibung>
+      <misc:Lokalisirung Sprache="de">
         <![CDATA[Schießt mit einer Distanzwaffe bis zur maximalen schussfrequenz.]]>
-      </Beschreibung>
-      <SofortigerEffekt>
+      </misc:Lokalisirung>
+    </misc:Beschreibung>
+    <SofortigerEffekt>
         <![CDATA[$x entspricht der Fernkampfmodifikation.]]>
       </SofortigerEffekt>
-      <Erfolg>
+    <Erfolg>
         <![CDATA[Der Charakter Trifft das Ziel entsprechend der Feuerrate.]]>
       </Erfolg>
-      <Mod ModifierType="Malus">
-        <VariableModValueType Value="X" />
-      </Mod>
-    </Taktik>
+    <Mod ModifierType="Malus">
+      <VariableModValueType Value="X" />
+    </Mod>
+  </Taktik>
 
-    <Taktik Kosten="3" Id="Ausweichen" Belastung="1" Typ="Defensiv">
-      <Beschreibung>
+  <Taktik Kosten="3" Id="Ausweichen" Belastung="1" Typ="Defensiv">
+    <misc:Name>
+      <misc:Lokalisirung Sprache="de">
+        <![CDATA[Ausweichen]]>
+      </misc:Lokalisirung>
+    </misc:Name>
+    <misc:Beschreibung>
+      <misc:Lokalisirung Sprache="de">
         <![CDATA[In manschen situation ist es ratsam nicht mit der Waffe zu parieren, sondern dem Angriff aus dem Weg zughen.]]>
-      </Beschreibung>
-    </Taktik>
+      </misc:Lokalisirung>
+    </misc:Beschreibung>
+  </Taktik>
 
-    <Taktik Kosten="4" Id="Flammenklinge" Belastung="2" Typ="Neutral">
-      <Beschreibung>
+  <Taktik Kosten="4" Id="Flammenklinge" Belastung="2" Typ="Neutral">
+    <misc:Name>
+      <misc:Lokalisirung Sprache="de">
+        <![CDATA[Flammenklinge]]>
+      </misc:Lokalisirung>
+    </misc:Name>
+    <misc:Beschreibung>
+      <misc:Lokalisirung Sprache="de">
         <![CDATA[Hüllt die Waffe in Flammen und erhöt die Reichweite.]]>
-      </Beschreibung>
-      <Bedingung>
+      </misc:Lokalisirung>
+    </misc:Beschreibung>
+    <Bedingung>
         <![CDATA[Charakter Feueradept]]>
       </Bedingung>
-      <Erfolg>
+    <Erfolg>
         <![CDATA[Erhöt die DK der Waffe nächste Runde um eins. Für je volle 3 Punkte hält der Effekt 1 Runde länger.]]>
       </Erfolg>
-    </Taktik>
+  </Taktik>
 
-    <Taktik Kosten="9" Id="Flammenwand" Belastung="2" Typ="Neutral">
-      <Beschreibung>
+  <Taktik Kosten="9" Id="Flammenwand" Belastung="2" Typ="Neutral">
+    <misc:Name>
+      <misc:Lokalisirung Sprache="de">
+        <![CDATA[Flammenwand]]>
+      </misc:Lokalisirung>
+    </misc:Name>
+    <misc:Beschreibung>
+      <misc:Lokalisirung Sprache="de">
         <![CDATA[Erzeugt Flammenwände.]]>
-      </Beschreibung>
-      <Bedingung>
+      </misc:Lokalisirung>
+    </misc:Beschreibung>
+    <Bedingung>
         <![CDATA[Charakter Feueradept]]>
       </Bedingung>
-      <Erfolg>
+    <Erfolg>
         <![CDATA[Für je 2 Punkte kann der Charakter einen Meter wand erzeugen startend vor ihm. Die Wand hält 3 Runden.]]>
       </Erfolg>
-    </Taktik>
+  </Taktik>
 
-    <Eigenschaften>
-      <Eigenschaft Id="Präzise">
-        <misc:Name>
-          <misc:Lokalisirung Sprache="de">
+  <Eigenschaften>
+    <Eigenschaft Id="Präzise">
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
             <![CDATA[Präzise]]>
           </misc:Lokalisirung>
-        </misc:Name>
-        <misc:Beschreibung>
-          <misc:Lokalisirung Sprache="de">
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
             <![CDATA[Eine Aktion die besonders Präzises vorgehen verlangt.]]>
           </misc:Lokalisirung>
-        </misc:Beschreibung>
-      </Eigenschaft>
-      <Eigenschaft Id="Wuchtig">
-        <misc:Name>
-          <misc:Lokalisirung Sprache="de">
+      </misc:Beschreibung>
+    </Eigenschaft>
+    <Eigenschaft Id="Wuchtig">
+      <misc:Name>
+        <misc:Lokalisirung Sprache="de">
             <![CDATA[Wuchtig]]>
           </misc:Lokalisirung>
-        </misc:Name>
-        <misc:Beschreibung>
-          <misc:Lokalisirung Sprache="de">
+      </misc:Name>
+      <misc:Beschreibung>
+        <misc:Lokalisirung Sprache="de">
             <![CDATA[Eine Aktoin bei der es auf Brachiale gewalt ankommt.]]>
           </misc:Lokalisirung>
-        </misc:Beschreibung>
-      </Eigenschaft>
-    </Eigenschaften>
+      </misc:Beschreibung>
+    </Eigenschaft>
+  </Eigenschaften>
 
-  </Taktiken>
+</Taktiken>

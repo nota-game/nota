@@ -44,10 +44,10 @@
 
   -->
 
-## <xsl:value-of select="@Id"/>  
+## <xsl:value-of select="normalize-space(./misc:Name/misc:Lokalisirung[@Sprache='de']/text())"/>  
 
 <xsl:call-template name="replace">
-  <xsl:with-param name="text" select="./aktionen:Beschreibung"/>
+  <xsl:with-param name="text" select="normalize-space(./misc:Beschreibung/misc:Lokalisirung[@Sprache='de']/text())"/>
 </xsl:call-template>
 
         <xsl:if test="./aktionen:Bedingung">
