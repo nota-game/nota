@@ -1,6 +1,7 @@
 <xsl:stylesheet 
   xml:space="preserve"
   xmlns:nota="http://nota.org/schema/nota.xsd" 
+  xmlns:misc='http://nota.org/schema/misc.xsd'
   xmlns:lebewesen="http://nota.org/schema/lebewesen.xsd" 
   xmlns:kultur="http://nota.org/schema/kultur.xsd" 
   xmlns:profession="http://nota.org/schema/profession.xsd" 
