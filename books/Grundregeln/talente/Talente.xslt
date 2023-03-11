@@ -43,7 +43,7 @@
 
 <xsl:template match="talent:Talent">
 
-## <xsl:value-of select="normalize-space(./misc:Name/misc:Lokalisirung[@Sprache='de']/text())"/> *(<xsl:apply-templates  select="talent:Probe/*[1]@Name" />/<xsl:apply-templates  select="talent:Probe/*[2]@Name" />/<xsl:apply-templates  select="talent:Probe/*[3]@Name" />)*
+## <xsl:value-of select="normalize-space(./misc:Name/misc:Lokalisirung[@Sprache='de']/text())"/> *(<xsl:apply-templates  select="talent:Probe/*[1]" />/<xsl:apply-templates  select="talent:Probe/*[2]" />/<xsl:apply-templates  select="talent:Probe/*[3]" />)*
 **Komplexität**: <xsl:value-of select="@Komplexität"/>
 
 :::Description
@@ -75,17 +75,6 @@ Ableitung
 
 <xsl:template match="talent:Ableitung">+ <xsl:value-of select="@Id" /> _(<xsl:value-of select="@Anzahl" />)_</xsl:template>
 
-<xsl:template match="talent:Mut">MU</xsl:template>
-<xsl:template match="talent:Glück">GL</xsl:template>
-<xsl:template match="talent:Klugheit">KL</xsl:template>
-<xsl:template match="talent:Intuition">IN</xsl:template>
-<xsl:template match="talent:Gewandtheit">GE</xsl:template>
-<xsl:template match="talent:Feinmotorik">FM</xsl:template>
-<xsl:template match="talent:Sympathie">SY</xsl:template>
-<xsl:template match="talent:Antipathie">AN</xsl:template>
-<xsl:template match="talent:Stärke">ST</xsl:template>
-<xsl:template match="talent:Konstitution">KO</xsl:template>
-<xsl:template match="talent:Fokus">FO</xsl:template>
-<xsl:template match="talent:Einfluss">EI</xsl:template>
+<xsl:template match="talent:Eigenschaft"><xsl:value-of select="@Name" /></xsl:template>
 
 </xsl:stylesheet>
