@@ -652,7 +652,94 @@
           <![CDATA[Die Gattung der Menschen]]>
         </misc:Lokalisirung>
         </misc:Beschreibung>
-
+<lebewesen:Entwiklung>
+    <lebewesen:Trefferzonen>
+        <lebewesen:Trefferzone Zone="Kopf" Anzahl="2">
+            <lebewesen:Name>
+                <misc:Lokalisirung Sprache="de">
+                    <![CDATA[Kopf]]>
+                </misc:Lokalisirung>
+            </lebewesen:Name>
+            <lebewesen:Beschreibung>
+                <misc:Lokalisirung Sprache="de">
+                    <![CDATA[]]>
+                </misc:Lokalisirung>
+            </lebewesen:Beschreibung>
+        </lebewesen:Trefferzone>
+        <lebewesen:Trefferzone Zone="Brust" Anzahl="4">
+            <lebewesen:Name>
+                <misc:Lokalisirung Sprache="de">
+                    <![CDATA[Brust]]>
+                </misc:Lokalisirung>
+            </lebewesen:Name>
+            <lebewesen:Beschreibung>
+                <misc:Lokalisirung Sprache="de">
+                    <![CDATA[]]>
+                </misc:Lokalisirung>
+            </lebewesen:Beschreibung>
+        </lebewesen:Trefferzone>
+        <lebewesen:Trefferzone Zone="Hüfte" Anzahl="2">
+            <lebewesen:Name>
+                <misc:Lokalisirung Sprache="de">
+                    <![CDATA[Hüfte]]>
+                </misc:Lokalisirung>
+            </lebewesen:Name>
+            <lebewesen:Beschreibung>
+                <misc:Lokalisirung Sprache="de">
+                    <![CDATA[]]>
+                </misc:Lokalisirung>
+            </lebewesen:Beschreibung>
+        </lebewesen:Trefferzone>
+        <lebewesen:Trefferzone Zone="LinkerArm" Anzahl="3">
+            <lebewesen:Name>
+                <misc:Lokalisirung Sprache="de">
+                    <![CDATA[LinkerArm]]>
+                </misc:Lokalisirung>
+            </lebewesen:Name>
+            <lebewesen:Beschreibung>
+                <misc:Lokalisirung Sprache="de">
+                    <![CDATA[]]>
+                </misc:Lokalisirung>
+            </lebewesen:Beschreibung>
+        </lebewesen:Trefferzone>
+        <lebewesen:Trefferzone Zone="RechterArm" Anzahl="3">
+            <lebewesen:Name>
+                <misc:Lokalisirung Sprache="de">
+                    <![CDATA[RechterArm]]>
+                </misc:Lokalisirung>
+            </lebewesen:Name>
+            <lebewesen:Beschreibung>
+                <misc:Lokalisirung Sprache="de">
+                    <![CDATA[]]>
+                </misc:Lokalisirung>
+            </lebewesen:Beschreibung>
+        </lebewesen:Trefferzone>
+        <lebewesen:Trefferzone Zone="LinkesBein" Anzahl="3">
+            <lebewesen:Name>
+                <misc:Lokalisirung Sprache="de">
+                    <![CDATA[LinkesBein]]>
+                </misc:Lokalisirung>
+            </lebewesen:Name>
+            <lebewesen:Beschreibung>
+                <misc:Lokalisirung Sprache="de">
+                    <![CDATA[]]>
+                </misc:Lokalisirung>
+            </lebewesen:Beschreibung>
+        </lebewesen:Trefferzone>
+        <lebewesen:Trefferzone Zone="RechtesBein" Anzahl="3">
+            <lebewesen:Name>
+                <misc:Lokalisirung Sprache="de">
+                    <![CDATA[RechtesBein]]>
+                </misc:Lokalisirung>
+            </lebewesen:Name>
+            <lebewesen:Beschreibung>
+                <misc:Lokalisirung Sprache="de">
+                    <![CDATA[]]>
+                </misc:Lokalisirung>
+            </lebewesen:Beschreibung>
+        </lebewesen:Trefferzone>
+    </lebewesen:Trefferzonen>
+</lebewesen:Entwiklung>
         <Lebensabschnitte>
             <Lebensabschnitt startAlter="12">
                 <Spielbar>

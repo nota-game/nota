@@ -27,6 +27,15 @@
           </misc:Lokalisirung>
         </misc:Beschreibung>
         <fertigkeit:Verbreitung Wert="4" />
+        <fertigkeit:Mods>
+          <misc:Trefferzonen>
+            <misc:Zone Name="Kopf" Modifier="-1" />
+            <misc:Zone Name="Brust" Modifier="-1" />
+            <misc:Zone Name="LinkerArm" Modifier="+4" />
+            <misc:Zone Name="RechterArm" Modifier="-1" />
+            <misc:Zone Name="Hüfte" Modifier="-1" />
+          </misc:Trefferzonen>
+        </fertigkeit:Mods>
         <fertigkeit:Voraussetzung>
           <misc:And>
             <talent:Talent Id="Schwerter" Level="12"></talent:Talent>
