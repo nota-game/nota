@@ -287,12 +287,12 @@
                 <Härte Wert="3" />
             </Schutz>
             <Trefferzonen>
-                <Brust>
+                <ausstattung:Zone Name="Brust">
                     <Schutz Von="2" Bis="10" />
-                </Brust>
-                <Hüfte>
-                    <Schutz Von="1" Bis="9" />
-                </Hüfte>
+                </ausstattung:Zone>
+                <ausstattung:Zone Name="Hüfte">
+                    <Schutz Von="2" Bis="10" />
+                </ausstattung:Zone>
             </Trefferzonen>
         </Rüstung>
 
@@ -312,12 +312,12 @@
                 <Härte Wert="6" />
             </Schutz>
             <Trefferzonen>
-                <Brust>
+                <ausstattung:Zone Name="Brust">
                     <Schutz Von="2" Bis="10" />
-                </Brust>
-                <Hüfte>
-                    <Schutz Von="1" Bis="9" />
-                </Hüfte>
+                </ausstattung:Zone>
+                <ausstattung:Zone Name="Hüfte">
+                    <Schutz Von="2" Bis="10" />
+                </ausstattung:Zone>
             </Trefferzonen>
         </Rüstung>
 
@@ -337,12 +337,12 @@
                 <Härte Wert="6" />
             </Schutz>
             <Trefferzonen>
-                <Brust>
+                <ausstattung:Zone Name="Brust">
                     <Schutz Von="2" Bis="10" />
-                </Brust>
-                <Hüfte>
+                </ausstattung:Zone>
+                <ausstattung:Zone Name="Hüfte">
                     <Schutz Von="1" Bis="9" />
-                </Hüfte>
+                </ausstattung:Zone>
             </Trefferzonen>
         </Rüstung>
 
@@ -362,12 +362,12 @@
                 <Dämpfung Wert="4" />
             </Schutz>
             <Trefferzonen>
-                <Brust>
+                <ausstattung:Zone Name="Brust">
                     <Schutz Von="2" Bis="10" />
-                </Brust>
-                <Hüfte>
+                </ausstattung:Zone>
+                <ausstattung:Zone Name="Hüfte">
                     <Schutz Von="1" Bis="9" />
-                </Hüfte>
+                </ausstattung:Zone>
             </Trefferzonen>
         </Rüstung>
 
