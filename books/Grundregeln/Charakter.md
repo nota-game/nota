@@ -41,8 +41,9 @@ haben.
 ## Sigel des Gottes
 
 Einige Charaktere (vor allem Spieler Charaktere) wurden von den Göttern
-auserwählt. Wem diese zweifelhafte Ehre zu teil wurde, trägt irgendwo auf
-seinem Körper das Zeichen eines Gottes.
+auserwählt. Wem diese zweifelhafte Ehre zu teil wurde, trägt irgendwo auf seinem
+Körper das Zeichen eines Gottes. Diese sind sehr individuell und tragen Aspekte
+sowohl der Gottes als auch der Auserwählten Person.
 
 ## Charakter Eigenschaften
 
@@ -146,8 +147,16 @@ weise, manchmal aber auch in Negativer.
 Was ein Charakter kann oder auch nicht wird durch Talente festgehalten. Sie
 decken ein breites Feld von Tätigkeiten ab, welche ein Charakter ausüben kann.
 Jedem Talent ist ein Wert zugeordnet. Dieser bestimmt, wie gut ein Charakter
-welches Talent beherrscht.
+welches Talent beherrscht. Im Zweifel kann eine Probe auf ein Talent gemacht
+werden, um den Grad der Kompetenz zu ermitteln.
   
+
+## Fertigkeiten
+Fertigkeiten beschreiben ähnlich wie Talente dinge die ein Charakter gelernt hat
+und vollbringen kann. Sie werden nicht direkt mit Proben getestet, sondern
+erlauben dinge zu Tun die Normalerweise nicht möglich sind, bzw. dinge besser zu
+tuen.
+
 # Abgeleitet Werte
 
 Einige Werte werden anhand von anderen Werten berechnet.
@@ -195,4 +204,13 @@ Die folgende Tabelle listet die Gewischt und stärke Verhältnisse dar.3
 +------+-------+-------+-------+-------+
 |**13**| 28    | 32    | 37    | 42    |
 +------+-------+-------+-------+-------+
+
+## Einkommen
+
+Das Einkommen beschreibt was ein Charakter sich leisten kann und im weitesten
+Sinne seinen Lebensstandard. Einkommen kann aus vielen Quellen generiert werden,
+Fertigkeiten, Talente, Eigenschaften, oder eine Kombination aus diesen. Im
+Normalfall wird der Höchste Wert herangezogen.
+
+# Entwicklung
 
